@@ -1,0 +1,84 @@
+{
+  "schema_version": 2,
+  "name": "whalory",
+  "language": "fa",
+  "variant": "fa-IR",
+  "brand": {
+    "fa": "والوری",
+    "latin": "Whalory",
+    "misspellings": {
+      "والری": "والوری",
+      "Walory": "Whalory",
+      "Whalori": "Whalory"
+    }
+  },
+  "romanization": {
+    "والوری هسته": "Whalory Core",
+    "والوری حرفه‌ای": "Whalory Pro",
+    "والوری استودیو": "Whalory Studio"
+  },
+  "register": "formal",
+  "address": "any",
+  "dials": {
+    "warmth": 3,
+    "formality": 3,
+    "humor": 2,
+    "narrative": 3,
+    "sentence_length": 3,
+    "loud_marks": 0,
+    "jargon": 3,
+    "rhetoric": 3
+  },
+  "max_words": 24,
+  "emoji_max": 0,
+  "exclaim_max": 0,
+  "banned": [
+    "بهترین تیم",
+    "اولین آژانس",
+    "با افتخار اعلام"
+  ],
+  "avoid": [
+    "کانتنت",
+    "برند وویس",
+    "هوک",
+    "بریفینگ",
+    "کلاینت",
+    "پلی‌بوک",
+    "والوری پرو",
+    "پریمیوم"
+  ],
+  "prefer": {
+    "کانتنت": "محتوا",
+    "برند وویس": "پروفایلِ صدا",
+    "هوک": "قلاب",
+    "بریفینگ": "بریف",
+    "کلاینت": "کارفرما",
+    "پلی‌بوک": "دستورِ کار",
+    "والوری پرو": "والوری حرفه‌ای",
+    "پریمیوم": "والوری حرفه‌ای"
+  },
+  "allow": [],
+  "industry": "content-agency",
+  "formats": {
+    "caption": {
+      "address": "to",
+      "dials": {"warmth": 4},
+      "note": "معرفیِ والوری: یک کارِ مشخص، نه صفت"
+    },
+    "post": {
+      "address": "to",
+      "dials": {"warmth": 4},
+      "note": "یک فکر در هر پست"
+    },
+    "blog": {
+      "address": "to",
+      "dials": {"narrative": 4},
+      "note": "آموزش: مثال، صحنه، تمرین"
+    },
+    "reply": {
+      "address": "shoma",
+      "dials": {"humor": 1, "narrative": 1},
+      "note": "تحویل و پاسخ: چه آماده است، چه کم است، بعدش چه"
+    }
+  }
+}

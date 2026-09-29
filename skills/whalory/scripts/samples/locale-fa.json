@@ -1,0 +1,17 @@
+{
+  "common": {
+    "save": "ذخیره",
+    "cancel": "انصراف",
+    "greeting": "سلام {name}، خوش آمدی.",
+    "count": "{count, plural, one {# سفارش در سبد است} other {# سفارش در سبد هست}}",
+    "items": "{{count}} کالا — آماده‌ی ارسال",
+    "english": "Save changes — now",
+    "printf": "%1$s از %2$d مورد, انتخاب شد"
+  },
+  "errors": {
+    "network": "اتصال برقرار نشد. لطفاً دوباره تلاش نمایید.",
+    "html": "برای <b>ادامه</b> روی <a href=\"/login\">ورود</a> بزنید."
+  },
+  "list": ["اول", "دوم كالا"],
+  "key—with—dash": "متنِ سالم"
+}

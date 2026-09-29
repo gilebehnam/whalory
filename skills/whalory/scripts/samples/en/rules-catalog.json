@@ -1,0 +1,1898 @@
+{
+ "version": "2026-09-27",
+ "rules": [
+  {
+   "id": "EN-AI-001",
+   "category": "ai-vocabulary",
+   "severity": "warning",
+   "pattern": "\\b(?:delv(?:e|es|ed|ing)|tapestr(?:y|ies)|testament|underscor(?:es|ed|ing)|underscore(?=\\s+(?:the|that|its|their|his|her|how|why|a|an|our|this|these|those)\\b)|showcas(?:e|es|ed|ing)|pivotal|intricac(?:y|ies)|intricate(?:ly)?|meticulous(?:ly)?|realm|garner(?:s|ed|ing)?|boast(?:s|ed|ing)?|commendable|bolster(?:s|ed|ing)?|interplay|camaraderie|palpable|noteworthy)\\b",
+   "flags": "i",
+   "scope": "token",
+   "threshold": null,
+   "profile": "all",
+   "message": "Word documented as over-represented in LLM output.",
+   "fix": "Replace with the plain or specific word (delve into -> examine/look at; underscore -> show; showcase -> show; pivotal -> important, or give the concrete consequence; testament to -> shows; boasts -> has). Better: replace the abstraction with the fact it gestures at.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing",
+    "https://www.science.org/doi/10.1126/sciadv.adt3813",
+    "https://aclanthology.org/2025.coling-main.426.pdf",
+    "https://arxiv.org/abs/2403.07183",
+    "https://arxiv.org/abs/2404.01268",
+    "https://www.pnas.org/doi/10.1073/pnas.2422455122"
+   ],
+   "confidence": "high",
+   "false_positive_notes": "'underscore' as the _ character or film score; 'realm' in fantasy/legal contexts; 'boasts' in sports copy. Wikipedia: treat literally, synonyms are not implicated.",
+   "examples_flagged": [
+    "This study delves into the data.",
+    "It stands as a testament to her work.",
+    "The results underscore the need."
+   ],
+   "examples_ok": [
+    "We dug into the data.",
+    "The underscore character is _."
+   ]
+  },
+  {
+   "id": "EN-AI-002",
+   "category": "ai-vocabulary-density",
+   "severity": "error",
+   "pattern": "(density rule over EN-AI-001 + EN-AI-003 hits)",
+   "flags": "",
+   "scope": "document",
+   "threshold": "error if >=3 distinct EN-AI-001 lemmas per 300 words, or >=5 distinct EN-AI-001/003 lemmas per 300 words (heuristic, not from a source)",
+   "profile": "all",
+   "message": "Several distinct AI-vocabulary words co-occur; Wikipedia calls clustering 'one of the strongest tells'.",
+   "fix": "Rewrite the passage from the facts up rather than swapping synonyms one by one.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing",
+    "https://www.science.org/doi/10.1126/sciadv.adt3813"
+   ],
+   "confidence": "medium",
+   "false_positive_notes": null,
+   "examples_flagged": [],
+   "examples_ok": []
+  },
+  {
+   "id": "EN-AI-003",
+   "category": "buzzwords-puffery",
+   "severity": "warning",
+   "pattern": "\\b(?:vibrant|seamless(?:ly)?|robust|leverag(?:e|es|ed|ing)|unlock(?:s|ed|ing)?|elevat(?:e|es|ed|ing)|empower(?:s|ed|ing|ment)?|foster(?:s|ed|ing)?|(?:evolving|ever-evolving|digital|competitive|business) landscape|holistic|cutting-edge|state-of-the-art|game-?chang(?:er|ing)|groundbreaking|revolutioni[sz](?:e|es|ed|ing)|renowned|nestled|in the heart of|diverse array|rich (?:cultural )?heritage|commitment to|streamlin(?:e|es|ed|ing)|synerg(?:y|ies)|best-in-class|world-class|transformative|navigat(?:e|ing) the complexities)\\b",
+   "flags": "i",
+   "scope": "token",
+   "threshold": null,
+   "profile": "all",
+   "message": "Promotional/buzzword language (LLM puffery; GOV.UK 'words to avoid').",
+   "fix": "Say what the thing does, for whom, with a number or example. GOV.UK: leverage -> use/influence; empower -> allow; foster -> encourage/help; robust -> well thought out/comprehensive; streamline -> simplify.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing",
+    "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/style-guides/a-to-z-style-guide/"
+   ],
+   "confidence": "high",
+   "false_positive_notes": "Literal uses (a 'vibrant' colour in a paint spec; 'foster' care; 'robust' physical object per GOV.UK exception).",
+   "examples_flagged": [
+    "Our robust platform empowers teams.",
+    "Nestled in the heart of the city."
+   ],
+   "examples_ok": [
+    "The bridge is structurally sound."
+   ]
+  },
+  {
+   "id": "EN-AI-010",
+   "category": "significance-puffery",
+   "severity": "warning",
+   "pattern": "\\b(?:stands as|serves as a (?:testament|reminder|symbol|beacon)|is a testament to|a testament to|plays? an? (?:vital|crucial|pivotal|key|significant|important|central) role|mark(?:s|ed|ing)? an? (?:pivotal|significant|key|major|important) (?:moment|shift|milestone|turning point)|setting the stage for|left an indelible mark|indelible mark|deeply rooted|enduring legacy|lasting legacy|reflects? (?:a )?broader|evolving landscape|key turning point|focal point|represents? a (?:significant )?shift)\\b",
+   "flags": "i",
+   "scope": "sentence",
+   "threshold": null,
+   "profile": "all",
+   "message": "Undue emphasis on significance/legacy (Wikipedia 'words to watch').",
+   "fix": "Delete the sentence or replace it with the specific, sourced consequence (who changed what, when).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "It plays a vital role in the ecosystem.",
+    "The founding marked a pivotal moment."
+   ],
+   "examples_ok": [
+    "The pump moves 40 litres a minute."
+   ]
+  },
+  {
+   "id": "EN-AI-011",
+   "category": "copula-avoidance",
+   "severity": "warning",
+   "pattern": "\\b(?:serves|served|stands|stood|functions|functioned|operates|operated) as (?:a|an|the)\\b",
+   "flags": "i",
+   "scope": "sentence",
+   "threshold": null,
+   "profile": "all",
+   "message": "Avoidance of 'is/are' (LLM pattern; one study found >10% drop in 'is/are' in 2023 academic text, per Wikipedia).",
+   "fix": "Use 'is/are/was' unless the role meaning is literal (e.g. 'she served as treasurer').",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing"
+   ],
+   "confidence": "medium",
+   "false_positive_notes": "Literal roles ('served as mayor 2010-2014') are fine.",
+   "examples_flagged": [
+    "Gallery 825 serves as the exhibition space."
+   ],
+   "examples_ok": [
+    "Gallery 825 is the exhibition space."
+   ]
+  },
+  {
+   "id": "EN-AI-012",
+   "category": "superficial-ing-analysis",
+   "severity": "warning",
+   "pattern": ",\\s+(?:highlighting|underscoring|emphasi[sz]ing|showcasing|reflecting|symboli[sz]ing|ensuring|fostering|cultivating|contributing to|enhancing|solidifying|cementing|reinforcing|further (?:highlighting|underscoring))\\b[^.!?]*[.!?]",
+   "flags": "i",
+   "scope": "sentence",
+   "threshold": null,
+   "profile": "all",
+   "message": "Trailing present-participle clause that adds unsupported interpretation (Wikipedia 'superficial analyses'; Reinhart et al.: instruction-tuned LLMs use present participial clauses 2-5x the human rate).",
+   "fix": "Cut the -ing clause. If the interpretation matters, make it its own sentence and attribute it to a named source that actually says it.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing",
+    "https://www.pnas.org/doi/10.1073/pnas.2422455122"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "Sales rose 4%, highlighting the brand's enduring appeal."
+   ],
+   "examples_ok": [
+    "Sales rose 4% in May."
+   ]
+  },
+  {
+   "id": "EN-AI-013",
+   "category": "vague-attribution",
+   "severity": "error",
+   "pattern": "\\b(?:(?:many |some |several |leading |most )?(?:experts|observers|critics|analysts|scholars|researchers|commentators|industry (?:reports|insiders|observers))\\s+(?:say|says|argue|argued|suggest|believe|agree|note|noted|have (?:noted|cited|argued|suggested))|(?:it is|it's) (?:widely|generally|commonly) (?:believed|accepted|recognized|recognised|regarded|acknowledged)|studies (?:show|suggest|have shown)|research (?:shows|suggests|has shown))\\b",
+   "flags": "i",
+   "scope": "sentence",
+   "threshold": null,
+   "profile": "all",
+   "message": "Vague attribution / weasel wording (Wikipedia WP:AIWEASEL). Also an unsubstantiated 'establishment claim' under FTC/ASA rules if used in ads.",
+   "fix": "Name the source and link it, or delete. Never invent the source. If the user supplied none, write the claim as the brand's own view or remove it.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing",
+    "https://www.ftc.gov/legal-library/browse/ftc-policy-statement-regarding-advertising-substantiation",
+    "https://www.asa.org.uk/type/non_broadcast/code_section/03.html"
+   ],
+   "confidence": "high",
+   "false_positive_notes": "Downgrade to warning when a citation/link appears in the same sentence.",
+   "examples_flagged": [
+    "Experts argue that the policy failed.",
+    "Studies show our app improves sleep."
+   ],
+   "examples_ok": [
+    "A 2024 Pew survey (link) found..."
+   ]
+  },
+  {
+   "id": "EN-AI-014",
+   "category": "notability-media-canned",
+   "severity": "warning",
+   "pattern": "\\b(?:(?:has been |was )?(?:featured|profiled|highlighted|covered) (?:in|by) (?:multiple|numerous|various|several|leading|prominent|major|other)\\b|independent coverage|(?:maintains|has) an? (?:active|strong|robust) (?:social media|online|digital) presence|widely covered|garnered (?:significant |widespread )?(?:attention|acclaim|recognition))",
+   "flags": "i",
+   "scope": "sentence",
+   "threshold": null,
+   "profile": "all",
+   "message": "Canned emphasis on media coverage/notability (Wikipedia WP:AIATTR).",
+   "fix": "List the actual outlets with dates and links from the brief, or cut.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "She has been featured in numerous outlets.",
+    "The mall maintains an active social media presence."
+   ],
+   "examples_ok": [
+    "Wired interviewed her in March 2024."
+   ]
+  },
+  {
+   "id": "EN-AI-020",
+   "category": "negative-parallelism-not-just",
+   "severity": "warning",
+   "pattern": "\\bnot (?:just|only|merely|simply)\\b[^.?!]{1,80}?\\bbut(?: also)?\\b",
+   "flags": "i",
+   "scope": "sentence",
+   "threshold": null,
+   "profile": "all",
+   "message": "'Not just X, but (also) Y' negative parallelism (Wikipedia WP:AIPARALLEL).",
+   "fix": "State Y directly. Keep the contrast only when a reader really holds belief X and you can show it is wrong.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "It's not just a tool, but a way of life."
+   ],
+   "examples_ok": [
+    "It is a tool for cutting drywall."
+   ]
+  },
+  {
+   "id": "EN-AI-021",
+   "category": "negative-parallelism-not-x-its-y",
+   "severity": "warning",
+   "pattern": "\\b(?:it'?s|it is|this is|that'?s|that is|this isn'?t|it isn'?t|isn'?t)\\s+(?:not\\s+)?(?:just\\s+|only\\s+|merely\\s+)?(?:about\\s+)?[^.?!,;]{1,60}?(?:[,;:]|\\s[—–-]\\s|—|\\.)\\s*(?:it'?s|it is|this is|that'?s|but)\\b",
+   "flags": "i",
+   "scope": "sentence-pair",
+   "threshold": null,
+   "profile": "all",
+   "message": "'It's not X, it's Y' / 'It isn't about X. It's about Y' reframing.",
+   "fix": "Say Y. Delete the straw-man X.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing"
+   ],
+   "confidence": "medium",
+   "false_positive_notes": "Pattern is broad; confirm that the first clause contains a negation ('not', \"n't\") before flagging.",
+   "examples_flagged": [
+    "It's not a product, it's a movement.",
+    "This isn't about speed. It's about trust."
+   ],
+   "examples_ok": [
+    "It is a product for small teams."
+   ]
+  },
+  {
+   "id": "EN-AI-022",
+   "category": "negative-parallelism-no-x-no-y",
+   "severity": "warning",
+   "pattern": "\\bno [^,.;]{1,30}, no [^,.;]{1,30}(?:,|—|–| -)\\s*(?:just|only)\\b",
+   "flags": "i",
+   "scope": "sentence",
+   "threshold": null,
+   "profile": "all",
+   "message": "'No X, no Y, just Z' formula.",
+   "fix": "Replace with one plain sentence stating Z and the evidence for it.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "No fluff, no filler, just results."
+   ],
+   "examples_ok": [
+    "There was no filler in the report."
+   ]
+  },
+  {
+   "id": "EN-AI-030",
+   "category": "rule-of-three-density",
+   "severity": "warning",
+   "pattern": "\\b(?:\\w+(?:\\s\\w+){0,2}),\\s(?:\\w+(?:\\s\\w+){0,2}),?\\s(?:and|or)\\s(?:\\w+(?:\\s\\w+){0,2})\\b",
+   "flags": "i",
+   "scope": "paragraph",
+   "threshold": "flag when >=2 triads per 100 words or triads in 2 consecutive sentences (heuristic)",
+   "profile": "all",
+   "message": "Triadic lists (rule of three) used as a reflex (Wikipedia WP:RO3).",
+   "fix": "Keep a list of three only when there are exactly three real items. Otherwise use the one or two that matter, or the full list.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing"
+   ],
+   "confidence": "medium",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "It offers speed, clarity, and confidence."
+   ],
+   "examples_ok": [
+    "It offers speed."
+   ]
+  },
+  {
+   "id": "EN-AI-031",
+   "category": "em-dash-overuse",
+   "severity": "warning",
+   "pattern": "—",
+   "flags": "",
+   "scope": "document",
+   "threshold": "warning if >1 per 150 words or >1 per paragraph (heuristic)",
+   "profile": "all",
+   "message": "Em dash density. LLMs use em dashes more than non-professional human writers; a July 2026 study reported by The Economist found Claude used them more than professional writers (per Wikipedia).",
+   "fix": "Replace most with commas, colons, parentheses or full stops. Keep at most one em-dash pair per paragraph.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing",
+    "https://www.economist.com/culture/2026/07/30/how-to-spot-ai-writing"
+   ],
+   "confidence": "medium",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "A tool — fast — cheap."
+   ],
+   "examples_ok": [
+    "A fast, cheap tool."
+   ]
+  },
+  {
+   "id": "EN-AI-032",
+   "category": "formulaic-summary-opener",
+   "severity": "warning",
+   "pattern": "(?:^|(?<=[.!?]\\s))(?:In conclusion|In summary|To summari[sz]e|To sum up|Overall|All in all|Ultimately|In essence)\\b,?",
+   "flags": "m",
+   "scope": "sentence",
+   "threshold": null,
+   "profile": "all",
+   "message": "Formulaic section/paragraph summary (Wikipedia historical indicator).",
+   "fix": "End on the last concrete point or the call to action; do not restate.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "In conclusion, the plan works.",
+    "Overall, results were strong."
+   ],
+   "examples_ok": [
+    "The overall budget is $4m."
+   ]
+  },
+  {
+   "id": "EN-AI-033",
+   "category": "challenges-future-outlook-formula",
+   "severity": "warning",
+   "pattern": "\\bDespite (?:its|their|these|the|this)\\b[^.]{0,100}\\b(?:faces?|faced|challenges)\\b|^#{1,6}\\s*(?:Challenges(?: and (?:Legacy|Future (?:Prospects|Outlook|Directions)))?|Future (?:Outlook|Prospects))\\s*$",
+   "flags": "im",
+   "scope": "sentence",
+   "threshold": null,
+   "profile": "all",
+   "message": "'Despite X, faces challenges...' + 'Future outlook' outline (Wikipedia WP:FACESCHALLENGES).",
+   "fix": "Name specific, sourced problems or drop the section.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "Despite its success, the company faces several challenges."
+   ],
+   "examples_ok": [
+    "The company lost two contracts in 2024."
+   ]
+  },
+  {
+   "id": "EN-AI-034",
+   "category": "didactic-disclaimer",
+   "severity": "warning",
+   "pattern": "\\b(?:it'?s|it is) (?:important|crucial|critical|essential|worth) (?:to (?:note|remember|consider|mention)|noting|mentioning)\\b|\\bworth noting\\b|\\bresults may vary\\b",
+   "flags": "i",
+   "scope": "sentence",
+   "threshold": null,
+   "profile": "all",
+   "message": "Didactic 'it's important to note' disclaimers (Wikipedia historical indicator; Google: avoid placeholder phrases like 'please note').",
+   "fix": "Delete the frame; state the fact.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing",
+    "https://developers.google.com/style/tone"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "It's important to note that fees apply."
+   ],
+   "examples_ok": [
+    "Fees apply."
+   ]
+  },
+  {
+   "id": "EN-AI-040",
+   "category": "chatbot-residue",
+   "severity": "error",
+   "pattern": "(?:^\\s*(?:Certainly|Of course|Absolutely|Sure thing|Great question|Excellent question|What a great question)[!,.]|\\bI hope this helps\\b|\\b(?:let me know|feel free to (?:ask|reach out)) if\\b|\\bWould you like me to\\b|\\bIs there anything else\\b|\\bHere(?:'s| is) (?:a|an|the|your) (?:revised|polished|updated|improved|detailed|refined|rewritten|draft)\\b|\\bAs an AI(?: language model)?\\b|\\bAs a large language model\\b|\\bYou'?re absolutely right\\b)",
+   "flags": "im",
+   "scope": "sentence",
+   "threshold": null,
+   "profile": "all",
+   "message": "Chat-assistant correspondence left in deliverable text (Wikipedia 'collaborative communication').",
+   "fix": "Remove. Deliverables never address the requester or comment on the request.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing",
+    "https://arxiv.org/abs/2310.13548"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "Certainly! Here is a revised version:",
+    "I hope this helps!"
+   ],
+   "examples_ok": [
+    "We hope the new schedule helps commuters."
+   ]
+  },
+  {
+   "id": "EN-AI-041",
+   "category": "knowledge-cutoff-speculation",
+   "severity": "error",
+   "pattern": "\\b(?:as of my (?:last )?(?:knowledge|training) (?:update|cutoff|cut-off)|up to my last training|my knowledge cutoff|based on (?:the )?(?:available|provided) (?:information|sources|search results)|while specific details are (?:limited|scarce)|not widely (?:available|documented|disclosed|reported)|(?:maintains|keeps) a low profile|keeps (?:his|her|their) personal (?:life|details) private)\\b",
+   "flags": "i",
+   "scope": "sentence",
+   "threshold": null,
+   "profile": "all",
+   "message": "Knowledge-cutoff disclaimer or speculation about gaps in sources (Wikipedia). These often precede invented 'likely' facts.",
+   "fix": "Delete. If a needed fact is missing, emit a visible [NEEDS SOURCE: ...] marker for the human instead of guessing.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "As of my last knowledge update, the CEO is Jane Doe.",
+    "He maintains a low profile."
+   ],
+   "examples_ok": [
+    "The CEO is Jane Doe (company site, 2026)."
+   ]
+  },
+  {
+   "id": "EN-AI-042",
+   "category": "placeholder-text",
+   "severity": "error",
+   "pattern": "\\[(?:Your|Company|Client|Product|Brand|Insert|Add|Name|Date|City|X|Y|N)\\b[^\\]]{0,40}\\]|\\b20\\d\\d-xx-xx\\b|\\bLorem ipsum\\b|\\{\\{\\s*[A-Za-z_]+\\s*\\}\\}|\\bTBD\\b|\\bXX+%",
+   "flags": "i",
+   "scope": "token",
+   "threshold": null,
+   "profile": "all",
+   "message": "Unfilled template placeholder (Wikipedia 'phrasal templates and placeholder text').",
+   "fix": "Fill from the brief or stop and ask; never ship a placeholder.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing"
+   ],
+   "confidence": "high",
+   "false_positive_notes": "Intentional merge tags in email templates ({{first_name}}) should be whitelisted per channel.",
+   "examples_flagged": [
+    "Contact [Your Name] at [Company].",
+    "access-date=2025-xx-xx"
+   ],
+   "examples_ok": [
+    "Contact Sara at Acme."
+   ]
+  },
+  {
+   "id": "EN-AI-043",
+   "category": "chatbot-markup-artifacts",
+   "severity": "error",
+   "pattern": "oaicite|contentReference\\[|turn\\d+(?:search|news|view)\\d+|attributableIndex|\\[cite:\\s*\\d+\\]|\\[span_\\d+\\]\\(start_span\\)|grok_card|grok_render_citation_card_json|【\\d+†|utm_source=(?:chatgpt\\.com|openai|copilot\\.com|perplexity)|ppl-ai-file-upload|:::writing",
+   "flags": "i",
+   "scope": "token",
+   "threshold": null,
+   "profile": "all",
+   "message": "Internal citation/markup tokens leaked from chatbots (ChatGPT, Gemini, Grok, DeepSeek, Perplexity) per Wikipedia.",
+   "fix": "Delete the artifact; re-check the claim it was attached to against a real source.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "Revenue grew 12%.:contentReference[oaicite:0]{index=0}",
+    "See [cite: 3]."
+   ],
+   "examples_ok": [
+    "See the 2024 annual report."
+   ]
+  },
+  {
+   "id": "EN-AI-050",
+   "category": "title-case-heading",
+   "severity": "warning",
+   "pattern": "^#{1,6}\\s+(?:[A-Z][\\w'’-]*\\s+)(?:(?:a|an|the|and|or|of|in|on|for|to|with|by|at)\\s+|[A-Z][\\w'’-]*\\s+){1,}[A-Z][\\w'’-]*\\s*$",
+   "flags": "m",
+   "scope": "line",
+   "threshold": null,
+   "profile": "all except Chicago-titles/Apple-UI",
+   "message": "Title Case heading. AI chatbots strongly tend to capitalise all main words (Wikipedia); Microsoft, Google, GOV.UK and Material use sentence case.",
+   "fix": "Use sentence case: capitalise the first word and proper nouns only (unless the house style is Chicago/AP-title or Apple menu/button).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing",
+    "https://learn.microsoft.com/en-us/style-guide/top-10-tips-style-voice",
+    "https://developers.google.com/style/highlights",
+    "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/style-guides/a-to-z-style-guide/"
+   ],
+   "confidence": "high",
+   "false_positive_notes": "Headings made of proper nouns ('## New York Stock Exchange') -> keep a proper-noun allowlist.",
+   "examples_flagged": [
+    "## Impact of Technology and Digitalization"
+   ],
+   "examples_ok": [
+    "## Impact of technology on trade law"
+   ]
+  },
+  {
+   "id": "EN-AI-051",
+   "category": "bold-overuse",
+   "severity": "warning",
+   "pattern": "\\*\\*[^*\\n]+\\*\\*|__[^_\\n]+__",
+   "flags": "",
+   "scope": "paragraph",
+   "threshold": "warning if >1 bold span per 100 words in prose (heuristic)",
+   "profile": "all",
+   "message": "Mechanical boldface for emphasis (Wikipedia WP:AIBOLD; GOV.UK: do not use bold for emphasis).",
+   "fix": "Remove bold from running text; reserve bold for UI element names in instructions.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing",
+    "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/style-guides/a-to-z-style-guide/"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "We offer **speed**, **trust** and **scale**."
+   ],
+   "examples_ok": [
+    "We offer speed."
+   ]
+  },
+  {
+   "id": "EN-AI-052",
+   "category": "inline-header-bullets",
+   "severity": "warning",
+   "pattern": "^\\s*(?:[-*•]|\\d+\\.)\\s+\\*\\*[^*\\n]{1,60}?:?\\*\\*\\s*:?\\s",
+   "flags": "m",
+   "scope": "line",
+   "threshold": "flag when >=3 consecutive lines match",
+   "profile": "all",
+   "message": "Bullets that start with a bold inline header and colon (Wikipedia 'inline-header vertical lists').",
+   "fix": "Use prose, or plain bullets with a lead-in line (GOV.UK bullets rules).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing",
+    "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/style-guides/a-to-z-style-guide/"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "- **Speed**: fast loading.",
+    "1. **Security:** encrypted."
+   ],
+   "examples_ok": [
+    "- fast loading"
+   ]
+  },
+  {
+   "id": "EN-AI-053",
+   "category": "emoji-as-formatting",
+   "severity": "warning",
+   "pattern": "^\\s*(?:[-*]\\s*|#{1,6}\\s*)?\\p{Extended_Pictographic}",
+   "flags": "mu",
+   "scope": "line",
+   "threshold": null,
+   "profile": "formal/long-form; relax for social",
+   "message": "Emoji used as bullet/heading decoration (Wikipedia). Mailchimp: use emoji 'infrequently and deliberately'.",
+   "fix": "Remove from headings and bullets in professional copy; allow in social copy only if the brand voice permits.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing",
+    "https://styleguide.mailchimp.com/grammar-and-mechanics/"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "✅ Fast setup",
+    "## 🚀 Launch plan"
+   ],
+   "examples_ok": [
+    "Fast setup"
+   ]
+  },
+  {
+   "id": "EN-AI-054",
+   "category": "quote-style-inconsistency",
+   "severity": "warning",
+   "pattern": "(document check: both [\\\"'] and [“”‘’] present)",
+   "flags": "",
+   "scope": "document",
+   "threshold": null,
+   "profile": "all",
+   "message": "Mixed curly and straight quotes/apostrophes in one text (Wikipedia notes inconsistency as a sign; curly quotes alone prove nothing).",
+   "fix": "Normalise to the house choice (typographic curly quotes for print/web copy; straight in code).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing"
+   ],
+   "confidence": "medium",
+   "false_positive_notes": null,
+   "examples_flagged": [],
+   "examples_ok": []
+  },
+  {
+   "id": "EN-AI-060",
+   "category": "vague-association",
+   "severity": "warning",
+   "pattern": "\\b(?:(?:closely |widely |particularly )?associated with|in connection (?:with|to)|connected (?:with|to))\\b",
+   "flags": "i",
+   "scope": "sentence",
+   "threshold": null,
+   "profile": "all",
+   "message": "Vague 'associated with' instead of the stated relationship (Wikipedia WP:AICONNECT). Low precision alone.",
+   "fix": "State the relation: 'was CEO of', 'taught at', 'founded'.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing"
+   ],
+   "confidence": "medium",
+   "false_positive_notes": "Legitimate in science ('X is associated with Y' = correlation). Only count in bios/company copy.",
+   "examples_flagged": [
+    "He was associated with leadership of ExampleCorp."
+   ],
+   "examples_ok": [
+    "He was CEO of ExampleCorp."
+   ]
+  },
+  {
+   "id": "EN-AI-061",
+   "category": "additionally-opener",
+   "severity": "warning",
+   "pattern": "(?:^|(?<=[.!?]\\s))(?:Additionally|Furthermore|Moreover|Notably|Consequently)\\b,",
+   "flags": "m",
+   "scope": "sentence",
+   "threshold": "flag when >1 per 200 words",
+   "profile": "all",
+   "message": "Sentence-initial transition used as filler; 'Additionally' is on Wikipedia's AI-vocabulary list (weak tell in isolation).",
+   "fix": "Delete, or use 'also'/'and' mid-sentence.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing"
+   ],
+   "confidence": "medium",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "Additionally, it scales."
+   ],
+   "examples_ok": [
+    "It also scales."
+   ]
+  },
+  {
+   "id": "EN-AI-062",
+   "category": "marketing-has-verbs",
+   "severity": "warning",
+   "pattern": "\\b(?:boasts|features|offers)\\s+(?:a|an|over|more than|\\d)\\b",
+   "flags": "i",
+   "scope": "sentence",
+   "threshold": null,
+   "profile": "all",
+   "message": "Marketing verbs replacing neutral 'has' (Wikipedia WP:AINOCOPULA).",
+   "fix": "Use 'has' in descriptive copy unless 'offers' is literally an offer.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing"
+   ],
+   "confidence": "medium",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "The hotel boasts a rooftop pool."
+   ],
+   "examples_ok": [
+    "The hotel has a rooftop pool."
+   ]
+  },
+  {
+   "id": "EN-AI-063",
+   "category": "sycophantic-evaluation",
+   "severity": "error",
+   "pattern": "\\b(?:great|excellent|fantastic|wonderful|insightful) (?:question|point|idea|observation)\\b|\\bwhat a (?:great|fantastic|wonderful)\\b",
+   "flags": "i",
+   "scope": "sentence",
+   "threshold": null,
+   "profile": "all",
+   "message": "Sycophantic praise of the requester; sycophancy is a documented RLHF behaviour (Sharma et al.).",
+   "fix": "Remove. Critique on the merits.",
+   "sources": [
+    "https://arxiv.org/abs/2310.13548",
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "Great question! Here's why."
+   ],
+   "examples_ok": [
+    "The question has two parts."
+   ]
+  },
+  {
+   "id": "EN-FACT-001",
+   "category": "unsourced-statistic",
+   "severity": "error",
+   "pattern": "\\b\\d+(?:[.,]\\d+)?\\s?(?:%|percent|per cent|x|times|million|billion|thousand|k\\b)",
+   "flags": "i",
+   "scope": "sentence",
+   "threshold": null,
+   "profile": "all",
+   "message": "Quantitative claim. Must trace to the brief or a cited source.",
+   "fix": "Keep only if the number appears verbatim in the input facts or a cited source; else replace with [NEEDS SOURCE: metric] and do not estimate.",
+   "sources": [
+    "https://www.ftc.gov/legal-library/browse/ftc-policy-statement-regarding-advertising-substantiation",
+    "https://www.asa.org.uk/type/non_broadcast/code_section/03.html",
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing"
+   ],
+   "confidence": "high",
+   "false_positive_notes": "Suppress when the same number exists in the input fact sheet (entity-diff check EN-FACT-005).",
+   "examples_flagged": [
+    "Cuts costs by 43%.",
+    "Used by 2 million teams."
+   ],
+   "examples_ok": [
+    "Cuts costs."
+   ]
+  },
+  {
+   "id": "EN-FACT-002",
+   "category": "absolute-superlative-claim",
+   "severity": "warning",
+   "pattern": "(?:\\b(?:the (?:best|first|only|leading|largest|fastest|cheapest|most (?:trusted|popular|advanced|secure))|world'?s (?:first|leading|best|largest|fastest)|number one|no\\.? ?1|unmatched|unparalleled|unrivalled|unrivaled|guaranteed)\\b|#1\\b|\\b100% (?:safe|secure|effective|guaranteed|accurate)\\b)",
+   "flags": "i",
+   "scope": "sentence",
+   "threshold": null,
+   "profile": "all",
+   "message": "Objective superlative/absolute claim needs documentary evidence (CAP 3.7; FTC reasonable-basis). Obvious puffery is tolerated; measurable superlatives are not.",
+   "fix": "Qualify with the source and scope ('fastest of 5 tools tested by X in 2026') or rewrite as a non-comparative benefit.",
+   "sources": [
+    "https://www.asa.org.uk/type/non_broadcast/code_section/03.html",
+    "https://www.ftc.gov/legal-library/browse/ftc-policy-statement-regarding-advertising-substantiation"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "The world's first AI notebook.",
+    "The #1 CRM."
+   ],
+   "examples_ok": [
+    "A CRM for small teams."
+   ]
+  },
+  {
+   "id": "EN-FACT-003",
+   "category": "establishment-claim",
+   "severity": "error",
+   "pattern": "\\b(?:clinically|scientifically|independently|lab)[- ](?:proven|tested|validated)|\\b(?:tests|studies|research|science|data) (?:prove|proves|show|shows|confirm|confirms)\\b|\\b(?:doctors|dentists|dermatologists|experts) (?:recommend|approve)\\b",
+   "flags": "i",
+   "scope": "sentence",
+   "threshold": null,
+   "profile": "all",
+   "message": "Establishment claim: FTC expects at least the level of substantiation the ad claims ('tests prove', 'doctors recommend').",
+   "fix": "Cite the actual study/test (who, when, n, result) supplied by the client, or remove.",
+   "sources": [
+    "https://www.ftc.gov/legal-library/browse/ftc-policy-statement-regarding-advertising-substantiation",
+    "https://www.asa.org.uk/type/non_broadcast/code_section/03.html"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "Clinically proven to reduce stress.",
+    "Doctors recommend it."
+   ],
+   "examples_ok": [
+    "Designed to help you wind down."
+   ]
+  },
+  {
+   "id": "EN-FACT-004",
+   "category": "invented-testimonial",
+   "severity": "error",
+   "pattern": "[\"“][^\"”\\n]{10,300}[\"”]\\s*(?:[—–-]|~)\\s*[A-Z][a-z]+(?:\\s[A-Z]\\.?)?(?:,\\s*[^\\n]{0,60})?",
+   "flags": "m",
+   "scope": "line",
+   "threshold": null,
+   "profile": "all",
+   "message": "Customer quote/testimonial. FTC 16 CFR Part 465 (2024) bans fake testimonials, including AI-generated ones and ones from people who do not exist.",
+   "fix": "Use only quotes supplied verbatim by the client with a real, consenting source; otherwise use a clearly marked [TESTIMONIAL NEEDED] slot.",
+   "sources": [
+    "https://www.ftc.gov/news-events/news/press-releases/2024/08/federal-trade-commission-announces-final-rule-banning-fake-reviews-testimonials"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "“This app changed my life.” — Sarah K., Marketing Manager"
+   ],
+   "examples_ok": [
+    "Our customers include Acme (case study linked)."
+   ]
+  },
+  {
+   "id": "EN-FACT-005",
+   "category": "entity-not-in-brief",
+   "severity": "error",
+   "pattern": "(algorithmic: extract numbers, dates, money, percentages, proper nouns, URLs, quotes from output; diff against input brief + cited sources)",
+   "flags": "",
+   "scope": "document",
+   "threshold": null,
+   "profile": "all",
+   "message": "Any specific fact (name, number, date, award, customer, study) that is not present in the brief or an attached source is presumed invented.",
+   "fix": "Remove or replace with a [NEEDS SOURCE] marker; list all such items in the QA report to the human.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing",
+    "https://www.ftc.gov/legal-library/browse/ftc-policy-statement-regarding-advertising-substantiation"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [],
+   "examples_ok": []
+  },
+  {
+   "id": "EN-FACT-006",
+   "category": "citation-integrity",
+   "severity": "error",
+   "pattern": "\\b10\\.\\d{4,9}/[-._;()/:A-Za-z0-9]+\\b|\\bISBN(?:-1[03])?:?\\s*[0-9X-]{10,17}\\b",
+   "flags": "i",
+   "scope": "token",
+   "threshold": null,
+   "profile": "all",
+   "message": "DOI/ISBN present: Wikipedia lists invalid DOIs/ISBNs and DOIs leading to unrelated papers as AI signs.",
+   "fix": "Resolve every DOI (doi.org) and validate ISBN checksums; confirm title/author match the claim.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "doi:10.1126/sciadv.adt3813",
+    "ISBN 978-0-88723-019-6"
+   ],
+   "examples_ok": [
+    "no ids here"
+   ]
+  },
+  {
+   "id": "EN-PL-001",
+   "category": "long-sentence",
+   "severity": "warning",
+   "pattern": "(sentence length > 25 words)",
+   "flags": "",
+   "scope": "sentence",
+   "threshold": "warning >25 words; error >40 words (the 40 is a heuristic)",
+   "profile": "all",
+   "message": "GOV.UK: check sentences over 25 words; plainlanguage: one idea per sentence.",
+   "fix": "Split at the conjunction or move conditions into their own sentence.",
+   "sources": [
+    "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/style-guides/a-to-z-style-guide/",
+    "https://github.com/GSA/plainlanguage.gov/tree/main/_pages/guidelines/concise"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [],
+   "examples_ok": []
+  },
+  {
+   "id": "EN-PL-002",
+   "category": "long-paragraph",
+   "severity": "warning",
+   "pattern": "(paragraph length)",
+   "flags": "",
+   "scope": "paragraph",
+   "threshold": "warning >150 words; error >250 words",
+   "profile": "all",
+   "message": "plainlanguage.gov: paragraphs of no more than 150 words in 3-8 sentences; never longer than 250.",
+   "fix": "Split by topic; add a heading if needed.",
+   "sources": [
+    "https://github.com/GSA/plainlanguage.gov/tree/main/_pages/guidelines/concise"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [],
+   "examples_ok": []
+  },
+  {
+   "id": "EN-PL-003",
+   "category": "passive-voice",
+   "severity": "warning",
+   "pattern": "\\b(?:am|is|are|was|were|be|been|being)\\s+(?:\\w+ly\\s+)?(?:\\w+ed|built|done|made|given|taken|shown|known|seen|written|sent|paid|held|found|kept|left|told|brought|bought|set|put|run|chosen|driven|drawn|grown|thrown|won|lost|met|read|led)\\b",
+   "flags": "i",
+   "scope": "sentence",
+   "threshold": "warning if >20% of sentences (heuristic)",
+   "profile": "all",
+   "message": "Passive construction (plainlanguage, GOV.UK, Mailchimp, Google all prefer active voice).",
+   "fix": "Name the actor: 'The form must be completed' -> 'You must complete the form'.",
+   "sources": [
+    "https://digital.gov/guides/plain-language/writing",
+    "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/right-tone/",
+    "https://styleguide.mailchimp.com/grammar-and-mechanics/",
+    "https://developers.google.com/style/highlights"
+   ],
+   "confidence": "medium",
+   "false_positive_notes": "Adjectival participles ('is interested', 'is based in') cause false positives; count density, not single hits.",
+   "examples_flagged": [
+    "The form must be completed by you.",
+    "Mistakes were made."
+   ],
+   "examples_ok": [
+    "You must complete the form."
+   ]
+  },
+  {
+   "id": "EN-PL-004",
+   "category": "hidden-verb",
+   "severity": "warning",
+   "pattern": "\\b(?:conduct(?:ed|s)?|perform(?:ed|s)?|make|made|makes|give|gave|gives|provide[sd]?|reach(?:ed)?|achieve[sd]?|effect(?:ed)?|take|took|takes|carry out|carried out)\\s+(?:an?|the)\\s+(?:\\w+\\s+)?\\w+(?:tion|sion|ment|ance|ence|ancy|ency|al|sis|ure)\\b",
+   "flags": "i",
+   "scope": "sentence",
+   "threshold": null,
+   "profile": "all",
+   "message": "Hidden verb / nominalisation (plainlanguage 'avoid hidden verbs'; GOV.UK: -ion/-ment words lengthen sentences).",
+   "fix": "'conduct an analysis' -> 'analyse'; 'make a decision' -> 'decide'; 'provide assistance' -> 'help'.",
+   "sources": [
+    "https://github.com/GSA/plainlanguage.gov/tree/main/_pages/guidelines/words",
+    "https://digital.gov/guides/plain-language/writing",
+    "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-language/"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "We conducted an analysis of costs.",
+    "Please make a decision."
+   ],
+   "examples_ok": [
+    "We analysed costs."
+   ]
+  },
+  {
+   "id": "EN-PL-005",
+   "category": "complex-word",
+   "severity": "warning",
+   "pattern": "\\b(?:at this point in time|due to the fact that|at the present time|in accordance with|for the purpose of|has the ability to|in the event that|in the amount of|in the event of|with regard to|in order that|subsequent to|approximately|subsequently|in regard to|utilization|in order to|methodology|a number of|demonstrate|facilitate|promulgate|assistance|sufficient|is able to|additional|implement|endeavour|ascertain|terminate|commence|prior to|numerous|endeavor|purchase|initiate|utilize|utilise|assist)\\b",
+   "flags": "i",
+   "scope": "token",
+   "threshold": null,
+   "profile": "all",
+   "message": "Formal word where a common one works (plainlanguage 'dirty dozen' and simple-words table; GOV.UK clear language).",
+   "fix": "Replace per map: utilize -> use; utilise -> use; utilization -> use; facilitate -> help, ease (or say how); commence -> begin, start; implement -> carry out, start; in accordance with -> under, per, following; in order to -> to; in order that -> so; in the event of -> if; in the event that -> if; in the amount of -> for; promulgate -> issue, publish; assist -> help; assistance -> help; prior to -> before; subsequent to -> after; subsequently -> later, then; numerous -> many; sufficient -> enough; methodology -> method; endeavor -> try; endeavour -> try; ascertain -> find out; approximately -> about; purchase -> buy; due to the fact that -> because; at this point in time -> now; at the present time -> now; a number of -> some; with regard to -> about; in regard to -> about; for the purpose of -> to, for; is able to -> can; has the ability to -> can; initiate -> start; terminate -> end; demonstrate -> show; additional -> more, extra",
+   "sources": [
+    "https://github.com/GSA/plainlanguage.gov/tree/main/_pages/guidelines/words",
+    "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-language/",
+    "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/style-guides/a-to-z-style-guide/"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "We utilize AI in order to help.",
+    "Prior to purchase..."
+   ],
+   "examples_ok": [
+    "We use AI to help."
+   ]
+  },
+  {
+   "id": "EN-PL-006",
+   "category": "shall-requirement",
+   "severity": "warning",
+   "pattern": "\\bshall\\b",
+   "flags": "i",
+   "scope": "token",
+   "threshold": null,
+   "profile": "all",
+   "message": "'Shall' is ambiguous; use 'must' for requirements (plainlanguage; GOV.UK: use 'must' for legal requirements).",
+   "fix": "Use 'must' / 'must not'.",
+   "sources": [
+    "https://github.com/GSA/plainlanguage.gov/tree/main/_pages/guidelines/conversational",
+    "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-language/"
+   ],
+   "confidence": "high",
+   "false_positive_notes": "Quoted legal text must stay verbatim.",
+   "examples_flagged": [
+    "The user shall submit the form."
+   ],
+   "examples_ok": [
+    "You must submit the form."
+   ]
+  },
+  {
+   "id": "EN-PL-007",
+   "category": "double-negative",
+   "severity": "warning",
+   "pattern": "\\bnot\\s+(?:un|in|im|non|dis)\\w{3,}\\b|\\bno fewer than\\b|\\bnot\\s+[^.]{0,40}\\bunless\\b|\\bhas not yet attained\\b",
+   "flags": "i",
+   "scope": "sentence",
+   "threshold": null,
+   "profile": "all",
+   "message": "Double negative (plainlanguage 'use positive language').",
+   "fix": "'no fewer than' -> 'at least'; 'is not ... unless' -> 'is ... only if'.",
+   "sources": [
+    "https://github.com/GSA/plainlanguage.gov/tree/main/_pages/guidelines/concise"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "This is not uncommon.",
+    "no fewer than 10"
+   ],
+   "examples_ok": [
+    "This is common."
+   ]
+  },
+  {
+   "id": "EN-PL-008",
+   "category": "slash-construction",
+   "severity": "warning",
+   "pattern": "\\band/or\\b|(?<![/:.\\w])[A-Za-z]{2,}/[A-Za-z]{2,}\\b(?!/)",
+   "flags": "i",
+   "scope": "token",
+   "threshold": null,
+   "profile": "all",
+   "message": "Slashes are ambiguous (plainlanguage 'don't use slashes'; GOV.UK: avoid document(s)).",
+   "fix": "'a and/or b' -> 'a or b or both'; pick one term.",
+   "sources": [
+    "https://github.com/GSA/plainlanguage.gov/tree/main/_pages/guidelines/conversational",
+    "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/style-guides/a-to-z-style-guide/"
+   ],
+   "confidence": "medium",
+   "false_positive_notes": "Skip URLs, dates, fractions, units (km/h), code.",
+   "examples_flagged": [
+    "Bring your ID and/or passport."
+   ],
+   "examples_ok": [
+    "Bring your ID or passport, or both."
+   ]
+  },
+  {
+   "id": "EN-PL-009",
+   "category": "placeholder-phrase",
+   "severity": "warning",
+   "pattern": "\\b(?:please note|kindly note|note that|at this time|be advised|it should be noted)\\b",
+   "flags": "i",
+   "scope": "sentence",
+   "threshold": null,
+   "profile": "all",
+   "message": "Placeholder phrases (Google: avoid 'please note', 'at this time'; GOV.UK: usually no need for 'please'/'please note').",
+   "fix": "Delete the phrase.",
+   "sources": [
+    "https://developers.google.com/style/tone",
+    "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/right-tone/"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "Please note that the office is closed."
+   ],
+   "examples_ok": [
+    "The office is closed."
+   ]
+  },
+  {
+   "id": "EN-PL-010",
+   "category": "minimizing-words",
+   "severity": "warning",
+   "pattern": "\\b(?:simply|just|easily|obviously|of course|it'?s (?:easy|that simple)|quickly)\\b",
+   "flags": "i",
+   "scope": "sentence",
+   "threshold": null,
+   "profile": "instructional/UX copy",
+   "message": "Google: avoid 'simply', 'It's easy', 'quickly' in instructions (condescending if the reader struggles).",
+   "fix": "Delete, or give the actual time/steps.",
+   "sources": [
+    "https://developers.google.com/style/tone"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "Simply click Save."
+   ],
+   "examples_ok": [
+    "Click Save."
+   ]
+  },
+  {
+   "id": "EN-PL-011",
+   "category": "exclamation-overuse",
+   "severity": "warning",
+   "pattern": "!{2,}|!",
+   "flags": "",
+   "scope": "document",
+   "threshold": "error on '!!'; warning if >1 per 300 words or any in error/alert copy",
+   "profile": "all",
+   "message": "Mailchimp: exclamation points sparingly, never more than one at a time, never in failure messages; Google: avoid exclamation marks.",
+   "fix": "Remove; let the fact carry the energy.",
+   "sources": [
+    "https://styleguide.mailchimp.com/grammar-and-mechanics/",
+    "https://developers.google.com/style/tone"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "Wow!!"
+   ],
+   "examples_ok": [
+    "Done."
+   ]
+  },
+  {
+   "id": "EN-PL-012",
+   "category": "weak-opening-there-is",
+   "severity": "warning",
+   "pattern": "(?:^|(?<=[.!?]\\s))There (?:is|are|was|were)\\b",
+   "flags": "m",
+   "scope": "sentence",
+   "threshold": null,
+   "profile": "all",
+   "message": "Microsoft: avoid weak phrasing like 'there is/are/were'.",
+   "fix": "Start with the real subject and verb.",
+   "sources": [
+    "https://learn.microsoft.com/en-us/style-guide/top-10-tips-style-voice"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "There are three ways to pay."
+   ],
+   "examples_ok": [
+    "You can pay three ways."
+   ]
+  },
+  {
+   "id": "EN-PL-013",
+   "category": "undefined-abbreviation",
+   "severity": "warning",
+   "pattern": "\\b[A-Z]{2,6}s?\\b",
+   "flags": "",
+   "scope": "document",
+   "threshold": "flag first occurrence when no '(ABBR)' or 'ABBR (' expansion exists earlier and ABBR not in allowlist",
+   "profile": "all",
+   "message": "First use of an uncommon abbreviation without expansion (GOV.UK, plainlanguage, Mailchimp).",
+   "fix": "Expand on first use: 'Personal Independence Payment (PIP)'. Skip universally known ones (BBC, API, HTML).",
+   "sources": [
+    "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/style-guides/a-to-z-style-guide/",
+    "https://github.com/GSA/plainlanguage.gov/tree/main/_pages/guidelines/words",
+    "https://styleguide.mailchimp.com/grammar-and-mechanics/"
+   ],
+   "confidence": "medium",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "Submit the DPIA."
+   ],
+   "examples_ok": [
+    "Submit the data protection impact assessment (DPIA)."
+   ]
+  },
+  {
+   "id": "EN-PL-014",
+   "category": "govuk-metaphor-buzz",
+   "severity": "warning",
+   "pattern": "\\b(?:going forward|moving forward|drive (?:growth|change|innovation|results|engagement)|drive out|one-stop shop|ring[- ]?fenc(?:e|ed|ing)|deliver (?:improvements|value|outcomes|results|change)|tackle|slim down|overarching|disincentivi[sz]e|incentivi[sz]e|liaise|dialogue)\\b",
+   "flags": "i",
+   "scope": "token",
+   "threshold": null,
+   "profile": "all",
+   "message": "GOV.UK 'words to avoid' and metaphors.",
+   "fix": "going forward -> from now on/in the future; drive -> create/cause/encourage; deliver -> make/create/provide; tackle -> stop/solve/deal with.",
+   "sources": [
+    "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/style-guides/a-to-z-style-guide/"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "Going forward, we will drive growth."
+   ],
+   "examples_ok": [
+    "From now on, we will grow sales by..."
+   ]
+  },
+  {
+   "id": "EN-ST-001",
+   "category": "serial-comma-missing",
+   "severity": "warning",
+   "pattern": "\\b\\w+,\\s\\w+(?:\\s\\w+)?\\s(?:and|or)\\s\\w+",
+   "flags": "",
+   "scope": "sentence",
+   "threshold": null,
+   "profile": "Chicago|Microsoft|Google|Mailchimp",
+   "message": "List of 3+ without serial comma. Required by Chicago (CMOS 6.19), Microsoft, Google, Mailchimp; AP uses it only to avoid ambiguity.",
+   "fix": "Profile Chicago/Microsoft/Google/Mailchimp: add the comma before and/or. Profile AP: leave off in simple series.",
+   "sources": [
+    "https://cmosshoptalk.com/2020/02/11/oxford-chicago-and-the-serial-comma/",
+    "https://learn.microsoft.com/en-us/style-guide/top-10-tips-style-voice",
+    "https://developers.google.com/style/highlights",
+    "https://styleguide.mailchimp.com/grammar-and-mechanics/",
+    "https://owl.purdue.edu/owl/subject_specific_writing/journalism_and_journalistic_writing/ap_style.html"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "Android, iOS and Windows"
+   ],
+   "examples_ok": [
+    "Android, iOS, and Windows"
+   ]
+  },
+  {
+   "id": "EN-ST-002",
+   "category": "em-dash-spacing",
+   "severity": "warning",
+   "pattern": "\\s—\\s|\\s--\\s|\\w\\s-\\s\\w",
+   "flags": "",
+   "scope": "token",
+   "threshold": null,
+   "profile": "Chicago|Microsoft|Mailchimp",
+   "message": "Spaced em dash or hyphen-as-dash. Chicago, Microsoft ('Don't be spacey') and Mailchimp use closed em dashes; AP spaces them. Wikipedia notes spaced em dashes are typical of AI output.",
+   "fix": "Profile Chicago/Microsoft/Mailchimp: word—word. Profile AP: word — word. Better: fewer dashes (EN-AI-031).",
+   "sources": [
+    "https://learn.microsoft.com/en-us/style-guide/top-10-tips-style-voice",
+    "https://styleguide.mailchimp.com/grammar-and-mechanics/",
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing",
+    "https://apvschicago.com/2011/05/em-dashes-and-ellipses-closed-or-spaced.html"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "Use pipelines — logical groups — to..."
+   ],
+   "examples_ok": [
+    "Use pipelines—logical groups—to..."
+   ]
+  },
+  {
+   "id": "EN-ST-003",
+   "category": "single-digit-numeral",
+   "severity": "warning",
+   "pattern": "(?<![\\d.,:$£€#/-])(?<!\\b(?:[Ss]tep|[Pp]age|[Cc]hapter|[Vv]ersion|[Rr]ow|[Cc]olumn|[Pp]art|[Pp]hase|[Ll]evel|[Tt]ier|[Gg]rade|[Nn]o\\.|of|[Nn]umber)\\s)\\b[1-9]\\b(?!\\s?(?:%|percent|per cent|am|pm|a\\.m\\.|p\\.m\\.|AM|PM|px|cm|mm|kg|km|GB|MB|x\\b|×|:|\\.\\d|,\\d|-\\w|\\)))",
+   "flags": "",
+   "scope": "token",
+   "threshold": null,
+   "profile": "AP|Microsoft|Chicago",
+   "message": "Numeral for one to nine in body text. AP and Microsoft spell out zero/one-nine; Chicago spells out zero-one hundred in nontechnical text (CMOS 9.2); GOV.UK uses numerals for everything except 'one' in phrases.",
+   "fix": "Apply profile: AP/Microsoft -> words for 1-9 (except ages, %, measurements, times, steps); Chicago -> words to 100; GOV.UK -> numerals.",
+   "sources": [
+    "https://learn.microsoft.com/en-us/style-guide/numbers",
+    "https://owl.purdue.edu/owl/subject_specific_writing/journalism_and_journalistic_writing/ap_style.html",
+    "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/style-guides/a-to-z-style-guide/",
+    "https://www.chicagomanualofstyle.org/help-tools/what-s-new.html"
+   ],
+   "confidence": "medium",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "We hired 3 people."
+   ],
+   "examples_ok": [
+    "We hired three people.",
+    "Step 3 of 5 at 5 pm"
+   ]
+  },
+  {
+   "id": "EN-ST-004",
+   "category": "sentence-starts-with-numeral",
+   "severity": "warning",
+   "pattern": "(?:^|(?<=[.!?]\\s))\\d[\\d,.]*\\b",
+   "flags": "m",
+   "scope": "sentence",
+   "threshold": null,
+   "profile": "all",
+   "message": "Do not start a sentence with a numeral (Microsoft, GOV.UK, Mailchimp).",
+   "fix": "Spell it out ('Thirty-four') or add a modifier ('More than 10 apps...').",
+   "sources": [
+    "https://learn.microsoft.com/en-us/style-guide/numbers",
+    "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/style-guides/a-to-z-style-guide/",
+    "https://styleguide.mailchimp.com/grammar-and-mechanics/"
+   ],
+   "confidence": "high",
+   "false_positive_notes": "List items may start with numerals (Microsoft).",
+   "examples_flagged": [
+    "10 apps are included."
+   ],
+   "examples_ok": [
+    "More than 10 apps are included."
+   ]
+  },
+  {
+   "id": "EN-ST-005",
+   "category": "ambiguous-numeric-date",
+   "severity": "warning",
+   "pattern": "\\b\\d{1,2}/\\d{1,2}/\\d{2,4}\\b",
+   "flags": "",
+   "scope": "token",
+   "threshold": null,
+   "profile": "all",
+   "message": "All-numeric dates are ambiguous across locales (Microsoft global tip).",
+   "fix": "Spell the month: en-US 'June 12, 2017'; en-GB/GOV.UK '12 June 2017' (no comma).",
+   "sources": [
+    "https://learn.microsoft.com/en-us/style-guide/numbers",
+    "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/style-guides/a-to-z-style-guide/"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "Due 6/12/2017"
+   ],
+   "examples_ok": [
+    "Due 12 June 2017"
+   ]
+  },
+  {
+   "id": "EN-ST-006",
+   "category": "range-with-hyphen",
+   "severity": "warning",
+   "pattern": "\\b\\d+(?:am|pm)?\\s?[-–]\\s?\\d+(?:am|pm)?\\b",
+   "flags": "i",
+   "scope": "token",
+   "threshold": null,
+   "profile": "GOV.UK|Microsoft",
+   "message": "GOV.UK: use 'to' in ranges, not hyphens or dashes (except tables). Microsoft: 'from...through', en dash only for pages/space-limited UI.",
+   "fix": "'10am to 11am', '500 to 900'.",
+   "sources": [
+    "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/style-guides/a-to-z-style-guide/",
+    "https://learn.microsoft.com/en-us/style-guide/numbers"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "Open 10-11am",
+    "500-900 people"
+   ],
+   "examples_ok": [
+    "Open 10am to 11am"
+   ]
+  },
+  {
+   "id": "EN-ST-007",
+   "category": "ampersand-in-prose",
+   "severity": "warning",
+   "pattern": "(?<=\\s)&(?=\\s)",
+   "flags": "",
+   "scope": "token",
+   "threshold": null,
+   "profile": "all",
+   "message": "GOV.UK and Mailchimp: use 'and', not '&', except in brand/company names.",
+   "fix": "Replace with 'and'.",
+   "sources": [
+    "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/style-guides/a-to-z-style-guide/",
+    "https://styleguide.mailchimp.com/grammar-and-mechanics/"
+   ],
+   "confidence": "high",
+   "false_positive_notes": "Brand names (AT&T, M&S, H&M) and code.",
+   "examples_flagged": [
+    "Terms & conditions"
+   ],
+   "examples_ok": [
+    "Terms and conditions"
+   ]
+  },
+  {
+   "id": "EN-ST-008",
+   "category": "heading-terminal-punctuation",
+   "severity": "warning",
+   "pattern": "^#{1,6}\\s+.*[.:]\\s*$",
+   "flags": "m",
+   "scope": "line",
+   "threshold": null,
+   "profile": "all",
+   "message": "Microsoft: no period or colon at the end of titles and headings.",
+   "fix": "Remove the final period/colon.",
+   "sources": [
+    "https://learn.microsoft.com/en-us/style-guide/top-10-tips-style-voice"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "## Move a tile."
+   ],
+   "examples_ok": [
+    "## Move a tile"
+   ]
+  },
+  {
+   "id": "EN-ST-009",
+   "category": "double-space",
+   "severity": "warning",
+   "pattern": "(?<=[.?!:])  +(?=\\S)",
+   "flags": "",
+   "scope": "token",
+   "threshold": null,
+   "profile": "all",
+   "message": "Microsoft: one space after periods, question marks and colons.",
+   "fix": "Use one space.",
+   "sources": [
+    "https://learn.microsoft.com/en-us/style-guide/top-10-tips-style-voice"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "End.  Next"
+   ],
+   "examples_ok": [
+    "End. Next"
+   ]
+  },
+  {
+   "id": "EN-ST-010",
+   "category": "vague-link-text",
+   "severity": "warning",
+   "pattern": "\\[(?:click here|here|read more|more|this link|learn more|link)\\]\\(|<a [^>]*>\\s*(?:click here|here|read more|more)\\s*</a>",
+   "flags": "i",
+   "scope": "token",
+   "threshold": null,
+   "profile": "all",
+   "message": "Mailchimp: never 'Click here'; Google: descriptive link text.",
+   "fix": "Link the words that describe the destination.",
+   "sources": [
+    "https://styleguide.mailchimp.com/web-elements/",
+    "https://developers.google.com/style/highlights"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "[click here](https://x.y)"
+   ],
+   "examples_ok": [
+    "[Download the 2026 price list](https://x.y)"
+   ]
+  },
+  {
+   "id": "EN-ST-011",
+   "category": "all-caps-block",
+   "severity": "warning",
+   "pattern": "\\b(?:[A-Z]{2,}\\s+){4,}[A-Z]{2,}\\b",
+   "flags": "",
+   "scope": "sentence",
+   "threshold": null,
+   "profile": "all",
+   "message": "GOV.UK: do not use block capitals for large amounts of text; read as shouting.",
+   "fix": "Use sentence case.",
+   "sources": [
+    "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/style-guides/a-to-z-style-guide/",
+    "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/right-tone/"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "DO NOT USE BLOCK CAPITALS HERE"
+   ],
+   "examples_ok": [
+    "Do not use block capitals here"
+   ]
+  },
+  {
+   "id": "EN-ST-012",
+   "category": "latin-abbreviation",
+   "severity": "warning",
+   "pattern": "\\b(?:e\\.g\\.|i\\.e\\.|etc\\.?|eg|ie|viz\\.)(?=[\\s,)]|$)",
+   "flags": "i",
+   "scope": "token",
+   "threshold": null,
+   "profile": "GOV.UK|plain-language",
+   "message": "GOV.UK: avoid eg/ie/etc (screen readers read 'eg' as 'egg').",
+   "fix": "Use 'for example', 'such as', 'that is', or finish the list.",
+   "sources": [
+    "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/style-guides/a-to-z-style-guide/"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "fruit, e.g. apples",
+    "apples, pears, etc."
+   ],
+   "examples_ok": [
+    "fruit such as apples"
+   ]
+  },
+  {
+   "id": "EN-ST-013",
+   "category": "negative-contraction",
+   "severity": "warning",
+   "pattern": "\\b(?:can't|don't|won't|shouldn't|wouldn't|couldn't|isn't|aren't|doesn't|didn't|should've|could've|would've)\\b",
+   "flags": "i",
+   "scope": "token",
+   "threshold": null,
+   "profile": "GOV.UK only",
+   "message": "GOV.UK avoids negative and complex contractions. (Microsoft and Mailchimp encourage contractions: rule applies only to GOV.UK profile.)",
+   "fix": "GOV.UK profile: 'cannot', 'do not'.",
+   "sources": [
+    "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/style-guides/a-to-z-style-guide/",
+    "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-language/",
+    "https://learn.microsoft.com/en-us/style-guide/top-10-tips-style-voice",
+    "https://styleguide.mailchimp.com/grammar-and-mechanics/"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "You can't apply."
+   ],
+   "examples_ok": [
+    "You cannot apply."
+   ]
+  },
+  {
+   "id": "EN-ST-020",
+   "category": "us-uk-spelling-mix",
+   "severity": "error",
+   "pattern": "(document check: both variants of a spelling family present, see US_UK_FAMILIES)",
+   "flags": "",
+   "scope": "document",
+   "threshold": null,
+   "profile": "all",
+   "message": "Mixed US and UK spelling in one text.",
+   "fix": "Pick en-US or en-GB from the brief and normalise every family. For en-GB with Oxford spelling, -ize is legitimate (OED) but GOV.UK requires -ise.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/American_and_British_English_spelling_differences",
+    "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/style-guides/a-to-z-style-guide/"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [],
+   "examples_ok": []
+  },
+  {
+   "id": "EN-READ-001",
+   "category": "flesch-reading-ease",
+   "severity": "warning",
+   "pattern": "(metric)",
+   "flags": "",
+   "scope": "document",
+   "threshold": null,
+   "profile": "all",
+   "message": "FRE = 206.835 - 1.015*(words/sentences) - 84.6*(syllables/words). 60-70 = 'plain English' (8th-9th grade).",
+   "fix": "Consumer copy target FRE >= 60; warn < 50; error < 30 (thresholds are heuristics anchored on Flesch's bands).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests",
+    "https://stars.library.ucf.edu/istlibrary/56/"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [],
+   "examples_ok": []
+  },
+  {
+   "id": "EN-READ-002",
+   "category": "flesch-kincaid-grade",
+   "severity": "warning",
+   "pattern": "(metric)",
+   "flags": "",
+   "scope": "document",
+   "threshold": null,
+   "profile": "all",
+   "message": "FKGL = 0.39*(words/sentences) + 11.8*(syllables/words) - 15.59.",
+   "fix": "General public/health: <= 8 (IOM 2015 via NCI); insurance precedent: <= 9 (Pennsylvania); B2B/technical: <= 12 (heuristic). Report, do not game (short words alone do not make text clear).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests",
+    "https://dctd.cancer.gov/research/ctep-trials/trial-development/reading-level-tools.pdf"
+   ],
+   "confidence": "high",
+   "false_positive_notes": null,
+   "examples_flagged": [],
+   "examples_ok": []
+  }
+ ],
+ "us_uk_families": {
+  "-or/-our": [
+   [
+    "color",
+    "colour"
+   ],
+   [
+    "behavior",
+    "behaviour"
+   ],
+   [
+    "favor",
+    "favour"
+   ],
+   [
+    "honor",
+    "honour"
+   ],
+   [
+    "humor",
+    "humour"
+   ],
+   [
+    "labor",
+    "labour"
+   ],
+   [
+    "neighbor",
+    "neighbour"
+   ],
+   [
+    "flavor",
+    "flavour"
+   ],
+   [
+    "harbor",
+    "harbour"
+   ],
+   [
+    "rumor",
+    "rumour"
+   ],
+   [
+    "vapor",
+    "vapour"
+   ],
+   [
+    "endeavor",
+    "endeavour"
+   ],
+   [
+    "armor",
+    "armour"
+   ],
+   [
+    "savior",
+    "saviour"
+   ]
+  ],
+  "-er/-re": [
+   [
+    "center",
+    "centre"
+   ],
+   [
+    "theater",
+    "theatre"
+   ],
+   [
+    "fiber",
+    "fibre"
+   ],
+   [
+    "liter",
+    "litre"
+   ],
+   [
+    "meter",
+    "metre"
+   ],
+   [
+    "caliber",
+    "calibre"
+   ],
+   [
+    "somber",
+    "sombre"
+   ],
+   [
+    "specter",
+    "spectre"
+   ],
+   [
+    "luster",
+    "lustre"
+   ],
+   [
+    "meager",
+    "meagre"
+   ],
+   [
+    "saber",
+    "sabre"
+   ],
+   [
+    "scepter",
+    "sceptre"
+   ],
+   [
+    "maneuver",
+    "manoeuvre"
+   ]
+  ],
+  "-ize/-ise": [
+   [
+    "organize",
+    "organise"
+   ],
+   [
+    "realize",
+    "realise"
+   ],
+   [
+    "recognize",
+    "recognise"
+   ],
+   [
+    "optimize",
+    "optimise"
+   ],
+   [
+    "prioritize",
+    "prioritise"
+   ],
+   [
+    "customize",
+    "customise"
+   ],
+   [
+    "finalize",
+    "finalise"
+   ],
+   [
+    "apologize",
+    "apologise"
+   ],
+   [
+    "organization",
+    "organisation"
+   ],
+   [
+    "authorization",
+    "authorisation"
+   ]
+  ],
+  "-yze/-yse": [
+   [
+    "analyze",
+    "analyse"
+   ],
+   [
+    "paralyze",
+    "paralyse"
+   ],
+   [
+    "catalyze",
+    "catalyse"
+   ]
+  ],
+  "-l-/-ll-": [
+   [
+    "traveled",
+    "travelled"
+   ],
+   [
+    "traveling",
+    "travelling"
+   ],
+   [
+    "traveler",
+    "traveller"
+   ],
+   [
+    "canceled",
+    "cancelled"
+   ],
+   [
+    "canceling",
+    "cancelling"
+   ],
+   [
+    "labeled",
+    "labelled"
+   ],
+   [
+    "labeling",
+    "labelling"
+   ],
+   [
+    "modeling",
+    "modelling"
+   ],
+   [
+    "counselor",
+    "counsellor"
+   ],
+   [
+    "signaling",
+    "signalling"
+   ],
+   [
+    "fulfillment",
+    "fulfilment"
+   ],
+   [
+    "enrollment",
+    "enrolment"
+   ],
+   [
+    "installment",
+    "instalment"
+   ],
+   [
+    "skillful",
+    "skilful"
+   ],
+   [
+    "willful",
+    "wilful"
+   ]
+  ],
+  "-og/-ogue": [
+   [
+    "catalog",
+    "catalogue"
+   ],
+   [
+    "dialog",
+    "dialogue"
+   ],
+   [
+    "analog",
+    "analogue"
+   ],
+   [
+    "prolog",
+    "prologue"
+   ]
+  ],
+  "-se/-ce": [
+   [
+    "defense",
+    "defence"
+   ],
+   [
+    "offense",
+    "offence"
+   ],
+   [
+    "license (noun)",
+    "licence (noun)"
+   ],
+   [
+    "pretense",
+    "pretence"
+   ]
+  ],
+  "ae/oe -> e": [
+   [
+    "anemia",
+    "anaemia"
+   ],
+   [
+    "anesthesia",
+    "anaesthesia"
+   ],
+   [
+    "pediatric",
+    "paediatric"
+   ],
+   [
+    "esophagus",
+    "oesophagus"
+   ],
+   [
+    "estrogen",
+    "oestrogen"
+   ],
+   [
+    "fetus",
+    "foetus"
+   ],
+   [
+    "leukemia",
+    "leukaemia"
+   ],
+   [
+    "hemoglobin",
+    "haemoglobin"
+   ]
+  ],
+  "dropped -e": [
+   [
+    "aging",
+    "ageing"
+   ],
+   [
+    "likable",
+    "likeable"
+   ],
+   [
+    "sizable",
+    "sizeable"
+   ]
+  ],
+  "misc": [
+   [
+    "gray",
+    "grey"
+   ],
+   [
+    "program (non-software)",
+    "programme"
+   ],
+   [
+    "tire",
+    "tyre"
+   ],
+   [
+    "aluminum",
+    "aluminium"
+   ],
+   [
+    "check (bank)",
+    "cheque"
+   ],
+   [
+    "percent",
+    "per cent"
+   ]
+  ]
+ }
+}

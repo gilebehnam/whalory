@@ -1,0 +1,34 @@
+{
+  "schema_version": 2,
+  "name": "mcp-sample",
+  "language": "fa",
+  "variant": "fa-IR",
+  "brand": {
+    "fa": "چای‌خانه‌ی نمونه",
+    "latin": "Sample Tea House",
+    "misspellings": {}
+  },
+  "register": "colloquial",
+  "address": "shoma",
+  "dials": {
+    "warmth": 4,
+    "formality": 2,
+    "humor": 2,
+    "narrative": 3,
+    "sentence_length": 2,
+    "loud_marks": 1,
+    "jargon": 1,
+    "rhetoric": 2
+  },
+  "max_words": 18,
+  "emoji_max": 1,
+  "exclaim_max": 0,
+  "banned": ["بی‌نظیر"],
+  "avoid": ["منحصربه‌فرد"],
+  "prefer": {"منحصربه‌فرد": "[ویژگیِ مشخص]"},
+  "allow": [],
+  "industry": "cafe",
+  "formats": {
+    "caption": {"max_words": 14, "note": "یک لحظه در چای‌خانه؛ بی‌سرتیتر"}
+  }
+}

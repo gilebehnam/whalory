@@ -1,0 +1,23 @@
+# Persian translation for the Whalory sample app.
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: fa\n"
+
+#: src/app.py:10
+msgid "Welcome"
+msgstr "خوش آمدید — به والوری"
+
+msgctxt "button"
+msgid "Save"
+msgstr "ذخيره"
+
+msgid "One file"
+msgid_plural "%d files"
+msgstr[0] "%d فایل"
+msgstr[1] "%d فایل"
+
+msgid "Multi"
+msgstr ""
+"این متن در دو سطر "
+"نوشته شده است."

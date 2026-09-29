@@ -1,0 +1,7 @@
+{
+  "@@locale": "fa",
+  "title": "والوری — دستیارِ نوشتن",
+  "@title": {"description": "عنوان — برای مترجم"},
+  "hello": "سلام {name}",
+  "@hello": {"placeholders": {"name": {"type": "String"}}}
+}

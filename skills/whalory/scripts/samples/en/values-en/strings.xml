@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Note for translators: keep the placeholder -->
+    <string name="app_name" translatable="false">Whalory!!</string>
+    <string name="save_done">Saved!!</string>
+    <string name="welcome">Welcome, <xliff:g id="name">%1$s</xliff:g>. Please note the new menu.</string>
+    <plurals name="orders">
+        <item quantity="one">%d order</item>
+        <item quantity="other">%d orders</item>
+    </plurals>
+</resources>

@@ -1,0 +1,88 @@
+name: Host install problem
+description: An install route from docs/INSTALL.md fails on your assistant or editor.
+title: "[install] <host>: "
+labels: ["install", "host"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please follow [docs/INSTALL.md](https://github.com/gilebehnam/whalory/blob/HEAD/docs/INSTALL.md) first, and say which section you used.
+        A report that worked is useful too: it becomes a dated test record for that route.
+  - type: dropdown
+    id: host
+    attributes:
+      label: Host
+      options:
+        - Claude Code
+        - Claude Desktop
+        - claude.ai
+        - Codex (CLI or ChatGPT desktop app)
+        - Cursor
+        - VS Code with GitHub Copilot
+        - Gemini CLI
+        - Another Agent Skills host
+        - A chat assistant (paste-in prompt)
+    validations:
+      required: true
+  - type: input
+    id: host_version
+    attributes:
+      label: Host version
+      placeholder: "claude --version, codex --version, gemini --version, or the app's About page"
+    validations:
+      required: true
+  - type: dropdown
+    id: route
+    attributes:
+      label: Install route
+      options:
+        - Plugin from this repository's marketplace
+        - Skill folder
+        - claude.ai upload
+        - Claude Desktop extension (.mcpb)
+        - Agent Plugins package
+        - Gemini CLI extension
+        - MCP server configured by hand
+        - Paste-in prompt
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows
+        - macOS
+        - Linux
+    validations:
+      required: true
+  - type: input
+    id: python
+    attributes:
+      label: Python command and version
+      description: Which of `python3 --version`, `python --version`, and `py -3 --version` answer on your machine.
+  - type: checkboxes
+    id: parts
+    attributes:
+      label: What worked
+      description: Tick everything that worked, and leave the rest empty.
+      options:
+        - label: The skill loads, or the assistant follows the method.
+        - label: The commands appear (write, review, voice, lint).
+        - label: The MCP server connects and lists its tools.
+        - label: The file tools can read files in my project.
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps you took
+      description: The exact commands or clicks, from a clean install.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: What happened
+      description: Paste any error message or log in full.
+      render: shell
+    validations:
+      required: true

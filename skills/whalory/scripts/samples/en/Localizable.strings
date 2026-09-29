@@ -1,0 +1,5 @@
+/* Home screen */
+"welcome_title" = "Welcome to the world of coffee";
+"url_hint" = "Visit https://example.com/help for help.";
+"save_button" = "Save";
+// "commented" = "Look no further";

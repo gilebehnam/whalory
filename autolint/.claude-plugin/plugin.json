@@ -1,0 +1,19 @@
+{
+  "name": "whalory-autolint",
+  "displayName": "Whalory Autolint",
+  "version": "3.0.0",
+  "description": "Opt-in: lints content and locale files with Whalory after each Write or Edit.",
+  "author": {
+    "name": "Whalya",
+    "url": "https://whalory.com/en/"
+  },
+  "homepage": "https://whalory.com/en/",
+  "license": "CC-BY-4.0 AND MIT",
+  "keywords": [
+    "lint",
+    "copywriting",
+    "persian",
+    "english",
+    "locale"
+  ]
+}

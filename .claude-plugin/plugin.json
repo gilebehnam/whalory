@@ -1,0 +1,38 @@
+{
+  "name": "whalory",
+  "displayName": "Whalory",
+  "version": "3.0.0",
+  "description": "English and Persian (Farsi) copy team: the Whalory skill, writer and blind-editor subagents, slash commands, and a local MCP server with bilingual linters.",
+  "author": {
+    "name": "Whalya",
+    "url": "https://whalory.com/en/"
+  },
+  "homepage": "https://whalory.com/en/",
+  "license": "CC-BY-4.0 AND MIT",
+  "keywords": [
+    "copywriting",
+    "persian",
+    "farsi",
+    "english",
+    "brand-voice",
+    "ux-writing",
+    "marketing",
+    "transcreation"
+  ],
+  "userConfig": {
+    "python": {
+      "type": "string",
+      "title": "Python command",
+      "description": "Python 3.8+ used by the Whalory MCP server: python3 on macOS and Linux; python or py on Windows.",
+      "default": "python3",
+      "required": false
+    },
+    "default_language": {
+      "type": "string",
+      "title": "Default output language",
+      "description": "auto, fa or en. Used only when the channel, materials and request do not decide.",
+      "default": "auto",
+      "required": false
+    }
+  }
+}

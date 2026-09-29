@@ -1,0 +1,73 @@
+name: Linter false positive
+description: A lint rule flags text that is correct as written.
+title: "[false positive] <rule id>: "
+labels: ["linter", "false positive"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A false positive is a finding that should not have fired: a correct Persian word marked as misspelt, or a plain sentence called a cliché.
+        The shortest text that still triggers the finding helps most. Leave out client names and anything you may not share.
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language of the text
+      options:
+        - English
+        - Persian
+        - Mixed Persian and English
+    validations:
+      required: true
+  - type: input
+    id: rule
+    attributes:
+      label: Rule id
+      description: The id in the output line, such as `en-buzzword`, `en-long-sentence`, `lexicon`, or `zwnj-mi`.
+    validations:
+      required: true
+  - type: textarea
+    id: text
+    attributes:
+      label: The text
+      description: The shortest text that still triggers the finding.
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: command
+    attributes:
+      label: Command
+      placeholder: "python skills/whalory/scripts/lint.py sample.txt --format caption"
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output line
+      description: The full line the linter printed for this finding.
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Whalory version
+      description: The output of `python skills/whalory/scripts/lint.py --version`.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why the text is correct
+      description: A source helps, such as a style guide, a dictionary, or the Academy of Persian Language and Literature for Persian spelling.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you send
+      options:
+        - label: I searched the open and closed issues for this rule id.
+          required: true
+        - label: The text contains no client copy I may not share, and no personal data.
+          required: true

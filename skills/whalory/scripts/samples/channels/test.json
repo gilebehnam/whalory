@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "group": "test",
+  "channels": {
+    "testgram": {
+      "name_fa": "تست‌گرام",
+      "name_en": "Testgram",
+      "kind": "social",
+      "format_id": "caption",
+      "fields": {
+        "caption": {"label_fa": "کپشن", "max_chars": 50, "visible_chars": 20, "unit": "char", "note": "نمونه‌ی آزمون", "source": "https://example.com/limits", "verified_on": "2026-09-27", "status": "verified"},
+        "bio": {"label_fa": "بیو", "max_chars": 20, "visible_chars": null, "unit": "char", "note": "", "source": "", "verified_on": "", "status": "unverified"},
+        "handle": {"label_fa": "شناسه", "max_chars": 10, "visible_chars": null, "unit": "byte", "note": "", "source": "https://example.com/limits", "verified_on": "2026-09-27", "status": "verified"}
+      }
+    },
+    "testsms": {
+      "name_fa": "پیامکِ تست",
+      "name_en": "Test SMS",
+      "kind": "sms",
+      "format_id": "sms",
+      "fields": {
+        "body": {"label_fa": "متن", "max_chars": 2, "visible_chars": null, "unit": "segment", "note": "حداکثر دو بخش", "source": "", "verified_on": "", "status": "unverified"}
+      }
+    }
+  }
+}

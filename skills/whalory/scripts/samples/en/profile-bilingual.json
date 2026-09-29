@@ -1,0 +1,29 @@
+{
+  "schema_version": 2,
+  "name": "test-bilingual",
+  "language": "bilingual",
+  "variant": "fa-IR",
+  "variants": ["fa-IR", "en-CA"],
+  "spelling": null,
+  "oxford_comma": null,
+  "contractions": null,
+  "house_style": null,
+  "reading_grade_max": null,
+  "brand": {"fa": "ترنج‌نو", "latin": "Toranjno", "misspellings": {}},
+  "romanization": {"ترنج‌نو": "Toranjno"},
+  "register": "any",
+  "address": "any",
+  "dials": {"warmth": 3, "formality": 3, "humor": 1, "narrative": 3, "sentence_length": 3, "loud_marks": 0, "jargon": 3, "rhetoric": 3},
+  "max_words": 20,
+  "emoji_max": 0,
+  "exclaim_max": 0,
+  "banned": ["نمایشی"],
+  "avoid": [],
+  "prefer": {},
+  "allow": [],
+  "formats": {"ui": {"max_words": 10}},
+  "by_lang": {
+    "fa": {"max_words": 18, "banned": ["آزمایشی"]},
+    "en": {"max_words": 22, "banned": ["synergy"], "dials": {"sentence_length": 4}, "formats": {"ui": {"max_words": 7}}}
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "whalory",
+  "owner": {
+    "name": "Whalya",
+    "url": "https://whalory.com/en/"
+  },
+  "description": "Whalory: English and Persian copywriting for Claude Code",
+  "plugins": [
+    {
+      "name": "whalory",
+      "source": "./",
+      "category": "productivity",
+      "description": "Bilingual copy skill, subagents, commands and MCP tools."
+    },
+    {
+      "name": "whalory-autolint",
+      "source": "./autolint",
+      "category": "productivity",
+      "description": "Opt-in: lints content and locale files with Whalory after each Write or Edit."
+    }
+  ]
+}

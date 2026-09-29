@@ -1,0 +1,28 @@
+{
+  "schema_version": 2,
+  "name": "brand-name",
+  "language": "en",
+  "variant": "en-US",
+  "variants": [],
+  "spelling": null,
+  "oxford_comma": null,
+  "contractions": "use",
+  "house_style": null,
+  "reading_grade_max": null,
+  "brand": {"fa": "", "latin": "", "misspellings": {}},
+  "romanization": {},
+  "register": "any",
+  "address": "any",
+  "dials": {"warmth": 3, "formality": 3, "humor": 1, "narrative": 3, "sentence_length": 3,
+            "loud_marks": 0, "jargon": 2, "rhetoric": 3},
+  "max_words": 25,
+  "emoji_max": 0,
+  "exclaim_max": 0,
+  "banned": [], "avoid": [], "prefer": {}, "allow": [],
+  "industry": "",
+  "formats": {
+    "ui": {"max_words": 12, "emoji_max": 0, "exclaim_max": 0, "note": "Verb + object; name each feature as it appears in the product."},
+    "email": {"note": "One call to action; subject line checked separately with format id 'subject'."}
+  },
+  "by_lang": {}
+}

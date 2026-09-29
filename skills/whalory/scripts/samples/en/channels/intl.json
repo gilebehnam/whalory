@@ -1,0 +1,79 @@
+{
+  "schema_version": 2,
+  "group": "test-intl",
+  "channels": {
+    "bluesky": {
+      "name_en": "Bluesky",
+      "region": "intl",
+      "kind": "social",
+      "format_id": "post",
+      "fields": {
+        "post": {"label_en": "Post", "max_chars": 300, "visible_chars": null, "max_items": null, "item_max_chars": null, "unit": "grapheme", "note_en": "Test copy of the Bluesky post limit.", "source": "https://raw.githubusercontent.com/bluesky-social/atproto/main/lexicons/app/bsky/feed/post.json", "verified_on": "2026-09-27", "status": "verified"}
+      }
+    },
+    "x": {
+      "name_en": "X",
+      "region": "intl",
+      "kind": "social",
+      "format_id": "post",
+      "fields": {
+        "post": {"label_en": "Post", "max_chars": 280, "visible_chars": null, "max_items": null, "item_max_chars": null, "unit": "weighted", "note_en": "Test copy: weighted characters, URLs count 23.", "source": "https://docs.x.com/fundamentals/counting-characters", "verified_on": "2026-09-27", "status": "verified"}
+      }
+    },
+    "tiktok": {
+      "name_en": "TikTok",
+      "region": "intl",
+      "kind": "social",
+      "format_id": "reels",
+      "fields": {
+        "caption": {"label_en": "Caption", "max_chars": 2200, "visible_chars": null, "max_items": null, "item_max_chars": null, "unit": "utf16", "note_en": "Test copy: UTF-16 code units.", "source": "https://developers.tiktok.com/doc/content-posting-api-reference-direct-post", "verified_on": "2026-09-27", "status": "verified"}
+      }
+    },
+    "instagram": {
+      "name_en": "Instagram",
+      "region": "intl",
+      "kind": "social",
+      "format_id": "caption",
+      "fields": {
+        "hashtags": {"label_en": "Hashtags", "max_chars": null, "visible_chars": null, "max_items": 5, "item_max_chars": null, "unit": "char", "note_en": "Test copy of the five-hashtag limit.", "source": "https://www.threads.com/@creators/post/DSalXGPCWM4", "verified_on": "2026-09-27", "status": "verified"}
+      }
+    },
+    "etsy": {
+      "name_en": "Etsy",
+      "region": "intl",
+      "kind": "marketplace",
+      "format_id": "listing",
+      "fields": {
+        "tags": {"label_en": "Tags", "max_chars": null, "visible_chars": null, "max_items": 13, "item_max_chars": 20, "unit": "items", "note_en": "Test copy: 13 tags of up to 20 characters.", "source": "https://help.etsy.com/hc/en-us/articles/360000336307-How-to-Use-Tags-to-Get-Found-in-Search", "verified_on": "2026-09-27", "status": "verified"}
+      }
+    },
+    "sms-intl": {
+      "name_en": "SMS (international)",
+      "region": "intl",
+      "kind": "sms",
+      "format_id": "sms",
+      "fields": {
+        "body": {"label_en": "Body", "max_chars": 1, "visible_chars": null, "max_items": null, "item_max_chars": null, "unit": "segment", "note_en": "Test copy: one segment only (GSM-7 160, UCS-2 70).", "source": "https://www.twilio.com/docs/glossary/what-sms-character-limit", "verified_on": "2026-09-27", "status": "verified"}
+      }
+    },
+    "draft-channel": {
+      "name_en": "Draft channel",
+      "region": "intl",
+      "kind": "social",
+      "format_id": "post",
+      "fields": {
+        "post": {"label_en": "Post", "max_chars": 20, "visible_chars": 10, "max_items": null, "item_max_chars": null, "unit": "char", "note_en": "Invented test limit; unverified on purpose.", "source": "", "verified_on": "", "status": "unverified"}
+      }
+    },
+    "panel-sms": {
+      "name_en": "SMS panel (test copy of the Iranian panel)",
+      "region": "ir",
+      "kind": "sms",
+      "format_id": "sms",
+      "fields": {
+        "body": {"label_en": "Single-part Persian SMS text", "max_chars": 70, "visible_chars": null, "max_items": null, "item_max_chars": null, "unit": "char", "note_en": "Test copy: UCS-2, 70 characters in one part.", "source": "https://www.twilio.com/docs/glossary/what-is-ucs-2-character-encoding", "verified_on": "2026-09-27", "status": "verified"},
+        "body_latin": {"label_en": "Single-part all-Latin SMS text (GSM-7)", "max_chars": 160, "visible_chars": null, "max_items": null, "item_max_chars": null, "unit": "char", "note_en": "Test copy: GSM-7, 160 characters in one part.", "source": "https://www.twilio.com/docs/glossary/what-is-ucs-2-character-encoding", "verified_on": "2026-09-27", "status": "verified"}
+      }
+    }
+  }
+}

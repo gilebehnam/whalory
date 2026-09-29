@@ -1,0 +1,14 @@
+{
+  "common": {
+    "save": "Save changes",
+    "greeting": "Hello {name}, welcome back.",
+    "count": "{count, plural, one {# item in your cart} other {# items in your cart}}",
+    "promo": "Our robust app empowers you!!",
+    "printf": "%1$s of %2$d selected -- ready",
+    "persian": "ذخیره‌ی تغییرها"
+  },
+  "errors": {
+    "network": "Please note that the network is down.",
+    "html": "Tap <b>Retry</b> to <a href=\"/login\">sign in</a> again."
+  }
+}

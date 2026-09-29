@@ -1,0 +1,82 @@
+{
+  "schema_version": 2,
+  "name": "starter-en-saas",
+  "language": "en",
+  "variant": "en-US",
+  "variants": [],
+  "spelling": null,
+  "oxford_comma": true,
+  "contractions": "use",
+  "house_style": null,
+  "reading_grade_max": null,
+  "brand": {
+    "fa": "",
+    "latin": "",
+    "misspellings": {}
+  },
+  "romanization": {},
+  "register": "any",
+  "address": "any",
+  "dials": {
+    "warmth": 3,
+    "formality": 3,
+    "humor": 2,
+    "narrative": 2,
+    "sentence_length": 3,
+    "loud_marks": 0,
+    "jargon": 3,
+    "rhetoric": 2
+  },
+  "max_words": 25,
+  "emoji_max": 0,
+  "exclaim_max": 0,
+  "banned": [],
+  "avoid": [
+    "solution",
+    "ecosystem",
+    "revolutionary",
+    "Operation completed successfully",
+    "AI-powered",
+    "leverage",
+    "utilize"
+  ],
+  "prefer": {
+    "solution": "[the specific job, with a verb]",
+    "Operation completed successfully": "[the verb for the action, such as 'Saved']",
+    "AI-powered": "[what the automation does, exactly]",
+    "leverage": "use",
+    "utilize": "use"
+  },
+  "allow": [],
+  "industry": "saas",
+  "formats": {
+    "ui": {
+      "max_words": 12,
+      "dials": {
+        "warmth": 2,
+        "humor": 1,
+        "narrative": 1,
+        "rhetoric": 1
+      },
+      "note": "Verb and object; name each feature as it appears in the menu."
+    },
+    "error": {
+      "max_words": 16,
+      "dials": {
+        "warmth": 2,
+        "humor": 1,
+        "narrative": 1,
+        "rhetoric": 1
+      },
+      "note": "First what happened, then what to do."
+    },
+    "landing": {
+      "dials": {
+        "narrative": 3,
+        "rhetoric": 3
+      },
+      "note": "What the product does, with a verb; an honest limit."
+    }
+  },
+  "by_lang": {}
+}

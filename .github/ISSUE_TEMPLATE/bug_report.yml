@@ -1,0 +1,96 @@
+name: Bug report
+description: A script crashes, an MCP tool fails, or the skill breaks a promise its guide makes.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. Issues are public, so leave out client copy you may not share, personal data, and license keys.
+        Found a security problem? Please don't file it here; use the [private reporting form](https://github.com/gilebehnam/whalory/security/advisories/new) instead.
+        You can write in English or Persian.
+  - type: input
+    id: version
+    attributes:
+      label: Whalory version
+      description: The output of `python skills/whalory/scripts/lint.py --version`, or the version in the package name.
+      placeholder: "3.1.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: package
+    attributes:
+      label: Package or route
+      options:
+        - Claude Code plugin (this repository)
+        - Skill folder (whalory-core-…-skill.zip or skills/whalory)
+        - claude.ai upload (whalory-core-…-claudeai.zip)
+        - Claude Desktop extension (.mcpb)
+        - Agent Plugins package
+        - Gemini CLI extension
+        - Paste-in prompt
+        - Scripts run by hand
+    validations:
+      required: true
+  - type: input
+    id: host
+    attributes:
+      label: Host and its version
+      placeholder: "Claude Code 2.1.278, codex-cli 0.145.0, VS Code 1.x, none"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: python
+    attributes:
+      label: Python command and version
+      description: For example `python3 --version`. Write "none" if Python is not installed.
+      placeholder: "python3 3.12.4"
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: One or two sentences on the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The shortest steps that show it, from a fresh start. Include the exact commands.
+      placeholder: |
+        1. …
+        2. …
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output or error
+      description: Paste the full output. It is shown as code, so no backticks are needed.
+      render: shell
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you send
+      options:
+        - label: I searched the open and closed issues.
+          required: true
+        - label: I removed client copy, personal data, and license keys from this report.
+          required: true

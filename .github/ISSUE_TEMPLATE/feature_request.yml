@@ -1,0 +1,59 @@
+name: Feature request
+description: Propose a linter rule, a playbook, a host, an option, or a change to the docs.
+title: "[idea] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For a new linter rule, [CONTRIBUTING.md](https://github.com/gilebehnam/whalory/blob/HEAD/CONTRIBUTING.md#propose-a-linter-rule) lists what we need to agree on before any code.
+        Some features belong to Whalory Pro. We may say so in the reply; the idea is still welcome.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options:
+        - New linter rule
+        - Change to an existing rule
+        - New playbook or task
+        - New host or install route
+        - New option or command
+        - Documentation
+        - Something else
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language
+      options:
+        - English
+        - Persian
+        - Both
+        - Not about language
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What goes wrong today, or what you can't do. A real example helps.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Your proposal
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples
+      description: For a rule, three or more sentences it should flag, and three or more close cousins it must not flag.
+      render: text
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Links for any spelling, grammar, or channel limit, with the date you checked each one.

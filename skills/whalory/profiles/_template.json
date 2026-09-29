@@ -1,0 +1,58 @@
+{
+  "schema_version": 2,
+  "name": "brand-name",
+  "language": "fa",
+  "variant": "fa-IR",
+  "brand": {
+    "fa": "",
+    "latin": "",
+    "misspellings": {}
+  },
+  "romanization": {},
+  "register": "any",
+  "address": "any",
+  "dials": {
+    "warmth": 3,
+    "formality": 3,
+    "humor": 1,
+    "narrative": 3,
+    "sentence_length": 3,
+    "loud_marks": 0,
+    "jargon": 2,
+    "rhetoric": 3
+  },
+  "max_words": 24,
+  "emoji_max": 0,
+  "exclaim_max": 0,
+  "banned": [],
+  "avoid": [],
+  "prefer": {},
+  "allow": [],
+  "industry": "",
+  "formats": {
+    "sms": {
+      "register": "formal",
+      "max_words": 18,
+      "emoji_max": 0,
+      "exclaim_max": 0,
+      "dials": {"humor": 1, "narrative": 1, "rhetoric": 1},
+      "note": "یک پیام، یک کار؛ جای نامِ فرستنده طبقِ sms.md"
+    },
+    "ui": {
+      "register": "formal",
+      "max_words": 12,
+      "emoji_max": 0,
+      "exclaim_max": 0,
+      "dials": {"warmth": 2, "humor": 1, "narrative": 1, "rhetoric": 1},
+      "note": "فعل و مفعول؛ نامِ هر بخش همان که روی صفحه است"
+    },
+    "caption": {
+      "emoji_max": 1,
+      "dials": {"warmth": 4},
+      "note": "یک لحظه‌ی دیدنی؛ ایموجی فقط در پایان"
+    },
+    "email": {
+      "note": "یک فراخوان؛ موضوع جدا، با شناسه‌ی subject"
+    }
+  }
+}

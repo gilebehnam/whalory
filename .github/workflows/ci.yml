@@ -1,0 +1,84 @@
+# Runs the Whalory Core self-tests on the oldest and the newest supported Python on Linux,
+# and on the newest one on Windows, where most of the install notes' Python quirks live.
+# It also lints this repository's own Markdown with the Whalory linter.
+#
+# Actions are pinned to full commit SHAs. They were resolved through the GitHub API on
+# 2026-09-28, and each major tag pointed to the same commit:
+#   actions/checkout      v7.0.1  3d3c42e5aac5ba805825da76410c181273ba90b1
+#   actions/setup-python  v7.0.0  5fda3b95a4ea91299a34e894583c3862153e4b97
+# The Linux runner is pinned to ubuntu-24.04: actions/python-versions has builds of both
+# Python 3.8.18 and 3.14 for it (checked 2026-09-28), while 3.8 has none for 26.04.
+# Dependabot (.github/dependabot.yml) proposes new action SHAs every week.
+
+name: ci
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
+  PYTHONUTF8: "1"
+  PYTHONIOENCODING: "utf-8"
+
+jobs:
+  selftest:
+    name: self-tests (${{ matrix.os }}, Python ${{ matrix.python }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04]
+        python: ["3.8", "3.14"]
+        include:
+          - os: windows-latest
+            python: "3.14"
+    steps:
+      - name: Check out
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Python ${{ matrix.python }}
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: ${{ matrix.python }}
+
+      - name: Show the Python version
+        run: python --version
+
+      - name: Run the Core self-tests (Persian, English and MCP suites)
+        run: python skills/whalory/scripts/selftest.py
+
+  docs:
+    name: lint this repository's Markdown
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Check out
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.14"
+
+      # Exits with 1 on errors only; warnings are printed but do not fail the job.
+      - name: Lint the front pages and community files
+        run: >-
+          python skills/whalory/scripts/lint.py --md
+          README.md README.fa.md CONTRIBUTING.md SECURITY.md SUPPORT.md PRIVACY.md
+          CHANGELOG.md docs/INSTALL.md

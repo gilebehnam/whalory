@@ -1,0 +1,3 @@
+Brief: Marlo Coffee, Fifth Street. Roasts on Monday. Bags cost $14. Orders before noon ship the same day.
+Customer quote (consented, verbatim): "The beans taste fresh every single week." Sara M.
+Site: https://marlo.example/shop

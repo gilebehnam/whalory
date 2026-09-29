@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "name": "test-en-gb",
+  "language": "en",
+  "variant": "en-GB",
+  "variants": ["en-GB"],
+  "spelling": null,
+  "oxford_comma": false,
+  "contractions": "positive-only",
+  "house_style": "govuk",
+  "reading_grade_max": 9,
+  "brand": {"fa": "", "latin": "", "misspellings": {}},
+  "romanization": {},
+  "register": "any",
+  "address": "any",
+  "dials": {"warmth": 3, "formality": 3, "humor": 1, "narrative": 3, "sentence_length": 3, "loud_marks": 0, "jargon": 3, "rhetoric": 3},
+  "banned": [],
+  "avoid": [],
+  "prefer": {},
+  "allow": [],
+  "formats": {}
+}

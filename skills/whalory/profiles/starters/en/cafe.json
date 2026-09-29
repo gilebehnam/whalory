@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "name": "starter-en-cafe",
+  "language": "en",
+  "variant": "en-US",
+  "variants": [],
+  "spelling": null,
+  "oxford_comma": true,
+  "contractions": "use",
+  "house_style": null,
+  "reading_grade_max": null,
+  "brand": {
+    "fa": "",
+    "latin": "",
+    "misspellings": {}
+  },
+  "romanization": {},
+  "register": "any",
+  "address": "any",
+  "dials": {
+    "warmth": 4,
+    "formality": 2,
+    "humor": 3,
+    "narrative": 3,
+    "sentence_length": 2,
+    "loud_marks": 1,
+    "jargon": 1,
+    "rhetoric": 3
+  },
+  "max_words": 20,
+  "emoji_max": 1,
+  "exclaim_max": 0,
+  "banned": [],
+  "avoid": [
+    "delicious",
+    "mouthwatering",
+    "to die for",
+    "goodness",
+    "best in town",
+    "world-famous",
+    "secure your spot"
+  ],
+  "prefer": {
+    "delicious": "[exact dish and its main ingredient]",
+    "mouthwatering": "[exact dish and its main ingredient]",
+    "best in town": "[what is different, as a fact]",
+    "secure your spot": "book a table"
+  },
+  "allow": [],
+  "industry": "cafe",
+  "formats": {
+    "caption": {
+      "dials": {
+        "warmth": 5
+      },
+      "note": "One hour of the day, one smell."
+    },
+    "reply": {
+      "emoji_max": 0,
+      "dials": {
+        "humor": 1,
+        "narrative": 1
+      },
+      "note": "Name the problem, say what you did, and give a way to reach you."
+    },
+    "product": {
+      "emoji_max": 0,
+      "dials": {
+        "humor": 1,
+        "narrative": 2,
+        "rhetoric": 2
+      },
+      "note": "One cooking verb, no adjectives."
+    }
+  },
+  "by_lang": {}
+}

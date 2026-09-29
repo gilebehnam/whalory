@@ -1,0 +1,73 @@
+{
+  "schema_version": 2,
+  "name": "starter-saas",
+  "language": "fa",
+  "variant": "fa-IR",
+  "brand": {
+    "fa": "",
+    "latin": "",
+    "misspellings": {}
+  },
+  "register": "formal",
+  "address": "shoma",
+  "dials": {
+    "warmth": 3,
+    "formality": 3,
+    "humor": 2,
+    "narrative": 2,
+    "sentence_length": 3,
+    "loud_marks": 0,
+    "jargon": 3,
+    "rhetoric": 2
+  },
+  "max_words": 24,
+  "emoji_max": 0,
+  "exclaim_max": 0,
+  "banned": [],
+  "avoid": [
+    "فیچر",
+    "آنبوردینگ",
+    "هوشمند",
+    "عملیات با موفقیت انجام شد",
+    "راهکار",
+    "اکوسیستم",
+    "انقلابی"
+  ],
+  "prefer": {
+    "فیچر": "قابلیت",
+    "آنبوردینگ": "راه‌اندازی",
+    "عملیات با موفقیت انجام شد": "[فعلِ همان کار، مثلاً «ذخیره شد»]",
+    "راهکار": "[کارِ مشخصِ محصول، با فعل]"
+  },
+  "allow": [],
+  "industry": "saas",
+  "formats": {
+    "ui": {
+      "max_words": 12,
+      "dials": {
+        "warmth": 2,
+        "humor": 1,
+        "narrative": 1,
+        "rhetoric": 1
+      },
+      "note": "فعل و مفعول؛ نامِ قابلیت همان که در منوست"
+    },
+    "error": {
+      "max_words": 18,
+      "dials": {
+        "warmth": 2,
+        "humor": 1,
+        "narrative": 1,
+        "rhetoric": 1
+      },
+      "note": "اول چه شد، بعد چه کنید"
+    },
+    "landing": {
+      "dials": {
+        "narrative": 3,
+        "rhetoric": 3
+      },
+      "note": "کارِ محصول با فعل؛ مرزِ صادق"
+    }
+  }
+}

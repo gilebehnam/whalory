@@ -1,0 +1,33 @@
+﻿{
+  "name": "bom-cafe",
+  "brand": {
+    "fa": "",
+    "latin": "",
+    "misspellings": {}
+  },
+  "register": "colloquial",
+  "dials": {
+    "warmth": 4,
+    "formality": 1,
+    "humor": 3,
+    "narrative": 3,
+    "sentence_length": 2,
+    "loud_marks": 1
+  },
+  "max_words": 18,
+  "emoji_max": 1,
+  "exclaim_max": 0,
+  "banned": [],
+  "avoid": [
+    "بوکینگ",
+    "اسپشیال",
+    "لذیذ",
+    "بی‌نظیر"
+  ],
+  "prefer": {
+    "بوکینگ": "رزرو",
+    "اسپشیال": "امروز تازه"
+  },
+  "allow": [],
+  "industry": "cafe"
+}

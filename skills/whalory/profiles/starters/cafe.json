@@ -1,0 +1,67 @@
+{
+  "schema_version": 2,
+  "name": "starter-cafe",
+  "language": "fa",
+  "variant": "fa-IR",
+  "brand": {
+    "fa": "",
+    "latin": "",
+    "misspellings": {}
+  },
+  "register": "colloquial",
+  "address": "to",
+  "dials": {
+    "warmth": 4,
+    "formality": 2,
+    "humor": 3,
+    "narrative": 3,
+    "sentence_length": 2,
+    "loud_marks": 1,
+    "jargon": 1,
+    "rhetoric": 3
+  },
+  "max_words": 18,
+  "emoji_max": 1,
+  "exclaim_max": 0,
+  "banned": [],
+  "avoid": [
+    "بوکینگ",
+    "منیو",
+    "اسپشیال",
+    "لذیذ",
+    "بی‌نظیر"
+  ],
+  "prefer": {
+    "بوکینگ": "رزرو",
+    "منیو": "منو",
+    "اسپشیال": "امروز تازه",
+    "لذیذ": "[نامِ دقیقِ غذا و ماده‌اش]"
+  },
+  "allow": [],
+  "industry": "cafe",
+  "formats": {
+    "caption": {
+      "dials": {
+        "warmth": 5
+      },
+      "note": "یک ساعت از روز، یک بو"
+    },
+    "sms": {
+      "emoji_max": 0,
+      "dials": {
+        "humor": 1,
+        "narrative": 1
+      },
+      "note": "تاریخ، ساعت، تعداد، راهِ لغو"
+    },
+    "product": {
+      "emoji_max": 0,
+      "dials": {
+        "humor": 1,
+        "narrative": 2,
+        "rhetoric": 2
+      },
+      "note": "یک فعلِ پخت، بی‌صفت"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Install guide
+    url: https://github.com/gilebehnam/whalory/blob/HEAD/docs/INSTALL.md
+    about: Step-by-step install for Claude Code, Claude Desktop, claude.ai, Codex, Cursor, VS Code, and Gemini CLI.
+  - name: Guides on whalory.com
+    url: https://whalory.com/download/
+    about: One guide per host, each with the date it was checked, in English and Persian.
+  - name: Report a vulnerability privately
+    url: https://github.com/gilebehnam/whalory/security/advisories/new
+    about: Please don't open a public issue for a security problem.
+  - name: Pro and Studio downloads and license keys
+    url: https://whalory.com/account/
+    about: Paid editions are not supported through this repository. Never post a license key in an issue.

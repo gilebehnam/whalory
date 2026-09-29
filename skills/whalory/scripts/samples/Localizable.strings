@@ -1,0 +1,5 @@
+/* Comment — with dash */
+"welcome_title" = "به اپ خوش آمدید — شروع کنید";
+// "commented" = "این — نباید سنجیده شود";
+"url_hint" = "آدرس: https://example.com/a—b";
+"quote" = "گفت \"سلام\" و رفت";

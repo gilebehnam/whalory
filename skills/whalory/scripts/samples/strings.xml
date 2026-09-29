@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- توضیح برای مترجم — این خط کامنت است -->
+    <string name="app_name" translatable="false">Whalory</string>
+    <string name="welcome">به والوری خوش آمدید؛ <xliff:g id="name">%1$s</xliff:g> عزیز.</string>
+    <string name="save_done">ذخیره شد!!</string>
+    <string name="hint">&lt;b&gt;نکته:&lt;/b&gt; برای ادامه، روی دکمه بزنید.</string>
+    <string name="quoted">"متنِ داخلِ گیومه‌ی اندروید"</string>
+    <string name="cdata"><![CDATA[برای <b>خرید</b> اینجا بزنید — سریع]]></string>
+    <string name="notrans" translatable="false">متنِ ثابت — ترجمه‌نشدنی</string>
+    <plurals name="orders">
+        <item quantity="one">%d سفارش ثبت شد</item>
+        <item quantity="other">%d سفارش ثبت شد</item>
+    </plurals>
+    <string-array name="days">
+        <item>شنبه</item>
+        <item>يکشنبه</item>
+    </string-array>
+</resources>

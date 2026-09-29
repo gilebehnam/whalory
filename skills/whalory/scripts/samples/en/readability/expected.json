@@ -1,0 +1,9 @@
+{
+  "about": "Hand counts (dictionary syllables) and the Flesch and Flesch-Kincaid formulas from https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests (checked 2026-09-27). FRE = 206.835 - 1.015*(words/sentences) - 84.6*(syllables/words); FKGL = 0.39*(words/sentences) + 11.8*(syllables/words) - 15.59. selftest_en allows +/-1.0.",
+  "easy.txt": {"words": 32, "sentences": 4, "syllables": 38, "fre": 98.3, "fkgl": 1.5,
+               "hand": "6/7 We-roast-the-beans-on-Mon.day | 8/8 | 11/13 or.der be.fore | 7/10 Lo.cal or.ders Fri.day"},
+  "medium.txt": {"words": 29, "sentences": 3, "syllables": 52, "fre": 45.3, "fkgl": 9.3,
+                 "hand": "10/19 cus.tom.ers re.turn prod.uct with.in thir.ty de.liv.er.y | 8/15 re.fund ap.pears o.rig.i.nal pay.ment meth.od | 11/18 con.tact sup.port pack.age ar.rives dam.aged in.com.plete"},
+  "hard.txt": {"words": 18, "sentences": 2, "syllables": 61, "fre": -89.0, "fkgl": 27.9,
+               "hand": "9/28 com.mit.tee e.val.u.at.ed al.ter.na.tive dis.tri.bu.tion strat.e.gies in.ter.na.tion.al mar.kets | 9/33 man.age.ment i.den.ti.fied sig.nif.i.cant op.er.a.tion.al risks par.tic.u.lar.ly re.gard.ing reg.u.la.to.ry re.quire.ments"}
+}

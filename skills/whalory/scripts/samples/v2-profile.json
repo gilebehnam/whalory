@@ -1,0 +1,34 @@
+{
+  "schema_version": 2,
+  "name": "sample-v2",
+  "brand": {
+    "fa": "چای‌خانه",
+    "latin": "Chaikhaneh",
+    "misspellings": {"چایخانه": "چای‌خانه"}
+  },
+  "register": "any",
+  "address": "shoma",
+  "dials": {
+    "warmth": 3,
+    "formality": 3,
+    "humor": 2,
+    "narrative": 3,
+    "sentence_length": 4,
+    "loud_marks": 1,
+    "jargon": 1,
+    "rhetoric": 2
+  },
+  "max_words": 26,
+  "emoji_max": 1,
+  "exclaim_max": 0,
+  "banned": ["بهترین"],
+  "avoid": ["کانتنت"],
+  "prefer": {"کانتنت": "محتوا"},
+  "allow": [],
+  "industry": "cafe",
+  "formats": {
+    "caption": {"register": "colloquial", "address": "to", "max_words": 12, "emoji_max": 2, "note": "کپشن خودمانی‌تر است"},
+    "error": {"register": "formal", "dials": {"sentence_length": 2}},
+    "sms": {"banned": ["فوری"]}
+  }
+}

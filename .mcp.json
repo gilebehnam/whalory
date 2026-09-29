@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "whalory": {
+      "command": "${user_config.python}",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/skills/whalory/scripts/mcp_server.py", "--root", "${CLAUDE_PROJECT_DIR}"],
+      "env": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONIOENCODING": "utf-8",
+        "PYTHONUTF8": "1",
+        "WHALORY_LANG": "${user_config.default_language}"
+      }
+    }
+  }
+}

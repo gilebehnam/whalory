@@ -1,0 +1,3 @@
+Sample Tea House opens on 12 June 2026.
+Opening week offer: 20% off every pot of tea.
+Test data for the MCP self-test; the brand is made up.

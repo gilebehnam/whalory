@@ -1,0 +1,11 @@
+# Keeps the SHA-pinned actions in .github/workflows/ci.yml current. Dependabot opens a pull
+# request with the new commit SHA and its tag comment; check the release notes before merging.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    labels: []
+    commit-message:
+      prefix: ci

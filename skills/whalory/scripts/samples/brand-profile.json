@@ -1,0 +1,56 @@
+{
+  "schema_version": 2,
+  "name": "brand-test",
+  "brand": {
+    "fa": "ترنج‌نو",
+    "latin": "Toranjno",
+    "misspellings": {
+      "ترنجنو": "ترنج‌نو",
+      "ترنج نو": "ترنج‌نو",
+      "Toranj No": "Toranjno",
+      "TorangNo": "Toranjno"
+    }
+  },
+  "romanization": {
+    "ترنج‌نو": "Toranjno",
+    "لاهیجان": "Lahijan"
+  },
+  "register": "any",
+  "address": "any",
+  "dials": {
+    "warmth": 4,
+    "formality": 2,
+    "humor": 2,
+    "narrative": 4,
+    "sentence_length": 3,
+    "loud_marks": 1,
+    "jargon": 2,
+    "rhetoric": 3
+  },
+  "max_words": 24,
+  "emoji_max": 1,
+  "exclaim_max": 0,
+  "banned": ["نمایشی", "آزمایشی", "تستی", "ارسالِ فوری", "ارسال فوری"],
+  "avoid": ["پکیج", "باکس", "آیتم", "ترند"],
+  "prefer": {
+    "پکیج": "بسته",
+    "باکس": "جعبه",
+    "آیتم": "قلم",
+    "ترند": "فصلی"
+  },
+  "allow": [],
+  "industry": "food-souvenir",
+  "formats": {
+    "product": {
+      "register": "colloquial",
+      "address": "to",
+      "note": "برندِ ساختگی برای آزمون؛ متنِ محصول خودمانی است"
+    },
+    "ui": {
+      "register": "formal",
+      "address": "shoma",
+      "emoji_max": 0,
+      "note": "ریزمتنِ رابط"
+    }
+  }
+}

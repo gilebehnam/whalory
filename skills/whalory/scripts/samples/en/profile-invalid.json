@@ -1,0 +1,17 @@
+{
+  "schema_version": 2,
+  "name": "test-invalid",
+  "language": "english",
+  "variant": "en-XX",
+  "variants": ["en-US"],
+  "spelling": "american",
+  "oxford_comma": "yes",
+  "contractions": "sometimes",
+  "house_style": "nyt",
+  "reading_grade_max": 30,
+  "register": "any",
+  "dials": {"warmth": 9},
+  "avoid": [],
+  "prefer": {},
+  "by_lang": {"de": {}}
+}

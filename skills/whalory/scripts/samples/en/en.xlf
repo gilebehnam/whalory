@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="fa" target-language="en" datatype="plaintext" original="app">
+    <body>
+      <trans-unit id="greeting">
+        <source>سلام</source>
+        <target>Hello. We utilize your settings to plan the week.</target>
+      </trans-unit>
+      <trans-unit id="cart.count">
+        <source>{count} کالا</source>
+        <target>{count} items in your basket</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

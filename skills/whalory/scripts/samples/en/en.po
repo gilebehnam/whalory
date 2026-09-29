@@ -1,0 +1,16 @@
+msgid ""
+msgstr ""
+"Language: en\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "welcome"
+msgstr "Welcome, %s. We leverage AI to plan your week."
+
+msgctxt "button"
+msgid "save"
+msgstr "Save"
+
+msgid "One file"
+msgid_plural "%d files"
+msgstr[0] "One file"
+msgstr[1] "%d files"

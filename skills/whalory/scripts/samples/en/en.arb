@@ -1,0 +1,7 @@
+{
+  "@@locale": "en",
+  "title": "Unlock seamless shopping",
+  "@title": {"description": "Home screen title"},
+  "hello": "Hello {name}",
+  "@hello": {"placeholders": {"name": {"type": "String"}}}
+}
