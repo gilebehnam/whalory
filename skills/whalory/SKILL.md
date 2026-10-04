@@ -22,6 +22,10 @@ Whalory adds the working method of a professional writer and editor to the AI ho
 2. No machine patterns. Avoid straw-man contrast, such as `it's not X, it's Y`, `not only… but also`, or «فراتر از» in Persian. Leave out three stacked adjectives, a moral wrap-up, and any dash in the middle of a sentence. Catalogs: [Persian](references/fa/ai-tells.md), [English](references/en/ai-tells.md).
 3. No claim without evidence. Every objective claim needs evidence the brand can show. Otherwise it gets a bracket: `[source needed: …]` in English copy, «[… تأیید شود]» in Persian copy. In a [high-risk industry](references/router.md#high-risk-words-and-industry-cards), the note also marks it "confirm before publishing". Persian: [claims](references/fa/claims.md), [ethics](references/fa/ethics.md). English: [claims](references/en/claims.md), [ethics](references/en/ethics.md).
 
+## Reader-friendly terminology
+
+Public copy must use natural terms the reader understands. Localize meaning rather than translating internal engineering names word for word. Keep technical identifiers in code, filenames and commands. For Whalory’s Persian copy, the free edition is «والوری رایگان» or «نسخهٔ رایگان والوری»; its technical identifier remains `core` and its English name remains Whalory Core. Avoid «والوری هسته» as a product name. Technical discussion may still use «هسته» when it accurately means a software core.
+
 ## Method
 
 0. Detect. Before any question, fill the context card silently. It has twelve slots: `host`, `inputs`, `operation`, `intent`, `format/channel`, `reader`, `language`, `industry/risk`, `occasion`, `profile`, `output`, and `qa`. The `language` slot holds the output language, variant, market, and conversation language. Work out where you are from your own tools, and never ask the user which assistant they use. Method and route table: [`router.md`](references/router.md).

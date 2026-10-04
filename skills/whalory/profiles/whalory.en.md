@@ -116,7 +116,7 @@ Romanization map (the `romanization` key in the JSON):
 | Persian | Latin | Where |
 |---|---|---|
 | والوری | Whalory | Everywhere (`brand.latin`) |
-| والوری هسته | Whalory Core | Site, repository, package name |
+| والوری رایگان | Whalory Core | Site, repository, package name |
 | والوری حرفه‌ای | Whalory Pro | Site, receipt, package name |
 | والوری استودیو | Whalory Studio | Site, receipt, package name |
 

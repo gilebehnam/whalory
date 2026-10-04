@@ -18,7 +18,7 @@
     }
   },
   "romanization": {
-    "والوری هسته": "Whalory Core",
+    "والوری رایگان": "Whalory Core",
     "والوری حرفه‌ای": "Whalory Pro",
     "والوری استودیو": "Whalory Studio"
   },
@@ -47,11 +47,13 @@
   ],
   "avoid": [
     "Whalory Premium",
-    "brand voice document"
+    "brand voice document",
+    "والوری هسته"
   ],
   "prefer": {
     "Whalory Premium": "Whalory Pro",
-    "brand voice document": "voice profile"
+    "brand voice document": "voice profile",
+    "والوری هسته": "والوری رایگان"
   },
   "allow": [],
   "industry": "content-agency",
