@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""lint_en: Whalory's automatic checker for English copy (Whalory 3.0.0).
+"""lint_en: Whalory's automatic checker for English copy (Whalory 3.1.0).
 
 It finds what the eye misses: AI-writing tells, puffery, vague attribution, unproven
 claims, hidden verbs, long sentences, US/UK spelling mixes, punctuation and house-style
@@ -49,6 +49,8 @@ if sys.version_info < (3, 8):  # before anything else, so the message is readabl
                      'Install a newer Python and run it again.\n' % sys.version.split()[0])
     sys.exit(2)
 
+sys.dont_write_bytecode = True  # no __pycache__ next to the scripts: a skill or plugin folder may be read-only
+
 import argparse  # noqa: E402
 import bisect  # noqa: E402
 import functools  # noqa: E402
@@ -62,10 +64,14 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
+import hashlib  # noqa: E402
+
 import lint_fa as LF  # noqa: E402
 import textcount as TC  # noqa: E402
 
-__version__ = '3.0.0'
+_HUB = LF._HUB      # the Whalory Hub overlay (spec 5.9), or None; the built-in rules never need it
+
+__version__ = '3.2.0-rc.2'
 
 ERROR, WARN = LF.ERROR, LF.WARN
 UserError = LF.UserError
@@ -189,7 +195,58 @@ LEXICON = {
     'journey': ['journey', 'unlock your potential', 'elevate your experience'],
     'moral-close': ['Because at the end of the day', 'After all, ... is what matters'],
     'clickbait': ["You won't believe", 'This one trick', 'Shocking'],
+    'ai-vocab': ['delve', 'tapestry', 'testament', 'underscore', 'showcase', 'pivotal', 'intricate', 'meticulous',
+                 'realm', 'garner', 'boast', 'commendable', 'bolster', 'interplay', 'camaraderie', 'palpable',
+                 'noteworthy'],
+    'buzzword': ['vibrant', 'seamless', 'robust', 'leverage', 'unlock', 'elevate', 'empower', 'foster',
+                 'evolving landscape', 'holistic', 'cutting-edge', 'state-of-the-art', 'game-changer',
+                 'groundbreaking', 'revolutionize', 'renowned', 'nestled', 'in the heart of', 'diverse array',
+                 'rich heritage', 'commitment to', 'streamline', 'synergy', 'best-in-class', 'world-class',
+                 'transformative', 'navigate the complexities', 'harness', 'embark', 'take it to the next level'],
 }
+# Which LEXICON entry a match of a phrase-list rule belongs to (the start of the matched text,
+# case-insensitive), so the Hub can address one phrase by its lx- id (spec 5.3 step 2, 5.5).
+_LEX_ATTR = {
+    'cliche-open': [(0, r"in today{A}s\b"), (1, 'in a world where'), (2, 'welcome to the world of'),
+                    (3, 'look no further'), (4, r"whether you{A}re\b")],
+    'journey': [(0, r'journeys?\b'), (1, r'unlock\b'), (2, r'elevate\b')],
+    'moral-close': [(0, '(?:because )?at the end of the day'), (1, 'after all')],
+    'clickbait': [(0, 'you won'), (1, r'(?:this|one)\b'), (2, 'shocking')],
+    'ai-vocab': [(0, 'delv'), (1, 'tapestr'), (2, 'testament'), (3, 'underscor'), (4, 'showcas'), (5, 'pivotal'),
+                 (6, 'intrica'), (7, 'meticulous'), (8, 'realm'), (9, 'garner'), (10, 'boast'), (11, 'commendable'),
+                 (12, 'bolster'), (13, 'interplay'), (14, 'camaraderie'), (15, 'palpable'), (16, 'noteworthy')],
+    'buzzword': [(0, 'vibrant'), (1, 'seamless'), (2, 'robust'), (3, 'leverag'), (4, 'unlock'), (5, 'elevat'),
+                 (6, 'empower'), (7, 'foster'),
+                 (8, '(?:evolving|ever-evolving|digital|competitive|business) landscape'),
+                 (9, 'holistic'), (10, 'cutting-edge'), (11, 'state-of-the-art'), (12, 'game-?chang'),
+                 (13, 'groundbreaking'), (14, 'revolutioni'), (15, 'renowned'), (16, 'nestled'),
+                 (17, 'in the heart of'), (18, 'diverse array'), (19, 'rich (?:cultural )?heritage'),
+                 (20, 'commitment to'), (21, 'streamlin'), (22, 'synerg'), (23, 'best-in-class'), (24, 'world-class'),
+                 (25, 'transformative'), (26, 'navigat'), (27, 'harness'), (28, 'embark'), (29, 'take ')],
+}
+
+
+@functools.lru_cache(maxsize=256)
+def lx_pid(category, phrase):
+    """lx-en- plus the first 10 hex of SHA-256("en|" + category + "|" + NFC(phrase)) (spec 5.5)."""
+    text = unicodedata.normalize('NFC', phrase)
+    return 'lx-en-' + hashlib.sha256(('en|%s|%s' % (category, text)).encode('utf-8')).hexdigest()[:10]
+
+
+_LEX_ATTR_RX = {}
+
+
+def _lex_pid(category, text):
+    """The lx- id of the LEXICON entry a phrase-list match belongs to, or None."""
+    rows = _LEX_ATTR_RX.get(category)
+    if rows is None:
+        rows = [(LEXICON[category][i], _rx(p, re.I)) for i, p in _LEX_ATTR.get(category, ())]
+        _LEX_ATTR_RX[category] = rows
+    t = (text or '').strip()
+    for phrase, rx in rows:
+        if rx.match(t):
+            return lx_pid(category, phrase)
+    return None
 
 _ABBR_OK = set('''API APIs URL URLs HTML CSS PDF PDFs FAQ FAQs CEO CEOs CFO CTO COO USA US UK EU UN AI SMS OTP SEO
 CTA CTAs SaaS B2B B2C DTC iOS OK TV ID IDs PR HR IT UI UX JSON CSV TSV XML HTTP HTTPS SQL MB GB KB TB AM PM UTC GMT
@@ -375,8 +432,10 @@ _ESTABLISH = _rx(r"\b(?:clinically|scientifically|independently|lab)[- ](?:prove
 # A placeholder name ([customer name], masked) counts as a name.
 _T_NAME = r"(?:[A-Z][A-Za-z{AC}\-]+\.?(?:[ \t]+(?:[A-Z][A-Za-z{AC}\-]*\.?|(?:de|van|von|da|di|al|bin)(?=[ \t])))*|%s{3,})" % MASK
 _T_SAYS = r"(?:said|says|writes|wrote|adds|added|explains|explained|recalls|recalled)"
+_T_IMPERSONAL = r"(?!(?:It|This|That|These|Those|There|Which|What)[ \t])"   # '"…" It adds' is not a name
 _TESTIMONIAL = _rx(r"[\"“](?P<q>[^\"“”\n]{10,300})[\"”][ \t]*(?:(?:—|–|--?|~)[ \t]*" + _T_NAME +
-                   r"|,?[ \t]*" + _T_SAYS + r"[ \t]+" + _T_NAME + r"|" + _T_NAME + r"[ \t]+" + _T_SAYS + r"\b)")
+                   r"|,?[ \t]*" + _T_SAYS + r"[ \t]+" + _T_NAME + r"|" + _T_IMPERSONAL + _T_NAME + r"[ \t]+" +
+                   _T_SAYS + r"\b)")
 _DOI = re.compile(r"\b10\.\d{4,9}/[-._;()/:A-Za-z0-9]+")
 _ISBN = re.compile(r"\bISBN(?:-1[03])?:?[ \t]*(?P<n>[0-9X][0-9X -]{8,16}[0-9X])\b", re.I)
 _PASSIVE = _rx(r"\b(?:am|is|are|was|were|be|been|being)\s+(?:\w+ly\s+)?(?:\w{2,}ed|built|done|made|given|taken"
@@ -700,10 +759,22 @@ RULES = [
 _RULE_BY_ID = dict((r[0], r) for r in RULES)
 
 
+#: Tunable parameters for the Hub (spec 7.3): the built-in default and the range a signed baseline may use.
+HUB_PARAMS = {'en-long-sentence.max_words': {'default': EN_DEFAULT_MAX_WORDS, 'min': 18, 'max': 35, 'bucket': 4},
+              'en-readability-grade.max': {'default': 8, 'min': 6, 'max': 12, 'bucket': 1}}
+
+
 def rule_list():
-    """Every rule once: id, severity, kind, description, ref (catalog id) and fix."""
-    return [{'id': r[0], 'severity': r[1], 'kind': r[2], 'description': r[4], 'ref': r[3], 'fix': r[5]}
+    """Every rule once: id, severity, kind, description, ref (catalog id) and fix; a rule with
+    tunable parameters also carries params (spec 7.3)."""
+    rows = [{'id': r[0], 'severity': r[1], 'kind': r[2], 'description': r[4], 'ref': r[3], 'fix': r[5]}
             for r in RULES]
+    by_id = dict((r['id'], r) for r in rows)
+    for pid, spec in HUB_PARAMS.items():
+        rule, _, name = pid.partition('.')
+        if rule in by_id:
+            by_id[rule].setdefault('params', {})[name] = dict(spec)
+    return rows
 
 
 def _fix_hint(code):
@@ -730,6 +801,7 @@ def _norm_dials_en(dials, where, warns):
     for k, v in dials.items():
         k = LF.DIAL_ALIASES.get(k, k)
         if k not in LF.DIAL_RANGES:
+            _warn(warns, 'unknown dial in %s: %s' % (where, k))
             continue
         lo, hi = LF.DIAL_RANGES[k]
         if isinstance(v, bool) or not isinstance(v, (int, float)):
@@ -773,9 +845,16 @@ def normalize_profile(profile):
     if not profile:
         return {'_en_normalized': True, '_warnings': [], 'dials': {}, 'formats': {}, 'brand': {},
                 'prefer': {}, 'romanization': {}}
+    if not isinstance(profile, dict):
+        raise UserError('profile must be a JSON object')
     if profile.get('_en_normalized'):
         return profile
-    warns = []
+    raw = {k: v for k, v in profile.items() if k not in ('_path', '_normalized', '_en_normalized', '_warnings')}
+    errors = LF.VP.validate_profile(raw)
+    sv = raw.get('schema_version', 1)
+    if type(sv) is not int or sv not in (1, 2, 3) or (sv == 3 and errors):
+        raise UserError(str(LF.VP.ProfileError(errors)))
+    warns = [('en-profile-invalid', e['path'] + ': ' + e['message']) for e in errors]
     bl = profile.get('by_lang')
     if bl is not None:
         if not isinstance(bl, dict):
@@ -790,8 +869,8 @@ def normalize_profile(profile):
     src = LF.merge_by_lang(profile, 'en')
     p = dict(src)
     sv = p.get('schema_version', 1)
-    if sv not in (1, 2):
-        _warn(warns, 'schema_version "%s" is unknown; lint_en reads version 2' % (sv,))
+    if sv not in (1, 2, 3):
+        _warn(warns, 'schema_version "%s" is unknown; lint_en reads versions 1 through 3' % (sv,))
     lang = p.get('language')
     if lang is not None and lang not in LANGUAGES:
         _warn(warns, 'language "%s" is invalid (allowed: fa, en, bilingual)' % (lang,))
@@ -920,7 +999,9 @@ def resolve_settings(profile=None, fmt=None, max_words=None, emoji_max=None, exc
     if house_style and house_style not in HOUSE_STYLES:
         raise UserError('--house-style "%s" is unknown (%s)' % (house_style, ', '.join(HOUSE_STYLES)))
     dials = dict(p.get('dials') or {})
-    mw = EN_DIAL_WORDS.get(dials.get('sentence_length'), EN_DEFAULT_MAX_WORDS)
+    # a Hub overlay default only replaces the built-in default (spec 5.9)
+    mw = EN_DIAL_WORDS.get(dials.get('sentence_length')) or _hub_param('en-long-sentence.max_words',
+                                                                       EN_DEFAULT_MAX_WORDS)
     em, ex = LF.DIAL_MARKS.get(dials.get('loud_marks'), LF.DIAL_MARKS[LF.DEFAULT_LOUD_MARKS])
     src = {'max_words': 'dial', 'emoji_max': 'dial', 'exclaim_max': 'dial'}
     if 'max_words' in p:
@@ -974,7 +1055,8 @@ def resolve_settings(profile=None, fmt=None, max_words=None, emoji_max=None, exc
     hs = house_style or p.get('house_style')
     rg = p.get('reading_grade_max')
     if rg is None:
-        rg = EN_GRADE.get(dials.get('jargon') or LF.DIAL_DEFAULTS['jargon'], 8)
+        rg = EN_GRADE.get(dials['jargon'], 8) if dials.get('jargon') else _hub_param(
+            'en-readability-grade.max', EN_GRADE.get(LF.DIAL_DEFAULTS['jargon'], 8))
     brand = p.get('brand') or {}
     misspell = dict((k, v) for k, v in (brand.get('misspellings') or {}).items()
                     if _is_latin(k) and isinstance(v, str))
@@ -1569,7 +1651,9 @@ def _finalize(issues):
         out.append(x)
     out.sort(key=lambda x: (_ORDER[x['level']], x['line'] or 0, x.get('key') or '', x['col'] or 0))
     for x in out:
-        x.pop('_span', None)
+        span = x.pop('_span', None)
+        if span:
+            x['_end'] = span[1] + 1         # internal, for hub_mine; _hub_issues drops it before output
     return out
 
 
@@ -1620,6 +1704,12 @@ def _check(raw, masked, st, mode='doc', key=None, kind='text', facts=None):
     def add_line(ln, code, level, msg, snippet=''):
         issues.append(_mk(ln, 0, code, level, msg, snippet, key))
 
+    def tag(category, text):
+        """The phrase id of the finding just added (internal _pid, never printed)."""
+        pid = _lex_pid(category, text)
+        if pid:
+            issues[-1]['_pid'] = pid
+
     def allowed(word):
         return word.lower() in allow
 
@@ -1665,7 +1755,7 @@ def _check(raw, masked, st, mode='doc', key=None, kind='text', facts=None):
                     m.end())
 
     # ---- pattern rules over the masked text
-    def scan(rx, code, level, msg, gate=True, word_rule=False, cite_ok=False):
+    def scan(rx, code, level, msg, gate=True, word_rule=False, cite_ok=False, lex=None):
         if not gate:
             return
         for m in rx.finditer(m2):
@@ -1677,6 +1767,8 @@ def _check(raw, masked, st, mode='doc', key=None, kind='text', facts=None):
                 continue
             text_m = m2[s:e].replace(MASK, ' ').strip()
             add(s, code, level, msg(text_m) if callable(msg) else msg, e)
+            if lex:
+                tag(lex, text_m)
 
     long_fmt = not fmt or fmt not in SHORT_FORMATS
     vocab_hits = [(m.start(), m.group(0)) for m in _AI_VOCAB.finditer(m2) if not allowed(m.group(0))]
@@ -1684,8 +1776,10 @@ def _check(raw, masked, st, mode='doc', key=None, kind='text', facts=None):
     for s, w in vocab_hits:
         add(s, 'en-ai-vocab', WARN, '"%s" is over-represented in AI-written text; use the plain word or the fact' % w,
             s + len(w))
+        tag('ai-vocab', w)
     for s, w in buzz_hits:
         add(s, 'en-buzzword', WARN, 'Buzzword "%s"; say what it does, for whom, with a number' % w, s + len(w))
+        tag('buzzword', w)
     scan(_SIGNIF, 'en-significance', WARN, lambda t: 'Inflated significance "%s"; delete it or give the '
          'sourced consequence' % t)
     scan(_COPULA, 'en-copula-avoid', WARN, lambda t: '"%s": use is/are' % t)
@@ -1769,10 +1863,24 @@ def _check(raw, masked, st, mode='doc', key=None, kind='text', facts=None):
     scan(_ALL_CAPS, 'en-all-caps', WARN, 'Five or more words in capitals; use sentence case')
     scan(_LATIN_ABBR, 'en-latin-abbr', WARN, lambda t: '"%s": write "for example", "such as" or "that is"' % t,
          gate=hstyle == 'govuk')
-    scan(_CLICHE_OPEN, 'en-cliche-open', WARN, lambda t: 'Cliché "%s"; start with the fact' % t, word_rule=True)
-    scan(_JOURNEY, 'en-journey', WARN, lambda t: '"%s": use a concrete verb' % t, word_rule=True)
-    scan(_MORAL_CLOSE, 'en-moral-close', WARN, lambda t: 'Moral close "%s"; end on the action' % t)
-    scan(_CLICKBAIT, 'en-clickbait', WARN, lambda t: 'Clickbait "%s"; say the finding' % t)
+    scan(_CLICHE_OPEN, 'en-cliche-open', WARN, lambda t: 'Cliché "%s"; start with the fact' % t, word_rule=True,
+         lex='cliche-open')
+    scan(_JOURNEY, 'en-journey', WARN, lambda t: '"%s": use a concrete verb' % t, word_rule=True, lex='journey')
+    scan(_MORAL_CLOSE, 'en-moral-close', WARN, lambda t: 'Moral close "%s"; end on the action' % t,
+         lex='moral-close')
+    scan(_CLICKBAIT, 'en-clickbait', WARN, lambda t: 'Clickbait "%s"; say the finding' % t, lex='clickbait')
+    hub = _hub_rx()
+    if hub is not None:
+        try:
+            for m in hub[0].finditer(m2):
+                got = hub[1].get(_hub_norm(m.group(1)))
+                if got and not allowed(m.group(1)):
+                    add(m.start(1), 'en-hub-tell', ERROR if got[1] == 'error' else WARN, _HUB.HUB_MESSAGE['en'],
+                        m.end(1))
+                    issues[-1]['_pid'] = got[0]
+        except Exception:  # noqa: BLE001  (spec 5.8 step 10: built-in rules only for this call)
+            _HUB.note_exception()
+            issues[:] = [x for x in issues if x['code'] != 'en-hub-tell']
     for m in _TESTIMONIAL.finditer(m2):
         q = m.group('q')
         if facts is not None:
@@ -2202,6 +2310,51 @@ def _word_rx(w):
     return re.compile(r"(?<![\w'’\-])%s(?:s|es)?(?![\w'’\-])" % core, re.I)
 
 
+# ---------------------------------------------------------------- the Whalory Hub overlay (spec 5.9)
+_HUB_RX = {}
+
+
+def _hub_norm(s):
+    return re.sub(r'\s+', ' ', s.replace('’', "'")).strip().lower()
+
+
+def _hub_rx():
+    """The hub phrases (ht-) as one alternation, longest first, each re.escape()d inside the
+    boundaries of _word_rx (spec 5.9, 7.5): (regex, {normalised phrase: (id, state)}) or None."""
+    if _HUB is None:
+        return None
+    phrases = tuple(_HUB.hub_phrases('en'))
+    if not phrases:
+        return None
+    got = _HUB_RX.get(phrases)
+    if got is None:
+        alt = '|'.join(re.escape(p).replace('\\ ', r'\s+').replace("'", A).replace('’', A)
+                       for p, _pid, _st in phrases)
+        got = (re.compile(r"(?<![\w'’\-])(%s)(?:s|es)?(?![\w'’\-])" % alt, re.I),
+               dict((_hub_norm(p), (pid, st)) for p, pid, st in phrases))
+        _HUB_RX.clear()
+        _HUB_RX[phrases] = got
+    return got
+
+
+def _hub_issues(issues):
+    """Overlay severities and hidden findings (spec 5.9); without hub_overlay only the internal fields go."""
+    if _HUB is not None:
+        return _HUB.apply_issues('en', issues)
+    for x in issues:
+        x.pop('_pid', None)
+        x.pop('_end', None)
+    return issues
+
+
+def _hub_param(name, default):
+    return _HUB.param('en', name, default) if _HUB is not None else default
+
+
+def _hub_stats(stats):
+    return _HUB.stamp_stats('en', stats) if _HUB is not None else stats
+
+
 _PROPER = re.compile(r"\b[A-Z][a-zA-Z'’\-]*[a-zA-Z]\b|\b[A-Z]\b")
 _STOP_PROPER = set('''I A An The This That These Those It Its We Our You Your They Their He She His Her My Me Us
 If When Then So And But Or Yes No OK Hi Hello Dear Thanks Thank Please'''.split())
@@ -2387,8 +2540,8 @@ def lint(text, profile=None, fmt=None, channel=None, kind=None, settings=None, f
         ch_issues, ch_info = _channel_check(text, channel)
         issues += [_mk(0, 0, code, level, msg) for level, code, msg in ch_issues]
         extra['channel'] = ch_info
-    issues = _finalize(issues)
-    return issues, _make_stats(issues, info, st, kind, extra)
+    issues = _hub_issues(_finalize(issues))
+    return issues, _hub_stats(_make_stats(issues, info, st, kind, extra))
 
 
 def _en_value(value):
@@ -2457,7 +2610,7 @@ def lint_locale(text, path='', profile=None, fmt=None, channel=None, max_words=N
     if straight and curly:
         issues.append(_mk(0, 0, 'en-quote-mix', WARN, 'Straight and curly quotes across the file (%d straight, '
                           '%d curly)' % (straight, curly)))
-    issues = _finalize(_profile_issues(st) + issues)
+    issues = _hub_issues(_finalize(_profile_issues(st) + issues))
     fre, fkgl = readability_from((words, syl), len(lens))
     info = {'lens': lens, 'placeholders': placeholders, 'words': words, 'syllables': syl, 'paragraphs': paras,
             'us': us, 'uk': uk, 'fre': fre, 'fkgl': fkgl}
@@ -2466,7 +2619,7 @@ def lint_locale(text, path='', profile=None, fmt=None, channel=None, max_words=N
         extra['channel'] = {'id': channel.get('id'), 'field': channel.get('field'),
                             'note': '' if (channel.get('spec') or {}).get('status') == 'verified'
                             else 'unverified limit', 'per_string': True}
-    return issues, _make_stats(issues, info, st, 'locale', extra)
+    return issues, _hub_stats(_make_stats(issues, info, st, 'locale', extra))
 
 
 def lint_csv(text, path='', profile=None, fmt=None, channel=None, max_words=None, settings=None,
@@ -2503,7 +2656,7 @@ def lint_csv(text, path='', profile=None, fmt=None, channel=None, max_words=None
         paras += inf['paragraphs']
         us += inf['us']
         uk += inf['uk']
-    issues = _finalize(_profile_issues(st) + issues)
+    issues = _hub_issues(_finalize(_profile_issues(st) + issues))
     fre, fkgl = readability_from((words, syl), len(lens))
     inf = {'lens': lens, 'placeholders': placeholders, 'words': words, 'syllables': syl, 'paragraphs': paras,
            'us': us, 'uk': uk, 'fre': fre, 'fkgl': fkgl}
@@ -2513,7 +2666,7 @@ def lint_csv(text, path='', profile=None, fmt=None, channel=None, max_words=None
         extra['channel'] = {'id': channel.get('id'), 'field': channel.get('field'),
                             'note': '' if (channel.get('spec') or {}).get('status') == 'verified'
                             else 'unverified limit', 'per_string': True}
-    return issues, _make_stats(issues, inf, st, 'csv', extra)
+    return issues, _hub_stats(_make_stats(issues, inf, st, 'csv', extra))
 
 
 def lint_file(path, profile=None, fmt=None, channel=None, max_words=None, md=False, settings=None,
@@ -2650,7 +2803,7 @@ def fix_text(text, kind=None, profile=None, settings=None):
 # ---------------------------------------------------------------- command line
 def print_rules(as_json=False, out=None):
     out = out or sys.stdout
-    rows = rule_list()
+    rows = _HUB.rules_rows('en', rule_list()) if _HUB is not None else rule_list()
     if as_json:
         out.write(json.dumps(rules_json(), ensure_ascii=False, indent=1) + '\n')
         return
@@ -2669,7 +2822,8 @@ def print_rules(as_json=False, out=None):
 
 
 def rules_json():
-    return {'version': 2, 'tool_version': __version__, 'rules': rule_list(), 'lexicon': LEXICON,
+    rows = _HUB.rules_rows('en', rule_list()) if _HUB is not None else rule_list()
+    return {'version': 2, 'tool_version': __version__, 'rules': rows, 'lexicon': LEXICON,
             'jargon': JARGON_EN, 'formats': dict((k, EN_FORMAT_DEFAULTS[k]) for k in FORMAT_IDS)}
 
 
@@ -2707,6 +2861,8 @@ def build_parser(prog='lint_en', with_lang=False, description=None):
     ap.add_argument('--rules', action='store_true', help='list all rules and formats')
     ap.add_argument('--fix', action='store_true', help='mechanical fixes; output in <name>.fixed.<ext>')
     ap.add_argument('--write', action='store_true', help='with --fix, fix the file in place')
+    ap.add_argument('--no-overlay', action='store_true',
+                    help='built-in rules only, without the signed Whalory Hub updates (as WHALORY_HUB_OVERLAY=0)')
     ap.add_argument('--version', action='version', version='%s %s' % (prog, __version__))
     ap.add_argument('--variant', metavar='BCP47', help='English variant: %s' % ', '.join(VARIANTS))
     ap.add_argument('--house-style', dest='house_style', metavar='ID', help='house style: %s' % ', '.join(HOUSE_STYLES))
@@ -2800,6 +2956,8 @@ def main(argv=None):
         a = ap.parse_args(argv)
     except SystemExit as e:
         return int(e.code or 0) if e.code in (0, None) else 2
+    if _HUB is not None:
+        _HUB.set_cli_disabled(a.no_overlay)
     if a.rules:
         print_rules(a.json)
         return 0
@@ -2916,6 +3074,9 @@ def run(argv=None, prog='lint_en'):
              prog)
         return 2
 
+
+if _HUB is not None:
+    _HUB.register('en', sys.modules[__name__])
 
 if __name__ == '__main__':
     sys.exit(run())

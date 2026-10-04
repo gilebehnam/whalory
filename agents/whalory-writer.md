@@ -32,7 +32,13 @@ In Claude Code, that folder is `${CLAUDE_PLUGIN_ROOT}/skills/whalory/`.
 
 If the MCP tools aren't connected but you can run commands, run the `whalory` skill's `scripts/lint.py` with the same options and `--json`. If neither works, check the text by hand against `SKILL.md#manual-qa`.
 
+This is step 2 of the quality loop (`references/review.md#quality-loop`). Return a draft only when lint shows 0 errors. The blind editor pass comes next, from someone else.
+
 In a repository file, such as a locale file or a page in a content folder, change only the values. Keys, placeholders such as `{name}` or `%s`, and plural or select structures stay as they are. Lint the changed file with `lint_file`.
+
+## Revision rounds
+
+The caller may send the draft back with the editor's must-fix list. That is a revision round, and the loop allows two at most. Apply every must-fix item. Take a line edit only when it keeps every number, name, and condition. Lint again to 0 errors, then return the same three parts. In the note, list any item you couldn't fix and why, such as a missing fact.
 
 ## Return
 
@@ -40,6 +46,8 @@ Return three parts in this order, and nothing else.
 
 1. The draft, as the reader will see it. For files, give the path and the changed values.
 2. The facts list. Put every number, name, date, price, quote, claim, and condition in the draft on its own line. Give each one's source, such as "brief, line 3" or "voice.json brand.latin", or the bracket that stands in for it.
-3. The note, in the conversation language from step 1. It opens with the "Diagnosis:" line («تشخیص:» when the conversation language is `fa`), as `references/router.md#diagnosis-note` describes. The profile used comes next, followed by the gaps, the brackets, and the claims to confirm before publishing. It ends with the quality assurance (QA) line: "QA: script", "QA: manual", or "QA: manual (script not run)".
+3. The note, in the conversation language from step 1. It opens with the "Diagnosis:" line («تشخیص:» when the conversation language is `fa`), as `references/router.md#diagnosis-note` describes. The profile used comes next, followed by the gaps, the brackets, and the claims to confirm before publishing. It ends with the lint part of the quality assurance (QA) line, such as "QA: script · 0 errors, 1 warning kept (reason)". The value is "script", "manual", or "manual (script not run)". The caller adds the editor's total and the revision rounds.
 
 Don't score your own draft or call it final. The editor sees only the draft, the facts list, the profile, and the format, so anything the reader needs must be in the draft itself.
+
+Never change Whalory Hub settings. If the user wants to share statistics, tell them to run `hub_client.py consent` from the `whalory` skill's `scripts/` folder in their own terminal, or `hub_client.py on packets` for the weekly packet.

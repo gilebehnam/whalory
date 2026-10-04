@@ -1,5 +1,7 @@
 # How to install
 
+> Release status: 3.2.0-rc.1 is an unpublished local candidate. Public 3.0.0 is the verified release; 3.1.0 is an unpublished development precursor. Candidate artifact names below refer to local build outputs, not newly published download URLs.
+
 Each section below uses a package from the [latest release](https://github.com/gilebehnam/whalory/releases/latest) or this repository. The steps were checked against each host's documentation on 27 or 28 September 2026. The latest test record comes at the end of each section, and so far every test ran on the 3.0.0 build. We call a route tested only after a dated test.
 
 Persian readers: the Persian guide is [GUIDE.fa.md](../skills/whalory/GUIDE.fa.md), and the website has the same steps on its [Persian download page](https://whalory.com/fa/download/).
@@ -25,11 +27,11 @@ Persian readers: the Persian guide is [GUIDE.fa.md](../skills/whalory/GUIDE.fa.m
 
 | File | What it is |
 |---|---|
-| `whalory-core-3.1.0-skill.zip` | The skill folder, for any host that reads Agent Skills |
-| `whalory-core-3.1.0-claudeai.zip` | The same skill, shaped for the claude.ai and Claude Desktop upload |
-| `whalory-core-mcp-3.1.0.mcpb` | The MCP tools as a Claude Desktop extension |
-| `whalory-core-3.1.0-agent-plugin.zip` | The Agent Plugins package, for Codex and for Copilot in Visual Studio Code (VS Code) |
-| `whalory-core-3.1.0-paste.zip` | Paste-in prompts in English and Persian |
+| `whalory-core-3.2.0-rc.1-skill.zip` | The skill folder, for any host that reads Agent Skills |
+| `whalory-core-3.2.0-rc.1-claudeai.zip` | The same skill, shaped for the claude.ai and Claude Desktop upload |
+| `whalory-core-mcp-3.2.0-rc.1.mcpb` | The MCP tools as a Claude Desktop extension |
+| `whalory-core-3.2.0-rc.1-agent-plugin.zip` | The Agent Plugins package, for Codex and for Copilot in Visual Studio Code (VS Code) |
+| `whalory-core-3.2.0-rc.1-paste.zip` | Paste-in prompts in English and Persian |
 | `SHA256SUMS` | The checksum of each file above |
 
 This repository itself is the Claude Code plugin, and the skill folder sits at `skills/whalory/`.
@@ -46,7 +48,7 @@ shasum -a 256 -c SHA256SUMS --ignore-missing        # macOS
 On Windows, print the checksum and compare it with the line for that file in `SHA256SUMS`:
 
 ```powershell
-Get-FileHash whalory-core-3.1.0-skill.zip -Algorithm SHA256
+Get-FileHash whalory-core-3.2.0-rc.1-skill.zip -Algorithm SHA256
 ```
 
 ### Python
@@ -78,7 +80,7 @@ Test record: during packaging, Claude Code 2.1.278 loaded the plugin with `--plu
 
 ## Claude Desktop
 
-1. Download `whalory-core-mcp-3.1.0.mcpb` from the release.
+1. Download `whalory-core-mcp-3.2.0-rc.1.mcpb` from the verified local candidate kit.
 2. Double-click it, drag it into the Claude Desktop window, or open Settings > Extensions > Advanced settings > Install Extension.
 3. Choose the folders Whalory may read. The file tools read only inside them.
 
@@ -89,7 +91,7 @@ Test record: no end-to-end test recorded.
 ## claude.ai
 
 1. Turn on code execution in your settings. Skills need it.
-2. Open Customize > Skills and upload `whalory-core-3.1.0-claudeai.zip`.
+2. Open Customize > Skills and upload `whalory-core-3.2.0-rc.1-claudeai.zip`.
 
 Use the `-claudeai.zip`, not the plain skill zip: its description fits claude.ai's 200-character limit, and its root is the skill folder. The scripts can run only in Claude's code execution sandbox. Keep your voice profile in a Claude project, or paste `VOICE.md` into the chat.
 
@@ -111,7 +113,7 @@ args = ["<path-to-whalory>/scripts/mcp_server.py", "--root", "."]
 default_tools_approval_mode = "auto"
 ```
 
-For the commands as well, use the Agent Plugins package, `whalory-core-3.1.0-agent-plugin.zip`. Its `INSTALL.md` shows how to add it to a Codex marketplace; then restart Codex and install Whalory from `/plugins`. Plugins work in the ChatGPT desktop app and the Codex CLI, but not in the Codex IDE extension.
+For the commands as well, use the Agent Plugins package, `whalory-core-3.2.0-rc.1-agent-plugin.zip`. Its `INSTALL.md` shows how to add it to a Codex marketplace; then restart Codex and install Whalory from `/plugins`. Plugins work in the ChatGPT desktop app and the Codex CLI, but not in the Codex IDE extension.
 
 Don't load this repository as a Codex plugin. Codex loads its skills, but in our test its MCP server did not start, because Codex does not expand the Claude plugin's settings.
 
@@ -137,7 +139,7 @@ Test record: no end-to-end test recorded. Guide: [Cursor on the website](https:/
 
 With the Agent Plugins package:
 
-1. Unzip `whalory-core-3.1.0-agent-plugin.zip`.
+1. Unzip `whalory-core-3.2.0-rc.1-agent-plugin.zip`.
 2. Add its `whalory` folder to the `chat.pluginLocations` setting, with the value `true`.
 
 The package's MCP server runs `python3`. With the skill folder alone, copy `skills/whalory` into `.github/skills/` in a repository, or into `~/.copilot/skills/`. To add the tools by hand, put this in `.vscode/mcp.json`:
@@ -155,11 +157,11 @@ Test record: neither plugin route had been tested in VS Code when 3.0.0 was buil
 
 Gemini CLI uses the skill folder:
 
-1. Unzip `whalory-core-3.1.0-skill.zip`, or copy `skills/whalory` from this repository.
+1. Unzip `whalory-core-3.2.0-rc.1-skill.zip`, or copy `skills/whalory` from this repository.
 2. Put the `whalory` folder in `~/.gemini/skills/` or `~/.agents/skills/` for your user, or in `.gemini/skills/` or `.agents/skills/` in a project.
 3. Start Gemini CLI and describe the task. When Gemini asks to activate the `whalory` skill, confirm.
 
-The skill reviews each draft in a separate pass of the same model. A Gemini CLI extension is built for 3.1.0, with the commands and the writer and editor agents. Its repository is not published yet. When it is, its install command will appear here and in the changelog.
+The skill reviews each draft in a separate pass of the same model. A Gemini CLI extension is built for 3.2.0-rc.1, with the commands and the writer and editor agents. Its repository is not published yet. When it is, its install command will appear here and in the changelog.
 
 Test record: no end-to-end test recorded. Guide: [Gemini CLI on the website](https://whalory.com/guides/gemini-cli/).
 
@@ -171,7 +173,7 @@ Hosts that read Agent Skills from `.agents/skills/` can load the same folder: co
 
 For ChatGPT, the Gemini app, or any assistant with a custom instructions field:
 
-1. Unzip `whalory-core-3.1.0-paste.zip`.
+1. Unzip `whalory-core-3.2.0-rc.1-paste.zip`.
 2. Pick the file that fits your assistant's limit: `en/paste-1500.txt` or `en/paste-4000.txt`, or the same sizes in `fa/` for Persian.
 3. Paste all of it into the custom instructions, or at the start of the chat.
 4. If you have a voice profile, paste it into the same chat.

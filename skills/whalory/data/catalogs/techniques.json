@@ -1,0 +1,1026 @@
+{
+  "schema_version": 1,
+  "kind": "techniques",
+  "metadata": {
+    "release": "3.2.0-rc.2",
+    "curated_on": "2026-10-04",
+    "curator": "Codex editorial catalog task",
+    "source_seed_sha256": "15d8194762a71e7b385bd0ab760eb8d00fa59a45f331be19f69d2b3223bbef52",
+    "source_seed": "whalory-codex-kit/catalogs/catalog-seed.json",
+    "fact_sets": {
+      "event_demo_v1": {
+        "language": "fa",
+        "facts": [
+          "فردا ساعت ۱۸ یک پخش زنده برگزار می‌شود.",
+          "مخاطبان می‌توانند سؤال‌هایشان را در همان پخش زنده مطرح کنند."
+        ],
+        "forbidden_additions": [
+          "موضوع تازه",
+          "قول قطع‌نشدن اینترنت",
+          "هدیه",
+          "تخفیف",
+          "نام یا تجربهٔ مشتری",
+          "تمرین ورزشی",
+          "پاسخ تضمینی به همهٔ سؤال‌ها"
+        ],
+        "baseline_fa": "فردا ساعت ۱۸ پخش زنده داریم. می‌توانید سؤال‌هایتان را همان‌جا مطرح کنید.",
+        "facts_en": [
+          "A live stream takes place tomorrow at 18:00.",
+          "The audience can ask questions during that same live stream."
+        ],
+        "baseline_en": "We go live tomorrow at 18:00. You can ask your questions during the stream."
+      }
+    },
+    "review_scope": "Offline editorial curation, structural checks and deterministic sample lint; empirical model calibration and owner acceptance are pending.",
+    "curation": {
+      "seed_is_not_runtime_readiness": true,
+      "authored_fields": [
+        "labels",
+        "guidance",
+        "all_11_dials",
+        "independent_register",
+        "per_tone_examples",
+        "negative_examples",
+        "translations"
+      ],
+      "numeric_mapping_status": "editorial_candidate_not_empirically_calibrated",
+      "register_is_independent_of_formality": true,
+      "same_fact_example_scope": "event_demo_v1 only; no subject, benefit, witness or answer guarantee added"
+    },
+    "derived_from_author_readiness": false
+  },
+  "items": [
+    {
+      "id": "accessible_structure",
+      "label_fa": "ساختار دسترس‌پذیر",
+      "label_en": "Accessible structure",
+      "guidance_fa": "اطلاعات اصلی را در بندهای کوتاه و با عنوان روشن مرتب کنید.",
+      "guidance_en": "Put key information in short sections with clear labels.",
+      "avoid_fa": "اطلاعات را فقط با رنگ یا نشانه منتقل نکنید.",
+      "avoid_en": "Do not rely on color or symbols alone.",
+      "label": "ساختار دسترس‌پذیر",
+      "name": "ساختار دسترس‌پذیر",
+      "description_fa": "اطلاعات اصلی را در بندهای کوتاه و با عنوان روشن مرتب کنید.",
+      "description_en": "Put key information in short sections with clear labels.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "acknowledge_context",
+      "label_fa": "توجه به زمینه",
+      "label_en": "Acknowledge context",
+      "guidance_fa": "فقط مسئله یا احساس گفته‌شدهٔ مخاطب را بازتاب بدهید.",
+      "guidance_en": "Acknowledge only the situation or feeling the person has stated.",
+      "avoid_fa": "احساس یا تشخیص نامعلوم به مخاطب نسبت ندهید.",
+      "avoid_en": "Do not invent feelings or diagnoses.",
+      "label": "توجه به زمینه",
+      "name": "توجه به زمینه",
+      "description_fa": "فقط مسئله یا احساس گفته‌شدهٔ مخاطب را بازتاب بدهید.",
+      "description_en": "Acknowledge only the situation or feeling the person has stated.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "bounded_claim",
+      "label_fa": "ادعای به‌اندازه",
+      "label_en": "Bounded claims",
+      "guidance_fa": "دامنه و شرط ادعا را هم‌اندازهٔ شواهد نگه دارید.",
+      "guidance_en": "Keep the scope and conditions of a claim within the evidence.",
+      "avoid_fa": "امکان را تضمین نتیجه ننام.",
+      "avoid_en": "Do not turn an option into a guaranteed outcome.",
+      "label": "ادعای به‌اندازه",
+      "name": "ادعای به‌اندازه",
+      "description_fa": "دامنه و شرط ادعا را هم‌اندازهٔ شواهد نگه دارید.",
+      "description_en": "Keep the scope and conditions of a claim within the evidence.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "broad_metaphor",
+      "label_fa": "استعارهٔ ساده",
+      "label_en": "Simple metaphor",
+      "guidance_fa": "یک تصویر آشنا برای توضیح به کار ببرید و معنی واقعی را روشن نگه دارید.",
+      "guidance_en": "Use one familiar image while keeping the literal meaning clear.",
+      "avoid_fa": "استعاره را جای شرط یا عدد واقعی ننشان.",
+      "avoid_en": "Do not replace a real condition or number with metaphor.",
+      "label": "استعارهٔ ساده",
+      "name": "استعارهٔ ساده",
+      "description_fa": "یک تصویر آشنا برای توضیح به کار ببرید و معنی واقعی را روشن نگه دارید.",
+      "description_en": "Use one familiar image while keeping the literal meaning clear.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "calm_pacing",
+      "label_fa": "ضرباهنگ آرام",
+      "label_en": "Calm pacing",
+      "guidance_fa": "از جمله‌های روشن و مکث طبیعی استفاده کنید.",
+      "guidance_en": "Use clear sentences and natural pauses.",
+      "avoid_fa": "آرامش را وعدهٔ حل قطعی نسازید.",
+      "avoid_en": "Do not promise certainty as reassurance.",
+      "label": "ضرباهنگ آرام",
+      "name": "ضرباهنگ آرام",
+      "description_fa": "از جمله‌های روشن و مکث طبیعی استفاده کنید.",
+      "description_en": "Use clear sentences and natural pauses.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "choice_support",
+      "label_fa": "کمک به انتخاب",
+      "label_en": "Support choice",
+      "guidance_fa": "گزینه‌ها و محدودیت‌های موجود را بی‌فشار توضیح بدهید.",
+      "guidance_en": "Explain the available options and limits without pressure.",
+      "avoid_fa": "گزینهٔ دوم یا کمیابی خیالی نسازید.",
+      "avoid_en": "Do not invent an alternative or scarcity.",
+      "label": "کمک به انتخاب",
+      "name": "کمک به انتخاب",
+      "description_fa": "گزینه‌ها و محدودیت‌های موجود را بی‌فشار توضیح بدهید.",
+      "description_en": "Explain the available options and limits without pressure.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "clear_structure",
+      "label_fa": "ترتیب روشن",
+      "label_en": "Clear structure",
+      "guidance_fa": "خبر، توضیح و اقدام را به ترتیب نیاز مخاطب بچین.",
+      "guidance_en": "Order the information, explanation, and action around the reader's needs.",
+      "avoid_fa": "برای متن کوتاه عنوان‌های زائد نسازید.",
+      "avoid_en": "Do not overstructure a short message.",
+      "label": "ترتیب روشن",
+      "name": "ترتیب روشن",
+      "description_fa": "خبر، توضیح و اقدام را به ترتیب نیاز مخاطب بچین.",
+      "description_en": "Order the information, explanation, and action around the reader's needs.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "concise_punchline",
+      "label_fa": "چرخش کوتاه",
+      "label_en": "Brief playful turn",
+      "guidance_fa": "یک چرخش کوچک در پایان بگذارید که به حقیقت تازه نیاز نداشته باشد.",
+      "guidance_en": "Use one short playful turn that needs no invented fact.",
+      "avoid_fa": "پیام حساس را به لطیفه ختم نکنید.",
+      "avoid_en": "Do not end a sensitive message with a joke.",
+      "label": "چرخش کوتاه",
+      "name": "چرخش کوتاه",
+      "description_fa": "یک چرخش کوچک در پایان بگذارید که به حقیقت تازه نیاز نداشته باشد.",
+      "description_en": "Use one short playful turn that needs no invented fact.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "concise_syntax",
+      "label_fa": "نحو کوتاه",
+      "label_en": "Concise syntax",
+      "guidance_fa": "هر جمله را به یک کار مشخص محدود کنید.",
+      "guidance_en": "Give each sentence one clear job.",
+      "avoid_fa": "با حذف شرط لازم کوتاه نکنید.",
+      "avoid_en": "Do not shorten by removing necessary conditions.",
+      "label": "نحو کوتاه",
+      "name": "نحو کوتاه",
+      "description_fa": "هر جمله را به یک کار مشخص محدود کنید.",
+      "description_en": "Give each sentence one clear job.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "concrete_benefit",
+      "label_fa": "فایدهٔ مشخص",
+      "label_en": "Concrete benefit",
+      "guidance_fa": "فقط کاربرد یا فایدهٔ تأییدشده را به زبان قابل تصور بگویید.",
+      "guidance_en": "Describe only a verified use or benefit in concrete terms.",
+      "avoid_fa": "از ویژگی محصول نتیجهٔ مالی یا درمانی حدس نزنید.",
+      "avoid_en": "Do not infer financial or medical outcomes from a feature.",
+      "label": "فایدهٔ مشخص",
+      "name": "فایدهٔ مشخص",
+      "description_fa": "فقط کاربرد یا فایدهٔ تأییدشده را به زبان قابل تصور بگویید.",
+      "description_en": "Describe only a verified use or benefit in concrete terms.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "concrete_detail",
+      "label_fa": "جزئیات معلوم",
+      "label_en": "Concrete detail",
+      "guidance_fa": "یک جزئیات مرتبط از ورودی را انتخاب و دقیق حفظ کنید.",
+      "guidance_en": "Choose one relevant supplied detail and preserve it exactly.",
+      "avoid_fa": "جزئیات تصویری تازه اختراع نکنید.",
+      "avoid_en": "Do not invent atmospheric details.",
+      "label": "جزئیات معلوم",
+      "name": "جزئیات معلوم",
+      "description_fa": "یک جزئیات مرتبط از ورودی را انتخاب و دقیق حفظ کنید.",
+      "description_en": "Choose one relevant supplied detail and preserve it exactly.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "concrete_scene",
+      "label_fa": "صحنهٔ مستند",
+      "label_en": "Grounded scene",
+      "guidance_fa": "صحنه را فقط با مکان، کنش و اشیای تأییدشده بسازید.",
+      "guidance_en": "Build a scene only from supplied places, actions, and objects.",
+      "avoid_fa": "برای روان‌شدن داستان شاهد یا مشتری نسازید.",
+      "avoid_en": "Do not invent a witness or customer to carry a story.",
+      "label": "صحنهٔ مستند",
+      "name": "صحنهٔ مستند",
+      "description_fa": "صحنه را فقط با مکان، کنش و اشیای تأییدشده بسازید.",
+      "description_en": "Build a scene only from supplied places, actions, and objects.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "define_terms",
+      "label_fa": "روشن‌کردن اصطلاح",
+      "label_en": "Define terms",
+      "guidance_fa": "اصطلاح لازم را با عبارت آشنا توضیح بدهید.",
+      "guidance_en": "Explain a necessary term using familiar words.",
+      "avoid_fa": "توضیح را با ساده‌سازی نادرست عوض نکنید.",
+      "avoid_en": "Do not make a definition misleadingly simple.",
+      "label": "روشن‌کردن اصطلاح",
+      "name": "روشن‌کردن اصطلاح",
+      "description_fa": "اصطلاح لازم را با عبارت آشنا توضیح بدهید.",
+      "description_en": "Explain a necessary term using familiar words.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "direct_request",
+      "label_fa": "درخواست روشن",
+      "label_en": "Clear request",
+      "guidance_fa": "فعل و اقدام مطلوب را مشخص و محترم بیان کنید.",
+      "guidance_en": "State the requested action with a clear, respectful verb.",
+      "avoid_fa": "دعوت را به تهدید تبدیل نکنید.",
+      "avoid_en": "Do not turn an invitation into a threat.",
+      "label": "درخواست روشن",
+      "name": "درخواست روشن",
+      "description_fa": "فعل و اقدام مطلوب را مشخص و محترم بیان کنید.",
+      "description_en": "State the requested action with a clear, respectful verb.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "everyday_language",
+      "label_fa": "واژه‌های روزمره",
+      "label_en": "Everyday language",
+      "guidance_fa": "واژه‌ای را انتخاب کنید که در همان زبان طبیعی و آشناست.",
+      "guidance_en": "Choose words that sound natural and familiar in that language.",
+      "avoid_fa": "لهجه یا طبقهٔ اجتماعی را از شغل حدس نزنید.",
+      "avoid_en": "Do not infer accent or social class from a job.",
+      "label": "واژه‌های روزمره",
+      "name": "واژه‌های روزمره",
+      "description_fa": "واژه‌ای را انتخاب کنید که در همان زبان طبیعی و آشناست.",
+      "description_en": "Choose words that sound natural and familiar in that language.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "evidence_first",
+      "label_fa": "شاهد پیش از نتیجه",
+      "label_en": "Evidence first",
+      "guidance_fa": "دادهٔ قابل اتکا را پیش از برداشت بنویسید.",
+      "guidance_en": "Put reliable evidence before the interpretation.",
+      "avoid_fa": "منبع یا عددِ نمایشی اضافه نکنید.",
+      "avoid_en": "Do not invent a source or impressive number.",
+      "label": "شاهد پیش از نتیجه",
+      "name": "شاهد پیش از نتیجه",
+      "description_fa": "دادهٔ قابل اتکا را پیش از برداشت بنویسید.",
+      "description_en": "Put reliable evidence before the interpretation.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "explicit_next_step",
+      "label_fa": "قدم بعدی مشخص",
+      "label_en": "Explicit next step",
+      "guidance_fa": "زمان، محل یا راه انجام اقدام را از دادهٔ موجود بیاورید.",
+      "guidance_en": "Use the supplied time, place, or route for the next action.",
+      "avoid_fa": "لینک یا مرحلهٔ اعلام‌نشده نسازید.",
+      "avoid_en": "Do not invent a link or a process step.",
+      "label": "قدم بعدی مشخص",
+      "name": "قدم بعدی مشخص",
+      "description_fa": "زمان، محل یا راه انجام اقدام را از دادهٔ موجود بیاورید.",
+      "description_en": "Use the supplied time, place, or route for the next action.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "familiar_example",
+      "label_fa": "مثال آشنا",
+      "label_en": "Familiar example",
+      "guidance_fa": "از مثال مجاز برای روشن‌کردن یک مفهوم استفاده کنید.",
+      "guidance_en": "Use an authorized example to clarify a concept.",
+      "avoid_fa": "مثال فرضی را تجربهٔ واقعی معرفی نکنید.",
+      "avoid_en": "Do not present a hypothetical example as a real experience.",
+      "label": "مثال آشنا",
+      "name": "مثال آشنا",
+      "description_fa": "از مثال مجاز برای روشن‌کردن یک مفهوم استفاده کنید.",
+      "description_en": "Use an authorized example to clarify a concept.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "fresh_observation",
+      "label_fa": "نگاه تازه به داده",
+      "label_en": "Fresh observation",
+      "guidance_fa": "از زاویه‌ای تازه به همان جزئیات داده‌شده نگاه کنید.",
+      "guidance_en": "Look at an existing supplied detail from a fresh angle.",
+      "avoid_fa": "برای تازه‌بودن خبر جدید نسازید.",
+      "avoid_en": "Do not invent news to create novelty.",
+      "label": "نگاه تازه به داده",
+      "name": "نگاه تازه به داده",
+      "description_fa": "از زاویه‌ای تازه به همان جزئیات داده‌شده نگاه کنید.",
+      "description_en": "Look at an existing supplied detail from a fresh angle.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "inclusive_language",
+      "label_fa": "زبان فراگیر",
+      "label_en": "Inclusive language",
+      "guidance_fa": "مخاطب تازه را هم در نظر بگیرید و خطاب را محترم نگه دارید.",
+      "guidance_en": "Include newcomers and use respectful forms of address.",
+      "avoid_fa": "توان، جنسیت یا پیشینه را شرط فهم نگذار.",
+      "avoid_en": "Do not assume ability, gender, or background.",
+      "label": "زبان فراگیر",
+      "name": "زبان فراگیر",
+      "description_fa": "مخاطب تازه را هم در نظر بگیرید و خطاب را محترم نگه دارید.",
+      "description_en": "Include newcomers and use respectful forms of address.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "light_surprise",
+      "label_fa": "غافلگیری ملایم",
+      "label_en": "Light surprise",
+      "guidance_fa": "انتظار زبانی را کمی جابه‌جا کنید بدون تغییر واقعیت.",
+      "guidance_en": "Make a small linguistic turn without changing the facts.",
+      "avoid_fa": "با وعدهٔ پنهانی یا جایزه غافلگیر نکنید.",
+      "avoid_en": "Do not invent a hidden promise or prize.",
+      "label": "غافلگیری ملایم",
+      "name": "غافلگیری ملایم",
+      "description_fa": "انتظار زبانی را کمی جابه‌جا کنید بدون تغییر واقعیت.",
+      "description_en": "Make a small linguistic turn without changing the facts.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "narrative_transition",
+      "label_fa": "گذار طبیعی",
+      "label_en": "Natural transition",
+      "guidance_fa": "دو واقعیت را با ترتیب زمانی یا رابطهٔ معلوم پیوند بدهید.",
+      "guidance_en": "Connect facts through a known sequence or relationship.",
+      "avoid_fa": "رابطهٔ علّیِ بی‌منبع نسازید.",
+      "avoid_en": "Do not invent causality.",
+      "label": "گذار طبیعی",
+      "name": "گذار طبیعی",
+      "description_fa": "دو واقعیت را با ترتیب زمانی یا رابطهٔ معلوم پیوند بدهید.",
+      "description_en": "Connect facts through a known sequence or relationship.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "neighborly_care",
+      "label_fa": "توجهِ آشنا",
+      "label_en": "Neighborly care",
+      "guidance_fa": "نیاز عملی مخاطب را کوتاه و خوش‌برخورد بیان کنید.",
+      "guidance_en": "Address the practical need in a brief, welcoming way.",
+      "avoid_fa": "شناخت شخصی یا سابقهٔ خرید ادعا نکنید.",
+      "avoid_en": "Do not claim personal knowledge or prior purchases.",
+      "label": "توجهِ آشنا",
+      "name": "توجهِ آشنا",
+      "description_fa": "نیاز عملی مخاطب را کوتاه و خوش‌برخورد بیان کنید.",
+      "description_en": "Address the practical need in a brief, welcoming way.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "observed_detail",
+      "label_fa": "مشاهدهٔ قابل اتکا",
+      "label_en": "Grounded observation",
+      "guidance_fa": "گفتهٔ منبع را از برداشت خود جدا کنید.",
+      "guidance_en": "Separate the source's statement from your interpretation.",
+      "avoid_fa": "دیدن یا تجربه‌کردنِ اتفاق را بی‌شاهد ادعا نکنید.",
+      "avoid_en": "Do not claim to have witnessed or experienced an event without evidence.",
+      "label": "مشاهدهٔ قابل اتکا",
+      "name": "مشاهدهٔ قابل اتکا",
+      "description_fa": "گفتهٔ منبع را از برداشت خود جدا کنید.",
+      "description_en": "Separate the source's statement from your interpretation.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "plain_speech",
+      "label_fa": "گفتار روشن",
+      "label_en": "Plain speech",
+      "guidance_fa": "جمله را با واژهٔ رایج و ترتیب طبیعی بسازید.",
+      "guidance_en": "Use familiar words in a natural sentence order.",
+      "avoid_fa": "گرته‌برداری و تعبیر اداری زائد را نگه ندار.",
+      "avoid_en": "Avoid unnatural calques and unnecessary office language.",
+      "label": "گفتار روشن",
+      "name": "گفتار روشن",
+      "description_fa": "جمله را با واژهٔ رایج و ترتیب طبیعی بسازید.",
+      "description_en": "Use familiar words in a natural sentence order.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "practical_detail",
+      "label_fa": "جزئیات کاربردی",
+      "label_en": "Practical detail",
+      "guidance_fa": "زمان، هزینه یا شرطِ موجود را برجسته کنید.",
+      "guidance_en": "Highlight a supplied time, cost, or condition.",
+      "avoid_fa": "عدد نامعلوم را با مقدار محتمل پر نکنید.",
+      "avoid_en": "Do not fill an unknown number with a plausible value.",
+      "label": "جزئیات کاربردی",
+      "name": "جزئیات کاربردی",
+      "description_fa": "زمان، هزینه یا شرطِ موجود را برجسته کنید.",
+      "description_en": "Highlight a supplied time, cost, or condition.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "public_interest",
+      "label_fa": "منفعت عمومی روشن",
+      "label_en": "Public usefulness",
+      "guidance_fa": "بگویید مخاطب با این اطلاع چه کار می‌تواند بکند.",
+      "guidance_en": "Explain what the reader can do with the information.",
+      "avoid_fa": "نمایندگی گروه یا جامعه را بی‌اجازه ادعا نکنید.",
+      "avoid_en": "Do not claim to represent a community without authorization.",
+      "label": "منفعت عمومی روشن",
+      "name": "منفعت عمومی روشن",
+      "description_fa": "بگویید مخاطب با این اطلاع چه کار می‌تواند بکند.",
+      "description_en": "Explain what the reader can do with the information.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "quiet_confidence",
+      "label_fa": "اطمینان بی‌ادعا",
+      "label_en": "Quiet confidence",
+      "guidance_fa": "اطمینان را از جملهٔ دقیق و کامل بسازید.",
+      "guidance_en": "Let precise, complete statements carry confidence.",
+      "avoid_fa": "برتری یا بی‌نقص‌بودن را ادعا نکنید.",
+      "avoid_en": "Do not claim superiority or perfection.",
+      "label": "اطمینان بی‌ادعا",
+      "name": "اطمینان بی‌ادعا",
+      "description_fa": "اطمینان را از جملهٔ دقیق و کامل بسازید.",
+      "description_en": "Let precise, complete statements carry confidence.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "reason_then_action",
+      "label_fa": "دلیل و اقدام",
+      "label_en": "Reason then action",
+      "guidance_fa": "اگر دلیل در ورودی هست، آن را کوتاه پیش از اقدام بگویید.",
+      "guidance_en": "If a reason is supplied, state it briefly before the action.",
+      "avoid_fa": "برای توجیه درخواست دلیل تازه نسازید.",
+      "avoid_en": "Do not invent a reason to justify the request.",
+      "label": "دلیل و اقدام",
+      "name": "دلیل و اقدام",
+      "description_fa": "اگر دلیل در ورودی هست، آن را کوتاه پیش از اقدام بگویید.",
+      "description_en": "If a reason is supplied, state it briefly before the action.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "respectful_address",
+      "label_fa": "خطاب محترم",
+      "label_en": "Respectful address",
+      "guidance_fa": "خطاب را با ترجیح مخاطب و بافت هماهنگ کنید.",
+      "guidance_en": "Match the form of address to the context and stated preference.",
+      "avoid_fa": "اسم یا لقب صمیمانهٔ نامعلوم اضافه نکنید.",
+      "avoid_en": "Do not invent a name or intimate nickname.",
+      "label": "خطاب محترم",
+      "name": "خطاب محترم",
+      "description_fa": "خطاب را با ترجیح مخاطب و بافت هماهنگ کنید.",
+      "description_en": "Match the form of address to the context and stated preference.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "respectful_boundary",
+      "label_fa": "مرز محترمانه",
+      "label_en": "Respectful boundary",
+      "guidance_fa": "حد واقعیِ خدمت یا درخواست را مستقیم و آرام بیان کنید.",
+      "guidance_en": "State the real limit of the service or request calmly and directly.",
+      "avoid_fa": "محدودیت تازه یا لحن سرزنشگر نسازید.",
+      "avoid_en": "Do not invent a restriction or blame the reader.",
+      "label": "مرز محترمانه",
+      "name": "مرز محترمانه",
+      "description_fa": "حد واقعیِ خدمت یا درخواست را مستقیم و آرام بیان کنید.",
+      "description_en": "State the real limit of the service or request calmly and directly.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "selective_detail",
+      "label_fa": "انتخاب جزئیات",
+      "label_en": "Selective detail",
+      "guidance_fa": "جزئیاتی را نگه دارید که به تصمیم یا اقدام کمک می‌کنند.",
+      "guidance_en": "Keep details that help the reader decide or act.",
+      "avoid_fa": "اخطار لازم را به عنوان حاشیه حذف نکنید.",
+      "avoid_en": "Do not treat a necessary warning as expendable detail.",
+      "label": "انتخاب جزئیات",
+      "name": "انتخاب جزئیات",
+      "description_fa": "جزئیاتی را نگه دارید که به تصمیم یا اقدام کمک می‌کنند.",
+      "description_en": "Keep details that help the reader decide or act.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "situational_humor",
+      "label_fa": "طنز موقعیت",
+      "label_en": "Situational humor",
+      "guidance_fa": "شوخی را از وضعیت معلوم بگیرید، بدون قربانی‌کردن آدم‌ها.",
+      "guidance_en": "Find humor in the known situation without targeting people.",
+      "avoid_fa": "در سوگ، بحران یا خطای پرداخت شوخی نکنید.",
+      "avoid_en": "Do not joke in grief, crisis, or payment failure.",
+      "label": "طنز موقعیت",
+      "name": "طنز موقعیت",
+      "description_fa": "شوخی را از وضعیت معلوم بگیرید، بدون قربانی‌کردن آدم‌ها.",
+      "description_en": "Find humor in the known situation without targeting people.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "stepwise_explanation",
+      "label_fa": "توضیح مرحله‌ای",
+      "label_en": "Stepwise explanation",
+      "guidance_fa": "فقط مرحله‌های واقعی را با ترتیب انجام توضیح بدهید.",
+      "guidance_en": "Explain only real steps in the order they occur.",
+      "avoid_fa": "برای کامل‌کردن فهرست مرحلهٔ تازه نسازید.",
+      "avoid_en": "Do not add steps just to complete a list.",
+      "label": "توضیح مرحله‌ای",
+      "name": "توضیح مرحله‌ای",
+      "description_fa": "فقط مرحله‌های واقعی را با ترتیب انجام توضیح بدهید.",
+      "description_en": "Explain only real steps in the order they occur.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "transparent_terms",
+      "label_fa": "شرط‌های روشن",
+      "label_en": "Transparent terms",
+      "guidance_fa": "قیمت، محدوده و استثناهای تأییدشده را نزدیک ادعا بیاورید.",
+      "guidance_en": "Keep verified prices, limits, and exclusions close to the claim.",
+      "avoid_fa": "شرط مهم را در پایان دور از ادعا پنهان نکنید.",
+      "avoid_en": "Do not hide an important condition far from its claim.",
+      "label": "شرط‌های روشن",
+      "name": "شرط‌های روشن",
+      "description_fa": "قیمت، محدوده و استثناهای تأییدشده را نزدیک ادعا بیاورید.",
+      "description_en": "Keep verified prices, limits, and exclusions close to the claim.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    },
+    {
+      "id": "varied_rhythm",
+      "label_fa": "ریتم متنوع",
+      "label_en": "Varied rhythm",
+      "guidance_fa": "در صورت نیاز یک جملهٔ کوتاه را کنار جملهٔ توضیحی بگذارید.",
+      "guidance_en": "Place a short sentence beside an explanatory one when useful.",
+      "avoid_fa": "ریتم را با علائم زیاد یا تکیه‌کلام شخصی نسازید.",
+      "avoid_en": "Do not create rhythm with excessive punctuation or a person's catchphrase.",
+      "label": "ریتم متنوع",
+      "name": "ریتم متنوع",
+      "description_fa": "در صورت نیاز یک جملهٔ کوتاه را کنار جملهٔ توضیحی بگذارید.",
+      "description_en": "Place a short sentence beside an explanatory one when useful.",
+      "languages": [
+        "fa",
+        "en"
+      ],
+      "selection_status": "available",
+      "provenance": {
+        "kind": "brief_derived_editorial_rule",
+        "author_style_claim": false
+      },
+      "shelf_rule_status": "not_claimed",
+      "reference_evidence": [],
+      "minimum_independent_references_for_research_rule": 3,
+      "intensity_rule": "Strength changes a general technique, never percentage similarity to a person.",
+      "customer_output_reference_name": false
+    }
+  ]
+}

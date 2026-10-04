@@ -1,0 +1,213 @@
+{
+ "schema": "whalory.consent-texts/1",
+ "_comment": "The versioned consent wording of Whalory Hub (SPEC 4.4), copied from the spec. Its rendered text is hashed into each consent record (SPEC 4.10). Placeholders in braces are filled at run time; {CONTROLLER_NAME} and {HOST_LOG_PERIOD} are filled by the owner before collection opens, and the client refuses to show a screen that still holds an unfilled placeholder. Never write a person's legal name here in a draft; it ships.",
+ "version": "2026-11-01",
+ "void_versions": [
+  "2026-10-01"
+ ],
+ "controller": "{CONTROLLER_NAME}",
+ "host_log_period": {
+  "en": "{HOST_LOG_PERIOD}",
+  "fa": "{HOST_LOG_PERIOD}"
+ },
+ "art28_contract": false,
+ "eu_line": {
+  "en": "Not offered to residents of the EU, the EEA or the UK.",
+  "fa": "این گزینه به ساکنانِ اتحادیه‌ی اروپا، منطقه‌ی اقتصادیِ اروپا و بریتانیا پیشنهاد نمی‌شود."
+ },
+ "notice": {
+  "en": "https://whalory.com/legal/#hub-privacy",
+  "fa": "https://whalory.com/fa/legal/#hub-privacy"
+ },
+ "texts": {
+  "stats": {
+   "en": [
+    "Whalory Hub: help improve the checks? (optional)",
+    "",
+    "{CONTROLLER} runs Whalory Hub. If you say yes, Whalory sends one small",
+    "report a week to its server in Iran (hub.whalory.com). The report says",
+    "which checks fired, rounded counts of the words checked, how much you",
+    "edited drafts, how many revisions you asked for, and the Whalory and",
+    "Python versions. It never contains your text, file names, prompts or",
+    "your name.",
+    "",
+    "To measure the checks fairly, Whalory hides about 1 in 10 of its",
+    "checks from you each week and counts whether you changed that wording",
+    "yourself.",
+    "",
+    "{LICENCE_PARAGRAPH}",
+    "",
+    "Your IP address reaches our servers with each request. Our code does",
+    "not store it. Our hosting provider in Iran may keep access logs that",
+    "include it for {HOST_LOG_PERIOD}, as Iranian law may require.",
+    "",
+    "We keep only totals that cover at least 10 people, with a little",
+    "random noise added, and delete your report within 22 days after the",
+    "week ends. Saying No changes nothing in how Whalory works.",
+    "",
+    "Do not turn this on if you are in the United States or are a U.S.",
+    "citizen or permanent resident. {EU_LINE}",
+    "",
+    "Stop at any time with: {OFF}",
+    "That also asks our server to delete your reports.",
+    "Full notice: {NOTICE}",
+    "",
+    "Send weekly counts?   [n] No (default)   [y] Yes, and I am 18 or older"
+   ],
+   "fa": [
+    "هابِ والوری: در بهترشدنِ بررسی‌ها کمک می‌کنید؟ (اختیاری)",
+    "",
+    "هابِ والوری را {CONTROLLER} اداره می‌کند. اگر بپذیرید، والوری هفته‌ای یک",
+    "گزارشِ کوچک به سرورِ آن در ایران (hub.whalory.com) می‌فرستد. در گزارش",
+    "می‌آید کدام بررسی‌ها هشدار دادند، شمارِ گردشده‌ی واژه‌های بررسی‌شده،",
+    "اندازه‌ی ویرایشِ شما روی پیش‌نویس‌ها، شمارِ درخواست‌های بازنویسی و نسخه‌ی",
+    "والوری و پایتون. متنِ شما، نامِ فایل‌ها، درخواست‌هایتان به دستیار و نامِ",
+    "شما هرگز در گزارش نمی‌آید.",
+    "",
+    "برای سنجشِ منصفانه، والوری هر هفته از هر ۱۰ بررسی حدودِ یکی را از شما",
+    "پنهان می‌کند. بعد می‌شمارد که آیا خودتان همان عبارت را تغییر داده‌اید.",
+    "",
+    "{LICENCE_PARAGRAPH}",
+    "",
+    "نشانیِ IP شما با هر درخواست به سرورهای ما می‌رسد. کدِ ما آن را ذخیره",
+    "نمی‌کند. میزبانِ ما در ایران ممکن است طبقِ قانونِ ایران لاگِ دسترسی را",
+    "همراهِ IP تا {HOST_LOG_PERIOD} نگه دارد.",
+    "",
+    "فقط جمع‌هایی می‌مانند که دستِ‌کم ۱۰ نفر را در بر بگیرند و کمی نویزِ",
+    "تصادفی هم به آن‌ها افزوده می‌شود. گزارشِ شما حداکثر ۲۲ روز پس از پایانِ",
+    "هفته پاک می‌شود. اگر «نه» بزنید، والوری همان‌طور کار می‌کند که حالا",
+    "می‌کند.",
+    "",
+    "اگر در آمریکا هستید یا شهروند یا مقیمِ دائمِ آمریکا هستید، این را روشن",
+    "نکنید. {EU_LINE}",
+    "",
+    "هر وقت خواستید با این فرمان خاموشش کنید: {OFF}",
+    "همین فرمان از سرورِ ما هم می‌خواهد گزارش‌هایتان را پاک کند.",
+    "متنِ کامل: {NOTICE}",
+    "",
+    "گزارشِ هفتگی فرستاده شود؟   [n] نه (پیش‌فرض)   [y] بله، و ۱۸ سال یا بیشتر دارم"
+   ]
+  },
+  "licence": {
+   "en": [
+    "Once a week your computer proves to our shop (whalory.com, Iran) that it",
+    "holds a paid licence. It sends a one-time code made from your licence",
+    "key, never the key itself. The shop sees which licence asked and keeps",
+    "a count for 22 days. It signs your weekly ticket without seeing it, so",
+    "our records cannot link the ticket to your report."
+   ],
+   "fa": [
+    "هفته‌ای یک بار رایانه‌ی شما به فروشگاهِ ما (whalory.com، ایران) ثابت",
+    "می‌کند که لایسنسِ پولی دارد. برای این کار کدی یک‌بارمصرف می‌فرستد که از",
+    "کلیدِ لایسنس ساخته شده و خودِ کلید را نمی‌فرستد. فروشگاه می‌بیند کدام",
+    "لایسنس درخواست داده و شمارِ درخواست‌ها را ۲۲ روز نگه می‌دارد. برگه‌ی",
+    "هفتگیِ شما را بی‌دیدنِ محتوایش امضا می‌کند، پس سوابقِ ما آن برگه را به",
+    "گزارشِ شما وصل نمی‌کند."
+   ]
+  },
+  "phrases": {
+   "en": [
+    "One more (optional): share which common phrases you delete?",
+    "",
+    "Whalory ships a fixed public list of common phrases of 1 to 4 words,",
+    "such as \"in today's fast-paced world\". When you delete one of them",
+    "from a draft on at least two different days, Whalory can count it.",
+    "Each week it may send up to 20 entries of that list, by number, with",
+    "small counts. Nothing outside the list is ever sent.",
+    "",
+    "A phrase is used only after at least 20 licensed people removed it.",
+    "",
+    "[n] No (default)   [p] Yes, but show me each week's list first   [y] Yes"
+   ],
+   "fa": [
+    "یک پرسشِ دیگر (اختیاری): عبارت‌های رایجی را که پاک می‌کنید با ما در",
+    "میان می‌گذارید؟",
+    "",
+    "والوری فهرستی عمومی و ثابت از عبارت‌های رایجِ یک تا چهار واژه‌ای دارد، مثلِ",
+    "«نقشی کلیدی ایفا می‌کند». وقتی یکی از آن‌ها را دستِ‌کم در دو روزِ مختلف",
+    "از پیش‌نویس پاک کنید، والوری می‌تواند آن را بشمارد. هر هفته حداکثر ۲۰",
+    "ردیف از همان فهرست فرستاده می‌شود، فقط با شماره‌ی ردیف و شمارشی کوچک.",
+    "هیچ چیزِ بیرون از فهرست فرستاده نمی‌شود.",
+    "",
+    "هر عبارت فقط وقتی به کار می‌رود که دستِ‌کم ۲۰ نفرِ دارای لایسنس آن را",
+    "پاک کرده باشند.",
+    "",
+    "[n] نه (پیش‌فرض)   [p] بله، ولی هر هفته اول فهرست را نشانم بده   [y] بله"
+   ]
+  },
+  "packets": {
+   "en": [
+    "Whalory global lane: weekly packets you post yourself (optional)",
+    "",
+    "If you turn this on, Whalory keeps a small weekly count on this",
+    "computer of which checks fired and how much you edited drafts. Your",
+    "text is never in it. To measure the checks fairly, it hides about 1 in",
+    "10 of its checks from you each week and counts whether you changed",
+    "that wording yourself.",
+    "",
+    "Nothing is sent. Each week the packet command shows you the counts in",
+    "full, with a link to a public issue on GitHub. If you want, you post",
+    "them there as a comment under your own GitHub account. Anyone can read",
+    "that comment, and GitHub's terms apply to it. You can delete it at any",
+    "time.",
+    "",
+    "A packet counts only from a GitHub account at least 90 days old, one",
+    "per account per week, and only totals covering at least 10 accounts",
+    "are used.",
+    "",
+    "Stop at any time with: {OFF_PACKETS}",
+    "Full notice: {NOTICE}",
+    "",
+    "Turn on weekly packets?   [n] No (default)   [y] Yes, and I am 18 or older"
+   ],
+   "fa": [
+    "راهِ جهانیِ والوری: بسته‌ی هفتگی که خودتان می‌فرستید (اختیاری)",
+    "",
+    "اگر این را روشن کنید، والوری روی همین رایانه شمارشی هفتگی نگه می‌دارد",
+    "از این‌که کدام بررسی‌ها هشدار دادند و پیش‌نویس‌ها را چقدر ویرایش کردید.",
+    "متنِ شما هرگز در آن نیست. برای سنجشِ منصفانه، هر هفته از هر ۱۰ بررسی",
+    "حدودِ یکی را از شما پنهان می‌کند. بعد می‌شمارد که آیا خودتان همان عبارت را",
+    "تغییر داده‌اید.",
+    "",
+    "چیزی فرستاده نمی‌شود. فرمانِ packet هر هفته شمارش‌ها را کامل نشانتان",
+    "می‌دهد، همراهِ پیوندی به یک issueِ عمومی در GitHub. اگر بخواهید، آن را با",
+    "حسابِ GitHubِ خودتان به شکلِ یک دیدگاه زیرِ همان issue می‌گذارید. هر کسی",
+    "می‌تواند این دیدگاه را بخواند و شرایطِ GitHub بر آن حاکم است. هر وقت",
+    "خواستید پاکش کنید.",
+    "",
+    "بسته فقط از حسابی شمرده می‌شود که دستِ‌کم ۹۰ روز از ساختنش گذشته باشد،",
+    "از هر حساب هفته‌ای یک بسته. فقط جمع‌هایی به کار می‌روند که دستِ‌کم ۱۰",
+    "حساب را در بر بگیرند.",
+    "",
+    "هر وقت خواستید با این فرمان خاموشش کنید: {OFF_PACKETS}",
+    "متنِ کامل: {NOTICE}",
+    "",
+    "بسته‌ی هفتگی روشن شود؟   [n] نه (پیش‌فرض)   [y] بله، و ۱۸ سال یا بیشتر دارم"
+   ]
+  },
+  "updates_notice": {
+   "en": [
+    "Separately, Whalory checks once a day for signed rule updates. It downloads public files from GitHub and hub.whalory.com and adds no identifier. Like any download, those servers see your IP address, and they can tell that Whalory was used that day. Our server in Iran writes no access log, but its data centre may keep network records. Turn it off with `{UPDATES_OFF}` or `WHALORY_HUB_UPDATES=0`."
+   ],
+   "fa": [
+    "جدا از این، والوری روزی یک بار به‌روزرسانیِ امضاشده‌ی قاعده‌ها را می‌گیرد. فایل‌های عمومی را از GitHub و hub.whalory.com دانلود می‌کند و هیچ شناسه‌ای به درخواست نمی‌افزاید. مثلِ هر دانلودی، آن سرورها نشانیِ IP شما را می‌بینند و می‌فهمند که آن روز از والوری استفاده شده است. سرورِ ما در ایران لاگِ دسترسی نمی‌نویسد، ولی مرکزِ داده‌اش ممکن است سوابقِ شبکه را نگه دارد. خاموش‌کردن: `{UPDATES_OFF}` یا `WHALORY_HUB_UPDATES=0`."
+   ]
+  },
+  "hint": {
+   "en": [
+    "Tip: you can help improve Whalory's checks by sharing weekly rule statistics (off unless you opt in). Details and choice: {CONSENT}"
+   ],
+   "fa": [
+    "نکته: اگر بخواهید، می‌توانید با فرستادنِ آمارِ هفتگیِ قاعده‌ها به بهترشدنِ بررسی‌های والوری کمک کنید (خاموش است مگر خودتان روشنش کنید). توضیح و انتخاب: {CONSENT}"
+   ]
+  },
+  "hint_packets": {
+   "en": [
+    "Tip: you can help improve Whalory's checks by posting weekly counts yourself on GitHub (off unless you opt in). Details and choice: {CONSENT}"
+   ],
+   "fa": [
+    "نکته: اگر بخواهید، می‌توانید با گذاشتنِ شمارش‌های هفتگی در GitHub به دستِ خودتان به بهترشدنِ بررسی‌های والوری کمک کنید (خاموش است مگر خودتان روشنش کنید). توضیح و انتخاب: {CONSENT}"
+   ]
+  }
+ }
+}

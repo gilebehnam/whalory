@@ -7,8 +7,7 @@ This file says which license covers each Whalory edition and where the full text
 | Edition | Files | License | Full text |
 |---|---|---|---|
 | Whalory Core | Core files | Text: Creative Commons Attribution 4.0 (CC BY 4.0); scripts: the MIT License | [`LICENSE-CORE.en.md`](LICENSE-CORE.en.md) |
-
-Whalory Pro and Whalory Studio add files that fall under a separate paid license, the end-user license agreement that ships with those editions.
+| Whalory Pro | Core files | Same as Core | [`LICENSE-CORE.en.md`](LICENSE-CORE.en.md) |
 
 Core files keep their open license inside Pro and Studio too. Buying a paid edition takes nothing away from the rights that CC BY 4.0 and MIT give you.
 
@@ -47,3 +46,5 @@ Whalory is a set of files. It sells no access to any assistant or model. Every a
 ## Questions about licensing
 
 Contact: the [contact page](https://whalory.com/en/contact) on the Whalory website. The legal text is only what [`LICENSE-CORE.en.md`](LICENSE-CORE.en.md) and `EULA.en.md` (in Whalory Pro) say; this page is a summary.
+
+This text is not legal advice. Have a lawyer review it before publication.

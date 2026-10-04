@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""selftest_mcp: conformance tests for scripts/mcp_server.py (Whalory 3.0.0 build spec, G.6).
+"""selftest_mcp: conformance tests for scripts/mcp_server.py (Whalory 3.0.0 build spec, G.6; Hub spec 5.11).
 
 Each test spawns the server with sys.executable and talks JSON-RPC over its stdin and stdout,
 the way an MCP client does. run() returns [(name, passed, detail)], like selftest_tools.run();
@@ -18,6 +18,8 @@ if sys.version_info < (3, 8):
     sys.stderr.write('selftest_mcp needs Python 3.8 or newer.\n')
     sys.exit(2)
 
+sys.dont_write_bytecode = True  # the Hub tests import tests_hub/test_client.py and hub_client.py
+
 import ast  # noqa: E402
 import json  # noqa: E402
 import os  # noqa: E402
@@ -28,6 +30,10 @@ import subprocess  # noqa: E402
 import tempfile  # noqa: E402
 import threading  # noqa: E402
 import time  # noqa: E402
+
+# Built-in rules only (Hub spec 5.9): a synced Hub folder on this computer must not change what the
+# tests expect. The server processes also get WHALORY_HUB=0 unless a test turns the Hub on itself.
+os.environ['WHALORY_HUB_OVERLAY'] = '0'
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SKILL = os.path.dirname(HERE)
@@ -42,9 +48,9 @@ CAPS = 'io.modelcontextprotocol/clientCapabilities'
 SINFO = 'io.modelcontextprotocol/serverInfo'
 SUBID = 'io.modelcontextprotocol/subscriptionId'
 
-ORDER = ['lint_text', 'lint_file', 'detect_context', 'get_playbook', 'get_reference_section',
+ORDER = ['lint_text', 'lint_file', 'check_final', 'detect_context', 'get_playbook', 'get_reference_section',
          'channel_limits', 'compare_texts', 'ab_test_size', 'profile_lookup']
-CORE = ['lint_text', 'lint_file', 'get_playbook', 'get_reference_section', 'profile_lookup']
+CORE = ['lint_text', 'lint_file', 'check_final', 'get_playbook', 'get_reference_section', 'profile_lookup']
 PRO_BACKING = {'detect_context': 'scripts/detect_context.py', 'channel_limits': 'data/channels',
                'compare_texts': 'scripts/compare.py', 'ab_test_size': 'scripts/ab_calc.py'}
 TIMEOUT = 20.0
@@ -116,13 +122,16 @@ def schema_errors(schema, v, where='$'):
 class Client(object):
     """Spawns the server and exchanges JSON-RPC lines with it."""
 
-    def __init__(self, args=(), env=None, cwd=None, server=None, dash_b=True):
+    def __init__(self, args=(), env=None, cwd=None, server=None, dash_b=True, drop=()):
         e = dict(os.environ)
         for k in ('ROOTS', 'LANG', 'TIME_LIMIT'):   # and the deprecated WHALYA_* twins
             e.pop('WHALORY_' + k, None)
             e.pop('WHALYA_' + k, None)
         e['PYTHONIOENCODING'] = 'utf-8'
         e['PYTHONUTF8'] = '1'
+        e['WHALORY_HUB'] = '0'      # no Hub folder of this computer; t_hub_live turns it on
+        for k in drop:
+            e.pop(k, None)
         if env:
             e.update(env)
         self.q = queue.Queue()
@@ -351,7 +360,7 @@ def t_cli(R):
     e.pop('WHALORY_ROOTS', None)
     e.pop('WHALYA_ROOTS', None)
     p = subprocess.run([sys.executable, SERVER, '--version'], capture_output=True, env=e)
-    R.add('--version', p.returncode == 0 and p.stdout.strip() == b'whalory-mcp 3.0.0', _short(p.stdout.decode()))
+    R.add('--version', p.returncode == 0 and p.stdout.strip() == b'whalory-mcp 3.2.0-rc.2', _short(p.stdout.decode()))
     p = subprocess.run([sys.executable, SERVER, '--self-check', '--json'], capture_output=True, env=e, cwd=SKILL)
     try:
         rep = json.loads(p.stdout.decode('ascii'))
@@ -360,7 +369,10 @@ def t_cli(R):
         return None
     want = expected_tools()
     R.add('--self-check --json: tools', rep.get('tools') == want, 'got %s, want %s' % (rep.get('tools'), want))
-    R.add('--self-check --json: keys', set(rep) == {'tools', 'prompts', 'resources', 'tier'}
+    R.add('--self-check --json: keys', set(rep) == {'tools', 'prompts', 'resources', 'tier', 'version', 'projectRootsConfigured', 'rootPolicy', 'transport', 'networkTools'}
+          and rep.get('version') == '3.2.0-rc.2' and rep.get('projectRootsConfigured') is False
+          and rep.get('rootPolicy') == 'explicit-or-client' and rep.get('transport') == 'stdio'
+          and rep.get('networkTools') is False
           and isinstance(rep.get('resources'), int) and rep.get('tier') in ('core', 'pro'), _short(rep))
     tier = 'pro' if any(t in rep.get('tools', []) for t in PRO_BACKING) else 'core'
     R.add('--self-check --json: tier', rep.get('tier') == tier, rep.get('tier'))
@@ -392,7 +404,7 @@ def t_legacy(R, tmp, report):
         R.add('initialize %s echoed' % LEGACY[0], res.get('protocolVersion') == LEGACY[0], _short(res))
         si = res.get('serverInfo') or {}
         R.add('initialize: serverInfo and capabilities',
-              si.get('name') == 'whalory' and si.get('version') == '3.0.0' and si.get('title') == 'Whalory'
+              si.get('name') == 'whalory' and si.get('version') == '3.2.0-rc.2' and si.get('title') == 'Whalory'
               and set(res.get('capabilities') or {}) == {'tools', 'prompts', 'resources'}, _short(si))
         ins = res.get('instructions') or ''
         R.add('initialize: instructions under 1,200 characters', 0 < len(ins) <= 1200, '%d' % len(ins))
@@ -1188,8 +1200,8 @@ def t_roots_fail_closed(R, tmp, names):
     try:
         _init(c)
         r = c.call('lint_file', {'path': 'a.txt'})
-        R.add('no --root at all: an ordinary working folder is still the root',
-              (_result(r) or {}).get('isError') is False, _short(r))
+        R.add('no --root: ordinary working folder is not implicitly authorized',
+              _is_tool_error(r) and '--root' in _text(_result(r)), _short(r))
     finally:
         c.close()
 
@@ -1245,8 +1257,8 @@ def t_client_roots(R, tmp):
         req = c.server_request('roots/list')
         if req:
             c.send({'jsonrpc': '2.0', 'id': req['id'], 'error': {'code': -32601, 'message': 'Roots not supported'}})
-        R.add('client roots: an error answer falls back to the working folder',
-              req is not None and ok(c.call('lint_file', {'path': 'c.txt'})))
+        R.add('client roots: an error answer never authorizes the working folder',
+              req is not None and _is_tool_error(c.call('lint_file', {'path': 'c.txt'})))
     finally:
         c.close()
     c = Client(['--root', ra], cwd=rc)
@@ -1444,6 +1456,308 @@ def t_json_edges(R):
           worst is not None and worst < 1.0, '%s %s' % (worst, p.stderr.decode('utf-8', 'replace')[-200:]))
 
 
+# ---------------------------------------------------------------- Whalory Hub integration (Hub spec 5.11)
+READ_ONLY = {'readOnlyHint': True, 'destructiveHint': False, 'idempotentHint': True, 'openWorldHint': False}
+RECORDING = {'readOnlyHint': False, 'destructiveHint': False, 'idempotentHint': False, 'openWorldHint': False}
+HUB_TOOLS = ('lint_text', 'lint_file', 'check_final')
+HUB_ENV = ('WHALORY_HUB', 'WHALORY_HUB_UPDATES', 'WHALORY_HUB_CONTRIBUTE', 'WHALYA_HUB', 'WHALYA_HUB_CONTRIBUTE',
+           'DO_NOT_TRACK', 'DISABLE_TELEMETRY', 'CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC',
+           'CLAUDE_PLUGIN_OPTION_HUB_CONTRIBUTE', 'WHALORY_HUB_CONTRIBUTE_REQUEST', 'WHALYA_HUB_CONTRIBUTE_REQUEST',
+           'WHALORY_LICENSE_KEY', 'CLAUDE_PLUGIN_OPTION_LICENSE_KEY', 'CI', 'GITHUB_ACTIONS')
+HUB_NOW = '2026-10-01T12:00:00Z'        # the clock of the TEST ONLY fixtures of tests_hub/test_client.py
+HUB_FIXTURES_UNTIL = '2027-03-29'        # the fixture baseline expires then; later runs skip the live check
+
+SHOWN_EN = 'The report was written by our team. We ship in May. Plans were made.'
+FINAL_EN = 'Our team wrote the report. We ship in May. We made plans.'
+
+
+class FakeHub(object):
+    """hub_events for the in-process checks: records what the server hands over."""
+
+    def __init__(self):
+        self.on = False
+        self.calls = []
+
+    def enabled(self):
+        return self.on
+
+    def record_lint(self, source, lang, fg, result, words):
+        self.calls.append(('record_lint', source, lang, fg, result, words))
+
+    def remember(self, text, lang='auto'):
+        self.calls.append(('remember', text, lang))
+
+    def check_final_outcome(self, final, lang='auto', fmt=None, playbook=None, revisions=None, profile=None):
+        self.calls.append(('check_final_outcome', final, lang, fmt, playbook, revisions, profile))
+        return {'recorded': True, 'reason': None}
+
+
+def _server_module():
+    if HERE not in sys.path:
+        sys.path.insert(0, HERE)
+    import importlib
+    return importlib.import_module('mcp_server')
+
+
+def _lines(buf):
+    out = []
+    for ln in buf.getvalue().splitlines():
+        try:
+            out.append(json.loads(ln.decode('ascii')))
+        except ValueError:
+            pass
+    return out
+
+
+def t_check_final(R):
+    """check_final is listed, read-only while statistics are off, and returns lint_text's findings."""
+    c = Client([])
+    try:
+        r = c.request('initialize', {'protocolVersion': LEGACY[0], 'capabilities': {}})
+        caps = (_result(r) or {}).get('capabilities') or {}
+        R.add('initialize: tools.listChanged is declared', (caps.get('tools') or {}).get('listChanged') is True,
+              _short(caps))
+        c.send({'jsonrpc': '2.0', 'method': 'notifications/initialized'})
+        tools = (_result(c.request('tools/list')) or {}).get('tools') or []
+        t = dict((x['name'], x) for x in tools).get('check_final')
+        R.add('tools/list: check_final after lint_file', t is not None
+              and [x['name'] for x in tools].index('check_final') == 2, _short([x['name'] for x in tools]))
+        if t is None:
+            return
+        props = (t.get('inputSchema') or {}).get('properties') or {}
+        R.add('check_final: inputs text, language, format, playbook, revisions (0 to 20)',
+              t['inputSchema'].get('required') == ['text']
+              and {'text', 'language', 'format', 'playbook', 'revisions'} <= set(props)
+              and props['revisions'].get('minimum') == 0 and props['revisions'].get('maximum') == 20, _short(props))
+        d = t.get('description') or ''
+        R.add('check_final: description says when to call it and that no text is recorded',
+              'once when the user approves final copy' in d and 'never text' in d and 'Iran' in d, d[:200])
+        R.add('check_final: read-only while statistics are off', t.get('annotations') == READ_ONLY,
+              _short(t.get('annotations')))
+        text = 'Certainly! Here is a vibrant caption that will delve into our story.' if has_english_linter() \
+            else 'سلام — دوستان!!'
+        a = _result(c.call('lint_text', {'text': text})) or {}
+        b = _result(c.call('check_final', {'text': text, 'playbook': 'caption', 'revisions': 1})) or {}
+        sa, sb = a.get('structuredContent') or {}, b.get('structuredContent') or {}
+        R.add('check_final returns the findings of lint_text', b.get('isError') is False and sb
+              and sa.get('issues') == sb.get('issues') and sb.get('summary') == sa.get('summary')
+              and not schema_errors(t.get('outputSchema') or {}, sb), _short(sb.get('summary')))
+        r = c.call('check_final', {'text': text, 'language': 'fa' if 'Certainly' not in text else 'en',
+                                   'format': 'caption', 'md': False})
+        R.add('check_final with language and format', (_result(r) or {}).get('isError') is False, _short(r))
+        for label, args in (('revisions 21', {'text': 'x', 'revisions': 21}),
+                            ('a playbook id with spaces', {'text': 'x', 'playbook': 'Landing Page'}),
+                            ('lang instead of language', {'text': 'x', 'lang': 'en'}),
+                            ('no text', {})):
+            R.add('check_final with %s -> isError' % label, _is_tool_error(c.call('check_final', args)))
+        leaked = [ln for ln in c.raw if b'_pid' in ln or b'_level' in ln or b'"hidden"' in ln]
+        R.add('no internal Hub field in any output', not leaked, _short(leaked[:1]))
+        R.add('no notification while statistics stay off',
+              not any(n.get('method') == 'notifications/tools/list_changed' for n in c.notes), _short(c.notes))
+    finally:
+        c.close()
+
+
+def t_hub_switch(R):
+    """In process, with a stand-in for hub_events: annotations, notifications and what is recorded."""
+    import io as _io
+    M = _server_module()
+    buf = _io.BytesIO()
+    srv = M.Server(SKILL, [], 'auto', buf, 0.0)
+    fake = FakeHub()
+    srv._mods['hub_events'] = fake
+    srv.handle({'jsonrpc': '2.0', 'id': 1, 'method': 'initialize',
+                'params': {'protocolVersion': LEGACY[0], 'capabilities': {}}})
+    srv.handle({'jsonrpc': '2.0', 'method': 'notifications/initialized'})
+
+    def annotations():
+        out = srv.handle({'jsonrpc': '2.0', 'id': 2, 'method': 'tools/list'})
+        return dict((t['name'], t['annotations']) for t in out[0]['result']['tools'])
+
+    def call(name, args):
+        out = srv.handle({'jsonrpc': '2.0', 'id': 3, 'method': 'tools/call',
+                          'params': {'name': name, 'arguments': args}})
+        return out[0]['result']
+
+    ann = annotations()
+    R.add('hub off: lint_text, lint_file and check_final are read-only',
+          all(ann.get(n) == READ_ONLY for n in HUB_TOOLS), _short(ann))
+    call('lint_text', {'text': SHOWN_EN})
+    R.add('hub off: nothing is recorded or remembered', fake.calls == [], _short(fake.calls))
+    fake.on = True
+    n0 = len(_lines(buf))
+    res = call('lint_text', {'text': SHOWN_EN, 'format': 'landing'})
+    notes = [m for m in _lines(buf)[n0:] if m.get('method') == 'notifications/tools/list_changed']
+    R.add('hub on: the next call sends notifications/tools/list_changed once', len(notes) == 1
+          and 'params' not in notes[0], _short(notes))
+    rec = [x for x in fake.calls if x[0] == 'record_lint']
+    ok = len(rec) == 1 and rec[0][1] == 'mcp' and rec[0][2] in ('en', 'fa') and rec[0][3] == 'landing' \
+        and isinstance(rec[0][4], tuple) and len(rec[0][4]) == 2 and isinstance(rec[0][5], int) and rec[0][5] > 0 \
+        and all(set(x) <= {'code', '_pid'} for x in rec[0][4][0] + rec[0][4][1])
+    R.add('hub on: lint_text records (source, lang, format, (shown, hidden), words), ids only', ok,
+          _short(rec[:1]))
+    R.add('hub on: lint_text remembers the text in memory for check_final',
+          ('remember', SHOWN_EN, rec[0][2] if rec else 'en') in fake.calls, _short(fake.calls))
+    R.add('hub on: the output has no internal field', '_pid' not in json.dumps(res) and 'hidden' not in json.dumps(res))
+    ann = annotations()
+    R.add('hub on: tools/list marks the three tools as writing counts',
+          all(ann.get(n) == RECORDING for n in HUB_TOOLS)
+          and all(v == READ_ONLY for k, v in ann.items() if k not in HUB_TOOLS), _short(ann))
+    del fake.calls[:]
+    res = call('check_final', {'text': FINAL_EN, 'language': 'en', 'format': 'landing', 'playbook': 'landing',
+                               'revisions': 2, 'profile': 'whalory'})
+    cfo = [x for x in fake.calls if x[0] == 'check_final_outcome']
+    R.add('hub on: check_final hands the outcome to hub_events with the resolved profile',
+          len(cfo) == 1 and cfo[0][1:6] == (FINAL_EN, 'en', 'landing', 'landing', 2) and isinstance(cfo[0][6], dict)
+          and not [x for x in fake.calls if x[0] == 'record_lint'], _short(cfo))
+    R.add('hub on: check_final returns findings, nothing about the outcome',
+          res.get('isError') is False and 'recorded' not in json.dumps(res), _short(res)[:200])
+    fake.on = False
+    n0 = len(_lines(buf))
+    srv.refresh_annotations()
+    notes = [m for m in _lines(buf)[n0:] if m.get('method') == 'notifications/tools/list_changed']
+    R.add('hub off again: one more list_changed, and read-only annotations',
+          len(notes) == 1 and all(v == READ_ONLY for v in annotations().values()), _short(notes))
+    # modern clients hear of it only on a listen stream that asked for toolsListChanged
+    srv2 = M.Server(SKILL, [], 'auto', _io.BytesIO(), 0.0)
+    fake2 = FakeHub()
+    srv2._mods['hub_events'] = fake2
+    meta = {PV: MODERN, CAPS: {}}
+    ack = srv2.handle({'jsonrpc': '2.0', 'id': 'L1', 'method': 'subscriptions/listen',
+                       'params': {'_meta': meta, 'notifications': {'toolsListChanged': True}}})
+    ack2 = srv2.handle({'jsonrpc': '2.0', 'id': 'L2', 'method': 'subscriptions/listen',
+                        'params': {'_meta': meta, 'notifications': {'resourcesListChanged': True}}})
+    R.add('modern listen: toolsListChanged is acknowledged; other types are left out',
+          ack[0]['params']['notifications'] == {'toolsListChanged': True}
+          and ack2[0]['params']['notifications'] == {}, _short([ack, ack2]))
+    fake2.on = True
+    n0 = len(_lines(srv2.out))
+    srv2.refresh_annotations()
+    notes = [m for m in _lines(srv2.out)[n0:] if m.get('method') == 'notifications/tools/list_changed']
+    R.add('modern listen: list_changed carries the subscription id of the stream that asked',
+          len(notes) == 1 and notes[0]['params']['_meta'].get(SUBID) == 'L1', _short(notes))
+
+
+def _hub_world(tmp):
+    """(test_client module, world, home) with packets on in a fresh TEST ONLY Hub folder, or a skip reason."""
+    tests = os.path.join(HERE, 'tests_hub', 'test_client.py')
+    if not os.path.isfile(tests) or not os.path.isfile(os.path.join(HERE, 'hub_client.py')):
+        return None, 'tests_hub/test_client.py or hub_client.py is not in this copy'
+    if time.strftime('%Y-%m-%d', time.gmtime()) >= HUB_FIXTURES_UNTIL:
+        return None, 'the TEST ONLY fixtures of tests_hub expired on %s' % HUB_FIXTURES_UNTIL
+    saved = dict((k, os.environ.get(k)) for k in HUB_ENV)
+    for k in HUB_ENV:
+        os.environ.pop(k, None)
+    if os.path.join(HERE, 'tests_hub') not in sys.path:
+        sys.path.insert(0, os.path.join(HERE, 'tests_hub'))
+    import importlib
+    TC = importlib.import_module('test_client')
+    C, HE, HO = TC.C, TC.HE, TC.HO
+    mirror = os.path.join(tmp, 'hub-mirror')
+    home = tempfile.mkdtemp(prefix='whalory-mcp-hub-')
+    TC.build_mirror(mirror, collection=False, lane=True, packets={'epoch': '2026-W40', 'issue': 7})
+    world = TC.World(mirror)
+    orig = C.consent_doc
+    C.consent_doc = TC.filled_consent
+    try:
+        def client(*args, **kw):
+            ctx = C.Ctx()
+            ctx.now = TC.T(HUB_NOW)
+            ctx.out = __import__('io').StringIO()
+            ctx.console = kw.get('console')
+            flags = ['--test', '--hub-home', home, '--mirror', world.base + 'mirror/',
+                     '--collector', world.base + 'v1/', '--issuer', world.base + 'api/hub/']
+            return C.main(flags + list(args), ctx), ctx.out.getvalue()
+        code, out = client('sync', '--force')
+        if code != 0:
+            raise RuntimeError('sync: %s %s' % (code, out[-300:]))
+        con = TC.FakeConsole(['y', 'CODE'])
+        code, out = client('on', 'packets', console=con)
+        if code != 0:
+            raise RuntimeError('on packets: %s %s' % (code, (out + con.text)[-300:]))
+    finally:
+        C.consent_doc = orig
+        HE.configure()
+        HO.configure()
+        for k, v in saved.items():
+            if v is None:
+                os.environ.pop(k, None)
+            else:
+                os.environ[k] = v
+    return (TC, world, home, client), None
+
+
+def t_hub_live(R, tmp):
+    """A real server over stdio against a TEST ONLY Hub folder with weekly packets on."""
+    got, why = _hub_world(tmp)
+    if got is None:
+        R.skip('Hub statistics on: annotations, counts and outcome', why)
+        return
+    TC, world, home, client = got
+    env = dict((k, '') for k in ('DO_NOT_TRACK', 'DISABLE_TELEMETRY', 'CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC'))
+    env['WHALORY_HUB'] = '1'
+    c = Client(['--test', '--hub-home', home, '--now', HUB_NOW], env=env, drop=HUB_ENV)
+    try:
+        r = c.request('initialize', {'protocolVersion': LEGACY[0], 'capabilities': {}})
+        c.send({'jsonrpc': '2.0', 'method': 'notifications/initialized'})
+        tools = (_result(c.request('tools/list')) or {}).get('tools') or []
+        ann = dict((t['name'], t.get('annotations')) for t in tools)
+        R.add('Hub on (packets): lint_text, lint_file and check_final are not read-only',
+              all(ann.get(n) == RECORDING for n in HUB_TOOLS), _short(ann))
+        r = c.call('lint_text', {'text': SHOWN_EN, 'format': 'landing'})
+        R.add('Hub on: lint_text answers as usual', (_result(r) or {}).get('isError') is False, _short(r))
+        r = c.call('check_final', {'text': FINAL_EN, 'language': 'en', 'format': 'landing',
+                                   'playbook': 'landing', 'revisions': 1})
+        R.add('Hub on: check_final answers with findings only', (_result(r) or {}).get('isError') is False
+              and 'recorded' not in json.dumps(_result(r)), _short(r))
+        events = []
+        folder = os.path.join(home, 'events')
+        for name in sorted(os.listdir(folder)) if os.path.isdir(folder) else []:
+            with open(os.path.join(folder, name), encoding='utf-8') as fh:
+                events += [json.loads(ln) for ln in fh if ln.strip()]
+        kinds = [(e.get('t'), e.get('src')) for e in events]
+        R.add('Hub on: one mcp lint event and one outcome event in the Hub folder',
+              ('lint', 'mcp') in kinds and ('out', None) in kinds, _short(kinds))
+        raw = json.dumps(events)
+        R.add('Hub on: the events hold no text of the drafts', not re.search(r'report|Plans|May|team', raw),
+              _short(raw)[:200])
+        leaked = [ln for ln in c.raw if b'_pid' in ln or b'_level' in ln or b'"hidden"' in ln]
+        R.add('Hub on: no internal field in any output', not leaked, _short(leaked[:1]))
+        code, out = client('off', 'packets')
+        c.call('lint_text', {'text': 'Plain words.'})
+        notes = [n for n in c.notes if n.get('method') == 'notifications/tools/list_changed']
+        tools = (_result(c.request('tools/list')) or {}).get('tools') or []
+        R.add('Hub off in a terminal: the next call sends list_changed and the tools are read-only again',
+              code == 0 and len(notes) == 1 and all(t.get('annotations') == READ_ONLY for t in tools),
+              _short(notes))
+    finally:
+        c.close()
+        world.stop()
+        TC.HE.configure()
+        TC.HO.configure()
+        for _ in range(20):
+            shutil.rmtree(home, ignore_errors=True)
+            if not os.path.exists(home):
+                break
+            time.sleep(0.25)
+
+
+def t_cwd_contains_home(R, tmp):
+    """The working-folder fallback refuses a folder that contains the home folder."""
+    parent = _mk(os.path.join(tmp, 'users'))
+    home = _mk(os.path.join(parent, 'someone'))
+    _write(os.path.join(home, 'notes.txt'), 'private\n')
+    env = {'HOME': home, 'USERPROFILE': home}
+    c = Client([], env=env, cwd=parent)
+    try:
+        _init(c)
+        r = c.call('lint_file', {'path': 'someone/notes.txt'})
+        R.add('cwd that contains the home folder -> not a project folder', _is_tool_error(r)
+              and 'contains the home folder' in _text(_result(r)), _short(r))
+    finally:
+        c.close()
+
+
 def run():
     R = Results()
     if not os.path.isfile(SERVER):
@@ -1473,7 +1787,11 @@ def run():
                           ('time limit and cancel', lambda: t_time_limit(R, tmp)),
                           ('pathological inputs', lambda: t_pathological(R, tmp, names)),
                           ('no bytecode', lambda: t_no_bytecode(R, tmp, names)),
-                          ('JSON edge cases', lambda: t_json_edges(R))):
+                          ('JSON edge cases', lambda: t_json_edges(R)),
+                          ('check_final', lambda: t_check_final(R)),
+                          ('Hub switch in process', lambda: t_hub_switch(R)),
+                          ('Hub statistics on', lambda: t_hub_live(R, tmp)),
+                          ('working folder that contains the home folder', lambda: t_cwd_contains_home(R, tmp))):
             try:
                 fn()
             except Exception as e:  # one broken group must not hide the others

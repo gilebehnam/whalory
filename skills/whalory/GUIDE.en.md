@@ -20,6 +20,7 @@ Hi. We're Whalory, a copy team for English and Persian. This guide is for anyone
 - [Checking the work](#checking-the-work)
 - [Continuous integration](#continuous-integration)
 - [Autolint](#autolint)
+- [Network activity](#network-activity)
 - [Troubleshooting](#troubleshooting)
 
 ## What we do for you
@@ -36,7 +37,7 @@ Hand us business copy in English or Persian to write from scratch, repair, or sc
 | Repair and teaching | Style repair, meeting-note cleanup, scoring, review, and lessons with exercises |
 | Between languages | Transcreation from Persian to English and back |
 
-The full list, with everyday phrasings for each task in both languages, is in the [task index](references/playbooks.md#task-index).
+The full list, with everyday phrasings for each task in both languages, is in the [task index](references/task-index.md).
 
 ## Three promises
 
@@ -220,6 +221,10 @@ The Claude Code plugin and the Gemini extension add commands. In Claude Code and
 | `review` | `/whalory:review landing.md linkedin` | A blind review: a score table and fixes | Core |
 | `voice` | `/whalory:voice acme samples/` | The voice keeper builds or updates the profile | Core |
 | `lint` | `/whalory:lint locales/en.json --format ui` | The linters run and each file gets a summary; nothing is edited unless you ask | Core |
+| `learn` | `/whalory:learn no exclamation marks in our emails` | Your correction becomes one lesson row for the brand's `LEARNINGS.md`. You see the row and its file, and it is saved after you say yes | Core |
+| `lessons` | `/whalory:lessons prune acme` | Lists, prunes, or exports the brand's lessons. A prune, or an export to a file, waits for your yes | Core |
+| `hub` | `/whalory:hub status` | Shows the Hub status, syncs the signed rules now, shows the log, or turns a part off. It never turns sharing on | Core |
+| `feedback` | `/whalory:feedback` | Shows this week's feedback packet and how you can post it yourself. Nothing is sent | Core |
 | `campaign` | `/whalory:campaign spring sale, Instagram and email, UK` | The strategist plans; the writer and editor handle each piece | Pro |
 | `transcreate` | `/whalory:transcreate caption.txt to en UK` | Transcreation, then an editor pass in the target language | Pro |
 | `audit` | `/whalory:audit content/ --profile auto` | The worst files, drift in register, spelling, and variant, and next steps | Pro |
@@ -238,12 +243,13 @@ Pro adds four more:
 
 ## MCP tools reference
 
-The Whalory MCP (Model Context Protocol) server is `scripts/mcp_server.py`, a single Python file with no dependencies. The plugin and the `.mcpb` bundle start it for you. Every tool is read-only, touches no network, and writes no files.
+The Whalory MCP (Model Context Protocol) server is `scripts/mcp_server.py`, a single Python file with no dependencies. The plugin and the `.mcpb` bundle start it for you. No tool touches the network. By default the tools write no files. If you turn on Whalory Hub statistics or packets in your own terminal, `lint_text`, `lint_file`, and `check_final` add counts to the Hub folder. They never write your text there ([Network activity](#network-activity)).
 
 | Tool | Main inputs | Returns | Edition |
 |---|---|---|---|
 | `lint_text` | `text`; optional `lang`, `format`, `channel`, `profile`, `facts` | Issues with rule, line, and message, plus statistics | Core |
 | `lint_file` | `path` inside an allowed folder; the same options | The same, for text, Markdown, HTML, CSV, or locale files | Core |
+| `check_final` | The approved `text`; optional `language`, `format`, `playbook`, `revisions` (0 to 20) | The final findings, as `lint_text` returns them. Call it once when the user approves the copy | Core |
 | `get_playbook` | `task`, as an anchor such as `caption` or free text in either language | The playbook section that matches best, and other matches | Core |
 | `get_reference_section` | `path` under `references/`, `profiles/`, or `data/channels/`; optional `anchor` | One section, or the contents list when no anchor is given | Core |
 | `profile_lookup` | Optional `name`, `project_dir`, `language`, `industry` | The profile in lookup order, its learnings note, and starter suggestions | Core |
@@ -366,6 +372,29 @@ Autolint checks content and locale files each time the assistant writes or edits
   `hook_lint.py` answers Cursor in the `additional_context` field that Cursor's docs describe for this event (checked 2026-09-28). We haven't run it inside Cursor yet.
 - Whalory Pro's editor rules package has these settings ready in its `hooks/` folder, plus one for Gemini CLI.
 - On Windows, `python3` in these examples may need to be `python` or `py`; see [Python](README.en.md#python).
+
+## Network activity
+
+The linters, the MCP server, and the autolint hook make no network calls. Only `scripts/hub_client.py`, the Whalory Hub client, uses the network, and only as this table shows. The plugins for Claude Code, Codex, and Cursor, and the Gemini CLI extension, run `hub_client.py tick` when a session starts. It prints nothing and does at most one of these things per run.
+
+| What | When | Where | Sends | Turn off |
+|---|---|---|---|---|
+| Rule updates | At most once a day, when a session starts | `gilebehnam.github.io`, `github.com`, `hub.whalory.com` | The download request only; the servers see your IP address and that Whalory ran that day | `WHALORY_HUB_UPDATES=0`, or `python scripts/hub_client.py off updates` |
+| License proof for statistics | Pro and Studio only, only if you opted in; once a week | `whalory.com` | A one-time proof made from your license key (never the key) and a blinded ticket request | `python scripts/hub_client.py off` |
+| Weekly statistics | Only if you opted in | `hub.whalory.com` (Iran) | Counts per Whalory rule, rounded word counts, edit and revision measures, versions; never text | `python scripts/hub_client.py off` |
+| Phrase sharing | Only if you opted in separately | `hub.whalory.com` | At most 20 ids a week from Whalory's public phrase list | `python scripts/hub_client.py off phrases` |
+| Weekly packet | Only if you turned packets on, and only when you post it yourself | A comment under your own GitHub account on the public `whalory-hub` repository | Counts only, shown to you in full first; the program itself sends nothing | `python scripts/hub_client.py off packets` |
+
+Statistics, phrase sharing, and packets stay off unless you turn them on yourself, in your own terminal: `python scripts/hub_client.py consent`, `on stats`, or `on packets`. In this release they are also closed on the server side, until a signed setting from the owner opens them. Updates are signed. The client checks each file against the keys it ships with, and when a check fails it keeps the rules it already has. On Codex, `tick` stays offline unless the Codex sandbox allows network access.
+
+Other switches:
+
+- `WHALORY_HUB=0` turns the Hub off completely: no network, no Hub files, built-in rules only.
+- `WHALORY_HUB_OVERLAY=0`, or `lint.py --no-overlay`, lints with the built-in rules only.
+- `DO_NOT_TRACK` or `DISABLE_TELEMETRY`, set to any value, keeps statistics and packets off. `CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC`, set to any value, stops all Hub network activity.
+- `python scripts/hub_client.py status` shows what is on, and `log --net` lists every network request.
+
+Before uninstalling, run `hub_client.py forget`; uninstalling alone does not delete the Hub folder or send deletion requests. The privacy notice for the Hub is on the [legal page](https://whalory.com/legal/#hub-privacy).
 
 ## Troubleshooting
 

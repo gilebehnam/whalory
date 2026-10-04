@@ -7,7 +7,9 @@
         "PYTHONDONTWRITEBYTECODE": "1",
         "PYTHONIOENCODING": "utf-8",
         "PYTHONUTF8": "1",
-        "WHALORY_LANG": "${user_config.default_language}"
+        "WHALORY_LANG": "${user_config.default_language}",
+        "WHALORY_HUB_CONTRIBUTE_REQUEST": "${user_config.hub_contribute}",
+        "WHALORY_HUB_UPDATES": "${user_config.hub_updates}"
       }
     }
   }

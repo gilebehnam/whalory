@@ -1,0 +1,581 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://whalory.com/hub/contracts/schemas/report-2.bundled.schema.json",
+ "title": "whalory.report/2: the weekly report of a licensed install (spec 5.5)",
+ "description": "At most 64 KiB of UTF-8 JSON, parsed with the hardened loader. Every key is required except base and phrases, which exist only with the phrases tier. The server rejects, never clamps. validate.py adds the checks a schema cannot state (sums per id, unique rows, real ISO week).",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "schema",
+  "epoch",
+  "consent",
+  "del",
+  "client",
+  "volume",
+  "cells",
+  "placebo",
+  "params",
+  "playbooks",
+  "health"
+ ],
+ "properties": {
+  "schema": {
+   "const": "whalory.report/2"
+  },
+  "epoch": {
+   "$ref": "#/$defs/common.epoch"
+  },
+  "consent": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "version",
+    "tiers"
+   ],
+   "properties": {
+    "version": {
+     "$ref": "#/$defs/common.consent_version"
+    },
+    "tiers": {
+     "enum": [
+      [
+       "stats"
+      ],
+      [
+       "stats",
+       "phrases"
+      ]
+     ]
+    }
+   }
+  },
+  "del": {
+   "description": "Unpadded base64url of SHA-256 of the 32-byte deletion secret.",
+   "type": "string",
+   "pattern": "^[A-Za-z0-9_-]{43}$"
+  },
+  "client": {
+   "$ref": "#/$defs/common.client"
+  },
+  "volume": {
+   "type": "array",
+   "maxItems": 8,
+   "items": {
+    "$ref": "#/$defs/common.volume_row"
+   }
+  },
+  "cells": {
+   "type": "array",
+   "maxItems": 600,
+   "items": {
+    "$ref": "#/$defs/common.cell_row"
+   }
+  },
+  "placebo": {
+   "type": "array",
+   "maxItems": 8,
+   "items": {
+    "$ref": "#/$defs/common.placebo_row"
+   }
+  },
+  "params": {
+   "type": "array",
+   "maxItems": 200,
+   "items": {
+    "$ref": "#/$defs/common.param_row"
+   }
+  },
+  "playbooks": {
+   "type": "array",
+   "maxItems": 100,
+   "items": {
+    "$ref": "#/$defs/common.playbook_row"
+   }
+  },
+  "health": {
+   "$ref": "#/$defs/common.health"
+  },
+  "base": {
+   "description": "Tier 2 base rates per language: ta tokens shown, td tokens deleted or replaced; multiples of 50.",
+   "type": "object",
+   "additionalProperties": false,
+   "minProperties": 1,
+   "properties": {
+    "fa": {
+     "$ref": "#/$defs/base_row"
+    },
+    "en": {
+     "$ref": "#/$defs/base_row"
+    }
+   }
+  },
+  "phrases": {
+   "type": "array",
+   "maxItems": 20,
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "ng",
+     "fg",
+     "del",
+     "kept"
+    ],
+    "properties": {
+     "ng": {
+      "$ref": "#/$defs/common.ng_id"
+     },
+     "fg": {
+      "$ref": "#/$defs/common.fg"
+     },
+     "del": {
+      "description": "min(del_docs, 5); eligibility needs del_docs >= 2.",
+      "type": "integer",
+      "minimum": 2,
+      "maximum": 5
+     },
+     "kept": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 5
+     }
+    }
+   }
+  }
+ },
+ "allOf": [
+  {
+   "if": {
+    "properties": {
+     "consent": {
+      "properties": {
+       "tiers": {
+        "const": [
+         "stats"
+        ]
+       }
+      }
+     }
+    }
+   },
+   "then": {
+    "not": {
+     "anyOf": [
+      {
+       "required": [
+        "base"
+       ]
+      },
+      {
+       "required": [
+        "phrases"
+       ]
+      }
+     ]
+    }
+   }
+  }
+ ],
+ "$defs": {
+  "base_row": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "ta",
+    "td"
+   ],
+   "properties": {
+    "ta": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 200000,
+     "multipleOf": 50
+    },
+    "td": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 200000,
+     "multipleOf": 50
+    }
+   }
+  },
+  "common.auto_id": {
+   "type": "string",
+   "pattern": "^a-[0-9]{4}w(0[1-9]|[1-4][0-9]|5[0-3])[.][1-9][0-9]{0,2}$"
+  },
+  "common.baseline_id": {
+   "type": "string",
+   "pattern": "^b-[0-9]{4}[.](0[1-9]|1[0-2])[.][1-9][0-9]{0,2}$"
+  },
+  "common.cell_row": {
+   "description": "Per (lang, id, fg). The per-(lang, id) sums over all fg are checked by validate.py: hits <= 200, kept <= 10, ho <= 10, hg <= ho.",
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "id",
+    "lang",
+    "fg",
+    "hits",
+    "kept",
+    "ho",
+    "hg"
+   ],
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/common.rule_or_phrase_id"
+    },
+    "lang": {
+     "$ref": "#/$defs/common.lang"
+    },
+    "fg": {
+     "$ref": "#/$defs/common.fg"
+    },
+    "hits": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 200
+    },
+    "kept": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 10
+    },
+    "ho": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 10
+    },
+    "hg": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 10
+    }
+   }
+  },
+  "common.client": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "skill",
+    "py",
+    "overlay"
+   ],
+   "properties": {
+    "skill": {
+     "$ref": "#/$defs/common.skill_version"
+    },
+    "py": {
+     "enum": [
+      "3.8-3.9",
+      "3.10-3.11",
+      "3.12+"
+     ]
+    },
+    "overlay": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "baseline",
+      "auto"
+     ],
+     "properties": {
+      "baseline": {
+       "anyOf": [
+        {
+         "$ref": "#/$defs/common.baseline_id"
+        },
+        {
+         "type": "null"
+        }
+       ]
+      },
+      "auto": {
+       "anyOf": [
+        {
+         "$ref": "#/$defs/common.auto_id"
+        },
+        {
+         "type": "null"
+        }
+       ]
+      }
+     }
+    }
+   }
+  },
+  "common.consent_version": {
+   "$ref": "#/$defs/common.date"
+  },
+  "common.date": {
+   "type": "string",
+   "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+  },
+  "common.epoch": {
+   "description": "ISO 8601 week in UTC, YYYY-Www. validate.py also checks that the week exists (W53 only in long years).",
+   "type": "string",
+   "pattern": "^[0-9]{4}-W(0[1-9]|[1-4][0-9]|5[0-3])$"
+  },
+  "common.fg": {
+   "description": "Format group (spec 5.5).",
+   "enum": [
+    "short",
+    "long",
+    "ui",
+    "none"
+   ]
+  },
+  "common.health": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "selftest_ok",
+    "selftest_fail",
+    "overlay_exception",
+    "revert",
+    "sync_ok",
+    "sync_fail",
+    "cap_reject",
+    "verify_fail"
+   ],
+   "properties": {
+    "selftest_ok": {
+     "$ref": "#/$defs/common.health_count"
+    },
+    "selftest_fail": {
+     "$ref": "#/$defs/common.health_count"
+    },
+    "overlay_exception": {
+     "$ref": "#/$defs/common.health_count"
+    },
+    "revert": {
+     "$ref": "#/$defs/common.health_count"
+    },
+    "sync_ok": {
+     "$ref": "#/$defs/common.health_count"
+    },
+    "sync_fail": {
+     "$ref": "#/$defs/common.health_count"
+    },
+    "cap_reject": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "violation",
+      "gap"
+     ],
+     "properties": {
+      "violation": {
+       "$ref": "#/$defs/common.health_count"
+      },
+      "gap": {
+       "$ref": "#/$defs/common.health_count"
+      }
+     }
+    },
+    "verify_fail": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "fork",
+      "mismatch",
+      "local"
+     ],
+     "properties": {
+      "fork": {
+       "$ref": "#/$defs/common.health_count"
+      },
+      "mismatch": {
+       "$ref": "#/$defs/common.health_count"
+      },
+      "local": {
+       "$ref": "#/$defs/common.health_count"
+      }
+     }
+    }
+   }
+  },
+  "common.health_count": {
+   "type": "integer",
+   "minimum": 0,
+   "maximum": 1000
+  },
+  "common.lang": {
+   "enum": [
+    "fa",
+    "en"
+   ]
+  },
+  "common.ng_id": {
+   "type": "string",
+   "pattern": "^ng-(fa|en)-[0-9a-f]{10}$"
+  },
+  "common.param_id": {
+   "description": "<lang>:<rule id>.<parameter>, for example fa:long-sentence.max_words.",
+   "type": "string",
+   "pattern": "^(fa|en):[a-z0-9-]{1,40}[.][a-z0-9_]{1,32}$"
+  },
+  "common.param_row": {
+   "description": "Per (param, fg, bucket). Sums per param over buckets and fg: n <= 10, g <= n.",
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "id",
+    "fg",
+    "b",
+    "n",
+    "g"
+   ],
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/common.param_id"
+    },
+    "fg": {
+     "$ref": "#/$defs/common.fg"
+    },
+    "b": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 1000
+    },
+    "n": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 10
+    },
+    "g": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 10
+    }
+   }
+  },
+  "common.placebo_row": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "lang",
+    "fg",
+    "n",
+    "g"
+   ],
+   "properties": {
+    "lang": {
+     "$ref": "#/$defs/common.lang"
+    },
+    "fg": {
+     "$ref": "#/$defs/common.fg"
+    },
+    "n": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 200
+    },
+    "g": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 200
+    }
+   }
+  },
+  "common.playbook_id": {
+   "description": "A playbook anchor of the playbooks.md task index, for example caption or landing-page. Longer than rule ids.",
+   "type": "string",
+   "maxLength": 64,
+   "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+  },
+  "common.playbook_row": {
+   "description": "first_pass <= n, explored <= n, revisions_sum <= 5n, final_errors <= 10n, edit_ratio_sum <= n with at most two decimals (validate.py).",
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "id",
+    "lang",
+    "n",
+    "first_pass",
+    "edit_ratio_sum",
+    "revisions_sum",
+    "final_errors",
+    "explored"
+   ],
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/common.playbook_id"
+    },
+    "lang": {
+     "$ref": "#/$defs/common.lang"
+    },
+    "n": {
+     "type": "integer",
+     "minimum": 1,
+     "maximum": 50
+    },
+    "first_pass": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 50
+    },
+    "edit_ratio_sum": {
+     "type": "number",
+     "minimum": 0,
+     "maximum": 50
+    },
+    "revisions_sum": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 250
+    },
+    "final_errors": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 500
+    },
+    "explored": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 50
+    }
+   }
+  },
+  "common.rule_or_phrase_id": {
+   "description": "A rule id the linters emit, or an lx-/ht- phrase id (spec 5.5, 7.5).",
+   "type": "string",
+   "pattern": "^[a-z0-9-]{1,40}$"
+  },
+  "common.skill_version": {
+   "description": "Major.minor of the skill, for example 3.1.",
+   "type": "string",
+   "pattern": "^[0-9]{1,2}[.][0-9]{1,3}$"
+  },
+  "common.volume_row": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "lang",
+    "fg",
+    "words_shown",
+    "words_final"
+   ],
+   "properties": {
+    "lang": {
+     "$ref": "#/$defs/common.lang"
+    },
+    "fg": {
+     "$ref": "#/$defs/common.fg"
+    },
+    "words_shown": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 200000,
+     "multipleOf": 50
+    },
+    "words_final": {
+     "type": "integer",
+     "minimum": 0,
+     "maximum": 200000,
+     "multipleOf": 50
+    }
+   }
+  }
+ },
+ "$comment": "Generated by tools/bundle_schema.py from schemas/report-2.schema.json and common.schema.json; do not edit."
+}

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""lint: Whalory's checker for Persian and English copy (Whalory 3.0.0).
+"""lint: Whalory's checker for Persian and English copy (Whalory 3.1.0).
 
 The dispatcher. It decides the language of each file, locale value, CSV cell or line and
 sends it to lint_fa (Persian) or lint_en (English). A file that is mostly one language goes
@@ -26,9 +26,16 @@ Usage:
     python lint.py --text "Short copy" --lang en --format ui
     python lint.py draft.md --md --fix --write
     python lint.py --rules --json
+    python lint.py draft.txt --no-overlay       (built-in rules only; WHALORY_HUB_OVERLAY=0 does the same)
 
 Exit codes: 0 no errors; 1 at least one error (or a warning with --strict);
 2 input, profile or flag error; 130 interrupted.
+
+Whalory Hub (Hub spec 4.3, 5.2): only while the person turned on weekly statistics or
+weekly packets in their own terminal, and neither CI nor GITHUB_ACTIONS is set, each
+checked file or text adds one line of counts (rule ids, never text) to the Hub folder.
+At the end of a run in a terminal (not --json), hub_client.terminal_notices() may print
+the Hub's one-time notices on stderr.
 """
 from __future__ import print_function
 
@@ -38,6 +45,8 @@ if sys.version_info < (3, 8):  # before anything else, so the message is readabl
     sys.stderr.write('lint needs Python 3.8 or newer (found %s). '
                      'Install a newer Python and run it again.\n' % sys.version.split()[0])
     sys.exit(2)
+
+sys.dont_write_bytecode = True  # no __pycache__ next to the scripts: a skill or plugin folder may be read-only
 
 import json  # noqa: E402
 import os  # noqa: E402
@@ -51,7 +60,7 @@ import lint_fa as LF  # noqa: E402
 import lint_en as LE  # noqa: E402
 import textcount  # noqa: E402,F401  (part of the public toolset; imported for callers)
 
-__version__ = '3.0.0'
+__version__ = '3.2.0-rc.2'
 
 UserError = LF.UserError
 SKILL_ROOT = LF.SKILL_ROOT
@@ -70,6 +79,7 @@ def load_profile(spec):
     if not spec:
         return {}
     if isinstance(spec, dict):
+        _validate_contract(spec)
         return dict(spec)
     spec = str(spec)
     if spec == 'auto':
@@ -103,9 +113,32 @@ def _read_raw(path):
     data = LF._read_json(path, 'profile')
     if not isinstance(data, dict):
         raise UserError('a profile must be a JSON object: %s' % path)
+    if any(k in data for k in ('_path', '_normalized', '_en_normalized', '_warnings')):
+        raise UserError('profile files cannot contain reserved runtime keys')
+    _validate_contract(data)
     data = dict(data)
     data['_path'] = path
     return data
+
+
+def resolve_profile(profile=None, lang='fa', fmt=None, preset=None, industry=None,
+                    request=None, host_limits=None, industry_selected=False):
+    if isinstance(profile, str):
+        profile = load_profile(profile)
+    if isinstance(profile, dict):
+        profile = {k: v for k, v in profile.items()
+                   if k not in ('_path', '_normalized', '_en_normalized', '_warnings')}
+    return LF.VP.resolve_profile(profile, lang=lang, fmt=fmt, preset=preset, industry=industry,
+                                 request=request, host_limits=host_limits,
+                                 industry_selected=industry_selected)
+
+
+def _validate_contract(profile):
+    raw = {k: v for k, v in profile.items() if k not in ('_path', '_normalized', '_en_normalized', '_warnings')}
+    sv = raw.get('schema_version', 1)
+    errors = LF.VP.validate_profile(raw)
+    if type(sv) is not int or sv not in (1, 2, 3) or (sv == 3 and errors):
+        raise UserError(str(LF.VP.ProfileError(errors)))
 
 
 def _as_profile(profile):
@@ -331,7 +364,7 @@ def _lint_prose(text, lang, profile, kind, fa_st, en_st, channel, facts):
     stats = _merge_stats(fa_s, en_s, split)
     if channel:
         ch_issues, ch_info = LE._channel_check(text, channel)
-        extra = [LE._mk(0, 0, code, level, msg) for level, code, msg in ch_issues]
+        extra = LE._hub_issues([LE._mk(0, 0, code, level, msg) for level, code, msg in ch_issues])
         issues = _by_pos(extra + issues)
         stats['channel'] = ch_info
         stats = _recount(issues, stats)
@@ -523,9 +556,54 @@ def _cell_langs(line, segs):
 
 # ---------------------------------------------------------------- command line
 def rules_json():
-    fa = {'version': 2, 'tool_version': LF.__version__, 'rules': LF.rule_list(), 'lexicon': LF.LEXICON,
+    rows = LF._HUB.rules_rows('fa', LF.rule_list()) if LF._HUB is not None else LF.rule_list()
+    fa = {'version': 2, 'tool_version': LF.__version__, 'rules': rows, 'lexicon': LF.LEXICON,
           'jargon': LF.JARGON, 'formats': dict((k, LF.FORMAT_DEFAULTS[k]) for k in LF.FORMAT_IDS)}
     return {'version': 2, 'fa': fa, 'en': LE.rules_json()}
+
+
+def _hub_events():
+    """hub_events while this run may record counts (statistics or packets on, not CI), else None."""
+    if os.environ.get('CI') or os.environ.get('GITHUB_ACTIONS'):
+        return None
+    try:
+        import hub_events
+        return hub_events if hub_events.enabled() else None
+    except Exception:
+        return None
+
+
+def _lint_recorded(hub, fmt, text, *args):
+    """_lint_loaded(text, *args), and one `lint` event with the shown and the hidden findings (ids only)."""
+    collecting = getattr(LF._HUB, '_collecting', None) if LF._HUB is not None else None
+    if not callable(collecting):
+        issues, stats, lg = _lint_loaded(text, *args)
+        hidden = []
+    else:
+        with collecting() as found:
+            issues, stats, lg = _lint_loaded(text, *args)
+        hidden = list(found)
+    try:
+        hub.record_lint('cli', lg, fmt, (issues, hidden), textcount.word_count(text))
+    except Exception:
+        pass
+    for x in issues:                  # internal fields of the collector never reach the output
+        for k in ('_pid', '_level', '_end'):
+            x.pop(k, None)
+    return issues, stats, lg
+
+
+def _terminal_notices(a):
+    """The Hub's one-time notices on stderr, at the end of a run in a terminal (never with --json)."""
+    if a.json:
+        return
+    try:
+        if not (sys.stdin.isatty() and sys.stderr.isatty()):
+            return
+        import hub_client
+        hub_client.terminal_notices()
+    except Exception:
+        pass
 
 
 def _err(msg):
@@ -567,6 +645,8 @@ def main(argv=None):
         a = ap.parse_args(argv)
     except SystemExit as e:
         return int(e.code or 0) if e.code in (0, None) else 2
+    if LF._HUB is not None:     # --no-overlay: built-in rules only (spec 5.9)
+        LF._HUB.set_cli_disabled(a.no_overlay)
     lang = a.lang or ('fa' if a.fa_only else 'en' if a.en_only else 'auto')
     if sum(1 for x in (a.lang, a.fa_only or None, a.en_only or None) if x) > 1:
         _err('use only one of --lang, --fa-only and --en-only.')
@@ -603,6 +683,7 @@ def main(argv=None):
     facts = LE._read_facts(a.facts)
     inputs = [('<text>', None, t) for t in (a.text or [])] + [(p, p, None) for p in paths]
     report, any_bad, input_errors, csv_seen = [], False, 0, False
+    hub = _hub_events()
     say = _err if a.json else (lambda m: out.write(m + '\n'))
     for label, path, inline in inputs:
         try:
@@ -636,8 +717,11 @@ def main(argv=None):
                     LF.write_text(target, fixed, meta)
                     say('fixed: %d lines changed -> %s' % (fixed_lines, target))
                     text = fixed
-            issues, stats, lg = _lint_loaded(text, path, kind, lang, profile, fa_st, en_st, channel, facts,
-                                             a.csv_columns, a.csv_key, a.md)
+            args = (path, kind, lang, profile, fa_st, en_st, channel, facts, a.csv_columns, a.csv_key, a.md)
+            if hub is not None:
+                issues, stats, lg = _lint_recorded(hub, fmt, text, *args)
+            else:
+                issues, stats, lg = _lint_loaded(text, *args)
             if kind == 'csv':
                 csv_seen = True
             if fixed_lines is not None:
@@ -673,6 +757,8 @@ def main(argv=None):
                 _print_fa_file(r, out)
             else:
                 LE.print_text_report([r], None, {}, None, out, lang_label=True)
+    sys.stdout.flush()
+    _terminal_notices(a)
     if input_errors:
         return 2
     return 1 if any_bad else 0

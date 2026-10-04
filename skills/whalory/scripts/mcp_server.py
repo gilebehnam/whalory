@@ -9,9 +9,26 @@ protocol eras on the same process:
   2025-03-26 and 2024-11-05 (the client's version is echoed when supported);
 - modern: 2026-07-28, with ``server/discover`` and per-request ``_meta``.
 
-Every tool is read-only. The server opens no sockets and writes no files (not even
-Python bytecode caches). It writes JSON-RPC messages to stdout and nothing else;
-logs go to stderr.
+The server opens no sockets and starts no process except its time-limited lint worker
+(this same file with ``--worker``). It writes no files, except that when the user has
+turned on Whalory Hub statistics in a terminal, ``lint_text``, ``lint_file`` and
+``check_final`` append counts (never text) to the Hub folder, through
+``hub_events.py``; it never writes Python bytecode caches. Tools never access the
+network. It writes JSON-RPC messages to stdout and nothing else; logs go to stderr.
+
+Whalory Hub (spec 5.11). ``check_final`` is the final lint of the copy the user
+approved. While ``hub_events.enabled()`` is false, ``lint_text``, ``lint_file`` and
+``check_final`` are annotated read-only. When it becomes true, the server sends
+``notifications/tools/list_changed`` (legacy sessions, and modern listen streams that
+asked for ``toolsListChanged``) and lists them with ``readOnlyHint: false``. The
+setting is checked again at every call, so a change takes effect at once even if a
+host ignores the notification. Only then do ``lint_text`` and ``lint_file`` record
+counts of their findings (the hidden shadow and held-out ones travel back from the
+worker internally and never reach the output) and keep the linted text in memory for
+``check_final`` (at most 8 texts for at most 6 hours, never on disk). The linters
+read the verified overlay through ``hub_overlay.py``, a read of the Hub folder that is
+not subject to ``--root``. ``--test --hub-home DIR`` (a folder inside the system temp
+folder) points the Hub modules at a test folder; tests use it, hosts never do.
 
 Allowed folders. File tools read only inside the project folders and the skill
 folder. The project folders come from the first of these that applies:
@@ -19,9 +36,8 @@ folder. The project folders come from the first of these that applies:
 1. ``--root`` or WHALORY_ROOTS, when at least one value is a folder that exists;
 2. the client's roots (MCP ``roots/list``), when the client declares the ``roots``
    capability; the server asks again on ``notifications/roots/list_changed``;
-3. the working folder, only when no ``--root`` or WHALORY_ROOTS value was given at
-   all, and only when it is not the top of a drive or file system, the home
-   folder, the Windows folder, or the folder Whalory is installed in.
+The current working directory never grants file access. An explicit folder
+argument, environment setting, or client workspace root is required.
 
 This fails closed: when ``--root`` or WHALORY_ROOTS was given but no value is
 usable (a ``${...}`` the host did not fill in, an empty value, a missing folder),
@@ -45,11 +61,12 @@ Usage:
     python mcp_server.py --time-limit 10          # seconds per lint or compare call
     python mcp_server.py --self-check --json      # tools, prompts, resources, tier
     python mcp_server.py --version
+    python mcp_server.py --test --hub-home DIR    # tests only: a Hub folder inside the temp folder
 
 Environment: WHALORY_ROOTS (folders separated by os.pathsep), WHALORY_LANG (auto,
 fa or en) and WHALORY_TIME_LIMIT (seconds). The deprecated WHALYA_* names are read
 when the WHALORY_* one is empty. Design: Whalory 3.0.0 build spec,
-section G. Protocol:
+section G, and the Hub spec (hub/SPEC.md), section 5.11. Protocol:
 https://modelcontextprotocol.io/specification/2026-07-28/basic/versioning ;
 roots: https://modelcontextprotocol.io/specification/2025-11-25/client/roots
 """
@@ -74,7 +91,7 @@ import re  # noqa: E402
 import threading  # noqa: E402
 import time  # noqa: E402
 
-__version__ = '3.0.0'
+__version__ = '3.2.0-rc.2'
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
@@ -95,18 +112,18 @@ SERVER_INFO = {
     'title': 'Whalory',
     'version': __version__,
     'description': 'English and Persian copy tools: bilingual linters, playbooks, references, channel limits.',
-    'websiteUrl': 'https://whalory.com/en/',
+    'websiteUrl': 'https://whalory.com/',
 }
 
 INSTRUCTIONS = (
     'Whalory tools check and support English and Persian business copy. Call lint_text or lint_file '
-    'after drafting; channel_limits before writing for a platform; get_playbook to load the procedure '
-    'for a task; get_reference_section to read one section of a craft reference; profile_lookup to find '
-    'the brand voice. Tools are read-only and never access the network. '
-    '\u00ab\u0627\u0628\u0632\u0627\u0631\u0647\u0627\u06cc \u0648\u0627\u0644\u06cc\u0627 \u0628\u0631\u0627\u06cc \u0645\u062a\u0646\u0650 \u0641\u0627\u0631\u0633\u06cc \u0648 \u0627\u0646\u06af\u0644\u06cc\u0633\u06cc\u200c\u0627\u0646\u062f.\u00bb'
+    'after drafting, and check_final once on the copy the user approves; channel_limits before writing for a '
+    'platform; get_playbook to load the procedure for a task; get_reference_section to read one section of a '
+    'craft reference; profile_lookup to find the brand voice. Tools never access the network. '
+    '\u00ab\u0627\u0628\u0632\u0627\u0631\u0647\u0627\u06cc \u0648\u0627\u0644\u0648\u0631\u06cc \u0628\u0631\u0627\u06cc \u0645\u062a\u0646\u0650 \u0641\u0627\u0631\u0633\u06cc \u0648 \u0627\u0646\u06af\u0644\u06cc\u0633\u06cc\u200c\u0627\u0646\u062f.\u00bb'
 )
 
-CAPABILITIES = {'tools': {}, 'prompts': {}, 'resources': {}}
+CAPABILITIES = {'tools': {'listChanged': True}, 'prompts': {}, 'resources': {}}
 
 TTL_LONG = 3600000     # discover, tools/list, prompts/list, resources/templates/list
 TTL_SHORT = 300000     # resources/list, resources/read
@@ -129,7 +146,13 @@ ROOTS_WAIT = 5.0                 # seconds a file tool waits for the client's ro
 MAX_CLIENT_ROOTS = 100
 
 # Tools whose linters can run long on odd input; they run in the worker process (see Worker).
-WORKER_TOOLS = ('lint_text', 'lint_file', 'compare_texts')
+WORKER_TOOLS = ('lint_text', 'lint_file', 'check_final', 'compare_texts')
+# Tools whose annotations follow the Whalory Hub statistics setting (Hub spec 5.11).
+HUB_TOOLS = ('lint_text', 'lint_file', 'check_final')
+# check_final's outcome refuses longer texts (Hub spec 5.3, "too_long"), so a longer linted text is
+# remembered only as its first REMEMBER_MAX + 1 characters: enough to be refused, never compared.
+REMEMBER_MAX = 20000
+HUB_POLL = 15.0                  # seconds between looks at the statistics setting while serving
 # Requests answered as soon as they are read; the rest wait their turn in order.
 SYNC_METHODS = ('initialize', 'ping', 'subscriptions/listen')
 
@@ -144,6 +167,8 @@ FMT = ['caption', 'story', 'reels', 'carousel', 'post', 'sms', 'otp', 'email', '
        'deck', 'script', 'name', 'headline']
 
 READ_ONLY = {'readOnlyHint': True, 'destructiveHint': False, 'idempotentHint': True, 'openWorldHint': False}
+# lint_text, lint_file and check_final while Hub statistics are on: they append counts to the Hub folder.
+RECORDING = {'readOnlyHint': False, 'destructiveHint': False, 'idempotentHint': False, 'openWorldHint': False}
 
 LINT_EXTS = ('.txt', '.md', '.mdx', '.markdown', '.html', '.htm', '.json', '.po', '.pot', '.arb',
              '.xliff', '.xlf', '.strings', '.xml', '.csv', '.tsv')
@@ -209,6 +234,18 @@ LINT_FILE_IN = {'type': 'object', 'additionalProperties': False, 'required': ['p
 
 LINT_FILE_OUT = json.loads(json.dumps(LINT_OUT))
 LINT_FILE_OUT['properties']['path'] = {'type': 'string'}
+
+CHECK_FINAL_IN = {'type': 'object', 'additionalProperties': False, 'required': ['text'], 'properties': {
+    'text': {'type': 'string', 'minLength': 1, 'maxLength': MAX_TEXT, 'description': 'The final copy the user approved'},
+    'language': LANG_IN,
+    'format': FORMAT_IN,
+    'channel': CHANNEL_IN,
+    'profile': PROFILE_IN,
+    'md': {'type': 'boolean', 'default': False, 'description': 'The text is Markdown'},
+    'playbook': {'type': 'string', 'pattern': '^[a-z0-9-]{1,40}$',
+                 'description': "The playbook used for the copy, e.g. caption or landing"},
+    'revisions': {'type': 'integer', 'minimum': 0, 'maximum': 20,
+                  'description': 'Revision rounds before the user approved (0: approved as first shown)'}}}
 
 DETECT_IN = {'type': 'object', 'additionalProperties': False, 'properties': {
     'dir': {'type': 'string', 'maxLength': 1024, 'description': 'Project folder; default: the first allowed folder'},
@@ -331,6 +368,14 @@ TOOLS = [
                      "strings.xml) inside an allowed folder. Locale keys and placeholders are never changed; CSV "
                      "issues are keyed row/sku/column."),
      'inputSchema': LINT_FILE_IN, 'outputSchema': LINT_FILE_OUT, 'needs': 'lint', 'run': 't_lint_file'},
+    {'name': 'check_final', 'title': 'Final check of approved copy',
+     'description': ("Final check of the copy the user approved: runs Whalory's checks and returns any remaining "
+                     "findings, in the same form as lint_text. Call it once when the user approves final copy. If "
+                     "the user turned on Whalory Hub statistics or weekly packets in their own terminal, it also "
+                     "records counts on this computer, never text, of which Whalory checks the user's own edits "
+                     "removed. With statistics, the user chose to send those counts weekly to Whalory's server in "
+                     "Iran; a packet leaves the computer only if the user posts it on GitHub."),
+     'inputSchema': CHECK_FINAL_IN, 'outputSchema': LINT_OUT, 'needs': 'lint', 'run': 't_check_final'},
     {'name': 'detect_context', 'title': 'Probe a project folder',
      'description': ("Cheap scan of a project folder for step 0 of the method: repository signals, locale files "
                      "and their languages, content folders, catalogs, images, voice-profile candidates and "
@@ -916,8 +961,10 @@ _DRIVE_RE = re.compile(r'^[A-Za-z]:')
 
 
 class Root(object):
-    def __init__(self, path):
-        self.real = os.path.realpath(path)
+    def __init__(self, path, probe=True):
+        # probe=False: a network share from the client's roots is taken as given, so its arrival
+        # causes no name lookup or SMB traffic; a tool reaches it only when asked for a file there.
+        self.real = os.path.realpath(path) if probe else os.path.normpath(path)
         self.norm = os.path.normcase(self.real)
         self.unc = self.real.startswith('\\\\') or self.real.startswith('//')
 
@@ -1005,6 +1052,16 @@ def _roots_from(cli_roots, env_value):
     return roots, given, note
 
 
+# POSIX folders the working-folder fallback never uses: nothing inside the first list, and not the
+# second list's folders themselves (projects under /var/www, /opt/app or a macOS temp folder in
+# /var/folders stay usable). Folders that contain the home folder, such as /home and /Users, are
+# refused by the home check.
+POSIX_SYSTEM_DIRS = ('/etc', '/usr', '/bin', '/sbin', '/lib', '/lib32', '/lib64', '/boot', '/proc', '/sys', '/dev',
+                     '/System', '/Library', '/private/etc')
+POSIX_SYSTEM_TOPS = ('/var', '/opt', '/srv', '/private', '/private/var', '/tmp', '/private/tmp', '/mnt', '/media',
+                     '/Volumes', '/Applications', '/root', '/run')
+
+
 def _cwd_root(skill_dir):
     """(Root, None) for a working folder that may serve as the project, or (None, reason)."""
     try:
@@ -1020,6 +1077,14 @@ def _cwd_root(skill_dir):
         home = None
     if home and n == home:
         return None, 'the server was started in the home folder'
+    if home and _inside(n, home):
+        return None, 'the server was started in a folder that contains the home folder (%s)' % real
+    if not _WIN:
+        for sys_dir in POSIX_SYSTEM_DIRS:
+            if _inside(sys_dir, n):
+                return None, 'the server was started in a system folder (%s)' % real
+        if real in POSIX_SYSTEM_TOPS:
+            return None, 'the server was started in a system folder (%s)' % real
     if _WIN:
         win = os.environ.get('SystemRoot') or os.environ.get('windir')
         if win and _inside(os.path.normcase(os.path.realpath(win)), n):
@@ -1170,11 +1235,12 @@ class Worker(object):
 
     START_WAIT = 20.0
 
-    def __init__(self, skill_dir, lang):
+    def __init__(self, skill_dir, lang, extra=None):
         exe = sys.executable
         self.cmd = [exe, '-B', os.path.realpath(__file__), '--worker', '--skill-dir', skill_dir, '--lang', lang]
         if _DEBUG[0]:
             self.cmd.append('--debug')
+        self.cmd += list(extra or [])  # the test-only Hub flags, so the child sees the same Hub folder
         self.usable = bool(exe)
         self.proc = None
         self.lines = None
@@ -1315,7 +1381,10 @@ def serve_worker(skill_dir, lang):
             if t is None:
                 raise ToolError('Unknown tool.')
             args = job.get('args') if isinstance(job.get('args'), dict) else {}
-            res = {'id': rid, 'value': _jsonable(getattr(srv, t['run'])(args))}
+            value, side = srv.run_local(t, args, job.get('hub') is True)
+            res = {'id': rid, 'value': _jsonable(value)}
+            if side is not None:
+                res['hub'] = _jsonable(side)  # internal: counts for the server process, never output
         except ToolError as e:
             res = {'id': rid, 'tool_error': str(e)}
         except Exception as e:
@@ -1342,7 +1411,7 @@ def _reject_constant(name):
 
 
 class Server(object):
-    def __init__(self, skill_dir, roots, lang='auto', out=None, time_limit=0.0):
+    def __init__(self, skill_dir, roots, lang='auto', out=None, time_limit=0.0, worker_extra=None):
         self.skill_dir = os.path.realpath(skill_dir)
         self.skill = Root(self.skill_dir)
         if isinstance(roots, RootPolicy):
@@ -1359,7 +1428,11 @@ class Server(object):
         self._mods = {}
         self._cache = {}
         self.time_limit = float(time_limit or 0)
-        self.worker = Worker(self.skill_dir, self.lang) if self.time_limit > 0 else None
+        self.worker = Worker(self.skill_dir, self.lang, worker_extra) if self.time_limit > 0 else None
+        self._tls = threading.local()   # capture flag and Hub side data of the running tool call
+        self._ann_state = None    # the statistics setting behind the last tools/list (None: not listed yet)
+        self._ann_lock = threading.Lock()
+        self._stopping = threading.Event()
         self._out_lock = threading.Lock()
         self._jobs_lock = threading.Lock()
         self._jobs = {}           # request key -> queued or running job
@@ -1636,12 +1709,13 @@ class Server(object):
             raise
 
     # ------------------------------------------------ lint adapter
-    def run_lint_text(self, text, lang, profile, fmt, channel, md, max_words, facts):
+    def run_lint_text(self, text, lang, profile, fmt, channel, md, max_words, facts, kind=None):
         L = self.dispatcher()
         try:
             if L is not None:
+                kw = {'kind': kind} if kind else {}
                 res = _call(L.lint_text, text, lang=lang, profile=profile, fmt=fmt, channel=channel, md=md,
-                            max_words=max_words, facts=facts, channels_dir=self.channels_dir)
+                            max_words=max_words, facts=facts, channels_dir=self.channels_dir, **kw)
                 issues, stats, got = res[0], res[1], res[2] if len(res) > 2 else self.detect_lang(text)
                 return issues, stats, got
             LF = self.lint_fa()
@@ -1723,13 +1797,123 @@ class Server(object):
             out['truncated'] = True
         return out
 
+    # ================================================ Whalory Hub capture (Hub spec 5.2, 5.3, 5.11)
+    def _capturing(self):
+        return bool(getattr(self._tls, 'capture', False))
+
+    def _collector(self):
+        """hub_overlay's collector of hidden findings, or None when the overlay module is absent."""
+        ho = sys.modules.get('hub_overlay')
+        fn = getattr(ho, '_collecting', None) if ho is not None else None
+        return fn() if callable(fn) else None
+
+    def _with_hidden(self, fn):
+        """(fn(), hidden findings): the shadow and held-out findings the linters leave out of the output."""
+        ctx = self._collector() if self._capturing() else None
+        if ctx is None:
+            return fn(), []
+        with ctx as hidden:
+            res = fn()
+        return res, list(hidden)
+
+    @staticmethod
+    def _ids(issues, limit=5000):
+        """Only what hub_events counts: the rule id and, for phrase-list findings, the phrase id."""
+        out = []
+        for x in issues or []:
+            if isinstance(x, dict):
+                d = {'code': str(x.get('code') or x.get('rule') or '')}
+                if isinstance(x.get('_pid'), str):
+                    d['_pid'] = x['_pid']
+                out.append(d)
+        return out[:limit]
+
+    def _words(self, text):
+        tc = self.mod('textcount')
+        fn = getattr(tc, 'word_count', None) if tc is not None else None
+        if callable(fn):
+            try:
+                n = fn(text)
+                if isinstance(n, int) and not isinstance(n, bool):
+                    return n
+            except Exception:
+                pass
+        return len(text.split())
+
+    def _set_side(self, lang, fmt, text, shown, hidden, keep_text=False, words=None):
+        if not self._capturing():
+            return
+        side = {'lang': lang, 'fmt': fmt, 'words': self._words(text) if words is None else words,
+                'shown': self._ids(shown), 'hidden': self._ids(hidden)}
+        if keep_text:
+            side['text'] = text[:REMEMBER_MAX + 1]
+        self._tls.side = side
+
+    def run_local(self, t, args, capture=False):
+        """(value, Hub side data or None) of one tool call in this process."""
+        self._tls.capture, self._tls.side = bool(capture), None
+        try:
+            value = getattr(self, t['run'])(args)
+            return value, (self._tls.side if capture else None)
+        finally:
+            self._tls.capture, self._tls.side = False, None
+
+    def hub(self):
+        """hub_events when this copy of Whalory ships it, else None."""
+        return self.mod('hub_events') if self._has_script('hub_events') else None
+
+    def hub_on(self):
+        """hub_events.enabled(): the person turned on statistics or packets in a terminal."""
+        HE = self.hub()
+        if HE is None:
+            return False
+        try:
+            return bool(HE.enabled())
+        except Exception:
+            return False
+
+    def hub_after(self, name, args, side):
+        """Record counts in the server process after a tool call (never raises, never shown)."""
+        HE = self.hub()
+        if HE is None:
+            return
+        try:
+            if name == 'check_final':
+                try:
+                    profile = self.load_profile(args.get('profile'))
+                except Exception:
+                    profile = None
+                HE.check_final_outcome(args['text'], args.get('language', 'auto'), args.get('format'),
+                                       args.get('playbook'), args.get('revisions'), profile=profile)
+                return
+            if not isinstance(side, dict):
+                return
+            lang = side.get('lang')
+            HE.record_lint('mcp', lang, side.get('fmt'), (side.get('shown') or [], side.get('hidden') or []),
+                           side.get('words') or 0)
+            text = args.get('text') if name == 'lint_text' else side.get('text')
+            if isinstance(text, str) and text:
+                HE.remember(text[:REMEMBER_MAX + 1], lang if lang in ('fa', 'en') else 'auto')
+        except Exception as e:
+            debug('hub capture skipped: %s' % type(e).__name__)
+
     # ================================================ tools
     def t_lint_text(self, a):
         profile = self.load_profile(a.get('profile'), a.get('profile_json'))
         channel = self.lint_channel(a['channel']) if a.get('channel') else None
-        issues, stats, got = self.run_lint_text(a['text'], a.get('lang', 'auto'), profile, a.get('format'), channel,
-                                                bool(a.get('md')), a.get('max_words'), a.get('facts'))
+        (issues, stats, got), hidden = self._with_hidden(
+            lambda: self.run_lint_text(a['text'], a.get('lang', 'auto'), profile, a.get('format'), channel,
+                                       bool(a.get('md')), a.get('max_words'), a.get('facts')))
+        self._set_side(got, a.get('format'), a['text'], issues, hidden)
         return self.lint_payload(issues, stats, got, bool(a.get('strict')))
+
+    def t_check_final(self, a):
+        """The final lint of approved copy; hub_after() records the outcome in the server process."""
+        b = {'text': a['text'], 'lang': a.get('language', 'auto'), 'md': bool(a.get('md'))}
+        for k in ('format', 'channel', 'profile'):
+            if a.get(k):
+                b[k] = a[k]
+        return self.t_lint_text(b)
 
     def t_lint_file(self, a):
         path = self.resolve(a['path'], 'file')
@@ -1746,11 +1930,41 @@ class Server(object):
         md = a.get('md')  # None: the linter decides from the extension
         profile = self.load_profile(a.get('profile'))
         channel = self.lint_channel(a['channel']) if a.get('channel') else None
-        issues, stats, got = self.run_lint_path(path, a.get('lang', 'auto'), profile, a.get('format'), channel, md,
-                                                a.get('csv_columns'), a.get('csv_key'), a.get('facts'))
+        prose = self._prose_for_capture(path, md) if self._capturing() else None
+        if prose is not None:
+            # Statistics on: lint the prose through lint_text, which keeps the phrase ids that the
+            # file entry of lint_path drops. The findings are the same (lint_path does exactly this).
+            text, kind = prose
+            (issues, stats, got), hidden = self._with_hidden(
+                lambda: self.run_lint_text(text, a.get('lang', 'auto'), profile, a.get('format'), channel,
+                                           kind == 'md', None, a.get('facts'), kind=kind))
+            self._set_side(got, a.get('format'), text, issues, hidden, keep_text=True)
+        else:
+            (issues, stats, got), hidden = self._with_hidden(
+                lambda: self.run_lint_path(path, a.get('lang', 'auto'), profile, a.get('format'), channel, md,
+                                           a.get('csv_columns'), a.get('csv_key'), a.get('facts')))
+            words = stats.get('words') if isinstance(stats, dict) else None
+            self._set_side(got, a.get('format'), '', issues, hidden,
+                           words=words if isinstance(words, int) and not isinstance(words, bool) else 0)
         out = self.lint_payload(issues, stats, got, False)
         out['path'] = self.display_path(path)
         return out
+
+    def _prose_for_capture(self, path, md):
+        """(text, kind) of a prose file (text, Markdown, HTML) for the capture path, else None."""
+        L = self.dispatcher()
+        if L is None or not callable(getattr(L, 'lint_path', None)):
+            return None
+        LF = self.mod('lint_fa')
+        if LF is None:
+            return None
+        try:
+            kind = LF.detect_kind(path, bool(md))
+            if kind not in ('text', 'md', 'html'):
+                return None
+            return LF.read_text(path), kind
+        except Exception:
+            return None
 
     def t_detect_context(self, a):
         DC = self.mod('detect_context')
@@ -2471,10 +2685,14 @@ class Server(object):
 
     # ================================================ protocol handlers
     def tool_defs(self, legacy_old=False):
+        on = any(t['name'] in HUB_TOOLS for t in self.tools) and self.hub_on()
+        with self._ann_lock:
+            self._ann_state = on
         out = []
         for t in self.tools:
+            ann = RECORDING if on and t['name'] in HUB_TOOLS else READ_ONLY
             d = {'name': t['name'], 'title': t['title'], 'description': t['description'],
-                 'inputSchema': t['inputSchema'], 'annotations': dict(READ_ONLY)}
+                 'inputSchema': t['inputSchema'], 'annotations': dict(ann)}
             if 'outputSchema' in t and not legacy_old:
                 d['outputSchema'] = t['outputSchema']
             if '_meta' in t:
@@ -2531,13 +2749,28 @@ class Server(object):
         return {'content': [{'type': 'text', 'text': value}], 'isError': False}
 
     def _run_tool(self, t, args):
-        """Run a tool here, or in the worker process for WORKER_TOOLS (see Worker)."""
+        """Run a tool here, or in the worker process for WORKER_TOOLS (see Worker). While Hub statistics
+        are on, lint_text and lint_file bring back their counts and check_final records the outcome,
+        here in the server process, after the result is built (Hub spec 5.2, 5.3)."""
+        name = t['name']
+        hub = name in HUB_TOOLS and self.hub_on()
+        capture = hub and name in ('lint_text', 'lint_file')
+        value, side = self._run_somewhere(t, args, capture)
+        if hub:
+            self.hub_after(name, args, side)
+        if name in HUB_TOOLS:
+            self.refresh_annotations(hub)
+        return value
+
+    def _run_somewhere(self, t, args, capture):
         name = t['name']
         w = self.worker
         if name not in WORKER_TOOLS or w is None or not w.usable:
-            return getattr(self, t['run'])(args)
+            return self.run_local(t, args, capture)
         roots, reason = self.project_roots()
         job = {'tool': name, 'args': args, 'roots': [b.real for b in roots], 'no_roots': reason}
+        if capture:
+            job['hub'] = True
         try:
             msg = w.run(job, self.time_limit)
         except Stopped as s:
@@ -2548,13 +2781,47 @@ class Server(object):
             if s.kind == 'died':
                 raise ToolError('%s stopped before it finished: the lint process ended or the call was cancelled. '
                                 'Try again, or check a shorter part.' % name)
-            return getattr(self, t['run'])(args)  # 'unavailable': no child process here; run in-process
+            return self.run_local(t, args, capture)  # 'unavailable': no child process here; run in-process
         if 'tool_error' in msg:
             raise ToolError(str(msg['tool_error']))
         if 'internal' in msg:
             raise ToolError('%s hit an internal error (%s). The details are in the server log.'
                             % (name, str(msg['internal'])[:60]))
-        return msg.get('value')
+        side = msg.get('hub') if capture and isinstance(msg.get('hub'), dict) else None
+        return msg.get('value'), side
+
+    # ---------------- annotations that follow the statistics setting (Hub spec 5.11)
+    def refresh_annotations(self, on=None):
+        """Send tools/list_changed when the statistics setting changed since the last tools/list."""
+        if self.out is None or not any(t['name'] in HUB_TOOLS for t in self.tools):
+            return
+        if on is None:
+            on = self.hub_on()
+        with self._ann_lock:
+            if self._ann_state is None or self._ann_state == on:
+                return
+            self._ann_state = on
+        debug('statistics are now %s; tools/list_changed' % ('on' if on else 'off'))
+        msgs = []
+        if self.legacy_version is not None and self.initialized:
+            msgs.append({'jsonrpc': '2.0', 'method': 'notifications/tools/list_changed'})
+        for key, filt in list(self.listens.items()):
+            if isinstance(filt, dict) and filt.get('tools'):
+                msgs.append({'jsonrpc': '2.0', 'method': 'notifications/tools/list_changed',
+                             'params': {'_meta': {META_SUBID: key[1]}}})
+        for m in msgs:
+            try:
+                self.send(m)
+            except (OSError, ValueError):
+                return
+
+    def _watch_hub(self):
+        """While serving: look at the statistics setting now and then, so an idle session hears of it."""
+        while not self._stopping.wait(HUB_POLL):
+            try:
+                self.refresh_annotations()
+            except Exception:
+                pass
 
     @staticmethod
     def _tool_error(msg):
@@ -2813,10 +3080,11 @@ class Server(object):
             roots, seen, skipped = [], set(), 0
             for item in res['roots'][:MAX_CLIENT_ROOTS]:
                 path = _file_uri_path(item.get('uri')) if isinstance(item, dict) else None
-                if not path or not os.path.isdir(path):
+                unc = bool(path) and (path.startswith('\\\\') or path.startswith('//'))
+                if not path or (not unc and not os.path.isdir(path)):
                     skipped += 1
                     continue
-                r = Root(path)
+                r = Root(path, probe=not unc)
                 if r.norm not in seen:
                     seen.add(r.norm)
                     roots.append(r)
@@ -2929,9 +3197,16 @@ class Server(object):
                               'capabilities': json.loads(json.dumps(CAPABILITIES)),
                               'instructions': INSTRUCTIONS, 'ttlMs': TTL_LONG, 'cacheScope': 'public'}
                 elif method == 'subscriptions/listen':
-                    self.listens[(type(rid).__name__, rid)] = True
+                    want = params.get('notifications') if isinstance(params.get('notifications'), dict) else {}
+                    tools = want.get('toolsListChanged') is True and any(t['name'] in HUB_TOOLS for t in self.tools)
+                    if tools:
+                        with self._ann_lock:
+                            if self._ann_state is None:
+                                self._ann_state = self.hub_on()  # the state the client is told about from now
+                    self.listens[(type(rid).__name__, rid)] = {'tools': tools}
                     return [{'jsonrpc': '2.0', 'method': 'notifications/subscriptions/acknowledged',
-                             'params': {'_meta': {META_SUBID: rid}, 'notifications': {}}}]
+                             'params': {'_meta': {META_SUBID: rid},
+                                        'notifications': {'toolsListChanged': True} if tools else {}}}]
                 elif method == 'ping':
                     result = {}
                 else:
@@ -3024,6 +3299,10 @@ class Server(object):
         runner = threading.Thread(target=self._run_requests, name='whalory-requests')
         runner.daemon = True
         runner.start()
+        if any(t['name'] in HUB_TOOLS for t in self.tools) and self._has_script('hub_events'):
+            watcher = threading.Thread(target=self._watch_hub, name='whalory-hub-watch')
+            watcher.daemon = True
+            watcher.start()
         at_eof = False
         try:
             while True:
@@ -3051,6 +3330,7 @@ class Server(object):
                 for m in self.handle(msg):
                     self.send(m)
         finally:
+            self._stopping.set()
             self._queue.put(None)
             if at_eof:
                 runner.join()  # requests read before EOF still get their answers (each is time-limited)
@@ -3062,7 +3342,7 @@ class Server(object):
 def build_parser():
     import argparse
     ap = argparse.ArgumentParser(prog='mcp_server.py',
-                                 description='Whalory MCP server (stdio). Read-only tools for English and Persian copy.')
+                                 description='Whalory MCP server (stdio). Local tools for English and Persian copy.')
     ap.add_argument('--root', action='append', nargs='*', metavar='DIR',
                     help='folder the file tools may read; repeatable, each takes one or more folders')
     ap.add_argument('--skill-dir', metavar='DIR', help='the Whalory skill folder (default: the folder above scripts/)')
@@ -3074,8 +3354,26 @@ def build_parser():
     ap.add_argument('--self-check', action='store_true', help='print the tools, prompts and resources, then exit')
     ap.add_argument('--json', action='store_true', help='with --self-check: JSON output')
     ap.add_argument('--worker', action='store_true', help=argparse.SUPPRESS)  # the child process (see Worker)
+    # Test-only (Hub spec 5.10): a Hub folder inside the system temp folder; hosts never pass these.
+    ap.add_argument('--test', action='store_true', help=argparse.SUPPRESS)
+    ap.add_argument('--hub-home', metavar='DIR', help=argparse.SUPPRESS)
+    ap.add_argument('--now', metavar='TIME', help=argparse.SUPPRESS)  # with --test: a fixed UTC clock
     ap.add_argument('--version', action='version', version='whalory-mcp %s' % __version__)
     return ap
+
+
+def _configure_hub_test(hub_home, now=None):
+    """--test --hub-home [--now]: point hub_events and hub_overlay at a test Hub folder inside the
+    temp folder, optionally with a fixed UTC clock ('YYYY-MM-DDTHH:MM:SSZ')."""
+    if HERE not in sys.path:
+        sys.path.insert(0, HERE)
+    import hub_events
+    hub_events.configure(hub_home=hub_home, test=True, now=now)  # ValueError outside the temp folder
+    try:
+        import hub_overlay
+    except ImportError:
+        return
+    hub_overlay.configure(hub_home=hub_home, test=True, now=now)
 
 
 def _time_limit(cli_value):
@@ -3098,6 +3396,17 @@ def main(argv=None):
     skill_dir = os.path.abspath(os.path.expanduser(a.skill_dir)) if a.skill_dir else os.path.dirname(HERE)
     env_lang = env_value('LANG').strip().lower()
     lang = a.lang or (env_lang if env_lang in ('auto', 'fa', 'en') else 'auto')
+    worker_extra = None
+    if a.test or a.hub_home or a.now:
+        if not (a.test and a.hub_home):
+            log('--test and --hub-home are test flags that go together (--now needs both)')
+            return 2
+        try:
+            _configure_hub_test(a.hub_home, a.now)
+        except (ValueError, ImportError) as e:
+            log('cannot use the test Hub folder: %s' % e)
+            return 2
+        worker_extra = ['--test', '--hub-home', a.hub_home] + (['--now', a.now] if a.now else [])
     if a.worker:
         try:
             return serve_worker(skill_dir, lang)
@@ -3107,12 +3416,16 @@ def main(argv=None):
         log('SKILL.md not found in the skill folder; some tools may be missing')
     explicit, given, note = _roots_from(a.root, env_value('ROOTS'))
     cwd_root, cwd_note = (None, None) if given else _cwd_root(skill_dir)
-    roots = RootPolicy(explicit, given, note, cwd_root, cwd_note)
+    if cwd_root is not None:
+        cwd_note = 'implicit working-folder access is disabled; use explicit --root or client workspace roots'
+    roots = RootPolicy(explicit, given, note, None, cwd_note)
     out = sys.stdout.buffer
     if a.self_check:
         srv = Server(skill_dir, roots, lang, out)
         report = {'tools': [t['name'] for t in srv.tools], 'prompts': [p['name'] for p in srv.prompts],
-                  'resources': len(srv.resource_list()), 'tier': srv.tier}
+                  'resources': len(srv.resource_list()), 'tier': srv.tier, 'version': __version__,
+                  'projectRootsConfigured': bool(explicit), 'rootPolicy': 'explicit-or-client',
+                  'transport': 'stdio', 'networkTools': False}
         if a.json:
             out.write((json.dumps(report, ensure_ascii=True) + '\n').encode('ascii'))
         else:
@@ -3128,7 +3441,7 @@ def main(argv=None):
         log('no --root and %s; file tools need the client\'s roots or --root.' % cwd_note)
     # Anything a module prints by mistake goes to stderr; stdout carries JSON-RPC only.
     sys.stdout = sys.stderr
-    srv = Server(skill_dir, roots, lang, out, _time_limit(a.time_limit))
+    srv = Server(skill_dir, roots, lang, out, _time_limit(a.time_limit), worker_extra)
     debug('ready: %s tier, %d tools, %d explicit root(s), time limit %g s'
           % (srv.tier, len(srv.tools), len(explicit), srv.time_limit))
     try:

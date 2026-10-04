@@ -1,13 +1,14 @@
 {
   "name": "whalory",
   "displayName": "Whalory",
-  "version": "3.0.0",
+  "version": "3.2.0-rc.2",
   "description": "English and Persian (Farsi) copy team: the Whalory skill, writer and blind-editor subagents, slash commands, and a local MCP server with bilingual linters.",
   "author": {
     "name": "Whalya",
-    "url": "https://whalory.com/en/"
+    "url": "https://whalory.com/"
   },
-  "homepage": "https://whalory.com/en/",
+  "homepage": "https://whalory.com/",
+  "repository": "https://github.com/gilebehnam/whalory",
   "license": "CC-BY-4.0 AND MIT",
   "keywords": [
     "copywriting",
@@ -32,6 +33,20 @@
       "title": "Default output language",
       "description": "auto, fa or en. Used only when the channel, materials and request do not decide.",
       "default": "auto",
+      "required": false
+    },
+    "hub_contribute": {
+      "type": "string",
+      "title": "Share rule statistics (optional)",
+      "description": "Off by default. Choosing \"stats\" only asks you to confirm in a terminal; nothing is sent before you do. Then Whalory sends weekly counts of which checks fired and how you edited, never your text; Pro also proves its license to whalory.com weekly. Server in Iran; reports deleted within 22 days after the week. Notice: https://whalory.com/legal/#hub-privacy پیش‌فرض خاموش است. گزینه‌ی «stats» فقط از شما می‌خواهد در ترمینال تأیید کنید و پیش از تأیید چیزی فرستاده نمی‌شود. پس از تأیید، والوری هر هفته شمارِ هشدارها و اندازه‌ی ویرایشِ شما را می‌فرستد؛ متنِ شما هیچ‌وقت فرستاده نمی‌شود. نسخه‌ی حرفه‌ای هم هر هفته لایسنسش را به whalory.com ثابت می‌کند. سرور در ایران است و گزارش حداکثر ۲۲ روز پس از هفته پاک می‌شود. متنِ کامل: https://whalory.com/fa/legal/#hub-privacy",
+      "default": "off",
+      "required": false
+    },
+    "hub_updates": {
+      "type": "boolean",
+      "title": "Download signed rule updates",
+      "description": "On by default. At most once a day, when a session starts, Whalory downloads signed rule files from GitHub and hub.whalory.com. It adds no identifier; those servers see your IP address. Off: no update checks.",
+      "default": true,
       "required": false
     }
   }

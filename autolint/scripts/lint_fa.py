@@ -48,6 +48,8 @@ if sys.version_info < (3, 8):  # پیش از هر چیزِ دیگر، تا پی�
                      'Install a newer Python and run it again.\n' % sys.version.split()[0])
     sys.exit(2)
 
+sys.dont_write_bytecode = True  # no __pycache__ next to the scripts: a skill or plugin folder may be read-only
+
 import argparse  # noqa: E402
 import bisect  # noqa: E402
 import codecs  # noqa: E402
@@ -56,12 +58,20 @@ import functools  # noqa: E402
 import glob  # noqa: E402
 import html  # noqa: E402
 import io  # noqa: E402
+import hashlib  # noqa: E402
 import json  # noqa: E402
 import math  # noqa: E402
 import os  # noqa: E402
 import re  # noqa: E402
+import unicodedata  # noqa: E402
+import voice_profile as VP
 
-__version__ = '3.0.0'
+try:  # لایه‌ی هاب (spec 5.9)؛ بی آن قاعده‌های درونی مثلِ همیشه کار می‌کنند
+    import hub_overlay as _HUB  # noqa: E402
+except Exception:  # noqa: BLE001
+    _HUB = None
+
+__version__ = '3.2.0-rc.2'
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SKILL_ROOT = os.path.dirname(HERE)
@@ -1180,17 +1190,17 @@ def detect_kind(path, md=False):
 DIAL_WORDS = {1: 14, 2: 18, 3: 24, 4: 28, 5: 34}
 DIAL_MARKS = {0: (0, 0), 1: (1, 0), 2: (1, 1), 3: (2, 1)}
 DEFAULT_MAX_WORDS = 24
+# پارامترهای تنظیم‌پذیر برای هاب (spec 7.3): پیش‌فرضِ درونی و بازه‌ای که پایه‌ی امضاشده می‌پذیرد
+HUB_PARAMS = {'long-sentence.max_words': {'default': DEFAULT_MAX_WORDS, 'min': 18, 'max': 34, 'bucket': 4}}
 # پیش‌فرضِ دکمه‌ها بی‌پروفایل (تصمیمِ D5). lint از این‌ها فقط سقفِ جمله و نشانه‌های پرصدا را
 # می‌گیرد؛ خطاب و jargon قاعده‌ی پروفایل‌اند و بی‌پروفایل سنجیده نمی‌شوند.
-DIAL_DEFAULTS = {'warmth': 3, 'formality': 3, 'humor': 1, 'narrative': 3, 'sentence_length': 3,
-                 'loud_marks': 0, 'jargon': 2, 'rhetoric': 3}
+DIAL_DEFAULTS = dict(VP.DIAL_DEFAULTS)
 DEFAULT_LOUD_MARKS = DIAL_DEFAULTS['loud_marks']
 REGISTERS = ('any', 'formal', 'colloquial')
 REGISTER_ALIASES = {'written': 'formal', 'colloquial-written': 'colloquial'}
 ADDRESSES = ('any', 'shoma', 'to')
 ADDRESS_ALIASES = {'شما': 'shoma', 'تو': 'to'}
-DIAL_RANGES = {'warmth': (1, 5), 'formality': (1, 5), 'humor': (1, 5), 'narrative': (1, 5),
-               'sentence_length': (1, 5), 'loud_marks': (0, 3), 'jargon': (1, 5), 'rhetoric': (1, 5)}
+DIAL_RANGES = dict(VP.DIAL_RANGES)
 DIAL_ALIASES = {'rhetoric_dose': 'rhetoric'}
 
 FORMAT_IDS = ['caption', 'story', 'reels', 'carousel', 'post', 'sms', 'otp', 'email', 'subject', 'push',
@@ -1292,7 +1302,8 @@ def _norm_dials(dials, where, warns):
     for k, v in dials.items():
         k = DIAL_ALIASES.get(k, k)
         if k not in DIAL_RANGES:
-            continue  # دکمه‌ی ناشناخته: برای سازگاری با نسخه‌های بعد، بی‌صدا
+            warns.append(('profile-invalid', 'unknown dial in %s: %s' % (where, k)))
+            continue
         lo, hi = DIAL_RANGES[k]
         if isinstance(v, bool) or not isinstance(v, (int, float)):
             warns.append(('profile-invalid', 'دکمه‌ی %s در %s عدد نیست: %r' % (k, where, v)))
@@ -1344,6 +1355,8 @@ def merge_by_lang(profile, lang):
     sub = bl.get(lang) if isinstance(bl, dict) else None
     if not isinstance(sub, dict) or not sub:
         return profile
+    if profile.get('schema_version') == 3:
+        return VP.deep_merge(profile, sub)
     p = dict(profile)
     for k in BY_LANG_KEYS:
         if k not in sub:
@@ -1360,6 +1373,10 @@ def merge_by_lang(profile, lang):
                 if isinstance(fv, dict) and isinstance(merged.get(fid), dict):
                     one = dict(merged[fid])
                     one.update(fv)
+                    for nested in ('dials', 'prefer'):
+                        if isinstance(merged[fid].get(nested), dict) and isinstance(fv.get(nested), dict):
+                            one[nested] = dict(merged[fid][nested])
+                            one[nested].update(fv[nested])
                     merged[fid] = one
                 else:
                     merged[fid] = fv
@@ -1375,14 +1392,21 @@ def normalize_profile(profile):
     by_lang.fa پیش از یکدست‌سازی رویِ سطحِ بالا می‌نشیند."""
     if not profile:
         return {'_normalized': True, '_warnings': [], 'dials': {}, 'register': 'any', 'address': 'any'}
+    if not isinstance(profile, dict):
+        raise UserError('profile must be a JSON object')
     if profile.get('_normalized'):
         return profile
+    raw = {k: v for k, v in profile.items() if k not in ('_path', '_normalized', '_en_normalized', '_warnings')}
+    errors = VP.validate_profile(raw)
+    sv = raw.get('schema_version', 1)
+    if type(sv) is not int or sv not in (1, 2, 3) or (sv == 3 and errors):
+        raise UserError(str(VP.ProfileError(errors)))
     profile = merge_by_lang(profile, 'fa')
     p = dict(profile)
-    warns = []
+    warns = [('profile-invalid', e['path'] + ': ' + e['message']) for e in errors]
     sv = p.get('schema_version', 1)
-    if sv not in (1, 2):
-        warns.append(('profile-invalid', 'schema_version «%s» ناشناخته است؛ lint_fa نسخه‌ی ۲ را می‌فهمد' % (sv,)))
+    if sv not in (1, 2, 3):
+        warns.append(('profile-invalid', 'schema_version «%s» ناشناخته است؛ lint_fa نسخه‌های ۱ تا ۳ را می‌فهمد' % (sv,)))
     p['schema_version'] = sv if isinstance(sv, int) and not isinstance(sv, bool) else 1
     p['register'] = _norm_choice(p.get('register'), REGISTERS, REGISTER_ALIASES, 'profile-register-alias',
                                  'لحنِ', 'پروفایل', warns)
@@ -1461,7 +1485,7 @@ def validate_profile(profile):
 def _read_json(path, what):
     text = read_text(path)
     try:
-        data = json.loads(text)
+        data = json.loads(text, object_pairs_hook=VP._pairs)
     except ValueError as e:
         line, col = getattr(e, 'lineno', 0), getattr(e, 'colno', 0)
         msg = getattr(e, 'msg', str(e))
@@ -1503,6 +1527,8 @@ def load_profile(path):
     data = _read_json(path, 'پروفایل')
     if not isinstance(data, dict):
         raise UserError('پروفایل باید یک شیءِ JSON باشد: %s' % path)
+    if any(k in data for k in ('_path', '_normalized', '_en_normalized', '_warnings')):
+        raise UserError('profile files cannot contain reserved runtime keys')
     p = normalize_profile(data)
     p['_path'] = path
     return p
@@ -1515,7 +1541,8 @@ def resolve_settings(profile=None, fmt=None, max_words=None, emoji_max=None, exc
     FORMAT_DEFAULTS هرگز خطاب را تعیین نمی‌کند."""
     p = normalize_profile(profile or {})
     dials = dict(p.get('dials') or {})
-    mw = DIAL_WORDS.get(dials.get('sentence_length'), DEFAULT_MAX_WORDS)
+    # پیش‌فرضِ لایه‌ی هاب فقط جای پیش‌فرضِ درونی را می‌گیرد (spec 5.9)
+    mw = DIAL_WORDS.get(dials.get('sentence_length')) or _hub_param('long-sentence.max_words', DEFAULT_MAX_WORDS)
     em, ex = DIAL_MARKS.get(dials.get('loud_marks'), DIAL_MARKS[DEFAULT_LOUD_MARKS])
     src = {'max_words': 'dial', 'emoji_max': 'dial', 'exclaim_max': 'dial'}
     if 'max_words' in p:
@@ -1616,6 +1643,15 @@ def load_channels(dirpath=None):
             entry['id'], entry['group'] = cid, group
             chans.setdefault(cid, entry)
             chans['%s/%s' % (group, cid)] = entry
+    if _HUB is not None:
+        # به‌روزرسانیِ ماشینیِ لایه‌ی هاب: max_chars و status؛ needs-review خطا را هشدار می‌کند (spec 5.9)
+        for key, upd in _HUB.channel_updates().items():
+            cid, _, field = key.partition('.')
+            spec = ((chans.get(cid) or {}).get('fields') or {}).get(field)
+            if isinstance(spec, dict):
+                for k in ('max_chars', 'status', 'verified_on', 'checked_on'):
+                    if k in upd:
+                        spec[k] = upd[k]
     return chans, warns
 
 
@@ -1751,6 +1787,53 @@ def word_rx(w, tolerant=False):
     if re.search(r'[A-Za-z0-9]$', w):
         right = '(?![A-Za-z0-9_])' + right
     return re.compile(left + core + right)
+
+
+@functools.lru_cache(maxsize=512)
+def lx_pid(group, phrase):
+    """شناسه‌ی عبارتِ واژه‌نامه (spec 5.5): lx-fa- و ۱۰ نویسه‌ی اولِ SHA-256(fa|گروه|NFC(عبارت))."""
+    text = unicodedata.normalize('NFC', phrase)
+    return 'lx-fa-' + hashlib.sha256(('fa|%s|%s' % (group, text)).encode('utf-8')).hexdigest()[:10]
+
+
+_HUB_RX = {}
+
+
+def _hub_rx():
+    """عبارت‌های هاب (ht-) در یک الگوی جایگزینی، بلندتر اول، هر کدام با re.escape و همان مرزِ
+    word_rx (spec 5.9، 7.5). (الگو، {عبارت: (شناسه، وضعیت)}) یا None."""
+    if _HUB is None:
+        return None
+    phrases = tuple(_HUB.hub_phrases('fa'))
+    if not phrases:
+        return None
+    got = _HUB_RX.get(phrases)
+    if got is None:
+        alt = '|'.join(re.escape(p) for p, _pid, _st in phrases)
+        left = '(?<![%s%s])' % (FA_LETTERS, ZWNJ)
+        right = 'ِ?(?:(?![%s%s])|%s(?:%s)(?![%s%s]))' % (FA_LETTERS, ZWNJ, ZWNJ, _SUFFIXES, FA_LETTERS, ZWNJ)
+        got = (re.compile(left + '(' + alt + ')' + right), dict((p, (pid, st)) for p, pid, st in phrases))
+        _HUB_RX.clear()
+        _HUB_RX[phrases] = got
+    return got
+
+
+def _hub_issues(issues):
+    """شدتِ لایه‌ی هاب و کنار گذاشتنِ یافته‌های پنهان (spec 5.9)؛ بی لایه فقط فیلدهای درونی می‌روند."""
+    if _HUB is not None:
+        return _HUB.apply_issues('fa', issues)
+    for x in issues:
+        x.pop('_pid', None)
+        x.pop('_end', None)
+    return issues
+
+
+def _hub_param(name, default):
+    return _HUB.param('fa', name, default) if _HUB is not None else default
+
+
+def _hub_stats(stats):
+    return _HUB.stamp_stats('fa', stats) if _HUB is not None else stats
 
 
 def _issue(line, col, code, level, msg, snippet='', key=None, span=None):
@@ -1975,6 +2058,7 @@ def _check(raw_lines, lines, st, mode='doc', key=None, kind='text'):
     rx = _compiled(st)
     prefer = st['prefer']
     fmt = st.get('format') or ''
+    hub_rx = _hub_rx()
 
     emoji_lead = []
     for i, ln in enumerate(lines, 1):
@@ -1988,14 +2072,27 @@ def _check(raw_lines, lines, st, mode='doc', key=None, kind='text'):
                 s = m.start('at') if 'at' in prx.groupindex else m.start()
                 add(i, s + 1, code, level, msg, around(raw, s, m.end()), (s, m.end()))
         for group, words in LEXICON.items():
-            for w in words:
-                w = w.strip()
+            for w0 in words:
+                w = w0.strip()
                 if w in allow:
                     continue
                 for m in word_rx(w).finditer(ln):
                     add(i, m.start() + 1, 'lexicon', WARN,
                         'واژه‌ی %s: «%s»؛ با جزئیات عوض کن یا حذف کن' % (group, w),
                         around(raw, m.start(), m.end()), (m.start(), m.end()))
+                    issues[-1]['_pid'] = lx_pid(group, w0)
+        if hub_rx is not None:
+            try:
+                for m in hub_rx[0].finditer(ln):
+                    pid, state = hub_rx[1].get(m.group(1), (None, None))
+                    if pid and m.group(1) not in allow:
+                        add(i, m.start() + 1, 'hub-tell', ERROR if state == 'error' else WARN,
+                            _HUB.HUB_MESSAGE['fa'], around(raw, m.start(), m.end()), (m.start(), m.end()))
+                        issues[-1]['_pid'] = pid
+            except Exception:  # noqa: BLE001  (spec 5.8 step 10: built-in rules only for this call)
+                hub_rx = None
+                _HUB.note_exception()
+                issues = [x for x in issues if x['code'] != 'hub-tell']
         for r, bad, good in rx['misspell']:
             for m in r.finditer(ln):
                 add(i, m.start() + 1, 'brand-spelling', ERROR,
@@ -2134,7 +2231,9 @@ def _finalize(issues):
         out.append(x)
     out.sort(key=lambda x: (_ORDER[x['level']], x['line'] or 0, x.get('key') or '', x['col'] or 0))
     for x in out:
-        x.pop('_span', None)
+        span = x.pop('_span', None)
+        if span:
+            x['_end'] = span[1] + 1         # درونی، برای hub_mine؛ _hub_issues پیش از خروجی برمی‌دارد
     return out
 
 
@@ -2184,8 +2283,8 @@ def lint(text, md=False, max_words=None, profile=None, fmt=None, channel=None, k
         ch_issues, ch_info = _channel_check(text, channel)
         issues += [_issue(0, 0, code, level, msg) for level, code, msg in ch_issues]
         extra['channel'] = ch_info
-    issues = _finalize(issues)
-    return issues, _make_stats(issues, info['lens'], st, kind, info['placeholders'], extra)
+    issues = _hub_issues(_finalize(issues))
+    return issues, _hub_stats(_make_stats(issues, info['lens'], st, kind, info['placeholders'], extra))
 
 
 # ---------------------------------------------------------------- فایلِ locale
@@ -2596,13 +2695,13 @@ def lint_locale(text, path='', profile=None, fmt=None, channel=None, max_words=N
     for code, msg in _register_issues('\n'.join(joined), st):
         issues.append(_issue(0, 0, code, WARN, msg))
     issues += _address_issues(items, st)
-    issues = _finalize(_profile_issues(st) + issues)
+    issues = _hub_issues(_finalize(_profile_issues(st) + issues))
     extra = {'strings': n_str, 'skipped': skipped}
     if channel:
         extra['channel'] = {'id': channel.get('id'), 'field': channel.get('field'),
                             'note': '' if (channel.get('spec') or {}).get('status') == 'verified'
                             else 'سقفِ تأییدنشده', 'per_string': True}
-    return issues, _make_stats(issues, lens, st, 'locale', placeholders, extra)
+    return issues, _hub_stats(_make_stats(issues, lens, st, 'locale', placeholders, extra))
 
 
 # ---------------------------------------------------------------- csv و tsv (کاتالوگِ انبوه)
@@ -2733,14 +2832,14 @@ def lint_csv(text, path='', profile=None, fmt=None, channel=None, max_words=None
         issues += its
         lens += inf['lens']
         placeholders += inf['placeholders']
-    issues = _finalize(_profile_issues(st) + issues)
+    issues = _hub_issues(_finalize(_profile_issues(st) + issues))
     extra = {'rows': info['rows'], 'cells': n_cells, 'skipped': skipped, 'rows_flagged': len(flagged),
              'columns': info['columns'], 'key_column': info['key'], 'delimiter': info['delimiter']}
     if channel:
         extra['channel'] = {'id': channel.get('id'), 'field': channel.get('field'),
                             'note': '' if (channel.get('spec') or {}).get('status') == 'verified'
                             else 'سقفِ تأییدنشده', 'per_string': True}
-    return issues, _make_stats(issues, lens, st, 'csv', placeholders, extra)
+    return issues, _hub_stats(_make_stats(issues, lens, st, 'csv', placeholders, extra))
 
 
 def lint_file(path, profile=None, fmt=None, channel=None, max_words=None, md=False, settings=None,
@@ -2775,11 +2874,15 @@ def rule_list():
     for c, note in RULE_NOTES.items():
         if c in by_id:
             by_id[c]['description'] += ' (' + note + ')'
+    for pid, spec in HUB_PARAMS.items():
+        rule, _, name = pid.partition('.')
+        if rule in by_id:
+            by_id[rule].setdefault('params', {})[name] = dict(spec)
     return rows
 
 
 def print_rules(as_json=False):
-    rows = rule_list()
+    rows = _HUB.rules_rows('fa', rule_list()) if _HUB is not None else rule_list()
     if as_json:
         print(json.dumps({'version': 2, 'tool_version': __version__, 'rules': rows,
                           'lexicon': LEXICON, 'jargon': JARGON,
@@ -2845,6 +2948,8 @@ def build_parser():
     ap.add_argument('--rules', action='store_true', help='فهرستِ همه‌ی قاعده‌ها و قالب‌ها')
     ap.add_argument('--fix', action='store_true', help='اصلاحِ مکانیکی؛ خروجی در <نام>.fixed.<پسوند>')
     ap.add_argument('--write', action='store_true', help='با --fix، اصلاح در همان فایل')
+    ap.add_argument('--no-overlay', action='store_true',
+                    help='فقط قاعده‌های درونی، بی به‌روزرسانیِ امضاشده‌ی هاب (مثلِ WHALORY_HUB_OVERLAY=0)')
     ap.add_argument('--version', action='version', version='lint_fa %s' % __version__)
     return ap
 
@@ -2858,6 +2963,8 @@ def main(argv=None):
     _setup_stdio()
     ap = build_parser()
     a = ap.parse_args(argv)
+    if _HUB is not None:
+        _HUB.set_cli_disabled(a.no_overlay)
     if a.rules:
         print_rules(a.json)
         return 0
@@ -3031,6 +3138,9 @@ def run(argv=None):
         code = 2
     sys.exit(code)
 
+
+if _HUB is not None:
+    _HUB.register('fa', sys.modules[__name__])
 
 if __name__ == '__main__':
     run()

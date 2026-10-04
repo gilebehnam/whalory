@@ -6,9 +6,16 @@ This file records the changes to Whalory Core and to this repository, newest fir
 
 Nothing yet.
 
-## [3.1.0] - 2026-10-06
+## [3.2.0-rc.1] - 2026-10-04 · unpublished candidate
 
-The first public release. It adds the Whalory Hub, a final check of approved copy, and commands that keep a brand's lessons.
+- Pinned offline installer with project/user scopes, integrity checks, dry-run, backup, update, rollback and safe uninstall.
+- Explicit MCP project roots; no implicit current-directory authorization.
+- Evidence-based host registry and separate Core, Pro and Studio offline kits.
+- Public 3.0.0 is the verified released baseline; the private 3.1.0 work below is an unpublished development precursor.
+
+## [3.1.0] - unpublished development precursor
+
+Development precursor in the private canonical source. It includes the existing Whalory Hub, final checks and user-approved lessons. The previous future date and first-public-release claim were incorrect; 3.0.0 was already publicly released.
 
 ### Added
 
@@ -30,7 +37,7 @@ The first public release. It adds the Whalory Hub, a final check of approved cop
 
 ## [3.0.0] - 2026-09-27
 
-Built and never published: its changes first reached the public in 3.1.0. Whalory now writes business copy in English as well as Persian. The same skill also runs as a plugin, with agents, commands, and a local MCP server.
+Verified public release baseline. Whalory now writes business copy in English as well as Persian. The same skill also runs as a plugin, with agents, commands, and a local MCP server.
 
 ### Renamed
 
@@ -72,5 +79,5 @@ Built under the name Whalya and never released publicly. The date is the one the
 
 The first version, before version numbering, built under the name Whalya and never released publicly. Its date was not recorded.
 
-[Unreleased]: https://github.com/gilebehnam/whalory/compare/v3.1.0...HEAD
-[3.1.0]: https://github.com/gilebehnam/whalory/releases/tag/v3.1.0
+[Unreleased]: https://github.com/gilebehnam/whalory/compare/v3.0.0...HEAD
+[3.0.0]: https://github.com/gilebehnam/whalory/releases/tag/v3.0.0

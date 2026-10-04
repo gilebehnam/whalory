@@ -1,0 +1,5002 @@
+# Whalory Hub list ngrams.fa: the Tier 2 list: id, a tab, the phrase; sorted by id.
+# Built by hub/pipeline/lists.py (spec 5.4). Lines that start with # are comments.
+ng-fa-00092cdcec	هر سال
+ng-fa-0010ff2f6c	یک روز کاری
+ng-fa-001751a9f7	سازوکار
+ng-fa-0028ea7667	کد و رسید تراکنش
+ng-fa-002f883fce	ساعت کاری
+ng-fa-0045f2a1a9	جمع می‌کنند
+ng-fa-004d2c3bcc	خرج
+ng-fa-00503befef	می‌نویسد
+ng-fa-0056c2e6a3	خاصیت درمانی
+ng-fa-005ec8b1ed	در مخزن
+ng-fa-0069050d85	با تقویم
+ng-fa-006b58f7a7	لحن را
+ng-fa-007de032db	تأیید اجتماعی
+ng-fa-0089435d1b	متن‌های معیار
+ng-fa-0092e4c80a	وقت
+ng-fa-00b658f8d1	نگهداری
+ng-fa-00c6619e5e	آزمایش
+ng-fa-00d39e32eb	رایس
+ng-fa-00f5c7bc31	یک جزئیات واقعی
+ng-fa-010d11b928	با وعده‌ی
+ng-fa-01111510cb	یا در
+ng-fa-0134dcfcf3	منطقه
+ng-fa-01534ba1b0	بندی
+ng-fa-015a0e7244	سلامت و
+ng-fa-0162d8bc6c	برای دو
+ng-fa-016e20764f	مشتری‌ها
+ng-fa-0170994977	اشتراک
+ng-fa-017f377c0a	تقابل منفی
+ng-fa-01815bed0f	بایگانی
+ng-fa-0192ff9a5e	ده دقیقه
+ng-fa-019714c7ab	صادر
+ng-fa-019ba49eed	تازه
+ng-fa-01b12ceb01	اگر خواننده
+ng-fa-01b6c8d7db	دور
+ng-fa-01ce206bfc	آزمون دو نسخه‌ای
+ng-fa-01d42ba611	گفت‌وگوی
+ng-fa-01e193bace	کوتاه و
+ng-fa-01f0d30f1a	مقاله و
+ng-fa-020009c0f1	با شکل
+ng-fa-0215091065	شکل
+ng-fa-0235fe2fed	ریتم
+ng-fa-023bfe2e5d	مطالعه‌ی موردی
+ng-fa-0246b1ed8b	برقی
+ng-fa-026ac87241	برعکس
+ng-fa-02717e9c6a	تاریخ‌ها
+ng-fa-027958451e	فنون
+ng-fa-028d18e767	محاوره‌ی نوشتاری
+ng-fa-0295306b3b	پیام است
+ng-fa-02a34fc397	رستوران
+ng-fa-02a86ac699	سیستمی
+ng-fa-02ae1044cc	با داده‌ی
+ng-fa-02b37a5046	تیمی
+ng-fa-02bcf2b0cf	معکوس
+ng-fa-02cae3f9dd	انتقال
+ng-fa-02d3cc927c	خودکار
+ng-fa-02daf983e5	تاریخ و
+ng-fa-033ec3b38f	وزن
+ng-fa-033eec3a86	این عکس
+ng-fa-0364cc7eeb	کمینه‌ی اثر
+ng-fa-03665f59b2	مسئله‌ی
+ng-fa-036bac940d	گزینه‌ی
+ng-fa-036c7b3b5f	از همین‌جا
+ng-fa-0370a5e275	وقتی باز کن
+ng-fa-037c67c71b	نام محلی
+ng-fa-038380b2cc	با پرکردن معمولی
+ng-fa-03af9886a4	نویسه‌ی نامرئی
+ng-fa-03b80e909b	کسی می‌رسد
+ng-fa-03be1030f7	منتشرشده
+ng-fa-03bf2cf0d5	همان روز
+ng-fa-03ce2a7698	نشان بده
+ng-fa-03d06b1021	دیدی
+ng-fa-03e75af356	دو جور
+ng-fa-03ed5917f6	خبر
+ng-fa-03f56ecdd3	احراز
+ng-fa-03f5a7f603	سن
+ng-fa-03f5ed2d38	رفع
+ng-fa-040f33f9b4	ادعاست
+ng-fa-0416455a98	چه عوض
+ng-fa-041bbe8f09	دومی
+ng-fa-042938cc51	داده می‌شود
+ng-fa-04395bbf7a	نداده
+ng-fa-044abf6f83	به تفکیک
+ng-fa-044db0756f	مهلت و
+ng-fa-04543c3be9	عشایر
+ng-fa-0458ef3d97	آذوقه
+ng-fa-0465060386	تفاوت کوچک
+ng-fa-046640acc1	در سلامت
+ng-fa-0484489765	بخار
+ng-fa-0485ef15b5	نمی‌دانی
+ng-fa-0491e5c319	طبقه
+ng-fa-04a977c217	با خط
+ng-fa-04b8883880	پرده
+ng-fa-04be02649d	در فنون روایت
+ng-fa-04c185647f	در کل
+ng-fa-04c62911c2	کن و
+ng-fa-04c988e14d	می‌گیرد
+ng-fa-04d81ea98a	نمی‌نشیند
+ng-fa-050fe61b5a	روابط
+ng-fa-05117d3a98	وقتی باز
+ng-fa-0539569752	صاحب
+ng-fa-0552d22a17	به هر
+ng-fa-05694ddb45	خبر مطبوعاتی
+ng-fa-0570504858	ساختاری
+ng-fa-0575a118df	در کلیک
+ng-fa-057af79085	دوم
+ng-fa-057c6e28c5	غذا و
+ng-fa-059b36ec11	عوض نمی‌شود
+ng-fa-05a9ecacfa	ساخته‌ی
+ng-fa-05b0313b88	به تصمیم
+ng-fa-05bbaf5b9d	جا و
+ng-fa-05cc5caaec	باکیفیت
+ng-fa-05da00994f	نثر
+ng-fa-05dfa7c82c	تا بیست
+ng-fa-060181bc15	در یادداشت داخلی بنویس
+ng-fa-0602ce710f	می‌بیند
+ng-fa-06030852ac	پیش‌فروش ساختمان
+ng-fa-060c6e0d41	کار می‌آید
+ng-fa-0616f67e95	جداست
+ng-fa-062b08d036	و شرط
+ng-fa-062eece3c5	پرسش‌ها
+ng-fa-063463eb6a	روستا
+ng-fa-0635e85124	بگذار و
+ng-fa-0642a36941	انتخاب
+ng-fa-0642be8bd7	تطبیق داده
+ng-fa-064fd3d103	یک فایل
+ng-fa-0652853fa1	در چه حالی
+ng-fa-0657aa70ac	می‌گوید و
+ng-fa-065c9c2e46	جمله برای
+ng-fa-066033176e	پختگی
+ng-fa-06629753af	املای یکدست
+ng-fa-06724ab515	را در همان
+ng-fa-0685e00b62	نقل‌قول واقعی
+ng-fa-06bcb82e03	را عوض می‌کند
+ng-fa-06c0d0a5a0	اینترنتی
+ng-fa-06c517e58e	سنجاق‌شده
+ng-fa-06cb77e7b9	و کار
+ng-fa-06db4a9904	از گزارش
+ng-fa-06e446c9f3	مقدمه
+ng-fa-06e4ff966d	هستم
+ng-fa-06eea920d4	فصلی
+ng-fa-06efc75355	قفسه‌ی
+ng-fa-06f6ac4954	بودجه‌ی
+ng-fa-072f3e9f75	فرآورده‌ی
+ng-fa-0746039429	کرم
+ng-fa-074cae1d23	مصرف‌کننده
+ng-fa-075535bb70	بیش
+ng-fa-075b8a83f2	تصمیمی
+ng-fa-076bea941d	بیشتر از
+ng-fa-0773a2b8ff	نهادهای
+ng-fa-07772d3a20	ماندن
+ng-fa-077d910798	و بدن
+ng-fa-07842ba808	شخصیت
+ng-fa-078b5cd421	به این
+ng-fa-07927d4667	کوچک
+ng-fa-07992c1eb7	بودجه
+ng-fa-079a5a9755	از انتشار
+ng-fa-07ad1cd93d	جاهای
+ng-fa-07bae7906b	نخ
+ng-fa-07d3c214e7	میلیون و پانصد هزار
+ng-fa-07ed975ac1	به خط
+ng-fa-0806b5bf4e	نگو
+ng-fa-08071be29e	خوب باشد
+ng-fa-080a54571f	می‌فرستد
+ng-fa-08157ce1f2	آشپزخانه
+ng-fa-083401b1c8	به یک نفر
+ng-fa-0836833c12	هر جلسه
+ng-fa-083efad925	به همان
+ng-fa-084086481d	بردار
+ng-fa-0875b51277	سخت‌تر
+ng-fa-087e4bef2c	را ندارد
+ng-fa-088b578e04	بی‌آن
+ng-fa-089b127c17	نرم
+ng-fa-08aa5678d7	درگاه پرداخت
+ng-fa-08ab532a73	از دست
+ng-fa-08b81750d5	هزار تومان
+ng-fa-08d46d1155	پرونده
+ng-fa-08e884c4a3	کنار بگذار
+ng-fa-093930c737	ارجاع
+ng-fa-0953f34c68	لوگو
+ng-fa-0955bdfeaa	اعلان
+ng-fa-09613fcd7e	کوچک و
+ng-fa-0965532dca	وارد
+ng-fa-0972088356	آنت
+ng-fa-097230d5de	اگر در
+ng-fa-0972ff5fbb	برگه‌ی استراتژی
+ng-fa-09876052c8	برمی‌گردد
+ng-fa-09b0437183	همان‌طور
+ng-fa-09c2a487b6	آنلاین و
+ng-fa-09caf4959d	ظرفیت
+ng-fa-09db88afca	کن که
+ng-fa-09f0d0778d	از جمله
+ng-fa-09f346924e	معناداری
+ng-fa-09f9ae378e	ادعاهای حساس و
+ng-fa-09ff57d3bf	امر
+ng-fa-0a0a10303f	خیالی
+ng-fa-0a1259be88	کرده‌اند
+ng-fa-0a193431a0	استراتژی پیام
+ng-fa-0a2897355f	کپی‌رایتر
+ng-fa-0a3bac0b3d	آمده و
+ng-fa-0a609bb4e7	برداشت مواد
+ng-fa-0a662f2488	نرم‌افزار
+ng-fa-0a663671b8	خسته
+ng-fa-0a6c982bfc	در صدا
+ng-fa-0a7ef7e15c	پرسش‌های
+ng-fa-0a9664f891	نام خدمت
+ng-fa-0ab2aa56f1	نسبت
+ng-fa-0acb384416	بی‌معنا
+ng-fa-0ae26bc879	بفرست
+ng-fa-0af0c5ce39	جزو
+ng-fa-0af521918b	را نام ببر
+ng-fa-0b03542380	ایمیل
+ng-fa-0b05fb9ba0	زبان خودش
+ng-fa-0b1c040846	همان جمله
+ng-fa-0b2d5568cd	بار در
+ng-fa-0b3f6bc258	برگه‌ی مواد
+ng-fa-0b5dccb2d3	بی‌منبع
+ng-fa-0b69f426a5	متن معیار
+ng-fa-0b7a1b7c87	فقط در
+ng-fa-0b9bed8e57	راهی
+ng-fa-0bb15d9067	در صفحه‌های وب
+ng-fa-0bd22d757e	بچین
+ng-fa-0bdcac107d	است در
+ng-fa-0bdf17cea8	شروع می‌شود
+ng-fa-0bef69c586	رسمی
+ng-fa-0bf836f748	اطلاع‌رسانی
+ng-fa-0bfd46771c	سه جمله
+ng-fa-0c04c3b9a5	انتخاب‌ها
+ng-fa-0c09a6b6f9	و دوباره
+ng-fa-0c13829b48	لحظه‌ی مشخص
+ng-fa-0c1db7a31b	آنچه در
+ng-fa-0c358e0300	مقاله
+ng-fa-0c380aaebb	رسمی در
+ng-fa-0c390df95f	بی‌نام
+ng-fa-0c3b61f22a	و دست‌ساخته
+ng-fa-0c3b7960f1	نقل
+ng-fa-0c6a3062a2	یادآور
+ng-fa-0c753d05cc	فونت
+ng-fa-0c7fc29b65	اول توضیح
+ng-fa-0c802d4af8	بگیرد
+ng-fa-0c88588cf0	می‌خواند
+ng-fa-0c898ae56a	کاربران
+ng-fa-0c9cad8d9d	زودتر
+ng-fa-0caa97e5b2	هر پست
+ng-fa-0cab7c9fb4	ناشر
+ng-fa-0cabd6ab94	بیگانه
+ng-fa-0cc740a0ed	صفحه‌های
+ng-fa-0cc7a3d9f9	در خط اول
+ng-fa-0cd7bacded	اندازه‌ی شاهد
+ng-fa-0ce5c59b35	فیسبوک
+ng-fa-0cf1337e11	خط را
+ng-fa-0cff7b8f93	نماد
+ng-fa-0d03636afa	پولی
+ng-fa-0d061f59ae	نه در
+ng-fa-0d1f21a4b3	گوگل
+ng-fa-0d26b88f25	خدمات
+ng-fa-0d43011f99	خلاف واقع
+ng-fa-0d465cb1d5	مراسم
+ng-fa-0d585386d7	کسی در
+ng-fa-0d7f04b3df	برند فقط
+ng-fa-0d8606811e	تبدیل
+ng-fa-0d8c7e1f9c	می‌ماند
+ng-fa-0d94d75d48	مبنای
+ng-fa-0d99bc774d	اضافه
+ng-fa-0da1d8895f	مشتری با
+ng-fa-0da2bbb6f6	ببر
+ng-fa-0db89f61f0	از تحویل
+ng-fa-0ddb5064bf	منابع
+ng-fa-0de0f64ab9	هفته
+ng-fa-0de222eb82	پرسشی که
+ng-fa-0deeda16a1	فردا
+ng-fa-0df3c1d96c	ارزیابی
+ng-fa-0df585c0de	الگوها
+ng-fa-0dfcfedf08	کجا و
+ng-fa-0e0a2436b7	برگرد
+ng-fa-0e22689c2e	با اجازه
+ng-fa-0e2b3c0a4f	جمله‌ای
+ng-fa-0e2c654475	وگرنه
+ng-fa-0e2ee4dc8c	اغلب
+ng-fa-0e2f94d05f	تعیین
+ng-fa-0e4aa550f1	به بعد
+ng-fa-0ea6413f75	ابعاد
+ng-fa-0ead156e86	لایک
+ng-fa-0eb47f3a1a	تیک
+ng-fa-0ee27c7c27	اسکیل
+ng-fa-0ee3b2956b	و توضیح
+ng-fa-0eead76ee2	موقت
+ng-fa-0f2f9c9d5f	نسخه‌ی گوینده
+ng-fa-0f44c41618	گواهی
+ng-fa-0f4d673c54	نشانی وب
+ng-fa-0f8eaa80db	بتواند
+ng-fa-0f8ecf4410	عقب
+ng-fa-0f98e581e9	را بردار
+ng-fa-0fb880fe68	توضیح کوتاه
+ng-fa-0fbfc01485	بولت
+ng-fa-0fcaaa9afb	می‌گوید کدام
+ng-fa-0fe15a9f89	فقط به
+ng-fa-0ffa726557	توصیه‌ی
+ng-fa-0fffc6d07b	روی دیوار
+ng-fa-1008d201ae	اسفند
+ng-fa-1010cf74b6	وب‌سایت
+ng-fa-1030234c7b	و پول
+ng-fa-1033caf1e6	و عنوان
+ng-fa-103e7c139a	روز پیش از
+ng-fa-104744cc49	یعنی دو
+ng-fa-104ef6f265	و راه
+ng-fa-10681ae088	بی‌منبع کروشه
+ng-fa-106df98eb1	مشتری در
+ng-fa-106f6b6681	ثبت‌نام
+ng-fa-108489ad65	اول می‌آید
+ng-fa-108d65ca53	فعل
+ng-fa-1090345ad0	تقویم مناسبت‌ها
+ng-fa-1093ea648d	مقایسه می‌کند
+ng-fa-109f4f4fda	حذف
+ng-fa-10adf53052	ادعا به اندازه‌ی
+ng-fa-10b5e24384	می‌گوییم وقتی
+ng-fa-10b7f21560	دقیق و
+ng-fa-10c690b960	دیده شود
+ng-fa-10cdd4b703	رقیبی
+ng-fa-10dcaecc1b	فعل و
+ng-fa-10e128ee5a	زمانی
+ng-fa-10e619adf6	بلندخوانی
+ng-fa-10e9eb3e77	پر کن
+ng-fa-10ec34657f	تأمین مالی
+ng-fa-10f27d3561	هفتگی
+ng-fa-10fcf6e611	فوریت
+ng-fa-1124bedc6e	خنده
+ng-fa-112d2b2815	به‌روز
+ng-fa-112eb76345	می‌رود و
+ng-fa-11443279c5	می‌رسند
+ng-fa-11471559e0	گرفتن
+ng-fa-1153025667	خودش را
+ng-fa-1158d65731	کار در
+ng-fa-11630f07bb	لینک برچسب‌دار
+ng-fa-11680e96cc	جای دیگری
+ng-fa-1176b1fe92	ماتریس
+ng-fa-117d05af64	بومی
+ng-fa-1197a3a9cf	در چند
+ng-fa-11a621576f	همه‌جا
+ng-fa-11b13aa072	تبلیغ در
+ng-fa-11b22853b5	بخشی از
+ng-fa-11b7f102a7	آسیب می‌زند
+ng-fa-11b8d5a0b8	پاره‌ها
+ng-fa-11bb4b15d0	پوشه‌ی
+ng-fa-11bed0c1b6	املای
+ng-fa-11c2e435f1	حداکثر چهار
+ng-fa-11c5514edc	در خانه
+ng-fa-11d09af27e	کروشه‌خور
+ng-fa-11e56919ee	دیدن
+ng-fa-11f8eb34be	ساخته شده
+ng-fa-11ff5b5468	بسته به
+ng-fa-1209838a77	دسته
+ng-fa-1211bf53fd	رسانه‌ای
+ng-fa-121a3a1586	همان منبع
+ng-fa-12226f5044	ماه و
+ng-fa-1227bc6975	هر دو در
+ng-fa-122c4c81e3	روزها
+ng-fa-123025a58b	اجرا
+ng-fa-12331e5e28	تفکر
+ng-fa-123677ce84	تابلوی
+ng-fa-1240671274	سال بعد
+ng-fa-125f15e269	حساس و
+ng-fa-1262c472b7	و خط
+ng-fa-126b227397	خیریه
+ng-fa-1270899c88	گفته شود
+ng-fa-12746b1a93	نیاز
+ng-fa-12776d6b8c	چهارم
+ng-fa-1279f429fd	اول صفحه‌ی
+ng-fa-1292ab3e1e	برند دوزبانه
+ng-fa-12ac7d706a	تنظیم
+ng-fa-12bf12e93f	فارسی و
+ng-fa-12bfaca61d	می‌ریزد
+ng-fa-12c7fb6739	چه شکلی
+ng-fa-12f98e130e	بستگی دارد
+ng-fa-12ff0afeae	قصه‌گویی
+ng-fa-130d3b5be5	بیاید
+ng-fa-1319a2069b	اول پیش از
+ng-fa-1327e3e07c	کافه‌بازار
+ng-fa-132c7a14c9	شماره‌ی مجوز
+ng-fa-133fbdd321	گیومه‌ی
+ng-fa-1341861256	سه هفته
+ng-fa-138c475ba0	را پیدا می‌کند
+ng-fa-139effad39	شهریور
+ng-fa-13ab318a33	بمانند
+ng-fa-140145a624	دست‌کم
+ng-fa-1413a66f6a	مشکل
+ng-fa-14289806e1	بوی
+ng-fa-1430531a73	حدسی
+ng-fa-146ee4a12b	در اخلاق
+ng-fa-14a26aa679	فاکتور
+ng-fa-14b5bd6b83	تیره
+ng-fa-14f65c258c	بیرونی
+ng-fa-14ffa2a21d	منتشر
+ng-fa-1509d4a1b1	سازنده‌ی
+ng-fa-152f3ad38a	قصه‌ی
+ng-fa-1537ce1de3	خطاها
+ng-fa-15392a3151	نه می‌گوییم وقتی
+ng-fa-153a9bb891	پزشک مسئول
+ng-fa-1569e939ab	ترکیبی
+ng-fa-156c0b6844	با کروشه
+ng-fa-1588695fce	هر مقاله
+ng-fa-159474b638	اجازه
+ng-fa-15a614943e	اگه
+ng-fa-15a9de01fa	تیتر و
+ng-fa-15b01dcf6c	امتحان
+ng-fa-15ba06de93	به ترتیب
+ng-fa-15c6791f12	از حسابتان کم
+ng-fa-15d4c0fdcf	فهرست کنترل
+ng-fa-15dcd19258	طبیعی
+ng-fa-15f284f436	دما
+ng-fa-161135e86a	پادکست
+ng-fa-161a155997	کوتاه
+ng-fa-163ea704cf	نوشتن
+ng-fa-1645b7b17c	یک یا دو
+ng-fa-1652d438fa	از باز کردن
+ng-fa-1679ce3a8e	یک واژه‌ی
+ng-fa-167b47a2eb	تجربه
+ng-fa-168a2d87ab	بفهمد
+ng-fa-168dc90fb2	آزمایشی
+ng-fa-169ab1ba59	خاصیت انرژی‌زایی
+ng-fa-16b39d4c8c	حقوقی کارفرما بگیر
+ng-fa-16bef0e236	داده‌ای
+ng-fa-16c41c1737	کانال در
+ng-fa-16ccb5484e	در جعبه
+ng-fa-16cf8a5999	صفحه‌ای
+ng-fa-16e45aa567	فعل‌ها
+ng-fa-16fa706b91	پرسش و
+ng-fa-170bdf798f	پرچم
+ng-fa-17140ae2d1	صندلی
+ng-fa-17153e2899	آدم است
+ng-fa-171919ab02	منبعش
+ng-fa-171b29a8a0	در بند
+ng-fa-171b73018f	زیرخط
+ng-fa-17361ebf81	آرامش
+ng-fa-17498ea46c	می‌دهد که
+ng-fa-17553ad928	ثبات
+ng-fa-1755c855c4	یا دو جمله
+ng-fa-175b66e1ba	قانون هوش مصنوعی
+ng-fa-17757e9443	را نگه دار
+ng-fa-177b0d9d66	فرستادن
+ng-fa-17858e4136	از عکس
+ng-fa-179588b592	حرف می‌زند
+ng-fa-17985d40be	تا خواننده
+ng-fa-179c144e23	همیشگی
+ng-fa-17b885b75a	این ماه
+ng-fa-17c4e80304	حسی
+ng-fa-17de78969f	در آن
+ng-fa-17e3a6de34	جایش
+ng-fa-17e4154621	جای نام
+ng-fa-17ee21fb3d	دو سه
+ng-fa-1808b1af7a	پرداخت انجام
+ng-fa-18161f5534	دوز
+ng-fa-181d81b050	بس نیست
+ng-fa-181fd8288b	کار و
+ng-fa-1837fb2fea	برند را
+ng-fa-18689fb0bd	تراکنش
+ng-fa-1881eb7c54	با جدول
+ng-fa-1883eb089b	کار
+ng-fa-18843afa6a	بانک ایده
+ng-fa-1888d5b4fc	برای کروشه‌ها
+ng-fa-1892b51a23	خبرنامه
+ng-fa-18af8dacf4	امشب
+ng-fa-18b270a9d2	غرفه
+ng-fa-18b7250057	اخلاقی
+ng-fa-18bca22265	یا نقش
+ng-fa-18d2c2d14c	به او
+ng-fa-18d955f5c1	در یخچال
+ng-fa-18da920bc4	راهنمای
+ng-fa-18e3538895	برند می‌تواند
+ng-fa-18e3cab1b0	ماه
+ng-fa-18e5b92103	شده‌اند
+ng-fa-18f809e23b	پیشنهاد
+ng-fa-1912a8810d	صفحه‌ی اول
+ng-fa-191cbc268c	ثابت در
+ng-fa-1921ed3ee8	اصلی را
+ng-fa-1925924200	برند و فروش
+ng-fa-1967d2c8cd	آسیب‌پذیر
+ng-fa-198835bc94	ربات
+ng-fa-19998b0bdd	نشانه‌های
+ng-fa-19a41d838d	به شکل
+ng-fa-19a89c9e5e	پایین‌تر
+ng-fa-19ad13ce3e	نام ببر
+ng-fa-19b0ca01ff	بی‌رضایت
+ng-fa-19c82b2594	در فرم
+ng-fa-19c8e041a0	حروف بزرگ
+ng-fa-19d0ac028d	دستگاه
+ng-fa-19d25fb221	آزاد است
+ng-fa-19e817f612	با سه
+ng-fa-19ffecb923	صبحانه
+ng-fa-1a1491a329	جشن
+ng-fa-1a1558db55	دیدنی
+ng-fa-1a1dd7f674	ساخته می‌شود
+ng-fa-1a1f23cbf8	می‌دهد و
+ng-fa-1a21168472	محاسبه
+ng-fa-1a2281c859	خبرها
+ng-fa-1a5702fe23	در ذهن
+ng-fa-1a94952e9b	توضیح کانال
+ng-fa-1aa2b62595	انتزاعی
+ng-fa-1aa6dcb236	نوشته می‌شود
+ng-fa-1abae49e18	مناسبت‌ها
+ng-fa-1ac47d385b	خود کانال
+ng-fa-1af849083f	خالی است
+ng-fa-1b08153844	در کپی‌رایتینگ
+ng-fa-1b1aca2dda	دارند
+ng-fa-1b284619e0	کم
+ng-fa-1b52551a77	کوزه‌گری
+ng-fa-1b5ad819b0	بلندترین
+ng-fa-1b5e10b86f	شوند
+ng-fa-1b6b27f694	ترب
+ng-fa-1b76ca0ee0	پیش از خرید
+ng-fa-1b77b545ba	لاتین در
+ng-fa-1b79b0d37a	این دو
+ng-fa-1b8f7346ab	رضایت و حریم
+ng-fa-1b9d172929	بگوید چه
+ng-fa-1ba867a22c	نشده
+ng-fa-1bab7838a1	امضا
+ng-fa-1bba35691e	روی موبایل
+ng-fa-1bbaabcb39	همان‌جاست
+ng-fa-1bc8301f57	به‌روزرسانی
+ng-fa-1bc8f003b2	نقطه‌ی
+ng-fa-1bdbafcce1	هجای
+ng-fa-1bdd3f5465	شده باشد
+ng-fa-1bde47bb23	یک لینک
+ng-fa-1be60de97a	به کسی
+ng-fa-1be65da286	صفحه‌ی خالی
+ng-fa-1bee79914d	پرکردن
+ng-fa-1c0a01181c	رسانه
+ng-fa-1c0b416621	ترجمه
+ng-fa-1c0c02cbdb	آگاهی
+ng-fa-1c109b2912	رد
+ng-fa-1c1981196f	و ساعت
+ng-fa-1c2ad8a0e9	و دو
+ng-fa-1c2b6e82ee	در سقف
+ng-fa-1c64d5d502	با نام رقیب
+ng-fa-1c66c6c531	در توضیح
+ng-fa-1c71270379	بهمن
+ng-fa-1c72253a35	راهنما
+ng-fa-1c8ce29f4a	ملی پیامک
+ng-fa-1c8e4ef316	جمله و
+ng-fa-1c8f9572fb	تکمیل
+ng-fa-1ca2aa2bb1	مالیات
+ng-fa-1ca98d3281	با برند
+ng-fa-1cace9c559	متن روی
+ng-fa-1cb4fc02e8	رقابت
+ng-fa-1cb6d2f1fa	در یکی
+ng-fa-1ccd96def0	چای
+ng-fa-1cd67df282	یک‌خطی
+ng-fa-1cdb32399a	و جمله‌ی
+ng-fa-1cf352ca92	درست است
+ng-fa-1cf3cf3656	واقعیت‌ها
+ng-fa-1d09b3b197	محاوره‌ی
+ng-fa-1d0d9bc877	واقعا
+ng-fa-1d203c3959	از دنیای خود موضوع
+ng-fa-1d41c3dcff	را خرج می‌کند
+ng-fa-1d443a4ff9	یک ساعت
+ng-fa-1d46913a88	کوچک‌ترین
+ng-fa-1d67466909	را دوست
+ng-fa-1d70d1dceb	قهوه‌ی
+ng-fa-1d738517c5	و رسید
+ng-fa-1d85997ea4	کاسه‌ی
+ng-fa-1d85ed8da0	حرفه‌ای
+ng-fa-1d93e23949	بستن
+ng-fa-1db93e9499	خواست
+ng-fa-1dbdb0033a	مفید
+ng-fa-1dc5cf3415	آدم داخل عکس
+ng-fa-1dc7a302fd	می‌بینی
+ng-fa-1dd1aedba3	شرکت‌کننده
+ng-fa-1dd5cd4d40	حتما
+ng-fa-1ddbcbef7d	سه تا
+ng-fa-1df7d42273	اصل
+ng-fa-1e020dc3f6	کافی
+ng-fa-1e09fc57c2	رخ
+ng-fa-1e19f9b96a	با عکس
+ng-fa-1e422ea036	تومان با
+ng-fa-1e470d5963	بی‌ایموجی
+ng-fa-1e577f9442	و دوز
+ng-fa-1e5af79427	مدرس
+ng-fa-1e707393ac	سطح آگاهی
+ng-fa-1e73843483	خالص
+ng-fa-1e751a55bf	گروه کنارگذاشته
+ng-fa-1e8475bcc7	اگر پنل یا اپراتور
+ng-fa-1e8ae821e1	و نقل‌قول
+ng-fa-1e938f787d	در بخش
+ng-fa-1e9449cb87	با دونقطه
+ng-fa-1eb210f10e	یاد
+ng-fa-1ede19479e	اجرا کن
+ng-fa-1ee79c0acc	عبارت
+ng-fa-1f03881c79	بحران
+ng-fa-1f09167e59	تاریخ انتشار
+ng-fa-1f1a5ecad7	بخوان و
+ng-fa-1f35e021e4	نشانه‌ها
+ng-fa-1f3ebf9d58	از اکران
+ng-fa-1f583ec84c	هر سه
+ng-fa-1f5f1c9b80	نمی‌ماند
+ng-fa-1f8086d9f2	شریک
+ng-fa-1f816b0253	با فعل
+ng-fa-1f9dedd2b7	دیجیتال
+ng-fa-1fb05e3436	حاضر
+ng-fa-1fc020ef04	عددهای
+ng-fa-1fe059ecbb	تولید
+ng-fa-1ff109238a	گرمی
+ng-fa-2001c13646	تأیید
+ng-fa-2004b74ffe	زنجیره‌ی
+ng-fa-200da4c1c4	پانصد هزار تومان
+ng-fa-204acb5c7a	تا معلوم
+ng-fa-204cdb3a42	و ایمیل
+ng-fa-205b90edd8	اجازه می‌دهد
+ng-fa-208472c5e4	صفحه با
+ng-fa-208e0433a6	از نویسنده‌ها
+ng-fa-209009066f	نشانی
+ng-fa-2095223f72	فطر
+ng-fa-20be783d36	پر می‌شود
+ng-fa-20cb83f750	یکی در
+ng-fa-20dd005992	شنیده
+ng-fa-20e186c01f	چیزی است که
+ng-fa-20eba9614d	بوی یخچال را
+ng-fa-20f439d8a4	سنجیده می‌شود
+ng-fa-210c510353	یک آزمون
+ng-fa-210d221df4	در مقررات
+ng-fa-21113db9d2	اصلی در
+ng-fa-21290275da	زرین‌پال
+ng-fa-212c3b8132	روان
+ng-fa-2137a8019f	شناسنامه
+ng-fa-213dc7635c	متن کوتاه
+ng-fa-2145e8a884	هستیم
+ng-fa-2150295098	راه بعد
+ng-fa-217e1ae15a	صفتی
+ng-fa-2190d89ee5	آرایشی
+ng-fa-21a10ed5f8	نزدیک‌ترین
+ng-fa-21a4521695	مرکز
+ng-fa-21a88cde91	و واتس‌اپ
+ng-fa-21c140dc85	بازبینی
+ng-fa-21c188422e	یادآوری
+ng-fa-21d72abcfb	کن
+ng-fa-21e9499080	جزئیات واقعی
+ng-fa-2204483c33	عدد واقعی
+ng-fa-222f27e408	شغلی
+ng-fa-2244efb08c	که رقیب
+ng-fa-224501e434	اقلام
+ng-fa-225140aa54	ایده‌های
+ng-fa-225d7b8930	تأمین
+ng-fa-226218ef93	سه پرسش
+ng-fa-226bd7bf03	از قبل
+ng-fa-226cffb407	زمان‌نشان
+ng-fa-2274a9271d	شماره را
+ng-fa-227a795eae	در جدول
+ng-fa-2284180921	دوپاره
+ng-fa-22994beb9c	بی‌عدد
+ng-fa-229da4288b	این‌که
+ng-fa-22baae0067	پر است
+ng-fa-22c2f2334a	حساسیت
+ng-fa-22c4517fc1	ارزان‌تر
+ng-fa-22f819b5d9	گرم کنین
+ng-fa-22f9d6838f	حروف بزرگ لاتین
+ng-fa-23078bf524	گویا
+ng-fa-230e8c84dc	توالی
+ng-fa-231cf08e32	تفکر سریع و
+ng-fa-231e5aaaff	دیده می‌شود
+ng-fa-232038f9ba	نشوم
+ng-fa-2326457e8b	جای‌نگهدار
+ng-fa-233e88d50f	حسابتان کم
+ng-fa-23596a2a75	دیدگاه
+ng-fa-23672590a7	ابزار
+ng-fa-236af42cfc	فشار
+ng-fa-236b954c6e	از خواندن
+ng-fa-2388b0ba9d	ساده و
+ng-fa-238a9f1eb8	تا هشت
+ng-fa-239c7d51a5	عدد به
+ng-fa-23a507ab86	مبلغ
+ng-fa-23d0e5a6ec	اول رایگان
+ng-fa-23e8100196	جمله را
+ng-fa-23eb96eb3a	واژه‌ها
+ng-fa-23efb43732	شیء
+ng-fa-24281749c2	و موتور
+ng-fa-2437177181	را حذف
+ng-fa-245af84450	هرکدام در
+ng-fa-245b9539a2	تقریبی
+ng-fa-246019e778	چتر
+ng-fa-246cb3f0af	همان هفته
+ng-fa-246e722e98	قاعده‌ای
+ng-fa-2475815688	و برای هرکدام
+ng-fa-2477be2ee1	فهرست کنترل پیش
+ng-fa-24908600f4	چرخ
+ng-fa-24a10a2601	ارسال و
+ng-fa-24a2a02906	و تندرستی
+ng-fa-24a64e0904	لاتین و
+ng-fa-24b5458311	تنها
+ng-fa-24bb230cb8	فرستنده
+ng-fa-24c22c281a	پرداخت و
+ng-fa-24cc9c8a06	صدا و
+ng-fa-24e0552e58	کارگاه
+ng-fa-24e5ce23e6	شعر
+ng-fa-24e983096e	تلاش
+ng-fa-2505704aa2	سوغات
+ng-fa-2514433125	مسیر
+ng-fa-25146282a8	آمادگی
+ng-fa-2519adf3f1	به هم
+ng-fa-2536ffb28c	کرده‌ای
+ng-fa-253e5fc2f0	تلفن
+ng-fa-254fa002b3	هیچ‌وقت
+ng-fa-255d76a3ca	در کار
+ng-fa-255f6e376f	لحن‌ها
+ng-fa-2570b80e7b	تماس و
+ng-fa-2583f099ae	سرعت
+ng-fa-259398feb2	پزشک
+ng-fa-25a13b0dac	بیایند
+ng-fa-25c25e3d97	جمله‌ای که
+ng-fa-25d0b2af58	و نام
+ng-fa-25d0bf61f6	سه راه
+ng-fa-25ed5b86fa	موتور
+ng-fa-260931ec73	ممنون
+ng-fa-262374a655	را در یک جمله
+ng-fa-262f5c1de8	تلگرام
+ng-fa-2631841c7a	پیامک و
+ng-fa-2632c04f87	زبان‌های
+ng-fa-263e4077e7	در حال
+ng-fa-263ec430d7	قیمت و
+ng-fa-264535cbd7	بسته‌ها
+ng-fa-264634073d	یک بند
+ng-fa-26479e768c	نگه
+ng-fa-264c82b37f	یک پاره
+ng-fa-26545ac00b	با شرطش
+ng-fa-265ddb56b7	خطا و
+ng-fa-267d8e8fee	ربط دارد
+ng-fa-26a5752dc0	ببینید
+ng-fa-26b3c7f9c6	تکه
+ng-fa-26b4174fef	هر پاسخ
+ng-fa-26d2899b5d	آدم
+ng-fa-26e5d91f45	شدید
+ng-fa-27111acb93	تصویر
+ng-fa-2711e25862	سوگ
+ng-fa-272c8c21d2	کپشن اینستاگرام
+ng-fa-27324f79fc	لینک
+ng-fa-2740fec494	خود کتاب
+ng-fa-27499f2b23	مانده
+ng-fa-27784dffbd	اسکریپت
+ng-fa-2785023842	صفحه‌ی پرداخت
+ng-fa-27919345b0	طبق پروفایل
+ng-fa-279974bdf8	رابط
+ng-fa-27a8412e53	جواب‌ها را
+ng-fa-27b3eebb35	بخش‌ها
+ng-fa-27b5bd0dc3	خانگی
+ng-fa-27de0f6a0b	تازه‌وارد
+ng-fa-27e156912f	نام اپ
+ng-fa-27f19d74c1	زده
+ng-fa-27fbcb5481	جعبه‌ی
+ng-fa-27fd517b6e	متن خوب
+ng-fa-2800fedc42	نتایج
+ng-fa-280f108ddc	شیپور
+ng-fa-281324851f	این‌جا فقط
+ng-fa-2843133edb	خرید اینترنتی
+ng-fa-2852500d3a	تعطیل
+ng-fa-2865dd7d64	بگوید
+ng-fa-286a61bb19	نام هتل
+ng-fa-286a65b72e	عنوان صفحه
+ng-fa-286cc4508a	گفتاری
+ng-fa-286e4d8cb4	لایه
+ng-fa-287516711a	می‌شد
+ng-fa-287934199a	طولانی
+ng-fa-287cea5f15	قاعده‌های نگارش
+ng-fa-288ef24175	تا سی
+ng-fa-288f2845d8	آن وقت
+ng-fa-288fa1f709	درد
+ng-fa-28a5d54d5f	متن به
+ng-fa-28a797cb4b	عوض می‌شود
+ng-fa-28a9b78ade	مهلت واقعی
+ng-fa-28aa67db7a	نوشتن برای
+ng-fa-28ab341fe6	هر برند
+ng-fa-28afffe8f2	کنی
+ng-fa-28b33615a5	متن را به
+ng-fa-28ce83d75a	فارسی جاافتاده
+ng-fa-28ed3e458f	اوت
+ng-fa-28f0526d49	پنج ثانیه
+ng-fa-28f7d53812	سه بند
+ng-fa-28f8f6a135	استوری
+ng-fa-29088de122	ارزان‌ترین
+ng-fa-2910adc703	هر عدد
+ng-fa-2917da0bc2	شرطی
+ng-fa-2934380bf0	برو
+ng-fa-293d8d952c	تومان در
+ng-fa-294e376780	معنا داشته باشد
+ng-fa-295593f627	برند یک
+ng-fa-2968002d44	استعلام
+ng-fa-296990f56b	را ببین
+ng-fa-297006a395	چه عوض شد
+ng-fa-2975e14d1e	هر بار
+ng-fa-298824ecdf	تعمیرگاه
+ng-fa-29a3d5790e	روی گوشی
+ng-fa-29b7280357	ساعت‌ها
+ng-fa-29bb1da931	فرش
+ng-fa-29d26f6c8c	در آزمودن
+ng-fa-29d8eacb0d	حس
+ng-fa-29d97d06a1	تمام
+ng-fa-29dcd9eed1	قصه‌ی کوتاه
+ng-fa-29de6b198e	پشتیبان
+ng-fa-29df99ab69	یک قدم
+ng-fa-29ee3bd1d6	عمل
+ng-fa-29ff3afdb3	و چطور
+ng-fa-2a2052af09	دور ویرایش
+ng-fa-2a30306dbd	زیبایی و
+ng-fa-2a58c13cdc	نرود
+ng-fa-2a6288eecc	آن کار
+ng-fa-2a755ee336	حقوقی
+ng-fa-2a79346bdc	اسم محصول
+ng-fa-2a870f9101	که بشود
+ng-fa-2a99cf5ba5	بررسی و
+ng-fa-2ac288dae4	آزمون جایگزینی
+ng-fa-2ad090aa78	و علامت
+ng-fa-2ad5855b70	سیاست
+ng-fa-2ae7ef798d	ایموجی پشت هم
+ng-fa-2b03edcb4a	حسابدار
+ng-fa-2b0da2244a	قصه در
+ng-fa-2b14f03700	می‌خواهند
+ng-fa-2b15b00f0d	مجوز تبلیغ
+ng-fa-2b18350c69	می‌سازد
+ng-fa-2b1a89d807	تلگرام و ایتا
+ng-fa-2b2ecb23cc	بردن
+ng-fa-2b3e8ef505	تولد
+ng-fa-2b613cbcdc	می‌گذارد
+ng-fa-2b738a403b	برگه‌ی جایگاه
+ng-fa-2b7aea033d	می‌سنجد
+ng-fa-2b7cae9fba	گفتار
+ng-fa-2b858b993b	خود گوینده
+ng-fa-2ba6ce136c	واحد درصد
+ng-fa-2bb144cee9	چقدر است
+ng-fa-2bc750cbcb	جمع
+ng-fa-2be9378d0a	خوب
+ng-fa-2bed3ea55a	را دستی
+ng-fa-2befa99ba4	تعریف می‌کند
+ng-fa-2bf3c2bad7	تمیزی
+ng-fa-2bf3f71f2f	آزمون‌های سریع
+ng-fa-2bfd7ebaa3	عام
+ng-fa-2c055e123d	یک املا
+ng-fa-2c14e828c7	با نیم‌فاصله
+ng-fa-2c1fbcccb3	در تیتر و
+ng-fa-2c410538eb	سقف را
+ng-fa-2c4e9594c1	متن آگهی
+ng-fa-2c5274655a	می‌دارد
+ng-fa-2c587e2af6	روی تصویر
+ng-fa-2c5b1551ab	آزمون‌های
+ng-fa-2c6ab5738e	هر ادعای
+ng-fa-2c75a625a4	جمله از
+ng-fa-2c8835790f	آزمون ماشینی
+ng-fa-2cb546983d	خوشمزه‌تره
+ng-fa-2cb8372fd8	ناخواسته
+ng-fa-2cb959caa0	یادت
+ng-fa-2cbc919a44	باید بداند
+ng-fa-2cc24b8565	به تأیید
+ng-fa-2cc9a37e5d	که به
+ng-fa-2cceb95f4e	سطح آگاهی خواننده
+ng-fa-2cf13ff63c	دنیای خود
+ng-fa-2cfb3b4549	محدود
+ng-fa-2d000c0b42	هوش مصنوعی
+ng-fa-2d06c0cf8e	کاغذ مومی
+ng-fa-2d2132de25	جزئیات از
+ng-fa-2d22383084	مشخصی
+ng-fa-2d2987b3c4	پنجشنبه
+ng-fa-2d301c3bc5	زبان خود
+ng-fa-2d6dbcc18d	گت‌تکست
+ng-fa-2d832af36f	متا
+ng-fa-2d891f7f94	چهار
+ng-fa-2d8be6792b	می‌فهمد
+ng-fa-2d8e488035	بسته است
+ng-fa-2d958ea32a	یک جمله
+ng-fa-2da831ef8d	مرکز توسعه‌ی
+ng-fa-2db8b3398a	دوره
+ng-fa-2dc851c706	کودکی
+ng-fa-2dcbc1292d	سابقه
+ng-fa-2dd35a5350	عدد در
+ng-fa-2dd78673bc	نشود
+ng-fa-2dffb07d5e	تعهد
+ng-fa-2e09dfa0f4	می‌توانید
+ng-fa-2e0ce23381	ذخیره
+ng-fa-2e164f1927	شناسه‌ی
+ng-fa-2e2758bdaa	مصنوعی
+ng-fa-2e2a1e8f95	تخیل
+ng-fa-2e2a66dd97	دنیای
+ng-fa-2e2cbe5cd2	از همان‌جا
+ng-fa-2e2f1755dd	واقعی از
+ng-fa-2e386b0f17	سروش
+ng-fa-2e38cd1d13	بی‌شعار
+ng-fa-2e3a7990a5	و بلند
+ng-fa-2e3ca9a62c	با شماره
+ng-fa-2e530d6ec5	همگرایی
+ng-fa-2e53e8d9ca	رشته
+ng-fa-2e5460f1cc	تیتر
+ng-fa-2e98c6dfc7	قالب در
+ng-fa-2e9a7b43f2	در این
+ng-fa-2eba11bfad	صدا
+ng-fa-2ec47469a0	خالی
+ng-fa-2ecae3ed8b	تصمیم
+ng-fa-2ed7516c85	پاسخ به نظر
+ng-fa-2edc2b25c7	روشن
+ng-fa-2f17ee08e8	سقف نویسه‌ی
+ng-fa-2f2019f9fa	از دو
+ng-fa-2f2fb0310c	تفکر سریع
+ng-fa-2f52b298fc	در متن
+ng-fa-2f5dea2df3	عادی
+ng-fa-2f6167b64a	بیانیه
+ng-fa-2f6417590d	اندازه‌ی بازار
+ng-fa-2f6673ab74	جواب‌ها
+ng-fa-2f6913be26	نسخه‌ی انگلیسی
+ng-fa-2f6aebdf26	بسنج
+ng-fa-2f78bbd1cf	آیین
+ng-fa-2f7b25334b	دسته‌ی
+ng-fa-2f944bc9df	با تاریخ
+ng-fa-2f9a027d61	برنامه‌نویسی
+ng-fa-2fa3ecc0db	پیام‌رسان‌های ایرانی
+ng-fa-2fb82cb0c6	آزمونی
+ng-fa-2fc54875ae	را پر
+ng-fa-2fe08851db	ایموجی و
+ng-fa-2fe2872984	آغاز
+ng-fa-2ff2689b73	قبل از
+ng-fa-2ff7cf5f36	ورودی
+ng-fa-2ff7e17020	و آموزش
+ng-fa-30169f01e1	دسترسی
+ng-fa-30267f30eb	یک فعل
+ng-fa-3029f32956	دو یا سه
+ng-fa-302d42d779	با معیار
+ng-fa-303b793fb6	خودروی
+ng-fa-3042d22d31	می‌آید و
+ng-fa-3046b0e57b	آسیب
+ng-fa-305d2e0913	دانش
+ng-fa-305f24d3de	چیست و
+ng-fa-30690bb2e4	کوتاه یک
+ng-fa-307c5c7c94	حسابداری
+ng-fa-30868a9537	پیامد
+ng-fa-308b701b26	دعوت‌نامه
+ng-fa-3092b08455	نرم‌افزار حسابداری
+ng-fa-309ecd585e	ویدیوی
+ng-fa-30bb92ab14	نام فرستنده
+ng-fa-30bec528d9	نام قابلیت
+ng-fa-30c3cc4628	در ادعاهای حساس
+ng-fa-30cc2daee0	نمونه
+ng-fa-30d78c8d7b	جمله که
+ng-fa-30e7112726	با دلیل
+ng-fa-30e864c1b3	و مرجوعی
+ng-fa-30efe1f247	برای کل
+ng-fa-30f2acf17d	آموختن
+ng-fa-310e9ad223	ادعای هوش
+ng-fa-311402cb3e	مطلب
+ng-fa-3147c4719a	مهم‌ترین
+ng-fa-3147cf0029	مرز و
+ng-fa-3151b47369	این شش
+ng-fa-3169d90117	نبوده
+ng-fa-3172a04237	نشانه‌ای که
+ng-fa-317b68e5f4	بشنو
+ng-fa-31ad9d1198	سال‌ها تجربه
+ng-fa-31adb787a7	کالا
+ng-fa-31b05c9d9d	هر دو
+ng-fa-31b50e6fcf	یا اپراتور
+ng-fa-31c8624f2b	شنیدن
+ng-fa-31cf3dc6a0	وب
+ng-fa-31d4361219	سقف
+ng-fa-31d4aadfba	نصب
+ng-fa-31d80adc29	روایی
+ng-fa-31e6a1c5ed	دادن
+ng-fa-31fe3fe4c7	اطلاع
+ng-fa-3210646208	چارچوب
+ng-fa-32117b9b02	اپ و
+ng-fa-32125d93e7	نور
+ng-fa-321bfa4050	برسد
+ng-fa-32286a5ce8	فرقی
+ng-fa-322ae992da	در صفحه
+ng-fa-323acde253	خاطر
+ng-fa-3246922e7e	جست‌وجوی نام
+ng-fa-3257cfb129	کجا و دوز
+ng-fa-3259efe59f	نامی که
+ng-fa-3286253056	تاریخ اعتبار
+ng-fa-328f3f42a6	زد
+ng-fa-329488dcf2	چشم‌انداز
+ng-fa-3295a5c872	ادعای کروشه‌خور
+ng-fa-32a0d2889a	لازم
+ng-fa-32c2da66d9	انجام
+ng-fa-32c99dfa17	جمله یک
+ng-fa-32ca9bb624	در پیام سخت
+ng-fa-32cb0426e5	بند اول
+ng-fa-32ce0b90ee	پست و
+ng-fa-32d1420ed0	دست نزن
+ng-fa-32d5359336	نفره
+ng-fa-32f2c088e5	پوشش
+ng-fa-330512cb80	نمایش
+ng-fa-330c02cdb0	بند کوتاه
+ng-fa-331020ce25	انتساب
+ng-fa-331287933f	منبع و تاریخ
+ng-fa-33170cac0d	لوکس
+ng-fa-331d051021	در عکس
+ng-fa-33202e0edb	تحویل و
+ng-fa-33361e35e1	سلامت‌محور
+ng-fa-3337f235b9	تبریک
+ng-fa-333b41479c	هرمی
+ng-fa-33417e6578	جایشان
+ng-fa-334b4d4cc6	چه کسی
+ng-fa-334fa683cd	یک پست
+ng-fa-3360c286e0	هم کار می‌کند
+ng-fa-33663534e5	ترتیبی
+ng-fa-336d15346e	ویژگی
+ng-fa-33aeae8d04	نیاید
+ng-fa-33c3a42a32	مرز ادعا
+ng-fa-33d7b69e6a	متن یکی
+ng-fa-33e7f0ecec	رسمی همان
+ng-fa-33f10a76b5	دستورالعمل
+ng-fa-33f7629882	اقدام
+ng-fa-3417888705	عوض کن
+ng-fa-3435c3fe32	صادرکننده
+ng-fa-343e804fb7	بدانی
+ng-fa-3451f055c4	نمی‌داند
+ng-fa-345e9be7e3	بنویسد
+ng-fa-3473896692	و قابل
+ng-fa-347bc680b9	کامل بنویس
+ng-fa-34ae06a2a6	معلم
+ng-fa-34ae35e039	جست‌وجوی
+ng-fa-34b44566d7	پول و
+ng-fa-34b74db177	متن و
+ng-fa-34b7ff3f8e	بیانیه‌ی
+ng-fa-34c997562e	جزء
+ng-fa-34c99dcae6	خود کار
+ng-fa-34cee7a599	دو خط
+ng-fa-34d93f3b09	متن برای
+ng-fa-34d9f92048	ریال
+ng-fa-3504ff4fb4	نقش
+ng-fa-35073244db	عضوگیری
+ng-fa-350beb84bb	قدر
+ng-fa-351763e218	اول است
+ng-fa-3519328937	نیمه‌کاره
+ng-fa-3540cd684a	آذر
+ng-fa-3550a5652c	اگر نشد
+ng-fa-35610217bb	یادداشت انتشار
+ng-fa-356917f680	بازارگاه
+ng-fa-357469e3c5	کردنشیال
+ng-fa-3574e86493	برند
+ng-fa-3598a47304	همه‌ی
+ng-fa-35a02a3dc1	قاعده در
+ng-fa-35aa4cbd07	مهم است
+ng-fa-35acc7a4b9	هدف
+ng-fa-35b16d2b75	گفته می‌شود
+ng-fa-35b64f9726	طرز مصرف
+ng-fa-35bcc89d4a	ابزار هوش
+ng-fa-35e324f558	نام برند را
+ng-fa-35f468a015	وزارت
+ng-fa-360711c12c	صادقانه
+ng-fa-361e979e08	می‌سازد و
+ng-fa-3621ca4382	کدام با
+ng-fa-3625a4d6f4	زاویه‌ی
+ng-fa-3631074fee	بازگشت پول
+ng-fa-36702259db	مبدأ
+ng-fa-367ba17e11	نوشتن فراگیر
+ng-fa-367d873746	خواننده می‌بیند
+ng-fa-368a62cbf6	هر اسلاید
+ng-fa-36caa59f9c	در روز
+ng-fa-36d1cacc1d	پیدا شود
+ng-fa-36d41ff93d	سریع
+ng-fa-36d6a4434c	محصول و
+ng-fa-36d9383a17	مجهول
+ng-fa-36fc5497ba	شال
+ng-fa-3702c87916	بازاریابی شبکه‌ای
+ng-fa-371c681489	فرصت
+ng-fa-3741819501	ضرب‌المثل
+ng-fa-374834f5c5	دو تا چهار
+ng-fa-375c1a99c1	سنجاق
+ng-fa-3763eae4e1	می‌شکند
+ng-fa-37646ea2ee	گارانتی
+ng-fa-3766fc03e1	قوم
+ng-fa-3784d4d66d	علامت
+ng-fa-37852173fc	خواننده‌ی آسیب‌پذیر
+ng-fa-3795daa5c9	برای خواننده‌ای که
+ng-fa-3797a480ee	و کدام
+ng-fa-379d556779	درمانی
+ng-fa-37b921abd7	هویت
+ng-fa-37c485e066	رویش
+ng-fa-37cb0f11f4	قابل
+ng-fa-37dfe74ddb	شروع
+ng-fa-37e1e17576	مجوز
+ng-fa-380bd75055	تا تأیید
+ng-fa-3812b43f9a	هر قالب
+ng-fa-3815be6de4	ساده
+ng-fa-381bbbfd87	است و برند
+ng-fa-385fe13524	پست سنجاق‌شده
+ng-fa-3869a2016f	همین ترتیب
+ng-fa-386f9b9f38	همه‌چیز
+ng-fa-38706422fb	و واژه‌ی
+ng-fa-387408314c	تاریخ واقعی
+ng-fa-387b2bfc2a	عید
+ng-fa-38850ec575	انتشار تأیید
+ng-fa-38a296caee	اعلام شده
+ng-fa-38ac62c7f2	با پیوند
+ng-fa-38bb57e186	را ممنوع کرده
+ng-fa-38cd06d3f7	نوع
+ng-fa-38eb53040a	ویدیو
+ng-fa-390763edcd	که خواننده‌ی
+ng-fa-390d84d3a5	چرخش
+ng-fa-391d9d1038	قطعه
+ng-fa-392cbaebb0	گندم
+ng-fa-39333cd9a0	سرجمع
+ng-fa-395e37e93c	حداکثر
+ng-fa-395f50f7c1	هر کانال
+ng-fa-3964b6ee91	پله
+ng-fa-396845b90c	همین‌جا
+ng-fa-396a9b9c52	امیدواریم حالتان خوب
+ng-fa-399703cdea	شماره‌ی
+ng-fa-399ba097e9	پیدا می‌شود
+ng-fa-399c0d83ee	نمونه‌کار
+ng-fa-39a23b07eb	ندارند
+ng-fa-39a69311fe	پاداش
+ng-fa-39a929c287	پیام خطا
+ng-fa-39a9a66eea	می‌خواهد
+ng-fa-39ac1996f6	ضمانت
+ng-fa-39b9a7bbd4	حفظ
+ng-fa-39d51e51b3	مخصوص
+ng-fa-39d8124b24	بارگذاری
+ng-fa-39dd59ade1	بستگی
+ng-fa-39e415b140	پایه
+ng-fa-39f7f8dabd	حلوا سیاه
+ng-fa-3a02173dd8	حرف
+ng-fa-3a53cb685c	از حقوقی
+ng-fa-3a67edd853	هشت
+ng-fa-3a6fd56281	توضیح و
+ng-fa-3a756fac76	توافقی
+ng-fa-3a88d49e81	دار
+ng-fa-3a8df3c574	تبلیغ خلاف واقع
+ng-fa-3a98f6ef11	تضمین
+ng-fa-3a9f561446	در هفته
+ng-fa-3aa7a8e972	طول و
+ng-fa-3ac4f0e33e	پدر
+ng-fa-3acba9e6b3	هنوز درست
+ng-fa-3ad7e454fe	اتاق
+ng-fa-3ae7c4b01b	ویدیوی کوتاه
+ng-fa-3b02238095	ادعای هوش مصنوعی
+ng-fa-3b079c3132	را پیدا کن
+ng-fa-3b11f54597	یک عدد
+ng-fa-3b2126b2cb	چند لحن
+ng-fa-3b2a8e6b74	معمولا تا
+ng-fa-3b349e1ecc	فریم اول
+ng-fa-3b3d568f0e	خبر در
+ng-fa-3b5ef751a0	آدمی
+ng-fa-3b6a6ea6fe	پیام‌های سخت
+ng-fa-3b7cd16dd1	طبقه‌ی
+ng-fa-3b86db6be1	نقطه
+ng-fa-3b91f1a16e	بایت
+ng-fa-3ba51352a7	سند
+ng-fa-3bd090185e	کروشه
+ng-fa-3bd54ce46f	استعاره
+ng-fa-3be5dfcb53	تصادفی
+ng-fa-3bf4a611a5	مثال
+ng-fa-3bf504d79e	برد
+ng-fa-3c07486c6c	کلینیک زیبایی
+ng-fa-3c1b393c46	مشاوره‌ی
+ng-fa-3c21fbc479	گیاه
+ng-fa-3c248e1281	عملیات
+ng-fa-3c2a675408	کاربر را
+ng-fa-3c524f05e3	یخچال
+ng-fa-3c5b4964f9	اقناع
+ng-fa-3c5df6f394	بسازد
+ng-fa-3c646c8943	و مهلت
+ng-fa-3c81363b39	بدون
+ng-fa-3c8a0387ea	و این‌جا
+ng-fa-3c9875a052	آخرش
+ng-fa-3caa795e25	و معرفی
+ng-fa-3cbaa82b85	تشبیه
+ng-fa-3cc2e45b07	خط خدماتی
+ng-fa-3ccf27fc80	هر ماه
+ng-fa-3cdea5d63f	خوش‌آمد
+ng-fa-3cec32b2e5	که محصول
+ng-fa-3cf354573f	تأیید نشده
+ng-fa-3d39a7914a	و اجازه
+ng-fa-3d4540d91f	مهر
+ng-fa-3d4703cfc6	کارفرما بگیر
+ng-fa-3d53d62cb9	جدا
+ng-fa-3d63cd676f	کلیک‌بیت
+ng-fa-3d6b6fc444	می‌خورد
+ng-fa-3d76f99c91	شکر
+ng-fa-3d7be8fc4d	برداشته می‌شود
+ng-fa-3d96daaf79	آگهی با
+ng-fa-3de35615ab	و بله
+ng-fa-3e04538f7b	مجاز است
+ng-fa-3e0db9d53e	اول خودش
+ng-fa-3e174a6c7e	صفحه‌ی فرود و
+ng-fa-3e246e8690	جایگاه‌یابی
+ng-fa-3e24a80858	عذرخواهی
+ng-fa-3e277c7f34	نشانه‌ای
+ng-fa-3e2caa34f1	باغ
+ng-fa-3e2df9aadf	شاخص
+ng-fa-3e2e1f02d6	پرخطر
+ng-fa-3e329dffc8	دست چه
+ng-fa-3e3c19d5a5	اسکرین‌شات
+ng-fa-3e49ec846e	گیر
+ng-fa-3e4c8562ae	صفحه‌خوان
+ng-fa-3e7bed8eb5	قطع
+ng-fa-3e805b98fd	خودش را در
+ng-fa-3e80cbe4c3	همکاری
+ng-fa-3e97899f84	و کمیابی
+ng-fa-3ee0104599	محور
+ng-fa-3ee16b95c6	سود تضمینی
+ng-fa-3ee20fcdae	مالی
+ng-fa-3ee2a2ef4e	شرط‌ها
+ng-fa-3ef19b958d	ادبی
+ng-fa-3f04f0f560	بی‌لوگو
+ng-fa-3f654f06da	نام رسمی
+ng-fa-3f77133461	راه است
+ng-fa-3f8b0c5050	بقیه‌ی
+ng-fa-3f977ec83c	شعبه
+ng-fa-3f9f3219ab	توضیح
+ng-fa-3faa4bd4e8	خطایی
+ng-fa-3fbb23a5ce	حدود
+ng-fa-3fc6038956	نوع کپی
+ng-fa-3fc85833a2	وقتش
+ng-fa-3fd333112b	نرم‌افزار و
+ng-fa-3fdb0f0a55	همان عدد
+ng-fa-3fdcce37e5	پیامی که
+ng-fa-3fe7071e4e	پاسخ در
+ng-fa-4006aacf64	خورشیدی
+ng-fa-401db8d035	و گزارش
+ng-fa-40224aed10	بساز و
+ng-fa-40481439b2	کلید تلفظ
+ng-fa-406cae1c9c	سنجیده شده
+ng-fa-407657dc1f	ترتیب مقدار
+ng-fa-408f593471	می‌خواند و
+ng-fa-40977dc00d	جاافتاده
+ng-fa-409b26d6de	کار با
+ng-fa-40af29c7f2	شاهدی
+ng-fa-40afe5e1e6	استثناها
+ng-fa-40b5fad7e1	از کار
+ng-fa-40bcc1e68b	متن‌های
+ng-fa-40c0972051	سکو
+ng-fa-40cb6e97eb	یا سه
+ng-fa-40cd2bcb1a	بیشترین
+ng-fa-40db48d1ff	مقدم است
+ng-fa-40db83cc0b	قراردادها
+ng-fa-40dfadfe3e	مقایسه
+ng-fa-40e84d2761	هنوز درست است
+ng-fa-40f85979c8	بخواهد
+ng-fa-4115da69e4	بدتر
+ng-fa-411a3ed693	یک جمله‌ی کوتاه
+ng-fa-4126938696	برود
+ng-fa-414ffb821e	را بلند
+ng-fa-415dca8a99	باز می‌شود
+ng-fa-416452d27d	دست‌ساز
+ng-fa-416c015d69	سه قدم
+ng-fa-4187fa28a5	کنترل
+ng-fa-41889a1d46	تای
+ng-fa-4192f5f14d	آزمون
+ng-fa-41946fe68d	ادعایی
+ng-fa-419aa8357f	ایمیل به
+ng-fa-419abaed6d	و نقش
+ng-fa-41aa028f6e	بده
+ng-fa-41b044b2d0	می‌شنود
+ng-fa-41b0dd54f3	به گفت‌وگو
+ng-fa-41bf389f1c	نرخ باز
+ng-fa-41c0ede852	شماره‌ی پروانه
+ng-fa-41d88bc8e2	واقعیت
+ng-fa-41e33869ba	را دارند
+ng-fa-41eae84fad	تیکت‌های
+ng-fa-41eff3c69d	شکلش
+ng-fa-420a7146c6	کدام را
+ng-fa-4218418015	رقیب
+ng-fa-4222f6043e	دیجی‌کالا
+ng-fa-42371aa81f	سلام
+ng-fa-4237258857	آدم‌ها
+ng-fa-423cac598b	به‌جای
+ng-fa-424ae72673	سکوی واتس‌اپ
+ng-fa-425bd21e82	حلوا
+ng-fa-425dc1b598	قاشق
+ng-fa-4264ab05ea	خط آخر
+ng-fa-426db912cf	هر شب
+ng-fa-427beea8ab	تکنیک
+ng-fa-428dfbe8b5	محصول را
+ng-fa-42925d6068	و در یادداشت
+ng-fa-42b16568d5	مرتب
+ng-fa-42b8ac4809	نام همان
+ng-fa-42e7e1f206	برای هرکدام
+ng-fa-43079580f9	نشانی و
+ng-fa-430a499a0f	پنج
+ng-fa-4322c66bb8	خواننده باید
+ng-fa-432858073a	اتفاقی
+ng-fa-432936303a	صفحه یا
+ng-fa-432b288eca	مثبت
+ng-fa-433f22be20	سطر
+ng-fa-4341e3d453	اطلاعات
+ng-fa-43438bd2a0	محتوا
+ng-fa-43479060e2	بانکی
+ng-fa-434b420092	و لاتین
+ng-fa-435e5f671c	انتظارش را
+ng-fa-43696eaa17	آمده‌اند و
+ng-fa-437aff479d	مقصد
+ng-fa-437effaee7	بعدش چه
+ng-fa-4387fc5963	خانه‌ی
+ng-fa-4390d7616b	بگو کدام
+ng-fa-439521b03a	را بنویس
+ng-fa-43a2d0d852	رسیدن
+ng-fa-43a576b986	بسته
+ng-fa-43a8be1f2f	بگو چه
+ng-fa-43dd6aa50d	تصویر و
+ng-fa-43efbb3b86	مناسبت‌های
+ng-fa-44050a9c69	بیشترشان
+ng-fa-44167a7ec2	از جزئیات
+ng-fa-4416ba9321	شغل
+ng-fa-441ac9e7b2	سئو
+ng-fa-441c56cd5b	با روش
+ng-fa-442d8096df	وعده را
+ng-fa-44453af0cf	قوس
+ng-fa-44643de79c	داخل عکس
+ng-fa-44769c24c6	ظاهر
+ng-fa-44790464d2	کالا یا
+ng-fa-447b7eb93f	و پایان
+ng-fa-4494833567	چرخش کوچک
+ng-fa-4494ec2c12	نهایی
+ng-fa-449f56d630	سایز
+ng-fa-44a2eb7485	نویسه است
+ng-fa-44b31ebf3a	سامانه‌ی
+ng-fa-44c55f1b85	یادداشت داخلی بگو
+ng-fa-44de3ae1e4	افزوده
+ng-fa-44deb016d9	نوبت
+ng-fa-44ef9043d0	جمله‌ی بعد
+ng-fa-44fe770092	درستش
+ng-fa-4512020bae	بنویسی
+ng-fa-4512993dfa	ماشینی
+ng-fa-451a17b69f	حادثه
+ng-fa-451d2827f1	استثنا
+ng-fa-45394cb883	کاغذ مومی بوی
+ng-fa-45414604e7	به خواننده
+ng-fa-456cd75e02	با پرکردن
+ng-fa-45947cc3ae	شیوه‌ی
+ng-fa-459e73d252	سلسله‌مراتب پیام
+ng-fa-45ac83124c	مادر
+ng-fa-45acf7e8a0	این بخش
+ng-fa-45b87e33f1	بند از
+ng-fa-45ea130bca	و تأیید
+ng-fa-45f5ea1c91	برایش
+ng-fa-4602121d91	که خودش
+ng-fa-46023f4ad1	سخت
+ng-fa-46143bb698	برای چیزی
+ng-fa-461b182a13	قره
+ng-fa-461e8f8da5	به کار
+ng-fa-46309aae1d	جمله‌ی آخر
+ng-fa-4634fefadb	و وزن
+ng-fa-4637ceb265	نسخه‌ای
+ng-fa-463d23a04f	جبران
+ng-fa-463e3978df	ثبت شد
+ng-fa-464e4c37cf	پیج
+ng-fa-46502a996b	وصل
+ng-fa-4656bdfe47	تا آخر
+ng-fa-465d959705	در فنون
+ng-fa-46891dd757	و پیامک
+ng-fa-46a1def151	باز است
+ng-fa-46a2db945a	تعریف
+ng-fa-46a46443b1	چراغ
+ng-fa-46df63b390	سی
+ng-fa-46f2fa76cd	متغیر
+ng-fa-47051bd85e	بیننده
+ng-fa-471043847d	پاورقی
+ng-fa-47266e2b60	ساختمان
+ng-fa-472cb3cc17	را می‌خواند
+ng-fa-472d1a69b5	خدمت پزشکی و درمانی
+ng-fa-4733e80ed7	از کدام
+ng-fa-473ee8d105	کروشه می‌شود
+ng-fa-47518b1a52	جمله بنویس
+ng-fa-47680dd914	ابهام
+ng-fa-476824914e	توی
+ng-fa-477fd1e0ab	منبع‌ها
+ng-fa-47af124588	ماه اول
+ng-fa-47bb19c1ee	سه متن
+ng-fa-47dc4bea11	به وقت
+ng-fa-47f8f25cde	دارند و
+ng-fa-47fecae35e	نان
+ng-fa-48029f3cb3	در هر بند
+ng-fa-4805d1b2e5	تا در
+ng-fa-480b8c3484	حال
+ng-fa-4842bd3a9b	سلامت و بدن
+ng-fa-4845477eaf	خراب
+ng-fa-484d184b6e	پرسش
+ng-fa-485206bae0	نوشته
+ng-fa-48570ca990	نرخ باز شدن
+ng-fa-486aa40763	پویا
+ng-fa-4885c55b31	خدمت پزشکی و
+ng-fa-4890ca4ad6	متوسط
+ng-fa-489a31dc11	را دو
+ng-fa-48a652b5fc	خوانش
+ng-fa-48ab23d925	ماه‌های
+ng-fa-48ca841134	آگهی
+ng-fa-48cfa718d2	می‌آید که
+ng-fa-48d4daaf90	خط اول
+ng-fa-48fb8ba84f	نمی‌خواهد
+ng-fa-49012fea8a	واژه و
+ng-fa-4904ed6cd9	متن باید
+ng-fa-490c3fbc8b	نتیجه را
+ng-fa-492868aa3e	ایجاز
+ng-fa-49370c042f	برای همه‌چیز
+ng-fa-493a006916	معماری
+ng-fa-4941b25764	تکه‌ی
+ng-fa-49516ca133	آگهی رسمی
+ng-fa-495bd0b031	ببیند
+ng-fa-4960f3f51e	ممنوع
+ng-fa-49730b6d63	در بازارگاه‌ها
+ng-fa-4981943c8f	واژه‌ای که
+ng-fa-49a18bda6f	سیمونز
+ng-fa-49a43ab723	و سه
+ng-fa-49b42fc93b	قسط
+ng-fa-49b6cafce0	اند
+ng-fa-49bb319e4a	قرمز
+ng-fa-49bd39b0a0	شروع کن
+ng-fa-49cdf0e68f	هر قدم
+ng-fa-49d0125623	شرکتی
+ng-fa-49d54abd18	به خرید
+ng-fa-49e9c1db6a	و جهت
+ng-fa-49f53c5483	مشتری را
+ng-fa-4a00b2af5a	متن ماشینی
+ng-fa-4a1c338b1d	ساختگی
+ng-fa-4a2f61c2e8	محدودیت‌ها
+ng-fa-4a3ba09ae1	فارسی برای
+ng-fa-4a3d97c364	در بله
+ng-fa-4a59667de9	بازگویی
+ng-fa-4a81301894	می‌کنند و
+ng-fa-4a87e1bae7	عادت
+ng-fa-4a9607e30f	می‌رود
+ng-fa-4aa3f717a2	این هفته
+ng-fa-4aa5f8787b	می‌گویی
+ng-fa-4ab1fde7b7	پول سریع
+ng-fa-4ac496f241	کار واقعی
+ng-fa-4ada8110f2	زیاد
+ng-fa-4b12b5594a	بی‌دلیل
+ng-fa-4b14ce259e	مالکیت
+ng-fa-4b24bd00ad	کل متن
+ng-fa-4b3c239234	پر کردن
+ng-fa-4b43785fec	اسم محلی
+ng-fa-4b450d94bd	نشان و بلد
+ng-fa-4b56bd61dc	حالتان خوب باشد
+ng-fa-4b661d89f7	قره حالوا
+ng-fa-4b680513f6	که خریدار
+ng-fa-4b6cf3c9e3	اپ پس‌انداز
+ng-fa-4b79ff5e3c	سقف‌های
+ng-fa-4b81654d90	روی میز
+ng-fa-4b8bdd75c7	می‌روند
+ng-fa-4b8f643c32	کار را می‌کند
+ng-fa-4bb36ba7c7	رقبا
+ng-fa-4bb6ea2628	داخلی بگو
+ng-fa-4bbc060c21	ادعاهای حساس است
+ng-fa-4bc201f84c	کار نویسنده
+ng-fa-4bda3f5cea	اقدام بعدی
+ng-fa-4be7324596	همان متن
+ng-fa-4bf6970187	روز و
+ng-fa-4bfdc66559	فایل‌های
+ng-fa-4bfe828248	مواد
+ng-fa-4c02e52a8d	لاتین برند
+ng-fa-4c0cab104e	چشم
+ng-fa-4c263bb4d8	کانسپت
+ng-fa-4c28d09054	فوت
+ng-fa-4c2b04b828	ضربه
+ng-fa-4c31e89dbd	ظرف
+ng-fa-4c50b1f5b4	یا زمان
+ng-fa-4c51766e41	و پرداخت
+ng-fa-4c5f867620	لازم است
+ng-fa-4c61236019	اعتماد
+ng-fa-4c634b5b2a	مرتبط
+ng-fa-4c6623bfe7	کمترین
+ng-fa-4c6aee75f5	سال‌ها
+ng-fa-4c7aa93bbd	یک فهرست
+ng-fa-4c7e92d453	جواب می‌دهد که
+ng-fa-4c82a7f30c	راه‌حل
+ng-fa-4c8f77a383	روشن است
+ng-fa-4c8feb743a	با محصول
+ng-fa-4c989e6111	برای گوش
+ng-fa-4ca955c079	وسط جمله
+ng-fa-4cb8abfe39	مدت و
+ng-fa-4cc0d8cc02	دو عدد
+ng-fa-4cc77e86d1	ده آگهی
+ng-fa-4cdb075efa	همین‌طور
+ng-fa-4ce5f553de	در کل متن
+ng-fa-4cea1ae932	اگر کارفرما
+ng-fa-4cf90c85b8	در یک صفحه
+ng-fa-4d01b3602e	تعلق
+ng-fa-4d067df85a	یک هفته
+ng-fa-4d36f2f2a4	ساعت در
+ng-fa-4d4d95be4f	نظر
+ng-fa-4d5ee6572e	اسم به‌جای
+ng-fa-4d6335d70b	بیشتری
+ng-fa-4d6558a10d	کاوه‌نگار
+ng-fa-4d75ff69fe	روی صفحه
+ng-fa-4d7a1e72c5	فناوری و زیرساخت
+ng-fa-4d8aae7057	مراحل
+ng-fa-4d8dba810a	در هیچ
+ng-fa-4d937d89d2	استیکر
+ng-fa-4d9c73402e	دیده و
+ng-fa-4daa17667f	موقعیت
+ng-fa-4dc57b4ac6	صفت
+ng-fa-4dc72a9d7e	اروپا
+ng-fa-4df83828c0	پشت صحنه
+ng-fa-4e02da9d37	بازو
+ng-fa-4e16d90806	بی‌توضیح
+ng-fa-4e199ce024	پنهان
+ng-fa-4e21fe84d4	و مرکز
+ng-fa-4e3a616623	در جمله‌ی اول
+ng-fa-4e4fdedce5	فناوری و
+ng-fa-4e53c3e9aa	اقدام‌ها
+ng-fa-4e6281205f	نکرده
+ng-fa-4e693e16aa	تسلیت
+ng-fa-4e6db16d39	زبان تبعیض
+ng-fa-4e6edb7937	نام لاتین
+ng-fa-4e72e5bd91	ردیف‌های
+ng-fa-4e82fea65d	سکوی واتس‌اپ کسب‌وکار
+ng-fa-4e8ee9f79f	که خواننده در
+ng-fa-4e97c4c1d9	جایش را
+ng-fa-4e9928a620	در اپ
+ng-fa-4e9fdce3fb	تکرارش
+ng-fa-4ea5f3b1dd	دلیلی
+ng-fa-4ea8f0a7dd	خرید و فروش
+ng-fa-4eb57665c4	دست چه کسی
+ng-fa-4eb983191c	همان آدم
+ng-fa-4ebeced743	رقمی
+ng-fa-4ed0788940	بلند بخوان
+ng-fa-4ed35b90b2	کشتی
+ng-fa-4ed7050f43	آدم یا جا
+ng-fa-4eed972fba	به اندازه‌ی شاهد
+ng-fa-4ef633bda8	هدف اصلی
+ng-fa-4f03192902	با جزئیات
+ng-fa-4f059c89cd	خدماتی فقط
+ng-fa-4f23a12744	با خود چیز
+ng-fa-4f243096a8	بده و
+ng-fa-4f25519280	پرداخت انجام نشد
+ng-fa-4f2da19b43	کار اول
+ng-fa-4f4db282b2	قبل و بعد
+ng-fa-4f6d6b9779	نیستند
+ng-fa-4f70f6436e	کمیابی
+ng-fa-4f7697f8ee	با تأیید
+ng-fa-4f79312508	را خودش
+ng-fa-4f7cb9d59f	در تلگرام
+ng-fa-4fb141b3f5	برند دیگر
+ng-fa-4fbbf5d68e	فیلدها
+ng-fa-4ff3a40939	در یک جمله
+ng-fa-4ff4d46ac9	است که خواننده
+ng-fa-4ffb991abc	کانال تلگرام
+ng-fa-4ffbcba758	خوشامد
+ng-fa-5000390d6b	جمله یا
+ng-fa-500ebaa99d	و اپ
+ng-fa-5012cc0a6a	نمی‌کنند
+ng-fa-5016dbe1a7	در متنی
+ng-fa-503526d18b	کاربرد
+ng-fa-50387db4d3	کاری
+ng-fa-504aecf62e	ایمیل و
+ng-fa-504f8a2dc2	در هر نسخه
+ng-fa-50542b8e75	ترس و شرم
+ng-fa-5056df975d	برای کار
+ng-fa-5059272de3	یک پژوهش
+ng-fa-5069b8f3a2	به همین
+ng-fa-506e11293e	تقابل
+ng-fa-5086a5124f	مجاز
+ng-fa-508714cd96	یا به
+ng-fa-5099b94ace	سرمایه
+ng-fa-509eef881a	معدن
+ng-fa-50a3ce7f21	و قاعده‌ی
+ng-fa-50a70e7cb1	متن ثابت
+ng-fa-50ac187995	تایپ
+ng-fa-50b47695e1	معمولا
+ng-fa-50c173938f	اول همان
+ng-fa-50c657546d	فوریت ساختگی
+ng-fa-50c6d814db	تعمیر
+ng-fa-50ea476636	انگلیسی با
+ng-fa-50f478c702	دم
+ng-fa-50fa826751	برای کسی
+ng-fa-51086413b6	نظارت
+ng-fa-5120765594	شرکت‌های
+ng-fa-5129d26129	سفره
+ng-fa-51348b0798	با متن
+ng-fa-513756d6ec	داده شود
+ng-fa-5162c181a4	به پیام
+ng-fa-51775332d7	بسته‌بندی
+ng-fa-5196f4bf09	یا ایمیل
+ng-fa-51ad2b9ed2	برای برند
+ng-fa-51af664780	همین کار
+ng-fa-51d7646c21	تبریک ساده
+ng-fa-51d862aa33	محصول
+ng-fa-51d9141093	جلسه‌ی
+ng-fa-51e9d97b07	است که در
+ng-fa-51f0a049a0	یک مشتری
+ng-fa-51f26152bf	جزئیات
+ng-fa-5212d86d52	جعل
+ng-fa-522a7171b3	سوژه
+ng-fa-523c3f5d6c	تیتر کوتاه
+ng-fa-5252284d04	جواب نمی‌دهد
+ng-fa-5255baa436	باز کن
+ng-fa-52681983b9	مثال‌ها
+ng-fa-526935ef18	جوابش
+ng-fa-526da6591f	فروش
+ng-fa-5281e720bc	کجا می‌آید
+ng-fa-5285b59b72	هم‌خوانی با
+ng-fa-528a24800b	خلاف
+ng-fa-528f2e0b75	پیام سخت
+ng-fa-529320413d	سه آزمون
+ng-fa-5295d91b9e	بورس
+ng-fa-52a3f6d505	در صفحه‌های
+ng-fa-52ba379860	دست‌ها
+ng-fa-52cdc40a3d	تعطیلی
+ng-fa-52d2c7bc27	پیامی
+ng-fa-52dba357b1	سه دور ویرایش
+ng-fa-52e5bb8f3c	میلیون و
+ng-fa-52e8a05262	از پرسش
+ng-fa-52ea29ce61	قطعه‌ی
+ng-fa-52ed31094d	در تبلیغ
+ng-fa-52f0293876	یک تصویر
+ng-fa-52f1b51e38	می‌رساند
+ng-fa-531243be65	حق انصراف
+ng-fa-531375e6b7	قاعده‌اش در
+ng-fa-53178df484	نکن
+ng-fa-531e79372b	تقسیم
+ng-fa-532bffd74e	وبینار
+ng-fa-532e294b6a	به سمت
+ng-fa-533fcc78fe	حالتان خوب
+ng-fa-534c814614	باشید
+ng-fa-534f030889	ریسک
+ng-fa-537c678200	عدد از
+ng-fa-537cdd905e	آینده
+ng-fa-537e58774d	متن روی تصویر
+ng-fa-537eebb475	نشانه‌های متن
+ng-fa-539120c6fd	قبلی
+ng-fa-539577ad05	در هر
+ng-fa-539e40860a	شرطش
+ng-fa-53a473122b	یک پله
+ng-fa-53a6b82611	نشانش
+ng-fa-53b4f69d27	هیچ کاری
+ng-fa-53c5d9ee10	کلاه
+ng-fa-53d0ba2a33	در جای
+ng-fa-53eab60e26	داخل کروشه
+ng-fa-540814c646	مراجع
+ng-fa-5415ea7bf0	پشتیبانی
+ng-fa-5432cd5343	برچسب‌ها
+ng-fa-5435ea024f	بگوییم
+ng-fa-5476d08570	انصراف
+ng-fa-5492a3c139	خواننده در
+ng-fa-5494765594	تخصصی
+ng-fa-54a28e6221	منتشر می‌شود
+ng-fa-54b557f9e5	تاریخ
+ng-fa-54bee34e73	را معرفی
+ng-fa-54c53dd69d	از زبان
+ng-fa-54ce55e019	متنی
+ng-fa-54d1b88f3d	را نشان بده
+ng-fa-54d2a0e1b5	برای ربات
+ng-fa-54e2547502	می‌دهیم
+ng-fa-54ed4e71c9	آغاز و پایان
+ng-fa-54f65eef85	نویسنده
+ng-fa-54f6b9f937	بریده می‌شود
+ng-fa-550d837fc5	تیکت
+ng-fa-5510dd64f5	بردارد
+ng-fa-55150e86d4	مدارک
+ng-fa-5524c44e65	جدید
+ng-fa-552a0cf774	سهم
+ng-fa-5538b8dd9b	یعنی
+ng-fa-553cae61a1	کاغذی
+ng-fa-554b097308	بخوان
+ng-fa-555597a73e	نگفته
+ng-fa-555769c90a	به‌تنهایی
+ng-fa-55660aee2b	لوگوی
+ng-fa-55764b98ac	انبوه
+ng-fa-557d2bd92f	نمونه‌ها
+ng-fa-557d461a78	مدت
+ng-fa-55a755245f	این کتاب
+ng-fa-55ba0f7d0e	شمرده
+ng-fa-55bb3a9ee1	حالا چه
+ng-fa-55bf7f0d2f	معلوم
+ng-fa-55de7fec61	پیش‌فروش
+ng-fa-55ed7b1535	قاعده‌اش
+ng-fa-55fb1c3158	جایی است که
+ng-fa-5603672bb3	قبولی
+ng-fa-5608c25bc6	از ساعت
+ng-fa-560ec33f20	حساب نمی‌شود
+ng-fa-560fc02152	نوشته شود
+ng-fa-5610220c59	پرستار
+ng-fa-5614d4f565	اقامت
+ng-fa-5627e2eb90	خرید با
+ng-fa-562bdf2617	و حدس
+ng-fa-562c9a6d8c	باشگاه
+ng-fa-5644af34cf	جایی که رقیب
+ng-fa-5647d5dc6c	واقع
+ng-fa-5650d30320	پیدا کردن
+ng-fa-5651185134	هفته‌ی
+ng-fa-5658f2fbb6	با پروفایل
+ng-fa-565ff712fd	ششم
+ng-fa-566f2060fe	آژانس
+ng-fa-566fc1e520	سه دور
+ng-fa-5679a2b08a	کجا آمده
+ng-fa-567bb9576a	خودش
+ng-fa-567c514d62	ردیف‌ها
+ng-fa-567d8cbcec	متن اصلی
+ng-fa-56878529ae	شب
+ng-fa-5694fdfbad	شست‌وشو
+ng-fa-569ca95319	بخشی
+ng-fa-56a11b26a4	تأیید کند
+ng-fa-56b66451b3	دفتر
+ng-fa-56c6c65c03	آگاهی خواننده
+ng-fa-56d062d982	صاحب کار
+ng-fa-56d8b2f395	انتخابی
+ng-fa-56dcb9d79c	کافه
+ng-fa-56dddc632f	از آدم
+ng-fa-56dff72966	دو در
+ng-fa-56e15454f9	فاصله‌ی
+ng-fa-56f0dfcda0	امن
+ng-fa-56f6026e11	جناس
+ng-fa-56f6072bd2	کارش
+ng-fa-56f717417f	ورزش و
+ng-fa-57088de419	به کدام
+ng-fa-5711bb12f5	و پیشنهاد
+ng-fa-5718c0e68f	ارزش
+ng-fa-571b88dca7	زرد
+ng-fa-5749cab090	پول
+ng-fa-5750ad7a4a	سوگواری
+ng-fa-57512c05b5	خرج می‌کند
+ng-fa-577689d802	خواننده‌ای
+ng-fa-5777a19a30	کلامی
+ng-fa-5780f96c54	پوشه
+ng-fa-579b29c125	متن با
+ng-fa-579c590701	به شرطی
+ng-fa-57c0408a77	تشکر
+ng-fa-57d3db2ca1	بی‌خطا
+ng-fa-57ec2459ac	تبلیغ
+ng-fa-57f02078d0	و همکاری
+ng-fa-57feb2d6d0	در خود ویدیو
+ng-fa-580b914401	گرفته
+ng-fa-5812f3f088	را می‌گوید
+ng-fa-5813452260	قوانین
+ng-fa-582e754405	پیش‌نمایش
+ng-fa-583d29f87f	و فهرست
+ng-fa-58581e37bc	و هرگز
+ng-fa-586e6a85de	خود چیز
+ng-fa-58805253b9	در فضای
+ng-fa-58a03d948a	چرا کار
+ng-fa-58ae6868b7	شرط بازگشت
+ng-fa-58b1cd3ed0	کلی
+ng-fa-58ba4c08f1	برگردان
+ng-fa-58c22dd72a	بو
+ng-fa-58ceb6a251	برای محصول
+ng-fa-58e0c6d6fb	کارت داخل بسته
+ng-fa-58e29fb983	بازخورد
+ng-fa-58fd08f77b	اگر واقعی است
+ng-fa-590192582b	دیرتر
+ng-fa-5905af41af	آزاد
+ng-fa-590b241c32	اصلا
+ng-fa-5912256e88	وسط کار
+ng-fa-592d7a665b	ضد
+ng-fa-5931e49cd4	خاص
+ng-fa-59417c00f5	برای مخاطب
+ng-fa-59585daccd	از ارسال
+ng-fa-595a1f481b	ده
+ng-fa-596504e670	جمله‌ها
+ng-fa-596b0ddb8b	علامت تعجب
+ng-fa-5978586dda	یا حذف
+ng-fa-597cf2032d	می‌افتد
+ng-fa-598ff780ac	جمله‌ی دوم
+ng-fa-5991e5b7bd	واسه
+ng-fa-59997866d2	حقوقی کارفرما
+ng-fa-599ddbb2a3	دفترچه‌ی قالب‌ها
+ng-fa-59b5fe399d	کور
+ng-fa-59c22da21a	مشاهده
+ng-fa-59c4a0d92f	در خود
+ng-fa-59d7dbf9cd	پنجاه
+ng-fa-5a1444c618	نیستی
+ng-fa-5a2a95bed9	معنای
+ng-fa-5a344161d2	چیزهایی
+ng-fa-5a3490b238	بعد به
+ng-fa-5a63e23108	رایانه
+ng-fa-5a68786bbf	خنثی
+ng-fa-5a6fbf65b7	باز کن که متن
+ng-fa-5a87404026	خطای
+ng-fa-5aa48fe648	ادعای
+ng-fa-5aa567a344	ایموجی پشت
+ng-fa-5aa86518c6	یک نگاه
+ng-fa-5aadf2bbd3	پیوند و
+ng-fa-5abfa25a73	انجام شده
+ng-fa-5acf4a7e06	هر فصل
+ng-fa-5ad63cf5f2	حسابتان
+ng-fa-5af010e750	پخت
+ng-fa-5afe446ac7	و ارتباطات
+ng-fa-5b0c24405b	کروشه‌ها
+ng-fa-5b19c4f7fc	در حالت
+ng-fa-5b3b13459d	واژه
+ng-fa-5b40443ca6	نشان می‌دهد
+ng-fa-5b4236beea	برای کاری
+ng-fa-5b44caf889	صفحه در
+ng-fa-5b545dd8e1	اعتراف
+ng-fa-5b54fede28	اسم کار
+ng-fa-5b6235ef0a	یکدست
+ng-fa-5b6e447543	ساعت و
+ng-fa-5b763c0b8d	موفقیت
+ng-fa-5b832f1396	حذف کن
+ng-fa-5b86bb88c9	ویژگی‌ها
+ng-fa-5b88c08fc6	مسئول
+ng-fa-5b925e3065	خود آدم
+ng-fa-5ba30c12c8	سؤال
+ng-fa-5bacde9565	برای فروش
+ng-fa-5bad7a310a	ماجرا
+ng-fa-5bbc56e077	سیاه
+ng-fa-5bc28a0e67	تخفیف
+ng-fa-5bdbab4b7c	تبلیغ پولی
+ng-fa-5bdbeb6645	رفتار
+ng-fa-5c187fd9b8	سیستم
+ng-fa-5c1a671088	شب آخر
+ng-fa-5c1f966e22	در نسخه‌ی
+ng-fa-5c24d8cb17	کارتن
+ng-fa-5c378d600f	از واژه‌ی لاتین
+ng-fa-5c382cf706	تلفظ
+ng-fa-5c402eb01d	افشا
+ng-fa-5c50f6c10d	بعد از خرید
+ng-fa-5c6012867c	کوتاه‌تر
+ng-fa-5c75960b63	شش
+ng-fa-5c75c6f61c	امیدواریم
+ng-fa-5c767e2565	قلم
+ng-fa-5c88023ad6	عوض شده
+ng-fa-5c8afd0b32	داستان
+ng-fa-5ca1c349b0	برگشت
+ng-fa-5cadadcecf	آخر
+ng-fa-5cb302d00b	جمله‌ی نتیجه
+ng-fa-5cbdb30b9a	پنل یا اپراتور
+ng-fa-5ce0a0f71b	آموزشی
+ng-fa-5ce47414e0	همراه
+ng-fa-5cfe74687f	کردی
+ng-fa-5d179043d1	پنل
+ng-fa-5d210f9ab8	پشت هم
+ng-fa-5d2c16db97	مستقل
+ng-fa-5d3bd5d019	پای
+ng-fa-5d3bd8220d	برای هر ادعا
+ng-fa-5d6f189d55	منتشر شد
+ng-fa-5d7a200474	ثانیه‌ی اول
+ng-fa-5d94edbf1b	هم کار
+ng-fa-5d95a086b5	که خواننده خودش
+ng-fa-5d99214c29	اولی
+ng-fa-5dcf4e3831	مصوب
+ng-fa-5dd1dc8690	بلند را
+ng-fa-5dd2eb49f0	به‌عنوان
+ng-fa-5dd4d1846f	کالای رایگان
+ng-fa-5dd5f31cad	پیدا می‌کند
+ng-fa-5de12a9f38	تا متن
+ng-fa-5de4159aa5	پاسخ به
+ng-fa-5df3799178	اول را
+ng-fa-5df92f15fb	هر هفته
+ng-fa-5e197fdb3d	و چه چیزی
+ng-fa-5e20b9f5e7	شکستن
+ng-fa-5e2a16c73f	اعلان اپ
+ng-fa-5e2a9ba745	در دسترس
+ng-fa-5e4a3d1a13	پارکینگ
+ng-fa-5e4b429990	گیرنده
+ng-fa-5e5cc1bdf3	خالی می‌ماند
+ng-fa-5e6188750d	کلمات
+ng-fa-5e6287c4c3	کد و رسید
+ng-fa-5e780f930b	اول هر
+ng-fa-5e7e5b185a	باز نشد
+ng-fa-5e9a04018f	روز پیش
+ng-fa-5ea3763c3e	خواسته
+ng-fa-5eb712aad9	طرح
+ng-fa-5ebe1ee67c	پرکن
+ng-fa-5ec9c2090b	را انتخاب
+ng-fa-5ed16fbde9	شوید
+ng-fa-5ee0633a13	باشد
+ng-fa-5ee732e3a2	و پانصد
+ng-fa-5f101467c0	ربط
+ng-fa-5f120bc2a9	دستی
+ng-fa-5f192aaaa9	خانوم‌های عشایر
+ng-fa-5f2355c5db	پاسخ‌گویی
+ng-fa-5f40158df0	گفت
+ng-fa-5f73649284	را در
+ng-fa-5f7c1b97a8	اینفلوئنسر
+ng-fa-5f806681b2	و رویداد
+ng-fa-5f8233fd2d	نزن
+ng-fa-5f85924382	بازارگاه‌ها
+ng-fa-5f86def5c6	در متن نهایی
+ng-fa-5f887df837	مشاوره
+ng-fa-5f97273c7b	قلاب‌ها
+ng-fa-5fa89a2d88	مومی بوی
+ng-fa-5fb044de02	کپشن و
+ng-fa-5fcf568f2d	کلیک
+ng-fa-5fd016b7df	نمونه‌های
+ng-fa-5fd39815ee	کنار چه چیزی
+ng-fa-5fdfa328d3	سنجه
+ng-fa-5fe3ad0dc9	اول متن
+ng-fa-5fe461ab71	نزدیک
+ng-fa-5ffa95d74a	رایس و
+ng-fa-60032048d9	به گزارش
+ng-fa-6003f564cc	سر
+ng-fa-6006dba771	لباس
+ng-fa-6040cf3e93	اسکلت
+ng-fa-60646dcf2d	فارسی
+ng-fa-6065dc81f0	بی‌برچسب
+ng-fa-607164bb85	ادعا به
+ng-fa-607b5b8e6e	چیزی به
+ng-fa-609a464f40	از چیزی
+ng-fa-60a7d3efd2	امتیاز
+ng-fa-60b1005e95	کمپین
+ng-fa-60d3f78b2b	به کارفرما
+ng-fa-60db553b68	فکر
+ng-fa-60ef1d2ef9	هوش
+ng-fa-61014db3ff	نتیجه‌ای
+ng-fa-6109dfb3ae	آنت سیمونز
+ng-fa-610a5e6f5c	را دوباره
+ng-fa-612023a33d	بروشور
+ng-fa-6128f92466	حمایت
+ng-fa-612b142c96	داخلی بنویس
+ng-fa-61418368aa	گلیم
+ng-fa-6141a4bea7	عملکرد
+ng-fa-6142baa941	نام آدم
+ng-fa-614d2c33ec	ثبت می‌شود
+ng-fa-6151fd086f	فریب
+ng-fa-6169e8c813	جمله با
+ng-fa-616a461e52	اول از
+ng-fa-6174465715	در چه
+ng-fa-617814ee03	به چه
+ng-fa-617c29756e	کوره
+ng-fa-61833bb1df	از حسابتان
+ng-fa-61887d9e2c	و تصویر
+ng-fa-618befb8c3	انفجار
+ng-fa-61964280c6	و جواب
+ng-fa-619ce258b1	فراگیر
+ng-fa-61a851b76d	اعتراض‌های پرتکرار
+ng-fa-61ca6d10bd	یک روز
+ng-fa-61cbc9b19e	وعده
+ng-fa-61d26b0125	آگهی پولی
+ng-fa-61d3c627fd	شعار
+ng-fa-61e1d497fa	داخل بسته
+ng-fa-620b2d6539	قلاب در
+ng-fa-622767a7d0	حمایت مالی
+ng-fa-62422e9b42	و هزینه
+ng-fa-624fad4c4b	جمله درباره‌ی
+ng-fa-62529694f3	این فایل را وقتی
+ng-fa-62589a8d2e	محتوایی
+ng-fa-625cb2d8e3	بیرون
+ng-fa-626064ed25	با حروف فارسی
+ng-fa-6266ce5d2f	یک بار
+ng-fa-626af42dd2	در یادداشت داخلی بگو
+ng-fa-627d4f482d	در جلسه
+ng-fa-62840a7fe5	غلط‌های
+ng-fa-6297a47c84	از پایین
+ng-fa-62a18e3c39	ایده
+ng-fa-62a84467e3	کردنش
+ng-fa-62adfe1ac0	جمله‌ی کامل
+ng-fa-62cb27836b	نام یک
+ng-fa-62d7c89d8e	برابر
+ng-fa-62e505b430	با کد
+ng-fa-62eb74e8e0	آمده که
+ng-fa-62f810e40b	کاسه
+ng-fa-6300899d30	رویداد
+ng-fa-6307e4e5b1	شاعر
+ng-fa-63135be1b4	مهمان
+ng-fa-63155be6e5	ردیف‌های باز
+ng-fa-633806e705	و ترتیب
+ng-fa-633e754a63	خود موضوع
+ng-fa-63436b1419	کودک و
+ng-fa-634e21c62e	سنجیده
+ng-fa-63571c09a2	بگذار که
+ng-fa-6357ff6dd4	رمضان
+ng-fa-635f699182	شماره‌ای
+ng-fa-6380a74911	ماهی
+ng-fa-63919f2f83	به خبرنگار
+ng-fa-6391e083d0	مخاطب
+ng-fa-6394bdd5de	با درگاه
+ng-fa-63a2e57227	تبلیغاتی
+ng-fa-63c2392adc	عوض می‌کنند
+ng-fa-63c9fb6906	پیشنهادی
+ng-fa-63cbc6bb75	تطبیق بده
+ng-fa-63cd73c3ac	کد ورود
+ng-fa-63cdd86307	قید
+ng-fa-63d783b66a	در ستون
+ng-fa-63d95af6d1	و صفحه‌ی فرود
+ng-fa-63ed26b2e1	لغو
+ng-fa-640dfd3672	می‌گوییم
+ng-fa-64192481e3	نو
+ng-fa-641ba16823	نوشته شده
+ng-fa-6430b9fb25	حل
+ng-fa-6431337910	برگر
+ng-fa-64384d2dfb	می‌کنیم
+ng-fa-643b59068a	در سال
+ng-fa-644cd8b883	اورجینال
+ng-fa-644dd1b67b	ایمیل در
+ng-fa-6456d60b1a	و تلفن
+ng-fa-6458dffb6a	متن جایگزین
+ng-fa-645d71b089	ممنوع کرده
+ng-fa-6461cd4feb	برای خرید
+ng-fa-646827c2c7	موجود
+ng-fa-646a2ba8f5	قاعده‌ها
+ng-fa-64832cab3f	تضمینی
+ng-fa-6493c8faed	و صدا
+ng-fa-64a7231a1f	نگه می‌دارد
+ng-fa-64d6dca81a	همین جدول
+ng-fa-64e4a00f87	ویرایش
+ng-fa-64ea5592e7	شکست
+ng-fa-64eb72569d	آگهی شغلی
+ng-fa-650b442979	رضایت و
+ng-fa-6530ba619c	پیش از انتشار تأیید
+ng-fa-653551ac7b	نهاد
+ng-fa-65574a5aaf	پذیرش
+ng-fa-655b74e4d5	اکسل
+ng-fa-65631e41e9	چیست
+ng-fa-6564cab856	خودش و
+ng-fa-65759d48d6	لینکدین
+ng-fa-659c6b1f7a	اگر جمله
+ng-fa-65b0cd0a3f	اقامتگاه
+ng-fa-65b3366e13	الزامی
+ng-fa-65be1962e9	تمیز
+ng-fa-65cba07afa	فرم
+ng-fa-65d6e318ba	چیزی را
+ng-fa-65e96c2c5f	کوتاه است
+ng-fa-65f2dea2fa	یا کروشه
+ng-fa-6602bec769	در شیشه
+ng-fa-66032ba665	که برایش
+ng-fa-66063cd202	نمی‌شوند
+ng-fa-660bae9037	پیام‌های
+ng-fa-660e024831	مستندات
+ng-fa-66108cd56c	پروانه
+ng-fa-66177decfe	ستون
+ng-fa-661f21ff2f	هر رسانه
+ng-fa-663761b912	هر جا
+ng-fa-664c21a44c	آگهی در
+ng-fa-6664fc3239	تبلیغاتچی
+ng-fa-6674f1d3b2	یک لحظه
+ng-fa-667baffbea	عاشق
+ng-fa-668ddc3d41	درشت
+ng-fa-66b40beea0	کد یک‌بارمصرف
+ng-fa-66cc8cdd64	ساخت
+ng-fa-66e1f32283	قدم بعدی
+ng-fa-66ec183fb4	در صفحه‌ی
+ng-fa-66fa10e505	مطمئن نیستی
+ng-fa-6714cb2ff0	برای هر کدام
+ng-fa-67274d3187	مرور
+ng-fa-6728dabc55	باشد و
+ng-fa-672b133bf9	در هر جمله
+ng-fa-672b2d279a	کسی که
+ng-fa-676c53f4a1	جمعه
+ng-fa-676ff0116a	دفترچه‌ی
+ng-fa-677d53bf7f	انجام می‌شود
+ng-fa-678991a88f	از شروع
+ng-fa-678ff57aaf	تحلیل
+ng-fa-6795490b44	پاسخ سریع
+ng-fa-6797944f20	جمع‌آوری
+ng-fa-679c2d4c7f	به اندازه‌ی
+ng-fa-67a686ea80	کانمن
+ng-fa-67be56c42c	تأییدش
+ng-fa-67cdbdee38	هر کس
+ng-fa-67cdfd0a00	ایستاده
+ng-fa-67d2b9fece	دقیق‌تر
+ng-fa-67d4e940b6	بفرستید
+ng-fa-67e51c125c	حساب می‌شود
+ng-fa-682c0a498a	در رابط
+ng-fa-683cf2490e	و آگهی
+ng-fa-683eeb1757	استفاده‌ی
+ng-fa-685163c81a	به‌جای فعل
+ng-fa-68546d1060	صد
+ng-fa-68647576b7	کار یا
+ng-fa-68672d3df9	جایگزین
+ng-fa-686bada157	قصه و
+ng-fa-687cbc6d96	مسئله
+ng-fa-68b21bb69a	و کسی
+ng-fa-68c24731a5	دارید
+ng-fa-68d562a69e	را یک بار
+ng-fa-68df14c81a	بهداشت
+ng-fa-68ea30f971	پروفایل صدا
+ng-fa-68f522a800	طرف
+ng-fa-691687354e	خبر است
+ng-fa-691aaf45b5	حیوان
+ng-fa-692235da96	یک جزئیات ملموس
+ng-fa-6940601463	بخواند
+ng-fa-694438ed29	عدد
+ng-fa-694df5b8e0	نوشیدنی
+ng-fa-695a43294d	را بردار و
+ng-fa-695d0e3e48	مطمئنی
+ng-fa-696214a883	می‌نشیند و
+ng-fa-6963abc1a8	شش ماه
+ng-fa-6970b29921	ادعای بی‌شاهد
+ng-fa-6972b9a49f	تلفن و
+ng-fa-697f43219a	و قالب
+ng-fa-69969fd308	پایان
+ng-fa-69996c6184	وعده‌ای
+ng-fa-6999a01d67	از منبع
+ng-fa-699ac2eac0	ذهن
+ng-fa-69a8bb4184	اپ
+ng-fa-69a99362ec	نگارش
+ng-fa-69aa76282e	تا معلوم شود
+ng-fa-69b2183976	بار اول
+ng-fa-69b6237f80	اسنپ‌فود
+ng-fa-69b96f300b	رسیده
+ng-fa-69e173d14a	شخصی
+ng-fa-69ec007ba1	ویکی‌پدیا
+ng-fa-69f0677ef1	ادعا فقط
+ng-fa-69f252edc3	ابزاری
+ng-fa-6a0c3f32e0	سه تا شش
+ng-fa-6a0d22272b	چقدر
+ng-fa-6a10c5f0b0	بده که
+ng-fa-6a126d2483	را بالا
+ng-fa-6a197543f7	ایده‌پردازی
+ng-fa-6a384a77ef	شماره و
+ng-fa-6a4693528f	اول و
+ng-fa-6a52bfe32d	مشتری و
+ng-fa-6a5dcc8ac8	اسم دقیق
+ng-fa-6a67d9de57	شلوغ
+ng-fa-6a6a88bcf1	اعتراف‌های
+ng-fa-6aaa94fc17	عالی
+ng-fa-6ab8002f0f	قدم بعد
+ng-fa-6ab8ab82fe	شرط را
+ng-fa-6abf06f874	دوستش
+ng-fa-6acbae0a1f	روشن نیست
+ng-fa-6accbb18ee	و اسم
+ng-fa-6acd267f2e	کیف
+ng-fa-6acf0ae81b	که کاربر
+ng-fa-6adcc88d28	به زبان ساده
+ng-fa-6ae0904f81	ایده‌ی
+ng-fa-6aeb2cb85e	گل
+ng-fa-6aee9733b6	نشانه
+ng-fa-6afcba42f9	نمای
+ng-fa-6b174ee0af	خریده‌شده
+ng-fa-6b1880d77e	اگر لازم
+ng-fa-6b254943e9	داوری
+ng-fa-6b30209167	بخش
+ng-fa-6b48fd132c	هم‌نویسه
+ng-fa-6b4bf4169f	زیرنویس عکس
+ng-fa-6b62dd0b6d	چند دقیقه
+ng-fa-6b7132d06c	و لحن
+ng-fa-6b7281e37b	تاریک
+ng-fa-6b8557079e	بگیر
+ng-fa-6b8dfaa345	بازگشت
+ng-fa-6b9bfbde42	رفته
+ng-fa-6ba15d6acb	پروفایل برند
+ng-fa-6ba5e54989	نماد اعتماد
+ng-fa-6bca62d13e	صنعت
+ng-fa-6bd2ce4bf4	برنامه‌نویس
+ng-fa-6bf56afc1a	که برند
+ng-fa-6bf69a93ab	متن‌ها
+ng-fa-6c0954f1f9	اولین
+ng-fa-6c0f492e7f	درگاه
+ng-fa-6c0faef73f	خانواده
+ng-fa-6c1968716d	و معیار
+ng-fa-6c617883d6	آدمی که
+ng-fa-6c6ef756c6	از پرداخت
+ng-fa-6c866b921c	مطبوعاتی
+ng-fa-6c89987ae8	مومی بوی یخچال
+ng-fa-6c8d0f1a7c	خطر
+ng-fa-6c96706f1d	تبلیغ را
+ng-fa-6c99e73872	جهانی
+ng-fa-6c9a492e12	کنارش
+ng-fa-6cce39a0c3	متخصص
+ng-fa-6cddd0abc8	کانال‌های اصلی
+ng-fa-6cfa5b8f2f	به یک
+ng-fa-6d07047471	بزن
+ng-fa-6d10f840db	واژه‌ی فارسی
+ng-fa-6d3483753f	در گزارش
+ng-fa-6d48cda176	بعد از باز کردن
+ng-fa-6d57dd973e	خوانده
+ng-fa-6d6f458117	پیدا کن
+ng-fa-6d752fe8e9	محاوره
+ng-fa-6d76e08ac2	باز
+ng-fa-6d839e8d9a	سقف‌ها در
+ng-fa-6d8d9b03f6	جوانه‌ی
+ng-fa-6da9e36535	دکمه در
+ng-fa-6dabc2e7ad	و چقدر
+ng-fa-6dad5f694d	با اجازه‌ی
+ng-fa-6db98245b1	تکرار
+ng-fa-6dcb3bced0	میلیون و پانصد
+ng-fa-6dcdc465eb	را می‌سنجد
+ng-fa-6dcecb8b7a	نمی‌شود
+ng-fa-6dd9f54191	کره‌ی
+ng-fa-6de53b5152	صورت‌جلسه
+ng-fa-6df8886d0c	حذف می‌شود
+ng-fa-6df8c65a3b	آزمون دو
+ng-fa-6dfebd2009	زاویه
+ng-fa-6e298a26ce	جدول
+ng-fa-6e2c24ce74	منطق
+ng-fa-6e36c60c30	زبان
+ng-fa-6e37a15197	حجم نمونه
+ng-fa-6e783893d8	انجام می‌دهد
+ng-fa-6e8607d8d5	انتخاب می‌کند
+ng-fa-6e98d9acb0	متن از
+ng-fa-6ea820e727	بگیر و
+ng-fa-6eaf490a7c	تاریخ را
+ng-fa-6ec0cfffa4	کنین
+ng-fa-6ed04f3189	اگر واقعا
+ng-fa-6ee6eb59ab	بنیان‌گذار
+ng-fa-6ee877da14	آماده‌ی
+ng-fa-6eec05d577	صدایش
+ng-fa-6efa7f7959	صبح‌ها
+ng-fa-6efdbb270c	همان چیزی
+ng-fa-6f08ed79e7	درستی
+ng-fa-6f1cbe9296	بیمه‌ی
+ng-fa-6f209672d5	قاعده‌ی هر
+ng-fa-6f2b04c0bb	مکان
+ng-fa-6f31a1e605	مناسب
+ng-fa-6f334c5594	ایرانی
+ng-fa-6f33c1997e	کنارگذاشته
+ng-fa-6f393134fc	ماهانه
+ng-fa-6f3cae6211	اسلایدی
+ng-fa-6f432a048e	زیربرند
+ng-fa-6f473c117c	فعل اداری
+ng-fa-6f5a531484	قاعده‌ی سخت
+ng-fa-6f807a9672	قصه‌ای
+ng-fa-6f85dda0f1	نشان دهد
+ng-fa-6f8b816159	پست کانال
+ng-fa-6f94974e5b	می‌شمارد
+ng-fa-6f9c069009	چیده
+ng-fa-6fa732a4bf	فایل برای
+ng-fa-6fad58282d	تعیین می‌کنند
+ng-fa-6fc32180d6	کنم
+ng-fa-6fc89a5c55	و تاریخ
+ng-fa-6fce476d21	و پیام
+ng-fa-6fd82ae8db	با ترجمه‌ی
+ng-fa-6fdf0eb93b	خلاقیت
+ng-fa-6fe0d21306	عادی تازه
+ng-fa-6ff96cfe7e	قابلیت
+ng-fa-6ffa6ece5d	فوریت و
+ng-fa-70102a49d9	تقویم رسمی
+ng-fa-7016701e20	که کسی
+ng-fa-702903ff44	ببرد
+ng-fa-70401884f2	همه‌ی ردیف‌ها
+ng-fa-704f1aea16	شاهد
+ng-fa-707cfd9fa1	از بیرون
+ng-fa-708afbcfc7	پوست
+ng-fa-70a6d3dc00	ساخته
+ng-fa-70acf09c06	تراوت
+ng-fa-70b3a04ad6	گرامی
+ng-fa-70b62ce8a6	نقشه
+ng-fa-70b72dd5af	واقعی
+ng-fa-70bb8e311c	ساختن
+ng-fa-70c8577291	درباره‌ی
+ng-fa-70d8579b1e	و منبع
+ng-fa-70e25d71d2	بلند شده
+ng-fa-7113438f53	قصه‌ای که
+ng-fa-7119f3a9ef	در کلینیک
+ng-fa-711bab9b63	بنویس
+ng-fa-712bb747fe	نظام
+ng-fa-7130a8c999	جاذبه
+ng-fa-714746b109	اسناد
+ng-fa-714f69ad67	و خبر
+ng-fa-7154535e83	تاریخ قمری
+ng-fa-7155b084a1	موضوعی
+ng-fa-716b6db527	یک پرسش
+ng-fa-718726ad33	فرهنگستان
+ng-fa-7189eb3c0f	ارسال رایگان
+ng-fa-71b02c88a2	دایرکت
+ng-fa-71bc67604c	کنترلی
+ng-fa-71ccc21594	نوشته‌ی
+ng-fa-71d1cf1ff5	جنس
+ng-fa-71d7daa4a7	حداقل
+ng-fa-71d89cb341	در برداشت
+ng-fa-71e25e785b	پایین
+ng-fa-71ee6894c1	شرکت
+ng-fa-71fd68ebc2	مومی
+ng-fa-71fdbe6377	آماده‌سازی
+ng-fa-72225984fb	از فرستادن
+ng-fa-72271f2390	جهت
+ng-fa-722c6e7b36	لهجه
+ng-fa-7232144d81	دیده‌ای
+ng-fa-7242810aff	آشپز
+ng-fa-725789d3d7	شدنی
+ng-fa-7261e367b5	برچسب در
+ng-fa-726c0b1643	جایی است
+ng-fa-7275fc18dc	درصد
+ng-fa-7290e78830	چقدر طول
+ng-fa-729bc0b428	نویسه و
+ng-fa-72a9b0a197	غلط
+ng-fa-72ad14dd51	نمی‌کند
+ng-fa-72b91aeb61	جوابشان
+ng-fa-72cae6adb6	را حذف کن
+ng-fa-7317baa165	آزمودن متن
+ng-fa-731d87d30b	اصطلاح فنی
+ng-fa-735889c80b	کودک
+ng-fa-73719378b7	نگاه
+ng-fa-73813f4c88	مکث
+ng-fa-73847a0ea1	لغو در
+ng-fa-738faeabef	می‌شه
+ng-fa-7395b6801c	جمله‌ی بلند
+ng-fa-73a11b43b8	نمی‌بیند
+ng-fa-73a79bb008	پنج ستون
+ng-fa-73ae2b06ac	تطبیق داده شود
+ng-fa-73b95ab440	جوان
+ng-fa-73bfbb1985	و جزئیات
+ng-fa-73c0e8390a	داریم
+ng-fa-73c78053fd	درباره‌ی ما
+ng-fa-73cae33e86	نسخه
+ng-fa-73cd93c9a9	دو صفحه
+ng-fa-73ce1eb586	رفت
+ng-fa-73d4a3d3b1	کنید
+ng-fa-73d74c798a	می‌گذرد
+ng-fa-73e2d1a298	و قانون
+ng-fa-73e54aa802	گفته شده
+ng-fa-73eb6016c2	مرز و احتیاط
+ng-fa-73fa3b3672	کار مشخص
+ng-fa-740408a6f9	می‌کنید
+ng-fa-7427d19c2a	حق
+ng-fa-7443e6362b	ثانیه
+ng-fa-7448292740	در دست
+ng-fa-744e4a0c5e	انتشار
+ng-fa-7450ebc003	اضافه می‌کند
+ng-fa-7454e0accb	مسئله را
+ng-fa-745c23205d	ملی
+ng-fa-7462f3bb18	اگر مبلغی از
+ng-fa-746a97133d	اجازه‌ی خودش
+ng-fa-746f139d19	هال
+ng-fa-748c2167ca	اینماد
+ng-fa-74ad674e62	خروج
+ng-fa-74b07fbc4a	این صفحه
+ng-fa-74b469c363	آن‌جا
+ng-fa-74d3c1651d	آدم و
+ng-fa-74d5dc2db1	با مثال
+ng-fa-74f0f1c918	این‌جا
+ng-fa-74f462245c	نظام پزشکی
+ng-fa-74f51448cc	برای همه‌ی
+ng-fa-74f54e3dc7	فارسی با
+ng-fa-750373651a	قفسه
+ng-fa-750d8a2619	بگوید چه چیزی
+ng-fa-7522e6ff96	با نشانه‌ی
+ng-fa-752bb43ec2	نام نرم‌افزار
+ng-fa-753f2de105	سری
+ng-fa-7542eb4cec	و پنج
+ng-fa-75569e5b91	از خرید
+ng-fa-75a62558a8	کیست
+ng-fa-75a6854a0b	شوخی
+ng-fa-75bb7137b9	خریده
+ng-fa-75d86b0727	برای جست‌وجو
+ng-fa-75e372ba66	خیس
+ng-fa-75e491ac1b	جابه‌جا
+ng-fa-75e4ee983c	مغازه
+ng-fa-75f4b27fa6	ملک
+ng-fa-75fa29aaea	مخلوط
+ng-fa-760587adcd	حوزه
+ng-fa-7606b81ed1	گوینده و
+ng-fa-760d63ebbf	حساس
+ng-fa-760e4ced69	سراغ
+ng-fa-7625e9cb09	ترجمه‌ی فارسی
+ng-fa-7637561e02	و دلیل
+ng-fa-764458c66e	در راه
+ng-fa-764e29b6bb	چند ماه
+ng-fa-765014c269	چیز تازه
+ng-fa-76534340ca	کدام یک
+ng-fa-76538de8d7	رتبه
+ng-fa-7665a0b4de	نمونه برای
+ng-fa-7667d8c0f4	زیبایی
+ng-fa-7676c87a0b	از سازنده
+ng-fa-767a8e717e	کسره
+ng-fa-7682afafc7	فوری
+ng-fa-76935a912c	شبکه
+ng-fa-76a123d9e0	کاغذ
+ng-fa-76a2bdd5fe	زبانی
+ng-fa-76abf00ff0	واژه‌های خود
+ng-fa-76ac63b1e4	تند
+ng-fa-76d57dfe0c	هزار
+ng-fa-76eb4f3461	نفر از
+ng-fa-76f42e5559	روز هفته
+ng-fa-7704432ad9	نساز
+ng-fa-77049a8a7a	فوریت و کمیابی
+ng-fa-771e0621e3	و رسید تراکنش
+ng-fa-774090bb62	با حروف
+ng-fa-77475c2126	متراژ
+ng-fa-7749453bc7	حریم خصوصی
+ng-fa-774d5dfa22	در سه
+ng-fa-77577d92dc	نوشتاری
+ng-fa-7765e5f428	اطلاعیه‌ی
+ng-fa-7778156e8d	به لاتین
+ng-fa-777a27a682	نسخه‌ی
+ng-fa-7788d25797	از روز
+ng-fa-778d0c9369	عکس
+ng-fa-778df3baf5	اشتباه
+ng-fa-778fbc2cb2	نیم
+ng-fa-779e3cd001	تبلیغی
+ng-fa-77ba41c706	رقم لاتین
+ng-fa-77c3401744	دستکاری
+ng-fa-77c57a5424	ثبت
+ng-fa-77d877bb2a	نام رقیب
+ng-fa-77dbf4c758	جمله است
+ng-fa-77f66eeda4	از پژوهش
+ng-fa-780b015185	مارشال گنز
+ng-fa-781220a156	بیاورد
+ng-fa-7815a142c0	گیومه
+ng-fa-7844fb6ec3	جای واقعی
+ng-fa-78587fe126	می‌آیند
+ng-fa-785b05d04d	یازده
+ng-fa-786850fd0e	معرفی آدم‌ها
+ng-fa-7872f1bfb2	را در متن
+ng-fa-7877c6a06c	بگو و
+ng-fa-788e9f1e1d	به نام
+ng-fa-788facf850	خود خواننده
+ng-fa-7892105dd1	همان پیام
+ng-fa-78947df429	کمک
+ng-fa-789601b6d9	اندازه و
+ng-fa-789c82557c	منتظر
+ng-fa-78a3217f8f	برنده
+ng-fa-78a7eceed6	صدا یا
+ng-fa-78b19064f4	پرسشی
+ng-fa-78bd784d5d	الکترونیکی
+ng-fa-78bffea058	ارگانیک
+ng-fa-78c4b62eb1	یک عادت
+ng-fa-78ceaf5c95	و در
+ng-fa-78e5f95065	اگر مبلغی
+ng-fa-78eb273345	مصاحبه
+ng-fa-78ee8d1f3b	پیام‌ها
+ng-fa-78f1ab6cdf	چیز دیگری
+ng-fa-78f6929fd4	بعدی
+ng-fa-7911190e9a	بنیان‌گذار و
+ng-fa-791bfd3f4c	خوب است
+ng-fa-7923797939	نام و شماره‌ی
+ng-fa-793384858d	خواب
+ng-fa-79347a9cd2	اپراتور می‌خواهد
+ng-fa-795016d12f	متن صوتی
+ng-fa-795941f193	اصطلاح
+ng-fa-7980129a0f	فروشنده
+ng-fa-798488a7b6	رزرو
+ng-fa-7984b3fb54	بماند
+ng-fa-7987269d4b	تصویر یا
+ng-fa-7997ff6c38	در نثر
+ng-fa-799ec86cb1	پرسش‌وپاسخ
+ng-fa-79adc66503	بازار
+ng-fa-79ae643560	در همین
+ng-fa-79afe7ee36	پستی که
+ng-fa-79c0331e9c	کج
+ng-fa-79c13e103c	و دلیلش
+ng-fa-79c8f65ae8	در هشتگ
+ng-fa-79d810fbd0	بکند
+ng-fa-79e7894952	بازاریابی
+ng-fa-7a1b540d84	یک واحد
+ng-fa-7a1fd40c71	با گوشی
+ng-fa-7a28779f49	نخستین
+ng-fa-7a4945568c	روایت و
+ng-fa-7a65b9a35b	راه تماس
+ng-fa-7a7098e3fb	یک جمله‌ی
+ng-fa-7ab98aaf24	آب
+ng-fa-7abb53d6bb	را کم
+ng-fa-7ac28aa3d7	آدم را
+ng-fa-7ad09170c9	در کدام کشور
+ng-fa-7b23029b95	هفته‌ی اول
+ng-fa-7b29f41d68	ماند
+ng-fa-7b2c3bdaeb	ورود
+ng-fa-7b38851260	رادیویی
+ng-fa-7b585d3a6d	بی‌ویرایش
+ng-fa-7b5f2fc3e9	بس
+ng-fa-7b63f46ecd	اختلاف
+ng-fa-7b6ef72925	جمله را با
+ng-fa-7b76e3da26	شمار
+ng-fa-7b82dd8c20	مشابه
+ng-fa-7b92e57a60	هر کدام یک
+ng-fa-7ba4f60b67	با بریف
+ng-fa-7bb7595042	روی سایت
+ng-fa-7bbc5bc41a	گم
+ng-fa-7bcb241a56	بعدش
+ng-fa-7be02f57e9	احساس
+ng-fa-7bf76c252e	راه دیگر
+ng-fa-7c1dcc55ce	در ویدیو
+ng-fa-7c211fb5d2	ویراست
+ng-fa-7c22e338f9	گردن
+ng-fa-7c23df25b0	و آرایشی
+ng-fa-7c2c9a9fee	یا جا
+ng-fa-7c3478c1ac	و آدم
+ng-fa-7c380c4809	همان لحظه
+ng-fa-7c3d2ef18b	مؤسسه‌ی
+ng-fa-7c535528a2	روایت عمومی
+ng-fa-7c5ded0efe	چیزی از
+ng-fa-7c61808f40	دیده نمی‌شود
+ng-fa-7c67a51565	موجودی
+ng-fa-7c713b36e9	نادیده
+ng-fa-7c71d865dd	را باز
+ng-fa-7c77b95a1e	پرسش را
+ng-fa-7c83267701	متن بلند
+ng-fa-7c83f0b6de	امام
+ng-fa-7c9fb34358	خوراک
+ng-fa-7ca5c08d75	در نثر فارسی
+ng-fa-7cb396f8dc	کوته‌نوشت
+ng-fa-7cb8b83244	کارشناس
+ng-fa-7cce5a41f6	آشکار
+ng-fa-7cd0ed5467	معرفی
+ng-fa-7ce4d0c24d	خروجی
+ng-fa-7d031de1ec	شکلی
+ng-fa-7d1da55da1	فرق دارند
+ng-fa-7d210f9c3d	بسته‌ی
+ng-fa-7d2a317898	چپ
+ng-fa-7d2fd1f916	انتظارش
+ng-fa-7d669301fa	از باز
+ng-fa-7d6ef7c051	چهل
+ng-fa-7d7a2dd5a2	کم شده
+ng-fa-7d884b5fc6	ده تا
+ng-fa-7d89710081	اعتراض‌ها
+ng-fa-7d95d74b69	تزئینی
+ng-fa-7da56a9b59	کد و
+ng-fa-7daaa510fe	بیشتر
+ng-fa-7daf52943f	خرد
+ng-fa-7db11e7911	یه متن
+ng-fa-7db95dddc9	گنز
+ng-fa-7dcb8bc5e8	آموزش
+ng-fa-7de73f7575	فر
+ng-fa-7e25ae4565	تلفنی
+ng-fa-7e285125f2	سنگین
+ng-fa-7e38f356e7	بشود
+ng-fa-7e397a3897	پلاس
+ng-fa-7e4033d70d	این فهرست
+ng-fa-7e427c1f08	امروز در
+ng-fa-7e4b71c6b0	محلی
+ng-fa-7e4e67693d	خط فارسی
+ng-fa-7e6a05eaea	دام‌های
+ng-fa-7e768d6d50	سال است
+ng-fa-7e79542fd9	غذا
+ng-fa-7e7fbbbca5	دو میلیون
+ng-fa-7e88f4e446	شروع با
+ng-fa-7e9c7ab795	پژوهش
+ng-fa-7ec7822cee	مشتری یا
+ng-fa-7ec88e7c25	فارسی است
+ng-fa-7ecfa5d883	نمونه‌ی آموزشی
+ng-fa-7edee9ba72	با رضایت
+ng-fa-7edf90cc70	پروفایل را
+ng-fa-7ee6293239	برای حساب
+ng-fa-7ef06a5d05	و بلد
+ng-fa-7f092679e0	روز اول
+ng-fa-7f09a31282	دلیل
+ng-fa-7f1babacfc	وسط
+ng-fa-7f1fceddd9	پزشکی
+ng-fa-7f1ff6b50f	بی‌قضاوت
+ng-fa-7f634cd724	بنشیند
+ng-fa-7f6a078f56	توصیف
+ng-fa-7f7058ea76	پیش‌تر
+ng-fa-7f87d0355b	نقشه‌ها
+ng-fa-7f8dd71116	آمده
+ng-fa-7fad73d07e	پرسش اول
+ng-fa-7fb67f3756	اسکریپت اجرا
+ng-fa-7fb837ac58	کار به
+ng-fa-7fbe1131c9	کمتر از
+ng-fa-7fbf4818db	روزهای
+ng-fa-7fc818f69e	هر نفر
+ng-fa-7fcb1b9c0b	صفحه‌ی درباره‌ی ما
+ng-fa-7fd3fd7355	مرجع
+ng-fa-8012292c6a	محتوای
+ng-fa-8019b99dbc	با املای
+ng-fa-8026dfe904	نبود
+ng-fa-802e19f6c3	نظر واقعی با
+ng-fa-804291214c	نمی‌سازد
+ng-fa-804dfaedba	را اول
+ng-fa-804ebc0ee7	و برند
+ng-fa-8088da36be	پس‌رو
+ng-fa-808a110661	کاری که
+ng-fa-809a60731d	در قصه
+ng-fa-809ab243f3	فرض
+ng-fa-80aa0ef043	تفاوت
+ng-fa-80b6765d8e	می‌کشد
+ng-fa-80bbfe2245	پاره
+ng-fa-80d813a58f	چقدر طول می‌کشد
+ng-fa-80ea193918	در جمله
+ng-fa-80ea1b6969	خبر اصلی
+ng-fa-80ed1c3bc9	اقتصاد واحد
+ng-fa-80f401b800	کافی است
+ng-fa-80faa9a5de	بنویسید
+ng-fa-81052e11cc	شب قبل
+ng-fa-811314b1b8	و آپارات
+ng-fa-8113cb0f6c	یک‌بارمصرف
+ng-fa-81391c4bba	اتفاق
+ng-fa-8148e88cbe	موضوع
+ng-fa-814bee0b47	صنعت‌ها
+ng-fa-8165b29e8a	درآمد
+ng-fa-818582100a	مدرک لازم
+ng-fa-818afcb12c	گفته
+ng-fa-81ca990668	با مشتری
+ng-fa-81f44f0c63	ادامه
+ng-fa-821b8f1414	دستش
+ng-fa-822013647a	بسته‌بندی و
+ng-fa-8226e9102b	رنگ
+ng-fa-82377f6265	مبلغ را
+ng-fa-823a491e39	گزینه
+ng-fa-8243b9b219	سیریلیک
+ng-fa-8247ee9219	ورزش
+ng-fa-8248fc5602	آدم داخل
+ng-fa-82499aa845	یک یا دو جمله
+ng-fa-8253cfb3a7	تأیید شود
+ng-fa-825b69272d	تصمیم‌ها
+ng-fa-825cfcfd77	موبایل
+ng-fa-825f797e6a	روز بعد
+ng-fa-826b5e471a	اول جواب
+ng-fa-828039f2ce	ترس
+ng-fa-82864dbed2	تعیین می‌کند
+ng-fa-828e070217	پاکت
+ng-fa-829d736aec	کسانی که
+ng-fa-82ae8f6d64	جواب را
+ng-fa-82b06f61e2	یک حس
+ng-fa-82fedb4af8	و اینترنت
+ng-fa-831a708cb9	شورتز
+ng-fa-833e441a5d	کسره‌ی
+ng-fa-8349d57f4f	در
+ng-fa-8354ef75c7	خالی و
+ng-fa-8361c588ab	شاگرد
+ng-fa-83698b385a	خواننده‌اش
+ng-fa-8369e48ab5	برچسبش
+ng-fa-837fb646a9	کامل‌تر
+ng-fa-8385f5f62f	گرم
+ng-fa-83a2f5ab8d	را می‌سازد
+ng-fa-83a5b2da00	راه
+ng-fa-83a9c24796	که جوابش
+ng-fa-83ab63bf01	شبکه‌ای
+ng-fa-83b031c75e	نرخ
+ng-fa-83b8993a65	رودررو
+ng-fa-83bd644d92	کارت داخل
+ng-fa-83c84a0bb0	خرید و
+ng-fa-83d7c8bd5b	باید بگوید
+ng-fa-83e1b640d9	نبر
+ng-fa-83e338a526	کسب‌وکار
+ng-fa-83feb70c48	جزئیات حسی
+ng-fa-83febe4755	و شیپور
+ng-fa-8411ae7593	فریم
+ng-fa-8411f008e7	لازم نیست
+ng-fa-8412b032af	برند از
+ng-fa-841f977b97	وصل به
+ng-fa-84281ca0c0	از انتشار تأیید
+ng-fa-842cf4871b	آدم‌های
+ng-fa-8446596d09	امسال
+ng-fa-844c9945c5	مهم
+ng-fa-8455ead29a	مهارت
+ng-fa-8461ba16c1	روی متن
+ng-fa-84756b1b5e	در ویدیو و
+ng-fa-847a9e99f0	را بسنج
+ng-fa-847db9ef88	توسعه‌ی
+ng-fa-848070c7e8	بدهم
+ng-fa-84869a8495	خلق
+ng-fa-8487303057	نشانه‌گذاری
+ng-fa-849a4a5214	صفت‌های
+ng-fa-84a7af0a42	نویسه‌ی
+ng-fa-84bdcb9901	بنویس که
+ng-fa-84c356ea61	و شرم
+ng-fa-84e26d3c45	خلاصه‌ی
+ng-fa-84eec060ae	خود برند
+ng-fa-84ef7e86e7	معاینه‌ی
+ng-fa-84fa7160bf	گفتنی
+ng-fa-8520d16d73	همکاری تبلیغی
+ng-fa-8522e5b1aa	تا شش
+ng-fa-8528b1e060	ثابت
+ng-fa-854ba211e6	پانصد هزار
+ng-fa-854d3349ec	ارسال
+ng-fa-85630ecfec	که می‌گوید
+ng-fa-85646a4d46	بی‌عذرخواهی
+ng-fa-856cae5ca8	می‌نشینند
+ng-fa-856e5a2a22	وام
+ng-fa-85784610fd	جهت متن
+ng-fa-858891529a	و ویدیو
+ng-fa-858abd2949	در صدا و
+ng-fa-858dcebe6d	از نزدیک
+ng-fa-85a15195d0	پیش از نوشتن
+ng-fa-85ae94392a	ادعا به اندازه‌ی شاهد
+ng-fa-85af902193	قسمت
+ng-fa-85d0fe0a9b	فنون روایت
+ng-fa-85e5d669db	بدهید
+ng-fa-85efea0560	در کارگاه
+ng-fa-85f238be4c	جلویش
+ng-fa-85f5579358	نشان بدهد
+ng-fa-860506c3a6	خمیر را
+ng-fa-8607cbd4ec	به شماره‌ی
+ng-fa-8613cfc1f4	از سند
+ng-fa-8629faab37	با خود چیز شروع
+ng-fa-862fb25258	شیوه
+ng-fa-863c841a0e	جای
+ng-fa-863f890d01	تا پنج
+ng-fa-86538b8ff9	بافنده
+ng-fa-865628f7bd	این عدد
+ng-fa-8697b06133	خوراکی
+ng-fa-869a0433a4	خودت را
+ng-fa-86a7d073f3	برچسب
+ng-fa-86b0a267eb	حقوق
+ng-fa-86b9d0fa10	از حقوقی کارفرما
+ng-fa-86c2db6dc3	صفحه‌ی قیمت
+ng-fa-86db963360	به پروفایل
+ng-fa-86e2960638	تأیید کرده
+ng-fa-86f0bdda6e	یک راه
+ng-fa-86f63f2234	شرط و
+ng-fa-86f6a68c2d	ناظر
+ng-fa-86f712e13a	یک دکمه
+ng-fa-86f9b0d86b	تنها روی
+ng-fa-8712a654ba	مشترک
+ng-fa-87132d01d2	شرح کار
+ng-fa-8727bdcdf1	اوست
+ng-fa-8728ab2750	گوش
+ng-fa-8731a74a3c	ثبت‌شده
+ng-fa-873308ea42	توضیح متا
+ng-fa-8738a5adcf	تندرستی
+ng-fa-873ca32373	را عوض کن
+ng-fa-8745e629c4	راهرو
+ng-fa-87604aa3d5	برای نشان
+ng-fa-87633914cd	متن تازه
+ng-fa-8773719e75	نظر و
+ng-fa-87876c8bbd	دسترس‌پذیری
+ng-fa-8790a22e31	جایش در
+ng-fa-87933e9b2c	حدس
+ng-fa-87a3f9e5d3	هر جمله
+ng-fa-87b21dd8a6	تا ساعت
+ng-fa-87e88263fb	تاریخ پایان
+ng-fa-880a2f04a4	آپارات
+ng-fa-880acfbe28	هیچ‌کس
+ng-fa-880c34abc6	برمی‌داری
+ng-fa-8828a843a7	جزئیاتی
+ng-fa-883da9d54f	مرحله
+ng-fa-884f6d664a	نانوایی
+ng-fa-887c67d152	چیزی نمی‌گوید
+ng-fa-88859f5afa	طرز
+ng-fa-888825f4a6	شبیه
+ng-fa-889cd6b9b4	واقعی است
+ng-fa-88a89d45da	از واژه‌ی
+ng-fa-88aa133a2d	شامل
+ng-fa-88b3f25465	ثبت شده
+ng-fa-88b5bf7571	است و در
+ng-fa-88c5244609	مگر
+ng-fa-88ede90ef0	شمردنی
+ng-fa-88fdb73896	هر روز
+ng-fa-891e178262	می‌زند و
+ng-fa-8924455ec4	واگرایی
+ng-fa-89445e3f3c	رسید تراکنش
+ng-fa-89512d0696	روشن و
+ng-fa-89670b0409	جوابش را
+ng-fa-897451184d	باشد که
+ng-fa-89787af702	در اتاق
+ng-fa-897c318173	آرام
+ng-fa-897ccfa22b	در دفترچه‌ی
+ng-fa-8990ae7301	را می‌خواهد
+ng-fa-89a5aac63c	خطا
+ng-fa-89a87b636d	بخش‌های
+ng-fa-89b178695c	بقیه
+ng-fa-89c14b57a3	نمی‌دهد
+ng-fa-89dde86003	کیسه
+ng-fa-89eb2cf2c9	آدم واقعی
+ng-fa-89ede1574b	پیام خطای
+ng-fa-89f48324ac	بریف خلاقه
+ng-fa-89f7d0ee04	بازش کن
+ng-fa-89f97a70e5	جلسه‌ی اول
+ng-fa-8a08729f86	برگه
+ng-fa-8a1af293e4	قضاوت
+ng-fa-8a2504be72	مبلغی از
+ng-fa-8a2667c958	آمده است
+ng-fa-8a4ca1a6e6	بند آخر
+ng-fa-8a75e07d1e	عنوان اصلی
+ng-fa-8a86eb145e	دسترس
+ng-fa-8a895cc223	شرط
+ng-fa-8a92f68a93	در متن محاوره
+ng-fa-8a9355e67f	کلینیک
+ng-fa-8a9544b26b	عمومی و
+ng-fa-8aa57ad821	مهلت
+ng-fa-8ac0906fcb	پیش‌فرض
+ng-fa-8ac8b09391	در آغاز
+ng-fa-8acad03ea0	وعده‌ی
+ng-fa-8adb375476	خواندن
+ng-fa-8ae15f1666	کسب‌وکار در
+ng-fa-8ae5c56b71	یک چیز
+ng-fa-8aead0649a	ایمنی
+ng-fa-8aec61902a	دهد
+ng-fa-8af8cdf7e0	خودش می‌نویسد
+ng-fa-8b0f3a6bd3	این‌جا هم
+ng-fa-8b10f9af40	صدای برند
+ng-fa-8b2a9e9f85	علت
+ng-fa-8b2c6e9113	سایت
+ng-fa-8b3b3f1d9a	رخداد
+ng-fa-8b3d70de9b	خودم
+ng-fa-8b44d51788	و زیرنویس
+ng-fa-8b471780c0	پولی در
+ng-fa-8b587f50c0	صنعتی
+ng-fa-8b59491331	افزودن به
+ng-fa-8b6506f2dd	فوروارد
+ng-fa-8b6a18da49	جزئیاتی که
+ng-fa-8b6a4d032c	پنل یا
+ng-fa-8b6c9796f0	طب
+ng-fa-8b705c9d10	بخورد
+ng-fa-8b84018daa	اسم به‌جای فعل
+ng-fa-8b84c7db67	بچه‌ی
+ng-fa-8b8ca52f63	یک واژه
+ng-fa-8b90b3e55b	اعتراف‌های یک تبلیغاتچی
+ng-fa-8b99671f25	از استفاده
+ng-fa-8b9dfa1631	عنوان
+ng-fa-8ba0eb4b44	دقیقه‌ای
+ng-fa-8ba851f7c7	منظور
+ng-fa-8baa792e8c	کالای
+ng-fa-8baa9c27e9	هرکدام یک
+ng-fa-8babb3517b	افتخار
+ng-fa-8bb10467d4	از دنیای
+ng-fa-8bce5aeea4	سریع و
+ng-fa-8bd1068c39	سخنران
+ng-fa-8c0aae306c	نویسنده‌ها
+ng-fa-8c0b03b54c	چاپی
+ng-fa-8c2027b6e3	داده و
+ng-fa-8c2f3dab29	از خود برند
+ng-fa-8c3149bae6	و ادعای
+ng-fa-8c36537820	آمار
+ng-fa-8c3b57443a	با عدد و
+ng-fa-8c40cfbb42	قبلا
+ng-fa-8c4e3f9394	حروف فارسی
+ng-fa-8c5b7428a8	هرکدام
+ng-fa-8c65422ba1	از فهرست
+ng-fa-8c77511474	صفر
+ng-fa-8c8a17a819	تبلیغ و
+ng-fa-8ca9b10c2f	برند در
+ng-fa-8cb0b57e0c	می‌بندد
+ng-fa-8cc07d01e7	روی بسته
+ng-fa-8ccd67a93a	آزمون سریع
+ng-fa-8ce1707a46	چپ‌به‌راست
+ng-fa-8cea9bc148	بکش
+ng-fa-8cefbc86db	متن در
+ng-fa-8cf4dc8a95	استراتژی بلاگ
+ng-fa-8cfdb650e1	متن پیوند
+ng-fa-8cfdcb97e9	تولیدکننده‌ی
+ng-fa-8d071b41dc	سرویس
+ng-fa-8d0aa26bdb	نام برند
+ng-fa-8d15876f10	احساسی
+ng-fa-8d324b4071	مبهم
+ng-fa-8d3a901734	ندارم
+ng-fa-8d3da8aedf	با ماشین
+ng-fa-8d45632b01	متن
+ng-fa-8d4b401bdf	ریسک‌ها
+ng-fa-8d531c50f6	یک واقعیت
+ng-fa-8d56881ac1	برچسب‌دار
+ng-fa-8d63520b05	سه خط
+ng-fa-8d661cc1cb	سیاسی
+ng-fa-8d80d44e2d	فایل‌ها
+ng-fa-8daf99353e	دو چیز
+ng-fa-8db269cb07	با واژه‌ی
+ng-fa-8dba82ab0d	رد می‌شود
+ng-fa-8dcfb6e1ae	لحظه
+ng-fa-8de596f273	در چهار
+ng-fa-8de7aa525e	بیرون از
+ng-fa-8df4ae760a	خوشه
+ng-fa-8df75c222b	خریداران
+ng-fa-8e0146048d	نام یا
+ng-fa-8e07badaef	و پیوند
+ng-fa-8e2513404f	در یادداشت
+ng-fa-8e4ede5717	این دوره
+ng-fa-8e5c4001c9	صدای
+ng-fa-8e624d2133	تنها روی خط
+ng-fa-8e66c75107	درخواست
+ng-fa-8e69fd15a5	کامل است
+ng-fa-8e6a202afb	ترجمه‌ی
+ng-fa-8e6b66b177	ارز
+ng-fa-8e7235ad32	به انگلیسی
+ng-fa-8e732f6cdc	سه جمله‌ی
+ng-fa-8e73af74a3	با برچسب
+ng-fa-8e7ba2624c	پرونده‌ی
+ng-fa-8e85b7327b	زدن
+ng-fa-8e9d2426af	بعدازظهر
+ng-fa-8ea56f686f	کاروسل
+ng-fa-8ea59e10ff	بیست دقیقه
+ng-fa-8ebe76d036	قرارداد
+ng-fa-8ee2e79c61	حرف نمی‌زند
+ng-fa-8ee74040b2	پاسخ پشتیبانی
+ng-fa-8ef5c18f32	واقعی با اجازه
+ng-fa-8f02233c4f	یک تغییر
+ng-fa-8f1059358e	و روش
+ng-fa-8f1593a85c	دکمه و
+ng-fa-8f1a72d871	اول با
+ng-fa-8f3498966a	خلاف قانون
+ng-fa-8f3948a6b1	یادداشت
+ng-fa-8f3dc63058	افزودن به سبد
+ng-fa-8f4843bec1	متنی که
+ng-fa-8f54e2e460	در فایل
+ng-fa-8f55a25386	روزی
+ng-fa-8f618fe98f	ماه رمضان
+ng-fa-8f6d075560	یکی باشد
+ng-fa-8f7b95458f	واژه‌ی لاتین
+ng-fa-8f9085d677	نفس
+ng-fa-8fc50c3f94	جلوتر
+ng-fa-8fcee57d80	و قصه
+ng-fa-8fe801a5bb	دو راه
+ng-fa-9003725f52	اول در
+ng-fa-90067bb167	بوی یخچال را می‌گیرد
+ng-fa-9012580747	اندازه
+ng-fa-9020bd4325	هر متنی
+ng-fa-90333a5a55	بنویس و
+ng-fa-9036a4ca11	ساعت
+ng-fa-905527ce99	صف
+ng-fa-905a79beb7	از متن
+ng-fa-905b32b1a3	تعجب
+ng-fa-905e997f57	اجزای
+ng-fa-907f950355	انتخاب کن
+ng-fa-90af636afe	در دهان
+ng-fa-90bea0ebf4	نام‌های
+ng-fa-90c749a56c	یکسان
+ng-fa-90d57d5c92	چک
+ng-fa-90dac1b0b4	برای پرسش
+ng-fa-90e10fd0ff	در پوشه‌ی
+ng-fa-90e3774d50	همان کار
+ng-fa-90fbb1c6a4	بگذار
+ng-fa-912049e490	کاربر باید
+ng-fa-91212232fd	نردبان
+ng-fa-9128c1d09e	یک بار در
+ng-fa-913a0fa66e	این کار را
+ng-fa-913d58c4f7	مشخص
+ng-fa-914ba9a62d	داوطلب
+ng-fa-9159dcf74d	یک تاریخ
+ng-fa-915ceb9810	اپ مالی
+ng-fa-9164af004f	چیز شروع
+ng-fa-916781171c	پویا و
+ng-fa-916cf99873	فیلدی که
+ng-fa-91710de143	پرسونای
+ng-fa-917cd9f87b	عدد یا
+ng-fa-917d206305	همان ساعت
+ng-fa-9190a1475f	رقم
+ng-fa-91b04457aa	ارائه
+ng-fa-91c51fd752	پژوهش و
+ng-fa-91cbaf4de8	ارجاع به
+ng-fa-91da1768d7	جفت
+ng-fa-91e81880d3	میان دو
+ng-fa-91f932b27c	با دقت
+ng-fa-9201cd7bb6	هر شبکه
+ng-fa-9210ad50b9	در همه‌ی
+ng-fa-92162c43ba	آشنا
+ng-fa-922557f745	به متن
+ng-fa-925a20a20e	جلو
+ng-fa-925d9ee258	باز هم
+ng-fa-9267d978e5	بیمه
+ng-fa-92834af9b8	تصویر از
+ng-fa-9289dc0ec2	کار می‌برد
+ng-fa-9289f036de	دهید
+ng-fa-928aabeb72	آگهی دیوار
+ng-fa-92907cecb6	با آزمون
+ng-fa-92baf32c06	لازم دارد
+ng-fa-92c049a441	حالی
+ng-fa-92edae8612	در برند
+ng-fa-930be3e583	طول و زمان
+ng-fa-932f6ac4cd	با اسم
+ng-fa-9332d6e406	جایی که
+ng-fa-9333abe4b7	اشاره
+ng-fa-9345bd32b1	واژه‌نامه‌ی
+ng-fa-9347eb9c53	توضیحی
+ng-fa-9350980808	نفر است
+ng-fa-9353c55ea1	می‌افتد و
+ng-fa-93564c83c3	پخش
+ng-fa-935e23647a	حضوری
+ng-fa-937368166e	با منبع
+ng-fa-938cff4e4b	حساب می‌کند
+ng-fa-939b83cbbc	دام‌ها
+ng-fa-939df7daa9	یک آدم
+ng-fa-93a9a841ef	فرود و
+ng-fa-93b6845fa1	رسمی و
+ng-fa-93c1c7b13f	کسی است که
+ng-fa-93d479b63d	و خواننده
+ng-fa-93d9f0ddf2	می‌گفت
+ng-fa-93e7b37a9f	آگهی استخدام
+ng-fa-941960c300	خانه و
+ng-fa-941ff78aed	به‌جای صفت
+ng-fa-9429ee0a43	لایه‌ی
+ng-fa-9435901cd5	را جدا
+ng-fa-94499eb86e	می‌گیرد و
+ng-fa-945982fbac	اجزا
+ng-fa-947116e56c	فایل را
+ng-fa-947ea14426	خود چیز شروع
+ng-fa-9486435124	این محصول
+ng-fa-9499d98335	بعدا
+ng-fa-94a4df7615	بی‌سرزنش
+ng-fa-94aad1eeb3	و پست
+ng-fa-94ae591fed	بیازما
+ng-fa-94bde4d626	ساده است
+ng-fa-94ea4c7132	عضو
+ng-fa-94fc030d0e	کج محتوایی
+ng-fa-950b03e529	درست کن
+ng-fa-95105b665c	بیاور
+ng-fa-951244992a	گروه
+ng-fa-95126df155	پر
+ng-fa-95192022ab	و عکس
+ng-fa-9531c8b33c	تکیه
+ng-fa-9532dd8cdd	مدرسه
+ng-fa-9539b6bb06	پایه در
+ng-fa-955d025e6f	و ادعا
+ng-fa-95924290b7	صبح
+ng-fa-95ab453d1a	پست
+ng-fa-95bd25f186	کار اصلی
+ng-fa-95c3a96174	قصه را
+ng-fa-95d42e8cf5	ده متن
+ng-fa-95f92a4cdf	کجاست
+ng-fa-961233e426	یافته
+ng-fa-96327e9269	شنیده می‌شود
+ng-fa-963690bd26	انقلابی
+ng-fa-964dd7a3ea	نامه‌ی
+ng-fa-965bbc13b9	ماشین
+ng-fa-9663f70bef	صفحه است
+ng-fa-96659a45ac	میز
+ng-fa-96666b7976	موردی
+ng-fa-9667a12782	سه تا پنج
+ng-fa-967c1e4d4d	شناسنامه‌ی
+ng-fa-96d0446ba3	پنجره‌ی
+ng-fa-96d36cab27	ساماندهی
+ng-fa-96e36c4fb2	را نگه
+ng-fa-96e7788cdc	جداکننده
+ng-fa-96ed023a98	سجع
+ng-fa-96edd77f78	استاندارد
+ng-fa-9701fbd36a	عضویت
+ng-fa-970afe914d	الگوهای
+ng-fa-9718a23396	جریان
+ng-fa-971c18c4c6	در متن کوتاه
+ng-fa-974abfa1c2	چه برمی‌دارد
+ng-fa-9756679ca0	ادعاهای
+ng-fa-97581cb097	به سبد
+ng-fa-975b3e1c97	دعوت
+ng-fa-976295611d	اطمینان
+ng-fa-9774a27bb8	را با نام
+ng-fa-97834cabf4	سال
+ng-fa-9789329fd3	را ممنوع
+ng-fa-979952cf71	هوشمند
+ng-fa-979b98219d	همیان
+ng-fa-979e262a0f	کسی
+ng-fa-97a0d6d5d3	را کسی
+ng-fa-97a4319148	خودشان را دارند
+ng-fa-97c9fea785	توسعه‌ی تجارت الکترونیکی
+ng-fa-97cc4a7fdf	یک صفحه
+ng-fa-97dd678c78	و عدد
+ng-fa-97e4e8cefb	یک خط
+ng-fa-9806ac67aa	و مقررات
+ng-fa-9812f8ff44	آموزشی ساختگی
+ng-fa-981feb4e49	پیش‌بینی
+ng-fa-98312136b2	پانصد
+ng-fa-9834256bee	اوگیلوی
+ng-fa-983a2986c7	پیوند به
+ng-fa-983ccee197	سفارش
+ng-fa-985b073e32	برند و
+ng-fa-9871985b55	مفرد
+ng-fa-9878989151	می‌سازند
+ng-fa-9890b3e043	دیوار و
+ng-fa-989316d5df	اگر پنل یا
+ng-fa-9894839934	پیش از فرستادن
+ng-fa-9899e0f0bd	تقلید
+ng-fa-989ca0ee85	تکان
+ng-fa-989d005958	پرو
+ng-fa-98a1d400e8	را نام
+ng-fa-98a9206c0a	و پانصد هزار
+ng-fa-98b7745d76	دست‌ساخته
+ng-fa-98bb62599c	از راه
+ng-fa-98d86634c2	نباشد
+ng-fa-98e07306a3	دوازده
+ng-fa-9901af6b95	و فروش
+ng-fa-990498bfd2	جایگاه‌سازی
+ng-fa-99161613e5	می‌دانید
+ng-fa-9918f8de5e	به حروف
+ng-fa-994fc6f4ce	جزئیات ملموس
+ng-fa-99544e6417	ماه و سال
+ng-fa-995eb53268	فرستاده
+ng-fa-9969e76431	از پشت
+ng-fa-9978db57fc	همکار
+ng-fa-997d8b91a1	آگهی و
+ng-fa-998da6c37d	خاصیت
+ng-fa-99b4ecd3fc	در آخر
+ng-fa-99c0effd15	آبان
+ng-fa-99d99d0343	مقدارها
+ng-fa-9a00f831ea	این فایل برای
+ng-fa-9a08edefc4	مشتری
+ng-fa-9a12f37673	فارسی در
+ng-fa-9a40f495db	تسهیل‌گری
+ng-fa-9a50014d50	از جلسه
+ng-fa-9a57705618	را پیش از انتشار
+ng-fa-9a5c41106c	انگلیسی
+ng-fa-9a5c67aa64	موتور جست‌وجو
+ng-fa-9a65bbbbba	نگران
+ng-fa-9a69687bf5	جدا از
+ng-fa-9a6a7664a1	واژه‌ای
+ng-fa-9a6fb89371	استدلال
+ng-fa-9a77d666c7	چیزی
+ng-fa-9a796294ad	اول
+ng-fa-9a813f4dac	برگشت به
+ng-fa-9a93ab422e	سمت
+ng-fa-9ab03a18a6	را نشان
+ng-fa-9ab368fe19	روایت
+ng-fa-9aba2b2c8f	کجا
+ng-fa-9abb107a1a	تکرار نمی‌شود
+ng-fa-9aeb5a0e9b	افتاد
+ng-fa-9aebf7ccc3	هر پیام
+ng-fa-9af4f84f54	دندان‌پزشکی
+ng-fa-9b0386698e	آنلاین
+ng-fa-9b063c26f4	مجوز دارد
+ng-fa-9b0bdb50c7	مدیر
+ng-fa-9b15333a03	گذاشتن
+ng-fa-9b16157634	خودش دارد
+ng-fa-9b163b5db1	بالا می‌رود
+ng-fa-9b29b0ddbd	هر ادعا
+ng-fa-9b693b2a13	انگلیسی و
+ng-fa-9b6cfab2f6	پرداخت
+ng-fa-9b7f0e3512	آگاه
+ng-fa-9b9cba11da	درست
+ng-fa-9bad949630	صحنه‌ی
+ng-fa-9badb02d96	یکتانت
+ng-fa-9baf45c7e8	پشت تلفن
+ng-fa-9bb65c675e	یک سطر
+ng-fa-9bc9f04069	نوشتن خاموش
+ng-fa-9be47cb951	دیگری است
+ng-fa-9be518aed2	خلاق
+ng-fa-9bf243cac1	شروع می‌کند
+ng-fa-9bf7803a14	بی‌واژه‌ی
+ng-fa-9bfd2e3b63	یک نفس
+ng-fa-9c06e80184	واقعی و
+ng-fa-9c07d8f0e4	و مادر
+ng-fa-9c14d15323	مناقصه
+ng-fa-9c1a43f006	جاهایی
+ng-fa-9c30e12812	دقیقه‌ی
+ng-fa-9c38a0080a	در برداشت مواد
+ng-fa-9c5b007f53	بی‌تصویر
+ng-fa-9c644961db	اگر دو
+ng-fa-9c757d9bb0	نپرس
+ng-fa-9c9554c3f9	ها
+ng-fa-9caebc7f56	یک صحنه‌ی
+ng-fa-9caeefea73	یادداشت داخلی
+ng-fa-9cb1478f57	کتری برقی
+ng-fa-9cbf58a724	برداشت
+ng-fa-9cc0529af1	لغو عضویت
+ng-fa-9cdcaf1844	پشت
+ng-fa-9ce33d02ce	مخزن
+ng-fa-9cf121097b	جمع و
+ng-fa-9d08c2bada	نقشه‌ی
+ng-fa-9d1a6c41e6	پیوند
+ng-fa-9d2674335d	گفتن
+ng-fa-9d2909f7f6	بریده
+ng-fa-9d2fc4f4ba	دیده‌شدن
+ng-fa-9d3c6e88d1	و سند
+ng-fa-9d57f67891	گفت‌وگو با
+ng-fa-9d727839bb	در هر حال
+ng-fa-9d7830fc1d	عین
+ng-fa-9d7f943ab5	خود کاربر
+ng-fa-9d9771940f	باز کردن
+ng-fa-9d98023bdb	با سال‌ها تجربه
+ng-fa-9d99bf30f7	مطمئن
+ng-fa-9da33aabc9	رمزارز
+ng-fa-9db7d59502	دقیقا
+ng-fa-9dbe02b915	ترکیب
+ng-fa-9dcde5636b	زبان ساده
+ng-fa-9dd480bffd	و ارسال
+ng-fa-9ddc0f5496	باز می‌کند
+ng-fa-9dfbb3dd4f	با زمان
+ng-fa-9e044abf32	بار
+ng-fa-9e120366c6	هر چیزی که
+ng-fa-9e2b3e1bf0	از داده‌ی
+ng-fa-9e2cf5c3ac	روابط عمومی
+ng-fa-9e3149ccda	گذشت
+ng-fa-9e3a929723	کار را انجام
+ng-fa-9e45775846	و زیرخط
+ng-fa-9e56f8b392	صبر
+ng-fa-9e59dd3b62	وقتی می‌آید که
+ng-fa-9e88378614	ادعاها
+ng-fa-9e97bec44e	پرکردن معمولی
+ng-fa-9eafb1b0ba	قدیمی
+ng-fa-9ec1ad293d	محدودیت
+ng-fa-9ecd8b0124	دنیای خود موضوع
+ng-fa-9f02dcae5f	بیو
+ng-fa-9f1c8e5d92	نوشته می‌شود و
+ng-fa-9f2f607f67	خودمان
+ng-fa-9f385a82b4	کنترل پیش از
+ng-fa-9f4887e495	هر نسخه
+ng-fa-9f48bc7cd7	تاجیکی
+ng-fa-9f61dbac21	پاک
+ng-fa-9f6b356624	تأیید می‌کند
+ng-fa-9f6f13969d	دکمه‌های
+ng-fa-9f7eeff16f	شماره‌ی سفارش
+ng-fa-9fb95e9cd9	خوشه‌ی
+ng-fa-9fbd595689	آخر جمله
+ng-fa-9fc10b2069	بگویید
+ng-fa-9fc7801ab3	بینه
+ng-fa-9fcb59c089	سنجه‌ی
+ng-fa-9fd2226f18	خبر بعدی
+ng-fa-9fd30eb496	لحظه‌ی
+ng-fa-9fe6f0ff07	از ورود
+ng-fa-9feb14f9ea	دی
+ng-fa-9ff0049a87	سه واژه
+ng-fa-a00144411c	نیمه‌ی
+ng-fa-a014583461	پذیرفته
+ng-fa-a04a809d58	یه
+ng-fa-a04cbff44f	بداند چه
+ng-fa-a04ea94d95	جای خالی
+ng-fa-a07b66a887	خرید
+ng-fa-a089796646	یوتیوب و
+ng-fa-a08e28313c	شبکه‌های اجتماعی
+ng-fa-a093896a24	می‌روید
+ng-fa-a0a545b3c1	کامل
+ng-fa-a0aacf2a50	پیش از شروع
+ng-fa-a0d6a84810	را از دست
+ng-fa-a0ee917ee1	دکمه‌ها را
+ng-fa-a0ef5df3a9	اخلاق حرفه‌ای
+ng-fa-a0fed6f206	این کار
+ng-fa-a11e93bd29	منبع
+ng-fa-a120485e14	در بریف
+ng-fa-a12c3d8bf5	همان صفحه
+ng-fa-a14d7b5334	برای نوشتن
+ng-fa-a1791d1f71	ملموس
+ng-fa-a17dc19e35	نمونه و
+ng-fa-a187763d0d	بدیهی
+ng-fa-a18a405962	در متنی که
+ng-fa-a1af41c83b	ندارد و
+ng-fa-a1c6ef2782	اضافه شد
+ng-fa-a1c73240b3	تصویری
+ng-fa-a1e1b705dd	پارچه
+ng-fa-a1e2b56af7	ایده‌ای
+ng-fa-a1fa6c7cd0	ربات است
+ng-fa-a1fae35d8f	ردیف
+ng-fa-a1fb60ffb5	ایهام
+ng-fa-a20f45017e	به خرج
+ng-fa-a2193717cb	قاب
+ng-fa-a2483bca86	دو زبان
+ng-fa-a24a47eb50	کردن
+ng-fa-a2501cffa7	نشان
+ng-fa-a25d46a385	دکمه‌ها
+ng-fa-a263615472	موفق
+ng-fa-a2a3c9382c	خود برند است
+ng-fa-a2adde65cf	شماره‌دار
+ng-fa-a2e7100516	کاغذ مومی بوی یخچال
+ng-fa-a2f97add23	جمله‌ی اول
+ng-fa-a335a46ad2	برای بازار
+ng-fa-a351ebf106	محل
+ng-fa-a35d45c6a7	می‌گوید چه
+ng-fa-a38a83b0d7	با افتخار
+ng-fa-a392ba6016	ببند
+ng-fa-a397c7d0d1	از فروش
+ng-fa-a39ab67427	پس‌انداز
+ng-fa-a3eaedb136	قیمت را
+ng-fa-a3ec45b080	که چیزی
+ng-fa-a40495b9d9	و ثبت
+ng-fa-a42e70be69	نظرها
+ng-fa-a44d186531	سرمایه‌گذار
+ng-fa-a44f30acc8	بهتر
+ng-fa-a459081d67	باش
+ng-fa-a468773560	اندروید
+ng-fa-a4786d4a6d	در هر دو
+ng-fa-a482b290b9	کارفرما
+ng-fa-a4aaf11fa1	ایمیل و پیامک
+ng-fa-a4ad061ba3	هویت کلامی
+ng-fa-a4add74e72	قاعده‌ی
+ng-fa-a4bc7ed6b6	عوض
+ng-fa-a4c64a94e9	ادعای سلامت
+ng-fa-a4d0ddd50e	به گروه
+ng-fa-a4d4c33ff1	گرد
+ng-fa-a4d6cb0226	در فیلد
+ng-fa-a4d7ad9ced	کارکنان
+ng-fa-a4d7f57afd	بله
+ng-fa-a4dbd799c6	شهر
+ng-fa-a4dcf37211	می‌خواهد و
+ng-fa-a4e3b8bd6f	قاعده
+ng-fa-a4e5291464	همین هفته
+ng-fa-a4e8e7c33e	را نمی‌گیرد
+ng-fa-a4f2ca8da6	ساکت
+ng-fa-a4fb0fa35c	خواننده بعد
+ng-fa-a505f99d16	کمینه‌ی
+ng-fa-a53f0032de	برمی‌گرداند
+ng-fa-a55ffa74c9	دست
+ng-fa-a573f276d1	از عدد
+ng-fa-a57936684f	خودشان
+ng-fa-a5796c7da6	خام
+ng-fa-a57c06bffa	خودش را دارد
+ng-fa-a596328182	یا دو
+ng-fa-a59e788e2a	جزئیات در
+ng-fa-a5a0ec5a92	هشتگ
+ng-fa-a5c30c2d29	برای پیج
+ng-fa-a5c88269ec	صدا را
+ng-fa-a5e4d06de7	حلال
+ng-fa-a5e54d146b	دقیقه
+ng-fa-a5efd74787	برند است و
+ng-fa-a6375c78c1	را نمی‌شناسد
+ng-fa-a6672972aa	باشم
+ng-fa-a67c2dbe41	شمارش
+ng-fa-a67d939020	فراخوان
+ng-fa-a6898e4483	در ماه
+ng-fa-a6906d1820	دو نسخه
+ng-fa-a697964b16	سریال
+ng-fa-a6a1d9a52c	رضایت
+ng-fa-a6b967903b	جواب یک
+ng-fa-a6cafa2f7b	اتحادیه‌ی اروپا
+ng-fa-a6d8b6cd45	و به
+ng-fa-a6e1be471e	پرسیدن
+ng-fa-a6ea70a8c5	این‌طور
+ng-fa-a6ebc1395b	و برچسب
+ng-fa-a7100c3c25	شدت
+ng-fa-a7120e133f	نتیجه‌ی کوچک
+ng-fa-a71e053f87	و آزمون
+ng-fa-a736051977	ایموجی
+ng-fa-a7369799fb	سه‌گانه
+ng-fa-a76250ae40	سرشماره
+ng-fa-a77b32668c	می‌نویسی
+ng-fa-a7814e9692	دوره‌ی
+ng-fa-a7da0968df	بپرسید
+ng-fa-a7e78892fd	راحت
+ng-fa-a7ec84fc7f	ساختار
+ng-fa-a7fb640706	اروپایی
+ng-fa-a809661d9c	دیگ
+ng-fa-a81793cc0c	و سایت
+ng-fa-a818ceb3d2	خودش معنا
+ng-fa-a82a809c84	خارجی
+ng-fa-a82f69cbf6	پروانه‌ی
+ng-fa-a831626e4e	ممیزی
+ng-fa-a834f6b777	بلاگ
+ng-fa-a83a4ccfa2	با سقف
+ng-fa-a83dce7bef	اسلایدها
+ng-fa-a8465d3183	ادامه‌ی
+ng-fa-a846f5a528	کلاس
+ng-fa-a86886777e	آگهی‌ای
+ng-fa-a86b381f56	را می‌بیند
+ng-fa-a8882a8faf	آهنگ
+ng-fa-a88df90518	باور
+ng-fa-a894e78e6d	در ادعاهای
+ng-fa-a8ac310544	یک عبارت
+ng-fa-a8ae33e277	یک متن
+ng-fa-a8b6871a12	ممکن است
+ng-fa-a8bafda2eb	واحد قصه
+ng-fa-a8c04ee098	مشورت
+ng-fa-a8c07b866f	نکته
+ng-fa-a8c8e8a913	این فایل
+ng-fa-a8cbd4658f	کد
+ng-fa-a8d2773f40	باز شدن
+ng-fa-a8e81e4451	یک جزئیات
+ng-fa-a922ebefc0	بد
+ng-fa-a9279cabce	در متن بلند
+ng-fa-a936737621	نام محصول
+ng-fa-a93b3c675c	جا می‌شود
+ng-fa-a93fb61272	هر کشور
+ng-fa-a94e63a0ec	یک فکر
+ng-fa-a9567140aa	بین دو
+ng-fa-a958bdfa63	دکمه‌ی
+ng-fa-a9756fb817	تلگرام و
+ng-fa-a978c26e38	و می‌خواهد
+ng-fa-a9900b75da	و ایموجی
+ng-fa-a9ae40ed9b	نظر واقعی
+ng-fa-a9b3ffc441	کتاب
+ng-fa-a9bafccf9a	نمی‌گوید
+ng-fa-a9cf351540	اتحادیه‌ی
+ng-fa-a9dc165bec	بدن
+ng-fa-a9df92483e	حالا
+ng-fa-a9f9359ace	ترس و
+ng-fa-aa03d39e13	تجاری
+ng-fa-aa0aa92dc7	هر ردیف
+ng-fa-aa14b78166	کیفیت
+ng-fa-aa1903a10b	کم‌کم
+ng-fa-aa30cbd9fa	فارسی‌زبان
+ng-fa-aa35ca9d9e	می‌آورد
+ng-fa-aa3e4305ed	همه‌ی کانال‌ها
+ng-fa-aa431dfa3a	احترام
+ng-fa-aa550e9601	با نام
+ng-fa-aa5a74e4c6	نفر
+ng-fa-aa64e10652	نامی
+ng-fa-aa774a8e10	واقعیت‌های
+ng-fa-aa85c8c07d	به‌جایش
+ng-fa-aad32f8f65	نشان و
+ng-fa-ab02abe657	می‌کرد
+ng-fa-ab0316cd8a	آموختن از
+ng-fa-ab0b2ca3f5	پروفایل یک
+ng-fa-ab0f1f4b16	از پروفایل
+ng-fa-ab115957fb	بپرس
+ng-fa-ab233def11	معتبر
+ng-fa-ab31a60c72	تفکیک
+ng-fa-ab3bcdfdc3	کپی بلند
+ng-fa-ab3fd468f9	هر صنعت
+ng-fa-ab56609b52	کد تأیید
+ng-fa-ab679cbbe3	وجود
+ng-fa-ab8d674058	توسعه‌ی تجارت
+ng-fa-ab908bb11f	قالب‌های
+ng-fa-ab930cc6f8	قانون
+ng-fa-ab9a20c89a	در عمل
+ng-fa-aba6633492	اغراق
+ng-fa-abbc1a7f19	دلیلش را
+ng-fa-abbd2fd006	سلسله‌مراتب
+ng-fa-abbd8bb98e	با یک جزئیات
+ng-fa-abbe43a8f5	و هر کدام
+ng-fa-abc6c6a77e	سامانه
+ng-fa-abcd912f33	هر خط
+ng-fa-abe2ebd651	هر متن
+ng-fa-abf61a7e37	که جواب
+ng-fa-abfd7c94bc	برای گوینده
+ng-fa-ac1c605179	شماره‌ی نظام پزشکی
+ng-fa-ac255e6c08	قبول
+ng-fa-ac26e96e39	فهرست کنترل پیش از
+ng-fa-ac2ae82003	بخواه
+ng-fa-ac2dfd7b9f	اگر چیزی
+ng-fa-ac36c6571b	خبرنامه‌ی
+ng-fa-ac3b424ea6	به گزارش روابط
+ng-fa-ac40037efb	بزرگ
+ng-fa-ac432e812f	واژه‌نامه
+ng-fa-ac5cd0328d	ریزمتن رابط
+ng-fa-ac6d994bee	رنگش
+ng-fa-ac6ef56678	تخفیف روی
+ng-fa-ac6f69c680	همان‌جا
+ng-fa-ac7c2db074	عکس واقعی
+ng-fa-ac80356127	پیام اصلی
+ng-fa-aca47679b1	بدهد
+ng-fa-acacfd2345	کافی نیست
+ng-fa-acb8233600	هر اسلاید یک
+ng-fa-acc6e7a75b	داده‌ی شخصی
+ng-fa-acda710940	دو میلیون و پانصد
+ng-fa-acff565a19	خورده
+ng-fa-ad03c65880	نظرسنجی
+ng-fa-ad069f807b	کامل در
+ng-fa-ad16ee731a	استفاده
+ng-fa-ad1beac9d9	ساعت ارسال
+ng-fa-ad21cd896b	پاتوس
+ng-fa-ad2ea7f45a	می‌تواند
+ng-fa-ad31d332d5	صنایع
+ng-fa-ad4528a2a5	بلاغی
+ng-fa-ad5e7c1dbc	اقتصاد
+ng-fa-ad66d691bd	از بریف
+ng-fa-ad67616c45	یعنی تا
+ng-fa-ad95560277	را ببیند
+ng-fa-adb3f8b0f0	بیاید و
+ng-fa-adb4600129	آزمودن
+ng-fa-adbe6aadd4	مشتری واقعی
+ng-fa-adcf3dc440	ارائه‌ی
+ng-fa-add7856a41	شرم
+ng-fa-adf6864f54	تمرین
+ng-fa-ae23a81d13	تأییدشده
+ng-fa-ae247d9c09	جمله‌ی
+ng-fa-ae2cf02df2	آزمایشگاه
+ng-fa-ae32e57dbc	هتل
+ng-fa-ae33f2f7fe	مایکت
+ng-fa-ae4a10e551	نام را
+ng-fa-ae4f76918c	شیوه‌های
+ng-fa-ae50d7d43d	تازه‌ای
+ng-fa-ae5fe8b458	کتری
+ng-fa-ae698a86ec	جست‌وجوی نام برند
+ng-fa-ae6e0ee46e	کهنه
+ng-fa-ae70bdadc4	را جواب
+ng-fa-ae7f2d861c	بار با
+ng-fa-ae8d82e5c2	و ابزار
+ng-fa-aea480fdd5	توصیه
+ng-fa-aec930c2bc	و پانصد هزار تومان
+ng-fa-aee2b8ffd4	توصیفی
+ng-fa-aee69f1272	فیلد
+ng-fa-aef360a829	کدام مرحله
+ng-fa-aef86e28e0	در صنعت
+ng-fa-af001db99a	ادعا را
+ng-fa-af185c51d9	واژه از
+ng-fa-af1a8f2307	هر ایمیل
+ng-fa-af202d51d5	بهتر است
+ng-fa-af2211a151	بی‌آزمون
+ng-fa-af2f6b1e71	خونه
+ng-fa-af3b770458	دامنه
+ng-fa-af430c9f42	جایگاه و
+ng-fa-af4a9f7517	فارسی را
+ng-fa-af7470e2ec	پولش
+ng-fa-af7b2aa9cb	سلامت
+ng-fa-af7c1cfe2d	دنبال
+ng-fa-af8dd56060	پرسش‌های پرتکرار
+ng-fa-af99bb3cca	نویسه‌ها
+ng-fa-afa28cbf0a	تسهیل‌گر
+ng-fa-afa410347c	مقایسه‌ی
+ng-fa-afad501151	فرق می‌کند
+ng-fa-afb7a157b0	می‌رسد که
+ng-fa-afba4d747b	شیرینی
+ng-fa-afd293e175	خاموش
+ng-fa-afd74224a7	پنجره
+ng-fa-afeeeabd05	منو
+ng-fa-b00e34baec	تاریخ بررسی
+ng-fa-b0215010c8	یک اشتباه
+ng-fa-b045638f10	داده
+ng-fa-b049d41a42	نادرست
+ng-fa-b04f6f0130	و انتظار
+ng-fa-b051643e5d	نتیجه
+ng-fa-b051c3cc4d	شواهد
+ng-fa-b064a19b7f	سرتیتر
+ng-fa-b06dd4b86a	از زبان خودش
+ng-fa-b07daf4108	در کد
+ng-fa-b083e54d02	حساسیت‌زا
+ng-fa-b0a6275c14	کروشه بگذار
+ng-fa-b0adf523e4	پرسش‌نامه
+ng-fa-b0bdf65ae9	در قفسه‌ی کتاب
+ng-fa-b0c793079c	پرچم قرمز
+ng-fa-b0c97dd906	مبلغ و
+ng-fa-b0d6e903e5	در متن آگهی
+ng-fa-b0e2057585	هر بخش
+ng-fa-b0edbba5dd	می‌داند و
+ng-fa-b0fa11d1c4	ما در
+ng-fa-b10f134f83	از اول
+ng-fa-b1117b9bdb	نوشتنی
+ng-fa-b121f0e402	آورد
+ng-fa-b12f8a6dc8	اعتماد را خرج
+ng-fa-b134a9c432	یوتیوب و آپارات
+ng-fa-b142b5e344	بقچه
+ng-fa-b1438dd2ba	باز کن که
+ng-fa-b14dde81b7	حرکت
+ng-fa-b1563cbeda	فقط اگر پنل
+ng-fa-b1575e7042	در نسخه‌ی گوینده
+ng-fa-b1602f3784	عینا از
+ng-fa-b17d3fad1f	موضوع ایمیل
+ng-fa-b18c645b61	دانشجو
+ng-fa-b191b7e792	در مصاحبه
+ng-fa-b19a744907	فضای مجازی
+ng-fa-b1a433eb13	تمام شود
+ng-fa-b1a8d0f1b3	متغیرها
+ng-fa-b1c6211512	بیش از
+ng-fa-b1dbe4cf26	می‌خواهد بداند
+ng-fa-b1df195a91	گردشگری
+ng-fa-b1e0f4e6f0	آدم می‌نویسد
+ng-fa-b1ee1482bc	بعد از باز
+ng-fa-b1f67f81bc	چیزی عوض
+ng-fa-b2044c6d46	تصمیم را
+ng-fa-b207d5f84d	دو جمله‌ی
+ng-fa-b210364128	دفترچه
+ng-fa-b22524ad26	زیرساخت
+ng-fa-b230cd4adc	رسید
+ng-fa-b24e938525	بار باز
+ng-fa-b25b520ef3	فردا صبح
+ng-fa-b27afa91e1	هستم و
+ng-fa-b27efa73b9	تا دوازده
+ng-fa-b281bafa16	آزمون کور
+ng-fa-b2953ec588	بگیرید
+ng-fa-b2987fef3b	عوض شد
+ng-fa-b2c6ba7122	از رقیب
+ng-fa-b2e3aa8b1a	چه کسانی
+ng-fa-b2ed56d9a3	برای مشتری
+ng-fa-b2ef8f607a	نمی‌خورد
+ng-fa-b2f58cf151	تپسل
+ng-fa-b323972a9b	در یک متن
+ng-fa-b335d59a2b	نرسیده
+ng-fa-b345401c00	بگویند
+ng-fa-b3486e1bcb	گزینه‌ها
+ng-fa-b348d2f11a	پیام خدماتی
+ng-fa-b34a01c86b	این بار
+ng-fa-b356148823	سبد
+ng-fa-b35822893d	کوچک‌تر
+ng-fa-b384e070ab	حس را
+ng-fa-b3a0b7c511	فروشگاه‌های
+ng-fa-b3d9bcd63d	از نو
+ng-fa-b3efe09979	از ماشین
+ng-fa-b4008bb066	در کدام
+ng-fa-b4016c3ba7	داده‌ی
+ng-fa-b41d961f25	مقدم
+ng-fa-b41e03ccc4	فهرست مواد
+ng-fa-b43255a918	از کجا می‌آید
+ng-fa-b44aaaf8b1	غیرمنتظره
+ng-fa-b44f69510e	ایمیل به خبرنگار
+ng-fa-b456046471	جست‌وجو
+ng-fa-b4583ae91d	خودتان
+ng-fa-b46d1d9d9b	بلندتر
+ng-fa-b47b40fa16	ابلاغ
+ng-fa-b48555b02a	لحن
+ng-fa-b48c48ec24	دو پاره
+ng-fa-b49bae4008	قالب
+ng-fa-b4ab6d9896	طول
+ng-fa-b4b63f281b	مشاور
+ng-fa-b4bb121521	برگه‌ی
+ng-fa-b4d769baae	را کامل
+ng-fa-b4e44e4ef5	روبیکا
+ng-fa-b50953219d	پیاپی
+ng-fa-b51dc354c9	از تیم
+ng-fa-b525dfaff4	رایگان است
+ng-fa-b53c171ccd	داد
+ng-fa-b541218319	چالدینی
+ng-fa-b554601d73	یک کار
+ng-fa-b55a5aee52	اسکرول
+ng-fa-b562aebd17	مالک
+ng-fa-b576ea9b8d	مشتری با اجازه
+ng-fa-b57eb8232f	به همه
+ng-fa-b58055c52d	مستقیم
+ng-fa-b58496a21f	بیانیه‌ی مأموریت
+ng-fa-b590c6ed7d	عدد و شرط
+ng-fa-b5928ce7a6	حضرت
+ng-fa-b59bf071bb	چه می‌کنید
+ng-fa-b5a1feef1f	چطور
+ng-fa-b5a4ee71e7	سوار
+ng-fa-b5b1a91bf6	روشن کن
+ng-fa-b5b2eb597a	بانک
+ng-fa-b5c8e47a1d	معنا داشته
+ng-fa-b5cc6ebed6	هرگز در
+ng-fa-b5ea74ed73	کلید
+ng-fa-b5fd655913	عمیق
+ng-fa-b6115cc3d7	در پادکست
+ng-fa-b61935ee96	برچسب تبلیغ
+ng-fa-b621238502	با دست
+ng-fa-b63839fcdd	و هزینه‌ی
+ng-fa-b6449aa0eb	هشدار
+ng-fa-b646aea97c	تحویل
+ng-fa-b649a5eb03	اگر پنل
+ng-fa-b6524c5fcc	تب
+ng-fa-b65958b5b1	ریزمتن
+ng-fa-b66d54f09a	در قفسه‌ی
+ng-fa-b674434f44	فنجان
+ng-fa-b69378587e	این آدم
+ng-fa-b6b3c339dc	رایج
+ng-fa-b6dbf2b8cb	تا پایان
+ng-fa-b727a9ff26	دار و
+ng-fa-b728422d93	سرفصل
+ng-fa-b73c04993e	حساب پاره‌ها
+ng-fa-b74fee2494	عدد با
+ng-fa-b76d47dc89	نمودار
+ng-fa-b79046d317	با تاریخ و
+ng-fa-b79b59ec22	راوی
+ng-fa-b7ad9b382c	جای کار
+ng-fa-b7af1589fa	صفر تا
+ng-fa-b7c4c4814c	از انتشار تأیید شود
+ng-fa-b7cde4035c	عربی
+ng-fa-b7e8c71078	تهیه
+ng-fa-b7fc2b7cee	ممکن
+ng-fa-b7fefb5181	می‌برد
+ng-fa-b7ffa66f96	را تکرار
+ng-fa-b8177d602d	پرسش واقعی
+ng-fa-b827372dfc	لطفا
+ng-fa-b82fb9cfc9	قفسه‌ی کتاب
+ng-fa-b834614fb2	درس
+ng-fa-b83fb32cad	سن و
+ng-fa-b862d22c7f	نمی‌گیرد
+ng-fa-b862f6664a	ترافیک
+ng-fa-b89e92e8c6	صوتی
+ng-fa-b8a823dbbd	با واحد
+ng-fa-b8c0259932	برای برندی که
+ng-fa-b8d65f0f1f	بی‌آنکه
+ng-fa-b8d9ddebd5	شرح
+ng-fa-b8e3e5d799	گروهی
+ng-fa-b8ef9857f7	ایمیل یا
+ng-fa-b91074bd73	معلوم است
+ng-fa-b919c48490	سازمان
+ng-fa-b92917d9ec	برمی‌دارد
+ng-fa-b92d019cfc	املای لاتین
+ng-fa-b94792826f	عکس و
+ng-fa-b965333806	دل
+ng-fa-b968066567	سناریو
+ng-fa-b97934e143	لوگوس
+ng-fa-b97b8693d0	عرضه
+ng-fa-b98a16bbaa	طبق
+ng-fa-b98a80faf9	کپی‌رایتینگ
+ng-fa-b99f85124c	بله و
+ng-fa-b9c9b57096	به کار می‌برد
+ng-fa-b9d1d980fb	حکم
+ng-fa-b9d2976685	تبلیغ خلاف
+ng-fa-b9d2dacd17	پیچ‌دک
+ng-fa-b9dd7b78ee	الف
+ng-fa-b9e487a606	هزینه‌ی
+ng-fa-b9e8301a0a	جایگاه
+ng-fa-b9f513ab13	بساز
+ng-fa-b9f8a07b58	مقایسه کن
+ng-fa-b9f959a0f4	خانواده‌ی
+ng-fa-ba14f775cd	متن را
+ng-fa-ba153a6c67	جدا برای هر
+ng-fa-ba29d6eecd	در پایان
+ng-fa-ba33824a87	تبلیغ در کانال
+ng-fa-ba42159995	نویسنده‌ی
+ng-fa-ba4fccdf48	برای تبلیغ
+ng-fa-ba4ff82fab	جواب بدهد
+ng-fa-ba51482933	از سند رسمی
+ng-fa-ba5f5c94ae	هم‌زمان
+ng-fa-ba71713b6e	معلوم شود
+ng-fa-ba77f5bc83	دانستن
+ng-fa-bac7b027b1	با نام و
+ng-fa-baee2034e5	پیداست
+ng-fa-bb0605964d	برند خوراکی
+ng-fa-bb2b42cb8a	ماه‌ها
+ng-fa-bb2c4a4c78	فروردین
+ng-fa-bb41285544	یک تبلیغاتچی
+ng-fa-bb4318178a	یادداشت داخلی بنویس
+ng-fa-bb67cc9667	امیدواریم حالتان
+ng-fa-bb7a51c817	گره
+ng-fa-bbae41993f	اپراتور
+ng-fa-bbc0b52e42	روز
+ng-fa-bbc650247d	نیمه
+ng-fa-bbda9c5795	انسانی
+ng-fa-bbf62d94fe	برای کسب‌وکار
+ng-fa-bc01d74a5a	جایگزینی
+ng-fa-bc15a0f41c	پیام
+ng-fa-bc20170947	بقیه را
+ng-fa-bc2d908c52	اعتماد را خرج می‌کند
+ng-fa-bc32914385	دو جمله
+ng-fa-bc3b877826	برای چه کسی
+ng-fa-bc520ca551	پیامک تبلیغاتی
+ng-fa-bc5bfd25b1	همان موضوع
+ng-fa-bc5f2dadaf	چه چیزی
+ng-fa-bc6e8c2181	فرق
+ng-fa-bc78350ad0	خرداد
+ng-fa-bc7ec6b95e	چیزی که
+ng-fa-bc886e9fa2	کارمزد
+ng-fa-bc8cc73326	و زمان
+ng-fa-bca34325d9	دوزبانه
+ng-fa-bca6ed46ed	میانگین
+ng-fa-bcc7244b06	شرایط استفاده
+ng-fa-bcc7c662c3	چه حالی
+ng-fa-bccac95360	دونقطه
+ng-fa-bce74ef4a0	که خودت
+ng-fa-bd0648087b	و زیرساخت
+ng-fa-bd091a88bb	حد
+ng-fa-bd1c4a9b35	زمان تحویل
+ng-fa-bd2399f8a3	گرفت
+ng-fa-bd2c9e26d2	به کار می‌آید
+ng-fa-bd2d52ae95	چیزی است
+ng-fa-bd2d65392f	هر مرحله
+ng-fa-bd32ae1401	فرضی
+ng-fa-bd3d6eca2c	رفتن به درگاه
+ng-fa-bd4e19a759	نمونه‌ی آموزشی ساختگی
+ng-fa-bd708a140a	بشکن
+ng-fa-bd7c8a07ab	بندهای
+ng-fa-bd8a9d6f42	گفت‌وگویی
+ng-fa-bd8bf06ab5	و رضایت
+ng-fa-bda3db6d56	ترتیب
+ng-fa-bdbd8e2462	صحنه
+ng-fa-bdf1cf7377	دیوار و شیپور
+ng-fa-bdf22c74ca	به یاد
+ng-fa-bdf4dd73b4	فهرست سیاه
+ng-fa-bdfd656e80	مترو
+ng-fa-bdff293ea9	کار را
+ng-fa-be0164d162	طول جمله
+ng-fa-be0b4dc6fd	بررسی
+ng-fa-be1899331a	پستی
+ng-fa-be1baca246	نام درگاه
+ng-fa-be224684d9	حریم
+ng-fa-be3867bb87	قصه
+ng-fa-be47d47c9c	خواننده‌ی عجول
+ng-fa-be48e9caa4	بلد
+ng-fa-be60e1b1c0	کشیده
+ng-fa-be6a67bf2c	همان پروفایل
+ng-fa-be78e394be	جایی که رقیب بهتر
+ng-fa-be8bd10b2c	خط تیره
+ng-fa-bebb038ac6	چند روز
+ng-fa-bec1d65977	اصلی
+ng-fa-bece138f49	کسی می‌خواند
+ng-fa-bedb28c12d	داده‌ی مشتری
+ng-fa-bedc46b59a	از آن چه برمی‌دارد
+ng-fa-bef044b275	را کوتاه
+ng-fa-bef3317c3e	در یادداشت داخلی
+ng-fa-bf03fedd07	کار است
+ng-fa-bf04d9a99a	خواننده به
+ng-fa-bf0e20e0cf	صفحه
+ng-fa-bf12a820d8	بالای صفحه
+ng-fa-bf1b2cdc10	ادعا یا
+ng-fa-bf2eb460ff	پله‌ی
+ng-fa-bf2fce4336	شهادت امام
+ng-fa-bf4a4f74c9	در سایت
+ng-fa-bf5b20bd37	مربوط
+ng-fa-bf6dd49825	آخر ماه
+ng-fa-bf709653df	نشوند
+ng-fa-bf74291661	نمی‌خواند
+ng-fa-bf7d2a8228	کسی است
+ng-fa-bfa3eb450a	باسلام
+ng-fa-bfb3a0d03b	حساب کن
+ng-fa-bfb43b2cd8	فنی
+ng-fa-bfb4942be8	برنامه
+ng-fa-bfbdbfd483	سقف‌ها
+ng-fa-bfbf8ef421	ایده‌ها
+ng-fa-bfc1929302	ویدیو و
+ng-fa-bfcaa73b3b	عوض می‌کند
+ng-fa-bfcc46d4ec	در پروفایل
+ng-fa-bfd0930111	از اولین
+ng-fa-bfd6fc58d3	دارم
+ng-fa-bff6474807	دلیلش
+ng-fa-bff654687a	فن
+ng-fa-c01246cb88	بگو
+ng-fa-c01d1ec90a	نشانه‌های متن ماشینی
+ng-fa-c02abc12c7	بریدن
+ng-fa-c03ea866f2	سکوت
+ng-fa-c04d2fbecb	الگوی ماشینی
+ng-fa-c059fc3b9d	متوقف
+ng-fa-c0677c4794	کروشه است
+ng-fa-c06a340482	از چهار
+ng-fa-c07e3d52d3	کلیشه
+ng-fa-c081921f97	از کجا
+ng-fa-c0924b4874	تگ‌لاین
+ng-fa-c09fa95b2e	و بعدش
+ng-fa-c0b71180ce	تبعیض
+ng-fa-c0ba8494b9	و گرمی
+ng-fa-c0d67a8ec6	خوردن
+ng-fa-c0e7bab423	با صدای
+ng-fa-c0ea372031	جمله
+ng-fa-c0fbf23c93	به تیم
+ng-fa-c114690865	شبکه‌ی
+ng-fa-c121f962c7	بنر
+ng-fa-c122e953f3	فایل زبان
+ng-fa-c1318d3792	پیدا نشد
+ng-fa-c1430e8105	هرچه
+ng-fa-c155fb3d13	پرسش خواننده
+ng-fa-c1611cd6df	معدن و
+ng-fa-c1961662e0	بدانم
+ng-fa-c19edfceb4	اسلاید یک
+ng-fa-c1a5101ae6	ویزیت
+ng-fa-c1b5582a2f	اجازه‌ی نوشته
+ng-fa-c1bb3dca49	با هوش مصنوعی
+ng-fa-c1c2f25075	دانلود
+ng-fa-c1cde7fea2	گاهی
+ng-fa-c1cfb911dd	بینه و
+ng-fa-c1d281b7e9	دو بار
+ng-fa-c1ee4f0821	توشه
+ng-fa-c1f169144c	بزند
+ng-fa-c1ffbafbe2	بی‌جواب
+ng-fa-c20cb86b63	هر چیزی
+ng-fa-c22525c52e	اکنون
+ng-fa-c2293f5e74	می‌پزد
+ng-fa-c235f52053	داری
+ng-fa-c2476c0f84	مقیاس
+ng-fa-c25ae5ed72	و یادداشت
+ng-fa-c26587faa0	را در یک
+ng-fa-c267c9bb25	چند نفر
+ng-fa-c274296536	دو پرسش
+ng-fa-c274b0a8ae	نوار
+ng-fa-c280ab1c4f	بالا
+ng-fa-c28a7df4a9	بعد از خواندن
+ng-fa-c29af737e3	ویزا
+ng-fa-c2a13bea0b	یک صحنه
+ng-fa-c2a767c501	این‌طوری
+ng-fa-c2ce806314	به درد
+ng-fa-c2e6f8c804	صفحه‌ی محصول
+ng-fa-c2eb454117	بی‌ربط
+ng-fa-c2ebd4f5f4	معنا دارد
+ng-fa-c2faf77c00	جوابی
+ng-fa-c313454bf1	اجرای
+ng-fa-c31725216b	را پاک
+ng-fa-c32abec442	حساب
+ng-fa-c33322f601	بیت
+ng-fa-c3355c9702	با فهرست
+ng-fa-c336320bb3	را به
+ng-fa-c3579e2e9a	خودش معنا داشته
+ng-fa-c3749d9a70	الگوی تاریک
+ng-fa-c37686dd62	چاپ
+ng-fa-c3815ba4da	تیترها
+ng-fa-c386ba698b	طعم
+ng-fa-c3876c482c	ماشین و
+ng-fa-c390fbcfb5	بسته‌ی رسانه
+ng-fa-c397474bfc	ندارد
+ng-fa-c39850097e	بی‌عارضه
+ng-fa-c39856819c	بی‌شاهد است
+ng-fa-c39f08e9fc	صفت عالی
+ng-fa-c3a6dd2929	سازمانی
+ng-fa-c3a9950e33	بساز که
+ng-fa-c3c135fd66	امکان
+ng-fa-c3c68cde51	مقاله‌های
+ng-fa-c3ca6a766d	می‌ماند و
+ng-fa-c3eb00b58a	منشی
+ng-fa-c3f32ba14d	دوم است
+ng-fa-c40ba4f738	مدرک
+ng-fa-c41180a740	برندها
+ng-fa-c417a122ed	نشر
+ng-fa-c41db0265d	آگهی را
+ng-fa-c44501cd61	را روشن کن
+ng-fa-c449d856aa	به
+ng-fa-c44b1c4cf4	با دلیلی
+ng-fa-c462a2d6ea	تغییر
+ng-fa-c46cd4f46f	پرشده
+ng-fa-c47cafae69	این جدول
+ng-fa-c47ce321eb	ایجنت
+ng-fa-c48e139cfa	تمدید
+ng-fa-c492709c35	جدا و
+ng-fa-c4989772c0	حداکثر یک
+ng-fa-c4abee8433	کن یا
+ng-fa-c4bb07426c	بیست و
+ng-fa-c4c2b3b2a4	برده
+ng-fa-c4c8fae055	توضیح محصول
+ng-fa-c4cc72ff1d	با دو
+ng-fa-c4e2c46440	برند است
+ng-fa-c4e517bb14	که کار
+ng-fa-c4e86a854d	روز کاری
+ng-fa-c4f0f1dd1d	می‌کنی
+ng-fa-c500992227	سنتی
+ng-fa-c5034b5226	رسمیت
+ng-fa-c505daf76b	بدنه
+ng-fa-c515209eee	امروز
+ng-fa-c523910aa3	کار می‌کنند
+ng-fa-c53c1ce8fb	یا نام
+ng-fa-c546f4e5f2	تعداد
+ng-fa-c5492fb4d0	قالب‌بندی
+ng-fa-c571314d90	کنترل ادعا
+ng-fa-c5851073bc	و شماره‌ی
+ng-fa-c585e5fe51	کاری بکند
+ng-fa-c5899f1556	متن نهایی
+ng-fa-c5a11b2ee1	نام مشتری
+ng-fa-c5aca90446	قلاب
+ng-fa-c5b099dd82	صفحه‌ی
+ng-fa-c5b9789d44	و کوتاه
+ng-fa-c5c73b6da8	می‌کنم
+ng-fa-c5cb512faf	بی‌رنگ
+ng-fa-c5d30ff6c3	اگر پروفایل
+ng-fa-c5d9b0625b	تاریخچه
+ng-fa-c5de297680	بشمار
+ng-fa-c5e3983237	عکس محصول
+ng-fa-c5e62f1aa0	آدم یا کارگاه
+ng-fa-c5faf24ffc	را بگیر
+ng-fa-c605ed06dc	از دل
+ng-fa-c60713d3eb	چیز
+ng-fa-c60e141d1d	عمدی
+ng-fa-c6110cb3bd	با واقعیت
+ng-fa-c61c8f2dfa	راست
+ng-fa-c6275c9751	نمونه‌ی
+ng-fa-c62f1f28ed	کارجو
+ng-fa-c63ba22a96	کاور
+ng-fa-c641705513	شماست
+ng-fa-c6488fc4ce	متن واقعی
+ng-fa-c65508b847	یا کارگاه
+ng-fa-c66692580e	از این دو
+ng-fa-c68b3d8824	که متن
+ng-fa-c690277332	متن فارسی
+ng-fa-c69c577da3	تازه‌ی
+ng-fa-c6a3a7ed78	پیش از انتشار
+ng-fa-c6c65d8f74	با لحن
+ng-fa-c6cce6f33d	رفتن به
+ng-fa-c6ced7f4ee	املایی
+ng-fa-c6cfe47c0d	ویرگول
+ng-fa-c6e80d6a98	عینا
+ng-fa-c6f2bdf7dd	روزی که
+ng-fa-c6f30ac7ef	با بررسی
+ng-fa-c6f4caa95a	معمولی
+ng-fa-c6f5b97fad	سرمایه‌گذاری
+ng-fa-c6f5ce7325	مردم
+ng-fa-c7103bae6c	برگردد
+ng-fa-c71f107768	دیگر به
+ng-fa-c720c8beea	سطح
+ng-fa-c726692ff5	خوراکی و
+ng-fa-c72a531c06	بعضی
+ng-fa-c74569d236	که هر روز
+ng-fa-c74ea34778	حالوا
+ng-fa-c751683328	به تومان
+ng-fa-c773414723	اعلام همکاری
+ng-fa-c784f68902	ایراد
+ng-fa-c79405698c	بس است
+ng-fa-c79835039e	یک سال
+ng-fa-c7c97dd35c	بریف
+ng-fa-c7d1374746	ضبط
+ng-fa-c7dc538142	شبکه‌ی اجتماعی
+ng-fa-c7e70c4f24	نسخه‌ی بایگانی
+ng-fa-c7ed080e2e	هفت
+ng-fa-c7ee1f57b1	به ترتیب مقدار
+ng-fa-c8070d3bfd	دهان
+ng-fa-c83acf38a3	دو تا
+ng-fa-c84f96b228	فارسی به
+ng-fa-c859103bbf	در کپی
+ng-fa-c864d8f549	هرگز
+ng-fa-c8753e5087	پرسونا
+ng-fa-c87f8d208a	این سه
+ng-fa-c89a4b0148	یک جدول
+ng-fa-c8a4eb58a4	را پروفایل
+ng-fa-c8a6111ace	از وسط
+ng-fa-c8b1ee5851	انواع
+ng-fa-c8bf672304	را بخوان
+ng-fa-c8c57f6435	استخدام
+ng-fa-c8dc16ba8e	جای آن
+ng-fa-c8e4d3c03c	قانون هوش
+ng-fa-c8f96d220f	متر
+ng-fa-c900fe8ea9	عدد را
+ng-fa-c90dfedb6b	بار یک
+ng-fa-c914cf7305	واژه‌هایی
+ng-fa-c91acf9953	جمله در
+ng-fa-c92b701bf5	خشک
+ng-fa-c938004334	خودت
+ng-fa-c93a0e18dc	را نشان می‌دهد
+ng-fa-c96d44b94b	و دکمه
+ng-fa-c96e2da25f	گران
+ng-fa-c97185c2fd	بررسی شده‌اند
+ng-fa-c977c1b7a4	تجربه‌ی
+ng-fa-c991461d90	پیام‌رسان
+ng-fa-c9a4850594	اصلاح
+ng-fa-c9a5366f3e	قبل از اینکه
+ng-fa-c9c605543a	می‌خواهم
+ng-fa-c9f2b5b5c3	ستون‌ها
+ng-fa-ca09bb03a1	برنامه‌نویس است
+ng-fa-ca1e8e974a	ماده‌ی
+ng-fa-ca28b61df1	خانم
+ng-fa-ca31adb083	به خاطر
+ng-fa-ca49f9ae23	شدن
+ng-fa-ca53be03aa	پیوست
+ng-fa-ca56c52f2c	الگوی
+ng-fa-ca644d8cce	نام‌گذاری
+ng-fa-ca73c8aa53	کار مشتری
+ng-fa-ca78c9d7c5	کاتالوگ
+ng-fa-ca932d15e0	کار می‌کند
+ng-fa-caa3caa381	قدم
+ng-fa-cabbf2e17e	با زبان
+ng-fa-cacccde21c	سخنرانی
+ng-fa-cad0078890	حجم
+ng-fa-cad88ccbb8	کنجکاوی
+ng-fa-cadbce927d	چالش
+ng-fa-cb160a4175	تیم
+ng-fa-cb17f85759	تولیدکننده
+ng-fa-cb2310cff0	صحنه‌ای
+ng-fa-cb2a4170c0	متفاوت
+ng-fa-cb3363bb13	پرسش و پاسخ
+ng-fa-cb3638a00a	تکی
+ng-fa-cb39363255	آبی
+ng-fa-cb4089f6e7	سرد
+ng-fa-cb47de58fc	آخر پیام
+ng-fa-cb5091fc0b	نیم‌فاصله
+ng-fa-cb50fcc05e	داخلی
+ng-fa-cb57cdb528	یک شکل
+ng-fa-cb5b112615	پیام را
+ng-fa-cb5c91299b	می‌خواهم بدانم
+ng-fa-cb84dab75b	پزشکی و
+ng-fa-cb897992e1	نمی‌شود و
+ng-fa-cba135f7d2	را خرج
+ng-fa-cbc74b89af	پاسخ
+ng-fa-cbc78da56f	قوس قصه
+ng-fa-cbcab9a9a6	سه نفر
+ng-fa-cbcc8e901b	در ویدیو و صدا
+ng-fa-cbd8d172c1	نگه دار
+ng-fa-cbda38f7c6	موارد
+ng-fa-cbddb723b3	ویدیو و صدا
+ng-fa-cbde1db25b	پیامک در
+ng-fa-cbf5e69ec8	جلد
+ng-fa-cbfda6e2b9	خمیر
+ng-fa-cc115016ad	روند
+ng-fa-cc12fc3805	پروفایل
+ng-fa-cc140af01e	اعتراف‌های یک
+ng-fa-cc198537b2	خود محصول
+ng-fa-cc27fb1c10	تقویم
+ng-fa-cc3d352b45	جداساز
+ng-fa-cc5209f3be	اگر نمی‌دانی
+ng-fa-cc564d2726	ماست
+ng-fa-cc9a02eb09	پیام بازاریابی
+ng-fa-cc9b50dfcf	یک محصول
+ng-fa-ccb0fcc17c	نام برند در
+ng-fa-ccb39f1cca	سقف و
+ng-fa-ccba4f994d	بداند
+ng-fa-ccc8bd40f9	جعبه
+ng-fa-ccd00cbfd7	نمایه‌ی
+ng-fa-ccd9af7c12	و جا
+ng-fa-ccdd460971	کاربردی
+ng-fa-cce195700b	ارتباطات
+ng-fa-cced60c388	می‌گویند
+ng-fa-cceedb3691	ویرایش کن
+ng-fa-ccf01b8f93	فایل
+ng-fa-ccff48da4d	بدنه‌ی
+ng-fa-cd072a0a1a	به دست
+ng-fa-cd080faaf5	خط
+ng-fa-cd1c24c642	توجه
+ng-fa-cd369cce7c	دیگران
+ng-fa-cd3b218e2e	تغییرات
+ng-fa-cd418d527b	و احتیاط
+ng-fa-cd478a3c50	منفی
+ng-fa-cd4ac671dd	اضافه کن
+ng-fa-cd53c5d568	بازتعریف
+ng-fa-cd60c6c47c	گذاشته
+ng-fa-cd69d00945	اگر لازم است
+ng-fa-cd83dce395	سبز
+ng-fa-cd8664a338	خلاقیت در
+ng-fa-cd8e97e6b6	پنج تا
+ng-fa-cd97b99f97	درمی‌آید
+ng-fa-cda70b3a7f	بی‌صدا
+ng-fa-cda7f733b7	سازنده
+ng-fa-cdbfd8ddd8	پیش از ارسال
+ng-fa-cdc37b90a3	دقیق
+ng-fa-cdc8782be7	ممنوع است
+ng-fa-cdce8ba245	بزرگ لاتین
+ng-fa-cdd62207a2	گرفته می‌شود
+ng-fa-cdd9237f1c	هزینه‌ی ارسال
+ng-fa-cdefbf25bc	سازمان بورس
+ng-fa-cdf4db4699	یک شب
+ng-fa-cdf4fd887b	اثبات
+ng-fa-cdf7d25da6	عجله
+ng-fa-ce1b09e1de	قمری
+ng-fa-ce296e8448	هر کدام با
+ng-fa-ce309cc84d	مطب
+ng-fa-ce3d29b878	و چاپ
+ng-fa-ce3ffcf4aa	اول کار
+ng-fa-ce40c724cb	املا
+ng-fa-ce43e3e68c	یک لحظه‌ی
+ng-fa-ce4569d6ed	در منو
+ng-fa-ce5ef19bb9	بلند
+ng-fa-ce71ce3733	را انجام می‌دهد
+ng-fa-ce71ce633d	اپل
+ng-fa-ce799f927c	برای خواننده‌ی
+ng-fa-ce79d8a27a	شبکه‌های
+ng-fa-ce895ae472	عدد با منبع
+ng-fa-cea7a6af6b	نداریم
+ng-fa-ceaa4783d2	اپ حسابداری
+ng-fa-cec33c419d	سردبیر
+ng-fa-cec65f920a	یک ایمیل
+ng-fa-ced2bbd832	بنویسم
+ng-fa-ceda320dce	شماره
+ng-fa-cedd80710f	نشد
+ng-fa-cee2927f06	بریتانیایی
+ng-fa-cef5f7eabf	برچسب‌های
+ng-fa-cf13117be8	ننویس
+ng-fa-cf38657bfa	نگه داشته
+ng-fa-cf4fa5d4d1	شاخص و
+ng-fa-cf62292f16	یک عنوان
+ng-fa-cf7435d8b7	جا
+ng-fa-cf856b3231	برش
+ng-fa-cfa283ee97	نتیجه‌ی
+ng-fa-cfb8862f11	برگشته
+ng-fa-cfbd15889c	دست‌باف
+ng-fa-cfd71e88c0	چند بار
+ng-fa-cfe81e4c63	را می‌گیرد
+ng-fa-cfebba81c6	رو
+ng-fa-d0018adfdf	ایکس
+ng-fa-d0064943c2	مرز
+ng-fa-d00b02ae9a	ستون‌های
+ng-fa-d00b355a9d	محصولی
+ng-fa-d043663ed3	از آگهی
+ng-fa-d05487706c	در پژوهش
+ng-fa-d05e58d953	جمعی
+ng-fa-d05fe40b3d	بند
+ng-fa-d06597e637	خالی و انتظار
+ng-fa-d06c363bad	مثلا
+ng-fa-d072d8d894	کادر
+ng-fa-d086a1636c	تحریم
+ng-fa-d0923eebfa	هم می‌گوید
+ng-fa-d09e298fdb	نه می‌گوییم
+ng-fa-d0a2478bd0	صفحه‌های وب
+ng-fa-d0a919df24	تصمیم می‌گیرد
+ng-fa-d0b01cd7db	قطعی
+ng-fa-d0b1e05d48	افزایش
+ng-fa-d0b793c0ad	اگر نام
+ng-fa-d0c04aaf01	خواننده خودش
+ng-fa-d0cb34001c	می‌پختن
+ng-fa-d0e2df233f	شناسه
+ng-fa-d0ea3a2ce9	نمی‌رود
+ng-fa-d0ec4c3e2c	طبیعت
+ng-fa-d0f40d8fad	اتوس
+ng-fa-d0fede84f0	با دقیقه
+ng-fa-d103dd2b37	کاربر
+ng-fa-d10fc165f0	الان
+ng-fa-d1131dd623	جا دارد
+ng-fa-d1178e3280	انگشت
+ng-fa-d120088720	به مشتری
+ng-fa-d12d62561f	یک زمان
+ng-fa-d12f3bb312	قانونی
+ng-fa-d142f28eab	واژه‌های
+ng-fa-d154155377	انتشار تأیید شود
+ng-fa-d16602a8a2	واژه‌ی
+ng-fa-d16dd77320	اهمیت
+ng-fa-d1a48ca1a6	پیام و
+ng-fa-d1a750375d	شکایت
+ng-fa-d1a860c861	سه ثانیه‌ی
+ng-fa-d1c8bc3552	مقایسه با
+ng-fa-d1d398e66d	با رقیب
+ng-fa-d208471e2c	کلیدواژه
+ng-fa-d21dcfc21b	قبل
+ng-fa-d22e8b385a	فهرست
+ng-fa-d249f4e942	بیدار
+ng-fa-d24b14975d	مال
+ng-fa-d25348b91c	توزیع
+ng-fa-d2577304c6	پیش‌رو
+ng-fa-d25c461847	شعبان
+ng-fa-d29603e521	شاید
+ng-fa-d2a4e69bcb	کانال‌ها
+ng-fa-d2a61724ad	را بپرس
+ng-fa-d2b50c45d4	پیام به
+ng-fa-d2b7d53869	با کار
+ng-fa-d2bbce8f0f	بندها
+ng-fa-d2df362b4f	مصرف
+ng-fa-d2e90996e0	بزرگ‌ترین
+ng-fa-d2f8b40415	عددها
+ng-fa-d2fe8661c9	واتس‌اپ کسب‌وکار
+ng-fa-d30cb87b3b	تعداد کاربر
+ng-fa-d342a86366	کد تخفیف
+ng-fa-d34a06a6e3	فقط اگر پنل یا
+ng-fa-d34dd5de21	می‌دهم
+ng-fa-d352a4f695	بی‌شاهد
+ng-fa-d35c39d832	بگذارد
+ng-fa-d35c82cbe9	زیرش
+ng-fa-d3633eb638	دعوت به
+ng-fa-d372547642	دیگری
+ng-fa-d37302401b	نکته‌ی
+ng-fa-d37c265073	نهاد ناظر
+ng-fa-d396e878f9	مشتری چه
+ng-fa-d39e5586df	قاعده‌های
+ng-fa-d3aa7b19b8	پرتکرار
+ng-fa-d3ad7959dd	عددی
+ng-fa-d3b3ec9937	در جست‌وجو
+ng-fa-d3bd572e63	سازمان غذا و
+ng-fa-d3be70cef5	را پنهان
+ng-fa-d3db56c532	کنترل پیش
+ng-fa-d3db993ac6	فرآورده
+ng-fa-d3dffd9c97	لو
+ng-fa-d3f76ab692	ناقص
+ng-fa-d3f870eb06	شش دسته
+ng-fa-d3fa7813e4	از نوشتن
+ng-fa-d400ae2fbc	تومان است
+ng-fa-d4133e6809	تکرار می‌شود
+ng-fa-d4221fb3a4	نگرانی
+ng-fa-d43caedf7f	واحد
+ng-fa-d444556b4b	از کجا آمده
+ng-fa-d454566615	خواننده است
+ng-fa-d469c68e30	قصه‌ی مشتری
+ng-fa-d47799e19d	طراحی
+ng-fa-d47b159571	وضع
+ng-fa-d4ab9f9b87	در دو
+ng-fa-d4b48f602a	اطلاعیه
+ng-fa-d4c8fb02d5	آموزشگاه
+ng-fa-d4dfb4563e	خریدار
+ng-fa-d4dfd5a699	اسم
+ng-fa-d4e9e88b01	یک پیام
+ng-fa-d4f775a376	و خطاب
+ng-fa-d5149c18bb	بخوانید
+ng-fa-d51ef12869	به درگاه
+ng-fa-d5283bd24b	در تیتر
+ng-fa-d52cfd0057	ساخته شده و
+ng-fa-d54667fe9e	رفتند
+ng-fa-d555e2d6d5	هفته‌ای
+ng-fa-d5641716a2	داخلش
+ng-fa-d573bf0f28	بی‌شرط
+ng-fa-d58ddfaaae	جمله‌های
+ng-fa-d59c72595e	فهرستی
+ng-fa-d5a7cae332	بحث
+ng-fa-d5c685cd30	خیابان
+ng-fa-d5d4f4f558	مشکوک
+ng-fa-d5da2f33e9	کی می‌رسد
+ng-fa-d5db59744c	که باز
+ng-fa-d5de6e4a3f	می‌مانند
+ng-fa-d5ed337f90	قهوه
+ng-fa-d5f7b53a71	بالاتر
+ng-fa-d60ed171b2	با کلمات
+ng-fa-d61b1a4618	مربا
+ng-fa-d623aa610f	ثابت است
+ng-fa-d62ce57caa	اسلاید
+ng-fa-d62f6c5611	گذاشت
+ng-fa-d64d177200	گفته‌ی
+ng-fa-d66dd33910	فضای
+ng-fa-d67215990e	بایت است
+ng-fa-d672fed96b	پیگیری سفارش
+ng-fa-d67b106fa9	فیلدی
+ng-fa-d67c7d995c	خلاصه
+ng-fa-d68a61b8b6	سه قاعده
+ng-fa-d6f1b8ed05	رمز
+ng-fa-d70814fc54	رگولاتوری
+ng-fa-d7164a7516	وقتی می‌آید
+ng-fa-d722a37d82	می‌دهد
+ng-fa-d73f1c0f72	یا پرسش
+ng-fa-d74177aed5	در برابر
+ng-fa-d776a2710b	کردیم
+ng-fa-d77b43229f	انتظار
+ng-fa-d7815134f7	را درست
+ng-fa-d7876e17bc	به گزارش روابط عمومی
+ng-fa-d79f1c7916	به دو
+ng-fa-d7bdd27c70	حالت
+ng-fa-d7c633276a	تأمین مالی جمعی
+ng-fa-d7ccd98130	چیز مشخص
+ng-fa-d7e9645c3a	استان
+ng-fa-d7ef4eb5c1	به بالا
+ng-fa-d7f33761f3	به‌علاوه‌ی
+ng-fa-d7f9582583	هر کدام
+ng-fa-d8065cc9a2	متن تبلیغ
+ng-fa-d822b0d626	کس
+ng-fa-d82a4c9478	محصول یا
+ng-fa-d82d3e63ba	متن است
+ng-fa-d83bb57d3a	نام یا نقش
+ng-fa-d84076c7c6	محله
+ng-fa-d844f932be	تابلو
+ng-fa-d847c3f221	خواننده چیزی
+ng-fa-d849f9af0d	سازمان غذا
+ng-fa-d84f65fc9c	می‌گیرند
+ng-fa-d851bf2605	انجام شد
+ng-fa-d85ebcc49f	موسیقی
+ng-fa-d85f8eddfe	بی‌مجوز
+ng-fa-d8693f03d2	سه بار
+ng-fa-d86b740f20	فروشنده‌ی
+ng-fa-d870f94586	کم‌رنگ
+ng-fa-d8c608bb11	و حریم
+ng-fa-d8d134d00d	را به کسی
+ng-fa-d8e2aedd8f	آماده است
+ng-fa-d8ef10218a	مفهوم
+ng-fa-d9016b48cb	فروخته
+ng-fa-d9101611aa	داشبورد
+ng-fa-d9148c16f2	مورد
+ng-fa-d915445d50	فوت کوزه‌گری
+ng-fa-d9251f1cb7	که در آن
+ng-fa-d92f6a85fd	چه چیزی را
+ng-fa-d953cf2acf	حساس است
+ng-fa-d96e7d9544	کنار این فایل
+ng-fa-d9717ee135	نام و
+ng-fa-d980034c59	منتشر شود
+ng-fa-d982dc88b7	ایتا
+ng-fa-d985dd40ee	و سقف
+ng-fa-d9a2d8b3f0	رادیو
+ng-fa-d9b0aacebc	سه ماه
+ng-fa-d9b8e2d16c	خدمت پزشکی
+ng-fa-d9c32fbcea	وزن و
+ng-fa-d9cf0c1cea	سکوی
+ng-fa-d9d64eea1a	کروشه می‌ماند
+ng-fa-d9d738b68a	آموزش و
+ng-fa-d9d882847f	بخرد
+ng-fa-d9da2fb9ea	کالبدشکافی
+ng-fa-d9e9e36c52	چیز را
+ng-fa-d9ed6e9844	به نظر می‌رسد
+ng-fa-da1f10e9a4	جلوی
+ng-fa-da505bfdde	و قیمت
+ng-fa-da5ea8df6c	به نظر
+ng-fa-da5f63eeb6	احترام به
+ng-fa-da6615cb1c	رقیب را
+ng-fa-da7c75ba43	ایمیل را
+ng-fa-da7f40afa8	شماره‌ی کارت
+ng-fa-da913f1ecd	رسیدن به
+ng-fa-daa3dfe490	کانال‌های
+ng-fa-daa9125ff0	مجازی
+ng-fa-dab04095bc	می‌رسد
+ng-fa-dab21b757b	دو نسخه‌ای
+ng-fa-dab47d5f74	تبلیغی در
+ng-fa-dabe5a324c	فرایند
+ng-fa-dac019e138	خودرو
+ng-fa-dadf1a1f3a	دفترچه‌ی صنعت‌ها
+ng-fa-dae80e9630	ادعا
+ng-fa-daeaf76fa3	نوشت
+ng-fa-daede571d1	در سند
+ng-fa-daffcf7553	بگویی
+ng-fa-db0ae71f4d	ثانیه‌ی
+ng-fa-db0dd8f065	عمدا
+ng-fa-db0ddc42a7	بازار را
+ng-fa-db1c4ef419	عید فطر
+ng-fa-db1e6fd9ee	اصلی و
+ng-fa-db1ecf5251	می‌خرد
+ng-fa-db3ba62805	دوست
+ng-fa-db3c7f8b41	با یک خط
+ng-fa-db5a514838	لبخند
+ng-fa-db774eba7f	زمان
+ng-fa-db7a030c36	صدها
+ng-fa-db803eeb90	و جای
+ng-fa-db82236f5e	یا متن
+ng-fa-dbb9dabe80	مدل
+ng-fa-dbd1cc0e19	استراتژی
+ng-fa-dbe14d5fea	نام کلینیک
+ng-fa-dbe5fae680	یک صدا
+ng-fa-dbf32a0305	را عوض
+ng-fa-dc0781c1ac	جمله نه
+ng-fa-dc07fbeebb	از دنیای خود
+ng-fa-dc0a0f398f	روی اسلاید
+ng-fa-dc0e75b36f	بار دوم
+ng-fa-dc178feb24	عدد و
+ng-fa-dc191cc118	روش
+ng-fa-dc1de17f31	می‌فروشد
+ng-fa-dc23820edc	به‌خاطر
+ng-fa-dc40ef0b77	در خبر
+ng-fa-dc44d863cd	موتور گفتار
+ng-fa-dc4fdfcc94	شرط لغو
+ng-fa-dc515c8ac8	فرآورده‌ی سلامت‌محور
+ng-fa-dc58836992	خاک
+ng-fa-dc73087067	شروع شود
+ng-fa-dc7a2cd7f9	می‌شوند
+ng-fa-dc8d38d061	کمتر
+ng-fa-dc8f91a34c	نقل‌قول
+ng-fa-dc90b88321	نباید
+ng-fa-dc983d630a	نگذار
+ng-fa-dc98b14b54	دوباره
+ng-fa-dca4462224	خواننده‌ی
+ng-fa-dcaf5285b9	پله‌ی اول
+ng-fa-dcb9d5ab0a	پیام‌رسان‌های
+ng-fa-dcbc432285	دو را
+ng-fa-dcd235582d	به زبان
+ng-fa-dcd25b34df	می‌پرسد
+ng-fa-dcd9d14c3c	جایی
+ng-fa-dcdc23b4ec	املاک
+ng-fa-dce04a5925	و متن
+ng-fa-dce42e5e08	تمام می‌شود
+ng-fa-dce9796c17	دو
+ng-fa-dcefdd49bd	مطالعه‌ی
+ng-fa-dd0321e204	منوی
+ng-fa-dd11eba7ec	چیزی در
+ng-fa-dd36b118d1	کار مشخصی
+ng-fa-dd383cf884	اعتراض‌های
+ng-fa-dd39ba9cf6	یک کانال
+ng-fa-dd3b42f6e7	ضعف
+ng-fa-dd636747a2	از کجا آمده و
+ng-fa-dd6b1af259	بالای
+ng-fa-dd6b8159b5	بزنید
+ng-fa-dd825d30ef	هر عدد و
+ng-fa-dd87315b2e	رتبه‌ی
+ng-fa-dd8a423717	را باز کن
+ng-fa-dd9e0122cf	با ابزار
+ng-fa-dda1744647	همه در
+ng-fa-ddaddf1f0a	جور
+ng-fa-ddb893a216	و از کجا
+ng-fa-ddbe601eff	کسره‌ی اضافه
+ng-fa-ddc15fc8e8	تکراری
+ng-fa-ddf553fac3	فعلی
+ng-fa-ddf5c2f01c	به گفته‌ی
+ng-fa-ddf6963caf	تأخیر
+ng-fa-de05dac8e4	و رقم
+ng-fa-de1a79444b	خواننده بداند
+ng-fa-de29ca8711	دکتر
+ng-fa-de30d13091	ماه بعد
+ng-fa-de4c9478fd	واقعی بودن
+ng-fa-de521797ae	استعاره‌ی
+ng-fa-de601865ff	عنوان و توضیح
+ng-fa-de6650c2e0	پروپوزال
+ng-fa-de81452173	و درمانی
+ng-fa-deb643bb13	را می‌دهد
+ng-fa-dec357464f	لاتین
+ng-fa-ded084e4c3	که مشتری
+ng-fa-ded9cbda38	خواننده را
+ng-fa-dee37c3877	مقاله را
+ng-fa-def372408a	قرار
+ng-fa-df07aa91ed	راه رسیدن
+ng-fa-df0d13e2e0	ماده
+ng-fa-df10723813	تمرکز
+ng-fa-df11971591	لید
+ng-fa-df11ea8069	منبع دارد
+ng-fa-df13acdfdb	فهرست پرسش
+ng-fa-df14cd09f3	جمله‌ی فارسی
+ng-fa-df1756db66	مشخصات
+ng-fa-df19023919	الگو
+ng-fa-df20a0f241	و چیزی
+ng-fa-df26869eb8	شعار و
+ng-fa-df29f0f3e9	می‌گذاریم
+ng-fa-df3a0ff335	انجام نشد
+ng-fa-df481c5768	ابزار هوش مصنوعی
+ng-fa-df4e5b65ad	بزرگ‌تر
+ng-fa-df4eb609f4	تاریخ تولید
+ng-fa-df5edcd21f	نیامده
+ng-fa-df75acd7f4	خودش می‌گوید
+ng-fa-df7a366738	رابطه
+ng-fa-df8d1095bc	معنادار
+ng-fa-df8feb82e1	قبل و
+ng-fa-df9349bf6b	درستش کن
+ng-fa-df955a4f30	تأخیر و
+ng-fa-dfb75f39a5	به آدم
+ng-fa-dfb80db2a3	عنوان و
+ng-fa-dfc10ceb68	جمله‌ی کوتاه
+ng-fa-dfe286145f	سفارشی
+ng-fa-dfe7dc5937	از مصاحبه
+ng-fa-dfefe347d1	تجارت الکترونیکی
+ng-fa-e0154bf8fb	در آگهی
+ng-fa-e01fed6015	کسی که از
+ng-fa-e024c20101	نشسته
+ng-fa-e037de0f50	اگر واقعی
+ng-fa-e039e2f209	تازه است
+ng-fa-e059c06477	به شرطی که
+ng-fa-e06389c990	تا چهار
+ng-fa-e076a78420	ذی‌نفعان
+ng-fa-e08d71c16b	شنونده
+ng-fa-e09254ee35	بوتاکس
+ng-fa-e09d4d1a65	حالتان
+ng-fa-e09f91e842	کمی
+ng-fa-e0ac9f4a6c	تقریبا
+ng-fa-e0b107b2d4	آزمونش
+ng-fa-e0b321aeff	آگاهانه
+ng-fa-e0d5cd85e2	پیامک خدماتی
+ng-fa-e0d725544e	قیمت قبلی
+ng-fa-e0d74dd6e6	جواب
+ng-fa-e0dccf8805	قول
+ng-fa-e0dd13bdee	اداری
+ng-fa-e0efbee622	از جایی
+ng-fa-e0f1ee0f02	تضاد
+ng-fa-e100db3d7a	لازم است و
+ng-fa-e103d2424f	در انگلیسی
+ng-fa-e103edf4cd	جدی
+ng-fa-e104d49375	مقررات
+ng-fa-e110dab921	تکرار نمی‌کند
+ng-fa-e111312b0e	یک قاعده
+ng-fa-e121fe585a	اعلام
+ng-fa-e12c5b6708	از جلسه‌ی
+ng-fa-e156b6c8d9	قالب‌ها
+ng-fa-e15abb3d11	و پاسخ
+ng-fa-e175d81bf6	پولیتزی
+ng-fa-e179eaa4cd	نوشتاری روان
+ng-fa-e17a9379de	کپشن
+ng-fa-e18648bcfe	با رقم
+ng-fa-e191444486	خانه
+ng-fa-e193787fa6	عمومی
+ng-fa-e1b9da75d9	عصر
+ng-fa-e1c0fad196	فرهنگ
+ng-fa-e1e706e7d1	انگار
+ng-fa-e1f5714138	برای برندی
+ng-fa-e1fafe73a1	سه
+ng-fa-e22c294497	مربی
+ng-fa-e22d4461e0	جذب
+ng-fa-e24051a5a6	با قیمت
+ng-fa-e24258d99f	مکمل
+ng-fa-e253d13dc0	خواندنی
+ng-fa-e254361182	قصه است
+ng-fa-e258e1be6a	نده
+ng-fa-e26ddd6f43	کارمند
+ng-fa-e273b0d9c1	بردار و
+ng-fa-e273b6548d	در تیم
+ng-fa-e283d0bf58	باید به
+ng-fa-e28cd2f95a	اجازه‌اش
+ng-fa-e291e09d4f	هنر
+ng-fa-e2956c4bd6	دو یا
+ng-fa-e295ecb638	فرمان
+ng-fa-e295ffa6ec	هر حال
+ng-fa-e2ac2be9b5	می‌پذیرد
+ng-fa-e2bffbd8d6	یک تا سه
+ng-fa-e2c65b482b	ساعت کار
+ng-fa-e2ef7db5b2	معرفی شرکت
+ng-fa-e2f2fbc167	محیط
+ng-fa-e3132f0f6c	را بگو
+ng-fa-e323508524	زنده
+ng-fa-e328a4e6e7	تا ده
+ng-fa-e332a4f3b1	ندارد یا
+ng-fa-e33606f01b	شبکه‌ها
+ng-fa-e343307af9	عددی که
+ng-fa-e347abb2c6	و کجا
+ng-fa-e34a8565db	طب سنتی
+ng-fa-e34b9025ba	است و به
+ng-fa-e375f14a08	خدماتی
+ng-fa-e3783be5c5	در یک
+ng-fa-e37b2a1045	خود عکس
+ng-fa-e387adffb1	کاری را
+ng-fa-e3d323bb22	و قلاب
+ng-fa-e3d702e7cd	مترجم
+ng-fa-e3e34af5e6	سبک
+ng-fa-e3e42896c0	و اعتماد
+ng-fa-e40b2167ce	و روز
+ng-fa-e41073d14d	شیشه
+ng-fa-e41f6f811a	نمره
+ng-fa-e42bd1b14d	خبر را
+ng-fa-e42c1a9be7	برای هرکدام یک
+ng-fa-e43a4f1073	حفاظت
+ng-fa-e43c1dea47	با کلمات خود
+ng-fa-e451618646	زندگی
+ng-fa-e46a6f8530	به آن
+ng-fa-e46e858151	اضافه می‌شود
+ng-fa-e475d06345	فقط متن
+ng-fa-e47fea725b	آخرین
+ng-fa-e48080ffa5	آگهی است
+ng-fa-e482a1cae0	گروه‌ها
+ng-fa-e4a7c5d35e	آمریکایی
+ng-fa-e4afd8e9bb	الزام
+ng-fa-e4d18cb46a	از سه
+ng-fa-e4df52dd16	بازه‌ی
+ng-fa-e4e5c351c4	دامنه‌ی
+ng-fa-e4ffa68d6e	به کل
+ng-fa-e50ab55f5d	جابینجا
+ng-fa-e50d3d9300	برای متن
+ng-fa-e518c0b27b	شرایط
+ng-fa-e52bec3162	اجرا می‌شود
+ng-fa-e52c6a09b9	در کپشن
+ng-fa-e54688d6b9	نامعلوم
+ng-fa-e557659d70	وارونه
+ng-fa-e568b00b6f	با کارت
+ng-fa-e56df29ad9	نثر فارسی
+ng-fa-e571fb2356	سنجش
+ng-fa-e58bfaa96a	ویراستار
+ng-fa-e596d4c7d8	سفر
+ng-fa-e5a3ca90ca	غلط است
+ng-fa-e5a7389ef1	صندوق
+ng-fa-e5ae58c1c5	عملی
+ng-fa-e5c46b7010	و حالا
+ng-fa-e5c81b64a1	شمرده می‌شود
+ng-fa-e5cafb11fd	صداقت
+ng-fa-e5ce44f20c	خود ویدیو
+ng-fa-e5d98233d9	پروژه
+ng-fa-e5fe8acf5d	در فریم
+ng-fa-e603af4a0a	را بزنید
+ng-fa-e608c781a2	توان
+ng-fa-e6192f2aef	بازی
+ng-fa-e620c5a37f	شروع می‌شود و
+ng-fa-e64fb946a7	نمی‌زند
+ng-fa-e6727c753d	دیوار
+ng-fa-e67a10277a	خوانده شود
+ng-fa-e69fc85055	مسئولیت
+ng-fa-e6a7dc985d	شرطی که
+ng-fa-e6b45a600a	مشخص و
+ng-fa-e6b7e42693	دو واژه
+ng-fa-e6b8358331	اخلاق
+ng-fa-e6b855b1f0	و وعده‌ی
+ng-fa-e6c30f00fc	در قیمت
+ng-fa-e6d1eb01c4	پایه‌ی
+ng-fa-e6d32e8244	رایگان
+ng-fa-e6e7189e4a	جریمه‌ی
+ng-fa-e6ee9e7180	و پروفایل
+ng-fa-e6f0eac133	رسانه‌های
+ng-fa-e709e88714	نداری
+ng-fa-e7392329f1	بیلبورد
+ng-fa-e74020893d	کامل باشد
+ng-fa-e74edd2b3f	کشش
+ng-fa-e754fcca1a	به صفحه‌ی
+ng-fa-e766701e96	مهارت مشخص
+ng-fa-e775954af8	در پیام
+ng-fa-e77d6aab5a	تماس
+ng-fa-e78f81872b	طول می‌کشد
+ng-fa-e78ff42f1f	ویدیو را
+ng-fa-e791e9b90a	را وقتی باز کن
+ng-fa-e798d26eca	دسته‌بندی
+ng-fa-e7afa7fe12	تطبیق
+ng-fa-e7b4efd520	عکس فرضی
+ng-fa-e7bbd05b18	یک نفر
+ng-fa-e7d07d410c	نسبت به
+ng-fa-e7f189538b	گزارش
+ng-fa-e7f52d727c	یا کار
+ng-fa-e80c951aa5	دو میلیون و
+ng-fa-e815fd78a6	محصولات
+ng-fa-e82214e0ea	خبرنگار
+ng-fa-e8254fbb57	و طنز
+ng-fa-e83cf532bf	خطاب
+ng-fa-e840bf1aaf	نظر مشتری
+ng-fa-e85ffac808	دو متن
+ng-fa-e8626bffa5	گذشته
+ng-fa-e863c1a098	شماره‌ی تلفن
+ng-fa-e87119ddd4	خودش معنا داشته باشد
+ng-fa-e88baa88c3	رقم فارسی
+ng-fa-e89d32ff3e	اختیاری
+ng-fa-e8b631e198	نرم‌افزاری
+ng-fa-e8b67f3d02	فرض‌ها
+ng-fa-e8cf9b34f6	وضعیت
+ng-fa-e8e3b5f5f0	صفحه‌ی اصلی
+ng-fa-e91798ce4b	و شکایت
+ng-fa-e91af2aa94	می‌نشیند
+ng-fa-e92288a93b	کروشه‌ی
+ng-fa-e9293f39da	نامش
+ng-fa-e92ca9342b	خانوم‌های
+ng-fa-e92ed4b42d	نام شرکت
+ng-fa-e93d7ec694	سالم
+ng-fa-e9403c1d23	دقت
+ng-fa-e94f391bee	قلاب اول
+ng-fa-e95064c305	واقعی با
+ng-fa-e9536d9017	فرق دارد
+ng-fa-e97b01a9eb	پیامک
+ng-fa-e98c03e388	صفحه‌ای که
+ng-fa-e990aed88f	نویسه
+ng-fa-e993c2bf11	بازه‌ی زمانی
+ng-fa-e999ad19fd	پررنگ
+ng-fa-e9ae274591	امیدواریم حالتان خوب باشد
+ng-fa-e9b0a898bc	نگه‌داری
+ng-fa-e9dbfd2460	می‌خوانند
+ng-fa-e9e0cc7de3	که واقعا
+ng-fa-e9f1026d99	بازش
+ng-fa-e9feef93f3	بیرون از جمله
+ng-fa-ea062caa0d	روی خط
+ng-fa-ea0a87d669	تبلیغات
+ng-fa-ea1a1f89e0	چه کاری
+ng-fa-ea330de109	مأموریت
+ng-fa-ea4c058599	نام فارسی
+ng-fa-ea4f56972e	اگر متن
+ng-fa-ea56e83f5a	کشور
+ng-fa-ea64941ce6	نمی‌نویسد
+ng-fa-ea6bbfa36e	و واحد
+ng-fa-ea895b7957	به‌زودی
+ng-fa-eaab6d0738	متن محصول
+ng-fa-eab75a67c0	توخالی
+ng-fa-eab850be7d	خوانده می‌شود
+ng-fa-eabe1292ee	کانال
+ng-fa-eabe739a5f	دقیقا چه
+ng-fa-eacb186082	قرار است
+ng-fa-eace86a5e1	انبار
+ng-fa-ead2a3864d	تازه را
+ng-fa-eadc81b427	تبلیغ برای
+ng-fa-eae66f5c6c	تزریق
+ng-fa-eaeda17aa7	زیرنویس
+ng-fa-eb0128e7a8	خدمت
+ng-fa-eb0dae24f5	معیار
+ng-fa-eb1577d292	وکیل
+ng-fa-eb2028abbe	اجازه‌ی
+ng-fa-eb318129f4	کنکور
+ng-fa-eb412831ca	با هوش
+ng-fa-eb44b3343b	که خواننده
+ng-fa-eb473e59ac	مرکزی
+ng-fa-eb5f558c90	آن آمده
+ng-fa-eb88176a80	سناریوی
+ng-fa-eb93371f4f	فروشگاه
+ng-fa-eb9d386734	آسان
+ng-fa-ebb68c82ec	می‌داند
+ng-fa-ebd2b4b5a8	جلسه
+ng-fa-ebdc4fd114	حروف
+ng-fa-ebe29c6ac5	خرده‌روایت
+ng-fa-ebe2f37378	متن کامل
+ng-fa-ec057b94fb	کفش
+ng-fa-ec079a4420	تلفن گویا
+ng-fa-ec0a60c671	به همین ترتیب
+ng-fa-ec0cfa7279	روز در
+ng-fa-ec15c9022e	حدس نزن
+ng-fa-ec1dff6cdf	حدودی
+ng-fa-ec231685e2	خرابی
+ng-fa-ec2f1cd91d	اگر خودش
+ng-fa-ec3dba2c7d	دید
+ng-fa-ec41e983c3	فناوری
+ng-fa-ec47efb443	ایده‌ای که
+ng-fa-ec54914b38	کل
+ng-fa-ec57cce9ed	بازه
+ng-fa-ec5cbf9a63	این جمله
+ng-fa-ec6b36c4e2	مرجوعی
+ng-fa-ec7b16a96c	بیاورید
+ng-fa-ec956ba046	خواننده
+ng-fa-ecacfe2e93	می‌رسد و
+ng-fa-ecacffb4c6	غربال
+ng-fa-ecaec017ff	آش
+ng-fa-ece674d604	می‌دهند
+ng-fa-ecea78d2a0	برندی
+ng-fa-eceb4ef614	قدرت
+ng-fa-ecf84ac87b	این فایل را
+ng-fa-ecfed7c0dd	زیرتیتر
+ng-fa-ed0833296c	جلسه‌ی اول رایگان
+ng-fa-ed20d63c6b	برای نام
+ng-fa-ed273a2e00	بی‌اجازه
+ng-fa-ed2f80bcbb	متن کوتاه یک
+ng-fa-ed499288aa	راه لغو
+ng-fa-ed4f7395bb	و مجوز
+ng-fa-ed5e977451	مرحله‌ی
+ng-fa-ed6a4ddbdb	جدول خطر
+ng-fa-ed70e9e698	بایستد
+ng-fa-ed86faf091	در همان
+ng-fa-edb53d21a0	هفته‌ی بعد
+ng-fa-edc48713c3	دکمه
+ng-fa-edd0a9bf6f	پادکست و
+ng-fa-ede5a95d3b	فرود
+ng-fa-ededc694e3	کوچک است
+ng-fa-edf2c8a55c	فصل
+ng-fa-edf9505047	دستیار
+ng-fa-ee10afeae7	تازه و
+ng-fa-ee1fc1a7bb	هجا
+ng-fa-ee2f423e3d	با شرط
+ng-fa-ee3333c9dd	نمی‌آید
+ng-fa-ee3955ca86	با اجازه‌اش
+ng-fa-ee456b90bf	پرسش است
+ng-fa-ee5f9fff01	جزئیات غیرمنتظره
+ng-fa-ee6ce42f1a	سابقه‌ی
+ng-fa-ee6f662147	اول پیش
+ng-fa-ee718b2bdc	حافظه
+ng-fa-ee74a7d0b4	عدد بی‌منبع
+ng-fa-ee9ed326c1	از ساعت کاری
+ng-fa-eea0530a25	زیرعنوان
+ng-fa-eeaa16594d	و نتیجه
+ng-fa-eeb7007031	نمی‌رسد
+ng-fa-eebd6b51fc	افزودن
+ng-fa-eebe62f8bb	با شماره‌ی
+ng-fa-eed12b2f94	جواب بده
+ng-fa-eed32f5595	معدن و تجارت
+ng-fa-eedd152701	اردیبهشت
+ng-fa-eedf378b83	فاکتورها
+ng-fa-eef6b72803	تا جایی
+ng-fa-ef0054ffbe	بدترین
+ng-fa-ef19ef1344	بافت
+ng-fa-ef1ed887e6	بوی یخچال
+ng-fa-ef2c25aa4f	در جمله‌ی
+ng-fa-ef3057865e	اینترنت
+ng-fa-ef3abcb338	میزبان
+ng-fa-ef43710b16	سوم
+ng-fa-ef44477836	فروش و
+ng-fa-ef56050327	متن حقوقی
+ng-fa-ef6e33d156	با سال‌ها
+ng-fa-ef9316f2f2	متن را با
+ng-fa-efa775982d	نیازمندی
+ng-fa-efbb47add7	و مبلغ
+ng-fa-efd13330fc	این چیست
+ng-fa-eff3eb612d	بازدید
+ng-fa-eff9465784	کنید و
+ng-fa-f020715b47	تا سه
+ng-fa-f0254bd3f9	هیچ‌کدام
+ng-fa-f02e533724	جمع‌بندی
+ng-fa-f045fa6069	برداشته
+ng-fa-f05f17d0e4	در کانال
+ng-fa-f07a006bd2	مغایرت
+ng-fa-f0ac405a62	و در یادداشت داخلی
+ng-fa-f0ad58dfca	تومان
+ng-fa-f0be856fdc	معنا را
+ng-fa-f0d226edd8	سه ثانیه‌ی اول
+ng-fa-f0d533a7f6	سه چیز
+ng-fa-f0d6287a1a	قابل بررسی
+ng-fa-f0d923641e	خط تبلیغاتی
+ng-fa-f0eb584ec3	وقتی باز کن که
+ng-fa-f102b5314f	جای دیگر
+ng-fa-f110574e7e	گفت‌وگو
+ng-fa-f11105cd0c	طنز
+ng-fa-f11e1db47e	خواننده بعد از
+ng-fa-f126300778	اینستاگرام
+ng-fa-f1263eed9b	سایت و
+ng-fa-f1371282ed	دو نفر
+ng-fa-f13b919d51	در پرانتز
+ng-fa-f1630020b3	از خط
+ng-fa-f1812eb032	را وقتی باز
+ng-fa-f191936dd7	رشد
+ng-fa-f19a1014d2	آغاز و
+ng-fa-f1a18273ac	گوشی
+ng-fa-f1a7151ae4	مناسبت
+ng-fa-f1ca68e930	تخفیف و
+ng-fa-f1e40ab444	سانتی‌متر
+ng-fa-f2004df46d	نظر می‌رسد
+ng-fa-f2244d1b10	فارسی و لاتین
+ng-fa-f2244f4004	امضای
+ng-fa-f229553f84	افتاده
+ng-fa-f24c4c790c	متن دکمه
+ng-fa-f2579f12ab	را به کار
+ng-fa-f25f738573	تهرانی
+ng-fa-f262c181ae	نهایی را
+ng-fa-f264af3738	را چطور
+ng-fa-f27f676139	در فارسی
+ng-fa-f28373c692	آدم مشخص
+ng-fa-f2852efb03	نمی‌تواند
+ng-fa-f29d22f188	اندازه‌ی
+ng-fa-f2a66f68a5	باشند
+ng-fa-f2c18a8e54	با آدم
+ng-fa-f2c1e1d02b	فایلی
+ng-fa-f2cbbbdd5c	فید
+ng-fa-f2fc8d2fa6	یک متغیر
+ng-fa-f304888aac	تعارف
+ng-fa-f34272f15e	مدیریت
+ng-fa-f35fefb21a	کوتاه‌ترین
+ng-fa-f37d9b3ebd	پنج دقیقه
+ng-fa-f39eb7eac8	برای کدام
+ng-fa-f3a1cdbe25	گیاهی
+ng-fa-f3bab0d246	را انجام
+ng-fa-f3bb555fc0	نتیجه‌اش
+ng-fa-f3c6a3aa31	آزمون ساده
+ng-fa-f3cdd36b22	مبنا
+ng-fa-f3d2993d11	جدا برای
+ng-fa-f3decfd63d	آمده‌اند
+ng-fa-f3e560688c	جواب می‌دهد
+ng-fa-f3ed75ac01	مغازه‌ی
+ng-fa-f3f0e8a69c	تا دو
+ng-fa-f3f519f65e	نام خوراکی
+ng-fa-f3f8806b48	نمی‌شناسد
+ng-fa-f3f98578b1	واقعی را
+ng-fa-f422d7c3be	چیزی که در
+ng-fa-f424e3ce54	نشانه‌ی
+ng-fa-f43687e8d3	برای خواننده‌ای
+ng-fa-f45579752e	کسانی
+ng-fa-f45c736537	کارفرمای
+ng-fa-f4624da2d2	نکند
+ng-fa-f467374383	بیرون می‌آید
+ng-fa-f474b53884	هم در
+ng-fa-f4776e17c7	با عدد
+ng-fa-f483e1252d	آموختن از نویسنده‌ها
+ng-fa-f4858c3a69	با نقش
+ng-fa-f486acd819	این متن
+ng-fa-f48e10eb30	در فضای مجازی
+ng-fa-f4a53d27f6	کلیدی
+ng-fa-f4b352aa96	می‌شوند و
+ng-fa-f4ca85ace3	اعلام تخفیف
+ng-fa-f4ce7f076f	جدا می‌کند
+ng-fa-f4dfe346ab	تابستان
+ng-fa-f51f1d2fb2	دستور پخت
+ng-fa-f526b8a08b	بی‌صفت
+ng-fa-f563153934	داخل
+ng-fa-f567204365	می‌گوید
+ng-fa-f58213111e	در جمله‌ی فارسی
+ng-fa-f585517c38	نتیجه‌ای که
+ng-fa-f58997a475	روی کاغذ
+ng-fa-f5987c33fe	عدد و واحد
+ng-fa-f5b440524b	آماده
+ng-fa-f5ea4b23d3	وصل به آدم
+ng-fa-f5eea431b7	و حق
+ng-fa-f5f1fee377	بیست
+ng-fa-f60aaa0b29	نوروز
+ng-fa-f6299364f0	تنور
+ng-fa-f643651373	همان قاعده‌ی
+ng-fa-f643dea0f7	یادش
+ng-fa-f6448e874f	عرض
+ng-fa-f64d5ad2d7	و کد
+ng-fa-f655156e68	مستند
+ng-fa-f660369c41	برای کسی که
+ng-fa-f661faa3e4	فرهنگی
+ng-fa-f67136b4b8	حرف فارسی
+ng-fa-f673f96a1b	جعلی
+ng-fa-f67d8534b7	بانک مرکزی
+ng-fa-f6a20f7c54	قیمت تازه
+ng-fa-f6b35ceb1c	با ساعت
+ng-fa-f6c1968120	ادعاهای حساس
+ng-fa-f6c71d8997	سازمان نظام
+ng-fa-f6c7631c94	پیگیری
+ng-fa-f6ccbba0ad	می‌چیند
+ng-fa-f6ce70d785	پرهیز
+ng-fa-f6d24cb409	صفحه‌ی درباره‌ی
+ng-fa-f6db2bd2a2	یک کار مشخص
+ng-fa-f6e35773f1	گوینده
+ng-fa-f6f1b184e5	ثابت می‌ماند
+ng-fa-f71342a35c	از محصول
+ng-fa-f71475c0de	بی‌فاصله
+ng-fa-f7170e49b1	شهادت
+ng-fa-f72de5026c	برایتان
+ng-fa-f73aec466a	می‌زند
+ng-fa-f740d8a911	خبر بد
+ng-fa-f75da4453d	سنجش اثر
+ng-fa-f75f041420	ریز
+ng-fa-f7843b2471	می‌خواهی
+ng-fa-f784949593	هستید
+ng-fa-f78d50ba1b	در کانال‌ها
+ng-fa-f799097507	با سند
+ng-fa-f79d5cd596	برندی که
+ng-fa-f7a088ba71	اجتماعی
+ng-fa-f7ab2d9564	ریلز
+ng-fa-f7acec7053	در اقناع
+ng-fa-f7b83c83f2	اعراب
+ng-fa-f7bf8a1023	پیش از اولین
+ng-fa-f7ddff14b7	قیمت
+ng-fa-f7fa3adce8	دارای
+ng-fa-f8032309cc	واتس‌اپ
+ng-fa-f81a390150	زمان یا
+ng-fa-f81b17ac68	یوتیوب
+ng-fa-f82ccb4fd7	که آدم
+ng-fa-f836757bb5	می‌خواهید
+ng-fa-f840dbd022	فقط با اجازه‌ی
+ng-fa-f850d10223	کدام
+ng-fa-f85a5151e6	که در
+ng-fa-f85b20f165	زود
+ng-fa-f867f6149a	پشتش
+ng-fa-f868be2764	خلاقه
+ng-fa-f86cc695c6	صفحه‌ی فرود
+ng-fa-f889f6b95f	اعتبار
+ng-fa-f88f031c25	چوبی
+ng-fa-f8a2289770	هزینه
+ng-fa-f8b491cb4b	دستور
+ng-fa-f8c2d01ae1	سود
+ng-fa-f8c5e023fb	تنظیمات
+ng-fa-f8d3c4de0e	یک نام
+ng-fa-f8d5f559e2	می‌کنند
+ng-fa-f8dffd0901	آن چه برمی‌دارد
+ng-fa-f8e227daf7	بهتر از
+ng-fa-f8e917b7b8	از کارفرما
+ng-fa-f8ed2852a0	هم‌خوانی
+ng-fa-f901619e8a	جا یا
+ng-fa-f9167f08c3	را رد
+ng-fa-f91ff99a98	قالب و
+ng-fa-f924425285	در حد
+ng-fa-f9275ae4e4	بی‌شوخی
+ng-fa-f92825b7e4	کم است
+ng-fa-f93ed837c0	چرا کار می‌کند
+ng-fa-f94eea3b29	معنایش
+ng-fa-f94ff132a0	تلگرام و بله
+ng-fa-f95eaabf4e	می‌نویسد و
+ng-fa-f965d24039	این پوشه
+ng-fa-f96a9e4835	اثربخشی
+ng-fa-f97cd63662	چه چیزی عوض
+ng-fa-f987113832	راست‌به‌چپ
+ng-fa-f9b1f03a97	پروفایل آغاز
+ng-fa-f9b6663b15	کوچه
+ng-fa-f9c54c385f	مقاله‌ی
+ng-fa-f9c70bc4aa	دام
+ng-fa-f9eebc824d	منبع یا
+ng-fa-f9f6be1a21	روزمره
+ng-fa-f9fb34da88	و صدای
+ng-fa-f9fe594c49	مبلغی
+ng-fa-fa0197120c	انرژی‌زایی
+ng-fa-fa03cefff9	اعتماد را
+ng-fa-fa0fc84416	معلوم نیست
+ng-fa-fa174df2e8	این نسخه
+ng-fa-fa2b61ece8	احتیاط
+ng-fa-fa30ebba50	باید در
+ng-fa-fa3b1ade54	و تبلیغ
+ng-fa-fa3dea7bba	فقط جایی
+ng-fa-fa5d3b32f5	آگهی‌دهنده
+ng-fa-fa60db40b3	نشان داده
+ng-fa-fa620ebfa3	اول باید
+ng-fa-fa643046f7	آن‌قدر
+ng-fa-fa6ef487da	آخر را
+ng-fa-fa6fb79210	تفسیر
+ng-fa-fa766730e5	پزشکی و درمانی
+ng-fa-fa88c52a69	در پیامک
+ng-fa-fa958288c1	را روشن
+ng-fa-fa9b76560c	پرانتز
+ng-fa-fad0cf8c0b	ربات و
+ng-fa-fae004e6f7	نام
+ng-fa-fae18f0395	مشاهده‌شده
+ng-fa-faff499231	رد شود
+ng-fa-fb01a7e8d2	نویسه‌ای
+ng-fa-fb03994ff7	ترساندن
+ng-fa-fb056cd6b4	اکران
+ng-fa-fb0f61a74d	خبری
+ng-fa-fb2d8fb495	آدم یا
+ng-fa-fb31629ca8	زمان‌بندی
+ng-fa-fb463e4203	را می‌شناسد
+ng-fa-fb4928c846	مقدار
+ng-fa-fb5c56ce19	خصوصی
+ng-fa-fb62521599	و سال
+ng-fa-fb78157918	کلیک لینک
+ng-fa-fb7b296b72	تاریخ‌دار
+ng-fa-fb8ca669d7	شفافیت
+ng-fa-fb91315be8	دیده
+ng-fa-fb929beb0b	نفوذ
+ng-fa-fb974e5ca2	اگر جواب
+ng-fa-fb9b5e47fe	مشخصه
+ng-fa-fbae1963ec	نیت
+ng-fa-fbc23fcbee	کپی
+ng-fa-fbcb5fbf1f	کارت
+ng-fa-fbd38c0fd6	جایگاه‌یابی محصول
+ng-fa-fbd8d3b6d1	گارانتی و
+ng-fa-fbd9d53142	داده‌اند
+ng-fa-fbe87f5607	و صفحه‌ی
+ng-fa-fc01cf5e46	حالت خودکار
+ng-fa-fc10c3e145	و تجارت
+ng-fa-fc20cf5f5a	از ده
+ng-fa-fc2f7f1ced	به فهرست
+ng-fa-fc3153c5be	می‌شناسد
+ng-fa-fc4ce25c00	بین
+ng-fa-fc6e3f55f5	ببین
+ng-fa-fc6f5b0cf9	را پیدا
+ng-fa-fc79a05885	تجارت
+ng-fa-fc7c18b319	مارشال
+ng-fa-fc7e1e6b32	که سه
+ng-fa-fc7f2e7ee4	یک جمله که
+ng-fa-fc87cd832b	برای گوینده و
+ng-fa-fca82773b3	تبلیغ متوقف
+ng-fa-fcb0da0898	داشته باشد
+ng-fa-fcb9e641b5	و مشخصات
+ng-fa-fccbb633d7	خطی
+ng-fa-fcd38aeac0	در فهرست
+ng-fa-fcd641dff9	را از کجا
+ng-fa-fce3ae72cd	منبع و
+ng-fa-fce8593bfc	با شاهد
+ng-fa-fcf08bf190	هر بند
+ng-fa-fcf81b3aab	صبح زود
+ng-fa-fcffa54b4a	برگه‌ی استراتژی پیام
+ng-fa-fd25946be3	آورده
+ng-fa-fd3680c6eb	کلمه
+ng-fa-fd3a073d8d	قراردادهای
+ng-fa-fd449f35b9	خواننده‌ای که
+ng-fa-fd4a3e191a	بی‌جا
+ng-fa-fd4de90038	پیش‌نویس
+ng-fa-fd56fbd956	جوانه‌ی گندم
+ng-fa-fd5b4efdcf	بازنویسی
+ng-fa-fd6c753913	عجول
+ng-fa-fd74f0ab95	همان‌طور که
+ng-fa-fd7c5735d8	بینش
+ng-fa-fd8177f108	برنامه‌ی
+ng-fa-fd8bf50e9a	خودشان را
+ng-fa-fdc3e65f31	ماده‌ی حساسیت‌زا
+ng-fa-fde319f7c6	نام‌ها
+ng-fa-fdecadbb34	با کلمات خودش
+ng-fa-fdf7177a65	دیر
+ng-fa-fe02715944	برگزار
+ng-fa-fe04f76b14	پسوند
+ng-fa-fe0bcf9404	و جایش
+ng-fa-fe0bfc4e93	پختگی بازار
+ng-fa-fe0dcf9d9a	پیش از تحویل
+ng-fa-fe20746be3	فهرست کامل
+ng-fa-fe222f3237	اگر به
+ng-fa-fe240b21f2	عوض شود
+ng-fa-fe375ea875	میلیون
+ng-fa-fe3c200dfd	در قلاب‌ها
+ng-fa-fe3db8c0fc	آگاه از
+ng-fa-fe42dd57ca	تحریریه
+ng-fa-fe6a44ba01	وزارت صنعت
+ng-fa-fe7212debc	دری
+ng-fa-fe76424eb5	پیدا
+ng-fa-fe7e9d401b	خود مشتری
+ng-fa-fe8383eb3b	راضی
+ng-fa-fe9bccda6b	برمی‌آید
+ng-fa-fea6f93eb8	و نشانی
+ng-fa-feae1a5a16	برای این کار
+ng-fa-febb6aa99d	بهبود
+ng-fa-fecfd9745b	وابسته
+ng-fa-fed3c3d6da	همیشه
+ng-fa-fee3a7c051	سند رسمی
+ng-fa-ff083e4b01	ترجمه‌ای
+ng-fa-ff11287535	در خط
+ng-fa-ff1814fb1d	می‌آید
+ng-fa-ff1e796c42	می‌اندازد
+ng-fa-ff2122e096	بیرون می‌رود
+ng-fa-ff28421e92	فاصله
+ng-fa-ff2ed32755	آمد
+ng-fa-ff539127d4	در کروشه
+ng-fa-ff5709e0c7	مختلف
+ng-fa-ff779392d4	شماره‌ی نظام
+ng-fa-ff9531a78e	زمستان
+ng-fa-ff9b501712	بودنش
+ng-fa-ffa75289f2	رفتن
+ng-fa-ffae3dd35e	قصه از
+ng-fa-ffb4567b35	ندهد
+ng-fa-ffb8f41b02	معنا
+ng-fa-ffd0e13b84	هر آگهی
+ng-fa-ffe91c455a	نامرئی
+ng-fa-ffe9b2d911	چمدان
+ng-fa-ffe9d18a74	نمره‌ی
+ng-fa-ffef99bb56	را به هم
+ng-fa-fff77b2df7	بی‌پرسش

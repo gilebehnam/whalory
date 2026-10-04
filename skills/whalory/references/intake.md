@@ -1,5 +1,15 @@
 # Question gate
 
+## Intake for task contracts
+
+Resolve the selected [task contract](task-index.md) before asking questions. Reuse the request, files, thread, profile and facts already supplied. Fill task, operation, reader goal, language/variant, market, destination, materials, fact ledger, date/timezone, voice, risk, length, output capability and interaction state. Ask at most three questions that change the result; missing facts remain marked.
+
+Company credentials need real company/service/team facts and permitted work evidence, not passwords. A PRD needs observed problem and approved scope; an SOP needs actual steps and roles; a KPI report needs definitions, period, denominator and data; personnel feedback needs observed behavior and impact. Do not replace missing evidence with generic success claims.
+
+For rewrite, adapt, translate, review or export, obtain source text or locale strings. For UX files preserve the original nested keys and each key's placeholders. A missing deadline, price, outcome or cause remains unknown. Target language does not imply a market. Date-dependent facts need source date and timezone.
+
+The local generation pack lists missing inputs and up to three questions; it can still be handed to a host with visible gaps. It does not claim generated copy, complete evidence or publication readiness. Respect explicit no-questions and noninteractive requests by using labeled gaps, while keeping irreversible external actions outside the writing flow.
+
 This file is step two of every task, after [context detection](router.md). It says when to ask the user, how many questions, in what form, and with which tool in each assistant. Every question must change the copy. Wherever a safe default exists, the draft comes before the question.
 
 Only this file decides whether to ask. Other places only name a bank row or point back here. They are the "Question bank" column in the [route table](router.md#signals-to-routes), the "Questions" line in each playbook, and the [unstated genre](judgment.md#unstated-genre). If another file disagrees with this one, this file wins.
@@ -219,6 +229,7 @@ Each task has two or three questions. Ask only those whose answers aren't on the
 | Ads | "Which network? Google, Microsoft, Meta, LinkedIn, TikTok, or Reddit" · "Where is the landing page?" | «کدام شبکه؟ گوگل، یکتانت، اینستاگرام، کانالِ تلگرام یا ایتا» · «صفحه‌ی فرود کجاست؟» | The network |
 | Bulk catalog | One confirmation question beside the column map and three sample rows: "Is this right? a) write the rest (recommended) b) change a column"; the shape of the reply is in [Bulk tasks](#bulk-tasks) | «درست است؟ الف) بقیه را بنویس (پیشنهادی) ب) یک ستون عوض شود» | The column map |
 | Building a profile | For a brand that writes in Persian: "Does the brand say «تو» (informal) or «شما» (formal) to customers?" · "Formality: casual, middle, or formal?" · "A past text you like?". For a brand that writes in English ([English route](profile-builder.md#english-route)): "US English, British English, or another variant?" · the same formality and sample questions. Then "Save it in `VOICE.md`?" | برای برندی که فارسی می‌نویسد: «برند با مشتری «تو» می‌گوید یا «شما»؟» · «رسمیت: خودمانی، میانه یا رسمی؟» · «یک متنِ قبلی که دوستش دارید؟». برای برندی که انگلیسی می‌نویسد: «انگلیسیِ آمریکایی، بریتانیایی یا گونه‌ای دیگر؟ الف) آمریکایی (پیشنهادی) ب) بریتانیایی ج) دیگر» · همان دو پرسشِ رسمیت و متنِ نمونه. بعد: «در `VOICE.md` ذخیره‌اش کنیم؟» | None; in a brand-building task without a brand profile, these three make up the whole first round |
+| Lesson | "Save this row to `<file>`? a) Save it (recommended) b) Change it first c) Leave it out" | «این ردیف در `<فایل>` ذخیره شود؟ الف) بله، ذخیره کن (پیشنهادی) ب) اول تغییرش بده ج) نه» | The approval itself; without it, nothing is written ([saving a lesson](judgment.md#saving-a-lesson)) |
 
 The questions for business documents sit at the top of each document: job posting (in Whalory Pro), company profile (in Whalory Pro), proposal (in Whalory Pro), and invitation (in Whalory Pro). For a phone menu: "Why do people call most often, and which key reaches a person?" («دلیلِ پرتکرارِ تماس چیست و کدام کلید به آدم می‌رسد؟»). For a restaurant menu: "Has the kitchen approved the prices, the portion sizes, and the allergens?" («قیمت، اندازه و حساسیت‌زاها را آشپزخانه تأیید کرده؟»). Whalory never writes a tender response without the tender's own documents.
 
@@ -293,7 +304,7 @@ When the user didn't answer, replied "write", turned on `no_questions`, or the t
 - About tone, when a brand profile or a starter profile is in play. The profile is the answer to that question. A brand-building task gets no open question about tone either; the "Building a profile" row asks about address and formality, with options.
 - About anything that shows in the request, the attachments, the files, the profile, or `LEARNINGS.md`.
 - Which assistant or model the user works with. The flags read that from the tools.
-- For permission to do what the user asked for.
+- For permission to do what the user asked for. Two confirmations are not permission questions, because the user approves the exact words that later work will follow: "Save it in `VOICE.md`?" and the row of [saving a lesson](judgment.md#saving-a-lesson).
 - A question whose every answer leaves the copy the same.
 - Anything already answered once in this conversation.
 - "Anything else?" or "Are you happy with this?" before delivery.
@@ -312,7 +323,7 @@ An answer about the brand itself is useful in later tasks too, so it lasts. Save
 | The goal of this post, the deadline of this discount | No | This task only |
 | Personal data of the brand's customers | Never | Nowhere; fa: [ethics.md](fa/ethics.md) · en: [consent and privacy](en/ethics.md#consent-and-privacy) |
 
-- Add a new row in the [learnings note format](judgment.md#learnings-note-format): date, format, observation, decision.
+- Propose a new row in the [learnings note format](judgment.md#learnings-note-format): date, format, observation, decision. Show it and add it after a yes, as [saving a lesson](judgment.md#saving-a-lesson) says; the confirmation can be one of the follow-up questions.
 - The learnings note sits next to the chosen profile: `LEARNINGS.md` next to `VOICE.md` at the project root, `voice/LEARNINGS.md` next to `voice/VOICE.md`, or `<brand>.LEARNINGS.md` next to `<brand>.md` in `~/.whalory/profiles/`.
 - If `fs_write` is off, give the user the text of the row so they can put it next to the profile themselves.
 - When building a profile, ask after the three questions: "Save it in `VOICE.md`?" («در `VOICE.md` ذخیره‌اش کنیم؟»). Without `fs_write`, give the full text of the file to copy.

@@ -6,6 +6,47 @@ Every notable change to Whalory is recorded here, newest first. Open it when you
 
 Nothing yet.
 
+## [3.2.0-rc.1] - 2026-10-04 · unpublished candidate
+
+- Pinned offline installer with project/user scopes, integrity checks, dry-run, backup, update, rollback and safe uninstall.
+- Explicit MCP project roots; no implicit current-directory authorization.
+- Evidence-based host registry and separate Core, Pro and Studio offline kits.
+- Public 3.0.0 is the verified released baseline; the private 3.1.0 work below is an unpublished development precursor.
+
+## [3.1.0] - unpublished development precursor
+
+Development precursor in the private canonical source. It includes the existing Whalory Hub, final checks and user-approved lessons. The previous future date and first-public-release claim were incorrect; 3.0.0 was already publicly released.
+
+### Added
+
+- Whalory Hub rule updates. `scripts/hub_client.py` downloads rule files that Whalory signed, at most once a day, from GitHub Pages, `hub.whalory.com`, or GitHub releases. It checks every signature and every limit in plain Python before the linters use a file. When a check fails, it keeps the rules it has. A rule file is data: a severity, a threshold inside signed bounds, or a literal phrase. Updates are on by default, and `hub_client.py off updates` or `WHALORY_HUB_UPDATES=0` turns them off.
+- Hub statistics and the weekly packet, shipped switched off and closed. Nothing is collected in this version. When Whalory opens them with a signed setting, only a person at a console can turn one on, by typing a code the client shows. Statistics are for licensed editions and send counts, never text. The packet is for any edition. Whalory never sends it; the user may post it on GitHub.
+- `hub_client.py` commands: `status`, `sync`, `log`, `pin`, `unpin`, `rollback`, `off`, `forget`, `packet`, and `consent`. [`hub.md`](references/hub.md) and the playbook [Whalory Hub: rules and feedback](references/playbooks-strategy.md#whalory-hub-rules-and-feedback) tell the assistant how to run them. `data/hub/` holds the pinned root key file, the consent texts, the short privacy notices, and the word lists.
+- `check_final`, a new MCP tool: the final lint of the copy the user approved, with the same findings as `lint_text`. Core has six tools, and Pro has ten.
+- The quality loop, in [`review.md`](references/review.md#quality-loop). It has four parts: lint, a blind editor pass, at most two revision rounds, and a quality assurance (QA) line that ends the note. [`editor.md`](references/editor.md#review-without-a-second-agent) covers a review without a second agent, and the paste-in prompts carry a short form of the loop.
+- Lessons that last. [Saving a lesson](references/judgment.md#saving-a-lesson) shows the row and its file, and writes it after a yes. The plugin commands `learn` and `lessons` save, list, prune, and export lessons. Both are in Core.
+- The plugin commands `hub` and `feedback`, in Core. `hub` shows the status, syncs, shows the log, or turns a part off, and never turns sharing on. `feedback` shows the week's packet and never posts it.
+- A session-start hook in the Claude Code plugin, the Agent Plugins package, the Cursor plugin, and the Gemini CLI extension. It runs `hub_client.py tick`, which prints nothing and does at most one Hub task per run.
+- Two plugin settings in Claude Code. "Download signed rule updates" is on by default. "Share rule statistics" only asks the user to confirm in a terminal.
+- `lint.py --no-overlay` and `WHALORY_HUB_OVERLAY=0` lint with the built-in rules only. `WHALORY_HUB=0` turns the whole Hub off.
+- A "Network activity" section in [`README.en.md`](README.en.md#network-activity) and [`GUIDE.en.md`](GUIDE.en.md#network-activity), and in their Persian twins, [`README.md`](README.md#فعالیتِ-شبکه) and [`GUIDE.fa.md`](GUIDE.fa.md#فعالیتِ-شبکه). It lists every request, what it sends, and how to turn it off.
+- Task index rows for keeping a correction and for Hub requests.
+- Verse in brand copy: the caption, radio script, and occasion playbooks now say how to handle a rhymed caption, a jingle line, and occasion verse.
+
+### Changed
+
+- The linters take severities, some thresholds, and extra phrases from a verified Hub rule file when one is active. Without one, they behave as in 3.0.0. `lint.py --rules --json` lists the tunable parameters of each rule.
+- The English AI-vocabulary and buzzword lists are lexicon entries with ids, so a Hub rule file can address each phrase.
+- `en-testimonial` no longer reads a quote followed by "It", "This", or a similar word as a named testimonial.
+- A lint error left in a draft makes the editor's verdict "return", whatever the score.
+- While Hub statistics and packets are off, the MCP tools `lint_text`, `lint_file`, and `check_final` are marked read-only. While one is on, they add counts, never text, to the Hub folder, and the server tells the host that its tool list changed.
+- The MCP server no longer treats a working folder that contains the home folder as a project folder.
+- The scripts leave no Python bytecode cache (`__pycache__`) next to themselves.
+
+### Removed
+
+- The `codex-plugin` package in the legacy `.codex-plugin` layout, as announced in 3.0.0. Use the Agent Plugins package instead.
+
 ## [3.0.0] - 2026-09-27
 
 Whalya 3.0 writes business copy in English as well as Persian. The method is now written in English and serves both languages. Each language has its own craft pack. The same skill also runs as a plugin, with subagents, commands, and a local MCP (Model Context Protocol) server.
@@ -29,9 +70,9 @@ Whalya 3.0 writes business copy in English as well as Persian. The method is now
 - Linters. `scripts/lint_en.py` checks English copy: AI tells, puffery, plain English, style, readability, the brand profile, and channel limits. `scripts/lint.py` detects the language of each line and runs the right linter. `scripts/textcount.py` counts graphemes, X-weighted characters, UTF-16 units, and SMS segments.
 - Voice profiles. New keys `language`, `variant`, `variants`, `spelling`, `oxford_comma`, `contractions`, `house_style`, `reading_grade_max`, and `by_lang`; `schema_version` stays 2. English templates, Whalya's own English voice, and 16 English starter profiles, two of them in Core.
 - Channel data. Schema version 2 with `region`, `label_en`, and `note_en`, international channels, and new units: graphemes, weighted characters, UTF-16 units, bytes, segments, and items.
-- Plugin. A Claude Code plugin with its own marketplace file. Core has the `whalya-writer` and `whalya-editor` subagents and the `write`, `review`, `voice`, and `lint` commands. Pro adds four subagents and the `campaign`, `transcreate`, and `audit` commands. A separate, opt-in autolint plugin lints content and locale files after each edit. The linter runs in a child process, which the hook stops after about 8 seconds. Its script, `scripts/hook_lint.py`, also ships in every skill package for a hook set up by hand. The Pro editor rules package has ready settings for Claude Code, Cursor, and Gemini CLI.
+- Plugin. A Claude Code plugin with its own marketplace file. Core has the `whalory-writer` and `whalory-editor` subagents and the `write`, `review`, `voice`, and `lint` commands. Pro adds four subagents and the `campaign`, `transcreate`, and `audit` commands. A separate, opt-in autolint plugin lints content and locale files after each edit. The linter runs in a child process, which the hook stops after about 8 seconds. Its script, `scripts/hook_lint.py`, also ships in every skill package for a hook set up by hand. The Pro editor rules package has ready settings for Claude Code, Cursor, and Gemini CLI.
 - More hosts. An Agent Plugins 1.0 build for Codex, Visual Studio Code with Copilot, and other hosts. It carries an `INSTALL.md` and, for Codex, a legacy `.mcp.json` and `.codex-plugin/plugin.json`. Also a Gemini CLI extension, and a Cursor plugin in Pro.
-- MCP server. `scripts/mcp_server.py`, a read-only stdio server with no dependencies and no network access. It has five tools in Core and four more in Pro, four prompts, and `whalya://` resources. File tools read only the project folders given with `--root` or `WHALYA_ROOTS`, or the folders the host shares (MCP roots). Lint and compare calls stop after a time limit, 30 seconds by default. Links and junctions that lead outside the allowed folders are refused. When a folder given with `--root` or `WHALYA_ROOTS` can't be used, the server never falls back to the folder it starts in. While a tool runs, `ping` is answered and a cancel request stops the call. The server writes no files, not even Python bytecode caches. A `.mcpb` bundle installs it in Claude Desktop.
+- MCP server. `scripts/mcp_server.py`, a read-only stdio server with no dependencies and no network access. It has five tools in Core and four more in Pro, four prompts, and `whalory://` resources. File tools read only the project folders given with `--root` or `WHALORY_ROOTS`, or the folders the host shares (MCP roots). Lint and compare calls stop after a time limit, 30 seconds by default. Links and junctions that lead outside the allowed folders are refused. When a folder given with `--root` or `WHALORY_ROOTS` can't be used, the server never falls back to the folder it starts in. While a tool runs, `ping` is answered and a cancel request stops the call. The server writes no files, not even Python bytecode caches. A `.mcpb` bundle installs it in Claude Desktop.
 - English documents: [`GUIDE.en.md`](GUIDE.en.md), `WHALYA.md` (in Whalory Pro), [`LICENSE.en.md`](LICENSE.en.md), [`LICENSE-CORE.en.md`](LICENSE-CORE.en.md), and this changelog. [`README.en.md`](README.en.md) was rewritten as the international front door.
 - Packs. English paste-in prompts in Core and Pro, and English GPT and Gem packs in Pro.
 - New build gates. They check the language ratio, parity between the two packs, identifiers, and frontmatter. Others cover plugin schemas, the MCP tool list, the MCP bundle, directory readiness, and evals.

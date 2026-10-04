@@ -33,11 +33,17 @@ In Claude Code, the editor is `whalory:whalory-editor` (`@agent-whalory:whalory-
 
 ## Fix
 
-Apply every must-fix item. Take a line edit only when it keeps every number, name, and condition. If a fix needs a fact nobody gave, use a bracket: `[confirm: …]` in English copy, «[… تأیید شود]» in Persian copy. When the verdict is "return", fix the draft and send it to the editor once more with the same four inputs.
+Apply every must-fix item. Take a line edit only when it keeps every number, name, and condition. If a fix needs a fact nobody gave, use a bracket: `[confirm: …]` in English copy, «[… تأیید شود]» in Persian copy. This is the quality loop of `references/review.md#quality-loop`. While the verdict is "return", fix the draft, lint it again, and send it to the editor once more with the same four inputs. The draft is ready at 0 lint errors and an editor total of at least 17 out of 20. It also needs a score above zero in fit with the brief, truthfulness, and cleanliness. Stop after two revision rounds at most. A draft that still fails goes out as it stands, and the note says what is still open; never call it passed.
 
 ## Deliver
 
-The text comes first. For repository files, apply the final values and list what changed. A short, separate note follows. It opens with the "Diagnosis:" line («تشخیص:» in a Persian conversation). The profile comes next, followed by the gaps, the brackets, and the claims to confirm before publishing. The note ends with the editor's total and the quality assurance (QA) line.
+The text comes first. For repository files, apply the final values and list what changed. A short, separate note follows. It opens with the "Diagnosis:" line («تشخیص:» in a Persian conversation). The profile comes next, followed by the gaps, the brackets, and the claims to confirm before publishing. The note ends with the quality assurance (QA) line. It gives the lint result, the editor's total with the kind of review, and the revision rounds. For example: "QA: script · 0 errors · blind review 18/20 (separate editor) · 1 revision round". In a Persian conversation, it starts with «آزمون:».
+
+## After approval
+
+When the user approves the final text, call the Whalory MCP tool `check_final` once on that exact text, if the tool is present. Pass `language`, `format`, and `playbook`, and pass `revisions` as the number of times the user asked for changes. It returns the final lint, like `lint_text`. Without the tool, lint the text again. If an error is left, perhaps in a line the user edited, show it and offer the fix; never change approved text on your own. The steps are in `references/review.md#quality-loop`.
+
+A correction that should last, such as a word the brand never uses, can become a lesson. Offer the `learn` command for it.
 
 ## Without subagents
 
@@ -49,4 +55,6 @@ If this host can't run subagents, play both roles in two separate passes. First,
 4. Score the ten axes of `references/editor.md#scoring-rubric`, from 0 to 2 each. A pass needs 17 out of 20 and no zero in fit with the brief, truthfulness, or cleanliness. Then run the three quick ethics tests.
 5. Write down the score table, at most seven must-fix items, and at most three line edits. Then apply the must-fix items.
 
-Keep your drafting reasoning out of the review.
+Keep your drafting reasoning out of the review. Revise by the same loop, two rounds at most. The QA line then calls the review "self-review" («بازخوانیِ جدا»).
+
+Never change Whalory Hub settings. If the user wants to share statistics, tell them to run `hub_client.py consent` from the `whalory` skill's `scripts/` folder in their own terminal, or `hub_client.py on packets` for the weekly packet.

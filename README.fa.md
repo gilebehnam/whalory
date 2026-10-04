@@ -1,3 +1,5 @@
+> نسخه‌ی آزمایشی عمومی: 3.2.0-rc.2. بسته‌های هسته از انتشار برچسب‌خورده‌ی GitHub قابل دریافت‌اند. این نسخه پایدار نیست؛ همگام‌سازی هاب با ریشه‌ی آزمایشی غیرفعال می‌ماند.
+
 <a id="readme-top"></a>
 
 <div dir="rtl">
@@ -18,7 +20,7 @@
 <p><a href="README.md">English</a> · <b>فارسی</b></p>
 
 <p dir="ltr">
-  <a href="CHANGELOG.md"><img alt="والوری هسته، نسخه‌ی 3.1.0" src="https://img.shields.io/badge/Whalory%20Core-3.1.0-E6B54A?style=flat-square&labelColor=23282D"></a>
+  <a href="CHANGELOG.md"><img alt="والوری هسته، نامزد 3.2.0-rc.2" src="https://img.shields.io/badge/Whalory%20Core-3.2.0--rc.2-E6B54A?style=flat-square&labelColor=23282D"></a>
   <a href="#fa-license"><img alt="مجوز CC BY 4.0 برای متن و MIT برای اسکریپت‌ها" src="https://img.shields.io/badge/CC%20BY%204.0%20%2B%20MIT-E6B54A?style=flat-square"></a>
   <img alt="پایتون 3.8 به بالا" src="https://img.shields.io/badge/Python-3.8%2B-D8D4C9?style=flat-square&labelColor=23282D">
 </p>
@@ -40,7 +42,7 @@
 
 <br>
 
-**[دریافت والوری هسته](https://github.com/gilebehnam/whalory/releases/latest)** · [راهنمای نصب هر دستیار](https://whalory.com/fa/download/)
+**[دریافت والوری هسته](https://github.com/gilebehnam/whalory/releases/tag/v3.0.0)** · [راهنمای نصب هر دستیار](https://whalory.com/fa/download/)
 
 </div>
 
@@ -89,7 +91,7 @@ claude plugin install whalory@whalory
 
 ## کجا نصب می‌شود
 
-**همان دستیاری را نگه دار که با آن کار می‌کنی.** هر راه نصب در این جدول بسته‌ای است که ساخت نسخه‌ی <span dir="ltr">3.1.0</span> تحویل می‌دهد. راهی را «آزموده» می‌نامیم که آزمونی تاریخ‌دار از ابتدا تا انتها داشته باشد. تا آن موقع، راهنمای هر دستیار فقط می‌گوید که راه نصب با مستندات خود آن دستیار سنجیده شده است. ستون آخر تازه‌ترین آزمون را نشان می‌دهد که روی ساخت نسخه‌ی <span dir="ltr">3.0.0</span> انجام شد.
+**همان دستیاری را نگه دار که با آن کار می‌کنی.** هر راه نصب در این جدول بسته‌ای است که ساخت نامزد آزمایشی عمومی <span dir="ltr">3.2.0-rc.2</span> تحویل می‌دهد. راهی را «آزموده» می‌نامیم که آزمونی تاریخ‌دار از ابتدا تا انتها داشته باشد. تا آن موقع، راهنمای هر دستیار فقط می‌گوید که راه نصب با مستندات خود آن دستیار سنجیده شده است. ستون آخر تازه‌ترین آزمون را نشان می‌دهد که روی ساخت نسخه‌ی <span dir="ltr">3.0.0</span> انجام شد.
 
 <p dir="ltr">
   <a href="https://whalory.com/fa/guides/claude-code/"><kbd>Claude Code</kbd></a>
@@ -272,18 +274,18 @@ draft.txt: [fa] 2 جمله، میانگینِ 16.0 واژه، سقفِ 24 · 4 �
 
 ## شروع کار
 
-بسته‌ها را از [آخرین انتشار](https://github.com/gilebehnam/whalory/releases/latest) بگیر و با فایل <span dir="ltr">SHA256SUMS</span> همان‌جا بسنجشان. راه نصب قدم‌به‌قدم در [راهنمای فارسی اسکیل](skills/whalory/GUIDE.fa.md) آمده و سایت هم برای هر دستیار راهنمایی دارد که تاریخ بررسی‌اش رویش نوشته شده.
+نسخه‌ی پایدار پیشین [3.0.0](https://github.com/gilebehnam/whalory/releases/tag/v3.0.0) است. [نامزد 3.2.0-rc.2](https://github.com/gilebehnam/whalory/releases/tag/v3.2.0-rc.2) همراه بسته‌های هسته و SHA256SUMS به‌صورت آزمایشی عمومی منتشر شده است. پیش از نصب، راهنما و حدود آزمون هر میزبان را بخوانید.
 
 | دستیار | از این‌جا شروع کن |
 |---|---|
 | Claude Code | دو فرمان بالای همین صفحه |
-| Claude Desktop | <span dir="ltr">whalory-core-mcp-3.1.0.mcpb</span> برای ابزارها، و <span dir="ltr">whalory-core-3.1.0-claudeai.zip</span> در <span dir="ltr">Customize > Skills</span> برای روش |
-| claude.ai | اجرای کد را روشن کن. بعد <span dir="ltr">whalory-core-3.1.0-claudeai.zip</span> را در <span dir="ltr">Customize > Skills</span> بارگذاری کن |
+| Claude Desktop | <span dir="ltr">whalory-core-mcp-3.2.0-rc.2.mcpb</span> برای ابزارها، و <span dir="ltr">whalory-core-3.2.0-rc.2-claudeai.zip</span> در <span dir="ltr">Customize > Skills</span> برای روش |
+| claude.ai | اجرای کد را روشن کن. بعد <span dir="ltr">whalory-core-3.2.0-rc.2-claudeai.zip</span> را در <span dir="ltr">Customize > Skills</span> بارگذاری کن |
 | Codex | پوشه‌ی <span dir="ltr">skills/whalory</span> را در <span dir="ltr">~/.agents/skills/</span> کپی کن و با <span dir="ltr">$whalory</span> صدایش بزن |
 | Cursor | پوشه‌ی <span dir="ltr">skills/whalory</span> را در <span dir="ltr">.cursor/skills/</span> کپی کن. بعد ابزارها را در <span dir="ltr">.cursor/mcp.json</span> اضافه کن |
-| VS Code با Copilot | <span dir="ltr">whalory-core-3.1.0-agent-plugin.zip</span> را باز کن. بعد پوشه‌اش را به <span dir="ltr">chat.pluginLocations</span> اضافه کن |
-| Gemini CLI | <span dir="ltr">whalory-core-3.1.0-skill.zip</span> را در <span dir="ltr">~/.gemini/skills/</span> باز کن. وقتی Gemini برای فعال کردن اسکیل اجازه خواست، تأیید کن |
-| هر گفت‌وگو | یکی از متن‌های <span dir="ltr">whalory-core-3.1.0-paste.zip</span> را در دستورهای سفارشی دستیار بچسبان |
+| VS Code با Copilot | <span dir="ltr">whalory-core-3.2.0-rc.2-agent-plugin.zip</span> را باز کن. بعد پوشه‌اش را به <span dir="ltr">chat.pluginLocations</span> اضافه کن |
+| Gemini CLI | <span dir="ltr">whalory-core-3.2.0-rc.2-skill.zip</span> را در <span dir="ltr">~/.gemini/skills/</span> باز کن. وقتی Gemini برای فعال کردن اسکیل اجازه خواست، تأیید کن |
+| هر گفت‌وگو | یکی از متن‌های <span dir="ltr">whalory-core-3.2.0-rc.2-paste.zip</span> را در دستورهای سفارشی دستیار بچسبان |
 
 لینترها و سرور MCP با پایتون <span dir="ltr">3.8</span> یا تازه‌تر اجرا می‌شوند. بی‌پایتون هم اسکیل کار می‌کند و بررسی را دستی انجام می‌دهد.
 
@@ -333,7 +335,7 @@ draft.txt: [fa] 2 جمله، میانگینِ 16.0 واژه، سقفِ 24 · 4 �
 
 ## نقشه‌ی راه
 
-نسخه‌ی <span dir="ltr">3.1.0</span>، نخستین نسخه‌ی عمومی، هاب والوری را آورد: به‌روزرسانی امضاشده‌ی قاعده‌ها، همراه با آماری که خاموش منتشر می‌شود. ابزار <span dir="ltr">check_final</span> و فرمان‌های <span dir="ltr">learn</span>&rlm;، <span dir="ltr">lessons</span>&rlm;، <span dir="ltr">hub</span> و <span dir="ltr">feedback</span> هم در همین نسخه آمدند. نسخه‌ی <span dir="ltr">3.0.0</span> ساخته شد ولی منتشر نشد. آن نسخه انگلیسی را کنار فارسی آورد، با فایل‌های فن نوشتن خودش. روش هم به انگلیسی و برای هر دو زبان بازنویسی شد. افزونه‌ی Claude Code با ویراستار کور، بسته‌ی Agent Plugins، سرور MCP و قلاب لینتر هم در همان نسخه آمدند. تاریخچه‌ی کامل در [CHANGELOG.md](CHANGELOG.md) است.
+نسخهٔ عمومی تأییدشده 3.0.0 است. پیش‌نسخهٔ توسعهٔ خصوصی 3.1.0، پیاده‌سازی موجود هاب، بررسی نهایی و درس‌های تأییدشدهٔ کاربر را دارد. نامزد 3.2.0-rc.2 ادامهٔ همین منبع است و به‌صورت آزمایشی عمومی منتشر شده. تاریخچهٔ اصلاح‌شده در [CHANGELOG.md](CHANGELOG.md) آمده است.
 
 قدم‌های بعدی:
 

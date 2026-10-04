@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""textcount: length counters for channel limits (Whalory 3.0.0).
+"""textcount: length counters for channel limits (Whalory 3.1.0).
 
 Platforms count length in different units. This module has one counter per unit,
 with no dependencies beyond the Python standard library (3.8+):
@@ -37,13 +37,15 @@ if sys.version_info < (3, 8):
     sys.stderr.write('textcount needs Python 3.8 or newer (found %s).\n' % sys.version.split()[0])
     sys.exit(2)
 
+sys.dont_write_bytecode = True  # no __pycache__ next to the scripts: a skill or plugin folder may be read-only
+
 import argparse  # noqa: E402
 import json  # noqa: E402
 import math  # noqa: E402
 import re  # noqa: E402
 import unicodedata  # noqa: E402
 
-__version__ = '3.0.0'
+__version__ = '3.2.0-rc.2'
 
 UNITS = ('char', 'byte', 'utf16', 'grapheme', 'weighted', 'segment', 'word', 'items')
 

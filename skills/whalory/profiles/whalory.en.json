@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "name": "whalory-en",
   "language": "en",
   "variant": "en-US",
@@ -25,16 +25,19 @@
   "register": "any",
   "address": "any",
   "dials": {
-    "warmth": 3,
-    "formality": 3,
+    "warmth": 4,
+    "formality": 2,
     "humor": 1,
-    "narrative": 3,
-    "sentence_length": 3,
+    "narrative": 2,
+    "sentence_length": 2,
     "loud_marks": 0,
-    "jargon": 2,
-    "rhetoric": 2
+    "jargon": 1,
+    "rhetoric": 2,
+    "energy": 2,
+    "directness": 4,
+    "slang": 1
   },
-  "max_words": 25,
+  "max_words": 20,
   "emoji_max": 0,
   "exclaim_max": 0,
   "banned": [
@@ -54,24 +57,59 @@
   "industry": "content-agency",
   "formats": {
     "caption": {
-      "dials": {"warmth": 4},
-      "note": "Introducing Whalory: one specific thing it did, not adjectives"
+      "note": "One concrete action per caption"
     },
     "post": {
-      "dials": {"warmth": 4},
       "note": "One idea per post"
     },
     "blog": {
-      "dials": {"narrative": 4},
-      "note": "Teaching: an example, a scene, an exercise"
-    },
-    "landing": {
-      "note": "Site pages: what Whalory does, for whom, what it will not do, and what each edition includes"
+      "dials": {
+        "formality": 3,
+        "narrative": 2,
+        "humor": 1
+      },
+      "note": "A short explanation and a concrete example"
     },
     "reply": {
-      "dials": {"narrative": 1},
-      "note": "Delivery notes and replies: what is ready, what is missing, what happens next"
+      "dials": {
+        "humor": 1,
+        "narrative": 1
+      },
+      "note": "The current state and the next step"
+    },
+    "hard": {
+      "dials": {
+        "humor": 1,
+        "narrative": 1,
+        "energy": 1
+      },
+      "emoji_max": 0,
+      "exclaim_max": 0
+    },
+    "error": {
+      "dials": {
+        "humor": 1,
+        "narrative": 1,
+        "energy": 1
+      },
+      "emoji_max": 0,
+      "exclaim_max": 0
+    },
+    "press": {
+      "dials": {
+        "formality": 4,
+        "humor": 1
+      },
+      "emoji_max": 0,
+      "exclaim_max": 0
     }
   },
-  "by_lang": {}
+  "by_lang": {},
+  "claim_boundaries": [
+    "No invented facts, evidence, endorsements, or guaranteed outcomes."
+  ],
+  "fixed_facts": {
+    "product_name": "Whalory",
+    "maker": "Whalya"
+  }
 }

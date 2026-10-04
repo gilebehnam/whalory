@@ -18,6 +18,7 @@ This file is part of the [playbooks](playbooks.md). Each task's row is in the [t
 2. One sensory image and one small ending; the full explanation belongs somewhere else.
 3. Hashtags stay out of the sentence and go at the end. No heading and no bold title line in a caption.
 4. If the publishing date falls near an occasion, check it against the occasions file: [fa/occasions.md](fa/occasions.md) or [en/occasions.md](en/occasions.md).
+5. A rhymed caption is still brand copy. Keep to one device that comes from the subject's own world: fa: sound devices (in Whalory Pro). English has no verse file yet, so follow the same rules with new English examples.
 
 **Questions:** The "Captions and social media" row of the [question bank](intake.md#question-bank-by-task).
 **References:** fa: [fa/forms.md#کپشن](fa/forms.md#کپشن), [fa/channels.md#اینستاگرام](fa/channels.md#اینستاگرام), fa/hooks.md (in Whalory Pro), fa/social-scripts.md#کپشنِ-همراه (in Whalory Pro) · en: [en/forms.md#caption](en/forms.md#caption), [en/channels.md#instagram](en/channels.md#instagram), [en/channels.md#tiktok](en/channels.md#tiktok), en/anchors.md#caption (in Whalory Pro)

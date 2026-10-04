@@ -17,6 +17,7 @@ import sys
 if sys.version_info < (3, 8):
     sys.stderr.write('selftest needs Python 3.8 or newer (found %s).\n' % sys.version.split()[0])
     sys.exit(2)
+sys.dont_write_bytecode = True  # no __pycache__ next to the scripts: a skill or plugin folder may be read-only
 
 import ast  # noqa: E402
 import codecs  # noqa: E402
@@ -30,6 +31,7 @@ import subprocess  # noqa: E402
 import tempfile  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+os.environ['WHALORY_HUB_OVERLAY'] = '0'  # built-in rules only (Hub spec 5.9), whatever the Hub folder holds
 sys.path.insert(0, HERE)
 import lint_fa as LF  # noqa: E402
 from lint_fa import lint, load_profile, fix_text  # noqa: E402
@@ -263,7 +265,7 @@ def main():
 
         # ۵) نسخه و سازگاری
         code, out, err = run_cli(['--version'])
-        t('v3 --version', [] if code == 0 and LF.__version__ in out and LF.__version__ == '3.0.0'
+        t('v3 --version', [] if code == 0 and LF.__version__ in out and LF.__version__ == '3.2.0-rc.2'
           else ['خروجی: %r' % out], out.strip())
         # نحوِ پایتون ۳.۸ برای همه‌ی اسکریپت‌های scripts/ (والوری ۳)
         pr = []
@@ -345,7 +347,10 @@ def main():
         # ۸) پایانِ سطر و BOM در --write
         pr = []
         cp = os.path.join(tmp, 'crlf.txt')
-        shutil.copy(os.path.join(S, 'crlf.txt'), cp)
+        source = rbytes(os.path.join(S, 'crlf.txt')).replace(bytes([13, 10]), bytes([10]))
+        wbytes(cp, source.replace(bytes([10]), bytes([13, 10])))
+        if rbytes(cp).count(bytes([13, 10])) != 3:
+            pr.append('fixture does not contain three real CRLF endings')
         code, out, err = run_cli([cp, '--fix', '--write'])
         data = rbytes(cp)
         if data.count(b'\r\n') != 3 or data.count(b'\n') != 3:
@@ -687,7 +692,7 @@ def main():
             skip('tools selftest_tools', 'در این بسته نیست')
 
         # ۲۰) والوری ۳: lint_en، lint.py و textcount (selftest_en) و سرورِ MCP (selftest_mcp)، اگر باشند
-        for mod_name, prefix in (('selftest_en', 'en'), ('selftest_mcp', 'mcp')):
+        for mod_name, prefix in (('selftest_en', 'en'), ('selftest_mcp', 'mcp'), ('selftest_profiles', 'profiles')):
             if not os.path.exists(os.path.join(HERE, mod_name + '.py')):
                 skip('%s %s' % (prefix, mod_name), 'در این بسته نیست')
                 continue
@@ -1109,7 +1114,7 @@ def wave3(t, skip, tmp):
         pr.append('خطا %d، ردیفِ مسئله‌دار %d' % (st['errors'], st['rows_flagged']))
     t('w3 csv: هر خانه جدا، کلیدِ row/کد/ستون', pr, 'خطا %d · هشدار %d' % (st['errors'], st['warnings']))
 
-    raw = LF.read_text(cat)
+    raw = LF.read_text(cat).replace(chr(13) + chr(10), chr(10)).replace(chr(13), chr(10))
     pr = []
     for name, data in (
             ('catalog.tsv', raw.replace(',', '\t').replace('مدادِ مشکی\t نرم', 'مدادِ مشکی, نرم')),

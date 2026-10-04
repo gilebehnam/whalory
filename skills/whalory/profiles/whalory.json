@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "name": "whalory",
   "language": "fa",
   "variant": "fa-IR",
@@ -17,19 +17,22 @@
     "والوری حرفه‌ای": "Whalory Pro",
     "والوری استودیو": "Whalory Studio"
   },
-  "register": "formal",
-  "address": "any",
+  "register": "colloquial",
+  "address": "shoma",
   "dials": {
-    "warmth": 3,
-    "formality": 3,
+    "warmth": 4,
+    "formality": 2,
     "humor": 2,
-    "narrative": 3,
-    "sentence_length": 3,
+    "narrative": 2,
+    "sentence_length": 2,
     "loud_marks": 0,
-    "jargon": 3,
-    "rhetoric": 3
+    "jargon": 1,
+    "rhetoric": 2,
+    "energy": 2,
+    "directness": 4,
+    "slang": 1
   },
-  "max_words": 24,
+  "max_words": 18,
   "emoji_max": 0,
   "exclaim_max": 0,
   "banned": [
@@ -61,24 +64,60 @@
   "industry": "content-agency",
   "formats": {
     "caption": {
-      "address": "to",
-      "dials": {"warmth": 4},
-      "note": "معرفیِ والوری: یک کارِ مشخص، نه صفت"
+      "note": "یک کار مشخص در هر متن"
     },
     "post": {
-      "address": "to",
-      "dials": {"warmth": 4},
       "note": "یک فکر در هر پست"
     },
     "blog": {
-      "address": "to",
-      "dials": {"narrative": 4},
-      "note": "آموزش: مثال، صحنه، تمرین"
+      "dials": {
+        "formality": 3,
+        "narrative": 2,
+        "humor": 1
+      },
+      "note": "مثال روشن و کوتاه",
+      "register": "formal"
     },
     "reply": {
-      "address": "shoma",
-      "dials": {"humor": 1, "narrative": 1},
-      "note": "تحویل و پاسخ: چه آماده است، چه کم است، بعدش چه"
+      "dials": {
+        "humor": 1,
+        "narrative": 1
+      },
+      "note": "وضعیت روشن و قدم بعدی"
+    },
+    "hard": {
+      "dials": {
+        "humor": 1,
+        "narrative": 1,
+        "energy": 1
+      },
+      "emoji_max": 0,
+      "exclaim_max": 0
+    },
+    "error": {
+      "dials": {
+        "humor": 1,
+        "narrative": 1,
+        "energy": 1
+      },
+      "emoji_max": 0,
+      "exclaim_max": 0
+    },
+    "press": {
+      "dials": {
+        "formality": 4,
+        "humor": 1
+      },
+      "emoji_max": 0,
+      "exclaim_max": 0,
+      "register": "formal"
     }
+  },
+  "claim_boundaries": [
+    "No invented facts, evidence, endorsements, or guaranteed outcomes."
+  ],
+  "fixed_facts": {
+    "product_name": "Whalory",
+    "maker": "Whalya"
   }
 }

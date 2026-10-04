@@ -1,8 +1,10 @@
 # Review checklist
 
-Go through this list before delivering any text, from top to bottom. Each row has an "If not" column with one of three answers. "Return" means the text goes back to the writer and is not delivered. "Fix in place" means you correct it on the spot. "Note" means it goes in the internal note. To score a text, use the [scoring rubric](editor.md#scoring-rubric).
+Go through this list before delivering any text, from top to bottom. Each row has an "If not" column with one of three answers. "Return" means the text goes back to the writer and is not delivered. "Fix in place" means you correct it on the spot. "Note" means it goes in the internal note. To score a text, use the [scoring rubric](editor.md#scoring-rubric). The [quality loop](#quality-loop) says when each check runs and when a draft is ready.
 
 ## Contents
+
+- The loop every piece of copy passes: [Quality loop](#quality-loop)
 
 1. Was the route right? [Diagnosis](#diagnosis)
 2. Does the text move its job forward? [Goal and call to action](#goal-and-call-to-action)
@@ -18,6 +20,34 @@ Go through this list before delivering any text, from top to bottom. Each row ha
 12. Script or manual checklist: [Automated checks](#automated-checks)
 13. Which number judges the text: [Success metric](#success-metric)
 14. Next to the benchmark text: [Final test](#final-test)
+
+## Quality loop
+
+Every deliverable passes this loop before the user sees it. That covers new copy, a rewrite, a transcreation, repository strings, and each piece of a chain. In a plan, a teaching answer, or a voice profile, the loop covers the sample copy inside it. A review of the user's own text is itself the editor pass, so it has no loop of its own.
+
+1. Draft. Write by the playbook, then do the three editing passes.
+2. Lint. Use the MCP tool `lint_text` or `lint_file`. Without it, run `scripts/lint.py` when code can run. Without either, go through the [manual QA](../SKILL.md#manual-qa) checklist of the output language. Fix every error. Fix each warning, or keep it and give the reason in the note.
+3. Blind editor pass. Where subagents exist, the `whalory-editor` subagent reviews the draft from four inputs alone. They are the draft, the profile, the format id with its channel, and the facts list ([blind-review protocol](editor.md#blind-review-protocol)). Without subagents, run a self-review in a separate pass, as [review without a second agent](editor.md#review-without-a-second-agent) describes.
+4. Revise. Apply every must-fix item. Take a line edit only when it keeps every number, name, and condition. Lint again, then send the new draft to the same blind pass.
+5. Stop. The draft is ready at 0 lint errors and an editor total of at least 17 out of 20. It also needs no zero in fit with the brief, truthfulness, or cleanliness, and the ethics tests must pass. Stop after two revision rounds at most. A draft that still fails goes out as it stands, and the note says what is still open. Never call it passed.
+6. Deliver. The copy comes first. The last line of the note is the quality assurance (QA) line.
+
+A bracket for a missing fact is not a fault. The editor names the fact, and the bracket stays until the user supplies it.
+
+**The QA line** uses the conversation language. It opens with the QA value of the [diagnosis line](router.md#diagnosis-note). Then come the lint result, the editor's total with the kind of review, and the revision rounds:
+
+```
+QA: script · 0 errors, 1 warning kept · blind review 18/20 (separate editor) · 1 revision round
+آزمون: اسکریپت · ۰ خطا، ۱ هشدارِ نگه‌داشته · بازبینیِ کور: ۱۸ از ۲۰ (ویراستارِ جدا) · یک دورِ بازنویسی
+```
+
+The kind of review is "separate editor" («ویراستارِ جدا») when a subagent or a second agent read the draft. It is "self-review" («بازخوانیِ جدا») when the same assistant did it in a separate pass. A draft that stopped below the bar says so, as in `blind review 15/20, below the bar: [what is open]`.
+
+**After approval.** When the user approves the final text, call the MCP tool `check_final` once on that exact text, if the tool is present. Otherwise, lint it as in step 2. The tool returns the final lint. If an error is left, perhaps in a line the user edited, show it and offer the fix. Never change approved text on your own. Pass `language`, `format`, and `playbook`, and pass `revisions` as the number of times the user asked for changes. The tool records nothing unless the user turned on Whalory Hub statistics in their own terminal. Then it also stores counts, never text, on this computer ([hub.md](hub.md)).
+
+**Automated runs.** With no one to approve, the loop still runs through step 6, and `check_final` isn't called. In JSON output, the QA line goes under `context`, and anything still open goes in `needs_verification`.
+
+**Paste-in prompts** without code execution or subagents run the [condensed loop](editor.md#condensed-loop-for-paste-in-prompts).
 
 ## Diagnosis
 
@@ -177,7 +207,7 @@ python <skill path>/scripts/lint.py draft.txt --profile <profile> --format <form
 
 | Check | If not |
 |---|---|
-| The script finished with no errors | Return |
+| The script finished with no errors; this is step 2 of the [quality loop](#quality-loop) | Return |
 | Each remaining warning has a reason, and the note gives it | Note |
 | If code can't run, the [manual quality assurance (QA) in `SKILL.md`](../SKILL.md#manual-qa) was done. The note says "QA: manual" («آزمون: دستی»), or "QA: manual (script not run)" («آزمون: دستی (اسکریپت اجرا نشد)») | Note |
 

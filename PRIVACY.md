@@ -1,6 +1,8 @@
 # Privacy and network activity
 
-This page describes what Whalory Core 3.1.0 does with your text and your network. The privacy notice for purchases on the website is separate: [the website's privacy notice](https://whalory.com/legal/#privacy). The Hub has its own notice: [the Hub privacy notice](https://whalory.com/legal/#hub-privacy).
+> Release status: 3.2.0-rc.1 is an unpublished local candidate. Public 3.0.0 is the verified release; 3.1.0 is an unpublished development precursor. Candidate artifact names below refer to local build outputs, not newly published download URLs.
+
+This page describes what Whalory Core 3.2.0-rc.1 does with your text and your network. The privacy notice for purchases on the website is separate: [the website's privacy notice](https://whalory.com/legal/#privacy). The Hub has its own notice: [the Hub privacy notice](https://whalory.com/legal/#hub-privacy).
 
 ## What stays on your machine
 

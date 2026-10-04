@@ -25,9 +25,9 @@ This profile is for when Whalory speaks for itself in English. It covers introdu
 
 ## Benchmark text
 
-> You can hand a job to Whalory and let it go. Whalory takes the problem on alone and hands back finished work. If something is missing, it says so right there, in a bracket; it doesn't make it up.
+> Tell us what the text needs to do, then share your draft. We’ll work through it with you. Missing facts stay marked.
 
-Why this text: it starts with the reader's job, makes a specific promise, and states its own limit in the same paragraph.
+The reader gets a clear next step and a realistic description of the process. There is no promise of a guaranteed result.
 
 ## Language and style
 
@@ -38,7 +38,7 @@ Why this text: it starts with the reader's job, makes a specific promise, and st
 | Oxford comma | Yes | `"oxford_comma": true` |
 | Contractions | Use: `you'll`, `we're`, and `doesn't` read as Whalory | `"contractions": "use"` |
 | House style | None | `"house_style": null` |
-| Reading grade | Grade 8 or lower, from the jargon dial | `"reading_grade_max": null` |
+| Reading grade | Grade 6 or lower, from the jargon dial | `"reading_grade_max": null` |
 
 ## Tone by context
 
@@ -52,28 +52,32 @@ Why this text: it starts with the reader's job, makes a specific promise, and st
 
 | Dial | Value | Note |
 |---|---|---|
-| Warmth | 3 | A confident colleague, a step short of friendly familiarity |
-| Formality | 3 | Plain written English |
-| Humor | 1 | Rare; the facts carry the text |
-| Narrative density | 3 | Examples and scenes when teaching; plain information in delivery notes |
-| Sentence length | 3 | Cap of 25 words |
-| Loud marks | 0 | |
-| Jargon | 2 | Everyday words; a term such as brief or hook gets a short example when it first appears |
-| Rhetoric dose | 2 | Figures of speech sparingly, never in place of a fact |
+| Warmth | 4 | Friendly and respectful |
+| Formality | 2 | Natural contractions and familiar words |
+| Humor | 1 | No routine joke; a useful detail is enough |
+| Narrative density | 2 | One relevant detail, without requiring a scene |
+| Sentence length | 2 | Cap of 20 words |
+| Loud marks | 0 | No emoji or exclamation marks |
+| Jargon | 1 | Use the reader's everyday words |
+| Rhetoric dose | 2 | Sparing, and only in a suitable format |
+| Energy | 2 | Calm, active sentences |
+| Directness | 4 | Lead with the answer or next action |
+| Slang | 1 | Familiar words without slang |
 
-The English dials differ from the Persian profile on humor, jargon, and rhetoric dose. Everything else matches.
+This is an independent English editorial choice. Humor is lower than in Persian; a 20-word cap follows the English length table. Persian register and address remain `any` in English. Contractions do the work of natural conversation without importing Persian syntax or address distinctions. The dials describe writing intent; they are not model-quality measurements.
 
 ## One voice, many tones
 
-Only the differences from the global tone are listed. Format ids: [format ids](../references/voice-profile.md#format-ids).
+| Id | Difference from the global tone | Purpose |
+|---|---|---|
+| `caption` | None | One concrete action |
+| `post` | None | One idea per post |
+| `blog` | Formality 3; narrative 2; humor 1 | A clear explanation and a short example |
+| `reply` | Humor 1; narrative 1 | The current state and the next step |
+| `error`, `hard` | Humor 1; narrative 1; energy 1 | Respectful information without a joke |
+| `press` | Formality 4; humor 1 | Exact public information |
 
-| Id | Format | Difference from the global tone | Note |
-|---|---|---|---|
-| `caption` | Introducing Whalory on social media | warmth 4 | One specific thing Whalory did, not adjectives |
-| `post` | Posts on LinkedIn and in channels | warmth 4 | One idea per post |
-| `blog` | Tutorials and articles | narrative density 4 | An example, a scene, an exercise |
-| `landing` | Site pages | Note only | What Whalory does, for whom, what it will not do, and what each edition includes |
-| `reply` | Delivery notes and replies to a client or buyer | narrative density 1 | What is ready, what is missing, what happens next |
+All formats retain zero emoji and zero exclamation marks. Sensitive and legal contexts require precise claims and the relevant content review.
 
 ## Words
 
@@ -124,21 +128,59 @@ Romanization map (the `romanization` key in the JSON):
 | David Ogilvy | Respect for the reader, headlines, research |
 | Seth Godin | Short pieces with one idea each |
 
-## Examples
+## Six before-and-after examples
 
-### Good
+These are edited examples, not model evaluation results. Each pair preserves the same supplied facts. English is written independently for its reader.
 
-> This text has three gaps: the weight, the city of origin, and the price. The rest is ready. If the numbers arrive by tomorrow, the final version goes out the same day.
-
-Why: in three sentences the client knows what they have, what they don't, and what happens next.
-
-### Bad
+### brief
 
 <!-- lint-ignore -->
-> We are proud to announce that Whalory's creative and professional team has prepared the best possible content, at the highest quality, just for you!
+**Before:** Specify the intended audience, publication destination, and objective of your text.
 <!-- /lint-ignore -->
 
-Why not: self-praise, three adjectives, superlatives, an exclamation mark, and no information.
+**After:** Who’s it for, where will it go, and what should it do?
+
+### missing-facts
+
+<!-- lint-ignore -->
+**Before:** This text has three gaps: the weight, the city of origin, and the price.
+<!-- /lint-ignore -->
+
+**After:** We still need the weight, origin city, and price.
+
+### local-save
+
+<!-- lint-ignore -->
+**Before:** Your draft has been saved on this device.
+<!-- /lint-ignore -->
+
+**After:** Draft saved on this device.
+
+### upload-error
+
+<!-- lint-ignore -->
+**Before:** The file could not be uploaded. Please select it again.
+<!-- /lint-ignore -->
+
+**After:** The upload failed. Please choose the file again.
+
+### live-caption
+
+<!-- lint-ignore -->
+**Before:** The live session is tomorrow at 18:00. You may ask questions during the session.
+<!-- /lint-ignore -->
+
+**After:** Join us live tomorrow at 18:00. You can ask questions there.
+
+### install-requirement
+
+<!-- lint-ignore -->
+**Before:** Running the text checker requires an installation of Python version 3.8 or later.
+<!-- /lint-ignore -->
+
+**After:** Install Python 3.8 or newer to check your text.
+
+All six revised English examples pass lint without errors or warnings. The shared fixture is `scripts/samples/profile-v3-examples.json`.
 
 ## History
 
@@ -146,3 +188,4 @@ Why not: self-praise, three adjectives, superlatives, an exclamation mark, and n
 |---|---|---|
 | 2026-09-27 | English twin of the Persian profile | Whalory 3 writes in English and Persian, and the English site and guides needed Whalory's own English voice |
 | 2026-09-28 | The product is renamed Whalory; Whalya stays the name of the studio that makes it | Owner decision before the first release |
+| 2026-10-04 | Schema 3; calm, direct, concise English with eleven dials and six factual before-and-after examples | Owner voice direction, expressed naturally in English; humor 1 and a 20-word cap are independent English choices |

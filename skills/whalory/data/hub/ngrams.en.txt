@@ -1,0 +1,5002 @@
+# Whalory Hub list ngrams.en: the Tier 2 list: id, a tab, the phrase; sorted by id.
+# Built by hub/pipeline/lists.py (spec 5.4). Lines that start with # are comments.
+ng-en-001526a722	a text that
+ng-en-001beeb2a4	energy
+ng-en-001c5058ec	unsubscribe
+ng-en-0049bb1b32	clear next
+ng-en-005fafa930	a brief
+ng-en-006c759975	unclear
+ng-en-0084e08468	accept
+ng-en-0095377d8e	short form
+ng-en-009da8e646	search ads
+ng-en-00aced2262	presented as
+ng-en-00aee6b7d7	one concept
+ng-en-00b9acb876	for any network
+ng-en-00c5d3cd3c	the last line
+ng-en-00ca29c0e7	relationship
+ng-en-00d62e6e81	every playbook
+ng-en-00dcb7aba0	assumption
+ng-en-00edc6a9e3	part of
+ng-en-00f39469c4	correction
+ng-en-012b67b5f3	review the actual
+ng-en-0135977e68	feature
+ng-en-013b77880c	suggests
+ng-en-013da8b68e	the promise
+ng-en-017097629b	com
+ng-en-017321aef4	channel or corpus audit
+ng-en-017ec233de	say it
+ng-en-0183e4f943	platforms
+ng-en-018ee95e19	md
+ng-en-0194a6d638	sense
+ng-en-01a0a96b03	update against
+ng-en-01a4490633	events
+ng-en-01c7be8cfd	same way
+ng-en-01cdaba0ae	copy for any network
+ng-en-01dd117fab	long
+ng-en-01def7d05d	to opt out
+ng-en-0212d9c211	asked for
+ng-en-021551195d	and uses
+ng-en-021be54c7a	in total
+ng-en-0221a162ed	a paid
+ng-en-023a30e058	a colon
+ng-en-0244b609cc	date without modifying
+ng-en-024a3112ea	local deterministic checks
+ng-en-0251c34688	change the
+ng-en-025f369ace	route
+ng-en-0267af5361	ladder
+ng-en-02684bc5df	alt
+ng-en-026e803f44	particular
+ng-en-0281209b18	speaks
+ng-en-02866bbaed	question is
+ng-en-028de7aa14	a bracket
+ng-en-02937a81df	traffic
+ng-en-02a14f1bc3	claim boundary
+ng-en-02a24fb3af	and write
+ng-en-02b0ced430	first word
+ng-en-02ba1df719	for the ear
+ng-en-02c3074cda	inline
+ng-en-02c4e612be	measurement and
+ng-en-02d50db997	the text of
+ng-en-02dce6ffa7	skip
+ng-en-02e1bfdc13	number has a source
+ng-en-02e989cebc	a glance
+ng-en-02ee273c5f	to approved
+ng-en-0307900751	the notes
+ng-en-031829d5a9	disclosed
+ng-en-031e70cb83	promise
+ng-en-03285371fb	the soft opt
+ng-en-0340b48650	read it
+ng-en-035fc38ec1	spellings
+ng-en-036c015f45	cafe
+ng-en-0370da00e9	bakery
+ng-en-0394762592	a clear
+ng-en-03959856cc	ones after
+ng-en-03c8d9ed21	product pages
+ng-en-03cff520cc	human
+ng-en-03d641b3ba	post is sent
+ng-en-03e204f7bb	from the client
+ng-en-03ebb271da	calculation
+ng-en-03f2ca9107	made
+ng-en-04039ca9d8	number and
+ng-en-04057d616e	the profile and
+ng-en-0413649a93	platform
+ng-en-041cd397af	brief against supplied
+ng-en-042c2fd6ba	chain
+ng-en-043172db9c	available
+ng-en-04396fb4f2	including
+ng-en-044687d884	fee
+ng-en-045769851d	introduce
+ng-en-045b9d0984	the delivery
+ng-en-045f5cde74	is part of the
+ng-en-0461a7760e	store
+ng-en-047353a6d0	a warning
+ng-en-048438ba6c	file access
+ng-en-048f0d325d	posting and business
+ng-en-04a1a87a7f	identity and
+ng-en-04b71229ed	bullets
+ng-en-04bd23ed81	to three
+ng-en-04c15401f0	a pitch
+ng-en-04d1e872c7	main row
+ng-en-04dae18d64	cause
+ng-en-04f7f9cd10	health claims
+ng-en-04fcbb30e8	the hard
+ng-en-050c24a11b	becomes a
+ng-en-050ee7c7a8	a pipeline
+ng-en-05156fdbe3	or role
+ng-en-05275347e6	say so
+ng-en-052cf91562	comparison page
+ng-en-052cfeb58b	character limit
+ng-en-053264be68	fits in
+ng-en-0532f3f96f	the sending
+ng-en-05343d1c67	unfair
+ng-en-05409f672a	blind
+ng-en-05421bba6b	video script
+ng-en-054541b1a9	face
+ng-en-0556b55b37	turning
+ng-en-055a3f4915	rules apply
+ng-en-055c32ed87	body
+ng-en-055f2bd506	on the image
+ng-en-056f413a2f	caveats
+ng-en-058a1b8c6b	grade
+ng-en-0590c28215	each objective
+ng-en-05a96af101	that never
+ng-en-05b02f2015	said
+ng-en-05c9cce691	changed
+ng-en-05cf72c407	the next
+ng-en-05dbcf8301	bank
+ng-en-05dc2cd3a4	always
+ng-en-05df985376	action and
+ng-en-05ee72924d	reader does
+ng-en-05ef93ac60	a decision
+ng-en-05f56ad1c7	the three questions
+ng-en-05ffbbec7c	late
+ng-en-06179443a4	rule for
+ng-en-061c80a800	warehouse
+ng-en-06287d95a6	task index
+ng-en-0632149201	it ends
+ng-en-0638730f2e	pricing
+ng-en-064e484d04	all three
+ng-en-065756b72d	thumbnail
+ng-en-06613c2545	and next
+ng-en-066551fad3	market
+ng-en-067d98384f	email and
+ng-en-0691ead668	texture
+ng-en-069b6e35b2	it gives
+ng-en-069f9741ea	absolute
+ng-en-06c07ff570	completed
+ng-en-06c783ef7f	for english
+ng-en-06d1b80999	topic
+ng-en-06f5cf4a61	no fact
+ng-en-07114dca7c	manifesto
+ng-en-071282ccd8	pending
+ng-en-071828973d	named
+ng-en-0724d7790a	use of
+ng-en-0727a25f1a	each section
+ng-en-072f23ee68	ones
+ng-en-07529878f4	reason for
+ng-en-0753ed7d81	deliverables
+ng-en-075ed3e706	a starter profile
+ng-en-076214d62a	opening sentence
+ng-en-076c565c68	semantic
+ng-en-07702da22b	investor update
+ng-en-077edd1256	path
+ng-en-07a0e8c93e	media
+ng-en-07ae24be85	need the
+ng-en-07b4ccf60b	the five
+ng-en-07c71adb80	a second
+ng-en-07da0a9fca	the reply
+ng-en-07e4616a6d	the existing
+ng-en-080e26fe0e	wants to
+ng-en-08296ae748	reaches
+ng-en-084633cdd3	writes
+ng-en-0850a757f9	checks do not certify
+ng-en-0855bdc079	ends
+ng-en-0856dab36a	true
+ng-en-08583627cd	in brackets
+ng-en-0867833cae	tells the reader
+ng-en-086a3445ab	third
+ng-en-08716a8198	direct message or post
+ng-en-087730498a	sells
+ng-en-087ed0b77d	the defaults
+ng-en-08a520d425	the moment
+ng-en-08b9107366	titles and
+ng-en-08d1a1c499	at first use
+ng-en-08d8f7eb27	the reader knows
+ng-en-08e89848e1	hyphen
+ng-en-08e8de452b	every fact
+ng-en-08ef215ddd	requests
+ng-en-08f323d277	the reader sees
+ng-en-08f8b786e1	gets
+ng-en-091513dac0	supplied evidence ids
+ng-en-0916b27254	waiting
+ng-en-091f524099	the team
+ng-en-09687e7459	disclosure lines
+ng-en-09828ce509	campaign
+ng-en-09ae9be36e	and every playbook here
+ng-en-09b16843dd	abbreviations
+ng-en-09bb83b01e	drafts
+ng-en-09bb96c16a	course description
+ng-en-09d6376c60	locked
+ng-en-09eb599f3e	explainer
+ng-en-09fa358366	beside
+ng-en-0a102a7b8c	podcasts
+ng-en-0a18fb15a5	note cleanup
+ng-en-0a1938d40b	the code of
+ng-en-0a1b6fe0d1	across the
+ng-en-0a2de857ae	in the conversation language
+ng-en-0a2fa2428b	depends
+ng-en-0a39f2eb06	review replies on
+ng-en-0a5b3e2023	message to
+ng-en-0a71013e37	genres
+ng-en-0a793142ec	technical
+ng-en-0a8a9444d8	testimonials and reviews
+ng-en-0ac0ef5e0e	a playbook
+ng-en-0ad617a2e9	customer stories
+ng-en-0adec68845	stand
+ng-en-0af1cded50	floor
+ng-en-0b0742373e	graphemes
+ng-en-0b15d20994	the event
+ng-en-0b2802531c	cold
+ng-en-0b3e9abc4a	puts the
+ng-en-0b4864d86c	the count
+ng-en-0b4a9b1ba8	unsupported claims remain labeled
+ng-en-0b57b90a74	product specifications
+ng-en-0b5d6daf40	verb
+ng-en-0b82e28c29	header
+ng-en-0b88f6ef7f	the screen
+ng-en-0b9af695be	new
+ng-en-0b9ebbd2bd	call to action
+ng-en-0ba4ec7929	acceptance
+ng-en-0ba78eca3f	in claude
+ng-en-0ba8fc4617	a post
+ng-en-0bba6dd738	website
+ng-en-0be03c987c	certify semantic quality
+ng-en-0c0e4bc50c	actually
+ng-en-0c104a26bf	place of
+ng-en-0c1883e3c0	the global
+ng-en-0c2247d399	both checked
+ng-en-0c338f1ee5	sms and
+ng-en-0c38524788	makes no
+ng-en-0c5883ff52	example for
+ng-en-0c6aa4a945	expectations
+ng-en-0c85492b49	signal
+ng-en-0c9227d482	register and
+ng-en-0c96b30c44	fake reviews and
+ng-en-0c997b5a16	participants
+ng-en-0ca58c5b5a	announcement against supplied
+ng-en-0cbe39b9e6	measured
+ng-en-0ce13d2fd3	draft
+ng-en-0ce67a1376	three sentences
+ng-en-0cecc39c10	string catalog
+ng-en-0cf8c335e9	press release
+ng-en-0cff445e9d	one piece
+ng-en-0d143a706b	line of the
+ng-en-0d1a9492ed	profile is
+ng-en-0d1b9ab83d	and leave
+ng-en-0d1eeb52d2	bring
+ng-en-0d1fb10aa8	likely
+ng-en-0d29f39281	next
+ng-en-0d334d5cb5	actual product
+ng-en-0d3a1de362	the shared
+ng-en-0d3cfe6280	the place
+ng-en-0d532de003	crypto
+ng-en-0d57765c04	is part of
+ng-en-0d603d9c24	verbal identity from scratch
+ng-en-0d844dc7ab	publishing
+ng-en-0d9bb6e67c	answers the
+ng-en-0d9e562962	territory
+ng-en-0da8cd52a1	basket
+ng-en-0db14d330a	information
+ng-en-0db376e407	is sent
+ng-en-0db51f87d1	avoids
+ng-en-0dc599aed7	review remain
+ng-en-0dc94c2169	the quality loop
+ng-en-0dcc53518f	it ships
+ng-en-0de1901229	use it
+ng-en-0dedd8c333	happened
+ng-en-0df77e38ea	capitalize
+ng-en-0df9addfe2	one word for
+ng-en-0e0b6ad9bc	bread
+ng-en-0e2ca39a20	cancel
+ng-en-0e2ee9e958	dose
+ng-en-0e35e44ea2	this file
+ng-en-0e36529fa1	the reader needs
+ng-en-0e3846a100	the opening sentence
+ng-en-0e3f2baf0e	line of
+ng-en-0e40b4f8ae	around it
+ng-en-0e4607c382	evening
+ng-en-0e48e6c55c	availability
+ng-en-0e5de438fd	a hundred
+ng-en-0e6d2b079a	in limits at
+ng-en-0e6e57ff78	twenty
+ng-en-0e763da6e7	microcopy and
+ng-en-0e7cab3639	in their own terminal
+ng-en-0e7f1c8372	the english ones after
+ng-en-0e863eaa22	get
+ng-en-0e86697db7	date and
+ng-en-0ea1669733	the noun
+ng-en-0ea1aa89f1	headings
+ng-en-0ea3ed988e	substantial
+ng-en-0ebab2f424	a word
+ng-en-0ebb294565	job ads
+ng-en-0ec1027e4a	unique
+ng-en-0ef7e763bc	the three
+ng-en-0f0df3e236	sources
+ng-en-0f176aef7f	side of
+ng-en-0f20055a98	consistent with
+ng-en-0f302b6a84	elements
+ng-en-0f310a6368	rubric
+ng-en-0f3d60a023	a link
+ng-en-0f453ab44f	quote is
+ng-en-0f4be45bc6	writes a
+ng-en-0f6ac2dbe2	delivery
+ng-en-0f78781f06	to opt
+ng-en-0f934e88e9	the total price
+ng-en-0f936a25ca	page
+ng-en-0f9b27fee6	the internal
+ng-en-0fca8e607b	make a
+ng-en-0fd538a44b	arrive
+ng-en-0feb349570	the decision
+ng-en-0feff4ae82	the project
+ng-en-0ff03aabfc	counting
+ng-en-102fb3ffcb	note
+ng-en-1030241648	the selected task only
+ng-en-103424b94e	directive
+ng-en-103b228217	an occasion
+ng-en-106da65f4c	tag
+ng-en-106eaf5c7a	outputs
+ng-en-106f511b34	settings
+ng-en-10720e287d	the question bank
+ng-en-1075408c4c	in use
+ng-en-10a7260bc2	phrase bank
+ng-en-10a742c574	search for
+ng-en-10b2710713	question
+ng-en-10b294df0d	gives a
+ng-en-10b75086a7	understand the
+ng-en-10cc308272	article against supplied
+ng-en-10dac3f599	lookup
+ng-en-10f5e1ba40	got
+ng-en-10f94446ea	street
+ng-en-1102ba5097	the learnings
+ng-en-1104b5d113	send
+ng-en-11054b3df7	relevance
+ng-en-111e5fffe3	real detail
+ng-en-11245ad1e9	noun
+ng-en-1124dd9509	to z style
+ng-en-11283dd617	exist
+ng-en-11291d0ce7	quotation marks
+ng-en-1135fa879d	outage notice
+ng-en-11399265b7	concepts
+ng-en-113c355c8b	instead
+ng-en-11403036b9	is still
+ng-en-114ca5bdc2	and preheader
+ng-en-114e01b6b2	leaves the
+ng-en-117214225a	and the english
+ng-en-117306bccf	a week
+ng-en-117a926b1b	period
+ng-en-117b4275e6	wrote
+ng-en-117bf26a53	reader
+ng-en-118089daea	clear
+ng-en-118c6969f5	the column map
+ng-en-1195eea4c9	us and uk
+ng-en-1197307c74	hide
+ng-en-11b276fe05	build the
+ng-en-11c1e3cad2	screenshot
+ng-en-11c843e331	differ
+ng-en-11c97c3ca0	present
+ng-en-11d34fa1bf	the reader does
+ng-en-11d730b904	questions per
+ng-en-11e65e786b	outlets
+ng-en-1207e668f4	brief against supplied evidence
+ng-en-120af98705	fixes
+ng-en-1217c1b1ae	staff
+ng-en-1229632672	asset
+ng-en-1229d8020a	fix in
+ng-en-123ca4041f	main
+ng-en-124590d00f	season
+ng-en-1283d1c857	selected task only
+ng-en-1289a1a723	facts of
+ng-en-128a2c3642	request
+ng-en-1297ccce65	tomorrow
+ng-en-129997b210	plain written
+ng-en-12a48b551a	and podcasts
+ng-en-12aa1b2564	still
+ng-en-12ade5d1ab	test
+ng-en-12ce01cdba	for writing
+ng-en-12d54012e7	an email
+ng-en-12e0e244c3	replies to
+ng-en-12e2bb1ddb	format ids
+ng-en-12fc83b8bd	no file
+ng-en-1302430d6d	in the request
+ng-en-130612b15f	and keep
+ng-en-131e3e9423	not know
+ng-en-134255ceb6	defines
+ng-en-1358ed5ec3	saved
+ng-en-1361c886e2	questions per round
+ng-en-136b730b73	the first word
+ng-en-137e516bd2	shared writing
+ng-en-138ece5e46	the string
+ng-en-139afe7d79	draft or export
+ng-en-139bea90a9	certainty
+ng-en-13b1a0b5f5	quality and human review
+ng-en-13bfd342ca	know
+ng-en-13cf5944e2	questions in
+ng-en-13d25c8b15	confirmed
+ng-en-13d2620ed9	to cancel
+ng-en-13e315fdc2	guide against supplied
+ng-en-13f518954f	carries a
+ng-en-13fb8c5b60	claim needs
+ng-en-14072b4a2c	the category
+ng-en-14276ca010	or cut
+ng-en-142a7bfcc7	the named
+ng-en-142a993558	in one message
+ng-en-143b52f39e	invent a
+ng-en-143ece045f	commercial terms
+ng-en-145300c968	takes the
+ng-en-147889eee2	given
+ng-en-147fc6d03f	high risk
+ng-en-1488b498ea	two files
+ng-en-1493236457	commercial practices
+ng-en-1498f0808f	blame
+ng-en-14ac2fe674	in json output
+ng-en-14b09bc278	translation
+ng-en-14b4a7969c	every error
+ng-en-14cb0af7f3	the claim
+ng-en-14d803b4ea	the email
+ng-en-14e8a1c0d0	one moment
+ng-en-150135990f	when the user
+ng-en-151a9e494e	a legal
+ng-en-151b2713ef	a tagline
+ng-en-152243238b	ad that
+ng-en-152bdd7423	a guide
+ng-en-1550fd6d2c	countries
+ng-en-155f4f04e5	before writing
+ng-en-15710eaf8a	issues
+ng-en-1572d60378	close
+ng-en-1578c58fcf	follow
+ng-en-1583baf28e	every channel
+ng-en-15857738fc	responsibility
+ng-en-158f1ce19e	to buy
+ng-en-158f875155	the title and
+ng-en-15a15f07e5	a protected
+ng-en-15a23a2e10	form video
+ng-en-15bea66927	automatic
+ng-en-15d194a9c6	uk
+ng-en-15d28d9fbb	skin
+ng-en-15e402ad29	services and supplements
+ng-en-15fc59a379	metaphors
+ng-en-15ff4b73dc	counts as
+ng-en-160753d695	communication against supplied evidence
+ng-en-16273b921e	task with
+ng-en-1635fe1f69	remove invented urgency
+ng-en-1644235c21	literal
+ng-en-1649d9c63d	the name
+ng-en-165b0c6a82	agreed to
+ng-en-165bf72d85	developer documentation style
+ng-en-166ccc1ae8	draft and
+ng-en-16789ace51	bold
+ng-en-168bed9e60	offer an
+ng-en-1690320262	case studies
+ng-en-16ad2025ea	has two
+ng-en-16b7a4e6e2	in call to
+ng-en-16d5116b60	year
+ng-en-16de6d3399	shows how
+ng-en-16ff6c2354	generated from
+ng-en-170282a1f9	digits
+ng-en-17088f6bde	a comparison with
+ng-en-17153f4b2b	parts
+ng-en-17381cfe29	profile builder
+ng-en-173a827cc2	day
+ng-en-173dba9463	text passes
+ng-en-173ef7a933	marketplace listings
+ng-en-17629d048f	deck
+ng-en-177152f666	and eu
+ng-en-1771ba26c4	z style guide
+ng-en-1771fab386	copy that
+ng-en-177905ac1c	banned
+ng-en-177ada99fe	intl
+ng-en-1783c4c869	the endorsement
+ng-en-1789e71267	text for
+ng-en-178f86106b	publishes
+ng-en-178f8ff50b	podcast script
+ng-en-17905dd83a	permission
+ng-en-1793f95e76	the brand name
+ng-en-17964d492f	comes from the
+ng-en-1796f531be	the reader is
+ng-en-17a00ef4f0	lengths
+ng-en-17a8635e3f	qualified review
+ng-en-17d5d867c2	with no brand profile
+ng-en-17d5dda67e	rule is
+ng-en-1830a6bc47	narrative against
+ng-en-1855bf3e4a	benefit
+ng-en-185b72628d	welcome
+ng-en-188e0925b6	substitution test
+ng-en-188eef4993	a caption
+ng-en-188f0bf3f1	positioning
+ng-en-189151cbc4	stakeholder
+ng-en-18a505a72a	log in
+ng-en-18a65b22ab	age
+ng-en-18be842e0a	interface
+ng-en-18d75c4717	the draft
+ng-en-18f4ace9e8	sits next to the
+ng-en-1913fecf0d	fit
+ng-en-19195252f7	bot
+ng-en-191d05e4c6	charged
+ng-en-192578f1a1	becomes
+ng-en-192dc2033d	story from a photo
+ng-en-193435a324	the work
+ng-en-19528f90e5	in the description
+ng-en-19595a27de	page or
+ng-en-19631241d2	title and the
+ng-en-196fbd7d34	does not repeat
+ng-en-1981f3c0a9	budget and
+ng-en-1991566869	covers the
+ng-en-1995dd5a3d	the product
+ng-en-199622a935	holds the
+ng-en-199b2eca9c	the weekday
+ng-en-19a0eed43a	needs a
+ng-en-19a393c89e	the voice profile
+ng-en-19ad5d0b51	keyed
+ng-en-19ae1f4278	link to the
+ng-en-19ba071e93	it runs
+ng-en-19c9e3b7d1	watch these rule ids
+ng-en-19d739b111	external
+ng-en-19da2f5021	in the code
+ng-en-19dd95a8a3	faster
+ng-en-19dec90dc7	a benchmark text
+ng-en-19dfd6b149	was written
+ng-en-19ee27900d	readable
+ng-en-1a0c499bb6	channel post
+ng-en-1a2f4d8e7f	electronic mail
+ng-en-1a3608d10e	the scenes
+ng-en-1a3615f9b8	read the list for
+ng-en-1a45827faa	replaces
+ng-en-1a6cc78034	online
+ng-en-1a72240073	the qa
+ng-en-1a7c3f912d	show the
+ng-en-1a8a50be89	paths
+ng-en-1ab7185924	map
+ng-en-1ac9f6a3d8	library
+ng-en-1ad182b4a9	catalog from a spreadsheet
+ng-en-1ad8cc26d4	assumes the shared steps
+ng-en-1ae580fd9a	script
+ng-en-1aedb586ff	safe
+ng-en-1afa79c2a7	flags it
+ng-en-1b12169c3c	text says
+ng-en-1b154b90fc	scarcity and capacity exactly
+ng-en-1b1705e232	group
+ng-en-1b2f6affc5	failures
+ng-en-1b3f80ab10	run the
+ng-en-1b4707a5d2	list of
+ng-en-1b5ddd7cff	presenting
+ng-en-1b7ce98be7	variants
+ng-en-1b7d308747	naming brief
+ng-en-1b8b5e9f9a	terminology
+ng-en-1b9e90802b	automated run
+ng-en-1ba09a3c33	benchmark text
+ng-en-1ba2782ddc	came from
+ng-en-1ba852c558	email
+ng-en-1bb9a75c60	mail
+ng-en-1bdbf44248	recovery
+ng-en-1be6757eb8	none
+ng-en-1be6e98746	a table
+ng-en-1c06bf2180	this brand
+ng-en-1c0c704bc4	federal plain language guidelines
+ng-en-1c1c514a64	colleagues
+ng-en-1c24dfe976	say which
+ng-en-1c2502debe	register
+ng-en-1c32fbf156	inputs
+ng-en-1c39d21d53	central
+ng-en-1c41cc1cfc	ideation
+ng-en-1c44aa8844	cta
+ng-en-1c46ba464a	output is
+ng-en-1c4f8205d6	business and
+ng-en-1c6672d325	the user
+ng-en-1c7a73a103	you need
+ng-en-1c7ea39066	craft files after
+ng-en-1c89e488ba	the claims
+ng-en-1c9632d285	the country
+ng-en-1ca8acfff7	errors
+ng-en-1cc1c2ea17	makes sense
+ng-en-1cc58ca77b	it shows
+ng-en-1cc6784fce	to get
+ng-en-1cd5dde03d	one segment
+ng-en-1cd903a4c6	cold email
+ng-en-1cfed34d5f	verify
+ng-en-1d0b4232b3	note of
+ng-en-1d1fb881a9	logos
+ng-en-1d69e9c2a6	and reviews
+ng-en-1d7ce6d8cb	afternoon
+ng-en-1d84fae26a	good
+ng-en-1d878dfdcb	of three
+ng-en-1d935d997d	consultation
+ng-en-1d982cbc55	covered
+ng-en-1d9a9c8c3b	the interface
+ng-en-1db8ac2456	shown
+ng-en-1dc89188a1	unqualified
+ng-en-1dd267130e	a change
+ng-en-1dd46602ac	actual brand
+ng-en-1df7028e27	objection
+ng-en-1e049624df	a page
+ng-en-1e071ab05a	sign
+ng-en-1e11e1df50	error messages
+ng-en-1e19481796	it changes
+ng-en-1e33d33d08	periods
+ng-en-1e3b52b9c9	fake urgency and scarcity
+ng-en-1e4224319d	situation
+ng-en-1e4e352253	counsel
+ng-en-1e749970af	or corpus
+ng-en-1e9d32e02b	sentence is
+ng-en-1eb5fb34ec	requested
+ng-en-1eb71dc603	it holds
+ng-en-1ebb978791	sentence with
+ng-en-1ec847ccba	in plain
+ng-en-1ed6daf696	facilitation
+ng-en-1eda89d74e	topics
+ng-en-1ee694c096	clickbait
+ng-en-1eec20a67e	bans
+ng-en-1ef2ff1fba	dry
+ng-en-1f03eee0b9	national
+ng-en-1f091e8561	carries one
+ng-en-1f0ad27c8b	and links
+ng-en-1f13517529	states
+ng-en-1f16dc50c7	words in the
+ng-en-1f17c07d73	the previous
+ng-en-1f19748c3b	us code
+ng-en-1f37cff9d6	advertising code
+ng-en-1f4e0f6452	do next
+ng-en-1f69bf5d38	for readers
+ng-en-1f6db02751	order of
+ng-en-1f6f42d08e	checks do not
+ng-en-1f743d78c9	integrity
+ng-en-1f77f79e24	fixed
+ng-en-1f911ff360	measurement
+ng-en-1f94240df6	proposals
+ng-en-1fa53e2434	score
+ng-en-1fa9ba052b	evidence to
+ng-en-1facda167c	a quote
+ng-en-1fb23e98bc	decides whether to
+ng-en-1fc893c01d	a follow
+ng-en-1fd5098350	search ad
+ng-en-1fe072661a	financial narrative
+ng-en-1fe5e67560	the start of
+ng-en-1ff522a92c	job posting and
+ng-en-1ffa68cb4c	descriptions
+ng-en-1ffabf0b9a	reads it
+ng-en-2009a2c3c3	carousel
+ng-en-202ae1a54d	the note says
+ng-en-20326631a5	normal
+ng-en-204861c6ec	checks
+ng-en-204ddfdb16	picks
+ng-en-205054b47f	who reads
+ng-en-205d90cbc3	leaves
+ng-en-2061b6e5a7	postal
+ng-en-2077cffa9d	identify
+ng-en-2077d6c285	the sound
+ng-en-20917f6e46	summary
+ng-en-20933e4ee7	goal and
+ng-en-209e642551	end
+ng-en-209e8ff658	language of
+ng-en-20ae942193	buying
+ng-en-20c3007bd0	reply to
+ng-en-20c5e4dfd1	bracket
+ng-en-20e5486204	percentages
+ng-en-20f1c87df5	memo
+ng-en-20faa146c3	in a caption
+ng-en-20fb7f552e	write it
+ng-en-20fbcef2b3	and short
+ng-en-21021e015b	revision
+ng-en-21054265a3	says what the
+ng-en-211083569d	the file
+ng-en-2113e7c1c1	it keeps
+ng-en-213424d344	a transactional
+ng-en-213ed1ae3f	three quick tests
+ng-en-214dd589a4	reference
+ng-en-21541fa614	line in
+ng-en-2169463f85	sourdough
+ng-en-2174444336	you write
+ng-en-217f5d29cb	standards authority
+ng-en-2188ecca65	superlative
+ng-en-218f32d4eb	adapt
+ng-en-219b31b7f0	not certify semantic
+ng-en-21c008b27d	tax
+ng-en-21c1378742	consistency
+ng-en-21cf271b4a	a verb and
+ng-en-21d2aacc08	change communication
+ng-en-21dc6332bb	detail
+ng-en-21e10cda5a	of work
+ng-en-21e91651d3	survey
+ng-en-21ead22af6	claim and license check
+ng-en-21ebc9c849	nine
+ng-en-21f00026f6	gives the checks and
+ng-en-221cb11935	it adds
+ng-en-223ee96b73	people
+ng-en-2250ca639f	eligibility and date without
+ng-en-226bded72f	benchmark texts
+ng-en-227556650b	better
+ng-en-227b832c2e	you want
+ng-en-2282203679	the brief card
+ng-en-2286bd8c6d	catalog from a
+ng-en-2291339064	stores
+ng-en-2298f35fb9	results
+ng-en-229e91925a	the playbooks
+ng-en-22a17237d6	threads post
+ng-en-22a500e903	the specific
+ng-en-22b8e450de	followed by
+ng-en-22c423ed3a	task
+ng-en-22d5c81e2d	addresses
+ng-en-22d68d6cd8	it writes
+ng-en-22dac6d333	review the actual public
+ng-en-22e8cb1de3	hard message
+ng-en-231245a9b1	the opening
+ng-en-232e6c16c4	without code execution
+ng-en-232eb2a194	update
+ng-en-2339132142	switch
+ng-en-233a34185f	link
+ng-en-233a5d607b	deep
+ng-en-2346c24f1c	two versions
+ng-en-2360f916d7	transitions
+ng-en-236d48480b	narrator
+ng-en-23834d9f97	stage
+ng-en-2387a7387b	and auto
+ng-en-23893439a9	one offer
+ng-en-23a3a8c5fe	this text
+ng-en-23bfea6b51	ids and per
+ng-en-23c7e8b765	cluster
+ng-en-23cf604912	includes
+ng-en-23db4c65d3	the call
+ng-en-23dd768551	town
+ng-en-241a6bbeae	user asks
+ng-en-241dcf540f	a year later
+ng-en-2423371c5d	says how
+ng-en-2443336c3d	spell
+ng-en-2448da8382	word for word
+ng-en-2469f9fce1	competitors
+ng-en-246bf20126	script against supplied
+ng-en-24757ce657	a text
+ng-en-2482deabad	went
+ng-en-2487f297ef	a different
+ng-en-24895fab48	trust
+ng-en-2491159b3a	timings
+ng-en-24924e3817	spot
+ng-en-24a71743f7	catalog from
+ng-en-24ab510395	keeps the
+ng-en-24af5c1e32	how long
+ng-en-24c6df41a0	behavior
+ng-en-24dd731f2c	numbers and
+ng-en-24f58985af	order
+ng-en-250dd38408	the task
+ng-en-2515a2f604	its row in
+ng-en-2521d53351	make it
+ng-en-253681543a	download
+ng-en-2544910ff7	marketplaces
+ng-en-2547a8a4d7	capacity
+ng-en-2579566e59	team
+ng-en-258154e33a	the assistant
+ng-en-258b514cdf	shared craft
+ng-en-2590eeff4d	rule on
+ng-en-259facb4d2	error
+ng-en-25ad8aa8b6	twice
+ng-en-25ae4e9ab5	behind it
+ng-en-25b2aa1249	updates
+ng-en-25bb2429e6	notes that
+ng-en-25bdecb287	meeting minutes
+ng-en-25cfce9ff3	help a
+ng-en-25fbae9d6c	legal text
+ng-en-2606a05553	hours
+ng-en-261a7ba561	ordered
+ng-en-261fc3d8ee	for that format
+ng-en-262084aaee	the fact
+ng-en-263a782c4b	the top of
+ng-en-264a0b28f3	carries the
+ng-en-26594b03df	who approves
+ng-en-265e272385	one concrete
+ng-en-26789c85da	and verification
+ng-en-268051d9b1	measurement and a
+ng-en-2688556e40	in the eu
+ng-en-26a76e6481	honest
+ng-en-26acf639d4	in claude code
+ng-en-26b3359be0	the description
+ng-en-26c2c53199	implementation is
+ng-en-26d2426a50	from the skill
+ng-en-26d8f8dad2	voice
+ng-en-26da81ed92	posts
+ng-en-2707321438	complaint response
+ng-en-2719400966	an sms
+ng-en-271a967996	unsupported claim
+ng-en-27228bf1fe	a verb
+ng-en-272936f6fb	in place of
+ng-en-273dbc0ec1	language and
+ng-en-27419bbab9	reasonable
+ng-en-27690ce739	far
+ng-en-27779ea8e1	is empty
+ng-en-27880e508b	teams
+ng-en-27a4c37251	computer
+ng-en-27a5e68d51	english route
+ng-en-27a63376f5	as an ad
+ng-en-27c953d330	contents
+ng-en-27cdf91287	passes the
+ng-en-27e79dcd9c	agenda
+ng-en-27fccadfb2	in several
+ng-en-280708c80c	web elements
+ng-en-2821c141fc	contact
+ng-en-28258e98d4	say how
+ng-en-284ce094e6	a subject
+ng-en-284fb7b94c	cards
+ng-en-285a915488	audio
+ng-en-286dca3f22	says the
+ng-en-288cbc824d	verb and an
+ng-en-28c17b51d6	quality loop
+ng-en-28d7239b76	requiring
+ng-en-28ff5f877f	opportunity brief
+ng-en-2905e50da6	proves
+ng-en-290973f87e	the template
+ng-en-29100d78ea	exclamation marks
+ng-en-291ff6b4e0	to another
+ng-en-2924bcc008	passes
+ng-en-2947232f0b	code points
+ng-en-294c2112e9	print
+ng-en-294f7870ca	separately
+ng-en-295e8d8c1f	reader and
+ng-en-29868890d5	comes out
+ng-en-298e1b39ea	answer
+ng-en-2996adf5f9	build a
+ng-en-2996f37ec4	the turn
+ng-en-29995e29b2	spelled
+ng-en-299ad2364f	and date
+ng-en-29a91d0045	mistake
+ng-en-29bbf1b943	project root
+ng-en-29c0d84882	white
+ng-en-29cacb6c8d	behind the
+ng-en-29d00433cf	fail
+ng-en-29f9fc2c48	for readers in
+ng-en-2a0072e9d6	a team
+ng-en-2a222a2c05	an idea
+ng-en-2a23561b6d	the quality
+ng-en-2a2642a755	reader sees
+ng-en-2a2e07e9d8	and capacity exactly
+ng-en-2a36ab82d0	brackets and
+ng-en-2a49253b05	add the
+ng-en-2a54d31464	interviews
+ng-en-2a59df0d93	the reason for
+ng-en-2a5b24ac1a	feature page
+ng-en-2a727b54b4	a script
+ng-en-2a7aecb2ea	industries
+ng-en-2a82d86bd4	of a playbook only
+ng-en-2a85b0ab0f	holiday
+ng-en-2a8d42ef59	emoji
+ng-en-2a96a638b9	asks for
+ng-en-2a9b79346c	use only
+ng-en-2a9bb60a37	a date
+ng-en-2aa044f5a0	the model
+ng-en-2aa4fc5411	official
+ng-en-2aa5460b87	personal data
+ng-en-2acd21e51c	words that
+ng-en-2ad8d1a6ca	discount
+ng-en-2adf885fba	gate decides
+ng-en-2ae3ecd62b	the mistake
+ng-en-2afc40454d	the recommended
+ng-en-2b049b6988	email to
+ng-en-2b094853c0	deterministic checks
+ng-en-2b120f1e60	approved evidence
+ng-en-2b336ed07c	a bad
+ng-en-2b4307d262	says what
+ng-en-2b46ffc74b	days
+ng-en-2b48b6c131	job
+ng-en-2b4bd20606	and units
+ng-en-2b56e0552b	the limit
+ng-en-2b74d946ea	claim to
+ng-en-2b7ee92f84	tool is
+ng-en-2b8c8cbef2	phone
+ng-en-2b95b98dda	to keep
+ng-en-2ba267c64a	a request
+ng-en-2ba878b79f	one confirmation
+ng-en-2bcfcb18be	brands
+ng-en-2bd0d9a723	subheadings
+ng-en-2bfcb41a3b	routine
+ng-en-2c1fd1ff8e	singular
+ng-en-2c27aabbfa	health services and supplements
+ng-en-2c3566d933	picture
+ng-en-2c72e36dbf	appear
+ng-en-2c74709857	gsm
+ng-en-2c750588bb	the center
+ng-en-2c87a2dceb	model
+ng-en-2ca4db1496	in sentence
+ng-en-2caf5c3da2	every day
+ng-en-2cbf7f3b7e	fintech
+ng-en-2cc6027201	read aloud
+ng-en-2cce036b93	contract implementation
+ng-en-2cd214f3e6	history
+ng-en-2cd32eba01	profile against supplied
+ng-en-2cd750826d	content posting
+ng-en-2ce335ea62	identity
+ng-en-2ce9f9d13e	repair
+ng-en-2cf411f579	chosen
+ng-en-2d4335f511	the playbook
+ng-en-2d4669011f	guidelines
+ng-en-2d530d6bbb	identical
+ng-en-2d591e0d33	the page
+ng-en-2d603bd9a0	well
+ng-en-2d62c9777f	a way
+ng-en-2d74f4fae2	the selected task
+ng-en-2d7f759e90	a file
+ng-en-2d838a2967	one primary
+ng-en-2da84af5be	compliance
+ng-en-2ddd3eb8a5	strategic
+ng-en-2ded7100b4	humor
+ng-en-2df5d054d6	reductions
+ng-en-2df79494d5	names its
+ng-en-2e09beac74	fees
+ng-en-2e16e28551	and social media
+ng-en-2e1a93e564	shows in
+ng-en-2e1e945c4f	b testing
+ng-en-2e38176cef	the time
+ng-en-2e48eb189c	brand has
+ng-en-2e4949da40	end of
+ng-en-2e4f8d8589	in one sentence
+ng-en-2e55c0e32c	council
+ng-en-2e5fee12c9	function
+ng-en-2e60bbc04a	so the linter
+ng-en-2e6e1a3053	chains
+ng-en-2e7009882a	line lists
+ng-en-2e7fced09a	in a table
+ng-en-2e9242660e	when the request
+ng-en-2e9db89f40	a card
+ng-en-2ea3ba3ecf	the request
+ng-en-2eaf63e06d	alert
+ng-en-2ec645ba86	market is
+ng-en-2ed1630e04	shame
+ng-en-2edfb29a3c	line of a playbook
+ng-en-2ee6251f61	chatbot
+ng-en-2eefe21998	the reader can check
+ng-en-2f0454091b	marketing texts
+ng-en-2f2ac74f0c	needs it
+ng-en-2f595e2360	in bulk
+ng-en-2f5f26d0ff	minimum
+ng-en-2f6ca9e20c	in scope
+ng-en-2f7a50d193	description
+ng-en-2f8f689fdc	review without
+ng-en-2f8fc7e5a2	this file is part
+ng-en-2fa9e484f9	differences
+ng-en-2faf69e0d8	breakfast
+ng-en-2fb7c107ba	invoice
+ng-en-2fbf280c8f	board
+ng-en-2fc2b81160	thanks
+ng-en-2fdd215101	sample
+ng-en-2fe468386e	md file
+ng-en-300122fbb9	validate output section
+ng-en-30157619f2	with its source
+ng-en-302581c68b	required result
+ng-en-303193c62d	ask
+ng-en-3069a73ac7	the check
+ng-en-307ef84e61	cut it
+ng-en-307f61f6e2	each row
+ng-en-308dccdaf9	the actual product
+ng-en-30974ad3ad	stay
+ng-en-3097ac321c	pasted
+ng-en-30a2c1ae7e	guide against
+ng-en-30bdfc12c5	prices
+ng-en-30e9239b83	in the uk
+ng-en-30fcf91820	command
+ng-en-310d42775b	yes
+ng-en-3113410fb3	human review
+ng-en-3125605019	room
+ng-en-312562b877	a text of
+ng-en-312ca1aa07	page against supplied evidence
+ng-en-3135e64d9b	ideation session
+ng-en-314349972b	two to
+ng-en-3149ba5cff	range
+ng-en-314ec5b1be	the sign
+ng-en-3152cac878	order and
+ng-en-316f7ffe60	sentences
+ng-en-31711dfe33	mainly
+ng-en-3177124959	goes back
+ng-en-317dc92176	listen
+ng-en-318041e059	json file
+ng-en-3184ad9817	and waiting states
+ng-en-31aef3ada5	in order
+ng-en-31b83db8b6	the english
+ng-en-31d0b542b5	change a
+ng-en-31d7f71178	segment
+ng-en-31dac8c937	one term
+ng-en-31de0acfba	text must
+ng-en-31df6ee093	transcript
+ng-en-31e7c07f57	this email
+ng-en-31ee062323	quick tests
+ng-en-31f5723409	a short
+ng-en-31fb02eabd	supplied source
+ng-en-320665a406	the real
+ng-en-3216a66683	falls
+ng-en-322ae3a108	risk is
+ng-en-32324f1865	top of the
+ng-en-323bc06515	the substitution test
+ng-en-32427e8757	colloquial
+ng-en-324ddd267e	advertising practice
+ng-en-32508079e4	is a verb
+ng-en-3253b1b3b8	both files
+ng-en-3256581a2a	questions
+ng-en-325e0d18f9	assistant
+ng-en-325f21af9d	decide
+ng-en-3267b6f6ae	entry
+ng-en-326ca17aa1	interface text
+ng-en-32780a4b2f	site
+ng-en-327dcfbe75	registry
+ng-en-3284b14f61	similar
+ng-en-328af3cc47	the md file
+ng-en-32a1c282b2	agree
+ng-en-32a607fa96	structured
+ng-en-32b4eb4bcb	whatever
+ng-en-32bde87a42	loaf
+ng-en-32cbe530cc	supplies
+ng-en-32d6b8125f	articles
+ng-en-32deacbcb6	semantic quality
+ng-en-32f633af30	side by
+ng-en-3302127def	warns
+ng-en-3309838f1d	ad campaign
+ng-en-3316d68b89	ingredient
+ng-en-3319d64d73	sync
+ng-en-3355f278f5	and descriptions
+ng-en-336c5f0c78	placement
+ng-en-336fc864db	feed
+ng-en-338ef038cc	typical
+ng-en-33947eb976	exactly to approved evidence
+ng-en-33ad2fa823	setup
+ng-en-33c6b5c88c	timing
+ng-en-33d6b2372e	vs
+ng-en-33d72ef02f	role
+ng-en-33d9ec1f34	offered
+ng-en-33e0bc02ac	work with
+ng-en-33e385b8cb	plan against supplied
+ng-en-3400e6d65e	brand is
+ng-en-3429d018f0	listener
+ng-en-3437edbaea	benefits
+ng-en-343fe921ee	strings
+ng-en-344d2ed429	export
+ng-en-345f0d53cf	date
+ng-en-3465c256b9	fields and
+ng-en-346619edbb	before adoption
+ng-en-346c68f452	one idea per
+ng-en-3470e29313	term
+ng-en-34811219b0	the row
+ng-en-348b26ab02	a food
+ng-en-3496d54af5	notes
+ng-en-34b01ea510	exact
+ng-en-34ceedad0d	actual event
+ng-en-34d173bc1b	pre
+ng-en-34ea098bba	make
+ng-en-34f1de39f8	workshop
+ng-en-3510f81034	practice
+ng-en-35152c5f53	presence
+ng-en-3516d70cf5	time zone
+ng-en-351acb1eb4	never a
+ng-en-351f2f294f	human review remain
+ng-en-35238cc199	researcher
+ng-en-3539a4851f	apology
+ng-en-355a55e25f	uk advertising
+ng-en-3568d5c8e1	factual
+ng-en-357237b595	level of
+ng-en-357cce6842	one short
+ng-en-357cdf9371	unsupported claims remain
+ng-en-358271da43	the person
+ng-en-3586c05d3c	speculation
+ng-en-35881e173c	documented
+ng-en-3597b1317d	whole
+ng-en-359e20c8d0	jurisdiction
+ng-en-35a054ec7c	structural
+ng-en-35b5f25c9e	light
+ng-en-35bb63c5bc	mixed
+ng-en-35e9308b12	user stories
+ng-en-35f16c7cee	a three
+ng-en-3605b38ac2	and markets
+ng-en-3627a69acb	or service
+ng-en-363cbca549	an empty
+ng-en-3649453e0f	author
+ng-en-365667447b	returns
+ng-en-366203cbab	to nine
+ng-en-36653278ec	json
+ng-en-366a77cd36	a table in
+ng-en-3692f4c9b7	if the user
+ng-en-36a39dae63	business days
+ng-en-36d6e11074	the json
+ng-en-36edb1c12e	appears in
+ng-en-37060f8179	filter
+ng-en-373dfb462d	brief against
+ng-en-374aa7430f	including the
+ng-en-3758d2466e	one thing
+ng-en-376f0c661e	not invent a maximum
+ng-en-37729fe0fa	and privacy
+ng-en-3775842566	leave the
+ng-en-3792458ca0	federal plain
+ng-en-379d9a1f41	memo against supplied evidence
+ng-en-37b584b98b	the task index
+ng-en-37d0c7ef83	tables
+ng-en-37e45c3bc2	any network
+ng-en-37ef7122f7	hear
+ng-en-37fb8bf462	mislead
+ng-en-380d80ae5e	the text is
+ng-en-3815969433	message or post is
+ng-en-38215f7a60	crisis
+ng-en-38224ba7bd	verification
+ng-en-38458e338d	preserving
+ng-en-385a889c65	the base
+ng-en-386a74935b	segments
+ng-en-388089d854	acceptance criteria
+ng-en-3880f218b6	weight
+ng-en-388fe5687d	housing and employment
+ng-en-38aacd0949	to tell
+ng-en-38ad2a964e	remain
+ng-en-38ae5690ee	adds
+ng-en-38b983bed4	an ad
+ng-en-38bdcf8f19	the offer
+ng-en-38e7403c2c	fake urgency and
+ng-en-38f065592b	assurance
+ng-en-38f5cf980b	each slide
+ng-en-39335abf8c	the checks and
+ng-en-3940b69975	into the profile
+ng-en-394be5f573	latin
+ng-en-394e20a801	generated from the
+ng-en-39553a0af6	aside
+ng-en-395c832fd0	tips
+ng-en-395e52c564	the writer
+ng-en-396de3ef50	written
+ng-en-397ebfe253	keep them
+ng-en-399b01e556	questions before
+ng-en-39bc2f2ab2	fit with the
+ng-en-39c9904a36	in a code repository
+ng-en-39cabcc1db	social post
+ng-en-39d491c380	claim that needs
+ng-en-39fe7e305a	lead
+ng-en-39fee9b76f	the question
+ng-en-3a0362009a	accuracy
+ng-en-3a0c41b476	put the
+ng-en-3a157095b1	trade
+ng-en-3a1a23cfa8	four
+ng-en-3a1b831ee5	use
+ng-en-3a1f6661a8	removed
+ng-en-3a1fea572c	the committee of
+ng-en-3a3046339a	a date and
+ng-en-3a38df1526	a reasonably substantial
+ng-en-3a4414a376	limits at
+ng-en-3a4807579c	a place
+ng-en-3a4a05433b	exception for
+ng-en-3a5b2b936b	contains
+ng-en-3a640e939f	carry
+ng-en-3a64fb7dd3	quotes and
+ng-en-3a650dfe2b	the second fact
+ng-en-3a8a76d01e	sentence length
+ng-en-3a9fd139c6	kept
+ng-en-3aa2baaca4	only names its
+ng-en-3aaadc7488	a real
+ng-en-3ab265c98e	says so
+ng-en-3abfd67d38	symbols
+ng-en-3aca39126a	a score
+ng-en-3acb7498e1	required input
+ng-en-3acd9d10ec	opening line
+ng-en-3aecfc1c8b	finalists
+ng-en-3af291d660	supplements
+ng-en-3af9176dd4	next to the
+ng-en-3afc0575cb	near the
+ng-en-3afe83a2a5	negative
+ng-en-3b01465ffd	describe the
+ng-en-3b23a44f9a	time and
+ng-en-3b39d6cbc3	questions are
+ng-en-3b4c7898da	from the facts
+ng-en-3b4c889f13	control
+ng-en-3b5b457ab9	closed
+ng-en-3b66100060	row of the question
+ng-en-3b716f690a	consumer
+ng-en-3b7c10e163	revocation
+ng-en-3b8a266839	context and
+ng-en-3ba0041afd	form labels
+ng-en-3ba907aff8	closing
+ng-en-3bbdb2ae49	presets
+ng-en-3bc259c8a5	greeting
+ng-en-3bcb2d88a4	in the md file
+ng-en-3bdf0bb49a	try
+ng-en-3bef058d91	the problem
+ng-en-3bf36c307f	the cap
+ng-en-3c12f8fb65	captions and social media
+ng-en-3c225a248f	really
+ng-en-3c3c6779d5	readers in
+ng-en-3c4902985b	collection
+ng-en-3c69656767	marked
+ng-en-3c6a761439	the action
+ng-en-3c6b35edb6	catalog
+ng-en-3c710e7d99	research before writing
+ng-en-3c7a1bc43a	since
+ng-en-3cac881d3c	or english
+ng-en-3cb261dfbd	assets
+ng-en-3cc1842fdd	two different
+ng-en-3ccc8ba794	shared writing registry
+ng-en-3cd0a68abd	the step
+ng-en-3cd572161d	character count
+ng-en-3cde5e0309	sit
+ng-en-3ceabbed7e	the reason
+ng-en-3d1c8c22ca	first message
+ng-en-3d1e085096	pages
+ng-en-3d23fa0591	one reader
+ng-en-3d28eb957c	a tender
+ng-en-3d47d4ba90	accurate
+ng-en-3d5225dbc9	world
+ng-en-3d6a31ccf2	expected
+ng-en-3d6bf4ed40	meeting notes
+ng-en-3d73101c3b	filled
+ng-en-3d77a24aac	email or
+ng-en-3d8d78a7dd	a maximum
+ng-en-3d9933e1bf	items
+ng-en-3da0c0531b	sent to
+ng-en-3daca613d0	inventing
+ng-en-3db265a05a	conditions and
+ng-en-3dbb72b637	chatbots
+ng-en-3dc239de27	plan against
+ng-en-3dcf988ff2	lunar new
+ng-en-3dd1a1c1d0	length
+ng-en-3dfb2c2a80	counts
+ng-en-3e08ed2351	influencer
+ng-en-3e25d46c3b	typical results
+ng-en-3e36730f24	interview
+ng-en-3e4ebcf613	where the reader
+ng-en-3e5aaec846	against supplied
+ng-en-3e5e985f5a	claims
+ng-en-3e62073905	employee
+ng-en-3eab4ef9f6	covers
+ng-en-3ed521b4c3	the weekly packet
+ng-en-3edaa9c429	claim and
+ng-en-3ee0213639	share
+ng-en-3ee7c5e9fd	the client
+ng-en-3ef1615dc8	summary of
+ng-en-3ef606d0c6	the dials
+ng-en-3effa84e73	shape
+ng-en-3f09bac458	brand and
+ng-en-3f1f4e6094	the actual event
+ng-en-3f2e11ab78	video and audio
+ng-en-3f4481d58e	like
+ng-en-3f4f9dd94f	app name
+ng-en-3f559daba2	short link
+ng-en-3f5d43b517	watch
+ng-en-3f6ad55ceb	remains required
+ng-en-3f70be317b	numerals
+ng-en-3f71adb8d7	documentation
+ng-en-3f79acf163	never invent
+ng-en-3f89082d4c	and say
+ng-en-3f8efce6c3	caption for
+ng-en-3fb7ad3f40	one idea
+ng-en-3fc2e4485e	words and
+ng-en-3fc69daae6	most three consequential questions
+ng-en-3fe2043582	committee of
+ng-en-3fe799a65a	gaps
+ng-en-3fed0494fc	article
+ng-en-3ff6506019	the app
+ng-en-3ffb422c30	optional
+ng-en-40506c47f1	and check
+ng-en-40678aec01	and market
+ng-en-406fe5914e	pages and
+ng-en-407c9ca799	long and
+ng-en-407eece18b	locked exact spans
+ng-en-409b3b34eb	style highlights
+ng-en-409e3b1e32	asked
+ng-en-40b063191e	words such as
+ng-en-40b17dd53c	dates
+ng-en-40baebb083	responsive search ads
+ng-en-40cae1a4ae	request is
+ng-en-40dcef6b07	in the profile
+ng-en-40deb3174f	sample size
+ng-en-40f0d7a667	ran
+ng-en-40f1ae84fb	repeats the
+ng-en-40ff935ccf	financial promotion
+ng-en-4107bc194d	creativity
+ng-en-410a0cb8cc	promotion
+ng-en-411be90e83	across
+ng-en-413523f5a9	transactional or
+ng-en-41382ba1d3	if the text
+ng-en-4146353a43	to the brief
+ng-en-4148f8874a	every quote
+ng-en-415aa234ae	social media
+ng-en-415b847d8c	urgency
+ng-en-4164502259	fund
+ng-en-416e7bfed3	example for a
+ng-en-417cafc1c8	characters
+ng-en-419b7a38ec	bracketed
+ng-en-41a5ba5363	transactional or marketing
+ng-en-41bbd49ad4	visual
+ng-en-41c9417dc7	controls
+ng-en-41dbee32b9	license check
+ng-en-41e3405184	commercial email
+ng-en-41ea867a44	chapters
+ng-en-41ff634e6a	seen
+ng-en-421f0ba41e	people in copy
+ng-en-421ffce71f	method
+ng-en-4225ebb94a	hashtags
+ng-en-4235160d00	the listener
+ng-en-42365bae13	three consequential questions per
+ng-en-42541d96ba	removes
+ng-en-425e17ca2f	three
+ng-en-4267dd5049	it stays
+ng-en-4279731ca7	targets
+ng-en-427b741a0a	scarcity and capacity
+ng-en-427c594fb4	the request is
+ng-en-42a4f2e4e8	supplement
+ng-en-42c841911d	these rule
+ng-en-42cb8e9b24	say whether
+ng-en-42cf53f0b9	customers
+ng-en-42e6962734	missing facts
+ng-en-42ec5708bd	book
+ng-en-42ed99ebb9	in this order
+ng-en-43006386d5	primary
+ng-en-430cdc7c62	no brand
+ng-en-4311fc71ed	traces to the brief
+ng-en-432b91f585	the files
+ng-en-4332637d5d	editor
+ng-en-434dcb552b	go into
+ng-en-4357c363ab	ad against supplied
+ng-en-4359c87b2a	no email
+ng-en-437374e409	developer
+ng-en-43849712c8	workflow
+ng-en-43a961af48	to read
+ng-en-43ac493f45	the fa
+ng-en-43c6663149	clause
+ng-en-43d4b9292a	answer the
+ng-en-43d9a28b8b	a rule
+ng-en-43e3798c8a	a repository
+ng-en-43e6dde64c	assumes
+ng-en-43ebe002b9	environmental
+ng-en-43f111bfa1	the federal trade commission
+ng-en-43f1929f17	design guidance
+ng-en-43f63ed841	joiner
+ng-en-44052fb626	timeline
+ng-en-4405c67f7f	not covered
+ng-en-442fb7b439	the substitution
+ng-en-443e68a376	internal note
+ng-en-44447f8b54	a specific
+ng-en-44498a330a	characters and recommends
+ng-en-447396a075	federal plain language
+ng-en-44b12b6dc0	needs the
+ng-en-44b6ac9644	empty state
+ng-en-44c2630580	in the file
+ng-en-44cc1e036b	difference
+ng-en-44cdae5a5b	address
+ng-en-44d7ec4773	language
+ng-en-44e0b6aeef	tickets
+ng-en-44e4b0eba8	recommends
+ng-en-44e98e6980	touch
+ng-en-44f78c7474	one spelling
+ng-en-45011d7828	choice
+ng-en-450466951c	consent and
+ng-en-450794978d	exact words
+ng-en-451f6d510d	speaker
+ng-en-45215af3c5	explain
+ng-en-453c063b0a	office
+ng-en-454d91ec99	based on
+ng-en-45522eb11d	the closest
+ng-en-45684bb94b	episode
+ng-en-456da32ffc	superlatives
+ng-en-4570d31190	its date
+ng-en-45737b4a92	friendly
+ng-en-45766c8ff7	something
+ng-en-45b21c3171	caption
+ng-en-45b7b69e68	validate output
+ng-en-45c157944f	formal
+ng-en-45c5135c79	window
+ng-en-45c618d35a	and seo
+ng-en-45d46e51dd	has a source
+ng-en-45f77d2a7f	subject and
+ng-en-460559fa5c	certification
+ng-en-4609ec5687	contract implementation is
+ng-en-460b0b2d06	default slot
+ng-en-4619a9828a	a correction
+ng-en-463c0bbf49	the phone
+ng-en-46436297d9	report
+ng-en-4645cccea7	row is in
+ng-en-46516a24c9	buy
+ng-en-4652dfba8a	warnings
+ng-en-465c3dfc20	a concrete
+ng-en-4676a61bd2	and regulation
+ng-en-467a28951f	presented
+ng-en-468853fad6	every bracket
+ng-en-46a85e8825	refresh
+ng-en-46ac289c81	and style
+ng-en-46ad89d9fc	and nothing
+ng-en-46ade4c552	spec
+ng-en-46b66f7563	stays a
+ng-en-46ba012795	format
+ng-en-46c30f0776	a note
+ng-en-46d8a52ed5	sponsored
+ng-en-4704a72942	stay untouched
+ng-en-47060a5033	deterministic
+ng-en-4707500910	future
+ng-en-4723111c0a	month
+ng-en-4725849594	first line
+ng-en-4728411682	cite the
+ng-en-473cb2c457	a sensitive industry
+ng-en-473ce6667a	gets a
+ng-en-473e108a53	locale
+ng-en-473fd6e00a	decisions
+ng-en-4740987b0f	from a spreadsheet
+ng-en-47485d0382	slot
+ng-en-474c44b2a0	suggest
+ng-en-47738a613e	variable
+ng-en-4783902a6c	the short
+ng-en-4786dc0e14	marketing text
+ng-en-478fb79ae7	or bilingual
+ng-en-478ffe5328	corpus audit
+ng-en-479121974c	personality
+ng-en-47991fd014	the supplied
+ng-en-47a6a1b17d	duration
+ng-en-47af8c5821	photo
+ng-en-47c40897e4	second
+ng-en-47cfc13285	linter rule
+ng-en-47d2c34e6c	of federal
+ng-en-47e2a2b5ee	low
+ng-en-47edc8c690	competitor
+ng-en-47f47215de	a playbook only
+ng-en-4809ec5607	copy against supplied evidence
+ng-en-480c13f6b1	the guide lists
+ng-en-4814e7c6a7	process
+ng-en-485d75d674	implementation is local
+ng-en-4862b0004b	go in
+ng-en-4882e632a3	person with
+ng-en-488ec65951	inside a
+ng-en-489a6ae6e8	documentation style guide
+ng-en-48ac984e8f	authorized
+ng-en-48b4fc7fa6	the current
+ng-en-48d141d7f9	guide lists
+ng-en-48d55b3748	unstated
+ng-en-48dc911456	products
+ng-en-48dcf7c0f6	unit
+ng-en-48de43d7f3	say the
+ng-en-48df2080ff	as well
+ng-en-48e1fd6d0b	click
+ng-en-48e3a821e0	content
+ng-en-48e8c8712f	later
+ng-en-49095bf275	a button
+ng-en-4910eef427	committee of advertising practice
+ng-en-4923e34888	cosmetic
+ng-en-492dd73851	that makes
+ng-en-496344925a	uk a to z
+ng-en-4983548dc0	a title
+ng-en-499d838a61	directness
+ng-en-49ac4475a1	wrong
+ng-en-49e5b7fad6	sold
+ng-en-4a075f4845	impact
+ng-en-4a0bd1c382	confirmation
+ng-en-4a0d8b4635	exploration
+ng-en-4a14f84db0	playful
+ng-en-4a195ccaae	the reader
+ng-en-4a1b2b710d	wording
+ng-en-4a20ab528c	replace
+ng-en-4a23084576	hunt
+ng-en-4a275fca3f	costs
+ng-en-4a4eb62119	way
+ng-en-4a511983a4	response against
+ng-en-4a53865d6a	type
+ng-en-4a5a897e51	a set
+ng-en-4a5fa2a728	feedback
+ng-en-4a6acb6e43	a screenshot
+ng-en-4a6b2c834c	talk
+ng-en-4a6f1f0c37	plus the
+ng-en-4a71566923	expect
+ng-en-4a76d18432	and put
+ng-en-4a7ad47e53	people who
+ng-en-4a83e44898	every playbook here
+ng-en-4a944dbd6a	spring
+ng-en-4a946bca28	paid
+ng-en-4aae6cfcdb	catches
+ng-en-4ab5dfae2d	come from
+ng-en-4abfad1dd6	destination budget
+ng-en-4ac3f54535	today
+ng-en-4ad0144510	briefly
+ng-en-4ad339400a	repairing
+ng-en-4ad56d4f78	attach
+ng-en-4adba01aea	dropped
+ng-en-4addf3eeee	comparison with
+ng-en-4ae08e2c93	a self
+ng-en-4ae2a2fedf	and media
+ng-en-4af2815790	the post
+ng-en-4af727e3c5	consented
+ng-en-4afaa3bf51	line
+ng-en-4b06eccf4d	privacy fit
+ng-en-4b1d889aed	matters
+ng-en-4b266f8c37	announcement
+ng-en-4b275ce7b3	is built
+ng-en-4b3741210e	these three
+ng-en-4b4f97ff2e	the editor
+ng-en-4b6eebd240	data
+ng-en-4b7053d184	other markets
+ng-en-4b73382196	licenses
+ng-en-4b82272420	link text
+ng-en-4b8ac3c852	encoding
+ng-en-4ba1995773	standard
+ng-en-4bc356c0e9	inside
+ng-en-4bd1f34e77	the scoring
+ng-en-4be67b794f	and capacity
+ng-en-4be7b26fba	error message
+ng-en-4bef211507	promotions
+ng-en-4c06b0c4de	page against supplied
+ng-en-4c17673162	single
+ng-en-4c2cb66d0c	name is
+ng-en-4c33b4ba78	the longest
+ng-en-4c39d95337	the general
+ng-en-4c4ef5f60c	a plural
+ng-en-4c54a2bc23	last
+ng-en-4c574f8b9f	and waiting
+ng-en-4c67dabed3	claims remain labeled gaps
+ng-en-4c6d229338	actual employee
+ng-en-4c6fd32a32	honesty
+ng-en-4c7388e751	tutorial
+ng-en-4c7a83af20	in the conversation
+ng-en-4c937e3ce0	verbal
+ng-en-4c93dfad6a	sensitive
+ng-en-4c98950505	the linter warns
+ng-en-4c9db010a3	protected
+ng-en-4c9e50872a	discriminatory
+ng-en-4cbd8b1c7e	strings in
+ng-en-4cf6d69186	runs out
+ng-en-4d05ee15c9	rule id
+ng-en-4d0764ddd4	not repeat
+ng-en-4d35d698fd	snippets
+ng-en-4d49cf50f2	capability
+ng-en-4d4b32ba47	the meta
+ng-en-4d790fa693	and human review remain
+ng-en-4d89890346	lives
+ng-en-4d8b2a51f7	chatbots and auto
+ng-en-4da0ad606c	piece
+ng-en-4dadccd72e	deterministic checks do not
+ng-en-4db31367dd	homepage
+ng-en-4dbeb5e918	and product
+ng-en-4dc7b9537d	mix
+ng-en-4de98eb019	pressure
+ng-en-4dedb78419	the brand and
+ng-en-4e022b8666	to see
+ng-en-4e0cc2e2de	the trial
+ng-en-4e150be02f	or approved
+ng-en-4e24d0ae23	per post
+ng-en-4e27187052	at the start of
+ng-en-4e2f93baaa	and note
+ng-en-4e3128b3ee	your bank
+ng-en-4e375924de	that person
+ng-en-4e4d6fdef9	start
+ng-en-4e61500d57	editing passes
+ng-en-4e661c70db	and source
+ng-en-4e69e1129d	starts with
+ng-en-4e765931bf	a zero
+ng-en-4e93292ec9	the profile
+ng-en-4e971e1a4a	opening hours
+ng-en-4e9b5de75e	the review
+ng-en-4ea4fa9976	linter
+ng-en-4ea7b4de87	a summary
+ng-en-4ea8be4ad3	competition
+ng-en-4eb55a5dfe	comes first
+ng-en-4eb833225f	are never
+ng-en-4ebd71f766	product hunt launch
+ng-en-4ed5a11ecf	advertising
+ng-en-4ee77b0c23	number or
+ng-en-4eee947284	accounts
+ng-en-4f2eeb3f73	and supplements
+ng-en-4f3b40dc43	review the actual brand
+ng-en-4f41f87adf	landing page
+ng-en-4f5b7dceb8	put it
+ng-en-4f6e974874	a good
+ng-en-4f7569f12e	often
+ng-en-4f90f48b65	reviews are
+ng-en-4fa19f673b	radio or
+ng-en-4facc6317c	constraints
+ng-en-4fb183d254	confirmations
+ng-en-4fbab11b58	packaging
+ng-en-4fbd58187a	language guidelines
+ng-en-4fcaafa745	the result
+ng-en-4fd098901d	building a
+ng-en-4fdb1259ed	sourced
+ng-en-4fe22b03ad	veterans day
+ng-en-4fe4d31f91	misleading
+ng-en-4fec6cb975	businesses
+ng-en-4ffcd247c1	front
+ng-en-501bc822f3	prior
+ng-en-5029e75357	conversation
+ng-en-502c9150f5	they need
+ng-en-5039f7a150	names the
+ng-en-504393004f	locked exact
+ng-en-5047742f7e	differs
+ng-en-5049857e71	a two
+ng-en-50547809a9	the form
+ng-en-505a21ff19	in a repository
+ng-en-508b64f9bc	scope and
+ng-en-509253e2fa	destination
+ng-en-50ba23de91	rules that
+ng-en-50c5b1d0f0	post with
+ng-en-50dba9f924	is high
+ng-en-50e79d958e	useful
+ng-en-50f481812f	never the
+ng-en-510367aaa3	audience
+ng-en-510bff3ad7	medium
+ng-en-511749bd4a	communication
+ng-en-513570660c	marketplace
+ng-en-5136751efc	one gsm
+ng-en-514cf943ce	unless a
+ng-en-5152bfe97d	comment
+ng-en-5155e25504	density
+ng-en-515c9e218b	to z style guide
+ng-en-516d6c5ace	product description
+ng-en-51784f189e	one emoji
+ng-en-51893a8ddf	the text
+ng-en-51ad57a69b	meta descriptions
+ng-en-51bdab0e6b	hard messages
+ng-en-51dfe71b1a	country
+ng-en-51ecc68512	headline and
+ng-en-51fc558fa8	of the brief
+ng-en-5201257e58	a landing
+ng-en-520297ea50	product and
+ng-en-520a910a39	facts remain
+ng-en-52307dac3b	saw
+ng-en-524b85fe0c	cycle
+ng-en-5257abc1ac	volume
+ng-en-525cc5ab7a	row for
+ng-en-5260949c40	substitute
+ng-en-5265ca4255	boilerplate
+ng-en-5283fab00f	every year
+ng-en-5285246800	rule updates
+ng-en-52968cc041	the search
+ng-en-5299c15772	method is
+ng-en-52b5228b2a	come before
+ng-en-52c3c83d01	independent
+ng-en-52d929136e	verbs
+ng-en-52df92c754	ai disclosure
+ng-en-52dfab80eb	the ai
+ng-en-52e55c0a00	notifications
+ng-en-52e8909c1c	nothing else
+ng-en-52ffbabf24	current
+ng-en-5317ec6f92	or export only
+ng-en-531a7d9dff	fails
+ng-en-531bb5a522	carries
+ng-en-532a113e3b	tender
+ng-en-53433e59ba	provide
+ng-en-53586497ab	the copy
+ng-en-535c1ff2de	the verb
+ng-en-536a07889c	required inputs
+ng-en-537a531f9c	the way
+ng-en-5390d03407	sends
+ng-en-539413875c	add a
+ng-en-539c62b77f	the start
+ng-en-53c6c7c48f	the source
+ng-en-53d5ca48fb	procedure
+ng-en-53e6880f38	percentage
+ng-en-53edb1d6bf	collect
+ng-en-540466653b	outside
+ng-en-5418676284	objective claim to a
+ng-en-543674d2ae	verb and an object
+ng-en-54480a891f	clearly
+ng-en-5449095fa6	comes before
+ng-en-54583901c7	explicit
+ng-en-546787bfb2	practical
+ng-en-546ad08e02	the second
+ng-en-5479da18cd	source or
+ng-en-54896984ee	sharing on
+ng-en-549f210628	takes its
+ng-en-549fddca63	slide
+ng-en-54abf1d522	every row
+ng-en-54af2517cb	marketing
+ng-en-54c79026e2	claims remain labeled
+ng-en-54e06e753e	federal trade commission
+ng-en-54e55d1ebe	claiming
+ng-en-54e5b03262	the address
+ng-en-54eadd6db0	unsupported claims
+ng-en-54f0985445	and meta
+ng-en-54f115fb0a	uk a
+ng-en-54f3478c8f	routes
+ng-en-54f7703d84	validation
+ng-en-5533f08d7d	and buttons
+ng-en-5534087607	followed
+ng-en-556887855a	a supplied source
+ng-en-556e3d5ffc	relative
+ng-en-557204ad8d	goal
+ng-en-55755234a8	weak
+ng-en-55b702d797	come back
+ng-en-55bd7b4882	link in
+ng-en-55c4e8c57d	this step
+ng-en-55daa92e85	services
+ng-en-55ec5bce72	global
+ng-en-561198d762	bulk
+ng-en-5612fbe90a	requires
+ng-en-561b40ee6b	lacks
+ng-en-562830cbff	ids
+ng-en-5643dcfbe7	classes
+ng-en-565108b040	the manual
+ng-en-56569b7afc	tasks
+ng-en-5656a53eaf	playbook
+ng-en-5666360fdf	rules and
+ng-en-566d948c5a	meta description
+ng-en-567e47f39e	name of
+ng-en-56851de7a6	the market
+ng-en-5696184b95	names
+ng-en-569ea22a3a	add
+ng-en-56a09dbcce	housing and
+ng-en-56a7ffd969	english copy
+ng-en-56ab3c8883	company
+ng-en-56ac15643a	mid
+ng-en-56af689c44	authority
+ng-en-56bd754d29	research
+ng-en-56c0f25fdc	eligibility
+ng-en-56da294567	scorecard
+ng-en-56dfa42365	row is in the
+ng-en-56e1e026c2	a signal
+ng-en-56eca238ea	outreach
+ng-en-56fc8fb6e8	version accuracy
+ng-en-5706a3a6f7	ship
+ng-en-570d2ee388	responsive search
+ng-en-5720b0557d	time
+ng-en-572d0b2027	bulk catalog from
+ng-en-57521e2817	eight
+ng-en-57528746b6	the federal
+ng-en-5774c9c0b4	the starter
+ng-en-57901b6d44	item
+ng-en-579147d641	source quality
+ng-en-5795888c88	exactly to
+ng-en-57c5f4519a	about pages
+ng-en-57d54bcdcb	keys
+ng-en-57d7421063	client
+ng-en-57e6935055	how many
+ng-en-57f1a61b6b	message against supplied evidence
+ng-en-57fdf0a6c9	people and
+ng-en-5824efdd93	resolution
+ng-en-582c31b7cf	describes the
+ng-en-584edd04a3	depends on
+ng-en-5880047cec	names its row
+ng-en-588d69c629	the channel
+ng-en-5897c45e19	storytelling
+ng-en-589e42b0fd	starter
+ng-en-58a0274b41	risk
+ng-en-58ab773218	template
+ng-en-58c4cc2a1c	bound
+ng-en-58cb597caa	seo copy
+ng-en-58d132bb9a	without inventing
+ng-en-58d2123851	match deadline
+ng-en-58fa13faea	finished
+ng-en-5900dfa592	tender response
+ng-en-590d5922eb	line is
+ng-en-590e472006	the brand
+ng-en-590eb15d18	judgment
+ng-en-5911ac8ae1	what the product
+ng-en-592a8a9bc1	of the question bank
+ng-en-592b46ba16	written in
+ng-en-5934fec71e	certify
+ng-en-595775cbe6	the sample
+ng-en-596e6a51b5	developer documentation style guide
+ng-en-596f14395f	voice profile in
+ng-en-597b36f01f	bullet
+ng-en-599843cc00	clarity
+ng-en-599ad164e9	follows the
+ng-en-59a9539b53	product photo
+ng-en-59b05317cb	a dated
+ng-en-59b231d2e9	patterns
+ng-en-59b83e068c	idea
+ng-en-59c5ae794e	claims that get brackets
+ng-en-59c691484f	questions come
+ng-en-59c9abdbad	substitution
+ng-en-59ce447c1d	short
+ng-en-59efdb162d	playbooks
+ng-en-59f12e2ccf	the uk
+ng-en-59fa3c7184	a claim that
+ng-en-5a00d1fd36	selling
+ng-en-5a04eb614d	committee of advertising
+ng-en-5a05802a7c	check each
+ng-en-5a0ba05c6e	home
+ng-en-5a13593480	a fallback
+ng-en-5a36c950be	who agreed
+ng-en-5a398fc5e6	guesses
+ng-en-5a5b6adf1f	key
+ng-en-5a627235ef	naming
+ng-en-5a7c9f5006	a month
+ng-en-5a8423037c	cleanup
+ng-en-5a97963540	execution
+ng-en-5aa7d922e1	count
+ng-en-5aadecbb88	person who
+ng-en-5ab5cc296d	thing
+ng-en-5ad06a69f7	checked
+ng-en-5ae1d9836c	case in
+ng-en-5af6ef662c	phone menu
+ng-en-5af8adcf08	review remain unverified
+ng-en-5b0abdeb56	each text
+ng-en-5b1c893db4	set
+ng-en-5b1f7205b3	one line
+ng-en-5b268417ea	narrative against supplied
+ng-en-5b3bd73433	sms character
+ng-en-5b70229da7	strategy
+ng-en-5b97b66ebe	connect
+ng-en-5ba0920cb1	copy carries
+ng-en-5ba3854841	city
+ng-en-5ba5df1c4b	format and
+ng-en-5bb2583bdc	files after
+ng-en-5bbf99d611	the same facts
+ng-en-5bd2ce1791	end of the
+ng-en-5c0ea310c2	notice
+ng-en-5c15f7abd8	from the request
+ng-en-5c21daca26	pair
+ng-en-5c22d13b82	distinguish characters
+ng-en-5c28c97397	operation
+ng-en-5c679e03a2	pronunciation
+ng-en-5c6be8d51c	a supplied
+ng-en-5c6c24875a	in a bracket
+ng-en-5c7cb46663	tools
+ng-en-5c90e0c53c	verse
+ng-en-5c9abb73f0	rhetoric
+ng-en-5c9f4c4c0d	words such
+ng-en-5caed622b8	running
+ng-en-5cbd9eb256	people who agreed
+ng-en-5cccea7b83	approval
+ng-en-5ce3b886da	description against supplied
+ng-en-5ce864af2c	and capacity exactly to
+ng-en-5cfa98c427	avoid
+ng-en-5d0b322987	back
+ng-en-5d3ba01647	sentence and
+ng-en-5d57324eee	units and sms
+ng-en-5d68818d82	ad copy
+ng-en-5d87319ddf	most three
+ng-en-5d9140ead9	checked on
+ng-en-5d93bd8212	is enough
+ng-en-5da30d0413	courses
+ng-en-5db9d81cfc	transactional sms
+ng-en-5dbbe8b125	printed
+ng-en-5dc9468ab6	a source
+ng-en-5de22eda5b	linter warns
+ng-en-5e00c069a1	detection
+ng-en-5e09c1ae43	units
+ng-en-5e0a34761e	copy for the
+ng-en-5e0c7b0d5d	it covers
+ng-en-5e12c8cc53	explain what
+ng-en-5e2445f40f	examples
+ng-en-5e2bd21397	capacity exactly to
+ng-en-5e428cc9dc	indication
+ng-en-5e56a864d2	json output
+ng-en-5e5a2c9c82	pieces
+ng-en-5e60f62a45	several
+ng-en-5e6e21d405	sentence
+ng-en-5e7a0e6f7e	slang
+ng-en-5e7b9dbd2b	a complete
+ng-en-5e81c61a07	and follow
+ng-en-5e8e246516	fact that
+ng-en-5e8e6a24e6	display
+ng-en-5e8e743db2	and exclamation
+ng-en-5ea9bcf771	order of the
+ng-en-5ec59f8c7c	win
+ng-en-5eed381d89	class
+ng-en-5ef15591dd	complaint
+ng-en-5f149281ad	features
+ng-en-5f1a0ce602	why it works
+ng-en-5f2713df9e	hidden
+ng-en-5f2cba0458	and work
+ng-en-5f32874053	common
+ng-en-5f3c96f8a9	actual performance
+ng-en-5f3fc91ef9	the label
+ng-en-5f5a26d966	limits at a glance
+ng-en-5f5a54c051	a photo
+ng-en-5f5cd37e8e	endorsement guides
+ng-en-5f61eb63b6	goes
+ng-en-5f840635bd	benchmark
+ng-en-5f8c7b9aa8	news or
+ng-en-5f98c30277	visible
+ng-en-5fb8d7a249	cut
+ng-en-5fbe7dd827	specifications
+ng-en-5fc14cdab6	traces
+ng-en-5fcc6f5d58	get the
+ng-en-5ff8a96769	stops
+ng-en-5ffa7a244f	anything
+ng-en-5ffadee7b4	decision
+ng-en-5ffe12b0c7	minute
+ng-en-60147794a9	proof
+ng-en-604512c9f9	subscription
+ng-en-60539ac4da	response against supplied evidence
+ng-en-605ce3796c	testing
+ng-en-607782fe0c	publishing date
+ng-en-609152372b	hour
+ng-en-609c5ad2ca	people in
+ng-en-60bf12c149	options
+ng-en-60e803a837	decks
+ng-en-60ee111b9e	no answer
+ng-en-60f1d9ddf7	the order of the
+ng-en-6108e7d5ad	bad
+ng-en-611ddae1dc	what it means
+ng-en-612d4b190d	output
+ng-en-613b426152	on purpose
+ng-en-613ea88fe4	source needed
+ng-en-6156cca3a2	migration
+ng-en-615799fd8c	output section presence
+ng-en-61650875bb	set the
+ng-en-616f05ee22	nouns
+ng-en-617241eeb5	exit
+ng-en-617a78c06f	whether to ask
+ng-en-617acbdee7	earlier
+ng-en-6190bd797d	unsupported
+ng-en-61954ce583	collaboration
+ng-en-61b1344708	object
+ng-en-61b54532f4	own terminal
+ng-en-61bd10efe6	secrets
+ng-en-61d30a2147	the whole
+ng-en-61f44214a6	post
+ng-en-61f52d2403	one action
+ng-en-61f5395855	period and
+ng-en-6201ac3079	expert approval
+ng-en-6202f8762c	the question gate decides
+ng-en-62058af701	tone and
+ng-en-6221e9256a	brief
+ng-en-622250e3b5	rest of the
+ng-en-622341b5e3	clearly and conspicuously
+ng-en-62395bc444	when to say no
+ng-en-623ac87358	genuine
+ng-en-623c05e018	the language of the
+ng-en-624e7e3f99	row in
+ng-en-6257c5f4b7	a yes
+ng-en-62611fa8a1	consequential
+ng-en-6262d5cb5f	and says
+ng-en-62677703c1	new brand
+ng-en-62698f1e81	the texts
+ng-en-627d11884e	comparison
+ng-en-628008c22d	preheader
+ng-en-628676703e	exclamation
+ng-en-62883f258b	the locale
+ng-en-6289deb087	point
+ng-en-6289e6feb1	input
+ng-en-628edea825	facts of the
+ng-en-62920a356a	affected
+ng-en-62ae7acde6	attachments
+ng-en-62b1c401f9	in the brief card
+ng-en-62c46c8ff4	requirement
+ng-en-6301e2f484	electronic
+ng-en-630a359e79	rung
+ng-en-6310180024	shared
+ng-en-631b9e40cf	stated
+ng-en-631ff6d285	signs of ai writing
+ng-en-63205684c3	active voice
+ng-en-63296b02a6	the user can
+ng-en-632f1a2609	quick
+ng-en-6333867366	is a fact
+ng-en-63637715c7	a result
+ng-en-638a3e9bff	takes one
+ng-en-6399c56363	social
+ng-en-63a651a582	replies
+ng-en-63ae0f2515	bulk mode
+ng-en-63c281634c	the ad
+ng-en-63c63dd3e8	code
+ng-en-63e34f8974	most three consequential
+ng-en-63ecd92ce7	deliver a draft
+ng-en-63f2b26cc1	base
+ng-en-63f3b205d2	eligibility and date
+ng-en-6411b7adb9	the benchmark
+ng-en-64121a65d4	gives the
+ng-en-6429cd4ccf	the quality assurance
+ng-en-643080188f	table in
+ng-en-643fc57968	phrases
+ng-en-64623cf342	onboarding
+ng-en-648d553d6d	structure
+ng-en-64958329f2	limit is
+ng-en-64a094b23d	top
+ng-en-64a361432b	principles
+ng-en-64aeb93659	to stop
+ng-en-64b40fa79d	tool
+ng-en-64bdbd1ec5	a rewrite
+ng-en-64c8e91831	a starter
+ng-en-64d7483129	a code repository
+ng-en-64dc55bf0d	one real
+ng-en-64dece0a69	worst
+ng-en-64e9e78fc3	date without modifying commercial
+ng-en-64f6eef280	folder
+ng-en-6507c5ab00	hotel
+ng-en-650a3dc610	using the
+ng-en-6517bfff71	questions and
+ng-en-6523241df8	came with
+ng-en-653c7bab9f	plain language
+ng-en-653cbb3ee1	three consequential questions
+ng-en-6544d09578	legal advice
+ng-en-656e1e66df	condition
+ng-en-6577b95e76	here assumes the shared
+ng-en-6584d4558c	reads
+ng-en-659b6fd9e7	journalist
+ng-en-65a23cef7e	propose
+ng-en-65b40d77f5	holdout
+ng-en-65d598856a	short sentences
+ng-en-65dd5605d4	the actual brand voice
+ng-en-65dff4cd04	registration
+ng-en-65e58bdfab	of the note
+ng-en-65f39c731e	checking
+ng-en-65f422ed1e	words or
+ng-en-66041b06db	result
+ng-en-661718617d	listed
+ng-en-661b0e684b	the language
+ng-en-661cccf0e5	notification
+ng-en-661f557773	verbatim and
+ng-en-662a0f5cf9	the linter flags
+ng-en-662bc807a9	element
+ng-en-6631c1bf76	the actual seo
+ng-en-665b2f0336	done
+ng-en-6687d51920	review the actual event
+ng-en-66952a5733	an error message
+ng-en-66a88dd0c1	except
+ng-en-66b6f94049	review the actual product
+ng-en-66b946ed94	endorsement rules
+ng-en-66ba8225d9	research before
+ng-en-66c072a61c	shipping
+ng-en-66c67af7e6	and use
+ng-en-66d2b7a068	learning
+ng-en-66d6c1fbe2	credit
+ng-en-66e42de3aa	scoring rubric
+ng-en-66e5482d63	and date without
+ng-en-66ed612a4d	tone dials
+ng-en-6706f0c99c	job description
+ng-en-670b18de4c	delete
+ng-en-67155ae30d	conventions
+ng-en-67198f73c8	to actual
+ng-en-672045f18a	person
+ng-en-67250167da	reader knows
+ng-en-6728dc30a1	side
+ng-en-672b4c0750	the release
+ng-en-672d0662b2	objective
+ng-en-673b9e8936	the license
+ng-en-674d58d124	treat
+ng-en-6761b7b734	provides
+ng-en-676e169a7b	apps
+ng-en-67831a883a	sales copy
+ng-en-678d24a054	to z
+ng-en-6796564296	privacy
+ng-en-67966e6eb4	proper
+ng-en-67a88808be	texts and
+ng-en-67afb1fbd8	module
+ng-en-67dc142dfd	to face
+ng-en-67e9bf9c85	the top
+ng-en-67fc837552	the day
+ng-en-6830fe6e0f	explainer script
+ng-en-6832847889	accepts
+ng-en-6844954f8c	and sources
+ng-en-6847437924	write most
+ng-en-68669f4866	salary
+ng-en-6872e8ae33	the table
+ng-en-688e6a98d4	in a row
+ng-en-68971c3a5c	applies from
+ng-en-689a2e76ea	delay notice
+ng-en-689af02568	and reason
+ng-en-689f63e660	first time
+ng-en-68a3626f69	calibration round
+ng-en-68b5d0846e	otherwise
+ng-en-68bbed2a5b	gate decides whether
+ng-en-68bd571136	an automated
+ng-en-691b61c78d	the column
+ng-en-691e47b489	studio
+ng-en-692f7e138f	incentivized
+ng-en-69302312e7	mining
+ng-en-693090eda0	each claim
+ng-en-69407ea2f4	gets the
+ng-en-69420c2da8	habit
+ng-en-6948d744d3	rows
+ng-en-695fca34fd	message against
+ng-en-695fe85ffb	versions
+ng-en-696e236f2b	the sms
+ng-en-698710b8c9	connections
+ng-en-69a1a3a04f	rich
+ng-en-69a1b72242	gross
+ng-en-69a637443f	lint
+ng-en-69b5d36cd8	pride
+ng-en-69b7143c53	not make
+ng-en-69e0b3a56f	each objective claim to
+ng-en-69ea8cfc3b	board memo
+ng-en-69f602b768	size
+ng-en-69f8fa97f7	stories
+ng-en-6a2b1f879f	from the skill folder
+ng-en-6a46deb07e	consumers
+ng-en-6a4c78e2e5	question gate decides whether
+ng-en-6a68dbbbc9	passcodes
+ng-en-6a6c3ae513	a time
+ng-en-6a85209c7f	not say
+ng-en-6a9d1a29a0	price
+ng-en-6a9e4ba708	regulator
+ng-en-6aa5f5d333	button
+ng-en-6abb6bfefb	memo against supplied
+ng-en-6ac1db178f	or expert approval
+ng-en-6ad1d40115	a common
+ng-en-6adb920678	this card
+ng-en-6ade1df8cc	customers and
+ng-en-6b0cde17d7	plain text
+ng-en-6b1b8cef10	a hard
+ng-en-6b24b5142e	loud marks
+ng-en-6b279d24c8	practices
+ng-en-6b3315b7b7	facts remain labeled
+ng-en-6b3c483fed	short and
+ng-en-6b50e91e6b	business documents
+ng-en-6b5c4dabff	outage
+ng-en-6b5fe7a362	actual public
+ng-en-6b69e18a98	manual qa
+ng-en-6b6b71f988	serves
+ng-en-6b88de5e3a	blog strategy
+ng-en-6b9d6cd819	the field
+ng-en-6ba4fef5ca	a chatbot
+ng-en-6bcb33a93b	native
+ng-en-6bcf8820a5	the fa method
+ng-en-6bfa5bcd75	of the profile
+ng-en-6bfe39f838	each channel
+ng-en-6c1215b4ca	grief
+ng-en-6c1aa6fde2	agreed
+ng-en-6c1cb34fab	fourth
+ng-en-6c1e1657ac	a financial
+ng-en-6c22d333fd	keep the
+ng-en-6c321dc641	observed
+ng-en-6c3d668608	diaspora
+ng-en-6c50dfd5fe	bag
+ng-en-6c50fad6e8	explain the
+ng-en-6c5197531e	trait
+ng-en-6c748116ce	space
+ng-en-6c89db6570	personal bio
+ng-en-6c96145571	labels
+ng-en-6c9dd685ed	links
+ng-en-6ca0bf7885	away
+ng-en-6ca3106406	handoff
+ng-en-6ca6aabdd1	report the
+ng-en-6cad6cb728	existing family
+ng-en-6caf7c47a8	the materials
+ng-en-6cb4f1b975	doctor
+ng-en-6cb9774e19	linter flags
+ng-en-6cc7f9d862	store listing
+ng-en-6ccbbab94e	opens with
+ng-en-6ceb4cd1af	alternative
+ng-en-6cecd63c78	and push
+ng-en-6cf3afb4e2	names a
+ng-en-6cf54f3162	in both languages
+ng-en-6d09a4919d	and practice
+ng-en-6d0df4e8e9	the industry
+ng-en-6d1563e23d	and channel
+ng-en-6d17bf8b9d	each format
+ng-en-6d1c3c226e	sentence of
+ng-en-6d1edf2203	partnership
+ng-en-6d2d8274e0	characters or
+ng-en-6d45e336b6	automated
+ng-en-6d4b63b451	medical
+ng-en-6d6db73e7a	already in
+ng-en-6d75ced793	keep
+ng-en-6d7fa9c5a3	chat
+ng-en-6d90a62240	reason
+ng-en-6da18f3a1b	silently
+ng-en-6da7c6f1a2	to check
+ng-en-6dad94e9ce	advantage
+ng-en-6db314337e	fill
+ng-en-6dbcbb99b1	proposal
+ng-en-6dcd4ab636	move arc
+ng-en-6dddf3e021	is allowed
+ng-en-6e068bcfb8	spelled out
+ng-en-6e1b1c25fd	kind of
+ng-en-6e25471bb1	a draft or export
+ng-en-6e5af67635	means
+ng-en-6e6305d732	no sales
+ng-en-6e7a79a58e	all checked
+ng-en-6ea7af1cde	they write most
+ng-en-6eae0095fe	from the profile
+ng-en-6eaecf599b	ids and
+ng-en-6ed2069ecd	twelve
+ng-en-6ee7b4e08e	changing
+ng-en-6f0b8d6dbd	commands
+ng-en-6f37c69851	fine
+ng-en-6f3a2884c4	code section
+ng-en-6f502f9e03	verdict
+ng-en-6f5e089db8	the sentence
+ng-en-6f63f94a89	what the reader
+ng-en-6f686ed161	the variable
+ng-en-6f6d7a193f	meeting agenda
+ng-en-6f74d64c41	measurable
+ng-en-6f7532225f	founder
+ng-en-6f7941c9b2	many questions
+ng-en-6f933e45fc	not its examples
+ng-en-6f96460a9b	weekday
+ng-en-6f9b59fada	date is
+ng-en-6f9e4b92c9	flag
+ng-en-6f9e7c6ed7	define
+ng-en-6f9fbb9c3e	captions and
+ng-en-6fa76af33c	deliver a draft or
+ng-en-6fa7f48aa6	and wait
+ng-en-6fb3148e3d	axes
+ng-en-6fbb80a2f0	takes
+ng-en-6fbde681fd	message
+ng-en-6fdade7ce6	variant
+ng-en-6ffa79c001	in the brief
+ng-en-6ffb063913	one line of
+ng-en-701928a34c	leading
+ng-en-701dc4d18e	the research record
+ng-en-70400e564f	or marketing
+ng-en-704586108d	and license
+ng-en-7049d0a0b4	embargo
+ng-en-7057a5f659	touchpoint
+ng-en-708f13e64d	unfair commercial
+ng-en-70a0880ee5	at hand
+ng-en-70a4f8cb79	house style
+ng-en-70a5dc9287	sources in
+ng-en-70b2303f55	heading
+ng-en-70b875d6e2	these texts
+ng-en-70cd29c293	each post
+ng-en-70d3bc60f4	block
+ng-en-70d94eacd6	without invented
+ng-en-70db215a97	facts and
+ng-en-70f2cd306c	the owner
+ng-en-70fa96b292	origin
+ng-en-70fca40482	with the brand
+ng-en-710687ad51	the number
+ng-en-711450926c	double
+ng-en-7126ffd050	text that
+ng-en-713e247c43	were checked
+ng-en-714aad0879	adding a
+ng-en-71530f904e	contract
+ng-en-7154b0b0eb	adds a
+ng-en-7161271739	angles
+ng-en-7166778bf1	describes
+ng-en-7178bea858	night
+ng-en-717e00cb20	a voice
+ng-en-71886f1537	completion
+ng-en-7189362dc9	to say no
+ng-en-719b4cb193	limited
+ng-en-71b506b805	recipient
+ng-en-71cbc537fb	cite
+ng-en-71ce323eda	not legal advice
+ng-en-71de20dcc4	refund
+ng-en-71e447fbe3	brand story
+ng-en-71f7dc286a	step
+ng-en-7202cdd7a5	fields
+ng-en-72049dde6e	in sentence case
+ng-en-72179a850c	renewal
+ng-en-7217d239ae	part
+ng-en-7228938024	care
+ng-en-722b85e1f0	idioms
+ng-en-722f2b95ee	this computer
+ng-en-723d2a39b7	change communication against supplied
+ng-en-7243faae17	evidence ids
+ng-en-724ef3241b	copy is
+ng-en-7276362c65	the two
+ng-en-7279ef8543	blog
+ng-en-72896f1c7f	ask the
+ng-en-7298e2eed0	stock
+ng-en-72ab76a159	here assumes
+ng-en-72ac425ed2	remains
+ng-en-72e5f4da56	and label copy
+ng-en-72e66aa739	line gives the checks
+ng-en-72fc7c921b	calibration
+ng-en-7301dec299	keyword
+ng-en-7304d3f502	word
+ng-en-73079f35ae	row of the
+ng-en-731e25de1c	at the start
+ng-en-732b54f9fa	playbook only names
+ng-en-7335cf6097	a year
+ng-en-733b3a8407	call to
+ng-en-7340768364	spelling
+ng-en-735cbfe7b7	reasons
+ng-en-7363ded38f	edit
+ng-en-736a38eb50	studies
+ng-en-73711f9a5c	lunar new year
+ng-en-73767597c0	top of
+ng-en-737a71fd53	when to say
+ng-en-7388264e08	collective
+ng-en-7388b08a6d	holidays
+ng-en-73a43711bb	handover
+ng-en-73ad9d8655	stop
+ng-en-73b325d7f3	beauty
+ng-en-73c05cf1fa	the end of the
+ng-en-73d19be3b1	round
+ng-en-73e792ce06	the full
+ng-en-73fdd6abcb	and never
+ng-en-741efae7e4	scripts
+ng-en-7427859c18	box
+ng-en-742c7c5f15	price indication
+ng-en-742d0f9aaa	match the
+ng-en-743f2032d9	capitals
+ng-en-74537d3b33	only names its row
+ng-en-7478202fd8	compare the
+ng-en-747ffaa0b2	draft against supplied
+ng-en-7483eae9cf	a message
+ng-en-74a48a2c06	years
+ng-en-74b1b82ff1	precise
+ng-en-74b96e74f9	the primary
+ng-en-74c5640330	contractions
+ng-en-74d7f86a01	the law
+ng-en-74e3747170	gives the checks
+ng-en-74e5c75a27	custom
+ng-en-74fc20cd5b	and time
+ng-en-75018131b3	the system
+ng-en-750a63c9da	word in
+ng-en-7521251381	its row
+ng-en-752c38a72f	the choice
+ng-en-75305fd05b	creator
+ng-en-7533241b6e	small
+ng-en-75463fef54	and mechanics
+ng-en-756b44834c	pass
+ng-en-75765b0158	column
+ng-en-75800fd940	connection
+ng-en-758afc1bd8	commission
+ng-en-7598d88054	lines in
+ng-en-7599dfc254	revoke
+ng-en-75a4c80238	consequential questions per round
+ng-en-75c6e01df2	writing style guide
+ng-en-75c9cecf1c	stages
+ng-en-75cafe774b	accessibility
+ng-en-75d231b4f9	free
+ng-en-76081b7029	checkout
+ng-en-760da2c6e7	meeting
+ng-en-7618179947	scope
+ng-en-761fe77530	compatibility
+ng-en-763740b39a	for a brand
+ng-en-7638da7bad	internal
+ng-en-763c1f400e	templates and
+ng-en-7644b75120	a journalist
+ng-en-7645d6fdc7	write
+ng-en-7646c04b8c	your order
+ng-en-7648624319	goes out
+ng-en-7648fb915d	slogan
+ng-en-764f8525a4	axis
+ng-en-765e4200fc	the others
+ng-en-7677228837	flags a
+ng-en-767f3fa677	ingredients
+ng-en-768768e7c3	study
+ng-en-7690468707	individuals
+ng-en-76907edf75	the list for
+ng-en-76917d1bab	opt out
+ng-en-76a2773e2c	this order
+ng-en-76a4b4ccce	fact
+ng-en-76a67ab121	one call
+ng-en-76a82b33c1	next to the profile
+ng-en-76b68ef9d7	and the note
+ng-en-76cb3aca1b	generally
+ng-en-76eb5fa50f	map each
+ng-en-76ec0e2031	packet
+ng-en-76ed158a80	recommended lengths
+ng-en-76f0507f18	a missing
+ng-en-76fbac7e2b	english ones
+ng-en-76fc1690d3	ready
+ng-en-7700ce9123	defaults
+ng-en-770d8b6619	residue
+ng-en-77142c2f6c	these rule ids
+ng-en-771a9e61f4	a full
+ng-en-773d29f48b	table
+ng-en-7742e63249	digit
+ng-en-7746b5074c	kitchen
+ng-en-774b9c7950	figures
+ng-en-774d114687	cap code
+ng-en-77631b650f	no length
+ng-en-776ca2c99e	subject lines
+ng-en-777e2f7f67	answer is
+ng-en-7788628330	one row
+ng-en-77aa82bf75	silence
+ng-en-77b6503b8e	a slide
+ng-en-77c54e8e55	direct message
+ng-en-77e87b49ea	jobs
+ng-en-77f36d5f57	and every playbook
+ng-en-77f7a926e7	put a
+ng-en-77fb3df63b	a request with
+ng-en-780919f793	review reply
+ng-en-780b0bdf97	for anything
+ng-en-78161268d1	deterministic checks do
+ng-en-781b82a88f	text was
+ng-en-78264ea8a1	the shared writing registry
+ng-en-782c35f694	tones
+ng-en-783a83ccca	or post is
+ng-en-784df2871e	assumes the
+ng-en-7870b3481b	pillar
+ng-en-78857447c0	midnight
+ng-en-7885c81493	the main
+ng-en-78878e9ec5	offer
+ng-en-788a20d1f5	timestamps
+ng-en-78a65bd42f	claims and
+ng-en-78a6ecbb7d	its channel
+ng-en-78bd0a7122	partner
+ng-en-78bf2e29c3	prd
+ng-en-78cff21a19	consequential questions
+ng-en-78e3764491	a row
+ng-en-78ea5949e3	row of
+ng-en-78ebd5d6ba	case study
+ng-en-7917d9f340	in the internal note
+ng-en-791801d344	quotation
+ng-en-7918545e7c	push notifications
+ng-en-791b7ed9e1	finance
+ng-en-791f12166f	without modifying commercial terms
+ng-en-791f5fa5a8	thread
+ng-en-792b2a3419	that get brackets
+ng-en-7940a74779	quote
+ng-en-794a36151d	craft files
+ng-en-79527b0fbe	a draft or
+ng-en-795c0431e9	wants
+ng-en-795d6938ad	limit in
+ng-en-7960d7a674	health services and
+ng-en-7967d8e140	disclose
+ng-en-7969406edd	and uncertainty
+ng-en-796cc43fb7	attribution and
+ng-en-797a22a87c	copy and
+ng-en-79816ccefd	the message
+ng-en-7994dfed8d	equal
+ng-en-79a4839a88	message against supplied
+ng-en-79bb44a5f7	permissions
+ng-en-79db47c72f	ticked
+ng-en-79e50544ab	the phrase bank
+ng-en-79e542a954	backend
+ng-en-79fb6e27df	units and
+ng-en-7a137ad502	the public
+ng-en-7a1bcbe26b	a brand
+ng-en-7a1ec618a9	one word
+ng-en-7a2c9241b4	spell out
+ng-en-7a2f6bdf21	qa
+ng-en-7a32591914	recorded
+ng-en-7a32916972	serious
+ng-en-7a49103985	supplied
+ng-en-7a523e8aef	quiet
+ng-en-7a55a6f014	paste
+ng-en-7a57fad0cc	language of the
+ng-en-7a58b662de	inside it
+ng-en-7a6168fdc4	on screen
+ng-en-7a67c4ffbd	a reply
+ng-en-7a68a44199	the opt
+ng-en-7a7390a3bb	at most three consequential
+ng-en-7a808d87f6	competition and
+ng-en-7a9016c37b	pitch
+ng-en-7acc78c31e	readers
+ng-en-7ad62a5400	media kit
+ng-en-7ae78dd0cd	script against
+ng-en-7b0ba2a71b	and license check
+ng-en-7b0f871c86	exists
+ng-en-7b1277f7d5	market size
+ng-en-7b207df86b	promises
+ng-en-7b2f7696d7	find
+ng-en-7b4a3bbf21	post against
+ng-en-7b4cee732f	found
+ng-en-7b7b210c7a	the decision order
+ng-en-7b865eb7bf	request for
+ng-en-7b9119e7b4	in copy
+ng-en-7b9afb3fdb	commas
+ng-en-7bdca06346	the caption
+ng-en-7be36b1b72	sound
+ng-en-7be669a633	is news
+ng-en-7beacee02a	presentation
+ng-en-7bf45f33ef	microcopy
+ng-en-7bf5376f4e	another
+ng-en-7c1b36b810	on online platforms
+ng-en-7c2972725e	interactive
+ng-en-7c394d5e80	and permitted
+ng-en-7c73ff1213	alcohol
+ng-en-7c7a59041a	of advertising practice
+ng-en-7c7c63ae30	a competitor
+ng-en-7c800cee31	influencers
+ng-en-7ca475d4ec	identity from scratch
+ng-en-7caba8834d	count as
+ng-en-7cb77b8485	proposed
+ng-en-7cd20364a0	sees
+ng-en-7ced0c0692	is present
+ng-en-7cf147d82f	consequential questions per
+ng-en-7d0af90660	the rule id is
+ng-en-7d0cf51670	a small
+ng-en-7d0f24ba97	months
+ng-en-7d0ff4990a	story for
+ng-en-7d1261a1e0	exercise
+ng-en-7d1f7ac32c	ad script
+ng-en-7d26264ac1	view
+ng-en-7d29028c77	verification code
+ng-en-7d3c3ed9aa	beats
+ng-en-7d3c5c438b	stars
+ng-en-7d401259e5	state the
+ng-en-7d922cfb9e	fear
+ng-en-7da9f5b9fe	repairs
+ng-en-7dacc638f4	tone matrix
+ng-en-7dadb6149e	script against supplied evidence
+ng-en-7db0d5be58	announced
+ng-en-7dc1717fde	count the
+ng-en-7dc4570b9b	the message to
+ng-en-7dcb7a3096	validate output section presence
+ng-en-7dd6136d3d	lines of
+ng-en-7dd7e9a569	so check
+ng-en-7de9103aab	organization
+ng-en-7df3497e6b	product page
+ng-en-7df472470e	of advertising
+ng-en-7e0a744352	blog post
+ng-en-7e18970a7b	be used
+ng-en-7e20aea5e7	calm
+ng-en-7e23fb6929	word for
+ng-en-7e2bf339ed	pattern
+ng-en-7e3e46593c	objections
+ng-en-7e408c2ea3	decided
+ng-en-7e4b653e2f	preserve approved amount
+ng-en-7e5fcc26d4	a single
+ng-en-7e73d70d25	no exclamation
+ng-en-7e7875409d	the same way
+ng-en-7e802bff06	valid
+ng-en-7e83e11427	id is
+ng-en-7e8e0851a1	its row in the
+ng-en-7e93b636e8	a search
+ng-en-7e93db519b	the report
+ng-en-7eac10d825	work in
+ng-en-7eb1b6c505	the feature
+ng-en-7ebf8ac280	need
+ng-en-7ec15b46b5	trade commission
+ng-en-7ecb666ee4	code or
+ng-en-7ed45e90ab	a story
+ng-en-7ed923715c	pricing page
+ng-en-7edd980e51	leave it
+ng-en-7eeb0bf8cd	high
+ng-en-7eec0b8cc4	rating
+ng-en-7eff65b37c	check with
+ng-en-7f0003c3c2	model quality and human
+ng-en-7f00839f2d	currency
+ng-en-7f06118995	examples are
+ng-en-7f1bc56049	operating
+ng-en-7f32d6ad8a	approved amount
+ng-en-7f3793731c	read the selected
+ng-en-7f38ced568	is left
+ng-en-7f558353be	claims need
+ng-en-7f56cf6aed	agreement
+ng-en-7f5a62f7d5	and give
+ng-en-7f61ef4053	seller
+ng-en-7f6e1b1e96	traits
+ng-en-7f7d6f1de9	profile and
+ng-en-7f86c6acb2	the approved
+ng-en-7f8b3df618	text and
+ng-en-7fa0724ec0	start a
+ng-en-7fa2289b78	follow the same
+ng-en-7fa99e9483	pack
+ng-en-7fb416500c	introduction
+ng-en-7fb59794e3	a source and
+ng-en-7fd53a0cf3	ships
+ng-en-7fe29b9ee5	cost
+ng-en-7fe601fe8c	research record
+ng-en-7fe801b0fb	facts list
+ng-en-7fed773c80	a check
+ng-en-7feed72af4	zero
+ng-en-7ff15e3e41	opt
+ng-en-7ffb27f586	and unresolved
+ng-en-8004d43673	labeled
+ng-en-8007961fb2	original
+ng-en-80140fbe90	claim that
+ng-en-803ef85e65	character
+ng-en-8054f81733	brand profile
+ng-en-805aa7f49c	do not invent a
+ng-en-8060e81c4f	a line
+ng-en-8061ec6b09	mandatory
+ng-en-8076a28565	headline
+ng-en-807aab4d7b	background
+ng-en-808176c402	offer a
+ng-en-808b16888c	a brand profile
+ng-en-8095da930a	total price
+ng-en-80a0b1fb24	and bilingual copy
+ng-en-80a2201dc1	none of
+ng-en-80a2972c34	launch
+ng-en-80c380686c	codes
+ng-en-80eb550814	maps
+ng-en-81015aec05	or video
+ng-en-810781c619	outside the
+ng-en-8113b1d086	everywhere
+ng-en-81142a8495	writing
+ng-en-8117ad5a99	posting and business documents
+ng-en-8119c2a9c5	it never
+ng-en-81441bd6ff	sharing
+ng-en-8159565317	say in
+ng-en-817f6867fa	existing customers
+ng-en-818b9a94f9	denied
+ng-en-819156a86b	out line
+ng-en-81970b2b53	in force
+ng-en-81c7e802b0	ambiguous
+ng-en-81f638cb1f	a customer
+ng-en-820bd1a9d5	and slogan
+ng-en-820ced2d63	decides whether
+ng-en-82237c9da8	the thing
+ng-en-8234cd6269	fictional training sample
+ng-en-8247d4079e	a source and a
+ng-en-825885bc64	describe
+ng-en-82755caff6	reader is
+ng-en-8275b88681	numbered
+ng-en-8278d74091	message or
+ng-en-828a5771d7	and delivery
+ng-en-829027cacb	left out
+ng-en-829db0303a	answer to
+ng-en-82bb281ac3	brand voice
+ng-en-82d3d3c57b	the call to
+ng-en-82d7ba5eed	developer documentation
+ng-en-82d83f0e98	the json file
+ng-en-831876c6f3	evidence before
+ng-en-83261971cb	included
+ng-en-834730cb88	fewer
+ng-en-834c0c7c81	how to cancel
+ng-en-836059b9da	checkable
+ng-en-836e9a0f9b	drip pricing
+ng-en-8389975422	the actual management
+ng-en-838d5132b1	a named
+ng-en-838eeebe51	approves
+ng-en-838f4cb092	components
+ng-en-8397d8899f	likes
+ng-en-83aa5dd542	a health
+ng-en-83ac635b7a	give
+ng-en-83c46307ae	among
+ng-en-83c7da420d	brackets
+ng-en-83d4390ac4	claim to a
+ng-en-83d88dfcea	non
+ng-en-83db34e5a6	final
+ng-en-83dd819e36	decision memo
+ng-en-83dddc4c89	title and
+ng-en-83e0fe7836	from the shared
+ng-en-83ea3507ab	the learnings note
+ng-en-83f42c47d6	affiliate
+ng-en-83faa40c9d	feel
+ng-en-83fc843945	runs
+ng-en-83fd0ca994	knowledge
+ng-en-8404199ab6	young
+ng-en-840bce4a0a	significance
+ng-en-8415f9fd18	then read
+ng-en-8419d582f2	ads
+ng-en-84252eaab6	day of
+ng-en-84279288dc	a promise
+ng-en-8428aa11e1	in the draft
+ng-en-84407813d8	look
+ng-en-844dcb3c8c	confirm the
+ng-en-84537a51b4	reminder
+ng-en-8456f1608f	edits
+ng-en-8458770d34	markets
+ng-en-845f8d93ae	log
+ng-en-8465017e5a	rules in
+ng-en-8466198a19	the copy is
+ng-en-848a603d86	slides
+ng-en-848f904c57	the user asks
+ng-en-849478e1e1	definition
+ng-en-849d9cb1ad	job ad
+ng-en-84a0660b51	evidenced
+ng-en-84d542b559	fills
+ng-en-84e12ecb15	captions
+ng-en-84eb9be0a5	material
+ng-en-84edf48dd6	subject line
+ng-en-851916835b	next to
+ng-en-852b04b02c	rarely
+ng-en-85305d3a94	channel or corpus
+ng-en-85357258c1	row
+ng-en-853ed9fa13	blog posts
+ng-en-85543d9ad9	veterans
+ng-en-8555941b44	expert
+ng-en-855977654d	to individuals
+ng-en-856793d93e	go to
+ng-en-856bab057b	playbook here assumes the
+ng-en-856f2c77af	and review
+ng-en-85765327c6	hard
+ng-en-857a0619fe	say what the
+ng-en-858098dead	was checked
+ng-en-8595d063a0	opportunity
+ng-en-8599ab5a07	like a
+ng-en-85b32f8796	labels and
+ng-en-85b5121ba9	semantic review remains required
+ng-en-85bf1e21cc	a list of
+ng-en-85c6e2d320	complete
+ng-en-85c86cb7d6	the rule
+ng-en-85d9200151	at the end of
+ng-en-85e143887d	the user asked
+ng-en-85ebdaa1a0	an automated run
+ng-en-85ffebc844	sequence
+ng-en-861e534580	one message
+ng-en-8629978c7a	case headings
+ng-en-8636c783cb	model quality and
+ng-en-864293a5d0	cart
+ng-en-8654adfe3b	verbal identity
+ng-en-865704d8fb	decides whether to ask
+ng-en-8671c4fe66	contract implementation is local
+ng-en-8679c36ead	the top of the
+ng-en-8684e411c0	a market
+ng-en-8688418665	the default
+ng-en-868f7ddf73	no emoji
+ng-en-869047cd32	a carousel
+ng-en-869f082be0	boundary
+ng-en-86cbf8ff56	the consent
+ng-en-86d252dd2e	golden
+ng-en-86dc8708bd	saving a lesson
+ng-en-8700bde942	area
+ng-en-8711a14476	reach
+ng-en-87124cd99d	the route
+ng-en-87159d2e13	that writes
+ng-en-871fc88dd7	a writer
+ng-en-872152904d	law
+ng-en-872835dc98	is ready
+ng-en-873ca80a52	menu
+ng-en-876af3aaeb	level
+ng-en-8770f574c3	building task
+ng-en-8772ff9336	with evidence
+ng-en-877f6eb38c	strategic work
+ng-en-878e754e3b	one voice
+ng-en-879d45d12c	calendar
+ng-en-87a3bff740	address and
+ng-en-87b1c0931f	names that
+ng-en-87d17bf2e0	that format
+ng-en-87dabcb77c	announcement against supplied evidence
+ng-en-87dc70f58a	columns
+ng-en-87ddc9c76b	dark
+ng-en-87e793cbfa	diff
+ng-en-87f30c0ffc	ad copy for
+ng-en-8815a573b2	logo
+ng-en-8834b95279	decides
+ng-en-88498b5793	write short
+ng-en-88604d6aeb	tell
+ng-en-88670aae5d	uk advertising code
+ng-en-8869230ccd	the call to action
+ng-en-886ed635b4	product name
+ng-en-88a3535e79	family playbook
+ng-en-88a9e14150	copy for any
+ng-en-88adf98677	fix in place
+ng-en-88bfc1abf5	question gate decides
+ng-en-88c4d204b4	the task is
+ng-en-88dc7d1a3d	a listing
+ng-en-88dd22edfe	school
+ng-en-88e161bb9e	state and
+ng-en-88f2943984	a benchmark
+ng-en-88fe8eba66	bulk catalog from a
+ng-en-8907afbdf4	section
+ng-en-89112e0e4d	category
+ng-en-89116f5c78	keywords
+ng-en-8918b55827	please
+ng-en-892145326d	dated
+ng-en-89244d57e8	radio
+ng-en-892c232fb1	strong
+ng-en-892d03254d	concise
+ng-en-892ede93f5	remembrance
+ng-en-894702f82a	one detail
+ng-en-8948d0b3c4	moves
+ng-en-8952fd9bf9	someone
+ng-en-89540ac14d	testimonials
+ng-en-897187b1cd	payment
+ng-en-897282c441	sentence case for
+ng-en-897b586362	for example
+ng-en-897bf58580	hints
+ng-en-8988e881c1	a fact
+ng-en-898bec8a58	the speaker
+ng-en-89a4af55fc	change communication against
+ng-en-89ab7a44ff	goes into
+ng-en-89ad9068cb	story
+ng-en-89c74bcf4e	server
+ng-en-89cba5bf72	claims that
+ng-en-89d6232b32	risk layer
+ng-en-89d81061e6	profile for
+ng-en-89e0f7c350	about the product
+ng-en-8a01b9c75c	a family
+ng-en-8a12a8f7ec	stays
+ng-en-8a16ad310c	prompt
+ng-en-8a1af260a1	active
+ng-en-8a22104a24	two or three
+ng-en-8a3fd190de	voice profile
+ng-en-8a4a2800c6	reference prices
+ng-en-8a625b9964	best practices
+ng-en-8a65379c4f	message is
+ng-en-8a6f07f480	sits next
+ng-en-8a7eb3d7d2	correct
+ng-en-8a7eca9d61	colloquial written style
+ng-en-8a8257aef2	the actual brand
+ng-en-8a8e96f822	or post is sent
+ng-en-8aa2261175	policy
+ng-en-8aa504dfa5	a separate
+ng-en-8aabbb7182	table of
+ng-en-8aca20dd42	the total
+ng-en-8ad23a94ff	a campaign
+ng-en-8ad3ce0c96	and search
+ng-en-8ade37e356	electronic mail marketing
+ng-en-8ae86f1b3f	occasions
+ng-en-8b068e5505	summarize the
+ng-en-8b1403530e	domain
+ng-en-8b1ff8bb79	hold
+ng-en-8b20dfe843	and times
+ng-en-8b234178f4	messaging
+ng-en-8b2f262634	metric
+ng-en-8b5e3b8175	submit
+ng-en-8b638cbdab	measure
+ng-en-8b6db93d58	consistent
+ng-en-8b8f68f39f	new year
+ng-en-8b9c660729	credentials
+ng-en-8ba60ce095	here assumes the
+ng-en-8ba8364cd4	sku
+ng-en-8bbacf3f2c	the rows
+ng-en-8bbd44bc22	full
+ng-en-8bbe1ac003	write one
+ng-en-8bc6e1333b	nothing
+ng-en-8bd2a42f44	leaving
+ng-en-8bd805b373	reply
+ng-en-8be7ee4ebe	posting and
+ng-en-8bf1125eea	fake
+ng-en-8bf38231e6	to write
+ng-en-8c01f2accc	paragraph
+ng-en-8c14097688	by key
+ng-en-8c1aeb6ae8	provide a
+ng-en-8c1c3de4dc	watch these
+ng-en-8c26757978	rules for
+ng-en-8c2cddbf37	finds
+ng-en-8c36339d08	say what
+ng-en-8c3aa4afc5	three to
+ng-en-8c40669b53	the founder
+ng-en-8c478c820c	and colleagues
+ng-en-8c5b42190f	deceptive
+ng-en-8c7401b4a1	waiting states
+ng-en-8c7b08299c	number has
+ng-en-8c971f164f	reading
+ng-en-8cabd9f6c0	claims must
+ng-en-8cb3fa0482	apostrophe
+ng-en-8ccc29e998	per sentence
+ng-en-8cd24260c9	natural
+ng-en-8cd71d707c	the advertising
+ng-en-8cd7533355	and conspicuously
+ng-en-8ce08b5c1f	able
+ng-en-8ce201f5d9	alternatives
+ng-en-8cf54e5bdf	capability truth
+ng-en-8d127ce426	writing registry
+ng-en-8d166a8846	that names
+ng-en-8d2a56386c	it goes
+ng-en-8d308728a5	give a
+ng-en-8d380038df	claim or
+ng-en-8d52e2c16d	return
+ng-en-8d6ac93724	output sections
+ng-en-8d6f19d75b	exactly to approved
+ng-en-8d7b373b13	same page
+ng-en-8d7da7f53b	narrative against supplied evidence
+ng-en-8d90028e8b	culture
+ng-en-8da000b42a	question tool
+ng-en-8da41b1fc1	sms and push
+ng-en-8da55a2d1b	script or
+ng-en-8ddee75ff8	terms
+ng-en-8de8f6197d	near
+ng-en-8e1da45b09	turn
+ng-en-8e23dcb6be	start of a
+ng-en-8e28e31762	publication date
+ng-en-8e2e6a426d	on a phone
+ng-en-8e43944b72	and link
+ng-en-8e4928ecce	affect
+ng-en-8e62508adb	the card
+ng-en-8e65d7542f	dash
+ng-en-8e6f6e91a4	promotional
+ng-en-8e7c5afc54	is in the task
+ng-en-8e80c027ea	style settings
+ng-en-8e857002cf	or export
+ng-en-8ea7e1ef8d	estimate
+ng-en-8ea89d9873	email and sms
+ng-en-8ea95d55a3	makes
+ng-en-8eb14fdb4b	number
+ng-en-8ec4cea86b	advice
+ng-en-8ec7a8ee72	the content
+ng-en-8ed8c001e4	complaints
+ng-en-8f00f73ae5	without code
+ng-en-8f1b2bcb99	the occasions
+ng-en-8f30070a23	rank
+ng-en-8f3707b81c	see the
+ng-en-8f3b449328	happen
+ng-en-8f406c2563	the project root
+ng-en-8f45d2bae5	sending
+ng-en-8f4f2d163f	not invent
+ng-en-8f56a6342e	starts
+ng-en-8f665e57d1	leads
+ng-en-8f68b8ce00	and approved
+ng-en-8f779ab38d	monthly
+ng-en-8f7b4f5481	label copy
+ng-en-8f8ecfc625	the maker
+ng-en-8f98f5025c	podcast
+ng-en-8faa7b7899	fit with the brief
+ng-en-8fb62afee8	the shop
+ng-en-8fbe63af75	kind
+ng-en-8fd1dd01dd	playbook generated from
+ng-en-8fe92a8ad9	letter
+ng-en-8ff2beb655	built
+ng-en-8ff8e52e59	reader purpose
+ng-en-8fff954673	newsletter
+ng-en-9022c4318e	the checks
+ng-en-9028416632	verb and
+ng-en-902ce4deb4	is needed
+ng-en-9049560bd1	clicks
+ng-en-904becab2b	event
+ng-en-904dbdd286	the person who
+ng-en-905bfb3f72	clearly and
+ng-en-907ca74de1	without a brand
+ng-en-90916b8bd4	memo against
+ng-en-9091d76274	run
+ng-en-9098b7cd70	and the short
+ng-en-90b23fa520	words in
+ng-en-90c792cead	the risk
+ng-en-90f1bc5a28	meaning
+ng-en-910ee29d8d	the questions of
+ng-en-9119ad7fbe	bilingual brands
+ng-en-912a931025	draft against supplied evidence
+ng-en-912bc37bba	truthfulness
+ng-en-91345d75ce	uk a to
+ng-en-91474f9e1c	you know
+ng-en-9176bd2939	form
+ng-en-918cdc03f5	uncertainty
+ng-en-91983edfe0	and speaker
+ng-en-91b192ca62	primary source
+ng-en-91ca90eb10	solution
+ng-en-91e1d29317	took
+ng-en-91ec64ccfb	invalid
+ng-en-91f0ad12a1	come from the
+ng-en-9200044808	for the output
+ng-en-92035ac6fe	the first line
+ng-en-920a76dc6f	stands
+ng-en-924a74fa54	subheading
+ng-en-924b3cfcc1	conditions
+ng-en-924c8be70e	preference
+ng-en-92512fd5fd	unfair commercial practices
+ng-en-9256c66be0	the final
+ng-en-926e2f8ae9	assumptions
+ng-en-92878a2c3a	in the order
+ng-en-92a95f3eaa	the shared steps
+ng-en-92b6689c13	scoring and
+ng-en-92cadfd927	users
+ng-en-92d00b2eb7	the repair
+ng-en-92eef2ea4a	profile against
+ng-en-92f306315f	a lesson
+ng-en-9306825f4b	an english
+ng-en-930afb002b	number has a
+ng-en-931b16d51d	reply against
+ng-en-93236fc9e1	two sentences
+ng-en-93247f5883	seconds
+ng-en-9328d36905	unknowns
+ng-en-93380d7b39	how to write
+ng-en-933914a5a5	multi
+ng-en-93629033ba	require
+ng-en-93651b0678	shared steps
+ng-en-9379ad658f	rounds
+ng-en-937d65512f	ideas
+ng-en-9382768a33	the scoring rubric
+ng-en-9394681c12	scenarios
+ng-en-9397d16203	the house
+ng-en-93a91e49a8	distinguish
+ng-en-93d90163ca	landing pages
+ng-en-93db8ac77f	exactly as
+ng-en-93e48e28d3	calculated
+ng-en-93e6760873	art
+ng-en-93f98d647c	that file
+ng-en-9407ae823b	writes in
+ng-en-941cac784c	ir
+ng-en-94211a77a2	and audio
+ng-en-94251f10de	reasonably
+ng-en-942acc550d	visit
+ng-en-943552cdb4	and spelling
+ng-en-943788673a	actual brand voice
+ng-en-943a107000	records
+ng-en-944de99149	the price
+ng-en-9460f1b2dd	csv
+ng-en-94635e2174	missing facts remain labeled
+ng-en-94692e10f4	mention
+ng-en-94734d6dd3	urgency and
+ng-en-94767d3f90	let
+ng-en-94779034fa	the network
+ng-en-9480e640cc	cap rule
+ng-en-9482eb8e68	a way to
+ng-en-94852ee655	terms of
+ng-en-948f298139	faq page
+ng-en-949affccf7	form scripts
+ng-en-949eca8333	breath
+ng-en-94a5c4feb4	thought
+ng-en-94b32e1fdc	numbers
+ng-en-94b616971f	example
+ng-en-94b9facdad	about page
+ng-en-94ba55e276	regulated
+ng-en-94cc33b7f4	question in
+ng-en-94cce47fe7	comments
+ng-en-94e2209ce3	not certify semantic quality
+ng-en-94e66e71c3	family playbook generated
+ng-en-94e71b72ce	spans
+ng-en-94e9124cbd	evidence or
+ng-en-94fb4845af	ad must
+ng-en-950731be5e	faq
+ng-en-950a165e2a	words
+ng-en-9523e6a299	the order of
+ng-en-9528136d67	playbook only
+ng-en-953f3e5a3a	variables
+ng-en-9556841a2f	em
+ng-en-955c1566cc	tags
+ng-en-95848da9e4	the start of a
+ng-en-95857ef822	many
+ng-en-9587cd2301	actor
+ng-en-959ff4c2fa	user can
+ng-en-95a5829f90	judge
+ng-en-95adba3866	the article
+ng-en-95b349826b	brand
+ng-en-95b7a868e8	copy for
+ng-en-95b94e6e6b	the next step
+ng-en-95bcf4703b	string
+ng-en-95d912bfba	tells
+ng-en-95e068532e	category page
+ng-en-95e643dc1a	give the
+ng-en-95f223a842	post or
+ng-en-961806b492	taken
+ng-en-96193ef134	in json
+ng-en-961bbfcc8b	file of the
+ng-en-9623282209	rest of
+ng-en-962fa33337	guidance
+ng-en-9637a98b68	review replies
+ng-en-965dd48ed1	are missing
+ng-en-9661be9036	aware
+ng-en-9666ce8ff3	communication against
+ng-en-96773dc3bf	past
+ng-en-967bbc5ac5	the payment
+ng-en-96829cc9a0	an about page
+ng-en-96888cc24e	license
+ng-en-969a5de85f	take
+ng-en-969d3ad04e	evidence ids and
+ng-en-969eb9863a	put
+ng-en-96b2771606	style guide
+ng-en-96b4c19217	turns
+ng-en-96ba87716d	transcreation
+ng-en-96d8db38f2	check the
+ng-en-96e8f0ba4a	financial promotions
+ng-en-96eee724d8	soft
+ng-en-96fcceb5ef	the line
+ng-en-9719246110	actual process
+ng-en-971d784fc6	known
+ng-en-972184748e	push notification
+ng-en-973106430c	posting
+ng-en-973e8292a8	repeat the
+ng-en-97413068ee	manual
+ng-en-97430b4a07	traces to
+ng-en-97487afbff	their own terminal
+ng-en-975655f8f5	and keep the
+ng-en-977548485b	statement of
+ng-en-97856f0cdc	letters
+ng-en-978b99e90e	added
+ng-en-978ecb591e	cap
+ng-en-979b6a5cf0	commitment
+ng-en-979e8f71d5	copy technique
+ng-en-97ade1e97a	person or
+ng-en-97ba967921	or corpus audit
+ng-en-97c72f2457	lowest
+ng-en-97f28696ff	on this computer
+ng-en-97f585ad79	manager
+ng-en-97fd3fa2ed	together
+ng-en-97fe769c3d	sets
+ng-en-97fecb0962	export only
+ng-en-97ff0dcd96	a long
+ng-en-98035a9628	capital
+ng-en-980dd3130b	random
+ng-en-9810846222	scientific
+ng-en-981b184a6d	zone
+ng-en-9826a8049c	and human
+ng-en-98354cd7fb	show it
+ng-en-98423acd7c	a first
+ng-en-9842b98b4e	shop
+ng-en-985060861b	titles
+ng-en-98552e376d	says who
+ng-en-9857260d1b	building a profile
+ng-en-985ec52e13	or expert
+ng-en-98740c2df7	fake urgency
+ng-en-988e478767	its conditions
+ng-en-989156b3d0	miss
+ng-en-989ca9175d	release notes
+ng-en-98a943b6c1	an app
+ng-en-98b4eb32e6	and names
+ng-en-98c1f40a18	style repair
+ng-en-98d09d0c84	matches
+ng-en-9912ec992f	the actor
+ng-en-99426e2634	meta
+ng-en-994d3605e3	the landing page
+ng-en-9957b4d16b	puffery
+ng-en-997773067d	and testimonials
+ng-en-997a694ca0	similar products
+ng-en-99a46acb57	and variables
+ng-en-99ab157b91	the story
+ng-en-99b2ac996d	actual press
+ng-en-99bb632b54	depth
+ng-en-99be2dfe74	repeated
+ng-en-99c153aba0	progress
+ng-en-99db194051	old
+ng-en-99e2e07e84	syllabus
+ng-en-99e468ec76	and english
+ng-en-99e4f11f82	to find
+ng-en-99f842eacd	metadata
+ng-en-99fdf23c5a	star
+ng-en-9a0aa49654	creative brief
+ng-en-9a13fac5f9	units and sms segments
+ng-en-9a27ab2d94	consent and opt
+ng-en-9a443010db	emoji and
+ng-en-9a48ec79a3	it needs
+ng-en-9a496783b5	in the report
+ng-en-9a52f16b4e	a task
+ng-en-9a53c43185	glossary
+ng-en-9a62ef1e66	credential profile
+ng-en-9a850b0faa	not invent a
+ng-en-9a9c218b4e	validate
+ng-en-9aa1cfc1f1	book a
+ng-en-9ab4ce524d	a paragraph
+ng-en-9ae9d108f5	operations
+ng-en-9b0a89bcb4	no profile
+ng-en-9b18ee8a1b	login
+ng-en-9b2104f0e0	holds
+ng-en-9b4163af92	ad text
+ng-en-9b4b1255fe	rfp
+ng-en-9b5fcb76f6	charges
+ng-en-9b83052e38	name the
+ng-en-9b8cd3f77c	moral
+ng-en-9b9631df2f	an unqualified
+ng-en-9b9c14491d	explicitly
+ng-en-9bbb9936ed	acts
+ng-en-9bdc25bc2c	short text
+ng-en-9bf141f48a	technique
+ng-en-9c2ac2d52a	fits
+ng-en-9c2d341520	to save
+ng-en-9c33da0271	investor
+ng-en-9c44dcc7c2	and allowed
+ng-en-9c450777bd	to approved evidence
+ng-en-9c56449ef4	certify semantic
+ng-en-9c67c788da	date in
+ng-en-9c78336c12	federal trade
+ng-en-9c7a686c77	assumes the shared
+ng-en-9c86836367	every number has
+ng-en-9c880360b5	the change
+ng-en-9c8e0a4fe6	name and
+ng-en-9c9aab9ea5	the english ones
+ng-en-9ca7491022	style presets
+ng-en-9cb566ef64	evidence
+ng-en-9cb9fa466b	spreadsheet
+ng-en-9cf089aa89	boundaries
+ng-en-9cf9e15a48	customer
+ng-en-9cff2060c1	fictional training
+ng-en-9d02bf6fc6	tone of
+ng-en-9d0acd0b82	title case for
+ng-en-9d258e6147	anything else
+ng-en-9d27bd6fe3	copy in
+ng-en-9d2a357ccb	whatever the
+ng-en-9d2f6aab61	words for
+ng-en-9d36331e15	approved by
+ng-en-9d4ae248f2	a to z
+ng-en-9d5232f3f1	support reply
+ng-en-9d59c1ae77	product
+ng-en-9d5f2c7069	basis
+ng-en-9d71722afb	sections
+ng-en-9d73283c79	what they write
+ng-en-9d83dc164e	and limits
+ng-en-9d9c294035	is the default
+ng-en-9dc26020f5	no fake
+ng-en-9dc540e8bc	flags
+ng-en-9dddeb1fc8	retain
+ng-en-9df4148246	definitions
+ng-en-9df7932f6f	ups
+ng-en-9e0349736d	scale
+ng-en-9e0b7991e2	corpus
+ng-en-9e0d2dedc1	a video
+ng-en-9e17c2137f	checks and
+ng-en-9e1a8c9eb3	the rules
+ng-en-9e21eb7d3a	vague
+ng-en-9e26aa54aa	the fix
+ng-en-9e2f008105	bytes
+ng-en-9e378e8524	in step
+ng-en-9e4a8b12fc	local deterministic
+ng-en-9e535d1474	mode
+ng-en-9e60c6facb	code of
+ng-en-9e6262f1f1	distinct
+ng-en-9e6f82e9f5	slogans
+ng-en-9e702fcd6e	dictionary
+ng-en-9e71ec3762	get a
+ng-en-9e79465ca5	before sending
+ng-en-9e87a95575	real people in copy
+ng-en-9ea8d349a5	include
+ng-en-9eaa527043	in the md
+ng-en-9eb4b38367	the button
+ng-en-9ec2e145e8	finding
+ng-en-9ed4bf1691	the news
+ng-en-9ef591ba50	pay
+ng-en-9efd427593	rule in
+ng-en-9efd9f3a68	everyday
+ng-en-9f18f295b8	every number has a
+ng-en-9f1c5dec23	inside the
+ng-en-9f42bec366	voice and
+ng-en-9f43fb6a90	last line
+ng-en-9f454a9747	fallback
+ng-en-9f7730614a	the calendar
+ng-en-9f85fb6197	context
+ng-en-9f88729c76	longest
+ng-en-9f8b13f5e5	grammar
+ng-en-9f9973b8fd	a new brand
+ng-en-9fab959c31	belongs
+ng-en-9fb6e2b017	causal
+ng-en-9fbb982591	unresolved
+ng-en-9fbcdb2261	committee
+ng-en-9fc8927789	cancellation
+ng-en-9fcab5a629	and scope
+ng-en-9fcbcb32f9	a number
+ng-en-9fe4074874	index
+ng-en-9ff5a04e94	every number
+ng-en-9ffb0f8e62	brochure
+ng-en-a002c016b1	tells the
+ng-en-a02649b3e6	something the
+ng-en-a03725023b	the situation
+ng-en-a04e3f37ef	wherever
+ng-en-a051cdfaec	never write
+ng-en-a051da71cd	the risks
+ng-en-a09971a074	the end of
+ng-en-a0b423d8ae	tagline
+ng-en-a0c85416bd	maximum
+ng-en-a0f7da371e	sensitive claims
+ng-en-a1036672ea	a reasonably substantial period
+ng-en-a132cb257d	is local
+ng-en-a137c1cf34	a moment
+ng-en-a143236349	when the brand
+ng-en-a165fabcc5	automatically
+ng-en-a1685bd0ca	email sequence
+ng-en-a17041497b	a template
+ng-en-a17a6f5338	title case
+ng-en-a17b27bd43	model quality
+ng-en-a1880875da	frames
+ng-en-a18e35a699	glance
+ng-en-a195148804	already
+ng-en-a1a65f9c12	linter rule ids
+ng-en-a1a76b0dba	contain
+ng-en-a1b28d0a15	dm
+ng-en-a1d9443d21	the conversation language
+ng-en-a1eb89c64c	a code
+ng-en-a1f67d61bd	a format
+ng-en-a1fd929498	clauses
+ng-en-a2005ecdba	traces to the
+ng-en-a20cc381f3	and name
+ng-en-a21c6f7109	labeled gaps
+ng-en-a25598c51b	al
+ng-en-a259231feb	can check
+ng-en-a26127dd25	kit
+ng-en-a27f34e92e	prepare
+ng-en-a29c0352e1	the study
+ng-en-a2b50e96af	measurements
+ng-en-a2d9a15442	setting
+ng-en-a2eb712b21	ear
+ng-en-a2edae8f2d	adjectives
+ng-en-a2eec94f3f	state
+ng-en-a30c64a878	an answer
+ng-en-a3207cd57e	rules and links
+ng-en-a320c80b92	timezone
+ng-en-a3233b1d3b	marks
+ng-en-a32bb8607f	testimonial
+ng-en-a33285d394	to the profile
+ng-en-a338a0fe4e	meets
+ng-en-a33f32627c	at a time
+ng-en-a34a591137	can show
+ng-en-a3515232d6	host
+ng-en-a3767834ed	financial
+ng-en-a3790835b7	quality assurance
+ng-en-a37ab19188	rule of
+ng-en-a37c7d82ba	warranty
+ng-en-a389867ada	in the question bank
+ng-en-a3a76272da	exception
+ng-en-a3a99f1adf	plans
+ng-en-a3b0c3b0ce	drop
+ng-en-a3baca0f94	phone numbers
+ng-en-a3c5fb3e78	release
+ng-en-a3d3e17296	against supplied evidence
+ng-en-a3e7ee320d	the rest
+ng-en-a3f21b387f	file
+ng-en-a418ed2437	and business
+ng-en-a42596b797	the customer
+ng-en-a4440e9785	cut the
+ng-en-a4497a989e	everything
+ng-en-a44ddd7ea7	steps and
+ng-en-a4531d427e	warmth
+ng-en-a454b8034b	generating
+ng-en-a45561cf6a	color
+ng-en-a457039bf9	a person
+ng-en-a45b90bd24	effective
+ng-en-a45d851a99	the md
+ng-en-a460347353	preparation
+ng-en-a49af672fb	implementation
+ng-en-a4c9add20f	em dash
+ng-en-a4cbd19296	lines are
+ng-en-a4cdc038c9	the opening line
+ng-en-a4ce38d43f	converted
+ng-en-a4e233bba6	exceptions
+ng-en-a4e4a7bfc2	sounds like
+ng-en-a4ef7f8cfe	concrete
+ng-en-a4f8fd4618	rule id is
+ng-en-a50101a29a	the map
+ng-en-a50b6d76f2	access
+ng-en-a510d7bda3	investment
+ng-en-a521c8d530	place and
+ng-en-a52a3cba94	booking
+ng-en-a57b95ae0c	sits in
+ng-en-a580d9a455	keeps
+ng-en-a5a1a3d0e9	layer
+ng-en-a5a88b2e58	one question
+ng-en-a5bed957a3	many tones
+ng-en-a5ceda21dd	occasion copy
+ng-en-a5d598b8cf	states the
+ng-en-a5de33c2da	learn
+ng-en-a5e6303009	a new
+ng-en-a5e6530685	rules are in
+ng-en-a5ed537c34	live
+ng-en-a5f4495e56	the destination
+ng-en-a610665789	green
+ng-en-a6133f12f5	scheduled
+ng-en-a61b3ff3ec	profile
+ng-en-a63bf9e8ff	behind the scenes
+ng-en-a63c427770	testimonials and
+ng-en-a666604aa1	plus
+ng-en-a66764c6aa	understand
+ng-en-a66e9a4ef2	experience
+ng-en-a686ccb2a9	and long
+ng-en-a6c3c06d7e	slide is
+ng-en-a6cffab4cd	in the text
+ng-en-a6e63dc3ee	column in
+ng-en-a700bee912	edited
+ng-en-a703522fd4	dark patterns
+ng-en-a721357380	mood
+ng-en-a728abd1ef	a label
+ng-en-a748533fe2	at first
+ng-en-a74d90d618	a guess
+ng-en-a756f7b0fa	spam
+ng-en-a75721b1f9	you like
+ng-en-a763312293	conflicts
+ng-en-a77585a73b	safety
+ng-en-a7b0593f0f	the word
+ng-en-a7b1ca5945	the facts
+ng-en-a7b6681e10	list
+ng-en-a7ba9619ba	ad against supplied evidence
+ng-en-a7be00b29b	title and description
+ng-en-a7c6c93d97	draft comes
+ng-en-a7cf001489	plain chat
+ng-en-a7ee10fd37	or post
+ng-en-a7eecc930a	five questions
+ng-en-a7f5ffedc0	a reader
+ng-en-a7fd228ac9	chance
+ng-en-a818eaf1d3	communication against supplied
+ng-en-a828382785	real people in
+ng-en-a841d5f11a	fabricated
+ng-en-a84fe5dd62	is known
+ng-en-a8615c4b16	the question gate
+ng-en-a862ee77b7	assistant or
+ng-en-a887454a73	qualified
+ng-en-a898dfa779	images
+ng-en-a8a25c4627	advisers
+ng-en-a8b2cf62ef	family method
+ng-en-a8b86c0da1	supported
+ng-en-a8c5928571	bottom
+ng-en-a8d0a52cda	with the brief
+ng-en-a8e764a597	sign in
+ng-en-a8ed3a7494	moved
+ng-en-a8f13bad06	channels
+ng-en-a8f20695d9	and sentence
+ng-en-a8f29081d4	food
+ng-en-a8fce13a96	status
+ng-en-a904da4cfd	sure
+ng-en-a90694008c	knows
+ng-en-a909766831	adds the
+ng-en-a929c4a99a	is short
+ng-en-a948896c0f	documents
+ng-en-a952826572	lookup order
+ng-en-a9551a423a	and the english ones
+ng-en-a968e257ef	quality and
+ng-en-a972497583	remain labeled gaps
+ng-en-a9a4a67375	selection
+ng-en-a9adce989b	keys and
+ng-en-a9b50b3fcb	needs to
+ng-en-a9c82a44dc	or video ad
+ng-en-a9cad7709a	gap
+ng-en-a9d8b9b855	the risk layer
+ng-en-a9d9a952bf	total
+ng-en-a9fdf1876e	room for
+ng-en-aa0c1fa749	key placeholders
+ng-en-aa0ddd4ec9	and employment
+ng-en-aa1856d88b	place name
+ng-en-aa21c26684	to make
+ng-en-aa25c905c7	line gives
+ng-en-aa440295d6	profile sets
+ng-en-aa483a7ada	in the chat
+ng-en-aa54510a47	and apps
+ng-en-aa6c4a2b13	writing style
+ng-en-aa90ea1761	push
+ng-en-aa9ce55a5c	clinic
+ng-en-aaa7089efc	higher
+ng-en-aab0bd16a3	happy
+ng-en-aacad63389	the meeting
+ng-en-aae8f32af3	says
+ng-en-aaec4905d4	reviewer
+ng-en-aaedc2d7f1	job posting and business
+ng-en-ab01ee26a5	channel or
+ng-en-ab1816136f	task only
+ng-en-ab2f8e3dad	a high
+ng-en-ab3b3b3864	dimensions
+ng-en-ab3f7c125e	to say
+ng-en-ab76cf1d97	views
+ng-en-ab87cf0f74	the meta description
+ng-en-ab89bda7d8	online platforms
+ng-en-ab9b54fcd6	signals
+ng-en-abb49eb7ac	house
+ng-en-abc257391f	or fewer
+ng-en-abd56d3faf	text
+ng-en-abdceca934	unknown
+ng-en-abe2289657	soft opt
+ng-en-abf26d576d	fake reviews
+ng-en-abff574b95	find the
+ng-en-ac089a384f	name
+ng-en-ac0b5002d8	open
+ng-en-ac126324f8	the target
+ng-en-ac2058a387	offer and
+ng-en-ac2466cf6b	conduct
+ng-en-ac25baa504	legal review
+ng-en-ac3aa8f92f	blurb
+ng-en-ac3aea5593	occasion
+ng-en-ac52fc987d	seo
+ng-en-ac5d8189f6	the whole text
+ng-en-ac689f7ea4	post is
+ng-en-ac7437fed3	mistakes
+ng-en-ac7d8f9408	statistics
+ng-en-ac7db873fd	regulation
+ng-en-ac99ee88ff	the conversation
+ng-en-aca83b8d00	day is
+ng-en-acc146ccb9	a marketing
+ng-en-ace06ab17f	go at
+ng-en-ace7638900	changes
+ng-en-acec6b2e78	a preference
+ng-en-acee095211	obvious
+ng-en-ad0c31c194	and description
+ng-en-ad0cdd94d4	radio or video ad
+ng-en-ad1a493bb7	paragraphs
+ng-en-ad1f54aa29	repeats
+ng-en-ad3f7d5ea1	the job
+ng-en-ad526e2490	number comes from
+ng-en-ad58cefdbb	the meaning
+ng-en-ad82ccb1ae	disclosures
+ng-en-ad8d280e96	real people
+ng-en-ad96e12cd1	fits the
+ng-en-adb0732b6f	in the next
+ng-en-adc2f8636f	paper
+ng-en-add376b47a	landing
+ng-en-ade6e178d3	matching
+ng-en-adfb07b6e0	three editing
+ng-en-ae010fa832	leave
+ng-en-ae0b337ea1	watch these rule
+ng-en-ae61975df5	scoring and review
+ng-en-ae6731eacc	update against supplied evidence
+ng-en-ae7cd71aa6	the actual
+ng-en-ae914b3e24	the number of
+ng-en-ae945031ba	search snippets
+ng-en-aeb2fb2c6e	written style
+ng-en-aeb3f1e69d	english
+ng-en-aef33194c7	remember
+ng-en-aef9a71b62	working
+ng-en-af0c9875ee	handbook
+ng-en-af0fb294ce	linen
+ng-en-af1dffa84c	published
+ng-en-af243f033b	radio or video
+ng-en-af2f59bdc7	success
+ng-en-af362a54d6	charge
+ng-en-af3f8de544	the host
+ng-en-af72c65bcf	in a code
+ng-en-af793b91a7	references
+ng-en-af82f77ace	a plan
+ng-en-af9500dce2	own voice
+ng-en-afa1379341	core
+ng-en-afaaa3b0ad	choices
+ng-en-afb04f741d	lock
+ng-en-afb104269c	plain language guidelines
+ng-en-afb5482b55	modifying commercial
+ng-en-afe4905ef9	was read
+ng-en-b02c85d079	empty
+ng-en-b036514437	profile and the
+ng-en-b03d0ee23b	credential
+ng-en-b03de2018e	abbreviation
+ng-en-b045fa1128	a verb and an
+ng-en-b04af0a6cc	jar
+ng-en-b053ed62cb	of the question
+ng-en-b0583ab7fc	and uk
+ng-en-b0584a6f78	recheck
+ng-en-b0769264ae	course
+ng-en-b07a7f6bde	employee onboarding
+ng-en-b07f968ce7	owners
+ng-en-b08e86cf70	punctuation
+ng-en-b08efbf0e0	to use
+ng-en-b0b3f215ab	professional
+ng-en-b0cbcdbaf4	base questions
+ng-en-b0cf9995a6	use the
+ng-en-b0d010ea4b	prints
+ng-en-b0de4a5a20	the headline
+ng-en-b0f734087f	eu
+ng-en-b108eedc5d	the goal
+ng-en-b11e64337a	characters in
+ng-en-b120a724bc	lines
+ng-en-b12364d660	easy
+ng-en-b124a82f9a	profile or
+ng-en-b127ed225b	passcode
+ng-en-b13b696b48	sits
+ng-en-b148b259c2	output language
+ng-en-b14ee7ffe2	the house style
+ng-en-b15bc388b8	choose
+ng-en-b168f8fc30	samples
+ng-en-b174340cdd	stays in
+ng-en-b17dbc9477	reply against supplied evidence
+ng-en-b189efa51c	position
+ng-en-b1a5058f0d	experiment plan
+ng-en-b1af2524c0	plan against supplied evidence
+ng-en-b1cd212bd2	formality
+ng-en-b1de1216da	field
+ng-en-b1e034773a	forecasts
+ng-en-b200d19af3	opened
+ng-en-b201b59ca2	placeholders
+ng-en-b203f9c6f9	the style
+ng-en-b20ddf780f	and address
+ng-en-b21c162c50	place
+ng-en-b23931fff5	ending
+ng-en-b23a9f1af3	claude code
+ng-en-b23ee6e923	for titles
+ng-en-b245b6e0b9	commitments
+ng-en-b24802aae4	to request
+ng-en-b262a31f9b	conversation language
+ng-en-b2706ff120	limitations
+ng-en-b2812b0433	grief and
+ng-en-b281671365	a review
+ng-en-b29bb978a1	response
+ng-en-b2b0fdf0de	voice chart
+ng-en-b2c7533e6e	the plain
+ng-en-b2ebf0547d	one way
+ng-en-b2ec1bb1c4	sits next to
+ng-en-b3067cbcaa	versus
+ng-en-b31048d4ec	the closing
+ng-en-b32ca15d26	adding
+ng-en-b3406db4fd	the limits
+ng-en-b344c45fc0	the local
+ng-en-b3532ab6b7	merge
+ng-en-b355e05f8f	english and
+ng-en-b358ef4dce	changes the
+ng-en-b36668d895	marketing email
+ng-en-b37ba11f3d	duties
+ng-en-b37e8da2a1	contribution
+ng-en-b37ef3e19d	handmade
+ng-en-b3804fc5fe	member
+ng-en-b389eddf64	commercial
+ng-en-b3a7ac4201	sale
+ng-en-b3b1990c89	swap
+ng-en-b3b9412157	usually
+ng-en-b3c0bb1e03	part of the playbooks
+ng-en-b3c7368d9d	rule ids
+ng-en-b3d6fba688	show
+ng-en-b3deb20661	read the selected task
+ng-en-b3e05d12b6	profile in three questions
+ng-en-b3f64ce208	first and
+ng-en-b403699725	copy against supplied
+ng-en-b40eaae164	at most three
+ng-en-b421e7e3a7	reads as
+ng-en-b4257a8070	the first time
+ng-en-b448d44521	emails
+ng-en-b451dac2f0	risk warning
+ng-en-b4695996b9	supplied evidence ids and
+ng-en-b4701c982b	publication
+ng-en-b49206f9ff	thank
+ng-en-b49383e663	a public
+ng-en-b4a9138e6a	a draft
+ng-en-b4ae7bc4e5	take the
+ng-en-b4b6259bb0	values
+ng-en-b4b6634745	per round
+ng-en-b4d16c6db6	english ones after
+ng-en-b4dc04b214	a deadline
+ng-en-b5081fee5c	this file is
+ng-en-b50b52198c	come in
+ng-en-b5179d2c23	it names the
+ng-en-b52240accc	outcome
+ng-en-b539c7de19	casual
+ng-en-b53bc2f254	version
+ng-en-b55d1d2a3f	or two
+ng-en-b5691085d0	trap
+ng-en-b56fb319f2	simple words
+ng-en-b5750509da	message or post
+ng-en-b575397291	cleanliness
+ng-en-b5823a431a	backed
+ng-en-b594702c00	housing and employment ads
+ng-en-b5953e8322	the phrase
+ng-en-b5987eeb14	create
+ng-en-b5a7cf9f90	and values
+ng-en-b5dea97f4b	your first
+ng-en-b5ed5a6e89	modifying commercial terms
+ng-en-b5f2913dca	unchanged
+ng-en-b5f3998313	traps
+ng-en-b5f3b2a00d	and label
+ng-en-b5f91388d4	endorsements
+ng-en-b613330657	plainly
+ng-en-b614bed332	needs
+ng-en-b61a8402a4	plausible
+ng-en-b61d2e7766	say
+ng-en-b67f6fc770	never uses
+ng-en-b688861589	face to
+ng-en-b69b8c8246	the eu
+ng-en-b6b1a2d4e6	a to z style
+ng-en-b6b4ed8e1e	guide
+ng-en-b6c0e842e1	the market is
+ng-en-b6c2e222e3	genre
+ng-en-b6d3154184	lets
+ng-en-b6e1d06052	stories and
+ng-en-b6e6c0f979	two
+ng-en-b6f2b57d5c	reply against supplied
+ng-en-b6f87ee557	roles
+ng-en-b70581088e	the bottom
+ng-en-b713842b97	responsible
+ng-en-b719c022fa	jam
+ng-en-b732f039b5	copy with
+ng-en-b744d19121	agent
+ng-en-b766dc1bb2	they write
+ng-en-b76cb4563d	come
+ng-en-b76e857b1f	photos
+ng-en-b77a391dc9	keep it
+ng-en-b78a52dbe0	playbook here assumes
+ng-en-b7b45333b1	language and style
+ng-en-b7b8bf61cc	read the list
+ng-en-b7da942b17	the list for the
+ng-en-b820e49553	a release
+ng-en-b833d39f50	copy against
+ng-en-b83743f7d9	endorsement
+ng-en-b85eb9e793	recommendation
+ng-en-b86456697e	tagline and
+ng-en-b897ac94fc	advertising standards authority
+ng-en-b8999bfe99	strategy sheet
+ng-en-b8a7f469ef	drip
+ng-en-b8a9cf8e83	maker
+ng-en-b8aa3f0289	z style
+ng-en-b8bb727879	sizes
+ng-en-b8c169b561	sales
+ng-en-b8e1df8138	root
+ng-en-b8e9494360	training sample
+ng-en-b8ebfc176b	idea per
+ng-en-b8f35c8506	videos
+ng-en-b911e86c41	break
+ng-en-b92689c34e	and recommends
+ng-en-b93935214d	verbal identity from
+ng-en-b957ab8ab6	article against supplied evidence
+ng-en-b95d7688a8	a claim
+ng-en-b9619ed568	take it
+ng-en-b97004ceb5	system
+ng-en-b971e5e2bc	matches the
+ng-en-b97e25bec9	claim
+ng-en-b98c346bfd	sell
+ng-en-b994d8e949	is part
+ng-en-b99588b094	grammar and
+ng-en-b9ade571ed	performance
+ng-en-b9af44e876	reviews and
+ng-en-b9af862033	two words
+ng-en-b9b5fe645e	truth
+ng-en-b9db5e2c8a	resources
+ng-en-b9fb7b4de4	and bilingual
+ng-en-ba0046c304	screening
+ng-en-ba00eed509	goes in
+ng-en-ba1592b9b8	morning
+ng-en-ba48304b62	sometimes
+ng-en-ba60f96f96	and the uk
+ng-en-ba6fbdbbd7	names its row in
+ng-en-ba75c89bb8	permission to
+ng-en-ba78fb32d7	bulk catalog
+ng-en-ba941ee3d0	makes the
+ng-en-baa3f72bff	the terms
+ng-en-baaa604b0d	in the copy
+ng-en-baaf216d9b	the numbers
+ng-en-bab701c091	listing
+ng-en-bac27f7400	to avoid
+ng-en-bad26bfa05	three consequential
+ng-en-bada79499d	can change
+ng-en-bae41da974	speaker notes
+ng-en-bae62effa1	for english copy
+ng-en-bae7ed3a9c	trial
+ng-en-bafd599817	contact accuracy
+ng-en-bb0009c18f	fact in
+ng-en-bb1846145f	a quick
+ng-en-bb1e209e9d	lowest price
+ng-en-bb27930fc2	capabilities
+ng-en-bb2ac7b312	a service
+ng-en-bb2bb5571a	figure
+ng-en-bb454ccc9f	highlights
+ng-en-bb696c6f46	uk and eu
+ng-en-bb6a2219aa	profile has
+ng-en-bb7874fad5	a visible
+ng-en-bb94e27b98	instrument
+ng-en-bbbaca0cdc	the site
+ng-en-bbc424c0c5	replies on
+ng-en-bbcd2ba6ed	the guide
+ng-en-bbd3645ccc	is missing
+ng-en-bbd39be9a0	concept
+ng-en-bbdd88b717	approved
+ng-en-bbe2a0752a	fit with
+ng-en-bbfbc53345	time passcodes
+ng-en-bc19391ef3	the method
+ng-en-bc1f583bc7	rules of
+ng-en-bc32dab8b0	a brochure
+ng-en-bc8d08bdf1	intro
+ng-en-bcaadc6e6e	follow the
+ng-en-bcb5a6e091	skill
+ng-en-bcb8534c0f	record
+ng-en-bcdb9456a2	green claims
+ng-en-bce0652f01	saving
+ng-en-bce0ed589f	to ten
+ng-en-bcea0d9cda	get brackets
+ng-en-bcf26b2e23	code units
+ng-en-bcf44826da	line of a
+ng-en-bcfe63a7be	language file
+ng-en-bd1fc93275	need a
+ng-en-bd2ebd7e91	reduction
+ng-en-bd36aee96e	a channel
+ng-en-bd4e8a094b	speech
+ng-en-bd530fb85c	every message
+ng-en-bd5e7e5d7d	video ad script
+ng-en-bd60d53b0a	claude
+ng-en-bd729b2954	price and
+ng-en-bd7853906d	product sheet
+ng-en-bd830a195a	the year
+ng-en-bd8dfc68b3	what happens
+ng-en-bd918874a9	actual interview
+ng-en-bd990f5857	flow
+ng-en-bda49737bb	unstated genre
+ng-en-bdab96d599	microcopy in a repository
+ng-en-bdb918d1d6	plain
+ng-en-bddcee5faa	a heading
+ng-en-bde5c3d1c0	followers
+ng-en-bdf8c57546	teaching
+ng-en-bdfb604c43	dependencies
+ng-en-be0a08eb11	image
+ng-en-be0e54ed1c	session
+ng-en-be1b545cda	every link
+ng-en-be28c6b603	intent
+ng-en-be3303ab19	region
+ng-en-be3422cca7	the original
+ng-en-be3fa8dea6	is true
+ng-en-be583d13e1	confirm
+ng-en-be692c7add	online store
+ng-en-be6c661feb	a direct
+ng-en-be8380ea47	text of
+ng-en-be9714ebff	compare
+ng-en-be9c5b19d5	experiment
+ng-en-bea6fddc5f	goes back to
+ng-en-beaa130271	claim rules
+ng-en-beb70fce56	profile in
+ng-en-bec09881c6	rewrite the
+ng-en-bed0d30ab4	a playbook only names
+ng-en-bed1506b08	details
+ng-en-bed17d180f	gov
+ng-en-bed1ab9ec2	limit
+ng-en-beda1d1d5d	buyers
+ng-en-bedf98ceeb	webinar
+ng-en-bef6c1897b	instructions
+ng-en-bef8145e24	first use
+ng-en-befa0dc390	the words
+ng-en-befb601b04	building
+ng-en-befeb00dea	project
+ng-en-bf017c356b	is written
+ng-en-bf16c1ce46	read the
+ng-en-bf1cd19b37	ethics
+ng-en-bf28b69ed5	use the fa method
+ng-en-bf3fcc3969	difficult
+ng-en-bf4e476627	be disclosed
+ng-en-bf4fdf9502	the format
+ng-en-bf514fc58c	observation
+ng-en-bf5dd2b125	citation
+ng-en-bf60e53e12	news
+ng-en-bf68986cb4	cover
+ng-en-bf6a42da12	audiences
+ng-en-bf7f755efd	a fictional
+ng-en-bf93ea9956	claim without
+ng-en-bf9b4c3af8	to work
+ng-en-bf9cd0d034	change it
+ng-en-bfb62063a8	keeping
+ng-en-bfb9cecbc7	bio
+ng-en-bfca09c21e	limits
+ng-en-bfcd7780ab	in schema
+ng-en-bfceb76e61	one sentence
+ng-en-bfde5f238a	brief card
+ng-en-bfe02df8e3	and business documents
+ng-en-bfe16d2d37	is unknown
+ng-en-bff3a5d29c	characters and
+ng-en-c010159261	the audience
+ng-en-c016a6e5fb	microcopy in
+ng-en-c0211724a2	the details
+ng-en-c021ecefb0	playbook only names its
+ng-en-c02364ed83	line lists the
+ng-en-c0392538df	search terms
+ng-en-c03c7cf80c	someone who
+ng-en-c03e71bea6	curly
+ng-en-c03f5b8723	action
+ng-en-c04674330e	asking
+ng-en-c06c67cd91	brand name
+ng-en-c075eec0ef	draft against
+ng-en-c07aceabfe	remove invented
+ng-en-c0820e265d	and recovery
+ng-en-c08420803b	brand that
+ng-en-c08e9d8a20	after a yes
+ng-en-c093971959	builder
+ng-en-c0964a281f	became
+ng-en-c0a82e7861	to ask
+ng-en-c0a8a5acf0	points
+ng-en-c0ce215468	starting
+ng-en-c0ceb298e4	no invented
+ng-en-c0d2e29a4d	says it
+ng-en-c0d7ca7e1b	rationale
+ng-en-c0d9134158	update against supplied
+ng-en-c0e2559544	previous
+ng-en-c0e8603a46	outs
+ng-en-c0eb3525da	the committee
+ng-en-c0f84f6657	lessons
+ng-en-c0fcc28e7e	terms and
+ng-en-c0fe4c1d74	standards
+ng-en-c12337b558	interest
+ng-en-c15e30c502	comes
+ng-en-c170d96d58	claim to a supplied
+ng-en-c184f69300	the order
+ng-en-c18cd2b945	fictional
+ng-en-c19191cc6f	fix the
+ng-en-c1aa9bcc64	dates and times
+ng-en-c1c2bfa582	lesson
+ng-en-c1c45a7e50	order is
+ng-en-c1cbd27b4a	the company
+ng-en-c1cf1fa9fe	go at the
+ng-en-c1ef0d59be	spam guide
+ng-en-c1efe944cb	appointment
+ng-en-c1f26a27f6	story needs
+ng-en-c20c4517d6	the sentences
+ng-en-c22042695f	numeral
+ng-en-c22bce5672	one person
+ng-en-c22fa8c32f	architecture
+ng-en-c23f60e0ee	preserve
+ng-en-c245c864f3	and tone
+ng-en-c2483a745f	sector
+ng-en-c24c0d45cf	approves the
+ng-en-c24e0721f7	chart
+ng-en-c255bffa69	decision order
+ng-en-c26b9d8736	in the app
+ng-en-c296fd64b5	candidate
+ng-en-c2a1223d47	adjective
+ng-en-c2b12d3ff2	a spreadsheet
+ng-en-c2ebf0d6de	relevant
+ng-en-c2f6bdfa06	by side
+ng-en-c2fa178b86	sets no
+ng-en-c3034a700f	text with
+ng-en-c3186a013e	review the actual business
+ng-en-c321a41226	width
+ng-en-c333b47bb3	customer reply
+ng-en-c33d5a9365	cases
+ng-en-c33d74a6a7	using
+ng-en-c344f78c00	the actual business
+ng-en-c364a3be69	scores
+ng-en-c3747e9b5a	languages
+ng-en-c3796af62f	bigger
+ng-en-c37db0602b	positive
+ng-en-c384a285c3	the ear
+ng-en-c397d1e928	saas
+ng-en-c3bc8c0a0e	international
+ng-en-c3ce3e9e0f	short interview
+ng-en-c3d171c7dd	at the project root
+ng-en-c3d6465d39	the right
+ng-en-c3f2ac166a	confidence
+ng-en-c3fa488910	whole text
+ng-en-c401913a61	listings
+ng-en-c4129e689b	facts
+ng-en-c41f2ae20e	prose
+ng-en-c420c0eba6	select
+ng-en-c4284e51d2	the date
+ng-en-c42e0418cb	weekly packet
+ng-en-c4331bdc05	jargon
+ng-en-c44400879b	comes from
+ng-en-c4456434c6	influence
+ng-en-c44854a22e	recent
+ng-en-c452fac684	a disclosure
+ng-en-c46d54b846	wait
+ng-en-c479bcca89	and role
+ng-en-c482182340	edition
+ng-en-c484bbfb64	fair
+ng-en-c49f6be375	contracts
+ng-en-c4a61bef0a	a question
+ng-en-c4ae6c7327	two or
+ng-en-c4be334623	design
+ng-en-c4e6620966	attention
+ng-en-c4e7bd91de	and sms
+ng-en-c50621ccb8	row in the
+ng-en-c50ce53a30	calls
+ng-en-c51156bd54	dateline
+ng-en-c51f9e6a7c	capacity exactly to approved
+ng-en-c52c769d4f	false
+ng-en-c560a2e616	ask for
+ng-en-c56121c0c0	a working
+ng-en-c5812d1bda	both languages
+ng-en-c583fabbba	section presence
+ng-en-c58f18b063	fear and
+ng-en-c597f88f41	fear and shame
+ng-en-c59e7ee87e	description against
+ng-en-c5af95c9f0	others
+ng-en-c5bfd87e55	a day
+ng-en-c5c69dc662	hook
+ng-en-c5d8085422	direct message or
+ng-en-c608958ebb	tone
+ng-en-c62510ee4a	the rule is
+ng-en-c65d838776	its place
+ng-en-c68130bce2	shows the
+ng-en-c689eb0b8e	fiction
+ng-en-c6910f254d	accepted
+ng-en-c69b0c4424	started
+ng-en-c6af2a608e	gate decides whether to
+ng-en-c6c06c7610	what they write most
+ng-en-c6c14d93d6	extra
+ng-en-c6c40f3a7a	and ask
+ng-en-c6c6a71700	before delivery
+ng-en-c6dded6d7c	it works
+ng-en-c6eaee766c	let the
+ng-en-c6f2cb6686	question gate
+ng-en-c6f45c2c4c	the evidence
+ng-en-c6f9c01b44	trigger
+ng-en-c718a625b0	each field
+ng-en-c71ba4a652	do not invent
+ng-en-c71e2b393f	the weekly
+ng-en-c724386812	wins
+ng-en-c76138fad5	explains
+ng-en-c776daf286	repeat
+ng-en-c77794419d	unless
+ng-en-c778d23860	gave
+ng-en-c788178e9c	roadmap
+ng-en-c789e73269	use a
+ng-en-c78e513471	that needs
+ng-en-c792781cda	subject line and
+ng-en-c796a7ae12	scarcity and
+ng-en-c79bff08b8	build
+ng-en-c7a746d865	ai
+ng-en-c7bd4632ce	running text
+ng-en-c7c5359e24	trademark
+ng-en-c7d00a6be6	say no
+ng-en-c7d4b4e072	orders
+ng-en-c7d7b23d87	the input
+ng-en-c7d97f4fcb	the soft
+ng-en-c7e1db61e1	generated from the shared
+ng-en-c80c5e075c	never
+ng-en-c81697bbdd	smell
+ng-en-c8176c4c54	in a chat
+ng-en-c81fa165a6	three editing passes
+ng-en-c82a2754f4	a scene
+ng-en-c836667846	the federal trade
+ng-en-c84c3a441e	a product
+ng-en-c8501039da	conclusion
+ng-en-c854ea4428	to answer
+ng-en-c855f55030	belong to
+ng-en-c862d7bf1d	label
+ng-en-c86dc47cb8	companies
+ng-en-c87b9e55ec	just write
+ng-en-c89351ed70	exclusions
+ng-en-c8cb1fcd49	free offers
+ng-en-c8db1bc829	dial
+ng-en-c8f77d29bf	kinds
+ng-en-c8fd17b3c2	with the profile
+ng-en-c9044fa325	grief and crisis
+ng-en-c9066f51d5	plain english
+ng-en-c908039f20	rewrite
+ng-en-c90d818bb6	vocabulary
+ng-en-c90e62d3ef	person and
+ng-en-c94f856327	applied
+ng-en-c960b8bd63	water
+ng-en-c9674a9b7b	profile against supplied evidence
+ng-en-c96bb6ac6f	and scarcity
+ng-en-c97caf74b5	not use
+ng-en-c980ef58b4	link integrity
+ng-en-c98b8de954	search
+ng-en-c98d96f41f	notices
+ng-en-c9966f9ead	grammar and mechanics
+ng-en-c99f66735f	section of
+ng-en-c9b04c1021	schema
+ng-en-c9c8338ae8	next step
+ng-en-c9d04dfea5	a price
+ng-en-c9e0ef69e0	at the project
+ng-en-ca10e036d3	prior price
+ng-en-ca117cf1da	width non
+ng-en-ca28a627e9	ids are
+ng-en-ca6db177c5	eleven
+ng-en-ca8170ed51	required
+ng-en-ca9ae95c57	hundred
+ng-en-ca9ba91659	microcopy in a code
+ng-en-cab8ddd9d0	description and
+ng-en-cae32917b3	what happened
+ng-en-caeb4093a4	same source
+ng-en-caf094904e	communications
+ng-en-cafb2f1d15	a comparison
+ng-en-cb0124f229	spells
+ng-en-cb0742ab13	rule
+ng-en-cb121cffb8	claim and license
+ng-en-cb19d9fed7	product hunt
+ng-en-cb31f6ac67	job posting
+ng-en-cb36a65ff7	generic
+ng-en-cb40770cfd	digital
+ng-en-cb45a32902	anyone
+ng-en-cb461904e1	operation and
+ng-en-cb4e163514	fillers
+ng-en-cb53691106	statement
+ng-en-cb565d8d91	carries no
+ng-en-cb586d3906	large
+ng-en-cb93d47d9f	eligibility and
+ng-en-cba82e4250	target
+ng-en-cba86d4f1c	health services
+ng-en-cbc7a7d9ee	and shame
+ng-en-cbc8937264	new columns
+ng-en-cbef63f941	the output
+ng-en-cbf0b8fa55	the tone of
+ng-en-cbfa2bd3d7	what changes
+ng-en-cc05ab34da	form labels and
+ng-en-cc09d89294	disclosure
+ng-en-cc37fcaed2	ban
+ng-en-cc3a93b852	sets the
+ng-en-cc4b2f8777	bulk tasks
+ng-en-cc54db5a19	question bank
+ng-en-cc5e2ac78c	colon
+ng-en-cc6b994c5c	left
+ng-en-cc6c0ae30b	profile in three
+ng-en-cc7742b429	an error
+ng-en-cc82be0cd0	schedule
+ng-en-cc8366b051	in every message
+ng-en-cc93f50bfc	code execution
+ng-en-cc9c4b5fac	first
+ng-en-cca3596b93	no brand profile
+ng-en-ccc3e0ef72	around the
+ng-en-ccd2bb73a7	condolence
+ng-en-cce26454a0	accessible
+ng-en-cce504f2e2	split
+ng-en-cce8b39627	loud
+ng-en-cd09a186a4	signs
+ng-en-cd0bc92119	habits
+ng-en-cd2c9d5429	supplied evidence
+ng-en-cd35cb923e	five
+ng-en-cd4a7c75be	belong
+ng-en-cd4ceb89d3	evidence to request
+ng-en-cd4d76d8f6	sender and
+ng-en-cd5d9f1b14	a length
+ng-en-cd5da9cf36	ends with
+ng-en-cd5eb18e43	and rationale
+ng-en-cd709c4120	speakers
+ng-en-cd727bfff7	amount
+ng-en-cd7fa2afa2	guide to
+ng-en-cd85369f08	output section
+ng-en-cd9cc825e6	batch
+ng-en-cda08750b8	reads the
+ng-en-cda481b98f	times
+ng-en-cda593f638	a web
+ng-en-cdc436196b	goals
+ng-en-cddbae9c37	included deliverables
+ng-en-cde8f28630	patients
+ng-en-cde9124358	applies
+ng-en-cdee5d3765	the lead
+ng-en-cdf417d79f	joke
+ng-en-ce00229f69	tagline and slogan
+ng-en-ce03c29507	observable
+ng-en-ce047c179e	physical
+ng-en-ce0a251c3b	the metric
+ng-en-ce1308226f	with permission
+ng-en-ce17430ee5	every claim
+ng-en-ce1b89c8c1	headlines
+ng-en-ce25143924	respect
+ng-en-ce29209a10	regulation file
+ng-en-ce2f0bbe77	brand copy
+ng-en-ce581bf24e	from real
+ng-en-ce5ee4ba9a	payments
+ng-en-ce8e9d022d	vulnerable readers
+ng-en-ce94ac1dc7	discovery
+ng-en-cea66972fa	in the note
+ng-en-cecb881298	how many questions
+ng-en-cef017f8fc	story from
+ng-en-cefe43aaf4	housing
+ng-en-cf0131e589	the financial
+ng-en-cf057d628d	the exact
+ng-en-cf12b853b2	every playbook here assumes
+ng-en-cf1aa01803	allowed
+ng-en-cf1f024868	saving a
+ng-en-cf21a396a5	and evidence
+ng-en-cf23281414	of the playbooks
+ng-en-cf23b2c182	life
+ng-en-cf245f4c5a	problems
+ng-en-cf2b12d85d	cues
+ng-en-cf3284f892	family playbook generated from
+ng-en-cf3c07855d	details are
+ng-en-cf5da5b5fb	taste
+ng-en-cf6a21973e	modifying
+ng-en-cf77866f12	handles
+ng-en-cfa6b04154	strategy memo
+ng-en-cfa7ed0920	material connections
+ng-en-cfa96dc9cf	reader can
+ng-en-cfed253b14	honored
+ng-en-cff3e82719	must say
+ng-en-cff4e77924	three quick
+ng-en-cffd1504f4	pricing and
+ng-en-d002343cd6	factors
+ng-en-d004e731cf	a tool
+ng-en-d009194445	expiry
+ng-en-d00be04e00	preferred
+ng-en-d00cd8600e	apart
+ng-en-d012d0da54	the answer to
+ng-en-d01532b730	that line
+ng-en-d01762c679	a sign
+ng-en-d02a9e0ca4	change
+ng-en-d044e9e4e2	industry
+ng-en-d06098394b	global tone
+ng-en-d07fea4fa6	and dates
+ng-en-d0a0d57eb2	failure
+ng-en-d0ba245dfd	review the actual management
+ng-en-d0ca92f963	description against supplied evidence
+ng-en-d0cc5a1e9c	tell the
+ng-en-d0e424fbf2	steps
+ng-en-d0e5c59e4f	and conditions
+ng-en-d102977556	support
+ng-en-d11096fba2	software
+ng-en-d1239f3902	and date without modifying
+ng-en-d132f7b309	metrics
+ng-en-d140b598aa	digital markets
+ng-en-d1577a2b1f	microcopy in a
+ng-en-d17ffbe748	failed
+ng-en-d181d5686f	the profile or
+ng-en-d188f6700c	allow
+ng-en-d18918af27	self
+ng-en-d18bee422f	deadlines
+ng-en-d18bfa2f3f	rewriting
+ng-en-d1930afe3a	name or
+ng-en-d19929b5a2	collected
+ng-en-d19a88dabf	preview text
+ng-en-d19bd6d52f	half
+ng-en-d19e68c3ae	a support
+ng-en-d1a41b1c35	and placeholders
+ng-en-d1bf7ecb88	situations
+ng-en-d1cacba52d	source for
+ng-en-d1ceb3edd9	the bank
+ng-en-d1e2681a0e	pairs
+ng-en-d1f0f5225a	actual business
+ng-en-d1ff719822	attribution
+ng-en-d23bfe9b60	prove
+ng-en-d23cf31693	warning
+ng-en-d24572fcfe	preview
+ng-en-d24be36e7e	requirements
+ng-en-d24ff57887	assumptions and
+ng-en-d2590c49a0	strength
+ng-en-d263505e29	development
+ng-en-d269baf83f	used
+ng-en-d28107160c	back to
+ng-en-d282dbe015	semantic review remains
+ng-en-d2937152dc	provider
+ng-en-d295bc255e	channel
+ng-en-d298b84f20	family
+ng-en-d2995636c6	complete input
+ng-en-d2a90ad4b9	in two
+ng-en-d2f3ba2d35	stay in
+ng-en-d2f62b47d3	sop
+ng-en-d30a599245	questions of
+ng-en-d354f7316d	senders
+ng-en-d35863814d	consent
+ng-en-d3677d5baf	tested
+ng-en-d37295a1a1	panel
+ng-en-d37a010ba3	campaigns
+ng-en-d37e05984f	actual meeting
+ng-en-d38432c2dc	write the
+ng-en-d389226901	counted
+ng-en-d39b6f47f1	the course
+ng-en-d3a10d59ef	plurals
+ng-en-d3a4176a5b	shows
+ng-en-d3ad189862	page against
+ng-en-d3b26add31	center
+ng-en-d3bdf3aa50	with the questions
+ng-en-d3bed4e4b2	editing
+ng-en-d3c3696f77	from a photo
+ng-en-d3c550512a	manual checks
+ng-en-d3cabdb956	fix
+ng-en-d3cbefec10	significant
+ng-en-d3d06a2696	depends on the
+ng-en-d3f7a4143b	for the whole
+ng-en-d3fa8c01b5	existing family method
+ng-en-d413dc0382	goes to
+ng-en-d420608d30	behind
+ng-en-d42b6107c8	objective claim to
+ng-en-d43414c8c1	came
+ng-en-d437b4ea52	shorter
+ng-en-d4474edcb1	for word
+ng-en-d4482d1b21	text in
+ng-en-d44c9a7ad7	directly
+ng-en-d44fd1110a	local
+ng-en-d460d248aa	needs its
+ng-en-d4638df445	in the task
+ng-en-d46bce0383	support tickets
+ng-en-d47c873d92	and show
+ng-en-d481945782	a free
+ng-en-d481a5073d	replace them
+ng-en-d484b87579	in call to action
+ng-en-d48a5a2cc9	spaces
+ng-en-d497aed5b8	express
+ng-en-d4b02c0d7d	the reader can
+ng-en-d4b52cebbd	sample request
+ng-en-d4b6900709	uses the
+ng-en-d4bc2c5948	pillars
+ng-en-d4c4c03470	transactional
+ng-en-d4e114bfe3	gate
+ng-en-d4eea078a6	review the
+ng-en-d4f34484d6	lost
+ng-en-d52239a33c	come first
+ng-en-d5248551bb	response against supplied
+ng-en-d52be43aa3	federal
+ng-en-d52cb6da53	supports
+ng-en-d53e523c07	the language of
+ng-en-d53e558176	cannot be
+ng-en-d5441a1bc0	sounds
+ng-en-d545450d32	or three
+ng-en-d549c67a5e	file is part of
+ng-en-d5708e0015	the photo
+ng-en-d5853e65ce	risks
+ng-en-d58cd2d52f	at the end
+ng-en-d59cb1e2a5	sheet
+ng-en-d5a110c2e3	recruitment ad
+ng-en-d5a74afc14	ai tells
+ng-en-d5a92d7eda	sent
+ng-en-d5b3cc8c4b	and tender response
+ng-en-d5e2d1920b	what exactly
+ng-en-d5e6cc00b3	the questions
+ng-en-d5fff4d176	existing
+ng-en-d6023a8bbb	review
+ng-en-d6092fad31	scope genres
+ng-en-d60930522a	the middle
+ng-en-d6093f7b4d	task is
+ng-en-d6097907d4	no exclamation marks
+ng-en-d609f28cfc	the body
+ng-en-d60a6a5809	quotes
+ng-en-d60a6a5a70	the shared writing
+ng-en-d60b7e77c1	the link
+ng-en-d61c9bb768	the test
+ng-en-d63e9f5524	scoring
+ng-en-d65c6ec601	event invitation
+ng-en-d66573e5ab	receipt
+ng-en-d66dc8ba46	search the
+ng-en-d691771dd3	the answer
+ng-en-d691d4e26d	start of
+ng-en-d69550bf53	mechanics
+ng-en-d69eb60249	see
+ng-en-d6a3efb574	delay
+ng-en-d6aff7e4f0	preset
+ng-en-d6b9ea6c7d	the brief
+ng-en-d6c9fdb357	actual management
+ng-en-d6d418006e	this table
+ng-en-d6d76203d3	that uses
+ng-en-d6e08ae56f	docs
+ng-en-d6f59b1439	picks the
+ng-en-d70158ccca	the amount
+ng-en-d7075c0b84	content brief
+ng-en-d70ca4ea01	claims that get
+ng-en-d70cf87b97	to a supplied
+ng-en-d713d5621f	in call
+ng-en-d71ccc8a05	apply
+ng-en-d7688fb024	draft or
+ng-en-d76bf8e637	need to
+ng-en-d7730893ab	brief is
+ng-en-d77b6fb06d	case page
+ng-en-d795e3620a	from the shared writing
+ng-en-d7a14366ea	in place
+ng-en-d7bf949c80	what changed
+ng-en-d7d85592a5	post against supplied
+ng-en-d7ea36fe15	idea bank
+ng-en-d7f1f37a7e	middle
+ng-en-d7fc2d0738	write a
+ng-en-d80377d800	matrix
+ng-en-d822246474	value
+ng-en-d822f7cf69	sentence case
+ng-en-d82928f5aa	never writes
+ng-en-d82de5281c	works
+ng-en-d83de745ae	repository
+ng-en-d84264b369	become
+ng-en-d8510039a2	at the top
+ng-en-d856289f31	learnings
+ng-en-d85b18d8f3	hands
+ng-en-d863417d26	default
+ng-en-d88639be0a	the case
+ng-en-d889d0217c	lists
+ng-en-d88ca8fbab	checks and the
+ng-en-d88f7e8655	only names
+ng-en-d8a902f821	its source
+ng-en-d8aa7baf62	specificity
+ng-en-d8bb2ed780	list for the output
+ng-en-d8c2ec3f34	token
+ng-en-d8d0e6c2cb	invitation
+ng-en-d8d58da1ac	gives
+ng-en-d8dfbbda05	drops
+ng-en-d8fc1942fa	click here
+ng-en-d923b3891e	option
+ng-en-d92eb10b3f	shows in the
+ng-en-d95717112d	this task
+ng-en-d95dd2f281	or a bracket
+ng-en-d96342f75a	limits at a
+ng-en-d96b4fcd02	ad against
+ng-en-d9907f3429	page titles
+ng-en-d991e41797	a key
+ng-en-d9b2850e96	the committee of advertising
+ng-en-d9b57aa7c3	lawyer
+ng-en-d9bdb33eb4	to send
+ng-en-d9c03b889a	consent rules
+ng-en-d9c0e2eef9	the linter
+ng-en-d9c5720b16	service
+ng-en-d9dfce39ac	to five
+ng-en-d9ecc39018	called
+ng-en-d9f86407fa	plan
+ng-en-da0a59e941	teach
+ng-en-da2d4a0290	documentation style
+ng-en-da301cba35	toman
+ng-en-da5a4f6596	explanation
+ng-en-da5bd39c45	stayed
+ng-en-da6fea6231	number comes
+ng-en-da72e868d9	descriptive
+ng-en-da8fd5fd9f	hunt launch
+ng-en-da93ffb828	mean
+ng-en-daaa4335cb	expertise
+ng-en-dab53b33bf	health
+ng-en-dab934fc32	the skill folder
+ng-en-dab9ebf0b2	the subject
+ng-en-dabb90559f	earlier text
+ng-en-dac17a9b8b	the last
+ng-en-dac2487ff1	file and
+ng-en-dac6302f8a	row in the question
+ng-en-dacee6d548	want
+ng-en-dad37b1a9a	text message
+ng-en-dae64b0d16	description of
+ng-en-daf0d1e171	for copy
+ng-en-db0a69f3be	a command
+ng-en-db0b6eb9d4	external publication
+ng-en-db0c5134dd	if needed
+ng-en-db29acd157	a job
+ng-en-db44d6824a	arc
+ng-en-db5e86f546	bought
+ng-en-db61d61df8	systems
+ng-en-db7bbf0ceb	quality and human
+ng-en-db7fc3669a	conspicuously
+ng-en-db956987f1	email is
+ng-en-db99686d88	is wrong
+ng-en-dba1341fb6	business
+ng-en-dbaafb3b19	forms
+ng-en-dbf3bc2737	ecommerce
+ng-en-dbf7f8cc0e	marks in
+ng-en-dbfa3f2ce1	goes in the
+ng-en-dc0ea61d70	that get
+ng-en-dc1593f23f	personal
+ng-en-dc198b68c2	management
+ng-en-dc1f7a943e	a business
+ng-en-dc28b06c7f	story from a
+ng-en-dc4e898023	line in the
+ng-en-dc721e8b83	secret
+ng-en-dc7daa3c79	jokes
+ng-en-dc829f8735	another card
+ng-en-dc8c378215	colloquial written
+ng-en-dc98b38140	it asks
+ng-en-dc98f2456c	permitted
+ng-en-dccb333cc4	so check the
+ng-en-dcd5b78159	video ad
+ng-en-dcde2de1b4	invent a maximum
+ng-en-dce270943b	and crisis
+ng-en-dd04e47c92	never ask
+ng-en-dd0c628edc	the score
+ng-en-dd1262592a	dashes
+ng-en-dd19326e8c	the skill
+ng-en-dd20b851bc	a tone
+ng-en-dd25e35b8c	way to
+ng-en-dd2b165465	claim without evidence
+ng-en-dd2d197f08	counted with
+ng-en-dd3d3567b8	guides
+ng-en-dd3ef5d185	services and
+ng-en-dd5ae97e72	terminal
+ng-en-dd647e1833	angle
+ng-en-dd72501971	with a date
+ng-en-dd8817f2f4	signed
+ng-en-dd8854ac1a	models
+ng-en-dd9329e852	subject
+ng-en-ddb10ee0db	buttons
+ng-en-ddd2a212c4	memory
+ng-en-ddda9a7c92	objective claim
+ng-en-dddb97b940	claims about
+ng-en-de016fac86	ranges
+ng-en-de0222d52d	for the output language
+ng-en-de0ac739d4	source and
+ng-en-de0b497d08	baseline
+ng-en-de18fe66f9	code of federal
+ng-en-de1c929802	voice profile in three
+ng-en-de24614faa	is not enough
+ng-en-de2c80eeb9	each objective claim
+ng-en-de4db2d093	the landing
+ng-en-de56a33f45	code repository
+ng-en-de5e41e90b	one or two
+ng-en-de6365a0cd	press
+ng-en-de681a1858	content refresh
+ng-en-de6c895427	move
+ng-en-deb7cf3f6a	text on
+ng-en-ded9ab680e	in the first
+ng-en-df08a34311	work
+ng-en-df0b0584da	writer
+ng-en-df1a642f3f	list for the
+ng-en-df1d81bcef	loop
+ng-en-df1f708f30	investing
+ng-en-df33986203	closest
+ng-en-df3b8dd1dd	the actual public
+ng-en-df43dc3f20	looks
+ng-en-df559090f9	skill folder
+ng-en-df616793a5	start from
+ng-en-df67efed74	link to
+ng-en-df6a874501	an honest
+ng-en-df8212b7ce	investors
+ng-en-df8e1066f6	capacity exactly
+ng-en-dfa47280c4	narrative
+ng-en-dfa699a45d	from the brief
+ng-en-dfae4404be	default risk
+ng-en-dfbe6ee8ce	weeks
+ng-en-dfcea2e340	aloud
+ng-en-dfde877e6c	at the top of
+ng-en-dfe222108d	device
+ng-en-dfe241d131	reports
+ng-en-dfe9728098	a testimonial
+ng-en-e00a539789	and social
+ng-en-e020d284be	the rule id
+ng-en-e04efc2ef6	sample text
+ng-en-e054ee43f9	read
+ng-en-e055f600b1	sender
+ng-en-e056164c4f	post for
+ng-en-e0610b3450	copy must
+ng-en-e06166ea35	playbook generated
+ng-en-e062ced59a	establishment
+ng-en-e079ff4006	name in
+ng-en-e07c2fcbf7	label in
+ng-en-e07e4d094a	selected task
+ng-en-e09f5aef76	cannot
+ng-en-e0a131a98e	the image
+ng-en-e0a2e57b1b	meanings
+ng-en-e0a6b628d8	draft or export only
+ng-en-e0a92db70c	creative
+ng-en-e0bd92183b	means a
+ng-en-e0d809600f	hero
+ng-en-e0dac92596	on the page
+ng-en-e0e153e2c9	slots
+ng-en-e0e29a063d	file of
+ng-en-e0e7af75e9	messaging principles
+ng-en-e0eae317b4	purpose
+ng-en-e0f03b320d	a profile
+ng-en-e0f2ed19c7	means the
+ng-en-e0f820d71d	next week
+ng-en-e0fd4a177c	based
+ng-en-e101e68cc1	action that
+ng-en-e1033b24fe	a delay
+ng-en-e10838c8c9	ad
+ng-en-e114e3b803	and opt
+ng-en-e11ca5c91f	the chat
+ng-en-e12de9eee7	positioning statement
+ng-en-e13c8a5cd9	turned
+ng-en-e15306ffa0	formats
+ng-en-e1644b45b4	money
+ng-en-e176d11566	community
+ng-en-e17bd9af2b	a numeral
+ng-en-e199825f93	locale file
+ng-en-e1a18abb73	evidence and
+ng-en-e1a22f1d30	case
+ng-en-e1aadce68c	the facts list
+ng-en-e1aebde311	fashion
+ng-en-e1b4b7c18b	file with
+ng-en-e1bfa8321c	messages
+ng-en-e1cdc0d713	a human
+ng-en-e1d2640186	list for
+ng-en-e1d48763bd	the new
+ng-en-e1d9fb2b21	cue
+ng-en-e1e7a4e761	of a playbook
+ng-en-e1ea53e904	target language
+ng-en-e1eb9de4e9	uses
+ng-en-e1ef38c399	installation
+ng-en-e1f0af3718	separate from
+ng-en-e206716950	a test
+ng-en-e20d300f37	user approves
+ng-en-e21825b6a7	project status
+ng-en-e227a8f5b1	scarcity
+ng-en-e22deec454	rest
+ng-en-e23e724a05	file covers
+ng-en-e25df82217	of ai writing
+ng-en-e26d074905	happens
+ng-en-e278f12bd0	a chat
+ng-en-e286fbd439	resolve
+ng-en-e2ab36f828	confirms
+ng-en-e2d62c5102	re
+ng-en-e2d9f68c14	the context card
+ng-en-e2eb4a8c59	untouched
+ng-en-e2f6708fa0	the selected
+ng-en-e2f73f9ca5	help
+ng-en-e2fb82a6aa	face to face
+ng-en-e30103080a	rules
+ng-en-e31ff09435	written permission
+ng-en-e321190716	recommended option
+ng-en-e327c49fbc	part of the
+ng-en-e32a755639	verbatim
+ng-en-e345650d4e	verified
+ng-en-e345aeca98	a plain
+ng-en-e3583c4c84	placeholder
+ng-en-e35decfac1	interview scorecard
+ng-en-e3680a20dc	review the actual seo
+ng-en-e36ba509e4	it names
+ng-en-e386df1350	talking
+ng-en-e3a1560fad	not legal
+ng-en-e3ac78f820	app store
+ng-en-e3afe12e56	a sensitive
+ng-en-e3b80b9b21	number is
+ng-en-e3cd99d51f	in the internal
+ng-en-e3e1c41656	three questions
+ng-en-e3ed6480fb	and an object
+ng-en-e43074d462	effect
+ng-en-e43d78ed6c	captions and social
+ng-en-e444c54b8e	telephone
+ng-en-e4481868c0	request with
+ng-en-e4593f63d6	employment ads
+ng-en-e47c1683d7	set up
+ng-en-e489be7ad9	line gives the
+ng-en-e4900ea04d	alone
+ng-en-e4ae8ebc02	and text
+ng-en-e4c5be927e	app
+ng-en-e4fb608f60	scratch
+ng-en-e50fb9e589	in the table
+ng-en-e5296815dc	unverified
+ng-en-e546e774fa	it means
+ng-en-e548da1fed	and contractions
+ng-en-e55d3ad7bc	for eu
+ng-en-e5659b41e8	guide against supplied evidence
+ng-en-e5682c74ba	these three questions
+ng-en-e57ba6ae7c	the difference
+ng-en-e57e5fd49a	autonomous
+ng-en-e58709ba11	exact spans
+ng-en-e58bceaa72	simple
+ng-en-e5a9f59769	owner
+ng-en-e5ba1b149a	offers
+ng-en-e5bce02d15	reviews
+ng-en-e5bfd4ea25	prompts
+ng-en-e5c0304d63	advertising standards
+ng-en-e5c2b492c0	writers
+ng-en-e5da90bff0	to four
+ng-en-e5df72ab16	before launch
+ng-en-e5fe5199a7	title
+ng-en-e62ef2ce48	separate
+ng-en-e635d17552	recommended
+ng-en-e6422c1e64	child
+ng-en-e659cd6df3	follows
+ng-en-e678ea964a	coffee
+ng-en-e6886f4630	the value
+ng-en-e68abb784e	and crypto
+ng-en-e68d002e67	do not certify semantic
+ng-en-e691fc6815	this file covers
+ng-en-e6a4dc389e	inference
+ng-en-e6ad984dea	checks do
+ng-en-e6b7a025cf	the recommended option
+ng-en-e6c228ca4e	its examples
+ng-en-e6c265b6aa	post against supplied evidence
+ng-en-e6c2faf057	list is
+ng-en-e6d05d6e1f	recruitment
+ng-en-e6d638afad	with two
+ng-en-e732f7fce7	row is
+ng-en-e744e64e37	alt text
+ng-en-e747cf7301	a hard message
+ng-en-e747cfbbfc	seven
+ng-en-e75350f156	text has
+ng-en-e75dc427bd	claims remain
+ng-en-e7607e3654	reader could
+ng-en-e7650e2955	nobody
+ng-en-e76cfe3acc	invented
+ng-en-e770deaace	in the guide
+ng-en-e7772524d5	the keys
+ng-en-e78f541afd	scene
+ng-en-e7a5a63f03	real
+ng-en-e7a647fc34	risk level
+ng-en-e7a8e1d0fc	and the copy
+ng-en-e7ab4d8e11	in the question
+ng-en-e7b0bbb43c	a list
+ng-en-e7b95b0e15	ads on
+ng-en-e7be64317f	arrives
+ng-en-e7c21f529b	missing facts remain
+ng-en-e80fdb637f	taglines
+ng-en-e822db29c6	reporting
+ng-en-e84b66cf9d	breaks
+ng-en-e85a31671a	dials
+ng-en-e863da8463	invent
+ng-en-e86f02cd86	web
+ng-en-e87188b8f2	general
+ng-en-e8766045fd	make the
+ng-en-e8882b9af4	cap code section
+ng-en-e88af1b4b8	the data
+ng-en-e88b68f7ee	viewers
+ng-en-e89862288a	fa
+ng-en-e8b35e9662	rhythm
+ng-en-e8b3e195ec	with no brand
+ng-en-e8b9cfb604	side by side
+ng-en-e8c664adae	right
+ng-en-e8d9398ff9	style
+ng-en-e8dc78f898	act
+ng-en-e8f137ef8c	keeps its
+ng-en-e8ff6630ca	the assumptions
+ng-en-e900405336	switches
+ng-en-e9047aff38	recovery copy
+ng-en-e90846914b	comma
+ng-en-e91752e45b	labeled as
+ng-en-e923b6066f	milestones
+ng-en-e9471f58e0	the tone
+ng-en-e94a97f791	a thing
+ng-en-e9531a5c89	tied
+ng-en-e956631391	things
+ng-en-e962c387a4	rule is in
+ng-en-e9aa077ce3	and gov
+ng-en-e9ab6b24e0	attachment
+ng-en-e9bc737969	files
+ng-en-e9d7e46c54	human review remain unverified
+ng-en-e9d889c7a0	learnings note
+ng-en-e9ec3c9a30	gets a bracket
+ng-en-e9fafe3780	a sample
+ng-en-ea10cb8111	check
+ng-en-ea195c5800	edge
+ng-en-ea1d019194	unless it
+ng-en-ea3219234f	bilingual
+ng-en-ea6e1468bb	the agent
+ng-en-ea78f96910	the occasion
+ng-en-ea9098acfa	tests
+ng-en-ea98629858	go
+ng-en-eab4a4c5ae	real and
+ng-en-eacf17cc4a	traction
+ng-en-eaebf38636	close the
+ng-en-eb1374dc1b	machine
+ng-en-eb17e1aead	an example
+ng-en-eb1ee31d8b	legal
+ng-en-eb65aee2e1	thank you
+ng-en-eb6d54d451	the script
+ng-en-eb6e630b15	and phone
+ng-en-eb7f1b1270	asks
+ng-en-eb7f851076	an invented
+ng-en-eb88640200	start with
+ng-en-eb95041cfa	local deterministic checks do
+ng-en-eb950562fd	deliver
+ng-en-eb98319ab3	and how many
+ng-en-eba6e18402	audit
+ng-en-eba95eaf56	statements
+ng-en-ebb19ab10b	contact and
+ng-en-ebb56a98b4	drafting
+ng-en-ebb945b38b	warns that
+ng-en-ebce013464	executive
+ng-en-ebcfeaaca9	frame
+ng-en-ebf14800d9	buyer
+ng-en-ebfcaaf987	comparisons
+ng-en-ec1cf24b2e	sensory detail
+ng-en-ec57a0348a	claim is
+ng-en-ec60ffcf8d	marketplace listing
+ng-en-eca1e06421	to learn
+ng-en-eca7da5f6a	by hand
+ng-en-eca9edad9a	policies
+ng-en-ecad3c972e	bilingual copy
+ng-en-ecb453cac7	direct
+ng-en-ecc591c304	of the text
+ng-en-ecd5ea25a2	helps
+ng-en-ece044d15e	longer
+ng-en-ece2123734	identity from
+ng-en-ed1e3b018c	the glossary
+ng-en-ed23b8416f	from scratch
+ng-en-ed589a97f5	adoption
+ng-en-ed67a28a10	the renewal
+ng-en-ed6b74e2a8	reader needs
+ng-en-ed6ea94854	the rest of the
+ng-en-ed79a894e3	quality
+ng-en-ed83144b49	a marketplace
+ng-en-ed8549fbe1	an agent
+ng-en-ed9c942e8e	file is
+ng-en-edae6ec57a	and tender
+ng-en-edbe796e7e	text is
+ng-en-edca819e30	do not certify
+ng-en-edcb248ba8	text to
+ng-en-edcb3cd563	quoted
+ng-en-edd4d17b83	the sender
+ng-en-eddead25e1	in words
+ng-en-ede05ef274	noon
+ng-en-ede25be3ae	lunar
+ng-en-ede2aeaab9	actual
+ng-en-ede565e3c5	be read
+ng-en-ede6db86dd	rate
+ng-en-ee13edfa73	and employment ads
+ng-en-ee2072f10b	checklist
+ng-en-ee32ad76ee	tap
+ng-en-ee4ec6386b	and financial
+ng-en-ee57676fdf	column map
+ng-en-ee601f52c3	on online
+ng-en-ee61185bb1	builds
+ng-en-ee67336848	ad copy for any
+ng-en-ee74c04028	around
+ng-en-ee7aed3ba2	a reason
+ng-en-ee80816c99	the preheader
+ng-en-eea45992fa	web pages
+ng-en-eea7a02368	training
+ng-en-eed17874cf	emoji or
+ng-en-eee9a3fbe5	risk report
+ng-en-eef6189b46	comes in
+ng-en-eefab9af3b	specific
+ng-en-ef093b7340	generated
+ng-en-ef1b6a47df	says which
+ng-en-ef1e3573b5	prefer
+ng-en-ef1fd2ccab	entries
+ng-en-ef229defee	give each
+ng-en-ef26da88aa	keep a
+ng-en-ef2be995de	in limits at a
+ng-en-ef2f35cb67	choose the
+ng-en-ef37e61802	announcement against
+ng-en-ef4cd33b50	fewer than
+ng-en-ef5b578ecd	claims in
+ng-en-ef801884da	match
+ng-en-ef80cf7274	in the opening
+ng-en-ef8318d9f8	the period
+ng-en-ef8d33725d	line and
+ng-en-ef8dd53980	sensory
+ng-en-efc756df3b	context card
+ng-en-efd01f8e65	ticket
+ng-en-efd90d7101	frequent
+ng-en-eff1f7d9b7	or use
+ng-en-eff9e1e0b6	rules are
+ng-en-f002f959c0	employment
+ng-en-f003c5d76e	the code of federal
+ng-en-f0052cbbfd	own words
+ng-en-f006bab435	not enough
+ng-en-f020390a86	selected
+ng-en-f041b4a1eb	and the profile
+ng-en-f050fa7b44	pitch deck
+ng-en-f052c9357e	screen
+ng-en-f0546ff6df	ten
+ng-en-f05f30894a	mail marketing
+ng-en-f062983e13	without modifying commercial
+ng-en-f0672ae58e	candidates
+ng-en-f07006601c	puts
+ng-en-f088c4d3c5	full stop
+ng-en-f08ea8ef1d	outcomes
+ng-en-f098666fa2	with brackets
+ng-en-f0b5e36a1f	vulnerable
+ng-en-f0b903f901	hand
+ng-en-f0d031dfd7	create a
+ng-en-f0d670189e	different
+ng-en-f0fd0d49e2	one piece of
+ng-en-f1034a8fd5	findings
+ng-en-f116abac93	the checks and the
+ng-en-f11b7cdd55	program
+ng-en-f1283640a9	markup
+ng-en-f1293095a0	not certify
+ng-en-f1352b4b01	opens
+ng-en-f13aabe099	role and
+ng-en-f146e4b770	minutes
+ng-en-f1542cbfad	warm
+ng-en-f1602135f3	generation
+ng-en-f17e13a9df	remain unverified
+ng-en-f184d0268e	cultural
+ng-en-f195de3a11	dependencies and
+ng-en-f1a90c4b5b	copy
+ng-en-f1b80b45ea	fa method
+ng-en-f1bd148fa4	private
+ng-en-f1be1e1d75	sms
+ng-en-f1c2563381	templates
+ng-en-f1c788273b	format id
+ng-en-f1c92b0734	ai writing
+ng-en-f1e77c9748	the website
+ng-en-f1ed05fa92	visits
+ng-en-f20531117d	nothing is
+ng-en-f20d1cd50c	the key
+ng-en-f212f97bd9	number of
+ng-en-f21ab81032	direction
+ng-en-f21ba1093a	a comma
+ng-en-f234e9f6c6	review and
+ng-en-f2355b2bef	a valid
+ng-en-f23ae1d110	synthesis
+ng-en-f23ecbbfe7	the user approves
+ng-en-f249d2ffed	signs of
+ng-en-f24caecd2f	without evidence
+ng-en-f25091e70c	public
+ng-en-f25f606e35	ai act
+ng-en-f2740dabed	lives in
+ng-en-f2759b36f3	editorial
+ng-en-f278fdf194	reviews and testimonials
+ng-en-f29a41f104	writes the
+ng-en-f2aa5d3541	spoken
+ng-en-f2bdf5bb6b	playbook here
+ng-en-f2c5b1c0b6	decorative
+ng-en-f2f1dea069	shift
+ng-en-f3011959ea	a sentence
+ng-en-f3143abfe1	week
+ng-en-f317d112d8	english variant
+ng-en-f32368355a	fast
+ng-en-f327755f10	inclusive
+ng-en-f32972fb31	skips
+ng-en-f32ce4c0f8	framework
+ng-en-f32eb31a31	source and a
+ng-en-f341e83bcf	in english
+ng-en-f36b331d7c	the tool
+ng-en-f36fb80439	signs of ai
+ng-en-f37633ea06	in the first line
+ng-en-f38e64ebad	between two
+ng-en-f39ecafa31	card
+ng-en-f3a9234ec7	postal address
+ng-en-f3b4ba4fa7	remain labeled
+ng-en-f3b66c7f7b	scenes
+ng-en-f3bd80a3bd	parent
+ng-en-f3cb798be2	deliverable
+ng-en-f3d6331856	moment
+ng-en-f3e9cdb460	urgency and scarcity
+ng-en-f3ef26656e	note says
+ng-en-f40dcb2a42	your card
+ng-en-f413ba512b	uk and
+ng-en-f423b5f33d	playbook generated from the
+ng-en-f4250cb851	check that
+ng-en-f42861426f	the stated
+ng-en-f4358194cd	the business
+ng-en-f44f759a6a	user asked
+ng-en-f4680d3b76	stronger
+ng-en-f46f906cf3	evidence ids and per
+ng-en-f477d83d9e	clean
+ng-en-f493bbe4dc	dates and
+ng-en-f4971ebb6c	of the product
+ng-en-f4a0622033	actions
+ng-en-f4ab437ee4	the platform
+ng-en-f4b3a9c5ba	delivered
+ng-en-f4b9adbf38	criteria
+ng-en-f4bd508e51	piece of
+ng-en-f4caa2bc4f	the title
+ng-en-f4d19c1c47	advises
+ng-en-f4d8f59391	an image
+ng-en-f4e082092e	it carries
+ng-en-f502e8c760	limits and
+ng-en-f50cf50bdb	hierarchy
+ng-en-f55cd8393b	video
+ng-en-f5635719cb	exactly
+ng-en-f56954a424	same facts
+ng-en-f570c492f1	request names
+ng-en-f5740a9db9	the wrong
+ng-en-f58fe03b84	adding keywords
+ng-en-f59684bde8	responsive
+ng-en-f59927876b	work instruction
+ng-en-f5a42bec30	to confirm
+ng-en-f5cd14c6a2	an action
+ng-en-f5cff16110	in three
+ng-en-f5d05e34af	instead of
+ng-en-f5f18fe15c	a group
+ng-en-f60a518657	review remains
+ng-en-f60fde80b3	incentivized reviews
+ng-en-f613b2f3ae	table with
+ng-en-f6163ddafd	a landing page
+ng-en-f619e06224	children
+ng-en-f63445db53	threads
+ng-en-f6372f5098	imply
+ng-en-f63d69212d	pick
+ng-en-f64092ff87	deadline
+ng-en-f64352d42d	it says
+ng-en-f643c2bc98	before publishing
+ng-en-f64d00488f	second fact
+ng-en-f64f88e0a5	the end
+ng-en-f687437b46	in three questions
+ng-en-f69da9feb1	registered
+ng-en-f6b78c9d83	the rest of
+ng-en-f6c77b0ca4	to action
+ng-en-f6cff905ff	maybe
+ng-en-f6d0d42888	location
+ng-en-f6df0d7d67	missing
+ng-en-f6dfa7d172	an opt
+ng-en-f6ed737a46	case for
+ng-en-f6f0c31167	made in
+ng-en-f6f531a5f6	worked
+ng-en-f6fc25611b	matter
+ng-en-f70582ff0f	education
+ng-en-f7073643ac	after reading
+ng-en-f7147cb19f	preserve approved
+ng-en-f71c3229e6	that means
+ng-en-f744d9259b	founder announcement
+ng-en-f74cfa77f3	publish
+ng-en-f74fbb8114	capitalization
+ng-en-f7568293c9	making
+ng-en-f7578f1ef0	actual seo
+ng-en-f75cb2ab18	profiles
+ng-en-f763822b51	treats
+ng-en-f77661c1f7	allows
+ng-en-f79a2c7232	a headline
+ng-en-f79d088058	opening
+ng-en-f7bb0d2dbf	agency
+ng-en-f7e60c43de	use and
+ng-en-f7f84de462	event and
+ng-en-f7f9748435	appears
+ng-en-f811bdf16a	little
+ng-en-f81d188bc1	account
+ng-en-f81d581f45	recognized
+ng-en-f8275bcff4	caps
+ng-en-f82b052c7f	the four
+ng-en-f841847fc2	to a supplied source
+ng-en-f846a45e40	lists the
+ng-en-f84b6bd376	no questions
+ng-en-f854aa3ca3	file for
+ng-en-f8569c85fb	remove
+ng-en-f85b83c288	play
+ng-en-f873b1f48e	adviser
+ng-en-f88a090da5	of ai
+ng-en-f89b6a9675	inform
+ng-en-f89ed1893d	tied to
+ng-en-f8a5a834aa	starter profile
+ng-en-f8a8831fbd	and disclosure
+ng-en-f8a96222fe	transition
+ng-en-f8ab1ec974	possible
+ng-en-f8c6e8f85c	six
+ng-en-f8debf2dde	weekend
+ng-en-f8e4661e34	review remains required
+ng-en-f8e5fec10c	the note
+ng-en-f8e7ddc2a2	places
+ng-en-f8eec4e7ad	article against
+ng-en-f8f5b0600b	budget
+ng-en-f8fcaf458b	older
+ng-en-f9185c1105	translate
+ng-en-f91a7a68ef	en
+ng-en-f922fc2e7b	at a glance
+ng-en-f9417c82ac	unless the
+ng-en-f958640650	a phone
+ng-en-f95984b843	force
+ng-en-f9aa7de474	straight
+ng-en-f9ade9f6da	and sms segments
+ng-en-f9c4ead8ba	pillar page
+ng-en-f9c6df0487	three things
+ng-en-f9d21ff501	the seller
+ng-en-f9dffeb1e9	of copy
+ng-en-f9f26ae99a	mourning
+ng-en-fa111a9f88	early
+ng-en-fa13518042	one text
+ng-en-fa1c52f669	this section
+ng-en-fa1d34c886	the list
+ng-en-fa29806621	copy the
+ng-en-fa29c31a44	product descriptions
+ng-en-fa29d9e2af	document
+ng-en-fa356fd084	appear only
+ng-en-fa397b7f67	without modifying
+ng-en-fa3b2df380	of a sentence
+ng-en-fa3b6a87a2	to people
+ng-en-fa5804dcff	frequency
+ng-en-fa63661fc1	groups
+ng-en-fa66cdb821	weekly
+ng-en-fa7b474bc4	search central
+ng-en-fa7c601d67	page title
+ng-en-fa8645c046	video and
+ng-en-fa971a8328	save it
+ng-en-faac1bc8e1	the code
+ng-en-fab883da0b	product or
+ng-en-fad3186cd3	enough
+ng-en-faded84fd7	a noun
+ng-en-fae12dd660	in limits
+ng-en-fae389ef01	locale files
+ng-en-faf8ed6222	plain written style
+ng-en-fb0ca7b2ff	texts
+ng-en-fb0d3fb611	carry the
+ng-en-fb1d0b411c	pays
+ng-en-fb32e14e30	billing
+ng-en-fb591632ab	the point
+ng-en-fb75582a1c	network
+ng-en-fb7606572a	every text
+ng-en-fb799d3fe3	is available
+ng-en-fb8146b7a6	answers
+ng-en-fba362f8d0	one button
+ng-en-fba5c6de08	the internal note
+ng-en-fba636e1cc	chatbots and
+ng-en-fba9f617c9	reader can check
+ng-en-fbb5ab9327	the research
+ng-en-fbb7d28d2c	plural
+ng-en-fbc91e823b	enough to
+ng-en-fbdc79f324	sms segments
+ng-en-fbe004bf55	phrase
+ng-en-fbe0cc14f9	webinar script
+ng-en-fbef7251d7	an object
+ng-en-fc0921050d	materials
+ng-en-fc11a48dcb	a name
+ng-en-fc2094b099	pipeline
+ng-en-fc290533c2	one page
+ng-en-fc3df248dc	a brand that
+ng-en-fc4fc906b7	status and
+ng-en-fc5395259e	qualifications
+ng-en-fc78e368ef	ad labels
+ng-en-fca3c2ff3a	footer
+ng-en-fca919d3d9	instruction
+ng-en-fcadc61f6b	register and address
+ng-en-fcb5d71b8f	unavoidable
+ng-en-fcba43b0cd	user
+ng-en-fcbfe227b1	the voice
+ng-en-fcc73f8cd4	call
+ng-en-fccef28e14	a shorter
+ng-en-fce919385a	semantic review
+ng-en-fcf193cbe3	observations
+ng-en-fd2d9a3785	the first
+ng-en-fd3aae4d70	important
+ng-en-fd47e9d7d1	neutral
+ng-en-fd52a824f3	any text
+ng-en-fd5ecbbfd5	in the task index
+ng-en-fd75e85482	page on
+ng-en-fd788e3484	router
+ng-en-fd83c7d6e8	id
+ng-en-fd8c679279	deliver a
+ng-en-fd8ceb0c59	a reasonably
+ng-en-fd95db5af2	ize
+ng-en-fdb88cbf52	save
+ng-en-fdcfa1531d	privacy and
+ng-en-fdd2106e79	use the fa
+ng-en-fddadf8bca	this pack
+ng-en-fdeaeae7de	lower
+ng-en-fdf2addc88	guess
+ng-en-fdfc7950e9	everyone
+ng-en-fe1e86b74d	file is part
+ng-en-fe24533b7a	to people who
+ng-en-fe2e7dfbb1	and recovery copy
+ng-en-fe360aa542	the video
+ng-en-fe36a040ed	payment error
+ng-en-fe76f8ebbc	invented urgency
+ng-en-fe79983ade	protection
+ng-en-fe7a28c275	sources for
+ng-en-fe7cf6f7c6	the variant
+ng-en-fe82068f87	the context
+ng-en-fe87470fb3	and human review
+ng-en-fe89e8be7d	problem
+ng-en-fe925ad500	subagents
+ng-en-fe9d237a0d	bans fake
+ng-en-fe9fd93cba	open the
+ng-en-feae9d243b	and permission
+ng-en-feba1214cc	rates
+ng-en-fec8a8a633	incident
+ng-en-fef80c718b	legacy
+ng-en-fef86d8d55	understood
+ng-en-fefa75c044	organize
+ng-en-ff18c3c8a9	a description
+ng-en-ff23542322	craft
+ng-en-ff33e6e7ff	one step
+ng-en-ff3daa75bd	date without
+ng-en-ff3ddede98	the output language
+ng-en-ff41aac1d2	written for
+ng-en-ff45cf049d	best
+ng-en-ff51631332	specs
+ng-en-ff5d56fa1a	auto
+ng-en-ff6bbe79ef	source
+ng-en-ff76bf73fb	cold outreach
+ng-en-ff8213176e	net
+ng-en-ff829313e4	firm
+ng-en-ff83e657be	loading
+ng-en-ffa94d8458	supporting
+ng-en-ffb23ac01b	summarize
+ng-en-ffb5068931	a whole
+ng-en-ffcc110663	needed
+ng-en-ffdfc3202a	a marketing text
+ng-en-ffe4f0be57	every format

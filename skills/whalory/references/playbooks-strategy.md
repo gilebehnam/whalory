@@ -6,6 +6,8 @@ This file is part of the [playbooks](playbooks.md). Each task's row is in the [t
 
 - [Voice, strategy, and teaching](#voice-strategy-and-teaching)
   - [Voice profile in three questions](#voice-profile-in-three-questions)
+  - [Lessons from feedback](#lessons-from-feedback)
+  - [Whalory Hub: rules and feedback](#whalory-hub-rules-and-feedback)
 
 ## Voice, strategy, and teaching
 
@@ -25,4 +27,34 @@ For a brand that has no [brand profile](intake.md#definitions) and whose request
 **References:** [profile-builder.md#route-2-short-interview](profile-builder.md#route-2-short-interview), [voice-profile.md](voice-profile.md), [intake.md](intake.md) · fa: [fa/craft.md#تو-یا-شما](fa/craft.md#تو-یا-شما), [fa/persian-prose.md#نردبانِ-لحن](fa/persian-prose.md#نردبانِ-لحن) · en: [profile-builder.md#english-route](profile-builder.md#english-route), [en/style-guide.md#variants](en/style-guide.md#variants), [en/prose.md#contractions](en/prose.md#contractions)
 **Output:** `VOICE.md`, `voice.json`, one sample text, and the sentence that offers to save.
 **QA:** With this same `voice.json`, the sample text passes lint with no errors; every dial has a number.
+
+### Lessons from feedback
+
+For a correction the user wants kept, and for the learnings note itself: listing its rows, pruning them, or exporting them. The method is [saving a lesson](judgment.md#saving-a-lesson). In the plugin, the `learn` and `lessons` commands run it.
+
+1. Find the profile in the [lookup order](../SKILL.md#profile-lookup-order), then its learnings note. With no brand profile, the note is `LEARNINGS.md` at the project root.
+2. Save: sort the correction with [what goes where](judgment.md#what-goes-where) and [what is not recorded](judgment.md#what-is-not-recorded). Build one row, show it with its file, and write it only after a yes.
+3. List: show the rows, newest first, and whether each one moved to the profile. Flag any decision with three rows, which is ready for the profile. Flag any row that holds personal data or a secret. Change nothing.
+4. Prune: propose what to remove and why. Show the note before and after, and change it only after a yes. Never delete the note itself, and never edit the profile here.
+5. Export: give the rows still in force as one Markdown table, headed by the brand and the date. It stays in the chat unless the user names a file; then write it after a yes. Leave out any row with personal data.
+
+**Questions:** The "Lesson" row of the [question bank](intake.md#question-bank-by-task): one confirmation before any change to the file.
+**References:** [judgment.md#learnings-note-format](judgment.md#learnings-note-format), [voice-profile.md#format-ids](voice-profile.md#format-ids) · fa: [LEARNINGS-template.md](../profiles/LEARNINGS-template.md) · en: [LEARNINGS-template.en.md](../profiles/LEARNINGS-template.en.md)
+**Output:** The proposed row or change, its file, and one question; after a yes, the path that was written. No diagnosis note.
+**QA:** Every row has a date, a format, an observation, and a decision. No row holds personal data, and nothing was written without a yes.
+
+### Whalory Hub: rules and feedback
+
+For questions about Whalory's signed rule updates, rule statistics, and the weekly packet. The method is [hub.md](hub.md). In the plugin, the `hub` and `feedback` commands run it.
+
+1. With code execution, run the Hub client from the skill folder: `python <skill-path>/scripts/hub_client.py <command>`. Show its output as printed.
+2. Status and sync: `status`, or `sync --force` to check for new rules now. Sum up the result in a few lines, then give the full output.
+3. Sharing: never turn it on and never change a Hub setting. Give the user the exact command for their own terminal: `consent` for statistics, `on packets` for the weekly packet. Turning something off at the user's request is allowed: `off`, `off packets`, `off updates`, or `off all`.
+4. The weekly packet: `packet --show`. Show the block exactly, say what it holds, and explain how the user can post it under their own GitHub account. Never post it and never run `gh`.
+5. Without code execution, explain from [hub.md](hub.md) and give the commands for the user's own terminal.
+
+**Questions:** None; the request is complete input.
+**References:** [hub.md](hub.md), [review.md#quality-loop](review.md#quality-loop) · fa and en: the same files
+**Output:** The client's output as printed, a short summary, and the exact terminal command for anything only the user may do. No diagnosis note.
+**QA:** No setting was turned on, nothing was posted, and the packet was shown unchanged.
 

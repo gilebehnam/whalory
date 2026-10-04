@@ -134,7 +134,7 @@ People learn from feedback, and so does Whalory. But conversation memory is wipe
 1. Deliver, with the internal note: profile, guesses, gaps.
 2. Get feedback from the client or the editor: what changed and why.
 3. Sort it: a one-off preference or a rule? About this text, or about the brand?
-4. Record it in the right place, using the table below.
+4. Record it in the right place, using the table below. A row in the learnings note is shown first and written after a yes: [saving a lesson](#saving-a-lesson).
 5. Apply it in the next task. Anything repeated three times moves into the profile itself.
 
 ### What goes where
@@ -164,7 +164,22 @@ People learn from feedback, and so does Whalory. But conversation memory is wipe
 
 Date, observation, and decision are required. The format column holds one of the [format ids](voice-profile.md#format-ids), or "all" for a decision that applies to every format. With this column, a rule that moves to the profile finds its place in the `formats` section. An observation is what you saw or heard, without interpretation. A decision is what will be different next time. A note without a decision is a complaint. The rows above only illustrate the format.
 
-For an agent: the learnings note sits next to the profile chosen for that brand. That means `LEARNINGS.md` next to `VOICE.md` at the project root, `voice/LEARNINGS.md` next to `voice/VOICE.md`, or `<brand>.LEARNINGS.md` next to `<brand>.md` in `~/.whalory/profiles/`. This way, the notes of two brands never mix. The template is [LEARNINGS-template.md](../profiles/LEARNINGS-template.md). Before every task, read this file right after the profile. After each accepted piece of feedback, add one row to it. Conversation memory does not last.
+For an agent: the learnings note sits next to the profile chosen for that brand. That means `LEARNINGS.md` next to `VOICE.md` at the project root, `voice/LEARNINGS.md` next to `voice/VOICE.md`, or `<brand>.LEARNINGS.md` next to `<brand>.md` in `~/.whalory/profiles/`. This way, the notes of two brands never mix. With no brand profile, the note is `LEARNINGS.md` at the project root, if it exists. The template is [LEARNINGS-template.md](../profiles/LEARNINGS-template.md), and [LEARNINGS-template.en.md](../profiles/LEARNINGS-template.en.md) in English. Before every task, read this file right after the profile. After each accepted piece of feedback, propose one row for it. Conversation memory does not last.
+
+### Saving a lesson
+
+A lesson steers every later task for the brand, so the user agrees to its wording before it is written. In the plugin, the `learn` command runs these steps, and the `lessons` command lists, prunes, and exports the rows.
+
+1. Start from the user's own words for the correction. Without them, use the last change the user made to delivered copy, and say which one you used.
+2. Sort it with the two tables above. A one-off preference, a customer's personal data, and anything secret are never recorded; say why in one line. If the profile already holds the rule, no row is needed.
+3. Build one row in the [learnings note format](#learnings-note-format). A Persian note dates it in the Solar Hijri calendar with Persian digits, and an English note uses `YYYY-MM-DD`.
+4. Show the row with the path of its file, and say whether the file will be created from the template. Ask one question: save it, change it, or leave it out. This confirmation is not a request for permission, because the user approves the exact words that later work will follow ([never ask](intake.md#never-ask)).
+5. After a yes, append the row and leave the rest of the file as it is. Without file access, give the row for the user to paste. In an automated run, write nothing, and put the row in `needs_verification`.
+6. When a decision reaches its third row, offer to move it into the profile. That is a separate step, with its own yes.
+
+The file is the learnings note of the chosen profile, as the next paragraph says. A starter profile, the skill's own profiles, and "none" have no note of their own. The row then goes in `LEARNINGS.md` at the project root, where a `VOICE.md` would sit. Outside a project, offer to build a profile first. Never write inside the skill or plugin folder, and never in the old `~/.whalya/` folder.
+
+Pruning removes duplicates, rows that a later row reverses, rows already moved into the profile, and any row that breaks [what is not recorded](#what-is-not-recorded). An export is a Markdown table of the rows still in force, for a teammate or a paste-in prompt. Each change to the file is shown first and made after a yes.
 
 ## Mistakes
 

@@ -31,3 +31,5 @@ In locale files, only values are linted. Never suggest changing a key, a placeho
 ## Don't edit
 
 Change no file unless the user asks. For mechanical fixes on request, `--fix` writes a copy named `<name>.fixed.<ext>`, and `--fix --write` changes the file in place. Show what changed.
+
+Never change Whalory Hub settings. If the user wants to share statistics, tell them to run `hub_client.py consent` from the `whalory` skill's `scripts/` folder in their own terminal, or `hub_client.py on packets` for the weekly packet.

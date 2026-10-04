@@ -30,7 +30,7 @@ Give the editor's review as it stands:
 2. the must-fix list, seven items at most;
 3. up to three line edits.
 
-End with one line on the next step, such as running the `write` command with the must-fix list.
+End with one line on the next step, such as running the `write` command with the must-fix list. A review of the user's own text is the editor pass itself, so it runs no revision loop of its own (`references/review.md#quality-loop`).
 
 ## Without subagents
 
@@ -44,3 +44,5 @@ If this host can't run subagents, run the blind-review protocol of `references/e
 
 Load method sections with the Whalory MCP tool `get_reference_section`, or read them from the `whalory` skill folder.
 In Claude Code, that folder is `${CLAUDE_PLUGIN_ROOT}/skills/whalory/`.
+
+Never change Whalory Hub settings. If the user wants to share statistics, tell them to run `hub_client.py consent` from the `whalory` skill's `scripts/` folder in their own terminal, or `hub_client.py on packets` for the weekly packet.

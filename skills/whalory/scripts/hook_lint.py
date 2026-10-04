@@ -40,8 +40,14 @@ read-only tools, MCP tools, paths under node_modules, .git, dist, build or
 vendor, files over 1 MB, unsupported extensions, and .json or .xml files that
 do not look like locale files.
 
-Python 3.8 or newer, standard library only. No network and no file writes: not
-even Python bytecode caches next to lint.py (the child runs with -B).
+Whalory Hub (Hub spec 5.2): when the person turned on weekly statistics or weekly
+packets in their own terminal, and ``hub_events.py`` sits next to ``lint.py``, the
+child also appends counts of the findings (rule ids, never text) to the Hub folder,
+source ``hook``. Nothing about it reaches stdout.
+
+Python 3.8 or newer, standard library only. No network. It writes no files apart
+from those Hub counts: not even Python bytecode caches next to lint.py (the child
+runs with -B).
 """
 from __future__ import print_function
 
@@ -57,7 +63,7 @@ import os  # noqa: E402
 import re  # noqa: E402
 import threading  # noqa: E402
 
-VERSION = '3.0.0'
+VERSION = '3.1.0'
 
 MAX_BYTES = 1024 * 1024
 TIMEOUT = 8.0
@@ -260,6 +266,52 @@ def _lint_one(linter, path):
             pass
 
 
+def load_hub(dirs):
+    """hub_events from the folder that holds lint.py, when it is there and statistics are on; else None."""
+    for d in dirs or []:
+        if not os.path.isfile(os.path.join(d, 'lint.py')):
+            continue
+        target = os.path.join(d, 'hub_events.py')
+        if not os.path.isfile(target):
+            return None
+        try:
+            spec = importlib.util.spec_from_file_location('hub_events', target)
+            module = importlib.util.module_from_spec(spec)
+            sys.modules['hub_events'] = module
+            spec.loader.exec_module(module)
+            return module if module.enabled() else None
+        except Exception:
+            return None
+    return None
+
+
+def _words(path):
+    try:
+        with io.open(path, encoding='utf-8', errors='replace') as fh:
+            return len(fh.read(MAX_BYTES).split())
+    except (OSError, ValueError):
+        return 0
+
+
+def _lint_recorded(linter, hub, path):
+    """_lint_one, and one `lint` event with the shown and the hidden findings (ids only)."""
+    overlay = sys.modules.get('hub_overlay')
+    collecting = getattr(overlay, '_collecting', None) if overlay is not None else None
+    hidden = []
+    if callable(collecting):
+        with collecting() as found:
+            entry = _lint_one(linter, path)
+        hidden = list(found)
+    else:
+        entry = _lint_one(linter, path)
+    try:
+        issues = [i for i in (entry or {}).get('issues') or [] if isinstance(i, dict)]
+        hub.record_lint('hook', (entry or {}).get('lang'), None, (issues, hidden), _words(path))
+    except Exception:
+        pass
+    return entry
+
+
 def _run_with_timeout(func, timeout):
     box = {}
 
@@ -348,10 +400,11 @@ def child_main():
     linter = load_linter({}, dirs)
     if linter is None:
         return 0
+    hub = load_hub(dirs)
     for item in job.get('files') or []:
         try:
             shown, path = item
-            entry = _lint_one(linter, path)
+            entry = _lint_recorded(linter, hub, path) if hub is not None else _lint_one(linter, path)
         except Exception:
             continue
         out.write(json.dumps([shown, _slim(entry)], ensure_ascii=True, default=str) + '\n')

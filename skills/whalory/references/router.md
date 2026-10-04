@@ -1,5 +1,13 @@
 # Context detection
 
+## Professional writing contracts
+
+The canonical [writing task index](task-index.md) and [shared registry](../data/catalogs/writing-capabilities.json) route 163 contracts across 16 families. Resolve task separately from operation, channel and language before applying the older craft routes below. Select only the relevant contract and family; do not load the full catalog into a writing prompt. Everyday requests such as company credentials, a board memo, PRD, SOP, HR feedback or a whole signup flow are in scope through their contracts. Credentials means qualifications and demonstrated work, never login secrets.
+
+Use `scripts/task_registry.py detect` for a transparent local candidate route, or `pack` for a handoff containing inputs, output sections, facts, keys and review gates. The local tool has no model or network call. Unknown and ambiguous routes stay explicit. Contract checks are not proof of semantic quality. Keep draft, provider generation, deterministic validation, expert review and publication states separate.
+
+For adaptation, the destination contract wins over the source genre. Preserve names, numbers, conditions, negations, attribution, locale keys and placeholders. A source article becomes a LinkedIn post under `social.linkedin_post` with operation `adapt`; it does not gain invented personal experience. External sending, publication and paid requests require their own actual authorized capability.
+
 This file is step zero of every task. Before asking or writing, Whalory works out where it is and what it has been asked. It reads its own tools, the files at hand, and the request itself. The result is a context card. Whalory fills it silently, and only one line of it appears in the internal note. After this file, the [question gate](intake.md) decides whether a question is needed. This file has no rules for asking: the "Question bank" column of the route table only names the bank row of the task.
 
 ## Contents
@@ -127,7 +135,7 @@ qa:              script | manual
 | Level | When | What it changes |
 |---|---|---|
 | `high` | A [high-risk](#high-risk-words-and-industry-cards) industry or word; the row 19 layer | The risk layer, questions as the [gate](intake.md#decision-order) says, and "Risk: high" («خطر: بالا») in the diagnosis line |
-| `medium` | One of three cases. The user's money is involved: a payment, a payment error, a refund, installments, or buying on credit. A food, cosmetic, hygiene, or herbal product invites a health claim. A hard message goes to a group of customers or to all of them | Read claims.md in the output language ([fa](fa/claims.md), [en](en/claims.md)). Give every money or health claim without evidence a confirm bracket: `[confirm: …]` in English, «[تأیید شود]» in Persian. Asking doesn't change, and the level stays out of the diagnosis line |
+| `medium` | One of three cases. The user's money is involved: a payment, a payment error, a refund, installments, or buying on credit. A food, cosmetic, hygiene, or herbal product invites a health claim. A hard message goes to a group of customers or to all of them | Read claims.md in the output language ([fa](fa/claims.md), [en](en/claims.md)). Give every money or health claim without evidence a bracket: `[source needed: …]` in English copy, «[… تأیید شود]» in Persian copy. Asking doesn't change, and the level stays out of the diagnosis line |
 | `low` | Everything else | Nothing |
 
 ## Signals to routes
@@ -136,11 +144,11 @@ A row matches when all of its signals are on the card. **Signal precision** pick
 
 0. Gate: row 15. If the request is an [out-of-scope genre](#out-of-scope-genres), Whalory steps aside and reads no further in the table. Brand copy that uses story or verse, such as a labeled story from a photo, is not one.
 1. Attachment and input: a file, image, web address, or text that came with the request is the most precise signal. Rows 1, 2, 11, 10, 12, 5, 6, 7, 13, 9, and 8.
-2. Intent: teaching, review, transcreation or bilingual copy, multi-part work, strategy, and brand voice. Rows 14, 16, 17, 22, 18, and 21.
+2. Intent: teaching, review, transcreation or bilingual copy, multi-part work, strategy, brand voice, lessons, and the Hub. Rows 14, 16, 17, 22, 18, 21, 23, and 24.
 3. Place and channel: row 3, a verb with a place name.
 4. Fallback: row 4, only when no other row matches.
 
-Rows 19 and 20 are layers: they sit on top of any main row and never take its place. A row number is an id and never changes; the order of the table is the order of the steps. When a teaching or review intent comes with an attachment, the playbook comes from the attachment's row and the output shape from the [delivery table](#delivery-by-host-and-intent).
+Rows 19 and 20 are layers: they sit on top of any main row and never take its place. A correction that comes with a new task doesn't take the task's place either. The task keeps its row, and row 23 adds the proposed lesson at the end of the note, with its confirmation among the follow-up questions. A row number is an id and never changes; the order of the table is the order of the steps. When a teaching or review intent comes with an attachment, the playbook comes from the attachment's row and the output shape from the [delivery table](#delivery-by-host-and-intent).
 
 The "Question bank" column only names the row of the [bank](intake.md#question-bank-by-task). Whether to ask, and how many questions, is set by the [decision order](intake.md#decision-order). "Complete input" means step 2 of that order: no question comes before the work.
 
@@ -162,6 +170,8 @@ The route column names the Persian pack (fa) and the English pack (en). Open the
 | 2 | 17 | «نمره بده» or «بررسی کن»; in English, "score this" or "review this" | [Scoring and review](playbooks-repair.md#scoring-and-review) → [review.md](review.md), [editor.md](editor.md#scoring-rubric) | Complete input | A score table and fixes | Script or manual |
 | 2 | 18 | Strategy, content plan, verbal identity, tone guide, campaign, name | Blog strategy (in Whalory Pro), Verbal identity from scratch (in Whalory Pro), Ad campaign (in Whalory Pro), Naming (in Whalory Pro) | The row for that task, in the [brief card](intake.md#task-level-and-question-cap). Verbal identity and a tone guide with no brand profile first get the three "Building a profile" questions: [decision order](intake.md#decision-order) | A decision document; docx or pptx through another skill | None |
 | 2 | 21 | A [brand-building task](intake.md#definitions) with no [brand profile](intake.md#definitions): «صدای برندمون», «لحنِ ما چیه», «یه VOICE بساز»; in English, "our brand voice", "what's our tone", "make us a `VOICE.md`" | [Voice profile in three questions](playbooks-strategy.md#voice-profile-in-three-questions) → [profile-builder.md](profile-builder.md#route-2-short-interview), and for English brands the [English route](profile-builder.md#english-route) | "Building a profile" | A draft profile and the copy | Manual |
+| 2 | 23 | A correction to keep, or the lessons themselves: «یادت باشه»، «از این به بعد»، «درس‌ها رو نشون بده»; in English, "remember this", "from now on", or "show our lessons"; the `learn` and `lessons` commands | [Lessons from feedback](playbooks-strategy.md#lessons-from-feedback) → [judgment.md](judgment.md#saving-a-lesson), [voice-profile.md](voice-profile.md#format-ids) | "Lesson" | The proposed row with its file, and one confirmation; after a yes, the row in the learnings note. No diagnosis note | None |
+| 2 | 24 | Whalory Hub: rule updates, statistics, or the weekly packet: «هاب»، «آمارِ قاعده‌ها»، «بسته‌ی هفتگی»; in English, "Hub status", "share statistics", or "feedback packet"; the `hub` and `feedback` commands | [Whalory Hub: rules and feedback](playbooks-strategy.md#whalory-hub-rules-and-feedback) → [hub.md](hub.md) | Complete input | The client's output as printed, and the exact terminal command for anything only the user may do. No diagnosis note | None |
 | 3 | 3 | A verb with a place name: «یه کپشن برای [کافه]», or "a caption for [my cafe]" | The playbook for that name; [place-name table](#place-names-and-format-ids) | The row for that task | Copy and note | Script or manual |
 | 4 | 4 | The request has no place name and no other row matches: «یه متن برای محصولم», or "some copy for my product" | [Unstated genre](judgment.md#unstated-genre) | "Base questions" | The guessed route | Same |
 | Layer | 19 | A high-risk industry or word: treatment, supplements, an aesthetics clinic, a fund, guaranteed or projected returns, crypto, a car or property pre-sale. English examples: `clinically proven`, `eco-friendly`, testimonials in the copy. [Full list](#high-risk-words-and-industry-cards) | Risk layer: Claim and license check (in Whalory Pro) → fa: [claims.md](fa/claims.md), regulation.md (in Whalory Pro), [ethics.md](fa/ethics.md) · en: [claims.md](en/claims.md), regulation.md (in Whalory Pro), [ethics.md](en/ethics.md); the regulation file follows the [market](#output-language-variant-and-market) | "Claim check" | As the main row says | Same |

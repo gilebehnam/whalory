@@ -1,0 +1,1160 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:whalory:voice-profile:3",
+  "title": "Whalory voice profile schema 3",
+  "type": "object",
+  "required": [
+    "schema_version"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "register": {
+      "enum": [
+        "any",
+        "formal",
+        "colloquial"
+      ]
+    },
+    "address": {
+      "enum": [
+        "any",
+        "shoma",
+        "to"
+      ]
+    },
+    "language": {
+      "enum": [
+        "fa",
+        "en",
+        "bilingual"
+      ]
+    },
+    "variant": {
+      "enum": [
+        "fa-IR",
+        "fa-AF",
+        "tg",
+        "en-US",
+        "en-GB",
+        "en-AU",
+        "en-CA",
+        "en-NZ",
+        "en-IE",
+        "en-IN",
+        "en-ZA"
+      ]
+    },
+    "spelling": {
+      "enum": [
+        "us",
+        "uk",
+        "uk-ize",
+        null
+      ]
+    },
+    "contractions": {
+      "enum": [
+        "use",
+        "avoid",
+        "positive-only",
+        null
+      ]
+    },
+    "house_style": {
+      "enum": [
+        "chicago",
+        "ap",
+        "microsoft",
+        "google",
+        "govuk",
+        "mailchimp",
+        null
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "industry": {
+      "type": "string"
+    },
+    "note": {
+      "type": "string"
+    },
+    "schema_version": {
+      "type": "integer",
+      "const": 3
+    },
+    "dials": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "warmth": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "default": 3
+        },
+        "formality": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "default": 3
+        },
+        "humor": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "default": 1
+        },
+        "narrative": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "default": 3
+        },
+        "sentence_length": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "default": 3
+        },
+        "loud_marks": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3,
+          "default": 0
+        },
+        "jargon": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "default": 2
+        },
+        "rhetoric": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "default": 3
+        },
+        "energy": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "default": 3
+        },
+        "directness": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "default": 3
+        },
+        "slang": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "default": 1
+        }
+      }
+    },
+    "max_words": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "emoji_max": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "exclaim_max": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "reading_grade_max": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 4,
+      "maximum": 16
+    },
+    "oxford_comma": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "banned": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "avoid": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "allow": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "claim_boundaries": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "prefer": {
+      "type": "object",
+      "propertyNames": {
+        "minLength": 1
+      },
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "romanization": {
+      "type": "object",
+      "propertyNames": {
+        "minLength": 1
+      },
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "variants": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fa-IR",
+          "fa-AF",
+          "tg",
+          "en-US",
+          "en-GB",
+          "en-AU",
+          "en-CA",
+          "en-NZ",
+          "en-IE",
+          "en-IN",
+          "en-ZA"
+        ]
+      }
+    },
+    "brand": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "fa": {
+          "type": "string"
+        },
+        "latin": {
+          "type": "string"
+        },
+        "misspellings": {
+          "type": "object",
+          "propertyNames": {
+            "minLength": 1
+          },
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "extensions": {
+      "type": "object",
+      "description": "Custom metadata; never interpreted as tone or claims."
+    },
+    "fixed_facts": {
+      "type": "object",
+      "description": "Immutable facts keyed by a stable identifier."
+    },
+    "formats": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "caption": {
+          "$ref": "#/$defs/style"
+        },
+        "story": {
+          "$ref": "#/$defs/style"
+        },
+        "reels": {
+          "$ref": "#/$defs/style"
+        },
+        "carousel": {
+          "$ref": "#/$defs/style"
+        },
+        "post": {
+          "$ref": "#/$defs/style"
+        },
+        "sms": {
+          "$ref": "#/$defs/style"
+        },
+        "otp": {
+          "$ref": "#/$defs/style"
+        },
+        "email": {
+          "$ref": "#/$defs/style"
+        },
+        "subject": {
+          "$ref": "#/$defs/style"
+        },
+        "push": {
+          "$ref": "#/$defs/style"
+        },
+        "ui": {
+          "$ref": "#/$defs/style"
+        },
+        "error": {
+          "$ref": "#/$defs/style"
+        },
+        "product": {
+          "$ref": "#/$defs/style"
+        },
+        "listing": {
+          "$ref": "#/$defs/style"
+        },
+        "landing": {
+          "$ref": "#/$defs/style"
+        },
+        "about": {
+          "$ref": "#/$defs/style"
+        },
+        "blog": {
+          "$ref": "#/$defs/style"
+        },
+        "ad": {
+          "$ref": "#/$defs/style"
+        },
+        "press": {
+          "$ref": "#/$defs/style"
+        },
+        "bot": {
+          "$ref": "#/$defs/style"
+        },
+        "reply": {
+          "$ref": "#/$defs/style"
+        },
+        "hard": {
+          "$ref": "#/$defs/style"
+        },
+        "deck": {
+          "$ref": "#/$defs/style"
+        },
+        "script": {
+          "$ref": "#/$defs/style"
+        },
+        "name": {
+          "$ref": "#/$defs/style"
+        },
+        "headline": {
+          "$ref": "#/$defs/style"
+        }
+      }
+    },
+    "by_lang": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "fa": {
+          "$ref": "#/$defs/languageStyle"
+        },
+        "en": {
+          "$ref": "#/$defs/languageStyle"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "style": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "register": {
+          "enum": [
+            "any",
+            "formal",
+            "colloquial"
+          ]
+        },
+        "address": {
+          "enum": [
+            "any",
+            "shoma",
+            "to"
+          ]
+        },
+        "variant": {
+          "enum": [
+            "fa-IR",
+            "fa-AF",
+            "tg",
+            "en-US",
+            "en-GB",
+            "en-AU",
+            "en-CA",
+            "en-NZ",
+            "en-IE",
+            "en-IN",
+            "en-ZA"
+          ]
+        },
+        "spelling": {
+          "enum": [
+            "us",
+            "uk",
+            "uk-ize",
+            null
+          ]
+        },
+        "contractions": {
+          "enum": [
+            "use",
+            "avoid",
+            "positive-only",
+            null
+          ]
+        },
+        "house_style": {
+          "enum": [
+            "chicago",
+            "ap",
+            "microsoft",
+            "google",
+            "govuk",
+            "mailchimp",
+            null
+          ]
+        },
+        "reading_grade_max": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 4,
+          "maximum": 16
+        },
+        "oxford_comma": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "dials": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "warmth": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5,
+              "default": 3
+            },
+            "formality": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5,
+              "default": 3
+            },
+            "humor": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5,
+              "default": 1
+            },
+            "narrative": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5,
+              "default": 3
+            },
+            "sentence_length": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5,
+              "default": 3
+            },
+            "loud_marks": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 3,
+              "default": 0
+            },
+            "jargon": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5,
+              "default": 2
+            },
+            "rhetoric": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5,
+              "default": 3
+            },
+            "energy": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5,
+              "default": 3
+            },
+            "directness": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5,
+              "default": 3
+            },
+            "slang": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5,
+              "default": 1
+            }
+          }
+        },
+        "max_words": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "emoji_max": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "exclaim_max": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "banned": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "avoid": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "allow": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "prefer": {
+          "type": "object",
+          "propertyNames": {
+            "minLength": 1
+          },
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "romanization": {
+          "type": "object",
+          "propertyNames": {
+            "minLength": 1
+          },
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "claim_boundaries": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "fixed_facts": {
+          "type": "object",
+          "description": "Immutable facts keyed by a stable identifier."
+        },
+        "note": {
+          "type": "string"
+        },
+        "extensions": {
+          "type": "object",
+          "description": "Custom metadata; never interpreted as tone or claims."
+        }
+      }
+    },
+    "languageStyle": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "register": {
+          "enum": [
+            "any",
+            "formal",
+            "colloquial"
+          ]
+        },
+        "address": {
+          "enum": [
+            "any",
+            "shoma",
+            "to"
+          ]
+        },
+        "variant": {
+          "enum": [
+            "fa-IR",
+            "fa-AF",
+            "tg",
+            "en-US",
+            "en-GB",
+            "en-AU",
+            "en-CA",
+            "en-NZ",
+            "en-IE",
+            "en-IN",
+            "en-ZA"
+          ]
+        },
+        "spelling": {
+          "enum": [
+            "us",
+            "uk",
+            "uk-ize",
+            null
+          ]
+        },
+        "contractions": {
+          "enum": [
+            "use",
+            "avoid",
+            "positive-only",
+            null
+          ]
+        },
+        "house_style": {
+          "enum": [
+            "chicago",
+            "ap",
+            "microsoft",
+            "google",
+            "govuk",
+            "mailchimp",
+            null
+          ]
+        },
+        "reading_grade_max": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 4,
+          "maximum": 16
+        },
+        "oxford_comma": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "dials": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "warmth": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5,
+              "default": 3
+            },
+            "formality": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5,
+              "default": 3
+            },
+            "humor": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5,
+              "default": 1
+            },
+            "narrative": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5,
+              "default": 3
+            },
+            "sentence_length": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5,
+              "default": 3
+            },
+            "loud_marks": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 3,
+              "default": 0
+            },
+            "jargon": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5,
+              "default": 2
+            },
+            "rhetoric": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5,
+              "default": 3
+            },
+            "energy": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5,
+              "default": 3
+            },
+            "directness": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5,
+              "default": 3
+            },
+            "slang": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5,
+              "default": 1
+            }
+          }
+        },
+        "max_words": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "emoji_max": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "exclaim_max": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "banned": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "avoid": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "allow": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "prefer": {
+          "type": "object",
+          "propertyNames": {
+            "minLength": 1
+          },
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "romanization": {
+          "type": "object",
+          "propertyNames": {
+            "minLength": 1
+          },
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "claim_boundaries": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "fixed_facts": {
+          "type": "object",
+          "description": "Immutable facts keyed by a stable identifier."
+        },
+        "note": {
+          "type": "string"
+        },
+        "extensions": {
+          "type": "object",
+          "description": "Custom metadata; never interpreted as tone or claims."
+        },
+        "formats": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "caption": {
+              "$ref": "#/$defs/style"
+            },
+            "story": {
+              "$ref": "#/$defs/style"
+            },
+            "reels": {
+              "$ref": "#/$defs/style"
+            },
+            "carousel": {
+              "$ref": "#/$defs/style"
+            },
+            "post": {
+              "$ref": "#/$defs/style"
+            },
+            "sms": {
+              "$ref": "#/$defs/style"
+            },
+            "otp": {
+              "$ref": "#/$defs/style"
+            },
+            "email": {
+              "$ref": "#/$defs/style"
+            },
+            "subject": {
+              "$ref": "#/$defs/style"
+            },
+            "push": {
+              "$ref": "#/$defs/style"
+            },
+            "ui": {
+              "$ref": "#/$defs/style"
+            },
+            "error": {
+              "$ref": "#/$defs/style"
+            },
+            "product": {
+              "$ref": "#/$defs/style"
+            },
+            "listing": {
+              "$ref": "#/$defs/style"
+            },
+            "landing": {
+              "$ref": "#/$defs/style"
+            },
+            "about": {
+              "$ref": "#/$defs/style"
+            },
+            "blog": {
+              "$ref": "#/$defs/style"
+            },
+            "ad": {
+              "$ref": "#/$defs/style"
+            },
+            "press": {
+              "$ref": "#/$defs/style"
+            },
+            "bot": {
+              "$ref": "#/$defs/style"
+            },
+            "reply": {
+              "$ref": "#/$defs/style"
+            },
+            "hard": {
+              "$ref": "#/$defs/style"
+            },
+            "deck": {
+              "$ref": "#/$defs/style"
+            },
+            "script": {
+              "$ref": "#/$defs/style"
+            },
+            "name": {
+              "$ref": "#/$defs/style"
+            },
+            "headline": {
+              "$ref": "#/$defs/style"
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "variant",
+          "variants"
+        ],
+        "properties": {
+          "variant": {
+            "const": "fa-IR"
+          },
+          "variants": {
+            "minItems": 1
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "variants": {
+            "contains": {
+              "const": "fa-IR"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "variant",
+          "variants"
+        ],
+        "properties": {
+          "variant": {
+            "const": "fa-AF"
+          },
+          "variants": {
+            "minItems": 1
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "variants": {
+            "contains": {
+              "const": "fa-AF"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "variant",
+          "variants"
+        ],
+        "properties": {
+          "variant": {
+            "const": "tg"
+          },
+          "variants": {
+            "minItems": 1
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "variants": {
+            "contains": {
+              "const": "tg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "variant",
+          "variants"
+        ],
+        "properties": {
+          "variant": {
+            "const": "en-US"
+          },
+          "variants": {
+            "minItems": 1
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "variants": {
+            "contains": {
+              "const": "en-US"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "variant",
+          "variants"
+        ],
+        "properties": {
+          "variant": {
+            "const": "en-GB"
+          },
+          "variants": {
+            "minItems": 1
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "variants": {
+            "contains": {
+              "const": "en-GB"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "variant",
+          "variants"
+        ],
+        "properties": {
+          "variant": {
+            "const": "en-AU"
+          },
+          "variants": {
+            "minItems": 1
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "variants": {
+            "contains": {
+              "const": "en-AU"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "variant",
+          "variants"
+        ],
+        "properties": {
+          "variant": {
+            "const": "en-CA"
+          },
+          "variants": {
+            "minItems": 1
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "variants": {
+            "contains": {
+              "const": "en-CA"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "variant",
+          "variants"
+        ],
+        "properties": {
+          "variant": {
+            "const": "en-NZ"
+          },
+          "variants": {
+            "minItems": 1
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "variants": {
+            "contains": {
+              "const": "en-NZ"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "variant",
+          "variants"
+        ],
+        "properties": {
+          "variant": {
+            "const": "en-IE"
+          },
+          "variants": {
+            "minItems": 1
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "variants": {
+            "contains": {
+              "const": "en-IE"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "variant",
+          "variants"
+        ],
+        "properties": {
+          "variant": {
+            "const": "en-IN"
+          },
+          "variants": {
+            "minItems": 1
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "variants": {
+            "contains": {
+              "const": "en-IN"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "variant",
+          "variants"
+        ],
+        "properties": {
+          "variant": {
+            "const": "en-ZA"
+          },
+          "variants": {
+            "minItems": 1
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "variants": {
+            "contains": {
+              "const": "en-ZA"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

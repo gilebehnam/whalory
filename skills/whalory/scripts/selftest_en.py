@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""selftest_en: tests for lint_en, the lint dispatcher and textcount (Whalory 3.0.0).
+"""selftest_en: tests for lint_en, the lint dispatcher and textcount (Whalory 3.1.0).
 
     python scripts/selftest_en.py
 
@@ -16,6 +16,7 @@ import sys
 if sys.version_info < (3, 8):
     sys.stderr.write('selftest_en needs Python 3.8 or newer (found %s).\n' % sys.version.split()[0])
     sys.exit(2)
+sys.dont_write_bytecode = True  # no __pycache__ next to the scripts: a skill or plugin folder may be read-only
 
 import ast  # noqa: E402
 import codecs  # noqa: E402
@@ -28,6 +29,7 @@ import tempfile  # noqa: E402
 import time  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+os.environ['WHALORY_HUB_OVERLAY'] = '0'  # built-in rules only (Hub spec 5.9), whatever the Hub folder holds
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
@@ -687,10 +689,10 @@ def t_api(out):
     except ValueError:
         pr.append('not JSON: %s' % err[:80])
     code, o, err = _cli('lint_en.py', ['--version'])
-    if code != 0 or 'lint_en 3.0.0' not in o:
+    if code != 0 or 'lint_en 3.2.0-rc.2' not in o:
         pr.append('--version %r' % o)
     code, o, err = _cli('lint.py', ['--version'])
-    if code != 0 or 'lint 3.0.0' not in o:
+    if code != 0 or 'lint 3.2.0-rc.2' not in o:
         pr.append('lint --version %r' % o)
     code, o, err = _cli('lint.py', [os.path.join(SE, 'good.txt'), os.path.join(S, 'good.txt'), '--json'])
     try:

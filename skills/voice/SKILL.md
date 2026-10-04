@@ -39,3 +39,5 @@ If the MCP tools weren't connected for the check, run the linter on the benchmar
 ## Return
 
 The files saved or proposed, the five-line summary, the benchmark text with its lint result, and any open question.
+
+Never change Whalory Hub settings. If the user wants to share statistics, tell them to run `hub_client.py consent` from the `whalory` skill's `scripts/` folder in their own terminal, or `hub_client.py on packets` for the weekly packet.

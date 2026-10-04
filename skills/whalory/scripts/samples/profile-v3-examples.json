@@ -1,0 +1,12 @@
+{
+  "status": "editorial_examples_not_model_evaluation",
+  "date": "2026-10-04",
+  "cases": [
+    {"id":"brief","format":"reply","facts":["Ask for audience, destination, and purpose."],"fa":{"before":"برای تنظیم متن، هدف، مخاطب و محل انتشار را مشخص کن.","after":"متن برای کیه و کجا منتشر می‌شه؟ هدف‌تون رو هم بگین."},"en":{"before":"Specify the intended audience, publication destination, and objective of your text.","after":"Who’s it for, where will it go, and what should it do?"}},
+    {"id":"missing-facts","format":"reply","facts":["Weight, origin city, and price are missing."],"fa":{"before":"این متن سه جای خالی دارد: وزن، شهر مبدأ و قیمت.","after":"وزن، شهر مبدأ و قیمت هنوز خالیه."},"en":{"before":"This text has three gaps: the weight, the city of origin, and the price.","after":"We still need the weight, origin city, and price."}},
+    {"id":"local-save","format":"ui","facts":["The draft is saved on this device."],"fa":{"before":"پیش‌نویس در همین دستگاه ذخیره شده است.","after":"پیش‌نویس روی همین دستگاه ذخیره شده."},"en":{"before":"Your draft has been saved on this device.","after":"Draft saved on this device."}},
+    {"id":"upload-error","format":"error","facts":["File upload failed.","Select the file again."],"fa":{"before":"بارگذاری فایل انجام نشد. فایل را دوباره انتخاب کن.","after":"فایل بارگذاری نشد. لطفاً دوباره انتخابش کنین."},"en":{"before":"The file could not be uploaded. Please select it again.","after":"The upload failed. Please choose the file again."}},
+    {"id":"live-caption","format":"caption","facts":["The live session is tomorrow at 18:00.","People can ask questions during that session."],"fa":{"before":"پخش زنده فردا ساعت ۱۸ است. می‌توانی سؤال خود را در همان پخش زنده مطرح کنی.","after":"فردا ساعت ۱۸ پخش زنده داریم. همون‌جا می‌تونین سؤال بپرسین."},"en":{"before":"The live session is tomorrow at 18:00. You may ask questions during the session.","after":"Join us live tomorrow at 18:00. You can ask questions there."}},
+    {"id":"install-requirement","format":"blog","facts":["The checker requires Python 3.8 or newer."],"fa":{"before":"برای اجرای بررسی متن، لازم است پایتون نسخهٔ ۳٫۸ یا بالاتر را نصب کرده باشی.","after":"برای بررسی متن، پایتون ۳٫۸ یا بالاتر را نصب کنید."},"en":{"before":"Running the text checker requires an installation of Python version 3.8 or later.","after":"Install Python 3.8 or newer to check your text."}}
+  ]
+}

@@ -1,6 +1,6 @@
 # Voice profile
 
-The profile is what turns this skill from "a good method" into "the voice of one particular brand." This file describes the profile's structure: its two files, where they live, and the order in which Whalory looks for them. The eight tone dials and the "one voice, many tones" table also live here; that table keeps the tone of each format separate. Open this file whenever you read, write, or lint a profile. To build a new profile, start with the [profile builder](profile-builder.md).
+The profile is what turns this skill from "a good method" into "the voice of one particular brand." This file describes the profile's structure: its two files, where they live, and the order in which Whalory looks for them. The eleven tone dials and the "one voice, many tones" table also live here; that table keeps the tone of each format separate. Open this file whenever you read, write, or lint a profile. To build a new profile, start with the [profile builder](profile-builder.md).
 
 ## Contents
 
@@ -14,7 +14,7 @@ The profile is what turns this skill from "a good method" into "the voice of one
 - [One voice, many tones](#one-voice-many-tones)
 - [Precedence](#precedence)
 - [The JSON file, key by key](#the-json-file-key-by-key)
-- [Version 1 and version 2](#version-1-and-version-2)
+- [Reading and migrating old profiles](#reading-and-migrating-old-profiles)
 - [Incomplete profile](#incomplete-profile)
 
 ## Two files, one decision
@@ -81,7 +81,7 @@ Once a profile is found, read the learnings note next to it too, if there is one
 | Benchmark text | One real text that has the right voice | Yes |
 | Tone and address | Colloquial written style or plain written style; «تو» or «شما»; which one where | Yes, for Persian |
 | Language and style | Output language and variant; for English, spelling, Oxford comma, contractions, house style, reading grade | Yes, for English or bilingual brands |
-| Dials | Eight numbers | Yes |
+| Dials | Eleven integers | Yes |
 | One voice, many tones | The most used formats, and where each departs from the global tone | Yes, for a brand that writes both captions and error messages |
 | Words | Say, avoid, consistent spelling | No |
 | Claim boundary | What do we never claim without evidence? | Yes, in a sensitive industry |
@@ -92,7 +92,7 @@ Once a profile is found, read the learnings note next to it too, if there is one
 
 ## Tone dials
 
-Eight dials. Seven take a number from 1 to 5, and "loud marks" takes 0 to 3. The last two dials arrived in version 2. A number turns a vague decision into a clear rule.
+Eleven dials. Ten take an integer from 1 to 5, and "loud marks" takes an integer from 0 to 3. Jargon and rhetoric arrived in schema 2; energy, directness, and slang arrived in schema 3. A number turns a vague decision into a clear rule.
 
 | Dial | Key | Range | Default |
 |---|---|---|---|
@@ -104,8 +104,11 @@ Eight dials. Seven take a number from 1 to 5, and "loud marks" takes 0 to 3. The
 | Loud marks | `loud_marks` | 0 to 3 | 0 |
 | Jargon | `jargon` | 1 to 5 | 2 |
 | Rhetoric dose | `rhetoric` | 1 to 5 | 3 |
+| Energy | `energy` | 1 to 5 | 3 |
+| Directness | `directness` | 1 to 5 | 3 |
+| Slang | `slang` | 1 to 5 | 1 |
 
-When no profile exists, this column applies: warmth 3, formality 3, humor 1, narrative 3, and sentence length 3. Loud marks are 0, jargon is 2, and rhetoric is 3. Persian copy uses «شما» and a 24-word cap; English copy uses `en-US` and a 25-word cap. This table is the source for these numbers; [SKILL.md](../SKILL.md) and [intake.md](intake.md) repeat them in short.
+When no profile exists, this column applies: warmth 3, formality 3, humor 1, narrative 3, and sentence length 3. Loud marks are 0, jargon is 2, rhetoric is 3, energy is 3, directness is 3, and slang is 1. Persian copy uses «شما» and a 24-word cap; English copy uses `en-US` and a 25-word cap. This table is the source for these numbers; [SKILL.md](../SKILL.md) and [intake.md](intake.md) repeat them in short.
 
 ### Warmth
 
@@ -202,6 +205,16 @@ The cap for each format is in the table dose, format by format (in Whalory Pro).
 
 Some formats have a dose of zero in that table: a button, an error message, a hard message, a formal document. They get no rhetoric at any value.
 
+### Energy, directness, and slang
+
+| Dial | 1 | 3 | 5 |
+|---|---|---|---|
+| Energy | Still, measured pace | Steady everyday pace | Lively pace without invented urgency |
+| Directness | Brief context before the point | Balanced context and next step | Answer and necessary action immediately, respectfully |
+| Slang | Familiar words without slang | Occasional audience-familiar idioms | Community idioms only with explicit audience fit |
+
+Energy changes pace, not emoji or exclamation limits. Directness changes ordering, not certainty or permission to omit qualifications. Slang changes idiom density, not Persian register or address. A colloquial Persian sentence addressed to «شما» can have slang 1. The resolver provides separate Persian and English instructions for every value; it does not translate Persian address rules into English.
+
 ## Register and address
 
 Two separate Persian decisions: how verbs are conjugated (`register`) and how the reader is addressed (`address`). Any combination of the two is possible:
@@ -242,7 +255,7 @@ Lint's built-in format defaults never set the address. `any` means no decision y
 
 ## Language and style
 
-Schema version 2 gains the keys below for English and bilingual brands, and the schema version stays 2. A Persian profile needs only `"language": "fa"` and `"variant": "fa-IR"`. `lint_fa.py` ignores these keys; `lint_en.py` reads them. The full table is in [language and style keys](#language-and-style-keys).
+The language keys below were introduced in schema 2 and remain supported in schema 3. A Persian profile needs only `"language": "fa"` and `"variant": "fa-IR"`. Both linters validate the profile contract; English style rules are applied by `lint_en.py`. The full table is in [language and style keys](#language-and-style-keys).
 
 ### Language and variant
 
@@ -361,7 +374,7 @@ The same table in json:
 
 ```json
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "register": "formal",
   "address": "shoma",
   "dials": {"warmth": 3, "formality": 4, "humor": 1, "narrative": 2,
@@ -378,43 +391,39 @@ The same table in json:
 
 ## Precedence
 
-When things disagree, work from the top down:
+Facts, claim restrictions, consent, and source requirements remain invariant. A stylistic request cannot authorize new facts, stronger certainty, or less protection. Situations such as grief, payment errors, health, or complaints still require an editorial review; the resolver is not a semantic safety judge.
 
-1. The three fixed rules: no invention, no AI patterns, no claims without evidence. Nothing ranks above these.
-2. A sensitive situation: mourning, crisis, bad news, high risk. It can only lower values; on days of mourning, for example, humor is 1. See occasions ([fa](fa/occasions.md), [en](en/occasions.md)) and hard messages (in Whalory Pro).
-3. An explicit request from the user for this task.
-4. This format's section in the profile: `formats.<id>`. It is the brand's own decision and can make limits stricter or looser.
-5. The format default: the format guide and lint's format defaults. It only makes limits stricter.
-6. The profile's global tone.
-7. Industry guide or starter profile, for any part the profile lacks.
-8. Base defaults: the default column in the dials table.
+The portable resolver applies these layers from lowest to highest:
 
-Lint applies the same order to numbers and lists, without rows 1, 2, and 7, which are the writer's job:
+| Layer | Merge policy |
+|---|---|
+| Defaults | Eleven dials; Persian address `shoma`, English address `any`; language-specific word caps |
+| Brand, then its `by_lang.<lang>` | The selected language overrides its parent field by field |
+| Industry, then its language layer | Used only without a brand, or when the caller explicitly sets `industry_selected=true`; an automatic guess never replaces the brand |
+| Selected preset, then its language layer | Style fields override the lower layers |
+| Format defaults | Only tighten `max_words`, `emoji_max`, and `exclaim_max` |
+| Explicit format settings | Brand, selected industry, then preset format settings; each language-specific format follows its parent; can tighten or relax the format defaults |
+| Request, then its language layer | Explicit settings for this task |
+| Host limits | Final hard ceilings for the three numeric caps; may only tighten |
 
-```
-command-line flag  >  formats[id] in the profile  >  format default in lint (stricter only)  >  profile global tone  >  dial default
-```
+Nested dials and spelling maps merge field by field. In schema 3, `banned` and `claim_boundaries` use an ordered union across all contributing layers. An empty list cannot remove a restriction, and an `allow` entry cannot excuse a banned word. `fixed_facts` are immutable by key: a conflicting higher-layer value is rejected and the conflict is returned. Keep names, quantities, prices, dates, currency, conditions, and required qualifications in these facts and in the writing brief.
 
-For English copy, `by_lang.en` first replaces the matching top-level keys, and `by_lang.en.formats` takes the place of `formats`. Then the same order applies.
+The result contains `profile`, `sources`, `trace`, `conflicts`, and three language-specific `instructions`. `sources["dials.energy"]` identifies the winning layer; `trace` retains the previous and new values and the merge policy. `conflicts` explains a retained fact, a skipped automatic industry, or a host ceiling. A caller should show material conflicts before generation. The returned profile has no unresolved `formats` or `by_lang`.
 
-**The format default only tightens.** Lint's built-in defaults hold three caps only: `max_words`, `emoji_max`, and `exclaim_max`. The final cap is the smaller of two numbers: the profile's global cap and the format's default cap. A profile with an 18-word cap keeps 18 in captions, even though the caption default is 20. A profile with a 24-word cap drops to 14 in a Persian error message. The English defaults differ for some formats, and `lint.py --rules` shows the numbers for every format.
-
-**`formats` is the brand's decision and works both ways.** Say the brand sets a cap of 28 in `formats.caption`. That cap applies, even above the format default. Raising a limit is possible only here, and a command-line flag still outranks it.
-
-**The format default never touches address, register, or dials.** These three come only from `formats`, the global tone, or the dial default. Lowering dials according to the format guide is the writer's job, and lint doesn't do it. A warmth-5 profile drops to 2 in a payment error message. A warmth-2 profile doesn't rise to 5 in a caption by itself.
+Legacy lint keeps its published call signatures and v1/v2 format-cap behavior. Loaders accept schema 3; malformed schema 3 and future schemas are input errors. Legacy malformed values produce visible profile warnings instead of silently disappearing. To lint a layered request, first call `lint.resolve_profile(...)` or `voice_profile.resolve_profile(...)`, then pass `result["profile"]` to `lint.lint_text`. Claim truth and the quality of the three new dials require editorial review; lint does not pretend to measure them.
 
 ## The JSON file, key by key
 
 | Key | Type | Meaning | Since version |
 |---|---|---|---|
-| `schema_version` | number | `2`; if missing, the file is version 1 | 2 |
+| `schema_version` | integer | `3`; the reader also accepts 1, 2, and an omitted v1 version | 2 |
 | `name` | text | Latin slug, same as the file name | 1 |
 | `brand.fa`, `brand.latin` | text | Exact spelling of the name | 1 |
 | `brand.misspellings` | map | Wrong spelling to right spelling; lint reports an error | 1 |
 | `romanization` | map | Optional; fixed Latin spellings of other names, from Persian to Latin; [spelling map](fa/persian-prose.md#نامِ-برند-محصول-و-آدم) | 2 |
 | `register` | `any`, `formal`, `colloquial` | Persian register | 1 |
 | `address` | `any`, `shoma`, `to` | Persian address | 2 |
-| `dials` | map | The eight dials | 1; `jargon` and `rhetoric` since 2 |
+| `dials` | map | The eleven dials | 1; jargon/rhetoric since 2; energy/directness/slang since 3 |
 | `max_words` | number | Word cap per sentence; defaults to 24 in Persian and 25 in English | 1 |
 | `emoji_max` | number | Emoji cap per text | 1 |
 | `exclaim_max` | number | Exclamation mark cap per text | 1 |
@@ -423,14 +432,17 @@ For English copy, `by_lang.en` first replaces the matching top-level keys, and `
 | `prefer` | map | The replacement for each "avoid" word | 1 |
 | `allow` | list | Words lint usually warns about but this brand uses with good reason, such as a word in the brand name | 1 |
 | `formats` | map | The tone of each format; see [one voice, many tones](#one-voice-many-tones) | 2 |
+| `claim_boundaries` | list of strings | Restrictions that tone selection cannot remove | 3 |
+| `fixed_facts` | object | Immutable facts keyed by a stable identifier | 3 |
+| `extensions` | object | Custom metadata preserved without interpreting it as style | 3 |
 
 `romanization` covers names the brand writes in Latin script again and again. The brand name itself stays in `brand.latin`. Each key is a Persian name and each value its fixed Latin spelling, such as `{"[نامِ محصول]": "[Product Name]", "[شهر]": "[City]"}`. The writer reads this map before any bilingual text, and spellings are never made up anew.
 
-Full skeleton, as in the English template [_template.en.json](../profiles/_template.en.json). A Persian profile sets `"language": "fa"`, `"variant": "fa-IR"`, and `"max_words": 24`. It can leave out the English-only keys, as [_template.json](../profiles/_template.json) does:
+Schema 3 skeleton, compatible with the older English template [_template.en.json](../profiles/_template.en.json). A Persian profile sets `"language": "fa"`, `"variant": "fa-IR"`, and `"max_words": 24`. It can leave out the English-only keys, as [_template.json](../profiles/_template.json) does:
 
 ```json
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "name": "brand-name",
   "language": "en",
   "variant": "en-US",
@@ -445,7 +457,7 @@ Full skeleton, as in the English template [_template.en.json](../profiles/_templ
   "register": "any",
   "address": "any",
   "dials": {"warmth": 3, "formality": 3, "humor": 1, "narrative": 3, "sentence_length": 3,
-            "loud_marks": 0, "jargon": 2, "rhetoric": 3},
+            "loud_marks": 0, "jargon": 2, "rhetoric": 3, "energy": 3, "directness": 3, "slang": 1},
   "max_words": 25,
   "emoji_max": 0,
   "exclaim_max": 0,
@@ -462,12 +474,12 @@ Full skeleton, as in the English template [_template.en.json](../profiles/_templ
 Save the file as `UTF-8`. Check its structure like this:
 
 ```bash
-python -m json.tool voice.json
+python scripts/voice_profile.py validate voice.json
 ```
 
 ### Language and style keys
 
-These keys join schema version 2; the schema version stays 2. The full skeleton above shows them in place.
+These keys were introduced in schema 2 and retain their meanings in schema 3. The full skeleton above shows them in place.
 
 | Key | Type / values | Default when missing | Meaning |
 |---|---|---|---|
@@ -483,30 +495,47 @@ These keys join schema version 2; the schema version stays 2. The full skeleton 
 
 ### Validation rules
 
-`lint_en.py` checks these keys and reports `en-profile-invalid`; `lint_fa.py` ignores them.
+The portable [JSON schema](../data/voice-profile.schema.json) and `voice_profile.validate_profile` define structural validation. Both linters accept this contract. Existing nullable English fields retain their meaning; null dials, null containers, booleans used as integers, unknown fields, and future versions are invalid. Put custom metadata in `extensions`. No numeric rounding or clamping occurs in strict validation.
 
 - enums as listed;
 - `variant` must match `^(fa-(IR|AF)|tg|en-(US|GB|AU|CA|NZ|IE|IN|ZA))$`;
 - `variants` must contain `variant` when it is non-empty;
 - `by_lang` keys ⊆ {fa, en}.
 
-## Version 1 and version 2
+## Reading and migrating old profiles
 
-- A file without `schema_version` is version 1 and still works; the new keys take their defaults.
-- Version 2 keeps every version 1 key. A tool that doesn't know a new key skips it.
-- The language and style keys don't change the version. A version 2 file without `language` reads as Persian (`fa`, `fa-IR`).
-- Moving an old profile to version 2 takes six steps:
+Schema version and product version are independent. The product release candidate uses profile schema 3. A missing `schema_version` means v1; v1 and v2 files remain readable without rewriting them. Documented aliases (`written`, `colloquial-written`, Persian address labels, and `rhetoric_dose`) are converted by the legacy normalizer. Schema 3 uses canonical names.
 
-1. Add `"schema_version": 2`.
-2. Convert the old `register` value to one of the three new values.
-3. Write `address` from the tone and address section of the md file.
-4. Add `jargon` and `rhetoric` to `dials`.
-5. Write every format that the md file gives its own tone into `formats`.
-6. Lint the benchmark text with the new profile. It must pass with no errors:
+`normalize_profile` returns a fresh object. It adds only `energy=3`, `directness=3`, and `slang=1`, preserving all old dial values and absent old fields. This avoids accidentally enabling a legacy lint rule such as jargon. Energy 3 and directness 3 supply neutral writer guidance; slang 1 adds no idioms. These are compatibility defaults, not measured model-quality claims. The regression suite compares existing profile caps and lint findings before and after normalization. `resolve_profile` supplies the complete eleven-dial settings for the writing task.
+
+Migration is explicit and dry-run by default:
 
 ```bash
-python <skill path>/scripts/lint.py anchor.txt --profile voice.json
+python scripts/voice_profile.py migrate /path/to/voice.json --dry-run
+python scripts/voice_profile.py migrate /path/to/voice.json --write
+python scripts/voice_profile.py rollback /path/to/voice.json --dry-run
+python scripts/voice_profile.py rollback /path/to/voice.json --write
 ```
+
+The write operation creates an adjacent exact-byte `.vN.<checksum-prefix>.bak` and `.migration.json` receipt with both SHA-256 checksums. It preserves a UTF-8 BOM, CRLF or LF endings, final-newline presence, and the original permission mode. A second migration produces no diff. Rollback verifies the backup and current checksums before restoring exact original bytes; it refuses to overwrite a later user edit. Backups and receipts remain for audit. To start a new migration after a rollback, first archive the previous receipt yourself.
+
+Legacy custom fields move visibly into the nearest `extensions.legacy_fields`, custom dials into `legacy_dials`, and unsupported format/language/brand metadata into the corresponding `legacy_formats`, `legacy_by_lang`, or `legacy_brand_fields`. They are preserved data and do not become executable
+tone controls. The dry-run output shows the entire candidate. Corrupt JSON, duplicate keys, invalid known fields, future versions, and conflicting extension metadata fail before a profile write.
+
+The migration command only handles the explicit path. It never scans the home folder or writes into an installed skill automatically. Profile lookup remains the established order: current `~/.whalory/profiles`, then read-only legacy `~/.whalya/profiles`, then bundled profiles; the historical `whalya` identifier resolves to `whalory`.
+
+Public Python API (standard library, Python 3.8+):
+
+```python
+import voice_profile
+errors = voice_profile.validate_profile(document)
+normalized = voice_profile.normalize_profile(document)
+result = voice_profile.resolve_profile(
+    document, lang="fa", fmt="caption", preset=None, industry=None,
+    request=None, host_limits=None, industry_selected=False)
+```
+
+The CLI `validate`, `normalize`, `resolve`, `schema`, `migrate`, and `rollback` commands emit JSON. Success returns 0; invalid input returns 2. `--help` documents each command. The caller owns profile scope and resolves any protected-fact conflicts before writing.
 
 ## Incomplete profile
 

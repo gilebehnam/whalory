@@ -242,4 +242,4 @@ The profile is ready when:
 - Every three months, measure three new good texts with `profile_stats.py`. If the numbers have drifted from the profile, fix either the texts or the profile, on purpose.
 - Every profile change has a date and a reason, in the history section of that file.
 - Anything repeated three times in `LEARNINGS.md` moves into the profile itself; the method is in [learning](judgment.md#learning).
-- A version 1 profile is updated with the [version 2 steps](voice-profile.md#version-1-and-version-2).
+- Older profiles remain readable; use the [profile migration steps](voice-profile.md#reading-and-migrating-old-profiles) for an explicit update.
