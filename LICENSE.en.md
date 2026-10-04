@@ -45,6 +45,6 @@ Whalory is a set of files. It sells no access to any assistant or model. Every a
 
 ## Questions about licensing
 
-Contact: the [contact page](https://whalory.com/en/contact) on the Whalory website. The legal text is only what [`LICENSE-CORE.en.md`](LICENSE-CORE.en.md) and `EULA.en.md` (in Whalory Pro) say; this page is a summary.
+Contact: the [contact page](https://whalory.com/support/) on the Whalory website. The legal text is only what [`LICENSE-CORE.en.md`](LICENSE-CORE.en.md) and `EULA.en.md` (in Whalory Pro) say; this page is a summary.
 
-This text is not legal advice. Have a lawyer review it before publication.
+The full license texts linked above set out the applicable terms.

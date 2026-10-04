@@ -1,7 +1,7 @@
 {
   "name": "whalory-autolint",
   "displayName": "Whalory Autolint",
-  "version": "3.2.0-rc.2",
+  "version": "3.2.0",
   "description": "Opt-in: lints content and locale files with Whalory after each Write or Edit.",
   "author": {
     "name": "Whalya",

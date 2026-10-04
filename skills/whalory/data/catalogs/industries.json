@@ -2,7 +2,7 @@
   "schema_version": 1,
   "kind": "industries",
   "metadata": {
-    "release": "3.2.0-rc.2",
+    "release": "3.2.0",
     "curated_on": "2026-10-04",
     "curator": "Codex editorial catalog task",
     "source_seed_sha256": "15d8194762a71e7b385bd0ab760eb8d00fa59a45f331be19f69d2b3223bbef52",

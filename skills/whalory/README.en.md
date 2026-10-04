@@ -1,6 +1,6 @@
 # Whalory
 
-> Release status: 3.2.0-rc.2 is an unpublished local candidate. Public 3.0.0 is the verified release; 3.1.0 is an unpublished development precursor. Candidate artifact names below refer to local build outputs, not newly published download URLs.
+> Release status: 3.2.0 is an unpublished local candidate. Public 3.0.0 is the verified release; 3.1.0 is an unpublished development precursor. Candidate artifact names below refer to local build outputs, not newly published download URLs.
 
 Whalory («والوری») turns your AI assistant into a copywriting team for English and Persian (Farsi). The team writes, rewrites, and reviews business copy in each brand's own voice. It works out the task, channel, and output language before it writes. It asks at most three short questions, and only when the answer would change the text. Nothing gets invented: no facts, quotes, or numbers. Drafts are checked with bilingual linters that run on your machine. Without Python, Whalory works through a manual checklist instead and says so in its note. Guide: [`GUIDE.en.md`](GUIDE.en.md). Persian version: [`README.md`](README.md).
 
@@ -66,7 +66,7 @@ To use the skill alone, copy the `whalory` folder into `~/.claude/skills/` and c
 
 ### Claude Desktop
 
-Download `whalory-core-mcp-3.2.0-rc.2.mcpb` from the verified local candidate kit. Double-click it, drag it into the Claude Desktop window, or go to Settings > Extensions > Advanced settings > Install Extension ([desktop extension docs](https://claude.com/docs/connectors/building/mcpb)). The bundle adds the tools only and needs Python 3.8 or later: Claude Desktop includes Node.js, not Python. For the method itself, also install the skill, as in the claude.ai section below.
+Download `whalory-core-mcp-3.2.0.mcpb` from the verified local candidate kit. Double-click it, drag it into the Claude Desktop window, or go to Settings > Extensions > Advanced settings > Install Extension ([desktop extension docs](https://claude.com/docs/connectors/building/mcpb)). The bundle adds the tools only and needs Python 3.8 or later: Claude Desktop includes Node.js, not Python. For the method itself, also install the skill, as in the claude.ai section below.
 
 ### claude.ai
 
@@ -76,7 +76,7 @@ Turn on code execution, then upload the claude.ai zip in Customize > Skills. On 
 
 The simplest route is the skill folder. Copy `whalory` into `~/.agents/skills/`, or into `.agents/skills/` in a repository, and call it with `$whalory` ([Codex skills](https://learn.chatgpt.com/docs/build-skills)). To add the tools, put the MCP server in `~/.codex/config.toml`, as the [guide](GUIDE.en.md#mcp-tools-reference) shows.
 
-For the commands as well, install the Agent Plugins build from the verified local candidate kit, `whalory-core-3.2.0-rc.2-agent-plugin.zip`. Its `INSTALL.md` shows how to add it to a Codex marketplace; then install Whalory from `/plugins`. Its MCP server runs `python3`. In our test with codex-cli 0.145.0, Codex didn't tell the server which project was open. From the plugin, the file tools then can't read your files, while `lint_text` still works on pasted text. Plugins work in the ChatGPT desktop app and the Codex CLI, but not in the Codex IDE extension ([plugins overview](https://learn.chatgpt.com/docs/plugins)).
+For the commands as well, install the Agent Plugins build from the verified local candidate kit, `whalory-core-3.2.0-agent-plugin.zip`. Its `INSTALL.md` shows how to add it to a Codex marketplace; then install Whalory from `/plugins`. Its MCP server runs `python3`. In our test with codex-cli 0.145.0, Codex didn't tell the server which project was open. From the plugin, the file tools then can't read your files, while `lint_text` still works on pasted text. Plugins work in the ChatGPT desktop app and the Codex CLI, but not in the Codex IDE extension ([plugins overview](https://learn.chatgpt.com/docs/plugins)).
 
 Don't use the public repository as a Codex plugin. Codex loads its skills, but in our test its MCP server didn't start. OpenAI doesn't expand the Claude plugin's `user_config` values, and the server command is one of them ([OpenAI docs](https://developers.openai.com/plugins/guides/submit-claude-plugin)).
 
@@ -86,7 +86,7 @@ The Gemini CLI extension's repository is not published yet. Until it is, copy th
 
 ### Visual Studio Code (VS Code)
 
-For GitHub Copilot in Visual Studio Code (VS Code), use the Agent Plugins build, `whalory-core-3.2.0-rc.2-agent-plugin.zip`. Unzip it and add its `whalory` folder to the `chat.pluginLocations` setting with the value `true` ([VS Code docs](https://github.com/microsoft/vscode-docs/blob/main/docs/agent-customization/agent-plugins.md)). Its MCP server runs `python3`.
+For GitHub Copilot in Visual Studio Code (VS Code), use the Agent Plugins build, `whalory-core-3.2.0-agent-plugin.zip`. Unzip it and add its `whalory` folder to the `chat.pluginLocations` setting with the value `true` ([VS Code docs](https://github.com/microsoft/vscode-docs/blob/main/docs/agent-customization/agent-plugins.md)). Its MCP server runs `python3`.
 
 VS Code can also load the public repository as a Claude-format plugin, through Chat: Install Plugin From Source. That route brings the skill and the commands, but probably not the tools. The plugin starts its server with a Claude Code setting, and VS Code's docs name only `${CLAUDE_PLUGIN_ROOT}` among the values it fills in. Neither route has been tested in VS Code yet. To add the tools by hand, use `.vscode/mcp.json` as the [guide](GUIDE.en.md#mcp-tools-reference) shows.
 
@@ -104,7 +104,7 @@ Whalory Pro also ships a Cursor plugin. The Agent Plugins build is not a route f
 ### Other assistants
 
 - Assistants that read Agent Skills from `.agents/skills/`, such as [Codex](https://learn.chatgpt.com/docs/build-skills), [Copilot](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills), and [Gemini CLI](https://geminicli.com/docs/cli/skills/): copy the `whalory` folder there.
-- ChatGPT, the Gemini app, and any other chat: paste one of the ready prompts. It goes into the app's custom instructions, or at the start of the conversation. Core includes 1,500- and 4,000-character prompts in English and Persian, in `whalory-core-3.2.0-rc.2-paste.zip`. Pro adds an 8,000-character prompt and ready GPT and Gem packs in both languages.
+- ChatGPT, the Gemini app, and any other chat: paste one of the ready prompts. It goes into the app's custom instructions, or at the start of the conversation. Core includes 1,500- and 4,000-character prompts in English and Persian, in `whalory-core-3.2.0-paste.zip`. Pro adds an 8,000-character prompt and ready GPT and Gem packs in both languages.
 
 ## Python
 
@@ -167,7 +167,7 @@ The Whalory MCP (Model Context Protocol) server is a single Python file that spe
 | Tools | Linters, self-tests, six MCP tools | Ten MCP tools, before-and-after comparison, corpus audit, A/B calculator, channel data | Same as Pro |
 | License | [Open licenses for text and code](LICENSE-CORE.en.md) | End-user license (in Whalory Pro) | End-user license (in Whalory Pro) |
 
-Whalory Core is free for everyone. Pro and Studio are sold only in Iran for now. Prices are in toman, and payment is by Iranian bank card. They are not yet available outside Iran. To ask about them, use the [contact page](https://whalory.com/en/contact), or watch the repository's releases for news.
+Whalory Core is free for everyone. Pro and Studio are sold only in Iran for now. Prices are in toman, and payment is by Iranian bank card. They are not yet available outside Iran. To ask about them, use the [contact page](https://whalory.com/support/), or watch the repository's releases for news.
 
 Text you write with Whalory is yours in every edition, including for commercial use. Whalory never adds promotion for itself to the copy it delivers.
 
@@ -229,4 +229,4 @@ Keep your own brand profile outside this folder, as `VOICE.md` in your project r
 - Licenses: [`LICENSE.en.md`](LICENSE.en.md). Core text is under Creative Commons Attribution 4.0 (CC BY 4.0), and Core scripts are under the MIT License ([`LICENSE-CORE.en.md`](LICENSE-CORE.en.md)).
 - Changes: [`CHANGELOG.md`](CHANGELOG.md). Version: [`VERSION`](VERSION).
 - Website: [whalory.com](https://whalory.com/). Whalory is made by the Whalya studio.
-- Support: for a bug in Whalory Core, open an issue in the public repository; Core has no other support. Support for Pro and Studio is described in the end-user license (in Whalory Pro). Other questions: the [contact page](https://whalory.com/en/contact).
+- Support: for a bug in Whalory Core, open an issue in the public repository; Core has no other support. Support for Pro and Studio is described in the end-user license (in Whalory Pro). Other questions: the [contact page](https://whalory.com/support/).

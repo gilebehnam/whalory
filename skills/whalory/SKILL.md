@@ -6,7 +6,7 @@ argument-hint: "[task and channel, e.g. LinkedIn post for our launch]"
 license: "CC-BY-4.0 (text) and MIT (scripts)"
 compatibility: "Works without code execution; Python 3.8+ optional for scripts/ and the MCP server"
 metadata:
-  version: "3.2.0-rc.2"
+  version: "3.2.0"
   edition: "core"
   author: "Whalya"
   homepage: "https://whalory.com"

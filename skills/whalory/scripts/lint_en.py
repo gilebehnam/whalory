@@ -71,7 +71,7 @@ import textcount as TC  # noqa: E402
 
 _HUB = LF._HUB      # the Whalory Hub overlay (spec 5.9), or None; the built-in rules never need it
 
-__version__ = '3.2.0-rc.2'
+__version__ = '3.2.0'
 
 ERROR, WARN = LF.ERROR, LF.WARN
 UserError = LF.UserError

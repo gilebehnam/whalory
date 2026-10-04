@@ -689,10 +689,10 @@ def t_api(out):
     except ValueError:
         pr.append('not JSON: %s' % err[:80])
     code, o, err = _cli('lint_en.py', ['--version'])
-    if code != 0 or 'lint_en 3.2.0-rc.2' not in o:
+    if code != 0 or 'lint_en 3.2.0' not in o:
         pr.append('--version %r' % o)
     code, o, err = _cli('lint.py', ['--version'])
-    if code != 0 or 'lint 3.2.0-rc.2' not in o:
+    if code != 0 or 'lint 3.2.0' not in o:
         pr.append('lint --version %r' % o)
     code, o, err = _cli('lint.py', [os.path.join(SE, 'good.txt'), os.path.join(S, 'good.txt'), '--json'])
     try:

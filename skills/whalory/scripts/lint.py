@@ -60,7 +60,7 @@ import lint_fa as LF  # noqa: E402
 import lint_en as LE  # noqa: E402
 import textcount  # noqa: E402,F401  (part of the public toolset; imported for callers)
 
-__version__ = '3.2.0-rc.2'
+__version__ = '3.2.0'
 
 UserError = LF.UserError
 SKILL_ROOT = LF.SKILL_ROOT

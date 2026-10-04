@@ -1,6 +1,6 @@
 # Whalory Autolint
 
-Whalory Core 3.2.0-rc.2. An opt-in companion to the Whalory plugin for Claude Code.
+Whalory Core 3.2.0. An opt-in companion to the Whalory plugin for Claude Code.
 
 After Claude writes or edits a content file or a locale file, this plugin runs the Whalory
 linters on that file and passes the top issues back to Claude as context, so the next edit

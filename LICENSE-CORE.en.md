@@ -43,7 +43,7 @@ Based on Whalory by the Whalya studio, https://github.com/gilebehnam/whalory, li
 - The limit: this freedom doesn't cover sharing Whalory's own files. If you publish part of a reference word for word, credit it as described above.
 - The responsibility: whoever publishes the final text answers for the facts, the claims, and compliance with the law.
 
-This summary is not legal advice. Have a lawyer review it before publication.
+The full license texts below set out the applicable terms.
 
 ## Full text of CC BY 4.0
 

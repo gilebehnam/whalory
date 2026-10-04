@@ -1,4 +1,4 @@
-> Public prerelease: 3.2.0-rc.2. Download Core assets from the tagged GitHub release. This is not a stable release; Hub synchronization remains disabled with a TEST trust root.
+> Public release: 3.2.0. Download Core assets from the tagged GitHub release. This is not a stable release; Hub synchronization remains disabled with a TEST trust root.
 
 <a id="readme-top"></a>
 
@@ -19,7 +19,7 @@ Whalory gives the AI you already use a copywriter's working method and a voice p
 
 <p>
   <a href="#license"><img alt="License: CC BY 4.0 for text, MIT for scripts" src="https://img.shields.io/badge/license-CC%20BY%204.0%20%2B%20MIT-E6B54A?style=flat-square&labelColor=23282D"></a>
-  <a href="CHANGELOG.md"><img alt="Candidate 3.2.0-rc.2" src="https://img.shields.io/badge/version-3.2.0--rc.2-E6B54A?style=flat-square&labelColor=23282D"></a>
+  <a href="CHANGELOG.md"><img alt="Candidate 3.2.0" src="https://img.shields.io/badge/version-3.2.0--rc.2-E6B54A?style=flat-square&labelColor=23282D"></a>
   <img alt="Languages: English and Persian" src="https://img.shields.io/badge/languages-English%20%2B%20Persian-9DABCC?style=flat-square&labelColor=23282D">
   <a href="#where-it-installs"><img alt="Install routes for seven AI hosts, plus any chat by pasting" src="https://img.shields.io/badge/AI%20hosts-7%20%2B%20any%20chat-9DABCC?style=flat-square&labelColor=23282D"></a>
   <img alt="Python 3.8 or later, standard library only" src="https://img.shields.io/badge/python-3.8%2B%2C%20stdlib%20only-D8D4C9?style=flat-square&labelColor=23282D">
@@ -88,7 +88,7 @@ claude plugin install whalory@whalory
 
 ## Where it installs
 
-**Keep the assistant you already use.** Each route below is a package that the 3.2.0-rc.2 candidate build produces. We call a route tested only after a dated end-to-end test. Until then, its guide says it was checked against the host's own documentation. The last column shows the latest test, run on the 3.0.0 build.
+**Keep the assistant you already use.** Each route below is a package that the 3.2.0 candidate build produces. We call a route tested only after a dated end-to-end test. Until then, its guide says it was checked against the host's own documentation. The last column shows the latest test, run on the 3.0.0 build.
 
 <p>
   <a href="https://whalory.com/guides/claude-code/"><kbd>Claude Code</kbd></a>
@@ -268,18 +268,18 @@ A Pro version you receive keeps working after its 12 months. Whether Studio keep
 
 ## Getting started
 
-The stable baseline is [3.0.0](https://github.com/gilebehnam/whalory/releases/tag/v3.0.0). [3.2.0-rc.2 is available as a public prerelease](https://github.com/gilebehnam/whalory/releases/tag/v3.2.0-rc.2), with Core archives and SHA256SUMS. Read [installation instructions](docs/INSTALL.md) and the host verification limits before installing.
+The stable baseline is [3.0.0](https://github.com/gilebehnam/whalory/releases/tag/v3.0.0). [3.2.0 is available as a public release](https://github.com/gilebehnam/whalory/releases/tag/v3.2.0), with Core archives and SHA256SUMS. Read [installation instructions](docs/INSTALL.md) and the host verification limits before installing.
 
 | You use | Start with |
 |---|---|
 | Claude Code | `claude plugin marketplace add gilebehnam/whalory`, then `claude plugin install whalory@whalory` |
-| Claude Desktop | `whalory-core-mcp-3.2.0-rc.2.mcpb` for the tools, and `whalory-core-3.2.0-rc.2-claudeai.zip` in Customize > Skills for the method |
-| claude.ai | Turn on code execution, then upload `whalory-core-3.2.0-rc.2-claudeai.zip` in Customize > Skills |
+| Claude Desktop | `whalory-core-mcp-3.2.0.mcpb` for the tools, and `whalory-core-3.2.0-claudeai.zip` in Customize > Skills for the method |
+| claude.ai | Turn on code execution, then upload `whalory-core-3.2.0-claudeai.zip` in Customize > Skills |
 | Codex | Copy `skills/whalory` into `~/.agents/skills/` and call it with `$whalory` |
 | Cursor | Copy `skills/whalory` into `.cursor/skills/`, then add the tools in `.cursor/mcp.json` |
-| VS Code with GitHub Copilot | Unzip `whalory-core-3.2.0-rc.2-agent-plugin.zip` and add its folder to `chat.pluginLocations` |
-| Gemini CLI | Unzip `whalory-core-3.2.0-rc.2-skill.zip` into `~/.gemini/skills/`, then confirm when Gemini asks to activate the skill |
-| Any chat | Paste a prompt from `whalory-core-3.2.0-rc.2-paste.zip` into the custom instructions |
+| VS Code with GitHub Copilot | Unzip `whalory-core-3.2.0-agent-plugin.zip` and add its folder to `chat.pluginLocations` |
+| Gemini CLI | Unzip `whalory-core-3.2.0-skill.zip` into `~/.gemini/skills/`, then confirm when Gemini asks to activate the skill |
+| Any chat | Paste a prompt from `whalory-core-3.2.0-paste.zip` into the custom instructions |
 
 Python 3.8 or later runs the linters and the MCP server. Without Python, the skill still works and checks by hand.
 
@@ -321,7 +321,7 @@ We fixed protocol version 1.1 on September 28, 2026, before any run. The full de
 
 ## Roadmap
 
-Public 3.0.0 is the verified released baseline. The private 3.1.0 development precursor contains the canonical Hub implementation, final checks and user-approved lessons. This 3.2.0-rc.2 candidate continues that source as a public prerelease. See [CHANGELOG.md](CHANGELOG.md) for the corrected history.
+Public 3.0.0 is the verified released baseline. The private 3.1.0 development precursor contains the canonical Hub implementation, final checks and user-approved lessons. This 3.2.0 candidate continues that source as a public release. See [CHANGELOG.md](CHANGELOG.md) for the corrected history.
 
 Next:
 

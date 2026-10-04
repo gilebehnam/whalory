@@ -91,7 +91,7 @@ import re  # noqa: E402
 import threading  # noqa: E402
 import time  # noqa: E402
 
-__version__ = '3.2.0-rc.2'
+__version__ = '3.2.0'
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
