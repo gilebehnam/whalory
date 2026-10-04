@@ -71,7 +71,7 @@ try:  # لایه‌ی هاب (spec 5.9)؛ بی آن قاعده‌های درون
 except Exception:  # noqa: BLE001
     _HUB = None
 
-__version__ = '3.2.0'
+__version__ = '3.2.1'
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SKILL_ROOT = os.path.dirname(HERE)

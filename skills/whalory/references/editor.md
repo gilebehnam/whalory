@@ -73,6 +73,10 @@ For hundreds of texts, such as product descriptions:
 5. A person reads at least five random texts against the rubric.
 6. If one error repeats across several texts, its root is in the prompt or the profile. Fix it there as well as in the texts.
 
+## Reader test in the editor pass
+
+Before scoring, describe the draft's offer, conditions and next step using only what a new reader can see. Compare that description with the supplied facts and intended outcome. A label such as “advanced” earns no credit by itself: the copy must say what work becomes possible. Apply the [usefulness gate](review.md#usefulness-gate). Score missing comprehension under fit with the brief or language; score unavailable capabilities or hidden conditions under truthfulness. Do not add axes or award a higher score to meet the threshold. A factual blocker remains a must-fix regardless of the total.
+
 ## Scoring rubric
 
 Ten axes, each scored 0 to 2: 0 is a serious problem, 1 needs work, 2 is acceptable. The total is out of 20.

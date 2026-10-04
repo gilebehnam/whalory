@@ -1,6 +1,6 @@
 # Whalory
 
-> Release status: 3.2.0 is an unpublished local candidate. Public 3.0.0 is the verified release; 3.1.0 is an unpublished development precursor. Candidate artifact names below refer to local build outputs, not newly published download URLs.
+> Release status: 3.2.1 is an unpublished local candidate. Public 3.0.0 is the verified release; 3.1.0 is an unpublished development precursor. Candidate artifact names below refer to local build outputs, not newly published download URLs.
 
 Whalory («والوری») turns your AI assistant into a copywriting team for English and Persian (Farsi). The team writes, rewrites, and reviews business copy in each brand's own voice. It works out the task, channel, and output language before it writes. It asks at most three short questions, and only when the answer would change the text. Nothing gets invented: no facts, quotes, or numbers. Drafts are checked with bilingual linters that run on your machine. Without Python, Whalory works through a manual checklist instead and says so in its note. Guide: [`GUIDE.en.md`](GUIDE.en.md). Persian version: [`README.md`](README.md).
 
@@ -66,7 +66,7 @@ To use the skill alone, copy the `whalory` folder into `~/.claude/skills/` and c
 
 ### Claude Desktop
 
-Download `whalory-core-mcp-3.2.0.mcpb` from the verified local candidate kit. Double-click it, drag it into the Claude Desktop window, or go to Settings > Extensions > Advanced settings > Install Extension ([desktop extension docs](https://claude.com/docs/connectors/building/mcpb)). The bundle adds the tools only and needs Python 3.8 or later: Claude Desktop includes Node.js, not Python. For the method itself, also install the skill, as in the claude.ai section below.
+Download `whalory-core-mcp-3.2.1.mcpb` from the verified local candidate kit. Double-click it, drag it into the Claude Desktop window, or go to Settings > Extensions > Advanced settings > Install Extension ([desktop extension docs](https://claude.com/docs/connectors/building/mcpb)). The bundle adds the tools only and needs Python 3.8 or later: Claude Desktop includes Node.js, not Python. For the method itself, also install the skill, as in the claude.ai section below.
 
 ### claude.ai
 

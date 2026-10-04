@@ -45,7 +45,7 @@ import math  # noqa: E402
 import re  # noqa: E402
 import unicodedata  # noqa: E402
 
-__version__ = '3.2.0'
+__version__ = '3.2.1'
 
 UNITS = ('char', 'byte', 'utf16', 'grapheme', 'weighted', 'segment', 'word', 'items')
 

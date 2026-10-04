@@ -20,6 +20,14 @@ This file is the everyday toolkit for English copy. It covers who speaks, the sm
   - [Listen](#listen)
 - [Checklist](#checklist)
 
+## Plain terms and useful detail
+
+Keep technical identifiers in commands and code. In public copy, name the reader's task first and explain an unfamiliar term at its first useful appearance. Use the established glossary consistently; do not rename contractual products without authorization. Prefer meaning in the target locale over a literal engineering translation.
+
+Synthetic example, with supplied facts: a tool accepts a draft, returns suggested edits, and lets the writer export Markdown. “A powerful content optimization engine” gives the reader no usable picture. “Paste your draft, review the suggested edits, then download it as Markdown” names the actual work. It must not become “Publish automatically” unless publication is a verified capability.
+
+When editing “Export is available on the paid plan; AI usage is charged separately,” retain both conditions. “Everything included” changes the offer and fails review. Clearer wording does not create a cheaper price, extra entitlement or stronger result.
+
 ## Five pillars
 
 Every piece of copy, from a button label to a landing page, stands on the same five pillars. The review checklist checks each of them ([review.md](../review.md#narrator-and-story)).

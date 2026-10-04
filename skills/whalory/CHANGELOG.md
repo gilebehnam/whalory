@@ -6,6 +6,20 @@ Every notable change to Whalory is recorded here, newest first. Open it when you
 
 Nothing yet.
 
+## [3.2.1] - 2026-10-04
+
+- Reader-focused writing and review guidance; natural public terminology with explicit fact and operation boundaries.
+- Runtime writer, editor, authorized voice-proposal and optional-image prompts 1.1.0, with strict output contracts and unchanged server-only key handling.
+- Website catalog selections open an explicit Studio preview; applying a selection preserves existing work. Campaign entry points connect examples to a usable brief.
+- Channel exports select current text and keep prepared instructions separate from accepted copy.
+- Offline use and existing purchase terms remain available. Hosted generation requires separately authorized server access and budget; international checkout remains unavailable.
+
+## [3.2.0] - 2026-10-04
+
+- Stable Core, Pro and Studio offline kits, public Core release, updated account-wide installation and production website.
+- Guided Studio workflows, full-site icons, conversational Persian, concrete edition comparison and public support route.
+- Open Zibal checkout and published delivery/refund terms. Production AI generation and automatic Hub synchronization remain disabled.
+
 ## [3.2.0-rc.1] - 2026-10-04 · unpublished candidate
 
 - Pinned offline installer with project/user scopes, integrity checks, dry-run, backup, update, rollback and safe uninstall.

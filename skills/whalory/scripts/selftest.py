@@ -265,7 +265,7 @@ def main():
 
         # ۵) نسخه و سازگاری
         code, out, err = run_cli(['--version'])
-        t('v3 --version', [] if code == 0 and LF.__version__ in out and LF.__version__ == '3.2.0'
+        t('v3 --version', [] if code == 0 and LF.__version__ in out and LF.__version__ == '3.2.1'
           else ['خروجی: %r' % out], out.strip())
         # نحوِ پایتون ۳.۸ برای همه‌ی اسکریپت‌های scripts/ (والوری ۳)
         pr = []

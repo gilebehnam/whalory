@@ -1,7 +1,7 @@
 {
   "name": "whalory",
   "displayName": "Whalory",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "description": "English and Persian (Farsi) copy team: the Whalory skill, writer and blind-editor subagents, slash commands, and a local MCP server with bilingual linters.",
   "author": {
     "name": "Whalya",

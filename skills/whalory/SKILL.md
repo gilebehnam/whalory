@@ -6,7 +6,7 @@ argument-hint: "[task and channel, e.g. LinkedIn post for our launch]"
 license: "CC-BY-4.0 (text) and MIT (scripts)"
 compatibility: "Works without code execution; Python 3.8+ optional for scripts/ and the MCP server"
 metadata:
-  version: "3.2.0"
+  version: "3.2.1"
   edition: "core"
   author: "Whalya"
   homepage: "https://whalory.com"
@@ -25,6 +25,10 @@ Whalory adds the working method of a professional writer and editor to the AI ho
 ## Reader-friendly terminology
 
 Public copy must use natural terms the reader understands. Localize meaning rather than translating internal engineering names word for word. Keep technical identifiers in code, filenames and commands. For Whalory’s Persian copy, the free edition is «والوری رایگان» or «نسخهٔ رایگان والوری»; its technical identifier remains `core` and its English name remains Whalory Core. Avoid «والوری هسته» as a product name. Technical discussion may still use «هسته» when it accurately means a software core.
+
+## Useful work before polished wording
+
+A deliverable must help its reader complete the selected task. Before drafting, state silently what the reader needs to understand, decide or do, and which supplied facts let them do it. Preserve the operation: a review identifies issues; a rewrite changes supplied copy; a translation preserves meaning; an adaptation changes the destination's form. Do not turn each into an unsolicited sales pitch. Apply the bounded [reader outcome check](references/judgment.md#reader-outcome-check) and [operation boundaries](references/judgment.md#operation-boundaries). The [usefulness gate](references/review.md#usefulness-gate) checks comprehension separately from lint. Local contract tests and a low lint count never establish that readers understand or prefer the copy.
 
 ## Method
 

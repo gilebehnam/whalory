@@ -360,7 +360,7 @@ def t_cli(R):
     e.pop('WHALORY_ROOTS', None)
     e.pop('WHALYA_ROOTS', None)
     p = subprocess.run([sys.executable, SERVER, '--version'], capture_output=True, env=e)
-    R.add('--version', p.returncode == 0 and p.stdout.strip() == b'whalory-mcp 3.2.0', _short(p.stdout.decode()))
+    R.add('--version', p.returncode == 0 and p.stdout.strip() == b'whalory-mcp 3.2.1', _short(p.stdout.decode()))
     p = subprocess.run([sys.executable, SERVER, '--self-check', '--json'], capture_output=True, env=e, cwd=SKILL)
     try:
         rep = json.loads(p.stdout.decode('ascii'))
@@ -370,7 +370,7 @@ def t_cli(R):
     want = expected_tools()
     R.add('--self-check --json: tools', rep.get('tools') == want, 'got %s, want %s' % (rep.get('tools'), want))
     R.add('--self-check --json: keys', set(rep) == {'tools', 'prompts', 'resources', 'tier', 'version', 'projectRootsConfigured', 'rootPolicy', 'transport', 'networkTools'}
-          and rep.get('version') == '3.2.0' and rep.get('projectRootsConfigured') is False
+          and rep.get('version') == '3.2.1' and rep.get('projectRootsConfigured') is False
           and rep.get('rootPolicy') == 'explicit-or-client' and rep.get('transport') == 'stdio'
           and rep.get('networkTools') is False
           and isinstance(rep.get('resources'), int) and rep.get('tier') in ('core', 'pro'), _short(rep))
@@ -404,7 +404,7 @@ def t_legacy(R, tmp, report):
         R.add('initialize %s echoed' % LEGACY[0], res.get('protocolVersion') == LEGACY[0], _short(res))
         si = res.get('serverInfo') or {}
         R.add('initialize: serverInfo and capabilities',
-              si.get('name') == 'whalory' and si.get('version') == '3.2.0' and si.get('title') == 'Whalory'
+              si.get('name') == 'whalory' and si.get('version') == '3.2.1' and si.get('title') == 'Whalory'
               and set(res.get('capabilities') or {}) == {'tools', 'prompts', 'resources'}, _short(si))
         ins = res.get('instructions') or ''
         R.add('initialize: instructions under 1,200 characters', 0 < len(ins) <= 1200, '%d' % len(ins))

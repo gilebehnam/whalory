@@ -2,6 +2,28 @@
 
 A playbook says how to write. This file says which decisions come before that: what to say, what to leave out, how long, and in what tone. It also says what to keep after delivery, so the next text comes out better. A good writer lets the situation make these decisions, and Whalory does the same.
 
+## Reader outcome check
+
+Use the chosen task contract's inputs and output sections. Write one private sentence: “After reading, [reader] can [understand, decide or do something specific], using [supplied material].” An invoice recipient needs the amount and due date; a buyer needs the offered work, eligibility, conditions and next step. A useful answer can be a refusal, an explanation or a neutral comparison. Purchase is not the default outcome.
+
+Connect a feature to the work it actually enables. “Export” becomes “Download the approved text as Markdown” only when Markdown export exists. A paid-plan page explains the extra work included, limits, delivery and costs from verified plan facts. Keep free-plan value accurate. Do not imply an inactive AI connection is included service, hide usage limits, invent savings, or promise revenue, satisfaction or a conversion rate.
+
+If the brief lacks decisive material, follow the existing question gate; otherwise draft with a specific verification note. Do not fill the gap with “powerful,” “professional” or a universal promise.
+
+## Operation boundaries
+
+| Operation | Improve | Preserve or disclose |
+|---|---|---|
+| Write | Structure a usable deliverable for the task and reader | Supplied evidence; unknown details stay marked |
+| Rewrite | Remove confusion, repair order and tone | Names, prices, eligibility, dates, conditions and purpose; report material meaning changes |
+| Shorten | Cut repeated or secondary detail first | Conditions affecting a decision; if a hard limit cannot hold them, propose a linked detail or flag the conflict |
+| Adapt | Change format, pacing and next step for the destination | Source facts and caveats; do not invent a new offer |
+| Translate or transcreate | Use natural terms in the target locale | Meaning, units, obligations and uncertainty; confirm ambiguous product names |
+| Review | Identify concrete reader obstacles with line edits | Do not silently replace the draft or label unsupported claims verified |
+| Export | Render approved sections in the requested format | Meaning, keys, placeholders and separate internal notes |
+
+Use operations supported by the chosen contract. The labels above describe editing intent, not additional tool identifiers. For plan operations, give the requested plan rather than finished copy. For lengthening, add explanation supported by the materials rather than repeated praise.
+
 ## Six questions before writing
 
 Every text, even a two-line SMS, answers six questions. If you lack the answer to one, take it from the [brief](brief.md). If the brief lacks it too, the [question gate](intake.md#decision-order) says whether to ask or guess, and a guess goes in the internal note. Three slots of the [context card](router.md#context-card) answer three of these questions in advance.

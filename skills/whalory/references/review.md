@@ -21,6 +21,18 @@ Go through this list before delivering any text, from top to bottom. Each row ha
 13. Which number judges the text: [Success metric](#success-metric)
 14. Next to the benchmark text: [Final test](#final-test)
 
+## Usefulness gate
+
+Run these checks within the existing editor pass, before accepting its score. They require reading the draft and source; lint cannot answer them.
+
+- A stranger can name what this text offers or explains after its first relevant paragraph. Replace unnamed “solutions,” vague plan names and untranslated internal labels with the specific work or object.
+- The reader can complete the contract's task using the supplied sections. A comparison explains actual differences; an error message explains recovery; a report exposes the decision and uncertainty.
+- Each benefit traces to an available capability and a supplied fact. Proposed, disabled and paid features remain clearly distinguishable; recurring costs and decision-changing limits are visible.
+- The requested editing operation was followed, with factual conditions and locale placeholders intact. A request for clarity is not permission to alter commercial terms.
+- Translation sounds natural for the specified locale without assuming culture, dialect or purchasing ability. Unverified locale expertise is marked for review.
+
+A missing decision-changing condition or a false capability returns the draft even if its rubric total reaches 17. A draft still unresolved after the existing two-round limit is delivered with its specific blockers, never called publication-ready. Record actual reader feedback separately from agent review; neither predicted purchase nor a rubric score proves market demand.
+
 ## Quality loop
 
 Every deliverable passes this loop before the user sees it. That covers new copy, a rewrite, a transcreation, repository strings, and each piece of a chain. In a plan, a teaching answer, or a voice profile, the loop covers the sample copy inside it. A review of the user's own text is itself the editor pass, so it has no loop of its own.
