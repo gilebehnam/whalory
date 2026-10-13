@@ -6,6 +6,17 @@ Every notable change to Whalory is recorded here, newest first. Open it when you
 
 Nothing yet.
 
+## [3.2.2] - 2026-10-14
+
+- Preserve operational facts: never invent cancellation, refund, support or
+  delivery procedures. Separate unknown routes from customer-facing copy.
+- Honor explicit colloquial register and report only checks actually performed.
+- Add a native English guide for messaging-channel posts.
+- Support a safe relative installer journal override and reject Windows junctions
+  on Python versions without `Path.is_junction`.
+- Audit stable build projections, archive boundaries and Core/Pro separation;
+  refresh installer instructions. Existing licenses and offline use are preserved.
+
 ## [3.2.1] - 2026-10-04
 
 - Reader-focused writing and review guidance; natural public terminology with explicit fact and operation boundaries.

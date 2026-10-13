@@ -19,6 +19,7 @@ ng-fa-00b658f8d1	نگهداری
 ng-fa-00c6619e5e	آزمایش
 ng-fa-00d39e32eb	رایس
 ng-fa-00f5c7bc31	یک جزئیات واقعی
+ng-fa-00f7a0b416	فعال
 ng-fa-010d11b928	با وعده‌ی
 ng-fa-01111510cb	یا در
 ng-fa-0134dcfcf3	منطقه
@@ -1995,6 +1996,7 @@ ng-fa-65cba07afa	فرم
 ng-fa-65d6e318ba	چیزی را
 ng-fa-65e96c2c5f	کوتاه است
 ng-fa-65f2dea2fa	یا کروشه
+ng-fa-65f5bd10ce	روشن‌تر
 ng-fa-6602bec769	در شیشه
 ng-fa-66032ba665	که برایش
 ng-fa-66063cd202	نمی‌شوند
@@ -2415,7 +2417,6 @@ ng-fa-7a7098e3fb	یک جمله‌ی
 ng-fa-7ab98aaf24	آب
 ng-fa-7abb53d6bb	را کم
 ng-fa-7ac28aa3d7	آدم را
-ng-fa-7ad09170c9	در کدام کشور
 ng-fa-7b23029b95	هفته‌ی اول
 ng-fa-7b29f41d68	ماند
 ng-fa-7b2c3bdaeb	ورود
@@ -2630,7 +2631,6 @@ ng-fa-85ae94392a	ادعا به اندازه‌ی شاهد
 ng-fa-85af902193	قسمت
 ng-fa-85d0fe0a9b	فنون روایت
 ng-fa-85e5d669db	بدهید
-ng-fa-85efea0560	در کارگاه
 ng-fa-85f238be4c	جلویش
 ng-fa-85f5579358	نشان بدهد
 ng-fa-860506c3a6	خمیر را
@@ -2795,12 +2795,12 @@ ng-fa-8d531c50f6	یک واقعیت
 ng-fa-8d56881ac1	برچسب‌دار
 ng-fa-8d63520b05	سه خط
 ng-fa-8d661cc1cb	سیاسی
+ng-fa-8d76cd40d0	را همان‌جا
 ng-fa-8d80d44e2d	فایل‌ها
 ng-fa-8daf99353e	دو چیز
 ng-fa-8db269cb07	با واژه‌ی
 ng-fa-8dba82ab0d	رد می‌شود
 ng-fa-8dcfb6e1ae	لحظه
-ng-fa-8de596f273	در چهار
 ng-fa-8de7aa525e	بیرون از
 ng-fa-8df4ae760a	خوشه
 ng-fa-8df75c222b	خریداران

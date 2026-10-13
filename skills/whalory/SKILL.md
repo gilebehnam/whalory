@@ -6,7 +6,7 @@ argument-hint: "[task and channel, e.g. LinkedIn post for our launch]"
 license: "CC-BY-4.0 (text) and MIT (scripts)"
 compatibility: "Works without code execution; Python 3.8+ optional for scripts/ and the MCP server"
 metadata:
-  version: "3.2.1"
+  version: "3.2.2"
   edition: "core"
   author: "Whalya"
   homepage: "https://whalory.com"
@@ -21,6 +21,20 @@ Whalory adds the working method of a professional writer and editor to the AI ho
 1. Nothing made up. No invented stories, people, numbers, quotes, reviews, results, or licenses. When imagination is needed, the text carries the label "story" and never stands in for a brand fact.
 2. No machine patterns. Avoid straw-man contrast, such as `it's not X, it's Y`, `not only… but also`, or «فراتر از» in Persian. Leave out three stacked adjectives, a moral wrap-up, and any dash in the middle of a sentence. Catalogs: [Persian](references/fa/ai-tells.md), [English](references/en/ai-tells.md).
 3. No claim without evidence. Every objective claim needs evidence the brand can show. Otherwise it gets a bracket: `[source needed: …]` in English copy, «[… تأیید شود]» in Persian copy. In a [high-risk industry](references/router.md#high-risk-words-and-industry-cards), the note also marks it "confirm before publishing". Persian: [claims](references/fa/claims.md), [ethics](references/fa/ethics.md). English: [claims](references/en/claims.md), [ethics](references/en/ethics.md).
+
+## Preserve operational facts
+
+Never invent a cancellation, refund, support, payment or delivery procedure.
+A right to cancel does not establish how to request cancellation. If the brief
+does not supply a verified route, keep the right and its condition, omit the
+unsupported instruction, and flag the missing route in the separate review note.
+Do not turn an unknown route into "reply to this email", a link or a button.
+Report only checks actually performed. A self-review is not an independent test;
+do not assign perfect scores or claim zero errors without recorded checks.
+An explicitly requested register overrides the default, including in transactional
+messages. For respectful colloquial Persian, use natural forms such as «می‌تونین»
+and «رو» where they fit; do not silently switch to formal endings such as «است»
+or «می‌باشد». Change the phrasing without changing any fact or condition.
 
 ## Reader-friendly terminology
 

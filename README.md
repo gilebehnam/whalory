@@ -1,4 +1,4 @@
-> Public release: 3.2.0. Download Core assets from the tagged GitHub release. This is not a stable release; Hub synchronization remains disabled with a TEST trust root.
+> Whalory Core 3.2.2. Download versioned Core assets from the tagged release. Local tools work without an API key. Automatic Hub synchronization remains disabled; archive checksums are integrity checks, not publisher signatures.
 
 <a id="readme-top"></a>
 
