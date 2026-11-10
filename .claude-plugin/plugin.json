@@ -19,14 +19,5 @@
     "ux-writing",
     "marketing",
     "transcreation"
-  ],
-  "userConfig": {
-    "default_language": {
-      "type": "string",
-      "title": "Default output language",
-      "description": "auto, fa or en. Used only when the channel, materials and request do not decide.",
-      "default": "auto",
-      "required": false
-    }
-  }
+  ]
 }
