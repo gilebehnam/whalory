@@ -125,4 +125,3 @@ Last step: read the text and rewrite only the sentences that sound artificial al
 - Nielsen Norman Group, "How users read on the web". [nngroup.com](https://www.nngroup.com/articles/how-users-read-on-the-web/)
 - UK Government, "Writing for GOV.UK". [gov.uk](https://www.gov.uk/guidance/content-design/writing-for-gov-uk)
 - Strunk and White, *The Elements of Style*.
-- Mojtaba Yazdanpanah, a Persian workbook on getting natural Persian from AI (Melina Design School, issue 04, [mojtabaui.ir](https://mojtabaui.ir)). Whalory took the order of work and several habits from it and merged them with its own rules; the wording and examples here are Whalory's.
