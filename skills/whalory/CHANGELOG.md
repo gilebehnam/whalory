@@ -4,7 +4,26 @@ Every notable change to Whalory is recorded here, newest first. Open it when you
 
 ## [Unreleased]
 
-Nothing yet.
+- Plain-language guides in both packs: `references/fa/plain-persian.md` and
+  `references/en/plain-english.md`, with a replacement table, read-aloud and
+  halve-it revision, and a compact brief for assistants that cannot run scripts.
+- Persian linter: `inflated-adverb`, `calque`, `sycophancy`, `nominal-verb`,
+  `corporate-we`, `adj-stack` and `label-list`; `admin` now catches «گردید»,
+  and `admin-phrase`, `moral-close` and `heavy-passive` catch more phrases.
+- English linter: `en-inflated-adverb`, `en-corporate-we`, `en-adjective-stack`
+  and `en-impersonal-passive`; wider `en-hidden-verb`, `en-complex-word`,
+  `en-chatbot-residue` and `en-metaphor-buzz`.
+- The writer agent runs a plain-language pass, and the blind editor runs the
+  read-aloud test.
+
+## [3.2.3] - 2026-11-03
+
+- Eight new Pro playbooks: landing-page conversion review, sign-up and first-run
+  review, alternative and versus page, answer-engine and FAQ copy, cold outreach
+  sequence, cancellation and win-back, ad variant set for testing, and launch
+  announcement kit. Each is registered in the task index and router.
+- The shared writing registry grows from 163 to 171 task contracts in Core and
+  Pro, matching Online Studio. The eight playbooks themselves are Pro only.
 
 ## [3.2.2] - 2026-10-14
 

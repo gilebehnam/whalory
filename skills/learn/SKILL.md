@@ -1,8 +1,6 @@
 ---
 name: learn
 description: "Keep a correction for next time: Whalory turns what you changed or said into one lesson row, shows it with its file, and adds it to the LEARNINGS.md next to the brand's voice profile only after you say yes."
-argument-hint: "[the correction, e.g. no exclamation marks in our emails] [brand]"
-disable-model-invocation: true
 ---
 
 Correction: $ARGUMENTS

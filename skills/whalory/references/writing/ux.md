@@ -24,6 +24,7 @@ Shared craft: [existing family method](../playbooks-web.md). [Operation and API 
 - [Push notification](#push-notification)
 - [Consent and permission copy](#consent-permissions)
 - [Locale-file copy review](#locale-file-review)
+- [Sign-up and first-run review](#signup-first-run-review)
 
 ## Flow Microcopy
 
@@ -200,5 +201,22 @@ Required inputs: locale_file, key_context, variables. Missing facts remain label
 | `change_notes` / یادداشت تغییر | Explain semantic changes, bidi issues and unresolved context outside the locale data. |
 
 Review: Preserve every interpolation token under its original key with identical multiplicity. Keep every original locale key, nesting and value type; change text values only. Bidi accessibility: review the actual Locale-file copy review against supplied evidence. Validate output section presence, locked exact spans, supplied evidence ids and per-key placeholders; semantic review remains required.
+
+Status: `implemented_not_verified`; local deterministic checks do not certify semantic quality, external publication, or expert approval.
+
+## Signup First Run Review
+
+**بررسی مسیر ثبت‌نام و شروع کار · `ux.signup_first_run_review`**
+
+Review every step and field between the sign-up button and the activation moment, and keep only what that moment needs now. Correct the strings so one promise, honest consent and recoverable errors run from start to finish.
+
+Required inputs: activation_moment, flow_steps, current_strings, mandatory_fields. Missing facts remain labeled; at most three consequential questions per round.
+
+| Output section | Required result |
+|---|---|
+| `step_table` / جدول مراحل | For each step, field or screen, show the current copy, the problem, the fix and keep, move or remove. |
+| `corrected_strings` / متن‌های اصلاح‌شده | Give the corrected strings with their keys and placeholders unchanged. |
+
+Review: One term per concept: the entry button, form title, confirmation and first empty screen name the same thing. Each personal-data field says why it is asked; marketing consent is separate and unticked; trial renewal price and date appear before the form. No field required by law or the payment provider is removed without a note for qualified review. Preserve every interpolation token under its original key with identical multiplicity. Validate output section presence, locked exact spans, supplied evidence ids and per-key placeholders; semantic review remains required.
 
 Status: `implemented_not_verified`; local deterministic checks do not certify semantic quality, external publication, or expert approval.

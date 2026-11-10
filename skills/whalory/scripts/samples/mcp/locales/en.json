@@ -1,7 +1,0 @@
-{
-  "cart": {
-    "empty": "Your cart is empty.",
-    "checkout": "Pay for {count} items",
-    "promo": "Click here to unlock seamless savings!!"
-  }
-}

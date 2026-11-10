@@ -1,15 +1,15 @@
 {
   "name": "whalory",
   "displayName": "Whalory",
-  "version": "3.2.2",
-  "description": "English and Persian (Farsi) copy team: the Whalory skill, writer and blind-editor subagents, slash commands, and a local MCP server with bilingual linters.",
+  "version": "3.2.3",
+  "description": "English and Persian (Farsi) copy team: the Whalory writing method, plain-language guides, playbooks, voice profiles, and writer and blind-editor subagents. Text only.",
   "author": {
     "name": "Whalya",
     "url": "https://whalory.com/"
   },
   "homepage": "https://whalory.com/",
   "repository": "https://github.com/gilebehnam/whalory",
-  "license": "CC-BY-4.0 AND MIT",
+  "license": "CC-BY-4.0",
   "keywords": [
     "copywriting",
     "persian",

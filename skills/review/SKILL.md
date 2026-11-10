@@ -1,9 +1,6 @@
 ---
 name: review
 description: "Blind review of English or Persian copy with Whalory: a score out of 20, must-fix items and a few line edits, checked against the voice profile, channel and facts."
-argument-hint: "[file path or pasted text] [channel]"
-disable-model-invocation: true
-allowed-tools: Read Grep Glob
 ---
 
 Input: $ARGUMENTS

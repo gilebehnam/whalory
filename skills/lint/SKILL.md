@@ -1,35 +1,13 @@
 ---
 name: lint
-description: "Check copy, Markdown, HTML, CSV or locale files with Whalory's Persian and English linters and summarize the issues per file. Reports only; edits nothing unless asked."
-argument-hint: "[paths…] [--format id] [--channel id]"
-disable-model-invocation: true
-allowed-tools: Read mcp__plugin_whalory_whalory__lint_file mcp__plugin_whalory_whalory__lint_text
+description: "Check English or Persian copy against Whalory's manual checklists (machine patterns, officialese, plain language, punctuation, claims) and list the issues per paragraph. Reports only; edits nothing unless asked."
 ---
 
-Arguments: $ARGUMENTS
+Check the text or files the user names. This directory edition has no scripts, so the check is done by reading.
 
-Check the named files, or the pasted text, with Whalory's bilingual linter. It detects the language per file and per line, so Persian, English, and mixed files all work. This command reports; it doesn't edit.
+1. Read `SKILL.md#manual-qa` in the `whalory` skill. Use the Persian checklist for Persian lines and the English checklist for English lines.
+2. Read `references/fa/plain-persian.md` or `references/en/plain-english.md` and apply the replacement table and the read-aloud test.
+3. For each issue, quote the line, give the rule id from the checklist, and suggest the fix. Put errors before warnings.
+4. End with one line: "QA: manual", the number of errors and warnings, and any warning you kept on purpose.
 
-## Run the linter
-
-When the Whalory MCP tools are connected, call `lint_file` for each path and `lint_text` for pasted text. Pass `format` and `channel` when the arguments give them, and `profile: auto`.
-
-Otherwise, run the dispatcher with Python 3.8 or newer:
-`${user_config.python} "${CLAUDE_PLUGIN_ROOT}/skills/whalory/scripts/lint.py" $ARGUMENTS --json`
-If that Python command isn't found, try `python3`, then `python`, then `py -3` on Windows.
-
-If neither route works, say so and check the text by hand against `SKILL.md#manual-qa` in the `whalory` skill. Write the quality assurance (QA) line as "QA: manual (script not run)".
-
-Exit codes: `0` means no errors; `1` means at least one error, or a warning under `--strict`; `2` means a problem with the input or the profile.
-
-## Summarize per file
-
-Start each file with its language (fa, en, or mixed) and its counts of errors and warnings. List each error with its rule id, its line (or key, in a locale file), and its message. Group the warnings by rule. End with the totals.
-
-In locale files, only values are linted. Never suggest changing a key, a placeholder such as `{name}` or `%s`, or a plural or select structure.
-
-## Don't edit
-
-Change no file unless the user asks. For mechanical fixes on request, `--fix` writes a copy named `<name>.fixed.<ext>`, and `--fix --write` changes the file in place. Show what changed.
-
-Never change Whalory Hub settings. If the user wants to share statistics, tell them to run `hub_client.py consent` from the `whalory` skill's `scripts/` folder in their own terminal, or `hub_client.py on packets` for the weekly packet.
+Do not edit files unless the user asks. For the scripted linters, point the user to the free Whalory Core at https://github.com/gilebehnam/whalory.

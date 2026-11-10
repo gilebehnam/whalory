@@ -1,8 +1,6 @@
 ---
 name: lessons
 description: "List, prune, or export the lessons in a brand's LEARNINGS.md. Listing changes nothing; a prune or an export to a file is shown first and made only after you say yes."
-argument-hint: "[list | prune | export] [brand]"
-disable-model-invocation: true
 ---
 
 Input: $ARGUMENTS

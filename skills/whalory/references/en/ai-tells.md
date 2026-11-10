@@ -309,3 +309,7 @@ Linter rule ids: every id in the [tell-to-rule map](#tell-to-rule-map), especial
 - [ ] The text passes the substitution test.
 - [ ] Headings are in sentence case; no bold in running text, no emoji bullets.
 - [ ] The note says "QA: script", "QA: manual", or "QA: manual (script not run)".
+
+## Plain language
+
+The plain-language patterns, with a replacement table, the read-aloud test and a compact brief for assistants without scripts, are in [`plain-english.md`](plain-english.md). New `lint_en.py` ids: `en-inflated-adverb` (EN-AI-064), `en-corporate-we` (EN-AI-065), `en-adjective-stack` (EN-AI-066) and `en-impersonal-passive` (EN-PL-015); `en-hidden-verb`, `en-complex-word`, `en-chatbot-residue` and `en-metaphor-buzz` cover more phrases.

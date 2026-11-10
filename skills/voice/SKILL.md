@@ -1,8 +1,6 @@
 ---
 name: voice
 description: "Build or update a brand voice profile (VOICE.md, voice.json and LEARNINGS.md) in English, Persian or both, from three questions or from existing copy."
-argument-hint: "[brand] [samples folder or pasted samples]"
-disable-model-invocation: true
 ---
 
 Input: $ARGUMENTS

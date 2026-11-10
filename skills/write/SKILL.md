@@ -1,8 +1,6 @@
 ---
 name: write
 description: "Write or rewrite business copy in English or Persian with the Whalory method. A writer drafts, a blind editor reviews, and you get the text first, then the diagnosis note."
-argument-hint: "[task, channel, language — e.g. LinkedIn post for our launch, en-GB]"
-disable-model-invocation: true
 ---
 
 Request: $ARGUMENTS
