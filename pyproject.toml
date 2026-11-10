@@ -1,0 +1,13 @@
+[project]
+name = "whalory"
+version = "3.2.2"
+description = "Copywriting method, brand voice profiles and local linters for English and Persian copy, with an MCP server."
+readme = "README.md"
+license = "MIT AND CC-BY-4.0"
+license-files = ["LICENSE-MIT", "LICENSE-CC-BY-4.0"]
+requires-python = ">=3.8"
+authors = [{ name = "Whalya" }]
+
+[project.urls]
+Homepage = "https://whalory.com"
+Repository = "https://github.com/gilebehnam/whalory"
