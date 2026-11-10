@@ -262,13 +262,15 @@ DETECT_OUT = {'type': 'object', 'required': ['route', 'summary', 'probe'], 'prop
 PLAYBOOK_IN = {'type': 'object', 'additionalProperties': False, 'required': ['task'], 'properties': {
     'task': {'type': 'string', 'minLength': 2, 'maxLength': 500,
              'description': "A playbook anchor such as 'caption', or the task in English or Persian"},
-    'limit': {'type': 'integer', 'minimum': 1, 'maximum': 5, 'default': 3}}}
+    'limit': {'type': 'integer', 'minimum': 1, 'maximum': 5, 'default': 3,
+              'description': 'How many matches to name: the best match is returned in full, up to limit-1 others are listed'}}}
 
 REFERENCE_IN = {'type': 'object', 'additionalProperties': False, 'required': ['path'], 'properties': {
     'path': {'type': 'string', 'pattern': '^[A-Za-z0-9._/-]+\\.(md|json)$', 'maxLength': 200,
              'description': 'e.g. references/router.md, fa/craft.md, en/prose.md, profiles/whalory.json'},
     'anchor': {'type': 'string', 'maxLength': 200, 'description': 'Heading slug; omit it to get the contents list'},
-    'max_chars': {'type': 'integer', 'minimum': 1000, 'maximum': 60000, 'default': 20000}}}
+    'max_chars': {'type': 'integer', 'minimum': 1000, 'maximum': 60000, 'default': 20000,
+                  'description': 'Output is cut at about this many characters; a cut reply ends with a [truncated] note'}}}
 
 CHANNEL_LIMITS_IN = {'type': 'object', 'additionalProperties': False, 'properties': {
     'channel': {'type': 'string', 'maxLength': 80, 'description': 'Channel id, e.g. instagram or social/x'},
@@ -337,9 +339,11 @@ AB_OUT = {'type': 'object', 'required': ['mode'], 'properties': {
 
 PROFILE_LOOKUP_IN = {'type': 'object', 'additionalProperties': False, 'properties': {
     'name': {'type': 'string', 'maxLength': 80, 'description': 'Brand or profile name, e.g. whalory, saas, en/saas'},
-    'project_dir': {'type': 'string', 'maxLength': 1024, 'description': 'Project folder; default: the first allowed folder'},
-    'include_learnings': {'type': 'boolean', 'default': True},
-    'language': {'type': 'string', 'enum': ['fa', 'en']},
+    'project_dir': {'type': 'string', 'maxLength': 1024, 'description': 'Project folder searched first for VOICE.md or voice.json; default: the first allowed folder'},
+    'include_learnings': {'type': 'boolean', 'default': True,
+                          'description': "Also return the brand's LEARNINGS.md note when one exists"},
+    'language': {'type': 'string', 'enum': ['fa', 'en'],
+                 'description': "Preferred language of a skill or starter profile when name has no fa/ or en/ part; default: the server's language"},
     'industry': {'type': 'string', 'maxLength': 40, 'description': 'Industry slug for the closest starter, e.g. saas'}}}
 
 PROFILE_LOOKUP_OUT = {'type': 'object', 'required': ['found', 'source'], 'properties': {
@@ -361,16 +365,20 @@ TOOLS = [
     {'name': 'lint_text', 'title': 'Lint copy (Persian or English)',
      'description': ("Check Persian or English copy against Whalory's rules (AI tells, puffery, spelling, "
                      "punctuation, sentence length, readability, brand profile and channel limits). Language is "
-                     "detected per line unless set."),
+                     "detected per line unless set. Use it for draft text you already have in the conversation; use "
+                     "lint_file for a file on disk and check_final once, on the copy the user approved."),
      'inputSchema': LINT_TEXT_IN, 'outputSchema': LINT_OUT, 'needs': 'lint', 'run': 't_lint_text'},
     {'name': 'lint_file', 'title': 'Lint a file',
      'description': ("Lint a text, Markdown, HTML, CSV/TSV or locale file (json, po, arb, xliff, strings, "
                      "strings.xml) inside an allowed folder. Locale keys and placeholders are never changed; CSV "
-                     "issues are keyed row/sku/column."),
+                     "issues are keyed row/sku/column. Returns findings with rule id, severity, line (or row/sku/column) and a "
+                     "fix hint. Use it for a file on disk; for text in the conversation use lint_text, and for the "
+                     "copy the user approved use check_final."),
      'inputSchema': LINT_FILE_IN, 'outputSchema': LINT_FILE_OUT, 'needs': 'lint', 'run': 't_lint_file'},
     {'name': 'check_final', 'title': 'Final check of approved copy',
      'description': ("Final check of the copy the user approved: runs Whalory's checks and returns any remaining "
-                     "findings, in the same form as lint_text. Call it once when the user approves final copy. If "
+                     "findings, in the same form as lint_text. Call it once when the user approves final copy; do not use it on drafts (use lint_text while "
+                     "drafting). If "
                      "the user turned on Whalory Hub statistics or weekly packets in their own terminal, it also "
                      "records counts on this computer, never text, of which Whalory checks the user's own edits "
                      "removed. With statistics, the user chose to send those counts weekly to Whalory's server in "
@@ -384,12 +392,16 @@ TOOLS = [
     {'name': 'get_playbook', 'title': 'Load a playbook',
      'description': ("Return the Whalory playbook section for a task (steps, questions, references, output, QA). "
                      "Accepts a playbook anchor such as 'caption' or a free-text task in English or Persian; "
-                     "returns the best match and up to limit-1 alternatives."),
+                     "returns the best match in full and names up to limit-1 alternatives. If nothing matches, it returns an "
+                     "error that lists the playbook anchors. Use it for a task procedure; for craft or channel "
+                     "reference text use get_reference_section, and for a brand's voice use profile_lookup."),
      'inputSchema': PLAYBOOK_IN, 'needs': 'playbooks', 'run': 't_get_playbook', '_meta': CONTENT_META},
     {'name': 'get_reference_section', 'title': 'Read a reference section',
      'description': ("Read one section (or the contents list) of a Whalory reference file under references/ "
                      "(method, fa/, en/), profiles/ or data/channels/. Long files: call without anchor to get "
-                     "the contents list first."),
+                     "the contents list first. An unknown anchor returns an error that lists the file's anchors (or keys for "
+                     "JSON); output longer than max_chars is cut with a [truncated] note. For a task procedure use "
+                     "get_playbook; for a brand's voice profile use profile_lookup rather than profiles/ paths."),
      'inputSchema': REFERENCE_IN, 'needs': 'references', 'run': 't_get_reference_section', '_meta': CONTENT_META},
     {'name': 'channel_limits', 'title': 'Channel limits',
      'description': ("Character, byte, grapheme or item limits for a platform field, with unit, fold, "
@@ -408,7 +420,8 @@ TOOLS = [
     {'name': 'profile_lookup', 'title': 'Find the voice profile',
      'description': ("Find the brand voice profile in Whalory's order: project VOICE.md/voice.json/voice/VOICE.md, "
                      "~/.whalory/profiles/<brand>, the skill's profiles, the closest starter. Returns the normalized "
-                     "JSON profile, the learnings note and starter suggestions."),
+                     "JSON profile, the learnings note and starter suggestions. Call it before drafting for a named brand; "
+                     "pass the result to lint_text as profile_json, or its name as profile."),
      'inputSchema': PROFILE_LOOKUP_IN, 'outputSchema': PROFILE_LOOKUP_OUT, 'needs': None, 'run': 't_profile_lookup'},
 ]
 PRO_TOOLS = ('detect_context', 'channel_limits', 'compare_texts', 'ab_test_size')
