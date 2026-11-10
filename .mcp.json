@@ -1,15 +1,14 @@
 {
   "mcpServers": {
     "whalory": {
-      "command": "${user_config.python}",
-      "args": ["${CLAUDE_PLUGIN_ROOT}/skills/whalory/scripts/mcp_server.py", "--root", "${CLAUDE_PROJECT_DIR}"],
+      "command": "python3",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/skills/whalory/scripts/mcp_server.py"],
       "env": {
         "PYTHONDONTWRITEBYTECODE": "1",
         "PYTHONIOENCODING": "utf-8",
         "PYTHONUTF8": "1",
-        "WHALORY_LANG": "${user_config.default_language}",
-        "WHALORY_HUB_CONTRIBUTE_REQUEST": "${user_config.hub_contribute}",
-        "WHALORY_HUB_UPDATES": "${user_config.hub_updates}"
+        "WHALORY_ROOTS": "${CLAUDE_PROJECT_DIR}",
+        "WHALORY_LANG": "${user_config.default_language}"
       }
     }
   }
