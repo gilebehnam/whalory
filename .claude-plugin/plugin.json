@@ -19,5 +19,9 @@
     "ux-writing",
     "marketing",
     "transcreation"
-  ]
+  ],
+  "privacyPolicyUrl": "https://whalory.com/privacy/",
+  "supportUrl": "https://whalory.com/support/",
+  "termsOfServiceUrl": "https://whalory.com/legal/",
+  "documentationUrl": "https://whalory.com/guides/claude-code/"
 }
