@@ -3,7 +3,7 @@ name: lint
 description: "Check copy, Markdown, HTML, CSV or locale files with Whalory's Persian and English linters and summarize the issues per file. Reports only; edits nothing unless asked."
 argument-hint: "[paths…] [--format id] [--channel id]"
 disable-model-invocation: true
-allowed-tools: Read Bash(python3 *) Bash(python *) mcp__plugin_whalory_whalory__lint_file mcp__plugin_whalory_whalory__lint_text
+allowed-tools: Read mcp__plugin_whalory_whalory__lint_file mcp__plugin_whalory_whalory__lint_text
 ---
 
 Arguments: $ARGUMENTS
