@@ -24,6 +24,8 @@ Shared craft: [existing family method](../playbooks-web.md). [Operation and API 
 - [Contact and collaboration page](#contact-page)
 - [Download and installation page](#download-install-page)
 - [Product comparison page](#comparison-page)
+- [Landing page conversion review](#landing-page-conversion-review)
+- [Alternative and versus page](#alternative-versus-page)
 
 ## Landing Page
 
@@ -206,5 +208,42 @@ Required inputs: competitor_sources, own_capabilities, date. Missing facts remai
 | `limitations` / محدودیت‌ها | Identify missing evidence and non-comparable terms. |
 
 Review: Primary sources: review the actual Product comparison page against supplied evidence. Dated claims: review the actual Product comparison page against supplied evidence. No fabricated tests: review the actual Product comparison page against supplied evidence. Validate output section presence, locked exact spans, supplied evidence ids and per-key placeholders; semantic review remains required.
+
+Status: `implemented_not_verified`; local deterministic checks do not certify semantic quality, external publication, or expert approval.
+
+## Landing Page Conversion Review
+
+**بررسی نرخ تبدیل لندینگ پیج · `web.landing_page_conversion_review`**
+
+Find what stops visitors from taking the page's one action and propose ranked copy fixes. Quote the page for every finding and never forecast a conversion rate.
+
+Required inputs: page_copy, primary_action, traffic_source, customer_objections. Missing facts remain labeled; at most three consequential questions per round.
+
+| Output section | Required result |
+|---|---|
+| `findings` / یافته‌ها | For each block, name one problem (unclear, unproven, friction, missing objection or distraction), quote the page, give the fix and rank its impact. |
+| `rewritten_copy` / متن اصلاح‌شده | Rewrite only the high-impact fixes; every claim stays within supplied evidence or keeps a labeled gap. |
+| `test_hypotheses` / فرضیه‌های آزمون | State at most three hypotheses as change, expected direction and reason, with no predicted rate. |
+
+Review: One primary goal: review the actual Landing page conversion review against supplied evidence. Trace each objective claim to a supplied source; unsupported claims remain labeled gaps. Match deadline, scarcity and capacity exactly to approved evidence; remove invented urgency. Promise no conversion lift and forecast no rate; a hypothesis is not a result. Validate output section presence, locked exact spans, supplied evidence ids and per-key placeholders; semantic review remains required.
+
+Status: `implemented_not_verified`; local deterministic checks do not certify semantic quality, external publication, or expert approval.
+
+## Alternative Versus Page
+
+**صفحه‌ی جایگزین و مقایسه با رقیب · `web.alternative_versus_page`**
+
+Help a reader who is choosing between the brand and a named competitor decide fairly from dated, sourced facts. Say who should choose the competitor and never disparage it.
+
+Required inputs: page_format, competitor_sources, own_capabilities, switcher_reasons. Missing facts remain labeled; at most three consequential questions per round.
+
+| Output section | Required result |
+|---|---|
+| `page_copy` / متن صفحه | Write the page section by section in the order the chosen format requires, ending with one action for the switcher. |
+| `comparison_table` / جدول مقایسه | Give each criterion the brand's and the competitor's capability with a public source and a check date; unsourced rows stay out or stay labeled. |
+| `competitor_fit` / چه کسی رقیب را انتخاب کند | Name the readers for whom the competitor is the better choice, from sourced strengths. |
+| `title_meta` / عنوان و توضیح متا | Write the page title and meta description separately, with no claim stronger than the table. |
+
+Review: Primary sources: review the actual Alternative and versus page against supplied evidence. Dated claims: review the actual Alternative and versus page against supplied evidence. No disparagement, invented quotes or implied endorsement through the competitor's name or logo. Trace each objective claim to a supplied source; unsupported claims remain labeled gaps. Validate output section presence, locked exact spans, supplied evidence ids and per-key placeholders; semantic review remains required.
 
 Status: `implemented_not_verified`; local deterministic checks do not certify semantic quality, external publication, or expert approval.

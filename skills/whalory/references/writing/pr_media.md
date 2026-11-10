@@ -24,6 +24,7 @@ Shared craft: [existing family method](../playbooks-messages.md). [Operation and
 - [Event and speaker introduction](#event-intro)
 - [Partnership announcement](#partnership-announcement)
 - [Public stakeholder Q&A](#public-qa)
+- [Launch announcement kit](#launch-announcement-kit)
 
 ## Press Release
 
@@ -198,5 +199,24 @@ Required inputs: actual_questions, facts, approved_policy. Missing facts remain 
 | `unresolved_items` / موارد باز | Identify topics requiring a policy or fact decision. |
 
 Review: Policy accuracy: review the actual Public stakeholder Q&A against supplied evidence. Privacy fit: review the actual Public stakeholder Q&A against supplied evidence. No speculation: review the actual Public stakeholder Q&A against supplied evidence. Validate output section presence, locked exact spans, supplied evidence ids and per-key placeholders; semantic review remains required.
+
+Status: `implemented_not_verified`; local deterministic checks do not certify semantic quality, external publication, or expert approval.
+
+## Launch Announcement Kit
+
+**بستهٔ اعلام لانچ · `pr_media.launch_announcement_kit`**
+
+Build one fact sheet and one core message for a launch, then a matched piece for each channel in the order readers should hear it. Size the kit to the news and repeat names, dates and prices exactly.
+
+Required inputs: launch_facts, availability, launch_date, channels. Missing facts remain labeled; at most three consequential questions per round.
+
+| Output section | Required result |
+|---|---|
+| `fact_sheet` / برگهٔ واقعیت | List name, date and timezone, who gets it and where, plans, price, conditions and known limits; unknowns stay bracketed. |
+| `core_message` / پیام محوری | State what is new, for whom and from when in one sentence. |
+| `pieces` / متن هر کانال | Write each piece in its own format in sending order; each says what the reader can do today. |
+| `internal_faq` / پرسش‌های داخلی پشتیبانی | Tell customer-facing staff what changed, what did not and what to say while an answer is unconfirmed. |
+
+Review: Compare names, numbers, units, conditions and claims across every output unit. News check: size the kit to the actual change; a small change gets a small kit. No "first", "only" or "fastest" without supplied evidence. Deliver a draft or export only; no email, direct message or post is sent. Validate output section presence, locked exact spans, supplied evidence ids and per-key placeholders; semantic review remains required.
 
 Status: `implemented_not_verified`; local deterministic checks do not certify semantic quality, external publication, or expert approval.

@@ -155,6 +155,19 @@ CASES = [
     ('en-marketing-has', 'The hotel boasts a rooftop pool.', {'fmt': 'ad'}, False),
     ('en-sycophancy', 'That is a great point about pricing.', {}, True),
     ('en-sycophancy', 'The question has two parts.', {}, False),
+    ('en-inflated-adverb', 'Load time fell dramatically.', {}, True),
+    ('en-inflated-adverb', 'Load time fell from 4 seconds to 2.', {}, False),
+    ('en-corporate-we', 'We strive to give valued customers the best service.', {}, True),
+    ('en-corporate-we', 'Sara rebuilt the checkout in May, so you pay in two taps.', {}, False),
+    ('en-adjective-stack', 'A comprehensive, innovative planner for teams.', {}, True),
+    ('en-adjective-stack', 'A planner that sends one reminder before each deadline.', {}, False),
+    ('en-impersonal-passive', 'It was decided that the launch would move.', {}, True),
+    ('en-impersonal-passive', 'Ana moved the launch to June.', {}, False),
+    ('en-hidden-verb', 'The review resulted in the identification of two bugs.', {}, True),
+    ('en-hidden-verb', 'The review found two bugs.', {}, False),
+    ('en-chatbot-residue', 'We hope you found this guide helpful.', {}, True),
+    ('en-metaphor-buzz', 'Let us dive into the numbers.', {}, True),
+    ('en-complex-word', 'The aforementioned fee applies.', {}, True),
     ('en-stat-claim', 'Cuts costs by 43%.', {}, True),
     ('en-stat-claim', 'Cuts costs.', {}, False),
     ('en-stat-claim', 'Cuts costs by 43%.', {'facts': 'Costs fall by 43%.'}, False),
@@ -689,10 +702,10 @@ def t_api(out):
     except ValueError:
         pr.append('not JSON: %s' % err[:80])
     code, o, err = _cli('lint_en.py', ['--version'])
-    if code != 0 or 'lint_en 3.2.2' not in o:
+    if code != 0 or 'lint_en 3.2.3' not in o:
         pr.append('--version %r' % o)
     code, o, err = _cli('lint.py', ['--version'])
-    if code != 0 or 'lint 3.2.2' not in o:
+    if code != 0 or 'lint 3.2.3' not in o:
         pr.append('lint --version %r' % o)
     code, o, err = _cli('lint.py', [os.path.join(SE, 'good.txt'), os.path.join(S, 'good.txt'), '--json'])
     try:

@@ -6,6 +6,13 @@ This file records the changes to Whalory Core and to this repository, newest fir
 
 Nothing yet.
 
+## [3.2.3] - 2026-11-10
+
+- Plain-language guides for Persian and English (`references/fa/plain-persian.md`, `references/en/plain-english.md`): a replacement table, read-aloud and halve-it revision, and a compact brief for assistants without scripts.
+- Eleven new linter rules: inflated adverbs, word-for-word idioms, opening flattery, nominalized verbs, the corporate "we", stacked adjectives and bold-label lists in Persian; inflated adverbs, the corporate "we", stacked adjectives and the impersonal passive in English.
+- The writer agent runs a plain-language pass, and the blind editor runs the read-aloud test.
+- The shared writing registry has 171 task contracts.
+
 ## [3.2.0-rc.1] - 2026-10-04 · unpublished candidate
 
 - Pinned offline installer with project/user scopes, integrity checks, dry-run, backup, update, rollback and safe uninstall.

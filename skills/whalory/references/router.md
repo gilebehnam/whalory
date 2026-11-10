@@ -2,7 +2,7 @@
 
 ## Professional writing contracts
 
-The canonical [writing task index](task-index.md) and [shared registry](../data/catalogs/writing-capabilities.json) route 163 contracts across 16 families. Resolve task separately from operation, channel and language before applying the older craft routes below. Select only the relevant contract and family; do not load the full catalog into a writing prompt. Everyday requests such as company credentials, a board memo, PRD, SOP, HR feedback or a whole signup flow are in scope through their contracts. Credentials means qualifications and demonstrated work, never login secrets.
+The canonical [writing task index](task-index.md) and [shared registry](../data/catalogs/writing-capabilities.json) route 171 contracts across 16 families. Resolve task separately from operation, channel and language before applying the older craft routes below. Select only the relevant contract and family; do not load the full catalog into a writing prompt. Everyday requests such as company credentials, a board memo, PRD, SOP, HR feedback or a whole signup flow are in scope through their contracts. Credentials means qualifications and demonstrated work, never login secrets.
 
 Use `scripts/task_registry.py detect` for a transparent local candidate route, or `pack` for a handoff containing inputs, output sections, facts, keys and review gates. The local tool has no model or network call. Unknown and ambiguous routes stay explicit. Contract checks are not proof of semantic quality. Keep draft, provider generation, deterministic validation, expert review and publication states separate.
 

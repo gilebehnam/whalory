@@ -36,7 +36,8 @@ In Claude Code, that folder is `${CLAUDE_PLUGIN_ROOT}/skills/whalory/`.
 5. Check every number, name, date, price, quote, and claim in the draft against the facts list. Anything the list lacks counts as invented and goes on the must-fix list. Persian, Arabic, and Latin digits count as the same number.
 6. For a rewrite or a transcreation, run `compare_texts` when it's available, with the source as `before` and the draft as `after`. Read `added` and `dropped_conditions`.
 7. Score the ten axes of the rubric, from 0 to 2 each, for a total out of 20. A draft passes at 17 or more, and never with a zero in fit with the brief, truthfulness, or cleanliness. A lint error left in the draft makes the verdict "return", whatever the total.
-8. Run the three quick ethics tests in `references/en/ethics.md#three-quick-tests`, or their Persian twins in `references/fa/ethics.md`. A draft that fails one goes back, whatever its total.
+8. Run the read-aloud test from `references/fa/plain-persian.md#بازبینی` or `references/en/plain-english.md#revision`. Any sentence that sounds artificial read aloud goes into the line edits, or onto the must-fix list when it repeats. Flag general claims without an example, stacked adjectives, an actor hidden by the passive, and a closing summary that adds nothing.
+9. Run the three quick ethics tests in `references/en/ethics.md#three-quick-tests`, or their Persian twins in `references/fa/ethics.md`. A draft that fails one goes back, whatever its total.
 
 ## Return
 

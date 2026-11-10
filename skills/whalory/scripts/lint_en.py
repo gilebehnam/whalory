@@ -71,7 +71,7 @@ import textcount as TC  # noqa: E402
 
 _HUB = LF._HUB      # the Whalory Hub overlay (spec 5.9), or None; the built-in rules never need it
 
-__version__ = '3.2.2'
+__version__ = '3.2.3'
 
 ERROR, WARN = LF.ERROR, LF.WARN
 UserError = LF.UserError
@@ -185,6 +185,8 @@ _COMPLEX = [
     ('implement', 'carry out, or do'), ('endeavour', 'try'), ('ascertain', 'find out'), ('terminate', 'end'),
     ('commence', 'start'), ('prior to', 'before'), ('numerous', 'many'), ('endeavor', 'try'),
     ('purchase', 'buy'), ('initiate', 'start'), ('utilize', 'use'), ('utilise', 'use'), ('assist', 'help'),
+    ('aforementioned', 'this, or name it'), ('of great importance', 'important'),
+    ('of utmost importance', 'important'), ('of paramount importance', 'important'),
 ]
 _COMPLEX_MAP = dict(_COMPLEX)
 _COMPLEX_RX = _rx(r"\b(?:%s)\b" % '|'.join(re.escape(k) for k, _ in _COMPLEX), re.I)
@@ -391,7 +393,9 @@ _CHATBOT = _rx(
     r"|you would like)\b|\bHere(?:{A}s| is) (?:a|an|the|your) (?:revised|polished|improved|refined|rewritten|updated)"
     r" (?:version|draft|text|copy)\b|\bHere(?:{A}s| is) (?:a|the|your) (?:revised|polished|improved|refined|rewritten)"
     r" (?:post|caption|email|paragraph)\b|\bAs an AI(?: language model)?\b|\bAs a large language model\b"
-    r"|\bYou{A}re absolutely right\b", re.I | re.M)
+    r"|\bYou{A}re absolutely right\b"
+    r"|\b(?:I|we) hope (?:this|that|you (?:found|find|enjoyed))\b[^.!?\n]{0,50}?\b(?:helps|helped|helpful|useful)\b",
+    re.I | re.M)
 _SIGNOFF = _rx(r"\b(?:let me know|feel free to (?:ask|reach out)) if\b", re.I)
 _CUTOFF = _rx(
     r"\b(?:as of my (?:last )?(?:knowledge|training) (?:update|cutoff|cut-off)|up to my last training"
@@ -458,7 +462,25 @@ _MINIMIZER = _rx(r"\b(?:simply|just|easily|obviously|quickly|it{A}?s (?:easy|tha
 _THERE_IS = _rx(_SENT_START + r"(?P<at>There (?:is|are|was|were)\b)", re.M)
 _METAPHOR = _rx(r"\b(?:going forward|moving forward|drive (?:growth|change|innovation|results|engagement)|drive out"
                 r"|one-stop shop|ring[- ]?fenc(?:e|ed|ing)|deliver (?:improvements|value|outcomes|results|change)"
-                r"|tackle|slim down|overarching|disincentivi[sz]e|incentivi[sz]e|liaise|dialogue)\b", re.I)
+                r"|tackle|slim down|overarching|disincentivi[sz]e|incentivi[sz]e|liaise|dialogue"
+                r"|dive (?:into|in|deeper)|on the same page)\b", re.I)
+# Plain-language additions (2026-11): inflated adverbs, corporate we, stacked promo adjectives,
+# impersonal passive and nominalized verbs. Sources: Orwell 1946; plainlanguage.gov; Strunk and White;
+# Wikipedia:Signs of AI writing. DONE-PLAIN-LANG
+_INFLATED = _rx(r"\b(?:significantly|dramatically|drastically|tremendously|immensely|exponentially|massively"
+                r"|incredibly|remarkably|profoundly)\b", re.I)
+_CORP_WE = _rx(r"\bwe(?: are|{A}re) (?:committed|dedicated|passionate|proud) to\b|\bwe (?:strive|endeavou?r)s? to\b"
+               r"|\bour team (?:is|are) (?:committed|dedicated) to\b|\b(?:dear |our )?valued (?:customers|clients|users"
+               r"|members|partners)\b|\bdear (?:customers|clients|users)\b", re.I)
+_PROMO_ADJ = (r"(?:comprehensive|innovative|practical|powerful|robust|seamless|intuitive|cutting-edge|holistic"
+              r"|optimal|optimi[sz]ed|scalable|flexible|reliable|user-friendly|efficient|effective|unique"
+              r"|advanced|smart|next-generation|world-class|best-in-class)")
+_ADJ_STACK = _rx(r"\b%s(?:,[ \t]*|[ \t]+and[ \t]+|[ \t]+)%s\b" % (_PROMO_ADJ, _PROMO_ADJ), re.I)
+_IMPERSONAL = _rx(r"\bit (?:was|has been|had been|is|will be) (?:decided|agreed|determined|felt|believed|noted"
+                  r"|recommended|suggested) that\b", re.I)
+_NOMINAL = _rx(r"\b(?:the )?(?:completion|implementation|identification|utilization|utilisation|evaluation"
+               r"|examination|provision|creation|establishment|performance) of (?:the|a|an|this|these|our|your)\b"
+               r"|\bresulted in (?:the )?\w+(?:tion|ment|sion)\b", re.I)
 _NUMERIC_DATE = re.compile(r"\b\d{1,2}/\d{1,2}/\d{2,4}\b")
 _NUM_START = re.compile(r"[ \t(%s]*(\d[\d,.]*)\b" % MASK)
 _RANGE = re.compile(r"(?<![\d\-–/.])\d+(?:am|pm)?[ \t]?[-–][ \t]?\d+(?:am|pm)?\b(?![-–/]\d)", re.I)
@@ -627,6 +649,15 @@ RULES = [
     ('en-marketing-has', WARN, 'pattern', 'EN-AI-062', 'boasts/features/offers + a/an/number (not in ads)',
      'Use "has"'),
     ('en-sycophancy', ERROR, 'pattern', 'EN-AI-063', 'great/excellent/insightful question or point', 'Remove'),
+    ('en-inflated-adverb', WARN, 'pattern', 'EN-AI-064',
+     'Inflated adverb: significantly, dramatically, drastically, tremendously, incredibly …',
+     'Give the number or the example, or cut the adverb'),
+    ('en-corporate-we', WARN, 'pattern', 'EN-AI-065',
+     'Faceless corporate voice: we strive to, we are committed/dedicated to, valued customers, dear users',
+     'Say who did what, and talk to one reader as "you"'),
+    ('en-adjective-stack', WARN, 'pattern', 'EN-AI-066',
+     'Two or more promotional adjectives in a row: comprehensive, innovative, powerful, seamless …',
+     'Keep one adjective at most, then say what it does'),
     ('en-stat-claim', WARN, 'pattern', 'EN-FACT-001',
      'Percentage, multiplier, "N times", millions or billions; one warning per line (off with --facts; not '
      'flagged when the line cites a URL or [source: …]; a discount such as "20% off" or "save 20%" is not a '
@@ -655,7 +686,10 @@ RULES = [
     ('en-passive', WARN, 'dynamic', 'EN-PL-003',
      'More than 20% of sentences are passive (5 sentences or more; up to 5 examples)', 'Name the actor'),
     ('en-hidden-verb', WARN, 'pattern', 'EN-PL-004', 'Hidden verb: conduct an analysis, make a decision, '
-     'provide assistance …', 'Use the verb: analyze, decide, help'),
+     'provide assistance, the completion of, resulted in the identification …', 'Use the verb: analyze, decide, '
+     'help, finish, found'),
+    ('en-impersonal-passive', WARN, 'pattern', 'EN-PL-015',
+     'Impersonal passive: it was decided/agreed/determined/noted that', 'Name who decided'),
     ('en-complex-word', WARN, 'pattern', 'EN-PL-005', 'Complex word or phrase: utilize, facilitate, commence, '
      'prior to, in order to, in the event that …', 'Use the simple word'),
     ('en-shall', WARN, 'pattern', 'EN-PL-006', 'shall', 'Use must or must not'),
@@ -1835,6 +1869,14 @@ def _check(raw, masked, st, mode='doc', key=None, kind='text', facts=None):
     scan(_ESTABLISH, 'en-establishment-claim', ERROR, lambda t: 'Establishment claim "%s"; cite the actual '
          'study, or remove' % t, cite_ok=True)
     scan(_HIDDEN, 'en-hidden-verb', WARN, lambda t: 'Hidden verb "%s"; use the verb itself' % t)
+    scan(_NOMINAL, 'en-hidden-verb', WARN, lambda t: 'Nominalized verb "%s"; use the verb itself' % t)
+    scan(_IMPERSONAL, 'en-impersonal-passive', WARN, lambda t: '"%s": name who did it' % t)
+    scan(_INFLATED, 'en-inflated-adverb', WARN, lambda t: '"%s": give the number or example, or cut it' % t,
+         word_rule=True)
+    scan(_CORP_WE, 'en-corporate-we', WARN, lambda t: '"%s": say who did what, and talk to one reader' % t,
+         word_rule=True)
+    scan(_ADJ_STACK, 'en-adjective-stack', WARN, lambda t: '"%s": keep one adjective, then say what it does'
+         % t, word_rule=True)
     for m in _COMPLEX_RX.finditer(m2):
         if allowed(m.group(0)):
             continue

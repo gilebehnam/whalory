@@ -6,7 +6,7 @@ argument-hint: "[task and channel, e.g. LinkedIn post for our launch]"
 license: "CC-BY-4.0 (text) and MIT (scripts)"
 compatibility: "Works without code execution; Python 3.8+ optional for scripts/ and the MCP server"
 metadata:
-  version: "3.2.2"
+  version: "3.2.3"
   edition: "core"
   author: "Whalya"
   homepage: "https://whalory.com"
@@ -14,7 +14,7 @@ metadata:
 
 # Whalory
 
-Whalory adds the working method of a professional writer and editor to the AI host the user already uses. It combines task structure, the user's brand voice, evidence, and review, from one button label to a company credential, product requirements document or board memo. It reads the setting and request, asks only questions that affect the result, drafts in the destination's form, and separates usable copy from unresolved evidence. The [writing task index](references/task-index.md) describes 163 local contracts in 16 families; contract coverage does not establish model quality. Who Whalory is: `WHALORY.md` (in Whalory Pro) in English, `WHALORY.fa.md` (in Whalory Pro) in Persian. Install and usage guides: [`GUIDE.en.md`](GUIDE.en.md), [`GUIDE.fa.md`](GUIDE.fa.md).
+Whalory adds the working method of a professional writer and editor to the AI host the user already uses. It combines task structure, the user's brand voice, evidence, and review, from one button label to a company credential, product requirements document or board memo. It reads the setting and request, asks only questions that affect the result, drafts in the destination's form, and separates usable copy from unresolved evidence. The [writing task index](references/task-index.md) describes 171 local contracts in 16 families; contract coverage does not establish model quality. Who Whalory is: `WHALORY.md` (in Whalory Pro) in English, `WHALORY.fa.md` (in Whalory Pro) in Persian. Install and usage guides: [`GUIDE.en.md`](GUIDE.en.md), [`GUIDE.fa.md`](GUIDE.fa.md).
 
 ## Three rules that never change
 
@@ -122,6 +122,7 @@ The canonical [writing task index](references/task-index.md) covers the broader 
 | Need | fa | en |
 |---|---|---|
 | Unsure what to say, how much, in what tone | [`judgment.md`](references/judgment.md) | [`judgment.md`](references/judgment.md) |
+| Plain language: bans, caps, read-aloud test, compact brief | [`plain-persian.md`](references/fa/plain-persian.md) | [`plain-english.md`](references/en/plain-english.md) |
 | Prose, grammar, spelling | [`persian-prose.md`](references/fa/persian-prose.md), [`common-errors.md`](references/fa/common-errors.md) | [`prose.md`](references/en/prose.md), [`common-errors.md`](references/en/common-errors.md), [`style-guide.md`](references/en/style-guide.md) |
 | Dates, money, numbers, addresses | [`conventions.md`](references/fa/conventions.md) | [`style-guide.md`](references/en/style-guide.md) |
 | Holidays, mourning, publishing calendar | [`occasions.md`](references/fa/occasions.md) | [`occasions.md`](references/en/occasions.md) |
@@ -142,15 +143,15 @@ Use these checklists when code execution is not available, or when the script di
 | 3 | Half-space | `zwnj-mi`, `zwnj-ha`, `ezafe-he` | «می‌شود»، «کتاب‌ها»، «بزرگ‌تر»، «خانه‌ی» |
 | 4 | Contrast | `neg-contrast`, `na-contrast`, `just-not`, `not-only`, `beyond`, `problem-solution` | The negative half is gone, in the pattern `X، نه Y` too; the sentence starts from a real detail |
 | 5 | Stock openings | `world-today`, `welcome-world`, `journey`, `nowadays`, `did-you-know`, `no-secret`, `lets`, `rhetorical-open` | The first sentence starts with something concrete, with no talk of the times and no rhetorical question |
-| 6 | Narrator | `we-believe`, `self-ref` | The brand stays out of the spotlight, and the text never points at itself |
+| 6 | Narrator | `we-believe`, `self-ref`, `corporate-we`, `sycophancy` | The brand stays out of the spotlight, the text never points at itself, no faceless «ما در تلاشیم», and the answer opens without flattery |
 | 7 | Endings | `moral-close`, `final-word`, `hope-helpful` | No moral wrap-up, closing heading, or hope that it helped |
 | 8 | Tip labels | `golden-tip` | A tip is never labeled «طلایی» or «مهم»; the tip itself is said |
-| 9 | Officialese | `admin`, `admin-phrase`, `heavy-passive` | «است»، «می‌شود»، «کنید»; no bureaucratic verbs or filler phrases |
-| 10 | Big words | `lexicon`, `unique-exp`, `jargon` | Superlatives, corporate speak, stock invitations, and needless foreign terms are replaced by details |
+| 9 | Officialese | `admin`, `admin-phrase`, `heavy-passive`, `nominal-verb` | «است»، «می‌شود»، «کنید»; no bureaucratic verbs, filler phrases, or verbs turned into nouns; the actor is named |
+| 10 | Big words | `lexicon`, `unique-exp`, `jargon`, `inflated-adverb`, `adj-stack`, `calque` | Superlatives, corporate speak, inflated adverbs, stacked adjectives, word-for-word English idioms, and needless foreign terms are replaced by details or numbers |
 | 11 | Sentences | `long-sentence`, `ke-chain`, `ra-chain` | At most 24 words, or the profile cap; list items and table cells count too; never three «که» or two «را» in one sentence |
 | 12 | Rhythm | `same-opening`, `flat-rhythm` | No three sentences in a row start with the same word; sentence lengths rise and fall |
 | 13 | Loud marks | `bangs`, `bang-bang`, `emoji`, `emoji-bullet`, `ellipsis` | Exclamation marks and emoji within the profile cap; no emoji bullets; no ellipsis |
-| 14 | Caption | `caption-header` | The caption has no heading or bold title line |
+| 14 | Caption and lists | `caption-header`, `label-list` | The caption has no heading or bold title line; no bullet list of bold labels with colons unless it is real steps |
 | 15 | Register and address | `register`, `mixed-register`, `address` | Colloquial and written register, «تو» and «شما», are never mixed in one text |
 | 16 | Marks and digits | `latin-quote`, `latin-comma`, `latin-semicolon`, `latin-question`, `latin-digit`, `serial-comma` | «»، «،»، «؛»، «؟» and Persian digits; no comma before the final «و» of a list |
 | 17 | Orthography | `tanvin-fa`, `double-plural`, `spacing-compound` | Tanvin only on Arabic words; no double plurals; compounds with a half-space |
@@ -167,11 +168,11 @@ Use these checklists when code execution is not available, or when the script di
 | 3 | Quotes and spacing | `en-quote-mix`, `en-double-space` | One quote style; one space after a period |
 | 4 | Contrast | `en-not-just`, `en-not-x-but-y`, `en-no-x-no-y` | No straw-man contrast such as `it's not X, it's Y`; state the point itself |
 | 5 | Stock openings | `en-cliche-open`, `en-rhetorical-open`, `en-journey` | The first sentence starts with something concrete, with no `in today's world`, `ever wondered`, or `journey` |
-| 6 | Narrator and chatbot voice | `en-chatbot-residue`, `en-sycophancy`, `en-cutoff-speculation` | No `Certainly!`, `Great question`, `I hope this helps`, or talk of a knowledge cutoff |
+| 6 | Narrator and chatbot voice | `en-chatbot-residue`, `en-sycophancy`, `en-cutoff-speculation`, `en-corporate-we` | No `Certainly!`, `Great question`, `we hope you found this helpful`, `we strive to`, or talk of a knowledge cutoff |
 | 7 | Endings | `en-moral-close`, `en-summary-opener` | The text ends on the last concrete point or the call to action, with no `In conclusion` |
 | 8 | Framing and labels | `en-please-note`, `en-didactic` | No `please note` or `it's important to note`; the fact itself is stated |
-| 9 | Officialese | `en-hidden-verb`, `en-complex-word`, `en-passive`, `en-shall` | Plain verbs (`decide`, not `make a decision`); a named actor; `must`, not `shall` |
-| 10 | Big words | `en-ai-vocab`, `en-buzzword`, `en-jargon`, `en-superlative`, `en-metaphor-buzz` | Puffery and corporate words are replaced by facts, numbers, or names |
+| 9 | Officialese | `en-hidden-verb`, `en-complex-word`, `en-passive`, `en-impersonal-passive`, `en-shall` | Plain verbs (`decide`, not `make a decision`); a named actor; `must`, not `shall` |
+| 10 | Big words | `en-ai-vocab`, `en-buzzword`, `en-jargon`, `en-superlative`, `en-metaphor-buzz`, `en-inflated-adverb`, `en-adjective-stack` | Puffery and corporate words are replaced by facts, numbers, or names |
 | 11 | Sentences and grade | `en-long-sentence`, `en-long-paragraph`, `en-readability-grade` | At most 25 words or the profile cap; paragraphs under 150 words; reading grade within the target |
 | 12 | Rhythm | `en-same-opening`, `en-flat-rhythm`, `en-triads` | Varied openings; long and short sentences; lists of three only when there really are three |
 | 13 | Loud marks | `en-bangs`, `en-emoji`, `en-emoji-format`, `en-all-caps` | Exclamation marks and emoji within the profile cap; no emoji bullets; no shouting in capitals |

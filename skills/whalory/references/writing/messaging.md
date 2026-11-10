@@ -24,6 +24,8 @@ Shared craft: [existing family method](../playbooks-messages.md). [Operation and
 - [Promotional SMS](#sms-promotion)
 - [Messenger-channel post](#messenger-channel)
 - [Event invitation and reminder](#event-invitation)
+- [Cold outreach sequence](#cold-outreach-sequence)
+- [Cancellation and win-back](#cancellation-win-back)
 
 ## Dm Reply
 
@@ -198,5 +200,40 @@ Required inputs: event, date, timezone, location, registration. Missing facts re
 | `cta` / اقدام بعدی | Give the verified registration path and conditions. |
 
 Review: Date timezone integrity: review the actual Event invitation and reminder against supplied evidence. Contact accuracy: review the actual Event invitation and reminder against supplied evidence. No fake capacity: review the actual Event invitation and reminder against supplied evidence. Validate output section presence, locked exact spans, supplied evidence ids and per-key placeholders; semantic review remains required.
+
+Status: `implemented_not_verified`; local deterministic checks do not certify semantic quality, external publication, or expert approval.
+
+## Cold Outreach Sequence
+
+**توالی ایمیل سرد · `messaging.cold_outreach_sequence`**
+
+Plan a short first-contact sequence to a business prospect in which each touch adds something new and the sequence stops at any reply or opt-out. Use only the prospect's public, relevant context and the sending rules of the recipient's market.
+
+Required inputs: prospect_context, offer, proof, recipient_market, approved_cadence. Missing facts remain labeled; at most three consequential questions per round.
+
+| Output section | Required result |
+|---|---|
+| `sequence_table` / جدول توالی | For each touch, give the day, angle, subject and stop condition. |
+| `messages` / متن پیام‌ها | Write each message with the sender's real name, one ask, an easy opt-out and bracketed variables with their source. |
+
+Review: No invented familiarity, shared history, fake "Re:" or "Fwd:", or private personal data. Every message has an easy opt-out; the sequence stops at a reply, an opt-out or the last touch. Match deadline, scarcity and capacity exactly to approved evidence; remove invented urgency. Deliver a draft or export only; no email, direct message or post is sent. Validate output section presence, locked exact spans, supplied evidence ids and per-key placeholders; semantic review remains required.
+
+Status: `implemented_not_verified`; local deterministic checks do not certify semantic quality, external publication, or expert approval.
+
+## Cancellation Win Back
+
+**لغو اشتراک و بازگشت مشتری · `messaging.cancellation_win_back`**
+
+Write a cancel flow that is as easy as sign-up, failed-payment reminders that read as service messages, and win-back messages only where consent allows. Keep every offer, date and refund term exact.
+
+Required inputs: cancellation_terms, save_offer_terms, payment_dates, consent_status. Missing facts remain labeled; at most three consequential questions per round.
+
+| Output section | Required result |
+|---|---|
+| `flow_table` / جدول مسیر لغو | For each screen or message, give the trigger, copy and buttons; the decline button stays as visible as any offer. |
+| `failed_payment_messages` / پیام‌های پرداخت ناموفق | State what failed, what the customer can do, the date access changes and the update route. |
+| `win_back_messages` / پیام‌های بازگشت مشتری | Write consented win-back messages with timing and stop conditions, naming only real changes and approved offers. |
+
+Review: No hidden cancel path, forced call or guilt in buttons; canceling takes no more steps than signing up. Preserve approved amount, currency, unit, eligibility and date without modifying commercial terms. Send win-back only where consent allows and stop at an opt-out. Deliver a draft or export only; no email, direct message or post is sent. Validate output section presence, locked exact spans, supplied evidence ids and per-key placeholders; semantic review remains required.
 
 Status: `implemented_not_verified`; local deterministic checks do not certify semantic quality, external publication, or expert approval.

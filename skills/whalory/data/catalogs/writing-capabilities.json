@@ -194,7 +194,7 @@
     "fact_preservation"
   ],
   "fallback_policy": "Use nearest goal-and-shape playbook, label adaptation, do not claim tested native support.",
-  "task_count": 163,
+  "task_count": 171,
   "flagship_count": 20,
   "tasks": [
     {
@@ -1906,6 +1906,190 @@
             "id": "no_fake_urgency",
             "method": "semantic",
             "criterion": "Match deadline, scarcity and capacity exactly to approved evidence; remove invented urgency."
+          },
+          {
+            "id": "fact_and_locale_integrity",
+            "method": "deterministic",
+            "criterion": "Validate output section presence, locked exact spans, supplied evidence ids and per-key placeholders; semantic review remains required."
+          }
+        ],
+        "depth": "task_contract_with_family_inheritance"
+      }
+    },
+    {
+      "id": "copy_ads.ad_test_variant_set",
+      "label_fa": "مجموعه‌ی واریانت تبلیغ برای آزمون",
+      "label_en": "Ad variant set for testing",
+      "category": "copy_ads",
+      "reader_goal_fa": "آزمودن یک متغیر با نسخه‌های قابل مقایسه",
+      "input_needs": [
+        "network",
+        "test_question",
+        "angles",
+        "landing_claims",
+        "traffic_estimate"
+      ],
+      "output_shape": [
+        "test_plan",
+        "variant_table"
+      ],
+      "checks": [
+        "single_variable",
+        "channel_limits",
+        "landing_page_match",
+        "ad_policy_review"
+      ],
+      "supported_operations_candidate": [
+        "write",
+        "rewrite",
+        "translate",
+        "adapt",
+        "plan",
+        "review",
+        "score",
+        "prepare_for_publication",
+        "export"
+      ],
+      "risk_assessment": "per_request_and_claim",
+      "implementation_status": "implemented_not_verified",
+      "public_baseline_relation": "related_family_requires_task_audit",
+      "flagship_contract": null,
+      "routing_signals": [
+        "مجموعه‌ی واریانت تبلیغ برای آزمون",
+        "Ad variant set for testing",
+        "copy_ads.ad_test_variant_set",
+        "ad test variant set",
+        "ad variant set",
+        "ad variants to test",
+        "ad test variants",
+        "creative testing",
+        "واریانت تبلیغ برای تست",
+        "نسخه های تبلیغ برای تست",
+        "آزمون تبلیغ"
+      ],
+      "delivery_policy": "draft_or_export_only_no_external_send",
+      "reader_goal_en": "Plan a set of ad variants for one network that differ only in the one variable under test.",
+      "supported_operations": [
+        "write",
+        "rewrite",
+        "translate",
+        "adapt",
+        "plan",
+        "review",
+        "score",
+        "prepare_for_publication",
+        "export"
+      ],
+      "verification": {
+        "contract": "implemented",
+        "deterministic_evaluation": "recorded_separately_in_source_report",
+        "model_quality": "not_evaluated",
+        "human_review": "required"
+      },
+      "contract": {
+        "inputs": [
+          {
+            "id": "network",
+            "label_en": "Network",
+            "label_fa": "شبکهٔ تبلیغاتی",
+            "required": true,
+            "instruction_en": "Supply network for Ad variant set for testing; identify unknown or proposed values.",
+            "instruction_fa": "برای «مجموعه‌ی واریانت تبلیغ برای آزمون»، شبکهٔ تبلیغاتی را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          },
+          {
+            "id": "test_question",
+            "label_en": "Test question",
+            "label_fa": "پرسش آزمون",
+            "required": true,
+            "instruction_en": "Supply test question for Ad variant set for testing; identify unknown or proposed values.",
+            "instruction_fa": "برای «مجموعه‌ی واریانت تبلیغ برای آزمون»، پرسش آزمون را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          },
+          {
+            "id": "angles",
+            "label_en": "Angles",
+            "label_fa": "زاویه‌های پیام",
+            "required": true,
+            "instruction_en": "Supply angles for Ad variant set for testing; identify unknown or proposed values.",
+            "instruction_fa": "برای «مجموعه‌ی واریانت تبلیغ برای آزمون»، زاویه‌های پیام را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          },
+          {
+            "id": "landing_claims",
+            "label_en": "Landing claims",
+            "label_fa": "ادعاهای صفحهٔ فرود",
+            "required": true,
+            "instruction_en": "Supply landing claims for Ad variant set for testing; identify unknown or proposed values.",
+            "instruction_fa": "برای «مجموعه‌ی واریانت تبلیغ برای آزمون»، ادعاهای صفحهٔ فرود را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          },
+          {
+            "id": "traffic_estimate",
+            "label_en": "Traffic estimate",
+            "label_fa": "برآورد ترافیک",
+            "required": true,
+            "instruction_en": "Supply traffic estimate for Ad variant set for testing; identify unknown or proposed values.",
+            "instruction_fa": "برای «مجموعه‌ی واریانت تبلیغ برای آزمون»، برآورد ترافیک را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          }
+        ],
+        "sections": [
+          {
+            "id": "test_plan",
+            "label_en": "Test plan",
+            "label_fa": "طرح آزمون",
+            "required": true,
+            "shape": "text_or_structured",
+            "purpose": "State the question, the variable, the fixed elements, the metric, the minimum run and the decision rule."
+          },
+          {
+            "id": "variant_table",
+            "label_en": "Variant table",
+            "label_fa": "جدول واریانت‌ها",
+            "required": true,
+            "shape": "text_or_structured",
+            "purpose": "For each variant, give the angle, field, text, character count and limit status."
+          }
+        ],
+        "approach": [
+          "Plan a set of ad variants for one network that differ only in the one variable under test. Write the decision rule before launch and fit every field to verified limits and to the landing page's claims."
+        ],
+        "evidence": {
+          "requirements": [
+            "Approved offer, destination, eligibility and dated terms.",
+            "Required evidence checks for this task: single_variable, channel_limits, landing_page_match, ad_policy_review."
+          ],
+          "forbidden_additions": [
+            "Invented scarcity, unproven superiority and pressure."
+          ],
+          "unknown_policy": "Retain [source needed: …] or [تأیید شود: …]; a placeholder is not proof."
+        },
+        "limits": {
+          "policy": "One placement-sized unit per distinct angle; no platform maximum is assumed.",
+          "default_budget": "brief_defined",
+          "unit": "task_structure",
+          "channel_limit_status": "unverified_until_source_check"
+        },
+        "tone": {
+          "fit": "Concrete, economical persuasion, adjusted to placement.",
+          "avoid": "Invented scarcity, unproven superiority and pressure."
+        },
+        "review": [
+          {
+            "id": "single_variable",
+            "method": "semantic",
+            "criterion": "Variants differ only in the tested variable; image, audience and landing page stay fixed."
+          },
+          {
+            "id": "channel_limits",
+            "method": "semantic",
+            "criterion": "Verify the destination field and counting unit from dated source data; otherwise label its limit unverified."
+          },
+          {
+            "id": "landing_page_match",
+            "method": "semantic",
+            "criterion": "Every ad claim also appears on the landing page and in supplied evidence."
+          },
+          {
+            "id": "ad_policy_review",
+            "method": "human",
+            "criterion": "Check health, financial, before-and-after and personal-attribute wording against the network's current policy."
           },
           {
             "id": "fact_and_locale_integrity",
@@ -5489,6 +5673,385 @@
       }
     },
     {
+      "id": "web.landing_page_conversion_review",
+      "label_fa": "بررسی نرخ تبدیل لندینگ پیج",
+      "label_en": "Landing page conversion review",
+      "category": "web",
+      "reader_goal_fa": "یافتن مانع اقدام و اصلاح متن صفحه",
+      "input_needs": [
+        "page_copy",
+        "primary_action",
+        "traffic_source",
+        "customer_objections"
+      ],
+      "output_shape": [
+        "findings",
+        "rewritten_copy",
+        "test_hypotheses"
+      ],
+      "checks": [
+        "one_primary_goal",
+        "claim_sources",
+        "no_fake_urgency",
+        "no_lift_promise"
+      ],
+      "supported_operations_candidate": [
+        "write",
+        "rewrite",
+        "translate",
+        "adapt",
+        "plan",
+        "review",
+        "score",
+        "prepare_for_publication",
+        "export"
+      ],
+      "risk_assessment": "per_request_and_claim",
+      "implementation_status": "implemented_not_verified",
+      "public_baseline_relation": "related_family_requires_task_audit",
+      "flagship_contract": null,
+      "routing_signals": [
+        "بررسی نرخ تبدیل لندینگ پیج",
+        "Landing page conversion review",
+        "web.landing_page_conversion_review",
+        "landing page conversion review",
+        "landing page review",
+        "landing page conversion",
+        "conversion review",
+        "page not converting",
+        "CRO review",
+        "بررسی لندینگ",
+        "نرخ تبدیل لندینگ",
+        "بررسی نرخ تبدیل"
+      ],
+      "delivery_policy": "draft_or_export_only_no_external_send",
+      "reader_goal_en": "Find what stops visitors from taking the page's one action and propose ranked copy fixes.",
+      "supported_operations": [
+        "write",
+        "rewrite",
+        "translate",
+        "adapt",
+        "plan",
+        "review",
+        "score",
+        "prepare_for_publication",
+        "export"
+      ],
+      "verification": {
+        "contract": "implemented",
+        "deterministic_evaluation": "recorded_separately_in_source_report",
+        "model_quality": "not_evaluated",
+        "human_review": "required"
+      },
+      "contract": {
+        "inputs": [
+          {
+            "id": "page_copy",
+            "label_en": "Page copy",
+            "label_fa": "متن فعلی صفحه",
+            "required": true,
+            "instruction_en": "Supply page copy for Landing page conversion review; identify unknown or proposed values.",
+            "instruction_fa": "برای «بررسی نرخ تبدیل لندینگ پیج»، متن فعلی صفحه را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          },
+          {
+            "id": "primary_action",
+            "label_en": "Primary action",
+            "label_fa": "اقدام اصلی",
+            "required": true,
+            "instruction_en": "Supply primary action for Landing page conversion review; identify unknown or proposed values.",
+            "instruction_fa": "برای «بررسی نرخ تبدیل لندینگ پیج»، اقدام اصلی را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          },
+          {
+            "id": "traffic_source",
+            "label_en": "Traffic source",
+            "label_fa": "منبع ترافیک",
+            "required": true,
+            "instruction_en": "Supply traffic source for Landing page conversion review; identify unknown or proposed values.",
+            "instruction_fa": "برای «بررسی نرخ تبدیل لندینگ پیج»، منبع ترافیک را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          },
+          {
+            "id": "customer_objections",
+            "label_en": "Customer objections",
+            "label_fa": "اعتراض‌های واقعی مشتری",
+            "required": true,
+            "instruction_en": "Supply customer objections for Landing page conversion review; identify unknown or proposed values.",
+            "instruction_fa": "برای «بررسی نرخ تبدیل لندینگ پیج»، اعتراض‌های واقعی مشتری را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          }
+        ],
+        "sections": [
+          {
+            "id": "findings",
+            "label_en": "Findings",
+            "label_fa": "یافته‌ها",
+            "required": true,
+            "shape": "text_or_structured",
+            "purpose": "For each block, name one problem (unclear, unproven, friction, missing objection or distraction), quote the page, give the fix and rank its impact."
+          },
+          {
+            "id": "rewritten_copy",
+            "label_en": "Rewritten copy",
+            "label_fa": "متن اصلاح‌شده",
+            "required": true,
+            "shape": "text_or_structured",
+            "purpose": "Rewrite only the high-impact fixes; every claim stays within supplied evidence or keeps a labeled gap."
+          },
+          {
+            "id": "test_hypotheses",
+            "label_en": "Test hypotheses",
+            "label_fa": "فرضیه‌های آزمون",
+            "required": true,
+            "shape": "text_or_structured",
+            "purpose": "State at most three hypotheses as change, expected direction and reason, with no predicted rate."
+          }
+        ],
+        "approach": [
+          "Find what stops visitors from taking the page's one action and propose ranked copy fixes. Quote the page for every finding and never forecast a conversion rate."
+        ],
+        "evidence": {
+          "requirements": [
+            "Actual capabilities, approved offers, sources for proof and verified destinations.",
+            "Required evidence checks for this task: one_primary_goal, claim_sources, no_fake_urgency, no_lift_promise."
+          ],
+          "forbidden_additions": [
+            "Unshipped capabilities, fabricated proof and competing primary actions."
+          ],
+          "unknown_policy": "Retain [source needed: …] or [تأیید شود: …]; a placeholder is not proof."
+        },
+        "limits": {
+          "policy": "Use the named page sections; keep one idea per section.",
+          "default_budget": "brief_defined",
+          "unit": "task_structure",
+          "channel_limit_status": "unverified_until_source_check"
+        },
+        "tone": {
+          "fit": "Clear, scannable explanation with one primary reader path.",
+          "avoid": "Unshipped capabilities, fabricated proof and competing primary actions."
+        },
+        "review": [
+          {
+            "id": "one_primary_goal",
+            "method": "semantic",
+            "criterion": "One primary goal: review the actual Landing page conversion review against supplied evidence."
+          },
+          {
+            "id": "claim_sources",
+            "method": "semantic",
+            "criterion": "Trace each objective claim to a supplied source; unsupported claims remain labeled gaps."
+          },
+          {
+            "id": "no_fake_urgency",
+            "method": "semantic",
+            "criterion": "Match deadline, scarcity and capacity exactly to approved evidence; remove invented urgency."
+          },
+          {
+            "id": "no_lift_promise",
+            "method": "semantic",
+            "criterion": "Promise no conversion lift and forecast no rate; a hypothesis is not a result."
+          },
+          {
+            "id": "fact_and_locale_integrity",
+            "method": "deterministic",
+            "criterion": "Validate output section presence, locked exact spans, supplied evidence ids and per-key placeholders; semantic review remains required."
+          }
+        ],
+        "depth": "task_contract_with_family_inheritance"
+      }
+    },
+    {
+      "id": "web.alternative_versus_page",
+      "label_fa": "صفحه‌ی جایگزین و مقایسه با رقیب",
+      "label_en": "Alternative and versus page",
+      "category": "web",
+      "reader_goal_fa": "انتخاب منصفانه میان محصول و رقیب",
+      "input_needs": [
+        "page_format",
+        "competitor_sources",
+        "own_capabilities",
+        "switcher_reasons"
+      ],
+      "output_shape": [
+        "page_copy",
+        "comparison_table",
+        "competitor_fit",
+        "title_meta"
+      ],
+      "checks": [
+        "primary_sources",
+        "dated_claims",
+        "no_disparagement",
+        "claim_sources"
+      ],
+      "supported_operations_candidate": [
+        "write",
+        "rewrite",
+        "translate",
+        "adapt",
+        "plan",
+        "review",
+        "score",
+        "prepare_for_publication",
+        "export"
+      ],
+      "risk_assessment": "per_request_and_claim",
+      "implementation_status": "implemented_not_verified",
+      "public_baseline_relation": "related_family_requires_task_audit",
+      "flagship_contract": null,
+      "routing_signals": [
+        "صفحه‌ی جایگزین و مقایسه با رقیب",
+        "Alternative and versus page",
+        "web.alternative_versus_page",
+        "alternative versus page",
+        "alternative page",
+        "versus page",
+        "vs page",
+        "competitor alternative",
+        "competitor alternative page",
+        "صفحه جایگزین رقیب",
+        "جایگزین رقیب",
+        "ما در برابر رقیب"
+      ],
+      "delivery_policy": "draft_or_export_only_no_external_send",
+      "reader_goal_en": "Help a reader who is choosing between the brand and a named competitor decide fairly from dated, sourced facts.",
+      "supported_operations": [
+        "write",
+        "rewrite",
+        "translate",
+        "adapt",
+        "plan",
+        "review",
+        "score",
+        "prepare_for_publication",
+        "export"
+      ],
+      "verification": {
+        "contract": "implemented",
+        "deterministic_evaluation": "recorded_separately_in_source_report",
+        "model_quality": "not_evaluated",
+        "human_review": "required"
+      },
+      "contract": {
+        "inputs": [
+          {
+            "id": "page_format",
+            "label_en": "Page format",
+            "label_fa": "قالب صفحه",
+            "required": true,
+            "instruction_en": "Supply page format for Alternative and versus page; identify unknown or proposed values.",
+            "instruction_fa": "برای «صفحه‌ی جایگزین و مقایسه با رقیب»، قالب صفحه را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          },
+          {
+            "id": "competitor_sources",
+            "label_en": "Competitor sources",
+            "label_fa": "منابع رقیب",
+            "required": true,
+            "instruction_en": "Supply competitor sources for Alternative and versus page; identify unknown or proposed values.",
+            "instruction_fa": "برای «صفحه‌ی جایگزین و مقایسه با رقیب»، منابع رقیب را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          },
+          {
+            "id": "own_capabilities",
+            "label_en": "Own capabilities",
+            "label_fa": "قابلیت‌های خودمان",
+            "required": true,
+            "instruction_en": "Supply own capabilities for Alternative and versus page; identify unknown or proposed values.",
+            "instruction_fa": "برای «صفحه‌ی جایگزین و مقایسه با رقیب»، قابلیت‌های خودمان را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          },
+          {
+            "id": "switcher_reasons",
+            "label_en": "Switcher reasons",
+            "label_fa": "دلیل‌های جابه‌جایی مشتریان",
+            "required": true,
+            "instruction_en": "Supply switcher reasons for Alternative and versus page; identify unknown or proposed values.",
+            "instruction_fa": "برای «صفحه‌ی جایگزین و مقایسه با رقیب»، دلیل‌های جابه‌جایی مشتریان را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          }
+        ],
+        "sections": [
+          {
+            "id": "page_copy",
+            "label_en": "Page copy",
+            "label_fa": "متن صفحه",
+            "required": true,
+            "shape": "text_or_structured",
+            "purpose": "Write the page section by section in the order the chosen format requires, ending with one action for the switcher."
+          },
+          {
+            "id": "comparison_table",
+            "label_en": "Comparison table",
+            "label_fa": "جدول مقایسه",
+            "required": true,
+            "shape": "text_or_structured",
+            "purpose": "Give each criterion the brand's and the competitor's capability with a public source and a check date; unsourced rows stay out or stay labeled."
+          },
+          {
+            "id": "competitor_fit",
+            "label_en": "Competitor fit",
+            "label_fa": "چه کسی رقیب را انتخاب کند",
+            "required": true,
+            "shape": "text_or_structured",
+            "purpose": "Name the readers for whom the competitor is the better choice, from sourced strengths."
+          },
+          {
+            "id": "title_meta",
+            "label_en": "Title meta",
+            "label_fa": "عنوان و توضیح متا",
+            "required": true,
+            "shape": "text_or_structured",
+            "purpose": "Write the page title and meta description separately, with no claim stronger than the table."
+          }
+        ],
+        "approach": [
+          "Help a reader who is choosing between the brand and a named competitor decide fairly from dated, sourced facts. Say who should choose the competitor and never disparage it."
+        ],
+        "evidence": {
+          "requirements": [
+            "Actual capabilities, approved offers, sources for proof and verified destinations.",
+            "Required evidence checks for this task: primary_sources, dated_claims, no_disparagement, claim_sources."
+          ],
+          "forbidden_additions": [
+            "Unshipped capabilities, fabricated proof and competing primary actions."
+          ],
+          "unknown_policy": "Retain [source needed: …] or [تأیید شود: …]; a placeholder is not proof."
+        },
+        "limits": {
+          "policy": "Use the named page sections; keep one idea per section.",
+          "default_budget": "brief_defined",
+          "unit": "task_structure",
+          "channel_limit_status": "unverified_until_source_check"
+        },
+        "tone": {
+          "fit": "Clear, scannable explanation with one primary reader path.",
+          "avoid": "Unshipped capabilities, fabricated proof and competing primary actions."
+        },
+        "review": [
+          {
+            "id": "primary_sources",
+            "method": "semantic",
+            "criterion": "Primary sources: review the actual Alternative and versus page against supplied evidence."
+          },
+          {
+            "id": "dated_claims",
+            "method": "semantic",
+            "criterion": "Dated claims: review the actual Alternative and versus page against supplied evidence."
+          },
+          {
+            "id": "no_disparagement",
+            "method": "semantic",
+            "criterion": "No disparagement, invented quotes or implied endorsement through the competitor's name or logo."
+          },
+          {
+            "id": "claim_sources",
+            "method": "semantic",
+            "criterion": "Trace each objective claim to a supplied source; unsupported claims remain labeled gaps."
+          },
+          {
+            "id": "fact_and_locale_integrity",
+            "method": "deterministic",
+            "criterion": "Validate output section presence, locked exact spans, supplied evidence ids and per-key placeholders; semantic review remains required."
+          }
+        ],
+        "depth": "task_contract_with_family_inheritance"
+      }
+    },
+    {
       "id": "ux.flow_microcopy",
       "label_fa": "متن کامل یک جریان وب یا اپ",
       "label_en": "Complete website or app flow copy",
@@ -7153,6 +7716,183 @@
             "id": "bidi_accessibility",
             "method": "semantic",
             "criterion": "Bidi accessibility: review the actual Locale-file copy review against supplied evidence."
+          },
+          {
+            "id": "fact_and_locale_integrity",
+            "method": "deterministic",
+            "criterion": "Validate output section presence, locked exact spans, supplied evidence ids and per-key placeholders; semantic review remains required."
+          }
+        ],
+        "depth": "task_contract_with_family_inheritance"
+      }
+    },
+    {
+      "id": "ux.signup_first_run_review",
+      "label_fa": "بررسی مسیر ثبت‌نام و شروع کار",
+      "label_en": "Sign-up and first-run review",
+      "category": "ux",
+      "reader_goal_fa": "رسیدن کاربر تازه به نخستین ارزش",
+      "input_needs": [
+        "activation_moment",
+        "flow_steps",
+        "current_strings",
+        "mandatory_fields"
+      ],
+      "output_shape": [
+        "step_table",
+        "corrected_strings"
+      ],
+      "checks": [
+        "one_term_per_concept",
+        "consent_clarity",
+        "mandatory_field_notes",
+        "placeholder_integrity"
+      ],
+      "supported_operations_candidate": [
+        "write",
+        "rewrite",
+        "translate",
+        "adapt",
+        "plan",
+        "review",
+        "score",
+        "prepare_for_publication",
+        "export"
+      ],
+      "risk_assessment": "per_request_and_claim",
+      "implementation_status": "implemented_not_verified",
+      "public_baseline_relation": "related_family_requires_task_audit",
+      "flagship_contract": null,
+      "routing_signals": [
+        "بررسی مسیر ثبت‌نام و شروع کار",
+        "Sign-up and first-run review",
+        "ux.signup_first_run_review",
+        "signup first run review",
+        "signup review",
+        "sign-up review",
+        "signup flow review",
+        "registration drop-off",
+        "first-run review",
+        "first run onboarding",
+        "بررسی ثبت نام",
+        "فرم ثبت نام",
+        "ریزش در ثبت نام"
+      ],
+      "delivery_policy": "draft_or_export_only_no_external_send",
+      "reader_goal_en": "Review every step and field between the sign-up button and the activation moment, and keep only what that moment needs now.",
+      "supported_operations": [
+        "write",
+        "rewrite",
+        "translate",
+        "adapt",
+        "plan",
+        "review",
+        "score",
+        "prepare_for_publication",
+        "export"
+      ],
+      "verification": {
+        "contract": "implemented",
+        "deterministic_evaluation": "recorded_separately_in_source_report",
+        "model_quality": "not_evaluated",
+        "human_review": "required"
+      },
+      "contract": {
+        "inputs": [
+          {
+            "id": "activation_moment",
+            "label_en": "Activation moment",
+            "label_fa": "لحظهٔ فعال‌سازی",
+            "required": true,
+            "instruction_en": "Supply activation moment for Sign-up and first-run review; identify unknown or proposed values.",
+            "instruction_fa": "برای «بررسی مسیر ثبت‌نام و شروع کار»، لحظهٔ فعال‌سازی را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          },
+          {
+            "id": "flow_steps",
+            "label_en": "Flow steps",
+            "label_fa": "مراحل و فیلدهای فعلی",
+            "required": true,
+            "instruction_en": "Supply flow steps for Sign-up and first-run review; identify unknown or proposed values.",
+            "instruction_fa": "برای «بررسی مسیر ثبت‌نام و شروع کار»، مراحل و فیلدهای فعلی را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          },
+          {
+            "id": "current_strings",
+            "label_en": "Current strings",
+            "label_fa": "متن‌های فعلی",
+            "required": true,
+            "instruction_en": "Supply current strings for Sign-up and first-run review; identify unknown or proposed values.",
+            "instruction_fa": "برای «بررسی مسیر ثبت‌نام و شروع کار»، متن‌های فعلی را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          },
+          {
+            "id": "mandatory_fields",
+            "label_en": "Mandatory fields",
+            "label_fa": "فیلدهای الزامی قانون یا پرداخت",
+            "required": true,
+            "instruction_en": "Supply mandatory fields for Sign-up and first-run review; identify unknown or proposed values.",
+            "instruction_fa": "برای «بررسی مسیر ثبت‌نام و شروع کار»، فیلدهای الزامی قانون یا پرداخت را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          }
+        ],
+        "sections": [
+          {
+            "id": "step_table",
+            "label_en": "Step table",
+            "label_fa": "جدول مراحل",
+            "required": true,
+            "shape": "text_or_structured",
+            "purpose": "For each step, field or screen, show the current copy, the problem, the fix and keep, move or remove."
+          },
+          {
+            "id": "corrected_strings",
+            "label_en": "Corrected strings",
+            "label_fa": "متن‌های اصلاح‌شده",
+            "required": true,
+            "shape": "text_or_structured",
+            "purpose": "Give the corrected strings with their keys and placeholders unchanged."
+          }
+        ],
+        "approach": [
+          "Review every step and field between the sign-up button and the activation moment, and keep only what that moment needs now. Correct the strings so one promise, honest consent and recoverable errors run from start to finish."
+        ],
+        "evidence": {
+          "requirements": [
+            "Actual states, allowed transitions, field purpose and exact locale placeholders.",
+            "Required evidence checks for this task: one_term_per_concept, consent_clarity, mandatory_field_notes, placeholder_integrity."
+          ],
+          "forbidden_additions": [
+            "Blame, false success, fake progress and guessed error causes."
+          ],
+          "unknown_policy": "Retain [source needed: …] or [تأیید شود: …]; a placeholder is not proof."
+        },
+        "limits": {
+          "policy": "Respect supplied per-key budgets; missing budgets stay unverified.",
+          "default_budget": "brief_defined",
+          "unit": "task_structure",
+          "channel_limit_status": "unverified_until_source_check"
+        },
+        "tone": {
+          "fit": "Short, accessible, calm and specific to system behavior.",
+          "avoid": "Blame, false success, fake progress and guessed error causes."
+        },
+        "review": [
+          {
+            "id": "one_term_per_concept",
+            "method": "semantic",
+            "criterion": "One term per concept: the entry button, form title, confirmation and first empty screen name the same thing."
+          },
+          {
+            "id": "consent_clarity",
+            "method": "semantic",
+            "criterion": "Each personal-data field says why it is asked; marketing consent is separate and unticked; trial renewal price and date appear before the form."
+          },
+          {
+            "id": "mandatory_field_notes",
+            "method": "human",
+            "criterion": "No field required by law or the payment provider is removed without a note for qualified review."
+          },
+          {
+            "id": "placeholder_integrity",
+            "method": "semantic",
+            "criterion": "Preserve every interpolation token under its original key with identical multiplicity."
           },
           {
             "id": "fact_and_locale_integrity",
@@ -8879,6 +9619,191 @@
             "id": "link_integrity",
             "method": "semantic",
             "criterion": "Link integrity: review the actual Content refresh against supplied evidence."
+          },
+          {
+            "id": "fact_and_locale_integrity",
+            "method": "deterministic",
+            "criterion": "Validate output section presence, locked exact spans, supplied evidence ids and per-key placeholders; semantic review remains required."
+          }
+        ],
+        "depth": "task_contract_with_family_inheritance"
+      }
+    },
+    {
+      "id": "seo_editorial.answer_engine_faq",
+      "label_fa": "پرسش و پاسخ برای ابزارهای پاسخ‌گو",
+      "label_en": "Answer-engine and FAQ copy",
+      "category": "seo_editorial",
+      "reader_goal_fa": "پاسخ دقیق و مستقل به پرسش‌های واقعی",
+      "input_needs": [
+        "actual_questions",
+        "verified_answers",
+        "sources",
+        "author_and_update"
+      ],
+      "output_shape": [
+        "question_answer_pairs",
+        "facts_needing_source",
+        "title_meta"
+      ],
+      "checks": [
+        "standalone_answers",
+        "claim_sources",
+        "fact_consistency",
+        "no_ranking_promise"
+      ],
+      "supported_operations_candidate": [
+        "write",
+        "rewrite",
+        "translate",
+        "adapt",
+        "plan",
+        "review",
+        "score",
+        "prepare_for_publication",
+        "export"
+      ],
+      "risk_assessment": "per_request_and_claim",
+      "implementation_status": "implemented_not_verified",
+      "public_baseline_relation": "related_family_requires_task_audit",
+      "flagship_contract": null,
+      "routing_signals": [
+        "پرسش و پاسخ برای ابزارهای پاسخ‌گو",
+        "Answer-engine and FAQ copy",
+        "seo_editorial.answer_engine_faq",
+        "answer engine faq",
+        "answer engine",
+        "answer engine copy",
+        "answer engine optimization",
+        "AEO",
+        "FAQ for AI",
+        "cited by AI",
+        "ابزارهای پاسخ گو",
+        "پرسش های متداول برای هوش مصنوعی"
+      ],
+      "delivery_policy": "draft_or_export_only_no_external_send",
+      "reader_goal_en": "Answer real customer questions so that the opening of each answer is complete and correct when quoted on its own.",
+      "supported_operations": [
+        "write",
+        "rewrite",
+        "translate",
+        "adapt",
+        "plan",
+        "review",
+        "score",
+        "prepare_for_publication",
+        "export"
+      ],
+      "verification": {
+        "contract": "implemented",
+        "deterministic_evaluation": "recorded_separately_in_source_report",
+        "model_quality": "not_evaluated",
+        "human_review": "required"
+      },
+      "contract": {
+        "inputs": [
+          {
+            "id": "actual_questions",
+            "label_en": "Actual questions",
+            "label_fa": "پرسش‌های واقعی",
+            "required": true,
+            "instruction_en": "Supply actual questions for Answer-engine and FAQ copy; identify unknown or proposed values.",
+            "instruction_fa": "برای «پرسش و پاسخ برای ابزارهای پاسخ‌گو»، پرسش‌های واقعی را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          },
+          {
+            "id": "verified_answers",
+            "label_en": "Verified answers",
+            "label_fa": "پاسخ‌های تأییدشده",
+            "required": true,
+            "instruction_en": "Supply verified answers for Answer-engine and FAQ copy; identify unknown or proposed values.",
+            "instruction_fa": "برای «پرسش و پاسخ برای ابزارهای پاسخ‌گو»، پاسخ‌های تأییدشده را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          },
+          {
+            "id": "sources",
+            "label_en": "Sources",
+            "label_fa": "منابع",
+            "required": true,
+            "instruction_en": "Supply sources for Answer-engine and FAQ copy; identify unknown or proposed values.",
+            "instruction_fa": "برای «پرسش و پاسخ برای ابزارهای پاسخ‌گو»، منابع را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          },
+          {
+            "id": "author_and_update",
+            "label_en": "Author and update",
+            "label_fa": "نویسنده، بازبین و تاریخ به‌روزرسانی",
+            "required": true,
+            "instruction_en": "Supply author and update for Answer-engine and FAQ copy; identify unknown or proposed values.",
+            "instruction_fa": "برای «پرسش و پاسخ برای ابزارهای پاسخ‌گو»، نویسنده، بازبین و تاریخ به‌روزرسانی را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          }
+        ],
+        "sections": [
+          {
+            "id": "question_answer_pairs",
+            "label_en": "Question answer pairs",
+            "label_fa": "پرسش و پاسخ",
+            "required": true,
+            "shape": "text_or_structured",
+            "purpose": "Give each real question a one-sentence standalone answer, then the fuller answer with conditions and full names."
+          },
+          {
+            "id": "facts_needing_source",
+            "label_en": "Facts needing source",
+            "label_fa": "واقعیت‌های نیازمند منبع",
+            "required": true,
+            "shape": "text_or_structured",
+            "purpose": "List every number or claim that still needs a source, unit, date or scope."
+          },
+          {
+            "id": "title_meta",
+            "label_en": "Title meta",
+            "label_fa": "عنوان و توضیح متا",
+            "required": true,
+            "shape": "text_or_structured",
+            "purpose": "Write the page title and meta description from visible page text only."
+          }
+        ],
+        "approach": [
+          "Answer real customer questions so that the opening of each answer is complete and correct when quoted on its own. Promise no ranking or citation by a search engine or AI tool."
+        ],
+        "evidence": {
+          "requirements": [
+            "Source title or identifier, date, relevance, limitations and approved links.",
+            "Required evidence checks for this task: standalone_answers, claim_sources, fact_consistency, no_ranking_promise."
+          ],
+          "forbidden_additions": [
+            "Keyword stuffing, fake research, invented expertise and unsupported recency."
+          ],
+          "unknown_policy": "Retain [source needed: …] or [تأیید شود: …]; a placeholder is not proof."
+        },
+        "limits": {
+          "policy": "Length follows intent and supplied brief; no invented search-engine length rule.",
+          "default_budget": "brief_defined",
+          "unit": "task_structure",
+          "channel_limit_status": "unverified_until_source_check"
+        },
+        "tone": {
+          "fit": "Useful explanation; separate observation, inference and advice.",
+          "avoid": "Keyword stuffing, fake research, invented expertise and unsupported recency."
+        },
+        "review": [
+          {
+            "id": "standalone_answers",
+            "method": "semantic",
+            "criterion": "Each opening answer is complete when lifted out of the page, with exact names, units, dates and scope."
+          },
+          {
+            "id": "claim_sources",
+            "method": "semantic",
+            "criterion": "Trace each objective claim to a supplied source; unsupported claims remain labeled gaps."
+          },
+          {
+            "id": "fact_consistency",
+            "method": "semantic",
+            "criterion": "Compare names, numbers, units, conditions and claims across every output unit."
+          },
+          {
+            "id": "no_ranking_promise",
+            "method": "semantic",
+            "criterion": "Promise no ranking, snippet or AI citation, and add no keyword stuffing."
           },
           {
             "id": "fact_and_locale_integrity",
@@ -15836,6 +16761,374 @@
       }
     },
     {
+      "id": "messaging.cold_outreach_sequence",
+      "label_fa": "توالی ایمیل سرد",
+      "label_en": "Cold outreach sequence",
+      "category": "messaging",
+      "reader_goal_fa": "دریافت چند پیام کوتاه، صادق و قابل لغو",
+      "input_needs": [
+        "prospect_context",
+        "offer",
+        "proof",
+        "recipient_market",
+        "approved_cadence"
+      ],
+      "output_shape": [
+        "sequence_table",
+        "messages"
+      ],
+      "checks": [
+        "no_fake_personalization",
+        "opt_out_and_stop",
+        "no_fake_urgency",
+        "no_autonomous_send"
+      ],
+      "supported_operations_candidate": [
+        "write",
+        "rewrite",
+        "translate",
+        "adapt",
+        "plan",
+        "review",
+        "score",
+        "prepare_for_publication",
+        "export"
+      ],
+      "risk_assessment": "per_request_and_claim",
+      "implementation_status": "implemented_not_verified",
+      "public_baseline_relation": "related_family_requires_task_audit",
+      "flagship_contract": null,
+      "routing_signals": [
+        "توالی ایمیل سرد",
+        "Cold outreach sequence",
+        "messaging.cold_outreach_sequence",
+        "cold outreach sequence",
+        "cold email sequence",
+        "outreach sequence",
+        "outreach follow-ups",
+        "سری ایمیل سرد",
+        "پیگیری ایمیل سرد"
+      ],
+      "delivery_policy": "draft_or_export_only_no_external_send",
+      "reader_goal_en": "Plan a short first-contact sequence to a business prospect in which each touch adds something new and the sequence stops at any reply or opt-out.",
+      "supported_operations": [
+        "write",
+        "rewrite",
+        "translate",
+        "adapt",
+        "plan",
+        "review",
+        "score",
+        "prepare_for_publication",
+        "export"
+      ],
+      "verification": {
+        "contract": "implemented",
+        "deterministic_evaluation": "recorded_separately_in_source_report",
+        "model_quality": "not_evaluated",
+        "human_review": "required"
+      },
+      "contract": {
+        "inputs": [
+          {
+            "id": "prospect_context",
+            "label_en": "Prospect context",
+            "label_fa": "زمینهٔ عمومی مخاطب",
+            "required": true,
+            "instruction_en": "Supply prospect context for Cold outreach sequence; identify unknown or proposed values.",
+            "instruction_fa": "برای «توالی ایمیل سرد»، زمینهٔ عمومی مخاطب را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          },
+          {
+            "id": "offer",
+            "label_en": "Offer",
+            "label_fa": "پیشنهاد",
+            "required": true,
+            "instruction_en": "Supply offer for Cold outreach sequence; identify unknown or proposed values.",
+            "instruction_fa": "برای «توالی ایمیل سرد»، پیشنهاد را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          },
+          {
+            "id": "proof",
+            "label_en": "Proof",
+            "label_fa": "شاهد",
+            "required": true,
+            "instruction_en": "Supply proof for Cold outreach sequence; identify unknown or proposed values.",
+            "instruction_fa": "برای «توالی ایمیل سرد»، شاهد را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          },
+          {
+            "id": "recipient_market",
+            "label_en": "Recipient market",
+            "label_fa": "بازار گیرنده",
+            "required": true,
+            "instruction_en": "Supply recipient market for Cold outreach sequence; identify unknown or proposed values.",
+            "instruction_fa": "برای «توالی ایمیل سرد»، بازار گیرنده را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          },
+          {
+            "id": "approved_cadence",
+            "label_en": "Approved cadence",
+            "label_fa": "فاصلهٔ مصوب پیام‌ها",
+            "required": true,
+            "instruction_en": "Supply approved cadence for Cold outreach sequence; identify unknown or proposed values.",
+            "instruction_fa": "برای «توالی ایمیل سرد»، فاصلهٔ مصوب پیام‌ها را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          }
+        ],
+        "sections": [
+          {
+            "id": "sequence_table",
+            "label_en": "Sequence table",
+            "label_fa": "جدول توالی",
+            "required": true,
+            "shape": "text_or_structured",
+            "purpose": "For each touch, give the day, angle, subject and stop condition."
+          },
+          {
+            "id": "messages",
+            "label_en": "Messages",
+            "label_fa": "متن پیام‌ها",
+            "required": true,
+            "shape": "text_or_structured",
+            "purpose": "Write each message with the sender's real name, one ask, an easy opt-out and bracketed variables with their source."
+          }
+        ],
+        "approach": [
+          "Plan a short first-contact sequence to a business prospect in which each touch adds something new and the sequence stops at any reply or opt-out. Use only the prospect's public, relevant context and the sending rules of the recipient's market."
+        ],
+        "evidence": {
+          "requirements": [
+            "Thread context, case facts, allowed policy and correct destination.",
+            "Required evidence checks for this task: no_fake_personalization, opt_out_and_stop, no_fake_urgency, no_autonomous_send."
+          ],
+          "forbidden_additions": [
+            "Fake familiarity, secret examples, assumed consent and unapproved promises."
+          ],
+          "unknown_policy": "Retain [source needed: …] or [تأیید شود: …]; a placeholder is not proof."
+        },
+        "limits": {
+          "policy": "A short message or named sequence; SMS segments differ from character count.",
+          "default_budget": "brief_defined",
+          "unit": "task_structure",
+          "channel_limit_status": "unverified_until_source_check"
+        },
+        "tone": {
+          "fit": "Direct, courteous and matched to relationship and recipient state.",
+          "avoid": "Fake familiarity, secret examples, assumed consent and unapproved promises."
+        },
+        "review": [
+          {
+            "id": "no_fake_personalization",
+            "method": "semantic",
+            "criterion": "No invented familiarity, shared history, fake \"Re:\" or \"Fwd:\", or private personal data."
+          },
+          {
+            "id": "opt_out_and_stop",
+            "method": "semantic",
+            "criterion": "Every message has an easy opt-out; the sequence stops at a reply, an opt-out or the last touch."
+          },
+          {
+            "id": "no_fake_urgency",
+            "method": "semantic",
+            "criterion": "Match deadline, scarcity and capacity exactly to approved evidence; remove invented urgency."
+          },
+          {
+            "id": "no_autonomous_send",
+            "method": "semantic",
+            "criterion": "Deliver a draft or export only; no email, direct message or post is sent."
+          },
+          {
+            "id": "fact_and_locale_integrity",
+            "method": "deterministic",
+            "criterion": "Validate output section presence, locked exact spans, supplied evidence ids and per-key placeholders; semantic review remains required."
+          }
+        ],
+        "depth": "task_contract_with_family_inheritance"
+      }
+    },
+    {
+      "id": "messaging.cancellation_win_back",
+      "label_fa": "لغو اشتراک و بازگشت مشتری",
+      "label_en": "Cancellation and win-back",
+      "category": "messaging",
+      "reader_goal_fa": "لغو آسان و بازگشت آگاهانه",
+      "input_needs": [
+        "cancellation_terms",
+        "save_offer_terms",
+        "payment_dates",
+        "consent_status"
+      ],
+      "output_shape": [
+        "flow_table",
+        "failed_payment_messages",
+        "win_back_messages"
+      ],
+      "checks": [
+        "no_confirmshaming",
+        "price_integrity",
+        "consent_respected",
+        "no_autonomous_send"
+      ],
+      "supported_operations_candidate": [
+        "write",
+        "rewrite",
+        "translate",
+        "adapt",
+        "plan",
+        "review",
+        "score",
+        "prepare_for_publication",
+        "export"
+      ],
+      "risk_assessment": "per_request_and_claim",
+      "implementation_status": "implemented_not_verified",
+      "public_baseline_relation": "related_family_requires_task_audit",
+      "flagship_contract": null,
+      "routing_signals": [
+        "لغو اشتراک و بازگشت مشتری",
+        "Cancellation and win-back",
+        "messaging.cancellation_win_back",
+        "cancellation win back",
+        "cancellation flow",
+        "cancel flow",
+        "win-back",
+        "win back",
+        "dunning",
+        "failed payment email",
+        "لغو اشتراک",
+        "پرداخت ناموفق",
+        "بازگشت مشتری"
+      ],
+      "delivery_policy": "draft_or_export_only_no_external_send",
+      "reader_goal_en": "Write a cancel flow that is as easy as sign-up, failed-payment reminders that read as service messages, and win-back messages only where consent allows.",
+      "supported_operations": [
+        "write",
+        "rewrite",
+        "translate",
+        "adapt",
+        "plan",
+        "review",
+        "score",
+        "prepare_for_publication",
+        "export"
+      ],
+      "verification": {
+        "contract": "implemented",
+        "deterministic_evaluation": "recorded_separately_in_source_report",
+        "model_quality": "not_evaluated",
+        "human_review": "required"
+      },
+      "contract": {
+        "inputs": [
+          {
+            "id": "cancellation_terms",
+            "label_en": "Cancellation terms",
+            "label_fa": "شرایط لغو و بازپرداخت",
+            "required": true,
+            "instruction_en": "Supply cancellation terms for Cancellation and win-back; identify unknown or proposed values.",
+            "instruction_fa": "برای «لغو اشتراک و بازگشت مشتری»، شرایط لغو و بازپرداخت را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          },
+          {
+            "id": "save_offer_terms",
+            "label_en": "Save offer terms",
+            "label_fa": "شرایط دقیق پیشنهاد ماندن",
+            "required": true,
+            "instruction_en": "Supply save offer terms for Cancellation and win-back; identify unknown or proposed values.",
+            "instruction_fa": "برای «لغو اشتراک و بازگشت مشتری»، شرایط دقیق پیشنهاد ماندن را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          },
+          {
+            "id": "payment_dates",
+            "label_en": "Payment dates",
+            "label_fa": "تاریخ‌های پرداخت و تغییر دسترسی",
+            "required": true,
+            "instruction_en": "Supply payment dates for Cancellation and win-back; identify unknown or proposed values.",
+            "instruction_fa": "برای «لغو اشتراک و بازگشت مشتری»، تاریخ‌های پرداخت و تغییر دسترسی را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          },
+          {
+            "id": "consent_status",
+            "label_en": "Consent status",
+            "label_fa": "وضعیت رضایت دریافت پیام",
+            "required": true,
+            "instruction_en": "Supply consent status for Cancellation and win-back; identify unknown or proposed values.",
+            "instruction_fa": "برای «لغو اشتراک و بازگشت مشتری»، وضعیت رضایت دریافت پیام را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          }
+        ],
+        "sections": [
+          {
+            "id": "flow_table",
+            "label_en": "Flow table",
+            "label_fa": "جدول مسیر لغو",
+            "required": true,
+            "shape": "text_or_structured",
+            "purpose": "For each screen or message, give the trigger, copy and buttons; the decline button stays as visible as any offer."
+          },
+          {
+            "id": "failed_payment_messages",
+            "label_en": "Failed payment messages",
+            "label_fa": "پیام‌های پرداخت ناموفق",
+            "required": true,
+            "shape": "text_or_structured",
+            "purpose": "State what failed, what the customer can do, the date access changes and the update route."
+          },
+          {
+            "id": "win_back_messages",
+            "label_en": "Win back messages",
+            "label_fa": "پیام‌های بازگشت مشتری",
+            "required": true,
+            "shape": "text_or_structured",
+            "purpose": "Write consented win-back messages with timing and stop conditions, naming only real changes and approved offers."
+          }
+        ],
+        "approach": [
+          "Write a cancel flow that is as easy as sign-up, failed-payment reminders that read as service messages, and win-back messages only where consent allows. Keep every offer, date and refund term exact."
+        ],
+        "evidence": {
+          "requirements": [
+            "Thread context, case facts, allowed policy and correct destination.",
+            "Required evidence checks for this task: no_confirmshaming, price_integrity, consent_respected, no_autonomous_send."
+          ],
+          "forbidden_additions": [
+            "Fake familiarity, secret examples, assumed consent and unapproved promises."
+          ],
+          "unknown_policy": "Retain [source needed: …] or [تأیید شود: …]; a placeholder is not proof."
+        },
+        "limits": {
+          "policy": "A short message or named sequence; SMS segments differ from character count.",
+          "default_budget": "brief_defined",
+          "unit": "task_structure",
+          "channel_limit_status": "unverified_until_source_check"
+        },
+        "tone": {
+          "fit": "Direct, courteous and matched to relationship and recipient state.",
+          "avoid": "Fake familiarity, secret examples, assumed consent and unapproved promises."
+        },
+        "review": [
+          {
+            "id": "no_confirmshaming",
+            "method": "semantic",
+            "criterion": "No hidden cancel path, forced call or guilt in buttons; canceling takes no more steps than signing up."
+          },
+          {
+            "id": "price_integrity",
+            "method": "semantic",
+            "criterion": "Preserve approved amount, currency, unit, eligibility and date without modifying commercial terms."
+          },
+          {
+            "id": "consent_respected",
+            "method": "semantic",
+            "criterion": "Send win-back only where consent allows and stop at an opt-out."
+          },
+          {
+            "id": "no_autonomous_send",
+            "method": "semantic",
+            "criterion": "Deliver a draft or export only; no email, direct message or post is sent."
+          },
+          {
+            "id": "fact_and_locale_integrity",
+            "method": "deterministic",
+            "criterion": "Validate output section presence, locked exact spans, supplied evidence ids and per-key placeholders; semantic review remains required."
+          }
+        ],
+        "depth": "task_contract_with_family_inheritance"
+      }
+    },
+    {
       "id": "support.customer_reply",
       "label_fa": "پاسخ تیکت مشتری",
       "label_en": "Customer-support reply",
@@ -19100,6 +20393,198 @@
             "id": "no_speculation",
             "method": "semantic",
             "criterion": "No speculation: review the actual Public stakeholder Q&A against supplied evidence."
+          },
+          {
+            "id": "fact_and_locale_integrity",
+            "method": "deterministic",
+            "criterion": "Validate output section presence, locked exact spans, supplied evidence ids and per-key placeholders; semantic review remains required."
+          }
+        ],
+        "depth": "task_contract_with_family_inheritance"
+      }
+    },
+    {
+      "id": "pr_media.launch_announcement_kit",
+      "label_fa": "بستهٔ اعلام لانچ",
+      "label_en": "Launch announcement kit",
+      "category": "pr_media",
+      "reader_goal_fa": "آگاهی دقیق از آنچه تازه است",
+      "input_needs": [
+        "launch_facts",
+        "availability",
+        "launch_date",
+        "channels"
+      ],
+      "output_shape": [
+        "fact_sheet",
+        "core_message",
+        "pieces",
+        "internal_faq"
+      ],
+      "checks": [
+        "fact_consistency",
+        "news_check",
+        "no_superlatives",
+        "no_autonomous_send"
+      ],
+      "supported_operations_candidate": [
+        "write",
+        "rewrite",
+        "translate",
+        "adapt",
+        "plan",
+        "review",
+        "score",
+        "prepare_for_publication",
+        "export"
+      ],
+      "risk_assessment": "per_request_and_claim",
+      "implementation_status": "implemented_not_verified",
+      "public_baseline_relation": "related_family_requires_task_audit",
+      "flagship_contract": null,
+      "routing_signals": [
+        "بستهٔ اعلام لانچ",
+        "Launch announcement kit",
+        "pr_media.launch_announcement_kit",
+        "launch announcement kit",
+        "launch announcement",
+        "launch kit",
+        "feature launch",
+        "اعلام لانچ",
+        "معرفی قابلیت جدید",
+        "بسته اعلام لانچ"
+      ],
+      "delivery_policy": "draft_or_export_only_no_external_send",
+      "reader_goal_en": "Build one fact sheet and one core message for a launch, then a matched piece for each channel in the order readers should hear it.",
+      "supported_operations": [
+        "write",
+        "rewrite",
+        "translate",
+        "adapt",
+        "plan",
+        "review",
+        "score",
+        "prepare_for_publication",
+        "export"
+      ],
+      "verification": {
+        "contract": "implemented",
+        "deterministic_evaluation": "recorded_separately_in_source_report",
+        "model_quality": "not_evaluated",
+        "human_review": "required"
+      },
+      "contract": {
+        "inputs": [
+          {
+            "id": "launch_facts",
+            "label_en": "Launch facts",
+            "label_fa": "واقعیت‌های لانچ",
+            "required": true,
+            "instruction_en": "Supply launch facts for Launch announcement kit; identify unknown or proposed values.",
+            "instruction_fa": "برای «بستهٔ اعلام لانچ»، واقعیت‌های لانچ را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          },
+          {
+            "id": "availability",
+            "label_en": "Availability",
+            "label_fa": "دسترسی و پلن‌ها",
+            "required": true,
+            "instruction_en": "Supply availability for Launch announcement kit; identify unknown or proposed values.",
+            "instruction_fa": "برای «بستهٔ اعلام لانچ»، دسترسی و پلن‌ها را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          },
+          {
+            "id": "launch_date",
+            "label_en": "Launch date",
+            "label_fa": "تاریخ و منطقهٔ زمانی انتشار",
+            "required": true,
+            "instruction_en": "Supply launch date for Launch announcement kit; identify unknown or proposed values.",
+            "instruction_fa": "برای «بستهٔ اعلام لانچ»، تاریخ و منطقهٔ زمانی انتشار را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          },
+          {
+            "id": "channels",
+            "label_en": "Channels",
+            "label_fa": "کانال‌ها",
+            "required": true,
+            "instruction_en": "Supply channels for Launch announcement kit; identify unknown or proposed values.",
+            "instruction_fa": "برای «بستهٔ اعلام لانچ»، کانال‌ها را مشخص کنید؛ موارد نامعلوم یا پیشنهادی را جدا نگه دارید."
+          }
+        ],
+        "sections": [
+          {
+            "id": "fact_sheet",
+            "label_en": "Fact sheet",
+            "label_fa": "برگهٔ واقعیت",
+            "required": true,
+            "shape": "text_or_structured",
+            "purpose": "List name, date and timezone, who gets it and where, plans, price, conditions and known limits; unknowns stay bracketed."
+          },
+          {
+            "id": "core_message",
+            "label_en": "Core message",
+            "label_fa": "پیام محوری",
+            "required": true,
+            "shape": "text_or_structured",
+            "purpose": "State what is new, for whom and from when in one sentence."
+          },
+          {
+            "id": "pieces",
+            "label_en": "Pieces",
+            "label_fa": "متن هر کانال",
+            "required": true,
+            "shape": "text_or_structured",
+            "purpose": "Write each piece in its own format in sending order; each says what the reader can do today."
+          },
+          {
+            "id": "internal_faq",
+            "label_en": "Internal faq",
+            "label_fa": "پرسش‌های داخلی پشتیبانی",
+            "required": true,
+            "shape": "text_or_structured",
+            "purpose": "Tell customer-facing staff what changed, what did not and what to say while an answer is unconfirmed."
+          }
+        ],
+        "approach": [
+          "Build one fact sheet and one core message for a launch, then a matched piece for each channel in the order readers should hear it. Size the kit to the news and repeat names, dates and prices exactly."
+        ],
+        "evidence": {
+          "requirements": [
+            "Approved facts, dated events, quote/partner permission and media contact.",
+            "Required evidence checks for this task: fact_consistency, news_check, no_superlatives, no_autonomous_send."
+          ],
+          "forbidden_additions": [
+            "Speculation, fabricated quotes, unsupported news and invented spokesperson authority."
+          ],
+          "unknown_policy": "Retain [source needed: …] or [تأیید شود: …]; a placeholder is not proof."
+        },
+        "limits": {
+          "policy": "Match announcement, Q&A or speaking format; use supplied timing.",
+          "default_budget": "brief_defined",
+          "unit": "task_structure",
+          "channel_limit_status": "unverified_until_source_check"
+        },
+        "tone": {
+          "fit": "Measured public language with authorized quotation and disclosure.",
+          "avoid": "Speculation, fabricated quotes, unsupported news and invented spokesperson authority."
+        },
+        "review": [
+          {
+            "id": "fact_consistency",
+            "method": "semantic",
+            "criterion": "Compare names, numbers, units, conditions and claims across every output unit."
+          },
+          {
+            "id": "news_check",
+            "method": "semantic",
+            "criterion": "News check: size the kit to the actual change; a small change gets a small kit."
+          },
+          {
+            "id": "no_superlatives",
+            "method": "semantic",
+            "criterion": "No \"first\", \"only\" or \"fastest\" without supplied evidence."
+          },
+          {
+            "id": "no_autonomous_send",
+            "method": "semantic",
+            "criterion": "Deliver a draft or export only; no email, direct message or post is sent."
           },
           {
             "id": "fact_and_locale_integrity",

@@ -5814,7 +5814,7 @@
     {
       "id": "industry_069",
       "group_fa": "فناوری",
-      "role_fa": "SaaS سازمانی",
+      "role_fa": "نرم‌افزار اشتراکی سازمانی",
       "seed_status": "example_not_gate",
       "audience_rule": "مخاطب و دانش پیشین از کاربر یا زمینهٔ مجاز استخراج شود.",
       "speaker": [
@@ -5839,10 +5839,10 @@
         "no_invented_testimonials",
         "channel_fit"
       ],
-      "name": "SaaS سازمانی",
-      "name_fa": "SaaS سازمانی",
-      "label_fa": "SaaS سازمانی",
-      "label": "SaaS سازمانی",
+      "name": "نرم‌افزار اشتراکی سازمانی",
+      "name_fa": "نرم‌افزار اشتراکی سازمانی",
+      "label_fa": "نرم‌افزار اشتراکی سازمانی",
+      "label": "نرم‌افزار اشتراکی سازمانی",
       "name_en": "Enterprise SaaS",
       "role_en": "Enterprise SaaS",
       "label_en": "Enterprise SaaS",
@@ -6478,7 +6478,7 @@
     {
       "id": "industry_077",
       "group_fa": "فناوری",
-      "role_fa": "تیم داده و BI",
+      "role_fa": "تیم داده و هوش تجاری",
       "seed_status": "example_not_gate",
       "audience_rule": "مخاطب و دانش پیشین از کاربر یا زمینهٔ مجاز استخراج شود.",
       "speaker": [
@@ -6503,10 +6503,10 @@
         "no_invented_testimonials",
         "channel_fit"
       ],
-      "name": "تیم داده و BI",
-      "name_fa": "تیم داده و BI",
-      "label_fa": "تیم داده و BI",
-      "label": "تیم داده و BI",
+      "name": "تیم داده و هوش تجاری",
+      "name_fa": "تیم داده و هوش تجاری",
+      "label_fa": "تیم داده و هوش تجاری",
+      "label": "تیم داده و هوش تجاری",
       "name_en": "Data and BI team",
       "role_en": "Data and BI team",
       "label_en": "Data and BI team",

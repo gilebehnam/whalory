@@ -24,6 +24,7 @@ Shared craft: [existing family method](../playbooks-social.md). [Operation and A
 - [Tagline and slogan](#tagline-slogan)
 - [Print and outdoor copy](#print-outdoor-ad)
 - [Offer announcement](#offer-announcement)
+- [Ad variant set for testing](#ad-test-variant-set)
 
 ## Ad Variant
 
@@ -202,5 +203,22 @@ Required inputs: price, terms, dates, eligibility. Missing facts remain labeled;
 | `cta` / اقدام بعدی | State the actual redemption action. |
 
 Review: Preserve approved amount, currency, unit, eligibility and date without modifying commercial terms. Deadline integrity: review the actual Offer announcement against supplied evidence. Match deadline, scarcity and capacity exactly to approved evidence; remove invented urgency. Validate output section presence, locked exact spans, supplied evidence ids and per-key placeholders; semantic review remains required.
+
+Status: `implemented_not_verified`; local deterministic checks do not certify semantic quality, external publication, or expert approval.
+
+## Ad Test Variant Set
+
+**مجموعه‌ی واریانت تبلیغ برای آزمون · `copy_ads.ad_test_variant_set`**
+
+Plan a set of ad variants for one network that differ only in the one variable under test. Write the decision rule before launch and fit every field to verified limits and to the landing page's claims.
+
+Required inputs: network, test_question, angles, landing_claims, traffic_estimate. Missing facts remain labeled; at most three consequential questions per round.
+
+| Output section | Required result |
+|---|---|
+| `test_plan` / طرح آزمون | State the question, the variable, the fixed elements, the metric, the minimum run and the decision rule. |
+| `variant_table` / جدول واریانت‌ها | For each variant, give the angle, field, text, character count and limit status. |
+
+Review: Variants differ only in the tested variable; image, audience and landing page stay fixed. Verify the destination field and counting unit from dated source data; otherwise label its limit unverified. Every ad claim also appears on the landing page and in supplied evidence. Check health, financial, before-and-after and personal-attribute wording against the network's current policy. Validate output section presence, locked exact spans, supplied evidence ids and per-key placeholders; semantic review remains required.
 
 Status: `implemented_not_verified`; local deterministic checks do not certify semantic quality, external publication, or expert approval.

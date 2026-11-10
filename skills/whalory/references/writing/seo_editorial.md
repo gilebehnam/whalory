@@ -24,6 +24,7 @@ Shared craft: [existing family method](../playbooks-web.md). [Operation and API 
 - [White paper and guide](#whitepaper)
 - [Business research summary](#research-summary)
 - [Content refresh](#content-refresh)
+- [Answer-engine and FAQ copy](#answer-engine-faq)
 
 ## Article
 
@@ -204,5 +205,23 @@ Required inputs: current_article, new_sources, change_goal. Missing facts remain
 | `metadata` / فراداده | Update metadata to match the revised article. |
 
 Review: Dated claims: review the actual Content refresh against supplied evidence. Fact locks: review the actual Content refresh against supplied evidence. Link integrity: review the actual Content refresh against supplied evidence. Validate output section presence, locked exact spans, supplied evidence ids and per-key placeholders; semantic review remains required.
+
+Status: `implemented_not_verified`; local deterministic checks do not certify semantic quality, external publication, or expert approval.
+
+## Answer Engine Faq
+
+**پرسش و پاسخ برای ابزارهای پاسخ‌گو · `seo_editorial.answer_engine_faq`**
+
+Answer real customer questions so that the opening of each answer is complete and correct when quoted on its own. Promise no ranking or citation by a search engine or AI tool.
+
+Required inputs: actual_questions, verified_answers, sources, author_and_update. Missing facts remain labeled; at most three consequential questions per round.
+
+| Output section | Required result |
+|---|---|
+| `question_answer_pairs` / پرسش و پاسخ | Give each real question a one-sentence standalone answer, then the fuller answer with conditions and full names. |
+| `facts_needing_source` / واقعیت‌های نیازمند منبع | List every number or claim that still needs a source, unit, date or scope. |
+| `title_meta` / عنوان و توضیح متا | Write the page title and meta description from visible page text only. |
+
+Review: Each opening answer is complete when lifted out of the page, with exact names, units, dates and scope. Trace each objective claim to a supplied source; unsupported claims remain labeled gaps. Compare names, numbers, units, conditions and claims across every output unit. Promise no ranking, snippet or AI citation, and add no keyword stuffing. Validate output section presence, locked exact spans, supplied evidence ids and per-key placeholders; semantic review remains required.
 
 Status: `implemented_not_verified`; local deterministic checks do not certify semantic quality, external publication, or expert approval.

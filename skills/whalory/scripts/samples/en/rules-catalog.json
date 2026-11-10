@@ -1551,6 +1551,101 @@
    "false_positive_notes": null,
    "examples_flagged": [],
    "examples_ok": []
+  },
+  {
+   "id": "EN-AI-064",
+   "category": "inflated-adverb",
+   "severity": "warning",
+   "pattern": "\\b(?:significantly|dramatically|drastically|tremendously|immensely|exponentially|massively|incredibly|remarkably|profoundly)\\b",
+   "flags": "i",
+   "scope": "sentence",
+   "threshold": null,
+   "profile": "all",
+   "message": "An intensifying adverb stands in for a number or an example the writer did not have.",
+   "fix": "Give the number or the example, or cut the adverb.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing",
+    "https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/"
+   ],
+   "confidence": "medium",
+   "false_positive_notes": "Acceptable in a quote, or when a measured figure follows.",
+   "examples_flagged": [
+    "Load time fell dramatically."
+   ],
+   "examples_ok": [
+    "Load time fell from 4 seconds to 2."
+   ]
+  },
+  {
+   "id": "EN-AI-065",
+   "category": "corporate-we",
+   "severity": "warning",
+   "pattern": "\\bwe (?:strive|endeavou?r)s? to\\b|\\bwe(?: are|'re) (?:committed|dedicated|passionate|proud) to\\b|\\bvalued (?:customers|clients|users)\\b",
+   "flags": "i",
+   "scope": "sentence",
+   "threshold": null,
+   "profile": "all",
+   "message": "A faceless corporate voice talks about the reader instead of to one reader, and names nobody who did the work.",
+   "fix": "Say who did what; address one reader as \"you\".",
+   "sources": [
+    "https://www.gov.uk/guidance/content-design/writing-for-gov-uk",
+    "https://www.plainlanguage.gov/guidelines/"
+   ],
+   "confidence": "medium",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "We strive to give valued customers the best service."
+   ],
+   "examples_ok": [
+    "Sara rebuilt the checkout in May, so you pay in two taps."
+   ]
+  },
+  {
+   "id": "EN-AI-066",
+   "category": "adjective-stack",
+   "severity": "warning",
+   "pattern": "\\b(?:comprehensive|innovative|powerful|robust|seamless|intuitive|cutting-edge)(?:, *| and | )(?:comprehensive|innovative|powerful|robust|seamless|intuitive|cutting-edge)\\b",
+   "flags": "i",
+   "scope": "sentence",
+   "threshold": null,
+   "profile": "all",
+   "message": "Stacked promotional adjectives replace a description of what the thing does.",
+   "fix": "Keep one adjective at most, then say what it does.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing"
+   ],
+   "confidence": "medium",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "A comprehensive, innovative planner for teams."
+   ],
+   "examples_ok": [
+    "A planner that sends one reminder before each deadline."
+   ]
+  },
+  {
+   "id": "EN-PL-015",
+   "category": "impersonal-passive",
+   "severity": "warning",
+   "pattern": "\\bit (?:was|has been|is) (?:decided|agreed|determined|noted) that\\b",
+   "flags": "i",
+   "scope": "sentence",
+   "threshold": null,
+   "profile": "all",
+   "message": "The impersonal passive hides who decided, which weakens trust and accountability.",
+   "fix": "Name who decided.",
+   "sources": [
+    "https://www.plainlanguage.gov/guidelines/",
+    "https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/"
+   ],
+   "confidence": "medium",
+   "false_positive_notes": null,
+   "examples_flagged": [
+    "It was decided that the launch would move."
+   ],
+   "examples_ok": [
+    "Ana moved the launch to June."
+   ]
   }
  ],
  "us_uk_families": {

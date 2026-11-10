@@ -265,7 +265,7 @@ def main():
 
         # ۵) نسخه و سازگاری
         code, out, err = run_cli(['--version'])
-        t('v3 --version', [] if code == 0 and LF.__version__ in out and LF.__version__ == '3.2.2'
+        t('v3 --version', [] if code == 0 and LF.__version__ in out and LF.__version__ == '3.2.3'
           else ['خروجی: %r' % out], out.strip())
         # نحوِ پایتون ۳.۸ برای همه‌ی اسکریپت‌های scripts/ (والوری ۳)
         pr = []
@@ -1065,6 +1065,43 @@ def wave3(t, skip, tmp):
     if 'admin' in c:
         pr.append('«اقدام کنید» خطای admin شد')
     t('w3 «اقدام نمایید» هم admin هم admin-phrase', pr)
+
+    # ساده‌نویسی ۱۴۰۵: الگوهای تازه، هر کدام با نمونه‌ی درست
+    t('plain admin-phrase تازه', expect_codes([
+        ('لذا قیمت را عوض کردیم.', True), ('این گزارش حائز اهمیت است.', True),
+        ('موارد فوق‌الذکر تا آخر ماه معتبر است.', True), ('به‌منظور کاهش هزینه، جعبه ساده شد.', True),
+        ('برای همین قیمت را عوض کردیم.', False), ('بلندی قد او زیاد است.', False)], 'admin-phrase'))
+    t('plain admin «گردید»', expect_codes([
+        ('خطا برطرف گردید.', True), ('خطا برطرف شد.', False), ('او گردیدن را دوست دارد.', False)], 'admin'))
+    t('plain moral-close', expect_codes([
+        ('در نهایت می‌توان گفت که کیفیت مهم است.', True), ('در یک کلام، کیفیت مهم است.', True),
+        ('در نهایتِ خیابان یک کافه است.', False)], 'moral-close'))
+    t('plain inflated-adverb', expect_codes([
+        ('سرعت به‌طور قابل‌توجهی بیشتر شد.', True), ('فروش به‌شکل چشمگیری بالا رفت.', True),
+        ('طعمش فوق‌العاده است.', True), ('سرعت از چهار ثانیه به دو ثانیه رسید.', False)], 'inflated-adverb'))
+    t('plain calque', expect_codes([
+        ('بیایید در جزئیات شیرجه بزنیم.', True), ('در پایان روز، مشتری تصمیم می‌گیرد.', True),
+        ('این قابلیت تغییردهنده‌ی بازی است.', True), ('در پایانِ روزِ کاری فروشگاه می‌بندد.', False),
+        ('بچه‌ها در استخر شیرجه زدند.', False)], 'calque'))
+    t('plain sycophancy', expect_codes([
+        ('سؤال بسیار خوبی پرسیدید!', True), ('خوشحالم که این سؤال را پرسیدید.', True),
+        ('جواب کوتاه: نه.', False), ('این سؤال دو بخش دارد.', False)], 'sycophancy'))
+    t('plain nominal-verb', expect_codes([
+        ('این کار منجر به کاهش هزینه شد.', True), ('ارسال روز شنبه صورت گرفت.', True),
+        ('انجام بررسی توسط تیم فنی طول کشید.', True), ('تیم فنی بررسی کرد و خطا را پیدا کرد.', False),
+        ('صورت‌حساب را فرستادیم.', False)], 'nominal-verb'))
+    t('plain heavy-passive تصمیم', expect_codes([
+        ('تصمیم گرفته شد که طرح عوض شود.', True), ('مقرر شد که جلسه عقب بیفتد.', True),
+        ('سارا تصمیم گرفت طرح را عوض کند.', False)], 'heavy-passive'))
+    t('plain corporate-we', expect_codes([
+        ('ما در تلاشیم بهترین تجربه را بسازیم.', True), ('تیم ما همواره کنار شماست.', True),
+        ('دو ماه روی این بخش کار کردم که سریع‌تر شود.', False)], 'corporate-we'))
+    t('plain adj-stack', expect_codes([
+        ('یک راهکار جامع، کاربردی و نوآورانه.', True), ('ابزاری هوشمند و قدرتمند برای تیم.', True),
+        ('یک راه ساده برای اینکه پروژه از دستت در نرود.', False), ('این دوره کاربردی است.', False)], 'adj-stack'))
+    t('plain label-list', expect_codes([
+        ('- **سرعت:** سرعت بهتر شد.', True), ('۱. **امنیت**: رمزها رمزنگاری می‌شوند.', True),
+        ('1. **امنیت**: رمزها رمزنگاری می‌شوند.', True), ('- سرعت بهتر شد.', False)], 'label-list'))
 
     # ۴) --rules
     code, out, err = run_cli(['--rules', '--json'])

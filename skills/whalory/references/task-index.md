@@ -2,7 +2,7 @@
 
 Whalory adds a professional writing workflow to the AI host the user already uses: understand the task, collect facts, select the user's voice, draft for the destination, review and export. A task contract describes the work; it does not prove that a model has generated a good example.
 
-The [shared registry](../data/catalogs/writing-capabilities.json) contains 163 task contracts in 16 families, including 20 expanded flagship contracts. Its task IDs, bilingual names, input needs, output sections, evidence, limits, tone and review requirements are consumed by local tools, Studio and backend. Every row is `implemented_not_verified`: deterministic contract checks are separate from semantic quality, host compatibility, expert review and publication approval.
+The [shared registry](../data/catalogs/writing-capabilities.json) contains 171 task contracts in 16 families, including 20 expanded flagship contracts. Its task IDs, bilingual names, input needs, output sections, evidence, limits, tone and review requirements are consumed by local tools, Studio and backend. Every row is `implemented_not_verified`: deterministic contract checks are separate from semantic quality, host compatibility, expert review and publication approval.
 
 ## Selective loading and everyday requests
 
@@ -97,6 +97,7 @@ The CLI prints output; shell redirection or a host's file writer decides where t
 | [Tagline and slogan](writing/copy_ads.md#tagline-slogan) | شعار و عبارت برند | brand_position, voice, proof | options, rationale, usage_note |
 | [Print and outdoor copy](writing/copy_ads.md#print-outdoor-ad) | متن آگهی چاپی و محیطی | offer, reading_context, space | headline, body, contact_or_cta |
 | [Offer announcement](writing/copy_ads.md#offer-announcement) | معرفی پیشنهاد یا تخفیف | price, terms, dates, eligibility | offer_copy, conditions, cta |
+| [Ad variant set for testing](writing/copy_ads.md#ad-test-variant-set) | مجموعه‌ی واریانت تبلیغ برای آزمون | network, test_question, angles, landing_claims, traffic_estimate | test_plan, variant_table |
 
 ### Social media
 
@@ -132,6 +133,8 @@ The CLI prints output; shell redirection or a host's file writer decides where t
 | [Contact and collaboration page](writing/web.md#contact-page) | صفحه‌ی تماس و همکاری | contact_routes, response_policy | contact_copy, form_hints, expectations |
 | [Download and installation page](writing/web.md#download-install-page) | صفحه‌ی دانلود و نصب | verified_hosts, versions, steps | host_paths, commands, troubleshooting |
 | [Product comparison page](writing/web.md#comparison-page) | صفحه‌ی مقایسه‌ی محصول | competitor_sources, own_capabilities, date | criteria_table, context, limitations |
+| [Landing page conversion review](writing/web.md#landing-page-conversion-review) | بررسی نرخ تبدیل لندینگ پیج | page_copy, primary_action, traffic_source, customer_objections | findings, rewritten_copy, test_hypotheses |
+| [Alternative and versus page](writing/web.md#alternative-versus-page) | صفحه‌ی جایگزین و مقایسه با رقیب | page_format, competitor_sources, own_capabilities, switcher_reasons | page_copy, comparison_table, competitor_fit, title_meta |
 
 ### UX writing for websites and apps
 
@@ -149,6 +152,7 @@ The CLI prints output; shell redirection or a host's file writer decides where t
 | [Push notification](writing/ux.md#push-notification) | پوش نوتیفیکیشن | event, recipient_context, deep_link | title, body, destination_note |
 | [Consent and permission copy](writing/ux.md#consent-permissions) | رضایت و دسترسی | data_purpose, scope, retention, choices | notice, choices, settings_copy |
 | [Locale-file copy review](writing/ux.md#locale-file-review) | متن فایل‌های زبان محصول | locale_file, key_context, variables | safe_string_updates, change_notes |
+| [Sign-up and first-run review](writing/ux.md#signup-first-run-review) | بررسی مسیر ثبت‌نام و شروع کار | activation_moment, flow_steps, current_strings, mandatory_fields | step_table, corrected_strings |
 
 ### SEO and editorial publishing
 
@@ -166,6 +170,7 @@ The CLI prints output; shell redirection or a host's file writer decides where t
 | [White paper and guide](writing/seo_editorial.md#whitepaper) | وایت‌پیپر و راهنمای عمیق | scope, sources, method, reader | structured_document, evidence, limitations |
 | [Business research summary](writing/seo_editorial.md#research-summary) | خلاصه‌ی پژوهش برای کسب‌وکار | supplied_paper, decision_context | summary, implications, limitations |
 | [Content refresh](writing/seo_editorial.md#content-refresh) | به‌روزرسانی مقاله‌ی قدیمی | current_article, new_sources, change_goal | revised_article, change_log, metadata |
+| [Answer-engine and FAQ copy](writing/seo_editorial.md#answer-engine-faq) | پرسش و پاسخ برای ابزارهای پاسخ‌گو | actual_questions, verified_answers, sources, author_and_update | question_answer_pairs, facts_needing_source, title_meta |
 
 ### Brand voice and verbal identity
 
@@ -234,6 +239,8 @@ The CLI prints output; shell redirection or a host's file writer decides where t
 | [Promotional SMS](writing/messaging.md#sms-promotion) | پیامک تبلیغاتی | offer, terms, recipient_scope | sms, conditions, cta |
 | [Messenger-channel post](writing/messaging.md#messenger-channel) | متن کانال تلگرام و پیام‌رسان‌ها | channel, facts, links, goal | post, button_labels, links |
 | [Event invitation and reminder](writing/messaging.md#event-invitation) | دعوت‌نامه و یادآوری رویداد | event, date, timezone, location, registration | invitation, reminder, cta |
+| [Cold outreach sequence](writing/messaging.md#cold-outreach-sequence) | توالی ایمیل سرد | prospect_context, offer, proof, recipient_market, approved_cadence | sequence_table, messages |
+| [Cancellation and win-back](writing/messaging.md#cancellation-win-back) | لغو اشتراک و بازگشت مشتری | cancellation_terms, save_offer_terms, payment_dates, consent_status | flow_table, failed_payment_messages, win_back_messages |
 
 ### Support and difficult communications
 
@@ -268,6 +275,7 @@ The CLI prints output; shell redirection or a host's file writer decides where t
 | [Event and speaker introduction](writing/pr_media.md#event-intro) | معرفی سخنران و مراسم | verified_bio, event_context, pronunciation | intro, transition |
 | [Partnership announcement](writing/pr_media.md#partnership-announcement) | اعلان همکاری مشترک | approved_scope, partners, permissions | announcement, partner_copy, faq |
 | [Public stakeholder Q&A](writing/pr_media.md#public-qa) | پرسش‌وپاسخ عمومی ذی‌نفعان | actual_questions, facts, approved_policy | qa, unresolved_items |
+| [Launch announcement kit](writing/pr_media.md#launch-announcement-kit) | بستهٔ اعلام لانچ | launch_facts, availability, launch_date, channels | fact_sheet, core_message, pieces, internal_faq |
 
 ### Product management and development
 
