@@ -368,8 +368,10 @@ Claude Code، Claude Desktop، claude.ai، Codex، Cursor، Gemini CLI و GitHub
 
 والوری را **[والیا](https://github.com/whalya-studio)** ساخته است، یک ونچر استودیوی محصول‌محور.
 
-- **[والیوم](https://github.com/gilebehnam/whalyom)**: یک دپارتمان کامل بازاریابی در Claude Code؛ ۵۳۶ ایجنت در ۲۸ دپارتمان، متن‌باز.
-- **[والیون](https://github.com/gilebehnam/whalyon)**: چکاپ سلامت کسب‌وکار؛ ۴۰ جمله، ۸ حوزه، یک کارنامه که ریشه‌ی مشکل را پیدا می‌کند.
+- **[والیوم](https://github.com/gilebehnam/whalyom)**: یک دپارتمان کامل بازاریابی در Claude Code؛ ۵۳۶ ایجنت در ۲۸ دپارتمان، متن‌باز. وب‌سایت: [whalyom.com](https://whalyom.com)
+- **[والیون](https://github.com/gilebehnam/whalyon)**: چکاپ سلامت کسب‌وکار؛ ۴۰ جمله، ۸ حوزه، یک کارنامه که ریشه‌ی مشکل را پیدا می‌کند. وب‌سایت: [whalyon.com](https://whalyon.com)
+
+بنیان‌گذار والیا **[Behnam Jafari Balalami](https://behnaam.com)** است.
 
 </div>
 

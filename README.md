@@ -358,10 +358,12 @@ No. Nothing is invented: a claim the brand can't back gets a bracket like `[sour
 
 Whalory is made by **[Whalya](https://github.com/whalya-studio)**, a product-led venture studio.
 
-| Product | What it does |
-|:--|:--|
-| **[Whalyom](https://github.com/gilebehnam/whalyom)** | Your entire marketing department inside Claude Code: 536 AI agents in 28 departments. Open source. |
-| **[Whalyon](https://github.com/gilebehnam/whalyon)** | A business health check: 40 statements, 8 areas, a report card that finds the root cause, not the symptom. |
+| Product | What it does | Website |
+|:--|:--|:--|
+| **[Whalyom](https://github.com/gilebehnam/whalyom)** | Your entire marketing department inside Claude Code: 536 AI agents in 28 departments. Open source. | [whalyom.com](https://whalyom.com) |
+| **[Whalyon](https://github.com/gilebehnam/whalyon)** | A business health check: 40 statements, 8 areas, a report card that finds the root cause, not the symptom. | [whalyon.com](https://whalyon.com) |
+
+Whalya was founded by **[Behnam Jafari Balalami](https://behnaam.com)**. More about the studio: [github.com/whalya-studio](https://github.com/whalya-studio).
 
 > ⭐ **If Whalory helps your writing, star this repository.** Stars help other writers and teams find it.
 
