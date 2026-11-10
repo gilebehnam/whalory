@@ -11,12 +11,6 @@
       "source": "./",
       "category": "productivity",
       "description": "Bilingual copy skill, subagents, commands and MCP tools."
-    },
-    {
-      "name": "whalory-autolint",
-      "source": "./autolint",
-      "category": "productivity",
-      "description": "Opt-in: lints content and locale files with Whalory after each Write or Edit."
     }
   ]
 }
