@@ -81,6 +81,7 @@ claude plugin install whalory@whalory
 - [The benchmark](#the-benchmark)
 - [Privacy and network activity](#privacy-and-network-activity)
 - [Roadmap](#roadmap)
+- [FAQ](#faq)
 - [Contributing](#contributing)
 - [Security](#security)
 - [License](#license)
@@ -330,6 +331,39 @@ Next:
 - [ ] Open rule statistics and the weekly packet, after a legal review of their notices. See [whalory-hub](https://github.com/gilebehnam/whalory-hub).
 - [ ] A dated end-to-end test on every host, recorded next to each install route.
 - [ ] Open checkout for Pro and Studio, international checkout included.
+
+## FAQ
+
+**Is Whalory free?**
+Whalory Core is free, commercial work included, under open licenses: CC BY 4.0 for text, MIT for scripts. Pro and Studio add more playbooks and agents; their checkout isn't open yet.
+
+**Does it replace my AI model?**
+No. Whalory is a set of files your assistant reads, plus a few small programs it can run. The model stays the one you chose.
+
+**Which AI tools does it work with?**
+It has install routes for Claude Code, Claude Desktop, claude.ai, Codex, Cursor, Gemini CLI, and GitHub Copilot in VS Code. Any other chat assistant can take it as a pasted prompt.
+
+**Does my text leave my machine?**
+Not through Whalory. The linters, the MCP server, and the autolint hook run on your machine and make no network calls. The only network part is the Hub client, which downloads signed rule files once a day and can be turned off.
+
+**Does it write in Persian (Farsi)?**
+Yes. Persian gets half-spaces, Persian digits, Persian quotation marks, and the Persian forms of yeh and kaf, with its own linter. English defaults to US spelling, and a profile can switch to UK, Australian, Canadian, New Zealand, Irish or Indian English.
+
+**Will it make up numbers or reviews?**
+No. Nothing is invented: a claim the brand can't back gets a bracket like `[source needed: …]` instead.
+
+<div align="right">(<a href="#readme-top">back to top</a>)</div>
+
+## More from Whalya
+
+Whalory is made by **[Whalya](https://github.com/whalya-studio)**, a product-led venture studio.
+
+| Product | What it does |
+|:--|:--|
+| **[Whalyom](https://github.com/gilebehnam/whalyom)** | Your entire marketing department inside Claude Code: 536 AI agents in 28 departments. Open source. |
+| **[Whalyon](https://github.com/gilebehnam/whalyon)** | A business health check: 40 statements, 8 areas, a report card that finds the root cause, not the symptom. |
+
+> ⭐ **If Whalory helps your writing, star this repository.** Stars help other writers and teams find it.
 
 ## Contributing
 
